@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title>Statistics</title>
+	<meta name="generator" content="LibreOffice 7.4.3.2 (Linux)"/>
+	<meta name="created" content="00:00:00"/>
+	<meta name="changed" content="2023-01-09T10:16:32.050938932"/>
+	<meta name="created" content="00:00:00">
+	<meta name="created" content="00:00:00">
+	<meta name="created" content="00:00:00">
+	<meta name="created" content="00:00:00">
+	<meta name="created" content="00:00:00">
+	<meta name="created" content="00:00:00">
+	<meta name="created" content="00:00:00">
+	<style type="text/css">
+		@page { size: 8.27in 11.69in; margin-left: 0.79in; margin-right: 0.39in; margin-top: 0.39in; margin-bottom: 0.39in }
+		h1 { margin-bottom: 0.08in; background: transparent }
+		h1.western { font-family: "Liberation Serif", serif }
+		h1.cjk { font-family: "Noto Serif CJK SC"; font-size: 24pt }
+		h1.ctl { font-family: "Mangal"; font-size: 24pt }
+		p { line-height: 115%; margin-bottom: 0.1in; background: transparent }
+		h3 { margin-top: 0.1in; margin-bottom: 0.08in; background: transparent }
+		h3.western { font-family: "Liberation Serif", serif }
+		h3.cjk { font-family: "Noto Serif CJK SC" }
+		h3.ctl { font-family: "Mangal" }
+		a:link { so-language: zxx }
+	</style>
+</head>
+<body lang="en-US" dir="ltr"><h1 class="western">Statistics</h1>
+<p>Some statistics taken from <a href="https://www.healthline.com/diabetesmine/ambulatory-glucose-profile">AGP</a>
+without a license, with some minor modifications.</p>
+<p>The number of days analyzed can be modified by pressing the <b>Days</b>
+button. The period ends at the time of the end of screen position and
+spans the specified number of days back in time. All data are only
+based on glucose values received every minute via Bluetooth from the
+sensor (called <i>stream</i> in Juggluco).</p>
+<p>On the left of the screen are the percentage of measurements
+falling in certain glucose ranges.</p>
+<h3 class="western">% of the time active</h3>
+<p>The percentage of time Juggluco received glucose values from the
+sensor.</p>
+<h3 class="western">Estimated A1C</h3>
+<p>Estimates H<span lang="en-US">bA1c with an old formula from
+average glucose (Nathan</span> <span lang="en-US">et al (2008)). See
+<a href="https://professional.diabetes.org/diapro/glucose_calc">https://professional.diabetes.org/diapro/glucose_calc</a></span>
+<span lang="en-US">for a calculator.</span></p>
+<p><span lang="en-US">It is shown here in</span> <span lang="en-US">case
+people are looking for the value shown in Abbott's Libre</span> <span lang="en-US">2
+app. GMI is a 2018 replacement for this indicator. </span>
+</p>
+<h3 class="western">Glucose Management Indicator (GMI)</h3>
+<p><span lang="en-US">Calculated from the average glucose with a
+certain generally used formula (see <a href="https://www.jaeb.org/gmi/">https://www.jaeb.org/gmi/</a>).
+It is an empirically determined prediction of HbA1c (also called
+A1c), given in percentage and mmol/mol.</span> <span lang="en-US">For
+me personally Estimated A1C is a better predictor than GMI, but it is
+used in Abbott's Libre 3 app.</span></p>
+<h3 class="western">Glucose Variability:</h3>
+<p>The coefficient of variation (%CV), as a measure of glucose
+variability. Higher values mean that the glucose level is less
+constant.</p>
+<h3 class="western">Summary graph</h3>
+<p>(Only present when at least 9 days of stream glucose values are
+available).</p>
+<p>All stream glucose values in this period are taken to draw a
+composite graph showing for every minute of the day how glucose
+values were distributed. The black or white median line shows the
+glucose value below which 50 percent of the glucose values lie at
+each minute of the day. The lightest blue is the area in which all
+values lie. Somewhat darker blue the area around the median wherein
+90% of the values lie. The darkest blue the area around the median of
+50 percent of the values. If you see the borders of the area's as
+lines, you can also portray it as follows: Under the lowest line are
+0% of the values, under the second lowest line (between the lightest
+blue and the middle dark blue) 5% of the values, below the third line
+(between the darkest blue and middle dark blue) 25 % of values, below
+the black line 50% of values. Followed by 75%, 95% and 100%. 
+</p>
+<p>Out of aesthetic reasons the curve is smoothed with a binomial
+filter.</p>
+<p>Tap the screen to close the Summary graph, except that when
+tapping the left or right border the graph moves backwards or
+forwards in the day. The curve can also be moved back and forwards by
+scrolling. The time scale can be changed by moving two fingers to or
+from each other.</p>
+</body>
+</html>

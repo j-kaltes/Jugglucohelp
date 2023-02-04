@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 7.4.3.2 (Linux)"/>
+	<meta name="created" content="2022-07-27T16:54:58.641943113"/>
+	<meta name="changed" content="2023-01-14T14:33:29.854779216"/>
+	<style type="text/css">
+		@page { size: 8.27in 11.69in; margin: 0.79in }
+		h1 { margin-bottom: 0.08in; background: transparent }
+		h1.western { font-family: "Liberation Serif", serif }
+		h1.cjk { font-family: "Noto Serif CJK SC"; font-size: 24pt }
+		h1.ctl { font-family: "Mangal"; font-size: 24pt }
+		p { line-height: 115%; margin-bottom: 0.1in; background: transparent }
+		a:link { so-language: zxx }
+	</style>
+</head>
+<body lang="nl-NL" dir="ltr"><h1 class="western">Sensor</h1>
+<p style="line-height: 100%; margin-bottom: 0in">Dit schermpje geeft
+informatie over de Bluetooth connectie met sensoren en kan gebruikt
+worden om de oorzaak van connectie problemen op de sporen. 
+</p>
+<p style="line-height: 100%; margin-bottom: 0in">Bluetooth moet
+aanstaan. Juggluco kan pas contact maken met een sensor nadat de
+sensor succesvol is gescand. Het kan zijn dat een sensor onvindbaar
+is omdat het al een connectie heeft met LibreLink of Freestyle
+Reader. Om die reden moet in Freestyle Reader glucose alarmen afgezet
+worden en Librelink gestopt worden met “<i>Stop forceren</i>” in
+App-info (vooral belangrijk in het begin).</p>
+<p style="line-height: 100%; margin-bottom: 0in"><b>Sensor via
+Bluetooth/Gebruik Bluetooth</b> moet aanstaan.</p>
+<p style="line-height: 100%; margin-bottom: 0in">Als de bovenstaande
+voorwaarden voldaan zijn, kan het nog steeds lang duren voordat
+Juggluco, glucose waarden ontvangt van de sensor. Vaak duurt het iets
+langer dan een minuut, maar op andere momenten duurt het veel langer.</p>
+<p style="line-height: 100%; margin-bottom: 0in">Meestal bestaan er
+gedurende enige tijd connectie problemen met status=133. Dit betreft
+<a href="https://developer.android.com/reference/android/bluetooth/BluetoothGattCallback#onConnectionStateChange(android.bluetooth.BluetoothGatt,%20int,%20int)">onConnectionStateChange(BluetoothGatt
+bluetoothGatt, int status, int newState)</a>. Als je de batterij uit
+de sensor haalt krijg je ook deze fout, dus het betekent zoiets als
+“<i>Bluetooth apparaat niet gevonden</i>”. Een paar minuten
+wachten helpt meestal. Soms help Bluetooth uit en aanzetten. De
+sensor scannen helpt soms ook. In zeldzame gevallen moet de telefoon
+gereboot worden of Bluetooth even uitgezet worden in andere
+apparaten.</p>
+<p style="line-height: 100%; margin-bottom: 0in">Als een nieuw
+geïnitialiseerde sensor wel getoond wordt, maar er na 10 minuten
+helemaal geen connectie informatie getoond wordt, kan het zijn dat er
+een minuut er voor opnieuw begonnen is door het heropstarten van
+Juggluco of het opnieuw aanzetten van Streaming. Als dat niet het
+geval is, lijkt het er op dat er helemaal geen connectie gezocht
+wordt met de sensor. Bluetooth uit- en aanzetten en/of scannen kan
+helpen. Als het om een WearOS horloge gaat, kun je het beste proberen
+de verbonden smartphone een connectie te laten vormen. Je kunt ook
+proberen of een stop forceren en herstarten van Juggluco werkt.</p>
+<p style="line-height: 100%; margin-bottom: 0in">De sensor scannen
+met Juggluco (met <i>Sensor via Bluetooth</i> aan) op een andere
+telefoon of het initialiseren van de sensor met de patched DE
+Librelink of US Libre 2 app, zorgt dat de authenticatie informatie
+nodig voor contact met de sensor verandert en de eerste Juggluco geen
+Bluetooth connectie met de sensor meer kan vormen. Door de sensor
+weer een aantal malen te scannen na zo’n mislukte connectie poging,
+kan Juggluco weer een connectie vormen met de sensor.</p>
+<p style="line-height: 100%; margin-bottom: 0in"><b>Doze mode</b>
+brengt je naar een schermpje dat uitlegt hoe je kan voorkomen dat
+Androids batterij besparende maatregelen Juggluco’s functioneren
+onmogelijk maken.</p>
+<p style="line-height: 100%; margin-bottom: 0in"><b>Toestemming</b>:
+Eerdere versies van Juggluco hadden een locatie machtiging nodig om
+te zoeken naar het Bluetooth device adres van sensoren. Dit is niet
+meer noodzakelijk, maar je kunt Juggluco nog steeds die toestemming
+geven en onder Android 6 en 7 werkt het nog op de oude manier.</p>
+<p style="line-height: 100%; margin-bottom: 0in">Het device adres
+wordt getoond na de sensor naam. Rode letters betekent dat het een
+niet Europese FreeStyle Libre 2 sensor is zoals die gebruikt wordt in
+de Verenigde Staten, Canada en Australië.</p>
+<p style="line-height: 100%; margin-bottom: 0in">Als het device adres
+bekend is, heb je niets aan een locatie machtiging.</p>
+<p style="line-height: 100%; margin-bottom: 0in">Android 12 heeft een
+nieuwe “<i>Apparaten in de buurt</i>” machtiging, die gebruikt
+wordt in plaats van de locatie machtiging, maar ook nodig is voor
+later contact met de sensor.</p>
+<p style="line-height: 100%; margin-bottom: 0in"><i><b>Wakelock</b></i>:
+Sommige gebruikers met Android 13 klagen over connectie problemen. 
+Misschien help dit hen. Op mijn smartphone heb ik het niet nodig en
+op Watch 4 lijkt het geen positief effect te hebben. Het Accu gebruik
+zal hierdoor toenemen.</p>
+<p style="line-height: 100%; margin-bottom: 0in"><b>Vergeet</b>:
+Vergeet het device adres en zoek er naar door Bluetooth apparaten in
+de buurt te scannen zoals Librelink dat overal doet op de Libre 2 app
+in de Verenigde Staten na. Dit vergt een locatie machtiging op
+Android 6-11. Je moet op deze knop drukken als je gelooft dat Abbott
+overal behalve in de Verenigde Staten gelijk heeft.</p>
+<p style="line-height: 100%; margin-bottom: 0in"><b>Reenable</b>:
+Re-enable streaming. Als je op deze knop drukt, wordt er nieuwe
+sensor authenticatie informatie gemaakt bij de volgende keer scannen.
+Het device adres wordt dan opgeslagen.</p>
+<p style="line-height: 100%; margin-bottom: 0in"><b>Turbo</b>: Als
+dit aanstaat, krijgt de verbinding met de sensor een hogere voorrang.
+Dit moet leiden tot minder verbindingsfouten, maar zou meer stroom
+kunnen gebruiken. Lijkt nodig te zijn op Watch4 met Freestyle Libre 2
+sensoren, maar niet met Freestyle Libre 3 sensoren en ook niet op de
+smartphones die ik uitgeprobeerd heb.</p>
+</body>
+</html>

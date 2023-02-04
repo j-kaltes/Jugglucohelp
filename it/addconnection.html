@@ -1,0 +1,168 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=windows-1252">
+	<TITLE></TITLE>
+	<META NAME="GENERATOR" CONTENT="OpenOffice 4.1.12  (Win32)">
+	<META NAME="CREATED" CONTENT="0;0">
+	<META NAME="CHANGEDBY" CONTENT="Matteo Gabriele">
+	<META NAME="CHANGED" CONTENT="20220530;18455622">
+	<META NAME="CHANGEDBY" CONTENT="Matteo Gabriele">
+	<META NAME="CHANGEDBY" CONTENT="Matteo Gabriele">
+	<STYLE TYPE="text/css">
+	<!--
+		@page { size: 21.01cm 29.69cm; margin: 2.01cm }
+		P { margin-bottom: 0.25cm; background: transparent }
+	-->
+	</STYLE>
+</HEAD>
+<BODY LANG="it-IT" DIR="LTR">
+<P ALIGN=CENTER STYLE="margin-top: 0.43cm; margin-bottom: 0.51cm; background: transparent; page-break-after: avoid">
+<FONT FACE="Liberation Sans, sans-serif"><FONT SIZE=6 STYLE="font-size: 28pt"><B>Aggiungere
+una connessione</B></FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm; line-height: 100%">Stabilire una
+connessione con un'altra istanza di Juggluco. Juggluco installato su
+un dispositivo pu&ograve; inviare dati via IP/TCP ad un altro
+dispositivo. Per stabilire una connessione, una delle due
+applicazioni Juggluco deve essere in ascolto su una porta e l'altra
+deve poter contattarlo sulla stessa porta. La porta dell'istanza in
+ascolto &egrave; mostrata nella precedente schermata (menu
+sinistra-centro &rarr; Mirror). Qui si pu&ograve; specificare la
+porta da contattare dell'istanza di Juggluco se &egrave; attivo un
+contatto con essa. Se l'istanza di Juggluco non riesce ad ascoltare
+su una determinata porta, selezionare &ldquo;<B>Active only</B>&rdquo;.
+Se l'altra parte non riesce a contattare la porta, selezionare
+&ldquo;<B>Passive only</B>&rdquo;, in alternative lasciare &ldquo;<B>Entrambi</B>&rdquo;
+selezionato su entrambi. L'istanza di Juggluco dall'altra parte
+dovrebbe avere <SPAN STYLE="text-decoration: none"><I>Passive only</I></SPAN>
+selezionato se l'altra istanza ha selezionato <I>Active Only</I>.
+Viceversa se un'istanza di Juggluco ha <I>Active Only</I>, l'altra
+dovr&agrave; avere <I>Passive Only</I>. Se una delle due ha invece
+<I>Entrambi</I>, anche l'altra dovr&agrave; avere <I>Entrambi</I>
+selezionato.</P>
+<P STYLE="margin-bottom: 0cm; line-height: 100%">Nell'istanza di
+Juggluco che deve stabilire un contatto, va specificato l'IP (o gli
+IP) da contattare. Se l'host ha IP multipli, si pu&ograve;
+specificarne pi&ugrave; di uno; per esempio quando due dispositivi
+sono alternativamente connessi tramite una rete casalinga oppure
+tramite una connessione diretta come pu&ograve; essere un hotspot
+portatile. Mai specificare gli IP di pi&ugrave; dispositivi, in
+questo caso questi riceveranno solo una parte dei dati trasmessi.</P>
+<P STYLE="margin-bottom: 0cm; line-height: 100%">In tutti I casi
+eccetto 'Active only', &egrave; possibile selezionare '<B>Rileva</B>';
+in questo caso Juggluco salver&agrave; il primo IP da cui riceve il
+contatto del dispositivo dall'altra parte.</P>
+<P STYLE="margin-bottom: 0cm; line-height: 100%">Verificare se il
+dispositivo sta tentando la corretta connessione pu&ograve; essere
+fatto in due modi: Selezionare '<B>Test IP</B>' per provare appunto
+l'IP. Selezionando <B>Test Label</B><SPAN STYLE="font-weight: normal">,
+il contatto verr&agrave; stabilito solo se entrambi avranno la stessa
+label.</SPAN></P>
+<P STYLE="margin-bottom: 0cm; line-height: 100%"><SPAN STYLE="font-weight: normal">Selezionare
+</SPAN><B>ricevi da</B> <SPAN STYLE="font-weight: normal">se si vuole
+che l'app funga da mirror app.</SPAN></P>
+<P STYLE="margin-bottom: 0cm; line-height: 100%"><SPAN STYLE="font-weight: normal">Se
+invece si vuole che il dispositivo sia il </SPAN><B>trasmettitore</B>
+<SPAN STYLE="font-weight: normal">di dati, va specificato quali dati
+inviare:</SPAN></P>
+<P STYLE="margin-bottom: 0cm; line-height: 100%"><B>Valori</B>: dati
+di unit&agrave;, cibo e sport specificati.</P>
+<P STYLE="margin-bottom: 0cm; line-height: 100%"><B>Scansioni</B>: I
+dati ricevuti dalla scansione del lettore (scansione e storico).</P>
+<P STYLE="margin-bottom: 0cm; line-height: 100%"><B>Flusso</B>: I
+dati ricevuti via Bluetooth.</P>
+<P STYLE="margin-bottom: 0cm; line-height: 100%">Pu&ograve; capitare
+che dei dati siano gi&agrave; presenti sul dispositivo ricevitore. Si
+pu&ograve; specificare fino a quando mantenere questi dati:</P>
+<P STYLE="margin-bottom: 0cm; line-height: 100%"><I>Inizio</I>:
+nessun dato presente</P>
+<P STYLE="margin-bottom: 0cm; line-height: 100%"><I>Ora</I>: tutti I
+dati presenti</P>
+<P STYLE="margin-bottom: 0cm; line-height: 100%">Oppure specificare
+una data specifica dipendentemente dalla posizione di inizio della
+schermata.</P>
+<P STYLE="margin-bottom: 0cm; line-height: 100%">Quando una sorgente
+dati viene aggiunta ad una connessione esistente, la data di start
+determina solo la data iniziale da cui poi aggiungere dati
+successivi. Per esempio se Scansioni e Flusso sono trasmessi entrambi
+all'host, e Valori viene aggiunta in un secondo momento, la data di
+start determina solo la finestra temporale dei dati da inviare di
+Valori.</P>
+<P STYLE="margin-bottom: 0cm; line-height: 100%">In caso due
+dispositivi siano connessi tramite una connessione non sicura, I dati
+saranno criptati attraverso l'uso di una <B>password</B> <SPAN STYLE="font-weight: normal">(massimo16
+caratteri).</SPAN></P>
+<P STYLE="margin-bottom: 0cm; line-height: 100%">Selezionare <B>Salva</B>
+<SPAN STYLE="font-weight: normal">per salvare le impostazioni
+modificate. </SPAN><B>Cancella </B><SPAN STYLE="font-weight: normal">canceller&agrave;
+la connessione aperta.</SPAN></P>
+<P STYLE="margin-bottom: 0cm; font-weight: normal; line-height: 100%">
+Nella situazione pi&ugrave; semplice tutte le connessioni passano per
+la rete casalinga, cos&igrave; baster&agrave; usare gli IP locali. Si
+pu&ograve; connettere via internet tramite Wi-Fi, in questo caso si
+deve consultare il manuale del modem su come impostare il firewall
+per reindirizzare una connessione dall'esterno ad un IP ed una porta
+all'interno della rete casalinga.</P>
+<P STYLE="margin-bottom: 0cm; font-weight: normal; line-height: 100%">
+Due smartphone connessi via dati mobili su internet possono essere
+direttamente connessi tra loro se uno di loro pu&ograve; mettersi in
+ascolto su una porta della rete mobile. Se nessuno dei due pu&ograve;
+(per esempio non hanno IP statici) possono essere messi in ascolto
+tramite un dispositivo terzo. Una possibilit&agrave; &egrave; di
+avviare Juggluco su un vecchio dispositivo Android (minimo Android
+4.4) a casa e connesso a internet tramite il modem. Un'altra
+possibilit&agrave; &egrave; di avviare tramite riga di comando
+Juggluco su un computer (es. Un PC su Amazon AWS):</P>
+<P STYLE="margin-bottom: 0cm; line-height: 100%"><A HREF="http://jkaltes.byethost16.com/Juggluco/cmdline/index.html"><SPAN LANG="it-IT">http://jkaltes.byethost16.com/Juggluco/cmdline/index.html</SPAN></A></P>
+<P STYLE="margin-bottom: 0cm; line-height: 100%">Guida sul
+reindirizzamento delle porte:</P>
+<P STYLE="margin-bottom: 0cm; line-height: 100%"><A HREF="https://portforward.com/how-to-port-forward/"><SPAN LANG="it-IT">https://portforward.com/how-to-port-forward/</SPAN></A></P>
+<P STYLE="margin-bottom: 0cm; line-height: 100%"><A HREF="https://stevessmarthomeguide.com/understanding-port-forwarding/"><SPAN LANG="it-IT">https://stevessmarthomeguide.com/understanding-port-forwarding/</SPAN></A></P>
+<P STYLE="margin-bottom: 0cm; line-height: 100%">E' possibile
+ricevere I dati del glucosiovia Bluetooth su un dispositivo senza
+NFC: inizializzare il sensore con un dispositivo con NFC e poi
+inviare Scansioni e Flusso sull'altro senza NFC.</P>
+<P STYLE="margin-bottom: 0cm; line-height: 100%"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm; line-height: 100%">Da questo momento
+per invertire la connessione per dati Flusso, spegnere il Bluetooth
+nel dispositivo con NFC e attivarlo su quello senza NFC, inoltre
+sempre su quello con NFC sar&agrave; sufficiente spegnere l'opzione
+&ldquo;sensore via Bluetooth&rdquo; e attivare la stessa opzione su
+quello senza NFC. Facendo cos&igrave; si potr&agrave; scansionare con
+un nuovo dispositivo e ricevere I valori di glucosio tramite
+Bluetooth su un altro dispositivo. Per&ograve; su tutti I dispositivi
+tutti I sensori devono essere disponibili. Quindi si devono sempre
+inviare I dati Flusso al dispositivo con NFC e I dati Scansioni a
+quello senza NFC. Altrimenti I dati rimarranno fuori dalla
+sincronizzazione mantenendo quelli vecchi che non verranno
+sovrascritti dai nuovi.</P>
+<P STYLE="margin-bottom: 0cm; line-height: 100%">I dati di Valori
+invece sono completamente indipendenti.</P>
+<P STYLE="margin-bottom: 0cm; line-height: 100%"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm; line-height: 100%"><FONT FACE="Liberation Sans, sans-serif"><FONT SIZE=4>Problemi
+di rete</FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm; line-height: 100%"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm; line-height: 100%">Una stretta e
+puntuale impostazione della connessione dei dispositivi &egrave;
+necessaria. Una singola omissione pu&ograve; rendere la trasmissione
+impossibile.</P>
+<P STYLE="margin-bottom: 0cm; line-height: 100%">E' possibile che la
+connessione cada, in questo caso &egrave; necessario spegnere e
+riaccendere il WIFI oppure riavviare Juggluco. Volendo, si pu&ograve;
+switchare sulle connessioni le modalit&agrave; <I>activeonly-passiveonly</I>
+<SPAN STYLE="font-style: normal">su </SPAN><I>Entrambi</I><SPAN STYLE="font-style: normal">.
+Questo potrebbe risolvere.</SPAN></P>
+<P STYLE="margin-bottom: 0cm; font-style: normal; line-height: 100%">Per
+esempio uno smartwatch connesso utilizzando una connessione TCP su
+Bluetooth pu&ograve; funzionare solo se l'orologio &egrave; in
+modalit&agrave; activeonly e lo smartphone passiveonly. Tramite WIFI
+funzioner&agrave; in entrambi I modi.</P>
+<P STYLE="margin-bottom: 0cm; font-style: normal; line-height: 100%">Si
+deve considerare anche l'ipotesi di cambiare l'IP col cambio di
+connessione. Questo perch&egrave; possono essere usati IP differenti
+in una rete casalinga piuttosto che con un hostpot portatile.</P>
+</BODY>
+</HTML>

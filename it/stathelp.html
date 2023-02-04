@@ -1,0 +1,92 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=windows-1252">
+	<TITLE>Statistics</TITLE>
+	<META NAME="GENERATOR" CONTENT="OpenOffice 4.1.12  (Win32)">
+	<META NAME="CREATED" CONTENT="0;0">
+	<META NAME="CHANGEDBY" CONTENT="Matteo Gabriele">
+	<META NAME="CHANGED" CONTENT="20220530;19240105">
+	<META NAME="CHANGEDBY" CONTENT="Matteo Gabriele">
+	<META NAME="created" CONTENT="00:00:00">
+	<META NAME="changed" CONTENT="2022-02-11T16:50:40.959959082">
+	<META NAME="created" CONTENT="00:00:00">
+	<META NAME="created" CONTENT="00:00:00">
+	<META NAME="created" CONTENT="00:00:00">
+	<META NAME="created" CONTENT="00:00:00">
+	<META NAME="created" CONTENT="00:00:00">
+	<STYLE TYPE="text/css">
+	<!--
+		@page { size: 21.01cm 29.69cm; margin-left: 2.01cm; margin-right: 0.99cm; margin-top: 0.99cm; margin-bottom: 0.99cm }
+		P { margin-bottom: 0.25cm; background: transparent; line-height: 115% }
+		H1 { margin-bottom: 0.2cm; background: transparent }
+		H1.western { font-family: "Liberation Serif", serif }
+		H1.cjk { font-family: "Noto Serif CJK SC" }
+		H1.ctl { font-family: "Mangal" }
+		H3 { margin-top: 0.25cm; margin-bottom: 0.2cm; background: transparent }
+		H3.western { font-family: "Liberation Serif", serif }
+		H3.cjk { font-family: "Noto Serif CJK SC" }
+		H3.ctl { font-family: "Mangal" }
+		A:link { so-language: zxx }
+	-->
+	</STYLE>
+</HEAD>
+<BODY LANG="it-IT" DIR="LTR">
+<H1 CLASS="western">Statistiche</H1>
+<P><SPAN LANG="it-IT">Alcune statistiche sono prese da <A HREF="https://www.healthline.com/diabetesmine/ambulatory-glucose-profile">AGP</A>
+senza licenza, con qualche piccola modifica.</SPAN></P>
+<P>Il numero di giorni analizzato pu&ograve; essere modificato
+premendo il bottone <B>Giorni</B><SPAN STYLE="font-weight: normal">.
+Il periodo terminer&agrave; con il valore di fine della posizione
+dello schermo. Tutti I dati sono basati solo sul valore di glucosio
+ricevuto ogni minuto via Bluetooth dal sensore (chiamato </SPAN><I><SPAN STYLE="font-weight: normal">Flusso</SPAN></I>
+<SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">in
+Juggluco).</SPAN></SPAN></P>
+<P STYLE="font-style: normal; font-weight: normal">Sulla sinistra
+dello schermo c'&egrave; la percentuale di misure che ricadono in un
+determinato range.</P>
+<H3 CLASS="western">% di tempo attivo</H3>
+<P>La percentuale di tempo in cui Juggluco ha ricevuto I valori dal
+sensore.</P>
+<H3 CLASS="western">A1C stimata</H3>
+<P><SPAN LANG="it-IT">Stima l'HbA1c con una vecchia formula basata
+sulla media glicemica (Nathan et al (2008)). Vedi
+<A HREF="https://professional.diabetes.org/diapro/glucose_calc">https://professional.diabetes.org/diapro/glucose_calc</A>
+per il calcolatore.</SPAN></P>
+<P>Questo valore viene mostrato perch&egrave; c'&egrave; chi &egrave;
+abituato ad esso nell'app ufficiale del Libre 2. Dal 2018 il GMI ha
+rimpiazzato questo indicatore.</P>
+<H3 CLASS="western">Glucose Management Indicator (GMI)</H3>
+<P><SPAN LANG="it-IT">E' calcolato dalla media glicemica con una
+certa formula particolare (see <A HREF="https://www.jaeb.org/gmi/">https://www.jaeb.org/gmi/</A>).
+E' una predizione empirica dell'HbA1c (anche chiamata A1c),
+restituita in percentuale e in mmol/mol. Personalmente credo che la
+A1C stimata sia un predittore migliore del GMI, ma tanto per dire nel
+Libre 3 verr&agrave; usato solo il GMI.</SPAN></P>
+<H3 CLASS="western">Variabilit&agrave; del glucosio:</H3>
+<P>Il coefficiente di variazione (%CV), come misura della variabilit&agrave;
+del glucosio. Alti valori significano che il livello del glucosio &egrave;
+poco costante.</P>
+<H3 CLASS="western">Grafico di sommario</H3>
+<P>Tutti I valori di Flusso del glucosio sono presi e usati per
+comporre un grafico che mostra per ogni minuto del giorno come I
+valori sono distribuiti. La linea mediana nera mostra I valori sotto
+al 50 percento dei valori di tutto il giorno. L'area blu chiara &egrave;
+l'area in cui si trovano tutti I valori. Da qualche parte ci sar&agrave;
+un'area blu leggermente pi&ugrave; scura che rappresenta la mediana
+in cui trovare il 90% percento di tutti I valori. L'area blu ancora
+pi&ugrave; scura ne rappresenta il 50%. Se vedi I bordi delle area
+come linee: sotto la la linea pi&ugrave; bassa ci sono lo 0% dei
+valori, sotto la seconda pi&ugrave; bassa (tra l'area blu chiara e
+quella mediamente pi&ugrave; scura) il 5% dei valori, sotto la terza
+linea (tra quella mediamente scura e quella pi&ugrave; scura) il 25%,
+infine sotto alla nera il restante 50%. A seguire 75%, 95% e 100%.</P>
+<P>Per questioni estetiche le curve sono smussate usando un filtro
+binomiale.</P>
+<P>Premere sullo schermo per chiudere il grafico di sommario, eccetto
+la zona al bordo sinistro e a quello destro che permette di andare
+avanti e indietro nei giorni. La curva pu&ograve; anche muoversi
+scrollando. La scala del tempo pu&ograve; essere cambiata muovendo
+due dita una verso l'altra.</P>
+</BODY>
+</HTML>

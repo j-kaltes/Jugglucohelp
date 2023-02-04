@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 7.4.0.3 (Linux)"/>
+	<meta name="created" content="2022-07-29T11:36:48.688428529"/>
+	<meta name="changed" content="2022-10-01T10:55:02.857641643"/>
+	<style type="text/css">
+		@page { margin: 0.79in }
+		p { line-height: 115%; margin-bottom: 0.1in }
+		h2.western { font-family: "Liberation Sans", sans-serif; font-size: 16pt }
+		h2.cjk { font-family: "Noto Serif CJK SC"; font-size: 16pt }
+		h2.ctl { font-family: "Mangal"; font-size: 16pt }
+		a:link { so-language: zxx }
+	</style>
+</head>
+<body lang="nl-NL" dir="ltr"><h1>Horloges</h1>
+<p style="line-height: 100%; margin-bottom: 0in">Op verschillende
+manieren kunnen stream glucose waarden van Juggluco naar horloges
+verzonden en daarop weergegeven worden.</p>
+<h2 class="western">Melding</h2>
+<p style="line-height: 100%; margin-bottom: 0in">Als <i>Melding</i>
+in het linker middel menu van Juggluco aanstaat, wordt er bij het
+binnenkomen van elke glucose waarde een Android melding gemaakt die
+naar sommige horloges wordt doorgezonden. Hiervoor moet in de app
+behorende bij het horloge ingesteld zijn dat het meldingen van
+Juggluco door moet zenden naar het horloge. Dit werkt op Garmin
+Vivoactive3, maar niet op Samsung Galaxy Watch4, waarschijnlijk omdat
+het een <span lang="en-US">ongoing notification</span> betreft.</p>
+<h2 class="western">Kerfstok</h2>
+<p style="line-height: 100%; margin-bottom: 0in">Kerfstok is een
+horloge app voor sommige Garmin horloges waarmee je nummers kunt
+invoeren (bijvoorbeeld insuline doses), maar ook de huidige stream
+glucose waarde weergeeft. Zie Watch→Kerfstok status → Help en
+<a href="http://jkaltes.byethost16.com/Kerfstok">http://jkaltes.byethost16.com/Kerfstok</a></p>
+<h2 class="western">xDrip horloge apps</h2>
+<p>Juggluco bevat een xDrip webserver. Dit maakt het mogelijk horloge
+apps voor xDrip direct met Juggluco te gebruiken. Je kunt ook de
+glucose waarden eerst naar xDrip en dan naar het horloges zenden,
+maar omdat xDrip haar glucose waarde slechts elke 5 minuten
+vernieuwt, worden dan maximaal 6 minute oude waarden naar het horloge
+gezonden, terwijl als het horloge direct met Juggluco verbonden is de
+waarden maximaal 1 minuut oud zijn (als er geen connectie problemen
+of zo optreden). Juggluco zendt altijd de recentste glucose waarden,
+maar die worden enkel naar de xDrip horloge app verzonden nadat die
+er om gevraagd heeft. Watch faces en data fields op <b>Garmin</b>
+horloges vragen elke 5 minute naar een glucose waarden omdat Garmin
+een hogere update frequentie niet toelaat. Via xDrip kon dat er toe
+leiden dat een 10 minute oude glucose waarden getoond werd. Direct
+verbonden aan Juggluco zijn die waarden maximaal 6 minuten oud (als
+alles goed gaat). Als je een programmeerbare Garmin horloge hebt
+waarop Kerfstok niet werkt omdat het geen touchscreen heeft, bestaan
+er de volgende mogelijkheden om toch een niet al te oude glucose
+waarden op je horloge te zien. Een xDrip widget
+(<a href="https://apps.garmin.com/en-US/apps/73115e04-dc9f-4765-ad88-e7ae283ce995">https://apps.garmin.com/en-US/apps/73115e04-dc9f-4765-ad88-e7ae283ce995</a>)
+vertoont direct na het opstarten altijd de meest recente waarde en
+kan ook tijdens het draaien van een sport activiteit horloge app
+gestart worden. Dus als je instaat bent tijdens het sporten even die
+widget te starten, kun je de meest recente glucose waarde zien. Een
+andere mogelijkheid is een xDrip sport app
+(<a href="https://apps.garmin.com/en-US/apps/aaf6533b-bca1-4365-9131-9f882f6f148c">https://apps.garmin.com/en-US/apps/aaf6533b-bca1-4365-9131-9f882f6f148c</a>)
+te gebruiken en die zo op te starten dat het moment waarop het de
+glucose waarden opvraagt net na het binnenkomen van een nieuwe
+glucose waarden bij Juggluco is. Volgens een gebruiker bestaat er ook
+een wijzerplaat (watch face) for <b>Fitbit</b> horloges dat werkt met
+de xDrip webserver: <a href="https://glancewatchface.com/">https://glancewatchface.com</a></p>
+<p><b>local only</b>: server accepteert enkel verbindingen van
+localhost (127.0.0.1). Als je het uitzet kunnen ook andere hosts
+gebruik maken van de server. Als de firewall van je thuis netwerk
+niet zo geconfigureerd is, dat het binnenkomende verbindingen met
+port 17580 van je smartphone verbindt, zullen enkel leden van je
+thuis netwerk een verbinding kunnen vormen.</p>
+<p>Voor meer informatie over de xDrip webserver interface, zie
+<a href="http://jkaltes.byethost16.com/Juggluco/addwatch.html">http://jkaltes.byethost16.com/Juggluco/addwatch.html</a></p>
+<h2 class="western">Juggluco voor WearOS</h2>
+<p>Er bestaat een port van Juggluco die draait op WearOS. Het is
+aangepast aan het kleinere scherm en een wijzerplaat (watch face) is
+toegevoegd, waarop de stream glucose waarde getoond wordt.</p>
+<p><br/>
+<br/>
+
+</p>
+<p><br/>
+<br/>
+
+</p>
+</body>
+</html>

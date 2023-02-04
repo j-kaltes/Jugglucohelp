@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 7.4.3.2 (Linux)"/>
+	<meta name="created" content="2021-09-11T17:23:06.572014143"/>
+	<meta name="changed" content="2023-01-16T17:26:47.924267332"/>
+	<style type="text/css">
+		@page { size: 8.27in 11.69in; margin: 0.79in }
+		p { margin-bottom: 0.1in; background: transparent }
+	</style>
+</head>
+<body lang="en-US" dir="ltr"><h1>Sensor</h1>
+<p style="line-height: 100%; margin-bottom: 0in">The spinner contains
+the name of the sensor. If Juggluco is using more than one sensor at
+the same time, you can select for which sensor to show information.</p>
+<p style="line-height: 100%; margin-bottom: 0in"><i><b>Doze mode</b></i>
+leads you to a screen with information on how to disable battery
+optimizations for Juggluco, that can prevent Juggluco from
+functioning.</p>
+<p style="line-height: 100%; margin-bottom: 0in"><i><b>Permission</b></i>:
+Previous versions of Juggluco required location permission to find
+the device address of the sensor. This is no longer necessary for the
+sensors I use. Maybe there are still sensors out there for which it
+is necessary; in that case you can turn it on. After the first
+contact Juggluco saves the device address and location permission is
+always useless. The device address, if known, is displayed after the
+sensor identifier. Red means a US-like sensor.</p>
+<p style="line-height: 100%; margin-bottom: 0in">Android 12 has a new
+Nearby devices permission, which can be used instead of location
+permission for searching for a Bluetooth device address, but it is
+also needed for later contact with Bluetooth devices.</p>
+<p style="line-height: 100%; margin-bottom: 0in"><i><b>Wakelock</b></i>:
+Some users of Android 13 complain that Bluetooth stops functioning.
+Possibly turning this option on helps them. On my smartphone I don't
+need it and on Watch4 it doesn't make a difference. If it works, it
+will increase battery usage.</p>
+<p style="line-height: 100%; margin-bottom: 0in"><i><b>Forget</b></i>:
+Forgets the device address and search for it by scanning for
+Bluetooth devices like Librelink does everywhere except in the USA.
+For this you need Location permission on Android 6 to 11. On Android
+12 you require Nearby devices permission. You should press this
+button if you believe that Abbott was right everywhere except in the
+USA.</p>
+<p style="line-height: 100%; margin-bottom: 0in"><i><b>Reenable</b></i>:
+Re-enable streaming. New authentication information is created to
+communicate with the sensor. The device address will be set. Takes
+effect after scanning the sensor.</p>
+<p style="line-height: 100%; margin-bottom: 0in"><i><b>Turbo</b></i>:
+Increases effort to contact with sensor in the hope that it results
+in less connection errors, but can uses more battery power. Seems to
+be needed on Watch4 with Freestyle Libre 2 sensors, but not with
+Freestyle Libre 3 sensors and on none of the smartphones I tried it
+on.</p>
+<p style="line-height: 100%; margin-bottom: 0in"><i><b>Info</b></i>:
+Gives start and end times and last scan and stream times of sensor.</p>
+<p style="line-height: 100%; margin-bottom: 0in"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in">To connect to a
+Freestyle Libre 2 sensor via Low Energy Bluetooth, Bluetooth should
+be turned on. Before the sensor is scanned successfully by this app,
+nothing will happen. The sensor shouldn't be connected with FreeStyle
+Libre reader or other applets on smartphones. Abbotts Librelink app's
+alarms should be turned off or the app stopped. Some Librelink apps
+seem to contact the sensor while alarms are turned off and can cause
+connection problems, so use '<i>force stop</i>' to be certain. <b>Sensor
+via Bluetooth/Use Bluetooth</b> should be turned on.</p>
+<p style="line-height: 100%; margin-bottom: 0in">If the above
+conditions are satisfied, it can still take a long time before the
+app receives glucose values from the sensor. Often it takes a minute,
+but at other times it takes much longer. The <i>Connection stage</i>
+gives the most difficulties. The most frequent are failures with
+status=133, which is the status argument of
+<a href="https://developer.android.com/reference/android/bluetooth/BluetoothGattCallback#onConnectionStateChange(android.bluetooth.BluetoothGatt,%20int,%20int)">onConnectionStateChange(BluetoothGatt
+bluetoothGatt, int status, int newState)</a>. If you remove the
+battery out of a sensor you also get this error, so it seems to be
+something like <i>Bluetooth device not found</i>. Sometimes turning
+Bluetooth off and on seems to help or rebooting the phone or turning
+off the Bluetooth connection of other devices. Other problems are
+sometimes resolved by scanning the sensor.</p>
+<p style="line-height: 100%; margin-bottom: 0in">Scanning the sensor
+with Juggluco (with <i>Sensor via Bluetooth</i> enabled) on another
+phone, will steal the connection away from this phone and it can take
+some time, with scanning in between, to get it back again.</p>
+<p style="line-height: 100%; margin-bottom: 0in"><br/>
+
+</p>
+</body>
+</html>

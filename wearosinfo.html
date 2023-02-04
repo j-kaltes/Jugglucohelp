@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 7.4.4.2 (Linux)"/>
+	<meta name="created" content="00:00:00"/>
+	<meta name="changed" content="2023-01-25T12:36:02.582678174"/>
+	<meta name="created" content="00:00:00">
+	<meta name="created" content="00:00:00">
+	<meta name="created" content="00:00:00">
+	<meta name="created" content="00:00:00">
+	<meta name="created" content="00:00:00">
+	<meta name="created" content="00:00:00">
+	<meta name="created" content="00:00:00">
+	<meta name="created" content="00:00:00">
+	<meta name="created" content="00:00:00">
+	<meta name="created" content="00:00:00">
+	<meta name="created" content="00:00:00">
+	<meta name="created" content="00:00:00">
+	<meta name="created" content="00:00:00">
+	<style type="text/css">
+		@page { size: 8.27in 11.69in; margin-left: 0.79in; margin-right: 0.39in; margin-top: 0.39in; margin-bottom: 0.39in }
+		h1 { margin-bottom: 0.08in; background: transparent }
+		h1.western { font-family: "Liberation Serif", serif }
+		h1.cjk { font-family: "Noto Serif CJK SC" }
+		h1.ctl { font-family: "Mangal" }
+		p { margin-bottom: 0.1in; background: transparent }
+		h5 { margin-top: 0.08in; margin-bottom: 0.04in; background: transparent }
+		h5.western { font-family: "Liberation Serif", serif }
+		h5.cjk { font-family: "Noto Serif CJK SC" }
+		h5.ctl { font-family: "Mangal" }
+	</style>
+</head>
+<body lang="en-US" dir="ltr"><h1 class="western">Wear Os</h1>
+<p>A special version of Juggluco can run directly on a Wear Os watch.
+It needs an Android smartphone with NFC to scan the sensor and via a
+TCP connection this data is sent to the Wear OS watch. Hereafter
+there are two possibilities:</p>
+<ol>
+	<li><p>The sensor stays connected with the smartphone and the
+	smartphone sends every glucose value it receives via Bluetooth to
+	the Wear OS watch via TCP;</p>
+	<li><p>It is also possible to directly connect the sensor with the
+	Wear OS watch. For this you need a Wear OS watch with good Bluetooth
+	connectivity. 
+	</p>
+</ol>
+<p>You can get Juggluco for Wear OS from Google Play on your watch.
+Some pictures are shown at
+<a href="http://jkaltes.byethost16.com/JugglucoWearOS/index.html">http://jkaltes.byethost16.com/JugglucoWearOS</a></p>
+<p>To get it working do the following:</p>
+<ul>
+	<li><p>Ensure that both Bluetooth and WIFI are working on watch and
+	phone;</p>
+	<li><p>See that the watch has enough free storage space and RAM
+	left. It is possible that Juggluco has to be reinstalled if the
+	device runs out of storage space at a critical moment;</p>
+	<li><p>Make the phone version of Juggluco working with the sensor.
+	You have to scan the sensor a few times with &quot;Sensor via
+	Bluetooth&quot; set. Receiving glucose values on the phone via
+	Bluetooth is not necessary;</p>
+	<li><p>Install the Wear OS version of Juggluco on your Wear Os watch
+	and start it;</p>
+	<li><p>On the phone go to left-menu-&gt;Watch-&gt;Wear Os Config.
+	Your watch should be displayed in the spinner. Press &quot;Init
+	watch app&quot;;</p>
+	<li><p>If everything went well, in both Juggluco's a TCP connection
+	is configured and all data on the phone is sent to the watch. This
+	can take a long time if you were using Juggluco for a long time. You
+	can check if the TCP connection is configured by looking in the
+	Mirror dialog (phone: left middle menu-&gt;Mirror, watch:
+	left-menu-&gt;Mirror). A connection with the same id as shown in the
+	spinner for your watch should be shown. On the watch is should also
+	contain the IP of the phone. If the are not there or the watch side
+	doesn't contain an IP, press again on &quot;Init watch app&quot;. If
+	it still isn't there, check the Bluetooth connection and the phone
+	app responsible for the connection to your watch. (When the watch
+	already has received data, pressing &quot;Init watch app&quot; has
+	the effect of re-sending all, so you could as well re-install the
+	watch version of Juggluco. Later on, if the right IP is not shown,
+	you should on the phone turn the external connection (WIFI or Mobile
+	data) off and on.</p>
+	<li><p>If everything went well, the same data, as displayed on the
+	phone version of Juggluco, is displayed on the watch version of
+	Juggluco. Every new glucose value received by the phone is sent via
+	TCP to the watch. Some settings like unit, glucose alarm levels and
+	reminders are also transmitted to the watch. Later changes should be
+	made on the watch itself. 
+	</p>
+	<li><p>If you have a smartwatch with good Bluetooth connectivity and
+	you like to receive glucose values on your watch without having to
+	carry your phone, you can connect the watch version of Juggluco
+	directly with the sensor. After all values are sent to the watch,
+	you can check <b>&quot;Direct sensor-watch connection&quot;</b>. By
+	this, <i>&quot;sensor via Bluetooth&quot;</i> is turned off in the
+	phone and turned on in the watch. The stream values are now sent
+	from watch to phone as you can check in the Mirror dialog. You can't
+	change &quot;Direct sensor-watch connection&quot; when watch and
+	phone are not in sync.</p>
+	<li><p>If you want to sent amounts from the watch to the phone, you
+	should reverse the send-direction yourself in the Mirror dialog by
+	unchecking it on the phone and checking it on the watch. On the
+	phone &quot;<i>Receive from</i>&quot; should also be set. If
+	everything isn't set exactly right, it doesn't work. &quot;Don't
+	change amounts&quot; should be changed. The labels of <i>amounts</i>
+	are always sent with the amounts. If you change the direction of the
+	transmission of amounts from watch to phone, you can't change the
+	labels. It shouldn't be too easy;</p>
+</ul>
+<p>If the sensor has a direct Bluetooth connection with the watch and
+it's values are sent to a smartphone, scanned values should also be
+sent from the phone to the watch and the stream values should be
+synced before scanning the sensor with Juggluco (the settings are
+configured automatically this way.) Otherwise, old values could be
+sent back to the watch or modified authentication information is not
+sent to the watch, which will result in <i>Unlock key</i> errors.</p>
+<p>Changes to the connection should also only be made when the data
+is synchronized; the data on phone and watch should be complete
+copies (with the exception that you can leave out <span style="font-variant: normal"><span style="font-style: normal"><u><span style="font-weight: normal">all</span></u></span></span>
+amount data).</p>
+<p>The first time, when a lot of data has to be transferred from
+smartphone to watch, you can attach the watch to the charger. My
+watch turns on WIFI when it is attached to the charger.</p>
+<h5 class="western">Watch-Phone connection</h5>
+<p>At initialization, when all data are sent from phone to watch, you
+need a Wi-Fi connection between watch and phone. Later data is sent
+in small pieces via TCP. On my watch that is redirected through
+Bluetooth, but only when the phone has an external connection, for
+example Wi-Fi to your home network, a mobile data connection or a
+portable hotspot. Otherwise the connection between phone and watch
+stops after some time, because Wi-Fi is turned off by the system to
+save battery power.</p>
+<p>Juggluco itself detects the IPs of the other side, so you don't
+need to set them. If you switch from Wi-Fi to mobile data, the IPs
+are changed automatically. Sometimes you have to switch Wi-Fi or
+mobile data off and on on your smartphone before it works (Juggluco
+determines the IP at the moment Wi-Fi or mobile data is turned on,
+but sometimes the IP is then not available yet.)</p>
+<p>Automatic determination of the IP of the other side is specific
+for the connection with a WearOS watch; for other Mirror connections
+you still need to specify the IPs of the other side.</p>
+<h5 class="western">Watch face</h5>
+<p>Juggluco for Wear OS includes a watch face that shows your current
+glucose level besides the time and up to four complications. To make
+use of it you have to select this watch face for example in your
+watch companion app under &quot;downloaded&quot;. Normally you will
+see the last glucose value when the screen wakes up. When the display
+is in ambient (always on) mode, the glucose value is only updated
+when the minute indicator is increased or you press a button or raise
+your arm. So the displayed value can be up to one minute delayed.</p>
+<p>There is also a complication that uses the Glucodata broadcast of
+the WearOS version to display the glucose value in every watch face
+that accepts the complication:
+<a href="https://github.com/pachi81/GlucoDataHandler/releases">https://github.com/pachi81/GlucoDataHandler/releases</a></p>
+<p><br/>
+<br/>
+
+</p>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 7.4.3.2 (Linux)"/>
+	<meta name="created" content="2023-01-19T08:13:21.360429846"/>
+	<meta name="changed" content="2023-01-19T11:15:39.598937639"/>
+</head>
+<body lang="pt-PT" link="#000080" vlink="#800000" dir="ltr"><h1 class="western">
+Adicionar conexão</h1>
+<p>Especifique uma conexão com outra instância de
+Juggluco.&nbsp;Juggluco em um dispositivo envia via IP/TCP dados para
+um Juggluco em outro dispositivo.&nbsp;Para estabelecer uma conexão,
+um dos Juggluco deve fazer contato numa porta e o outro deve fazer
+contato com essa porta.&nbsp;A porta em que esta instância do
+Juggluco está escutando foi fornecida na tela anterior (menu do meio
+esquerdo-&gt; Espelho).&nbsp;Aqui  especifica a porta para a qual
+esta instância de Juggluco contata se ela fizer contato
+ativamente.&nbsp;Se esta instância do Juggluco não puder contatar
+numa porta, selecione &quot;&nbsp;Somente ativo&nbsp;&quot;.&nbsp;Se
+o outro lado não puder contatar numa porta, selecione &quot;&nbsp;Apenas
+passivo&nbsp;&quot;, caso contrário, deixe &quot;&nbsp;Ambos&nbsp;&quot;
+marcado.e&nbsp;Ativo somente&nbsp;se  selecionar
+aqui&nbsp;Somente&nbsp;passivo&nbsp;e&nbsp;Ambos&nbsp;se  selecionar
+aqui&nbsp;Ambos&nbsp;.</p>
+<p>Se esta instância do Juggluco entrar em contato ativamente,  deve
+especificar o(s) IP(s) com o qual ela deve entrar em contato.&nbsp;Se
+esse host tiver vários IPs, especifique mais de um;&nbsp;por
+exemplo, quando dois dispositivos às vezes são conectados por meio
+de uma rede doméstica e, às vezes, diretamente como ponto de acesso
+portátil.&nbsp;Nunca especifique os IPs de vários dispositivos,
+nesse caso cada um receberá apenas parte dos dados.</p>
+<p>Em todos os casos, exceto 'Somente ativo',  pode selecionar
+'&nbsp;Detectar&nbsp;';&nbsp;neste caso Juggluco salva o primeiro IP
+contatando Juggluco como o IP do outro lado.&nbsp;Verificar se o
+dispositivo certo está fazendo contato pode ser feito de duas
+maneiras: Selecione '&nbsp;Testar IP&nbsp;' para testar o IP.&nbsp;Se
+ selecionar&nbsp;Rótulo de teste&nbsp;, um contato só será
+estabelecido se ambos os lados tiverem especificado o mesmo rótulo.</p>
+<p>Selecione&nbsp;receber de&nbsp;se quiser que este aplicativo
+funcione como um aplicativo espelho.</p>
+<p>Se  deseja que este dispositivo seja o&nbsp;remetente&nbsp;de
+dados,  deve especificar quais dados enviar.</p>
+<p>Quantidades&nbsp;: dados de dose, alimentos e desportos que
+especificou.</p>
+<p>Scan: dados recebidos pela varredura do sensor (scan e histórico).</p>
+<p>Stream&nbsp;: os dados recebidos por Bluetooth.</p>
+<p>Às vezes, alguns dados já estão presentes no dispositivo
+receptor.&nbsp; pode especificar até quando esses dados estão
+presentes:</p>
+<p>Iniciar:&nbsp;sem dados presentes</p>
+<p>Agora:&nbsp;todos os dados presentes</p>
+<p>Ou uma data específica determinada pela posição inicial da
+tela.</p>
+<p>Quando uma fonte de dados é adicionada a uma conexão existente,
+a data de início determina apenas a fonte de dados adicionada.&nbsp;Por
+exemplo, se Scans e Streams já foram enviados para o hospedeiro e os
+valores agora são adicionados, a data de início determina apenas os
+valores enviados.</p>
+<p>Caso dois dispositivos estejam conectados por meio de uma conexão
+insegura, os dados podem ser assinados e criptografados especificando
+a mesma&nbsp;senha&nbsp;(no máximo) de 16 caracteres em ambos os
+lados da conexão.&nbsp;Selecione&nbsp;Guardar&nbsp;para salvar o que
+ especificou.&nbsp;Excluir&nbsp;excluirá esta especificação de
+conexão.</p>
+<p>Na situação mais simples, todas as conexões pertencem à sua
+rede doméstica, portanto,  pode usar IPs locais.&nbsp; também pode
+se conectar pela internet via Wi-Fi, nesse caso  deve consultar o
+manual do seu modem sobre como encaminhar uma porta externa para um
+IP e porta na sua rede doméstica.</p>
+<p>Dois telemóveis conectados por meio de uma conexão de dados
+móveis pela Internet podem se conectar diretamente um ao outro, se
+um deles puder escutar em uma porta de rede.&nbsp;Se ambos não
+puderem (por exemplo, se nenhum tiver um IP individual), eles ainda
+poderão se comunicar por meio de um terceiro dispositivo.&nbsp;Uma
+possibilidade é executar o Juggluco em um dispositivo Android (no
+mínimo Android 4.4) em casa conectado à internet por meio de um
+modem.&nbsp;Outra possibilidade é executar um programa de linha de
+comando pertencente ao Juggluco em um computador (por exemplo, seu PC
+ou Amazon
+AWS):&nbsp;<a href="http://jkaltes.byethost16.com/Juggluco/cmdline/index.html">http://jkaltes.byethost16.com/Juggluco/cmdline/index.html</a></p>
+<p>Tutoriais de encaminhamento de porta:</p>
+<p><a href="https://portforward.com/how-to-port-forward/">https://portforward.com/how-to-port-forward/</a></p>
+<p><a href="https://stevessmarthomeguide.com/understanding-port-forwarding/">https://stevessmarthomeguide.com/understanding-port-forwarding/</a></p>
+<p>É possível receber valores de glicose via Bluetooth em um
+dispositivo sem NFC
+(consulte&nbsp;<a href="http://jkaltes.byethost16.com/Juggluco/mirror">http://jkaltes.byethost16.com/Juggluco/mirror</a>):
+Inicialize o sensor via NFC no dispositivo NFC e, em seguida, envie
+os dados de digitalização e fluxo para o dispositivo não NFC. A
+seguir, inverta a conexão para a data do fluxo e desligue a conexão
+Bluetooth no dispositivo NFC e ligue-a no sem NFC dispositivo e
+também desligue o &quot;sensor via Bluetooth&quot; no dispositivo
+NFC e ligue-o no dispositivo não NFC.&nbsp;Assim, você pode fazer
+scan com um dispositivo e obter valores de glicose via Bluetooth em
+outro dispositivo.&nbsp;Mas em todos os dispositivos todos os dados
+do sensor devem estar disponíveis.&nbsp;Se os dispositivos trocarem
+dados, eles sempre devem receber dados de varredura e
+fluxo.&nbsp;Portanto, você deve sempre enviar os dados do Stream de
+volta para o dispositivo NFC e os dados de digitalização de volta
+para o dispositivo não NFC.&nbsp;Caso contrário, os dados ficarão
+fora de sincronia, fazendo com que dados de autenticação antigos
+sejam usados ​​ou novos dados sejam substituídos por dados
+antigos.</p>
+<p>Os dados de Quantias são totalmente independentes.</p>
+<h2 class="western">problemas de rede</h2>
+<p>É necessária uma especificação complementar estrita em ambos
+os lados da conexão.&nbsp;Uma simples omissão pode impossibilitar a
+transmissão de dados.</p>
+<p>É possível que a conexão pare e precise ser redefinida ligando
+ou desligando o WIFI ou pressionando Sincronizar.&nbsp;Além disso,
+alternar uma conexão&nbsp;ativa-somente-passiva-somente&nbsp;para&nbsp;ambos&nbsp;ou
+o contrário pode fazer a diferença.</p>
+<p>Por exemplo, uma conexão relógio-telemóvel usando TCP sobre
+Bluetooth só funciona se o relógio estiver apenas ativo e o
+telemóvel apenas passivo.&nbsp;Sobre WIFI funciona em ambas as
+direções.</p>
+<p>Você também deve considerar a mudança de IPs com mudança de
+conexão.&nbsp;Por exemplo, IPs diferentes devem ser usados ​​na
+rede doméstica e em um ponto de acesso portátil.</p>
+<p><br/>
+<br/>
+
+</p>
+</body>
+</html>

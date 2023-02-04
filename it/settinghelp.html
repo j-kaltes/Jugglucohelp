@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 7.4.5.1 (Linux)"/>
+	<meta name="created" content="00:00:00"/>
+	<meta name="changed" content="2023-01-29T17:41:11.997862998"/>
+	<style type="text/css">
+		@page { size: 8.27in 11.69in; margin: 0.79in }
+		p { margin-bottom: 0.1in; background: transparent }
+		h1 { margin-bottom: 0.08in; background: transparent }
+		h1.western { font-family: "Liberation Serif", serif }
+		h1.cjk { font-family: "Noto Serif CJK SC" }
+		h1.ctl { font-family: "Mangal" }
+		h2 { margin-top: 0.14in; margin-bottom: 0.08in; background: transparent }
+		h2.western { font-family: "Liberation Sans", sans-serif; font-size: 16pt }
+		h2.cjk { font-family: "Noto Sans CJK SC"; font-size: 16pt }
+		h2.ctl { font-family: "Mangal"; font-size: 16pt }
+		a:link { so-language: zxx }
+	</style>
+</head>
+<body lang="it-IT" dir="ltr"><h1 class="western">Impostazioni</h1>
+<h2 class="western">Unità:</h2>
+<p style="line-height: 100%; margin-bottom: 0in">Selezionare l'unità
+di misura del glucosio tra mmol/L e dm/dL.</p>
+<h2 class="western">Range del grafico: basso-alto.</h2>
+<p style="line-height: 100%; margin-bottom: 0in">Inserire un numero
+sui valori basso e alto per impostare questi come massimo e minimo
+della visualizzazione del grafico Questi valori saranno usati fin
+quando il valore del glucosio rimarrà all'interno di questi.
+Altrimenti, si allargheranno per permettere di mostrare anche quelli
+oltre le soglie impostate. Impostando 3 mmol/l (54 mg/dL) e 9 mmol/L
+(162 mg/dL) con tutti valori visibili tra 5 mmol/l e 6 mmol/L, il
+grafico mostrerà l'asse del glucosio tra 3 e 9.</p>
+<p style="line-height: 100%; margin-bottom: 0in">Se l'opzione <b>Scala
+manuale del glucosio</b> <span style="font-weight: normal">è attiva,
+puoi cambiarlo scorrendo le dita dal basso o dall'altro per spostare
+il centro del grafico oppure aumentare e diminuire la scala.</span></p>
+<h2 class="western">Target range: basso-alto</h2>
+<p style="line-height: 100%; margin-bottom: 0in">La parte superiore e
+quella inferiore a questi valori coloreranno diversamente le aree del
+grafico. Una linea rossa demarcherà il limite inferiore.</p>
+<h2 class="western">Asse del glucosio a SINISTRA</h2>
+<p>Imposta l'asse dei valori del glucosio a sinistra dello schermo.
+Utile se vuoi metterlo al centro sui dispositivi Wear OS.</p>
+<h2 class="western">Scansione avvia l'app</h2>
+<p>Se selezionata l'app verrà avviata alla prima scansione con NFC
+anche se l'app non è aperta. Se presenti più app con questa
+opzione, android mostrerà una finestra di scelta dove poter
+selezionare quella voluta. In qualche caso selezionarne una non
+funzionerà e servirà ripetere l'operazione di scelta. In questo
+caso non potrai scansione con l'app aperta. Spegnere questa opzione
+renderà possibile che almeno un'app possa essere attivata in questo
+modo.</p>
+<p>Se hai l'accesso root al telefono, puoi disabilitare l'NFC all'app
+Abbott Librelink.</p>
+<p>Diventare root in adb shell o termux, e digitare:</p>
+<p>pm disable
+com.freestylelibre.app.nl/com.librelink.app.ui.common.NFCScanActivity</p>
+<p><strike>pm disable
+com.freestylelibre.app.nl/com.librelink.app.ui.common.ScanSensorActivity</strike></p>
+<p>com.freestylelibre.app.nl è la versione Olandese di Librelink, va
+sostituita con il nome della tua verisone. Puoi trovarne il nome
+digitando (anche senza root):</p>
+<p>pm list package freestylelibre</p>
+<p>Dopo di che, potrai anche usare Librelink per scansionare quando
+in background, ma non partirà da solo. Librelink 2.5.2, 2.5.3 e
+librelink 2 2.71 (USA) crashano se rilevano il root. Però in Magisk
+puoi agilmente nascondere il root rinominando Magisk e aggiungendo
+specifiche app a denylist (Magisk 24.3) oppure Magiskhide (Magisk
+23.0). Puoi anche aggiungere Juggluco a denylist. Eccetto se usi I
+sensori Freestyle Libre 2 US, in quel caso puoi usare una versione di
+Librelink piu vecchia senza controllo del root.</p>
+<p>Senza il root, in adb shell, puoi disabilitare tutta
+l'applicazione:</p>
+<p>pm disable-user --user 0 com.freestylelibre.app.nl</p>
+<p>Prima di chiamare l'Abbott customer service, puoi riabilitarla
+con:</p>
+<p>pm enable com.freestylelibre.app.nl</p>
+<h2 class="western">Suono NFC</h2>
+<p>Emette un suono durante la scansione insieme a una vibrazione.</p>
+<h2 class="western">Invia a xDrip+</h2>
+<p>Invia il flusso Bluetooth di glucosio ogni minuto a xDrip+. In
+xDrip+ hai bisogno del set Libre2 (l'app patchata) come sorgente
+dati. Il valore che verrà visualizzato in xDrip sarà differente da
+quello ricevuto. Per qualche ragione xDrip+ aggiorna ogni 5 minuti,
+probabilmente perchè è stato fatto per dispositivi che inviano dati
+solo ogni 5 minuti (una watch face regolarmente connessa con xDrip+
+mostra valori di 9 minuti più vecchi). In aggiunta xDrip+ mostra la
+sua interpretazione dei valori del glucosio. Anche I dipositivi
+mirror possono inviare dati a xDrip+.</p>
+<p>Le nuove versioni di Juggluco possono direttamente contattare le
+watch face di xDrip, così che le app degli orologi possano mostrare
+valori del glucosio più recenti. Per usare questa funzionalità
+spuntare “<i>webserver xDrip</i>” <span style="font-variant: normal"><span style="font-style: normal">nel
+menu di sinistra sotto </span></span><span style="font-variant: normal"><span style="font-style: normal"><b>Orologio</b></span></span><span style="font-variant: normal"><span style="font-style: normal"><span style="font-weight: normal">.
+Vedi la pagina di Aiuto nel menù di sinistra-&gt;orologio per
+ulteriori informazioni. Per prevenire conflittim xDrip deve essere
+disinstallato o disabilitato, oppure il webserver xDrip spento in
+xDrip.</span></span></span></p>
+<h2 class="western">Inverti schermo</h2>
+<p>Mette sottosopra lo schermo. Se per qualche ragione devi tenere lo
+smartphone in posizione verticale, puoi attivare <i>finestre mobili,
+mini finestra o dividi schermo</i> <span style="font-variant: normal"><span style="font-style: normal">nella
+pagina delle app recenti di android. Se selezioni “asse del
+glucosio a sinistra” e cambi la dimensione del font in gigante
+sulle impostazioni android, potrai vedere il valore corrente del
+glucosio in modalità verticale.</span></span></p>
+<h2 class="western">Promemoria</h2>
+<p style="font-weight: normal; line-height: 100%; margin-bottom: 0in">
+Si può specificare che un allarme suoni se non viene inserito un
+certo valore di cibo o insulina in un certo periodo di tempo.</p>
+<h2 class="western">Sensore via Bluetooth</h2>
+<p>Selezionarlo se l'app si connette al Freestyle libre 2 via
+Bluetooth. Questo è necessario per allarmi e monitoraggio del
+glucosio in continuo.</p>
+<h2 class="western"><b>Allarmi</b></h2>
+<p style="font-weight: normal">Ipotizzando che I valori venganmo
+ricevuti via bluetooth: impostare il valore di glucosio basso e alto,
+perdita di segnale del sensore, valore di nuovo disponibile e
+glucosio nella status bar.</p>
+<h2 class="western">Etichette per valori</h2>
+<p>Specifica le etichette usate per I valori immessi. Vai nella
+sottoschermata per determinare quale etichetta viene usata, per
+esempio dose di insulina, consumo di carboidrati oppure ore spese a
+fare post. Se usi l'app Kerstok sull'orologio Garmin, queste
+etichette verranno inviate all'app sull'orologio.</p>
+<h2 class="western">Colori</h2>
+<p style="line-height: 100%; margin-bottom: 0in">Cambia il colore
+delle curve, delle scansioni e dei numeri.</p>
+<h2 class="western">Scorciatoie</h2>
+<p style="line-height: 100%; margin-bottom: 0in">Le scorciatoie
+vengono inviate all'app Kerfstok sullo smartwatch Garmin per inserire
+facilmente I valori.</p>
+</body>
+</html>

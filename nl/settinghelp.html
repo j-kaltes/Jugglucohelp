@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 7.4.5.1 (Linux)"/>
+	<meta name="created" content="2022-07-28T11:55:41.167905165"/>
+	<meta name="changed" content="2023-02-02T15:02:30.659464086"/>
+	<style type="text/css">
+		@page { margin: 0.79in }
+		p { margin-bottom: 0.1in }
+		h2.western { font-family: "Liberation Sans", sans-serif; font-size: 16pt }
+		h2.cjk { font-family: "Noto Serif CJK SC"; font-size: 16pt }
+		h2.ctl { font-family: "Mangal"; font-size: 16pt }
+	</style>
+</head>
+<body lang="nl-NL" dir="ltr"><h1>Instellingen</h1>
+<h2 class="western">Eenheid</h2>
+<p style="line-height: 100%; margin-bottom: 0in">Geef aan of glucose
+waarden in mmol/L of mg/dL weergegeven moeten worden.</p>
+<h2 class="western">Bereik Grafiek: Laag-Hoog</h2>
+<p>In Librelink lopen de weergegeven glucose waarden van 0 tot 21
+mmol/L (als geen waarde daarbovenuit gaat). In Juggluco kun je zelf
+de minimale en maximale waarde aangeven. Deze grenzen worden alleen
+gebruikt als alle op het scherm weergegeven glucose waarden binnen
+deze grenzen vallen. Bijvoorbeeld als het grafiek bereik 3-9 is en
+alle waarden op het scherm zich tussen 5 mmol/L en 6 mmol/L bevinden,
+loopt de glucose as van de grafiek van 3 mmol/L tot 9 mmol/L. Als een
+waarde buiten deze grenzen valt, worden de grenzen zo uitgerekt dat
+alle waarden op het scherm passen. 
+</p>
+<p style="line-height: 100%; margin-bottom: 0in">Als “<b>Verander
+schaal handmatig voor Glucose</b>” aanstaat, kun je dit veranderen.
+Door je vinger in de bovenste helft van het scherm op en neer te
+bewegen, beweegt de grootst weergegeven waarde naar beneden en
+omhoog. Je vinger in de onderste helft van het scherm op en neer
+bewegen doet hetzelfde voor de laagste waarde. Dit kan dan ook in de
+Samenvattende grafiek onder statistiek gedaan worden.</p>
+<h2 class="western">Doelbereik: laag-hoog</h2>
+<p>Het gebied buiten doelbereik wordt anders gekleurd. De laagste
+waarde wordt als een rode lijn weergegeven. In het statistiek
+schermpje wordt weergegeven welk percentage van de metingen zich
+binnen het doelbereik bevond.</p>
+<h2 class="western">Glucose-as nummers LINKS</h2>
+<p>Plaats de nummers voor het glucoseniveau links in het scherm.</p>
+<h2 class="western">Scherm omkeren</h2>
+<p>Draai het scherm om. Dit staat standaard aan, omdat ik anders per
+ongeluk OK aanraakte bij het scannen. 
+</p>
+<p>Nogal eens wordt er om portret mode gevraagd, maar portret mode is
+voor het weergeven van de grafiek volkomen ongeschikt, en heb ik
+daarom uitgezet.</p>
+<h2 class="western">NFC geluid</h2>
+<p>Maak tijdens het scannen ook geluid, naast vibratie.</p>
+<h2 class="western">Scannen start Juggluco</h2>
+<p>Als dit aangevinkt is, en je scant een sensor terwijl Juggluco
+niet in de voorgrond is, dan zal Juggluco gestart worden. Dit maakt
+het mogelijk een sensor zelfs te scannen wanneer Juggluco niet
+weergegeven wordt. Als meerdere apps deze instelling hebben geeft het
+echter problemen. Bij het scannen wordt dan een keuze schermpje
+getoond waar je kunt kiezen welke app je wilt gebruiken. Dit werkt
+echter niet goed. Door dit uit te zetten voor deze app, zorg je er
+voor dat tenminste een app kan scannen zonder dat het zich in de
+voorgrond bevind.</p>
+<p>Als je root toegang hebt op je smartphone kun hetzelfde doen met
+Abbott’s Librelink app. Hiervoor moet je root worden in adb shell
+or termux en het volgende intypen:</p>
+<p>pm disable
+com.freestylelibre.app.nl/com.librelink.app.ui.common.NFCScanActivity</p>
+<p>Voor Librelink 2.7.1 of lager moest je het volgende type:</p>
+<p>pm disable
+com.freestylelibre.app.nl/com.librelink.app.ui.common.ScanSensorActivity</p>
+<p>Hierna kun je Librelink nog steeds gebruiken wanneer het in de
+voorgrond is, maar wordt het niet meer gestart, als het niet in de
+voorgrond is.</p>
+<p>Librelink 2.5.2 en hoger crashen zichzelf als ze root ontdekken.
+Als je Magisk voor root gebruikt, kun je root verbergen voor
+Librelink via denylist (Magisk 24.3) of Magiskhide (Magisk 23.0). Je
+moet ook instellen dat Magisk zijn eigen package id veranderd. Het is
+ook mogelijk een oudere versie van Librelink te gebruiken die nog
+geen root check heeft.</p>
+<p>Een andere oplossing, waar je geen root voor nodig hebt, is de
+hele Librelink app uit te schakelen met:</p>
+<p>adb shell pm disable-user --user 0 com.freestylelibre.app.nl</p>
+<p>Voordat je Abbotts klantenservice belt, kun je het weer
+inschakelen met het volgende commando:</p>
+<p>adb shell pm enable com.freestylelibre.app.nl</p>
+<h2 class="western">Libreview</h2>
+<p style="line-height: 100%; margin-bottom: 0in">Geeft aan of stream
+Freestyle Libre 2 glucose waarden naar Libreview verzonden worden.
+Voor Freestyle Libre 3 sensoren kun je je Account Id nummer van
+Libreview laten halen. Druk er op om de instellingen te wijzigen.</p>
+<h2 class="western">Librelink broadcast</h2>
+<p>Als dit aanstaat, zendt Juggluco elke minuut een stream glucose
+waarde naar xDrip. In xDrip moet je Libre2 (patched) App als hardware
+gegevensbron aangeven. De glucose waarden die xDrip weergeeft zijn
+verschillend van die het ontvangen heeft. Om een of andere reden,
+vernieuwt het zijn glucosewaarde enkel eens in de 5 minuten;
+waarschijnlijk omdat het gemaakt is voor sensoren die slechts eens in
+de 5 minuten een glucosewaarde verzenden. Daarbij genereert xDrip
+haar eigen interpretatie van de verkregen glucosewaarden.</p>
+<p>Juggluco kloons (zie linker midden menu→kloon) kunnen ook naar
+xDrip zenden. 
+</p>
+<p>Nieuwere versies van Juggluco kunnen glucosewaarden direct naar
+xDrip horloges zenden. Om hier gebruik van te maken moet xDrip
+webserver aangevinkt worden in Linker menu→Horloge. Om conflicten
+te voorkomen moet xDrip webservice in xDrip niet ook aanstaan.</p>
+<h2 class="western">xDrip broadcast</h2>
+<p>Laat Juggluco xDrip broadcast
+<i>com.eveningoutpost.dexdrip.BgEstimate</i> nabootsen. Vanaf Android
+target versie 11, moeten ontvangende apps het volgende in hun
+AndroidManifest.xml hebben staan: 
+</p>
+<p>&lt;queries&gt; <br/>
+&nbsp;&nbsp; &lt;package
+android:name=&quot;tk.glucodata&quot;/&gt; <br/>
+&lt;/queries&gt;</p>
+<h2 class="western">Glucodata broadcast</h2>
+<p>Juggluco heeft een eigen glucose broadcast, glucodata.Minute. See
+<a href="http://jkaltes.byethost16.com/Juggluco/glucosebroadcast.html">http://jkaltes.byethost16.com/Juggluco/glucosebroadcast.html</a>
+voor meer informatie.</p>
+<p>Vink de apps aan die deze broadcast moeten ontvangen.</p>
+<h2 class="western">Glucose op Android statusbalk</h2>
+<p style="line-height: 100%; margin-bottom: 0in">Als dit aanstaat
+worden stream glucose waarden in een melding en Android statusbalk
+weergegeven. Bij sommige smartphones wordt dit alleen uitgevoerd
+wanneer ook Androids melding instellingen gewijzigd worden.
+Bijvoorbeeld door naar Juggluco app-info in Android instellingen te
+gaan, op “Meldingen beheren” te drukken, dan glucoseNotification
+aan te raken en “<i>instellen als stil</i>” uit te zetten.
+“<i>Weergeven op statusbalk</i>” zal nu aanstaand getoond worden.</p>
+<h2 class="western">Zwevende glucose</h2>
+<p style="line-height: 100%; margin-bottom: 0in">Wanneer je dit
+aanzet, wordt er continue een klein plaatje met de actuele
+glucosewaarde op het scherm getoond, ongeacht welke app zich in de
+voorgrond bevind. Als je het de eerste keer inschakelt, wordt je
+doorverwezen naar een lijst met apps waarin je Juggluco toestemming
+moet geven <b>over andere apps heen weer te geven</b>.</p>
+<h2 class="western">Sensor via Bluetooth</h2>
+<p>Geef aan dat Juggluco via Bluetooth contact maakt met Freestyle
+Libre 2 sensoren. Dit is nodig voor de CGM en alarmen.</p>
+<h2 class="western">Alarmen</h2>
+<p>Hieronder valt alles dat afgaat in Juggluco afhankelijk van de
+stream glucose waarden ontvangen via Bluetooth: hoog en laag glucose
+alarmen, signaal verlies alarm, waarde aanwezig melding en glucose in
+statusbalk.</p>
+<h2 class="western">Nummer labels</h2>
+<p>Specificeer labels voor hoeveelheden. Als gebruikt maakt van de
+Garmin watch app Kerfstok, worden deze labels ook naar Kerfstok
+verzonden.</p>
+<h2 class="western">Herinneringen</h2>
+<p>Specificeer een alarm dat afgaat als een bepaalde hoeveelheid (bv
+eten of medicatie) niet ingevoerd is binnen een bepaalde
+tijdsperiode.</p>
+<h2 class="western">Kleuren</h2>
+<p>Verander de kleuren van de grafiek, scans en hoeveelheden.</p>
+<p><br/>
+<br/>
+
+</p>
+</body>
+</html>

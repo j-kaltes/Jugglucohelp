@@ -5,19 +5,45 @@
 	<title></title>
 	<meta name="generator" content="LibreOffice 7.4.5.1 (Linux)"/>
 	<meta name="created" content="2023-02-03T15:10:20.572719075"/>
-	<meta name="changed" content="2023-02-03T15:18:55.299243524"/>
+	<meta name="changed" content="2023-02-06T22:14:24.519706620"/>
+	<style type="text/css">
+		@page { size: 8.27in 11.69in; margin-left: 0.79in; margin-right: 0.39in; margin-top: 0.39in; margin-bottom: 0.39in }
+		p { line-height: 115%; margin-bottom: 0.1in; background: transparent }
+		h1 { margin-bottom: 0.08in; background: transparent }
+		h1.western { font-family: "Liberation Serif", serif }
+		h1.cjk { font-family: "Droid Sans Fallback"; font-size: 24pt }
+		h1.ctl { font-family: "Droid Sans Devanagari"; font-size: 24pt }
+	</style>
 </head>
-<body lang="en-US" dir="ltr"><h1>Floating glucose</h1>
-<p>Set font size and foreground and background color of the floating
-glucose. You can also specify <b>Transparent</b> for the background,
+<body lang="en-US" dir="ltr"><h1 class="western">Floating glucose</h1>
+<p>Here you can set the font size and foreground and background color
+of the floating glucose. You can also set background to <b>Transparent</b>,
 making it invisible.</p>
-<p>After typing the <b>font size</b>, you have to press the <i>“Enter”
-</i><span style="font-style: normal">or</span><i> “Done”</i>
-button of the soft keyboard.</p>
+<p><b>Touchable</b>: when set you can move the floating glucose with
+your finger and remove it by long pressing it. When touchable is
+unset, goes touch input to the window beneath the floating glucose,
+so you can use the app under the floating glucose. You can also make
+the floating glucose untouchable by <b>double tapping</b> it.</p>
+<p>After typing the <b>font size</b>, you have to press the “<i>Enter”
+</i><span style="font-variant: normal"><span style="font-style: normal">or</span></span>
+“<i>Done”</i> button of the soft keyboard.</p>
 <p>You can turn on and off Floating glucose with the “<i>Floating
 glucose</i>” checkbox in settings. You can also turn off “Floating
 glucose” by <b>long pressing</b> on the floating glucose value. For
 example when you have set the font size so large that you are not
 able anymore to type a smaller font size on the soft keyboard.</p>
+<p>To display over other apps Juggluco needs a special permission. On
+WearOS and also Android Automotive you need to use adb to give this
+permission:</p>
+<p style="line-height: 100%; margin-bottom: 0in"><b>adb shell pm
+grant tk.glucodata android.permission.SYSTEM_ALERT_WINDOW</b></p>
+<p style="line-height: 100%; margin-bottom: 0in; background: transparent">
+<br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in; background: transparent">
+<br/>
+
+</p>
 </body>
 </html>

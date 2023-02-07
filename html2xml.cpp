@@ -1,5 +1,6 @@
 #include <string_view>
 #include <iostream>
+#include <algorithm>
 using namespace std;
 #include "inout.h"
 void rewritefile(const char *name) {
@@ -12,12 +13,12 @@ const char find[]=R"(<body)";
 auto comp=[](const char one,const char two)->bool {return tolower(one)==tolower(two);};
 const char *found=std::search(cont.begin(),cont.end(),begin(find),end(find)-1,comp);
 if(found==cont.end())  {
-	cerr<<find<<" not found"<<endl;
+	cerr<<name<<": "<<find<<" not found"<<endl;
 	return;
 	}
 const char *start=std::find(found,cont.end(),'>');
 if(start==cont.end()) {
-	cerr<<"> not found\n";
+	cerr<<name<<": "<<"> not found\n";
 	return;
 	}
 
@@ -26,7 +27,7 @@ start++;
 const char findend[]="</body>";
 const char *foundend=std::search(start,cont.end(),begin(findend),end(findend)-1,comp);
 if(foundend==cont.end()) {
-	cerr<<foundend<<" not found\n";
+	cerr<<name<<": "<<findend<<" not found\n";
 	return;
 	}
 const char *iter=start;

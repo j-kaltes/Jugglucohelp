@@ -6,213 +6,67 @@
 	<meta name="generator" content="LibreOffice 7.4.5.1 (Linux)"/>
 	<meta name="created" content="2021-02-27T14:01:21.977498081"/>
 	<meta name="changed" content="2023-02-03T15:25:40.195773184"/>
-	<meta name="Originator" content="Microsoft Word 14"/>
-	<meta name="ProgId" content="Word.Document"/>
-	<style type="text/css">
-		h1 { color: #000000 }
-		p { color: #000000 }
-		h2 { color: #000000 }
-		h2.cjk { font-family: "Droid Sans Fallback" }
-		h2.ctl { font-family: "Droid Sans Devanagari" }
-		a:link { color: #0000ff }
-		a:visited { color: #800080 }
-	</style>
+	<style type="text/css">@page { size: 8.27in 11.69in; margin: 0.79in } h1 { margin-bottom: 0.08in; background: transparent } h1.western { font-family: "Liberation Serif", serif } h1.cjk { font-family: "Noto Serif CJK SC" } h1.ctl { font-family: "Mangal" } p { margin-bottom: 0.1in; background: transparent } h2 { margin-top: 0.14in; margin-bottom: 0.08in; background: transparent } h2.western { font-family: "Liberation Sans", sans-serif; font-size: 16pt } h2.cjk { font-family: "Noto Sans CJK SC"; font-size: 16pt } h2.ctl { font-family: "Mangal"; font-size: 16pt }</style>
 </head>
-<body lang="pl-PL" text="#000000" link="#0000ff" vlink="#800080" dir="ltr"><h1>
-Ustawienia</h1>
-<h2 class="western"><font face="Arial, sans-serif"><font size="4" style="font-size: 16pt">Jednostka</font></font></h2>
-<p style="margin-bottom: 0in">Wybierz, czy wartości glukozy mają
-być podawane w mol/L czy dm/dL.</p>
-<h2 class="western"><font face="Arial, sans-serif"><font size="4" style="font-size: 16pt">Zakres
-wykresu: wartość najniższa-najwyższa.</font></font></h2>
-<p style="margin-bottom: 0in">Podaj wartość najniższą i
-najwyższą, tak aby dół ekranu odpowiadał najniższej, a góra
-najwyższej wartości. Wartości te są wykorzystywane tylko wtedy,
-gdy wszystkie wartości glukozy wyświetlane na ekranie mieszczą się
-w tych granicach. W przeciwnym razie granice są poszerzane, aby
-wszystkie wartości były widoczne. W przypadku ustawienia 54 mg/dl
-(3 mol/L) i 162 mg/dl (9 mol/L), a wszystkie wartości na widocznym
-ekranie mieszczą się w przedziale od 90 mg/dl (5 mol/L) do 108
-mg/dl (6 mol/L), na wykresie pojawia się oś glukozy od 54 do 162.</p>
-<p style="margin-bottom: 0in">Jeśli włączona jest opcja <b>Skalowanie
-ręczne Osi stęż. glukozy</b>, można zmieniać: przesunięcie
-palcem po górnej części ekranu powoduje przesunięcie górnej
-połowy wykresu w górę i w dół; przesunięcie po dolnej części
-ekranu powoduje przesunięcie dolnej połowy wykresu w górę i w
-dół.</p>
-<h2 class="western"><font face="Arial, sans-serif"><font size="4" style="font-size: 16pt">Zakres
-docelowy: wartość najniższa– najwyższa.</font></font></h2>
-<p style="margin-bottom: 0in">Wyższa strona ekranu ma inny kolor,
-dzięki czemu łatwiej dostrzec wysokie wartości. Podobnie jest w
-przypadku niskich wartości. Czerwona linia wskazuje na ekranie
-granicę zbyt niskich wartości.</p>
-<h2 class="western"><font face="Arial, sans-serif"><font size="4" style="font-size: 16pt">Liczby
-osi glukozy po LEWEJ</font></font></h2>
-<p>Umieść liczby poziomu stęż. glukozy na wykresie po lewej
-stronie ekranu. Przydatne, jeśli chcesz umieścić aktualną glukozę
-na środku ekranu, na przykład w Wear OS.</p>
-<h2 class="western"><font face="Arial, sans-serif"><font size="4" style="font-size: 16pt">Odwróć
-ekran</font></font></h2>
-<p style="margin-bottom: 0in">Odwróć widok na ekranie spodem do
-góry. Jest ona domyślnie włączona, ponieważ w przeciwnym razie
-zdarzało mi się nieraz przypadkowo dotknąć OK podczas skanowania
-sensora.</p>
-<p style="margin-bottom: 0in">Niektórzy proszą o tryb pionowy, ale
-wyłączyłem go, bo jest zupełnie nieodpowiedni do wyświetlania
-wykresu stężenia glukozy.</p>
-<h2 class="western"><font face="Arial, sans-serif"><font size="4" style="font-size: 16pt">Dźwięk
-NFC</font></font></h2>
-<p>Podczas skanowania oprócz wibracji wydawany jest również
-dźwięk.</p>
-<h2 class="western"><font face="Arial, sans-serif"><font size="4" style="font-size: 16pt">Skanowanie
-uruchamia aplikację</font></font></h2>
-<p>Jeśli opcja jest zaznaczona, ta aplikacja będzie uruchamiana po
-zeskanowaniu sensora przez NFC, nawet jeśli aplikacja ta nie jest
-aktualnie wyświetlana na ekranie. Jeśli opcję tę ma włączonych
-wiele aplikacji, android wyświetli komunikat z możliwością
-wyboru, gdzie można wybrać aplikację, której chcesz użyć.
-Wybranie jednej jakoś nie działa, a wybranie jednej przy kolejnym
-skanowaniu też nie. Czyli w tym przypadku nie da się skanować bez
-aplikacji wyświetlonej bezpośrednio na ekranie. Wyłączenie jej w
-tej aplikacji sprawi, że przynajmniej jedna aplikacja będzie mogła
-być aktywowana w ten sposób.</p>
-<p>Jeśli masz dostęp do roota, możesz też wyłączyć aktywację
-NFC w aplikacji Librelink firmy Abbott (nie działa z Libre3):</p>
-<p>Zostań użytkownikiem rootem w wierszu poleceń adb lub termux, i
-wpisz:</p>
-<p lang="en-GB">pm disable
-com.freestylelibre.app.nl/com.librelink.app.ui.common.NFCScanActivity</p>
+<body lang="pl-PL" dir="ltr"><h1 class="western">Ustawienia</h1>
+<h2 class="western">Jednostka</h2>
+<p style="line-height: 100%; margin-bottom: 0in">Wybierz, czy wartości glukozy mają być podawane w mmol/L czy dm/dL.</p>
+<h2 class="western">Zakres wykresu: wartość najniższa-najwyższa.</h2>
+<p style="line-height: 100%; margin-bottom: 0in">Podaj wartość najniższą i najwyższą, tak aby d&oacute;ł ekranu odpowiadał najniższej, a g&oacute;ra najwyższej wartości. Wartości te są wykorzystywane tylko wtedy, gdy wszystkie wartości glukozy wyświetlane na ekranie mieszczą się w tych granicach. W przeciwnym razie granice są poszerzane, aby wszystkie wartości były widoczne. W przypadku ustawienia 54 mg/dl (3 mmol/L) i 162 mg/dl (9 mmol/L), a wszystkie wartości na widocznym ekranie mieszczą się w przedziale od 90 mg/dl (5 mmol/L) do 108 mg/dl (6 mmol/L), na wykresie pojawia się oś glukozy od 54 do 162.</p>
+<p style="line-height: 100%; margin-bottom: 0in">Jeśli włączona jest opcja <b>Skalowanie ręczne Osi stęż. glukozy</b>, można zmieniać: przesunięcie palcem po g&oacute;rnej części ekranu powoduje przesunięcie g&oacute;rnej połowy wykresu w g&oacute;rę i w d&oacute;ł; przesunięcie po dolnej części ekranu powoduje przesunięcie dolnej połowy wykresu w g&oacute;rę i w d&oacute;ł.</p>
+<h2 class="western">Zakres docelowy: wartość najniższa&ndash; najwyższa.</h2>
+<p style="line-height: 100%; margin-bottom: 0in">Wyższa strona ekranu ma inny kolor, dzięki czemu łatwiej dostrzec wysokie wartości. Podobnie jest w przypadku niskich wartości. Czerwona linia wskazuje na ekranie granicę zbyt niskich wartości.</p>
+<h2 class="western">Liczby osi glukozy po LEWEJ</h2>
+<p>Umieść liczby poziomu stęż. glukozy na wykresie po lewej stronie ekranu. Przydatne, jeśli chcesz umieścić aktualną glukozę na środku ekranu, na przykład w Wear OS.</p>
+<h2 class="western">Odwr&oacute;ć ekran</h2>
+<p style="line-height: 100%; margin-bottom: 0in">Odwr&oacute;ć widok na ekranie spodem do g&oacute;ry. Jest ona domyślnie włączona, ponieważ w przeciwnym razie zdarzało mi się nieraz przypadkowo dotknąć OK podczas skanowania sensora.</p>
+<p style="line-height: 100%; margin-bottom: 0in">Niekt&oacute;rzy proszą o tryb pionowy, ale wyłączyłem go, bo jest zupełnie nieodpowiedni do wyświetlania wykresu stężenia glukozy.</p>
+<h2 class="western">Dźwięk NFC</h2>
+<p>Podczas skanowania opr&oacute;cz wibracji wydawany jest r&oacute;wnież dźwięk.</p>
+<h2 class="western">Skanowanie uruchamia aplikację</h2>
+<p>Jeśli opcja jest zaznaczona, ta aplikacja będzie uruchamiana po zeskanowaniu sensora przez NFC, nawet jeśli aplikacja ta nie jest aktualnie wyświetlana na ekranie. Jeśli opcję tę ma włączonych wiele aplikacji, android wyświetli komunikat z możliwością wyboru, gdzie można wybrać aplikację, kt&oacute;rej chcesz użyć. Wybranie jednej jakoś nie działa, a wybranie jednej przy kolejnym skanowaniu też nie. Czyli w tym przypadku nie da się skanować bez aplikacji wyświetlonej bezpośrednio na ekranie. Wyłączenie jej w tej aplikacji sprawi, że przynajmniej jedna aplikacja będzie mogła być aktywowana w ten spos&oacute;b.</p>
+<p>Jeśli masz dostęp do roota, możesz też wyłączyć aktywację NFC w aplikacji Librelink firmy Abbott (nie działa z Libre3):</p>
+<p>Zostań użytkownikiem rootem w wierszu poleceń adb lub termux, i wpisz:</p>
+<p>pm disable com.freestylelibre.app.nl/com.librelink.app.ui.common.NFCScanActivity</p>
 <p>Na Librelink 2.7.1 i niższych trzeba było wcisnąć:</p>
-<p lang="en-GB">pm disable
-com.freestylelibre.app.nl/com.librelink.app.ui.common.ScanSensorActivity</p>
-<p>com.freestylelibre.app.nl tutaj to wersja holenderska Librelink,
-należy to zastąpić używaną wersją. Możesz znaleźć tę nazwę
-wpisując (nawet bez roota):</p>
+<p>pm disable com.freestylelibre.app.nl/com.librelink.app.ui.common.ScanSensorActivity</p>
+<p><span lang="pl-PL">com.freestylelibre.app.nl tutaj to wersja holenderska Librelink, należy to zastąpić używaną wersją. Możesz znaleźć tę nazwę wpisując</span> <span lang="pl-PL">(nawet bez roota):</span></p>
 <p>pm list package freestylelibre</p>
-<p>Następnie nadal można używać Librelink do skanowania, gdy
-aplikacja ta jest wyświetlona na ekranie, ale nie zostanie ona
-uruchomiona w inny sposób. Librelink 2.5.2 i wyższe wersje
-zawieszają się, jeśli wykryją roota. Ale w Magisk można łatwo
-ukryć roota zmieniając nazwę Magisk i dodając poszczególne
-aplikacje do denylist (Magisk 24.3) lub Magiskhide (Magisk 23.0). Do
-denylist należy dodać również Juggluco. Z wyjątkiem sytuacji,
-gdy korzystasz z amerykańskich sensorów Freestyle Libre 2, możesz
-również używać starszej wersji Librelink bez sprawdzania roota.</p>
-<p>Bez roota w wierszu poleceń adb można też wyłączyć całą
-aplikację:</p>
-<p lang="en-GB">pm disable-user --user 0 com.freestylelibre.app.nl</p>
-<p>Zanim zadzwonisz do obsługi klienta Abbott, możesz ponownie
-włączyć ją za pomocą polecenia:</p>
-<p lang="en-GB">pm enable com.freestylelibre.app.nl</p>
-<h2 class="western"><font face="Arial, sans-serif"><font size="4" style="font-size: 16pt">Libreview</font></font></h2>
-<p>Połącz się z Libreview, aby wysłać wartości stężenia
-glukozy Freestyle Libre 2 i 3 oraz wartości wpisów do Libreview
-oraz aby uzyskać identyfikator konta używany podczas aktywacji
-sensora Freestyle Libre 3. Dotknij, aby zmienić ustawienia.</p>
-<h2 class="western"><font face="Arial, sans-serif"><font size="4" style="font-size: 16pt">Nadawanie
-sygnału Librelink</font></font></h2>
-<p>Nadaje sygnał Librelink (oryginalnie wysyłany przez załataną
-niemiecką aplikację Librelink w wersji 2.3.0), aby co minutę
-wysyłać dane strumienia glukozy przez Bluetooth do xDrip. W xDrip
-musisz ustawić Libre2 (patched App) jako sprzętowe źródło
-danych. Wartości glukozy wyświetlane w xDrip są inne niż
-wartości, które otrzymuje. Z jakiegoś powodu xDrip aktualizuje
-swoją wartość tylko co 5 minut, prawdopodobnie dlatego, że został
-stworzony dla urządzeń, które wysyłają tylko raz na 5 minut.
-(Tarcza zegarka podłączona do xDrip regularnie wyświetlała stare
-wartości sprzed ponad 9 minut.) Dodatkowo xDrip wyświetla własną
-interpretację otrzymanych wartości glukozy. Urządzenia klony
-również mogą wysyłać wartości do xDrip.</p>
-<p>Zobacz <a href="https://github.com/jakobheyman/xdripJH">https://github.com/jakobheyman/xdripJH</a>,
-aby zapoznać się z próbami aktualizacji wartości glukozy w xDrip
-co minutę.</p>
-<p>Juggluco może również bezpośrednio kontaktować się z
-aplikacjami xDrip na zegarkach, dzięki czemu aplikacja zegarka
-wyświetla bardziej aktualne wartości glukozy. Aby skorzystać z tej
-funkcji zaznacz <i>&quot;xDrip webserver&quot;</i> w lewym menu w
-zakładce <b>Zegarek</b>. Więcej informacji można znaleźć w: lewe
-menu -&gt; Zegarek -&gt; Pomoc. Tylko jedna aplikacja może
-nasłuchiwać na porcie sieciowym używanym przez webserwer xDrip,
-dlatego też musisz wyłączyć <i>&quot;xDrip webservice</i>&quot; w
-samym xDrip, jeśli chcesz korzystać z tego w Juggluco.</p>
-<h2 class="western"><font face="Arial, sans-serif"><font size="4" style="font-size: 16pt">Nadawanie
-xDrip</font></font></h2>
-<p>Wyślij ten sam sygnał transmisji, który został włączony w
-xDrip w <i>&quot;Ustawienia-&gt;Ustawienia innych aplikacji-&gt;Nadawaj
-lokalnie&quot;</i> (com.eveningoutpost.dexdrip.BgEstimate).
-Nasłuchują go aplikacje takie jak AndroidAPS. Aplikacje skierowane
-na Androida 11 lub wyższą wersję muszą dodać następujące
-elementy do AndroidManifest.xml, aby działały:</p>
-<p lang="en-GB">&lt;queries&gt; <br/>
-&nbsp;&nbsp; &lt;package
-android:name=&quot;tk.glucodata&quot;/&gt; <br/>
-&lt;/queries&gt;</p>
-<p>Co minutę Juggluco wysyła wartość glukozy do wszystkich
-aplikacji słuchających tej transmisji, xDrip tylko do kilku dobrze
-znanych aplikacji, z wyjątkiem sytuacji, gdy wyraźnie określisz
-nazwę.</p>
-<h2 class="western"><font face="Arial, sans-serif"><font size="4" style="font-size: 16pt">Glucodata
-broadcast (Transmisja danych Glucodata)</font></font></h2>
-<p>Nowa transmisja, która ma taką samą funkcję jak transmisja
-xDrip. Prosty przykład aplikacji, która zapisuje otrzymane wartości
-glukozy do logcat, można znaleźć tutaj: <a href="http://jkaltes.byethost16.com/Juggluco/glucosebroadcast.html">Glucose
-broadcasts</a>. Jeśli określisz Juggluco jako źródło danych w
-G-Watch, musisz włączyć tę transmisję.</p>
-<p>Pokazane są aplikacje nasłuchujące tej transmisji. Zaznacz
-aplikacje, do których chcesz wysłać tę transmisję.</p>
-<h2 class="western"><font face="Arial, sans-serif"><font size="4" style="font-size: 16pt">Stęż.
-glukozy w pasku stanu systemu android</font></font></h2>
-<p style="margin-bottom: 0in">Jeśli opcja będzie włączona,
-wartości stęż. glukozy przesyłane strumieniowo przez Bluetooth są
-cicho wyświetlane w powiadomieniu i na pasku stanu systemu Android.
-Na niektórych smartfonach wartość stężenia glukozy jest
-wyświetlana na pasku stanu Androida dopiero po zmianie ustawień
-powiadomień Androida. Na przykład na Realme GT 5G trzeba wejść w
-listę aplikacji -&gt;Juggluco-&gt;zarządzaj powiadomieniami,
-nacisnąć na glucoseNotification i wyłączyć „Ustaw na tryb
-cichy”. &quot;Wyświetlanie w pasku stanu&quot; będzie teraz
-widoczne jako włączone.</p>
-<p style="margin-bottom: 0in">Możesz również uzyskać
-powiadomienie w systemie Androida, wybierając opcję <i>Powiadom.</i>
-w lewym środkowym menu. W takim przypadku powiadomienie zostanie
-wysłane do niektórych smartwatchów, jeśli są tak skonfigurowane.
-To działa z zegarkami Garmin, nie wiem czy działa z czymkolwiek
-innym. Alarmy również generują powiadomienia.</p>
-<h2 class="western"><font face="Arial, sans-serif"><font size="4" style="font-size: 16pt">Pływająca
-wart. gluk.</font></font></h2>
-<p>Po włączeniu tej opcji na ekranie stale obecny jest mały
-obrazek z aktualną wartością stężenia glukozy, niezależnie od
-tego, która aplikacja jest na pierwszym planie. Jeśli włączysz ją
-po raz pierwszy, zostaniesz przekierowany do listy aplikacji, w
-której musisz udzielić Juggluco uprawnienia do <b>wyświetlania na
-wierzchu innych aplikacji</b>.</p>
-<h2 class="western"><font face="Arial, sans-serif"><font size="4" style="font-size: 16pt">Konfiguracja</font></font></h2>
-<p>Określ rozmiar czcionki i kolory wartości <i>glukozy
-wyświetlanej w trybie pływającym</i>.</p>
-<h2 class="western"><font face="Arial, sans-serif"><font size="4" style="font-size: 16pt">Sensor
-przez bluetooth</font></font></h2>
-<p>Pozwala określić, czy ta aplikacja łączy się przez Bluetooth
-z czujnikiem Freestyle libre 2 lub 3. Jest to potrzebne do alarmów i
-ciągłego monitorowania glukozy.</p>
-<h2 class="western"><font face="Arial, sans-serif"><font size="4" style="font-size: 16pt">Alarmy</font></font></h2>
-<p>Ustaw alarmy dla wysokiego i niskiego poziomu stężenia glukozy,
-alarm utraty sygnału i dla powiadomienia o ponownie dostępnej
-wartości glukozy.</p>
-<h2 class="western"><font face="Arial, sans-serif"><font size="4" style="font-size: 16pt">Etykiety
-wart. liczb.</font></font></h2>
-<p style="margin-bottom: 0in">Określ etykiety używane dla wartości
-liczbowych. Przejdź do ekranu, aby określić, które etykiety użyć
-do ustalenia wartości takich jak dawki insuliny, spożycie
-węglowodanów i godziny spędzone na grze w piłkę nożną. Jeśli
-korzystasz również z aplikacji Kerfstok na zegarek Garmin, etykiety
-te są wysyłane do aplikacji na zegarek.</p>
-<h2 class="western"><font face="Arial, sans-serif"><font size="4" style="font-size: 16pt">Przypomnienia</font></font></h2>
-<p style="margin-bottom: 0in">Określ, że alarm powinien się
-włączyć, jeśli nie wprowadziłeś określonej ilości jedzenia
-lub leków w określonym czasie.</p>
-<h2 class="western"><font face="Arial, sans-serif"><font size="4" style="font-size: 16pt">Kolory</font></font></h2>
-<p style="margin-bottom: 0in">Zmień kolory krzywych, skanów i
-liczb.</p>
-<h2 class="western" style="margin-top: 0in; margin-bottom: 0.22in">&nbsp;</h2>
+<p>Następnie nadal można używać Librelink do skanowania, gdy aplikacja ta jest wyświetlona na ekranie, ale nie zostanie ona uruchomiona w inny spos&oacute;b. Librelink 2.5.2 i wyższe wersje zawieszają się, jeśli wykryją roota. Ale w Magisk można łatwo ukryć roota zmieniając nazwę Magisk i dodając poszczeg&oacute;lne aplikacje do denylist (Magisk 24.3) lub Magiskhide (Magisk 23.0). Do denylist należy dodać r&oacute;wnież Juggluco. Z wyjątkiem sytuacji, gdy korzystasz z amerykańskich sensor&oacute;w Freestyle Libre 2, możesz r&oacute;wnież używać starszej wersji Librelink bez sprawdzania roota.</p>
+<p>Bez roota w wierszu poleceń adb można też wyłączyć całą aplikację:</p>
+<p>pm disable-user --user 0 com.freestylelibre.app.nl</p>
+<p>Zanim zadzwonisz do obsługi klienta Abbott, możesz ponownie włączyć ją za pomocą polecenia:</p>
+<p>pm enable com.freestylelibre.app.nl</p>
+<h2 class="western">Libreview</h2>
+<p>Połącz się z Libreview, aby wysłać wartości stężenia glukozy Freestyle Libre 2 i 3 oraz wartości wpis&oacute;w do Libreview oraz aby uzyskać identyfikator konta używany podczas aktywacji sensora Freestyle Libre 3. Dotknij, aby zmienić ustawienia.</p>
+<h2 class="western">Nadawanie sygnału Librelink</h2>
+<p>Nadaje sygnał Librelink (oryginalnie wysyłany przez załataną niemiecką aplikację Librelink w wersji 2.3.0), aby co minutę wysyłać dane strumienia glukozy przez Bluetooth do xDrip. W xDrip musisz ustawić Libre2 (patched App) jako sprzętowe źr&oacute;dło danych. Wartości glukozy wyświetlane w xDrip są inne niż wartości, kt&oacute;re otrzymuje. Z jakiegoś powodu xDrip aktualizuje swoją wartość tylko co 5 minut, prawdopodobnie dlatego, że został stworzony dla urządzeń, kt&oacute;re wysyłają tylko raz na 5 minut. (Tarcza zegarka podłączona do xDrip regularnie wyświetlała stare wartości sprzed ponad 9 minut.) Dodatkowo xDrip wyświetla własną interpretację otrzymanych wartości glukozy. Urządzenia klony r&oacute;wnież mogą wysyłać wartości do xDrip.</p>
+<p>Zobacz <a href="https://github.com/jakobheyman/xdripJH">https://github.com/jakobheyman/xdripJH</a>, aby zapoznać się z pr&oacute;bami aktualizacji wartości glukozy w xDrip co minutę.</p>
+<p>Juggluco może r&oacute;wnież bezpośrednio kontaktować się z aplikacjami xDrip na zegarkach, dzięki czemu aplikacja zegarka wyświetla bardziej aktualne wartości glukozy. Aby skorzystać z tej funkcji zaznacz <i>&quot;xDrip webserver&quot;</i> w lewym menu w zakładce <b>Zegarek</b>. Więcej informacji można znaleźć w: lewe menu -&gt; Zegarek -&gt; Pomoc. Tylko jedna aplikacja może nasłuchiwać na porcie sieciowym używanym przez webserwer xDrip, dlatego też musisz wyłączyć <i>&quot;xDrip webservice</i>&quot; w samym xDrip, jeśli chcesz korzystać z tego w Juggluco.</p>
+<h2 class="western">Nadawanie xDrip</h2>
+<p>Wyślij ten sam sygnał transmisji, kt&oacute;ry został włączony w xDrip w <i>&quot;Ustawienia-&gt;Ustawienia innych aplikacji-&gt;Nadawaj lokalnie&quot;</i> (com.eveningoutpost.dexdrip.BgEstimate). Nasłuchują go aplikacje takie jak AndroidAPS. Aplikacje skierowane na Androida 11 lub wyższą wersję muszą dodać następujące elementy do AndroidManifest.xml, aby działały:</p>
+<p>&lt;queries&gt; <br/> &nbsp;&nbsp; &lt;package android:name=&quot;tk.glucodata&quot;/&gt; <br/> &lt;/queries&gt;</p>
+<p>Co minutę Juggluco wysyła wartość glukozy do wszystkich aplikacji słuchających tej transmisji, xDrip tylko do kilku dobrze znanych aplikacji, z wyjątkiem sytuacji, gdy wyraźnie określisz nazwę.</p>
+<h2 class="western">Glucodata broadcast (Transmisja danych Glucodata)</h2>
+<p>Nowa transmisja, kt&oacute;ra ma taką samą funkcję jak transmisja xDrip. Prosty przykład aplikacji, kt&oacute;ra zapisuje otrzymane wartości glukozy do logcat, można znaleźć tutaj: <a href="http://jkaltes.byethost16.com/Juggluco/glucosebroadcast.html">Glucose broadcasts</a>. Jeśli określisz Juggluco jako źr&oacute;dło danych w G-Watch, musisz włączyć tę transmisję.</p>
+<p>Pokazane są aplikacje nasłuchujące tej transmisji. Zaznacz aplikacje, do kt&oacute;rych chcesz wysłać tę transmisję.</p>
+<h2 class="western">Stęż. glukozy w pasku stanu systemu android</h2>
+<p style="line-height: 100%; margin-bottom: 0in">Jeśli opcja będzie włączona, wartości stęż. glukozy przesyłane strumieniowo przez Bluetooth są cicho wyświetlane w powiadomieniu i na pasku stanu systemu Android. Na niekt&oacute;rych smartfonach wartość stężenia glukozy jest wyświetlana na pasku stanu Androida dopiero po zmianie ustawień powiadomień Androida. Na przykład na Realme GT 5G trzeba wejść w listę aplikacji -&gt;Juggluco-&gt;zarządzaj powiadomieniami, nacisnąć na glucoseNotification i wyłączyć &bdquo;Ustaw na tryb cichy&rdquo;. &quot;Wyświetlanie w pasku stanu&quot; będzie teraz widoczne jako włączone.</p>
+<p style="font-weight: normal; line-height: 100%; margin-bottom: 0in">Możesz r&oacute;wnież uzyskać powiadomienie w systemie Androida, wybierając opcję <i>Powiadom.</i> w lewym środkowym menu. W takim przypadku powiadomienie zostanie wysłane do niekt&oacute;rych smartwatch&oacute;w, jeśli są tak skonfigurowane. To działa z zegarkami Garmin, nie wiem czy działa z czymkolwiek innym. Alarmy r&oacute;wnież generują powiadomienia.</p>
+<h2 class="western">Pływająca wart. gluk.</h2>
+<p>Po włączeniu tej opcji na ekranie stale obecny jest mały obrazek z aktualną wartością stężenia glukozy, niezależnie od tego, kt&oacute;ra aplikacja jest na pierwszym planie. Jeśli włączysz ją po raz pierwszy, zostaniesz przekierowany do listy aplikacji, w kt&oacute;rej musisz udzielić Juggluco uprawnienia do <b>wyświetlania na wierzchu innych aplikacji</b>.</p>
+<h2 class="western">Konfiguracja</h2>
+<p>Określ rozmiar czcionki i kolory wartości <i>glukozy wyświetlanej w trybie pływającym</i>.</p>
+<h2 class="western">Sensor przez bluetooth</h2>
+<p>Pozwala określić, czy ta aplikacja łączy się przez Bluetooth z czujnikiem Freestyle libre 2 lub 3. Jest to potrzebne do alarm&oacute;w i ciągłego monitorowania glukozy.</p>
+<h2 class="western"><b>Alarmy</b></h2>
+<p style="font-weight: normal">Ustaw alarmy dla wysokiego i niskiego poziomu stężenia glukozy, alarm utraty sygnału i dla powiadomienia o ponownie dostępnej wartości glukozy.</p>
+<h2 class="western">Etykiety wart. liczb.</h2>
+<p style="line-height: 100%; margin-bottom: 0in">Określ etykiety używane dla wartości liczbowych. Przejdź do ekranu, aby określić, kt&oacute;re etykiety użyć do ustalenia wartości takich jak dawki insuliny, spożycie węglowodan&oacute;w i godziny spędzone na grze w piłkę nożną. Jeśli korzystasz r&oacute;wnież z aplikacji Kerfstok na zegarek Garmin, etykiety te są wysyłane do aplikacji na zegarek.</p>
+<h2 class="western">Przypomnienia</h2>
+<p style="font-weight: normal; line-height: 100%; margin-bottom: 0in">Określ, że alarm powinien się włączyć, jeśli nie wprowadziłeś określonej ilości jedzenia lub lek&oacute;w w określonym czasie.</p>
+<h2 class="western">Kolory</h2>
+<p style="line-height: 100%; margin-bottom: 0in">Zmień kolory krzywych, skan&oacute;w i liczb.</p>
+<h2 class="western"><br/> <br/></h2>
 </body>
 </html>

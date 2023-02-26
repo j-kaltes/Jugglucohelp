@@ -3,9 +3,9 @@
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 	<title></title>
-	<meta name="generator" content="LibreOffice 7.4.5.1 (Linux)"/>
+	<meta name="generator" content="LibreOffice 7.5.0.3 (Linux)"/>
 	<meta name="created" content="2022-06-27T17:51:41.582328716"/>
-	<meta name="changed" content="2023-02-11T13:49:04.952944159"/>
+	<meta name="changed" content="2023-02-25T22:06:46.332916464"/>
 	<style type="text/css">
 		@page { size: 8.27in 11.69in; margin: 0.79in }
 		p { margin-bottom: 0.1in; background: transparent }
@@ -26,11 +26,12 @@ by averaging the stream values around each point. Now and then it
 also sends an individual stream value in the same way as individual
 scanned values are sent to Libreview by Abbott's Librelink app.
 Juggluco doesn't need to be constantly connected to the internet for
-all data to be send to Libreview. Like the Librelnk app, it sends
+all data to be sent to Libreview. Like the Librelnk app, it sends
 data from the last 89 days to Libreview. What is necessary is that
 Juggluco is constantly connected to a Freestyle Libre 2 sensor via
-Bluetooth. Freestyle Libre 3 sensors can be disconnection from
-Juggluco for up to two hours..</p>
+Bluetooth. For Freestyle Libre 3 sensors the 5 minutes history data
+is used, so that they all previous values are sent to Libreview. 
+</p>
 <p style="line-height: 100%; margin-bottom: 0in"><span lang="en-US">To
 make use of this service, you need to create a Libreview account at
 <a class="western" href="https://libreview.com/">https://libreview.com</a>
@@ -78,8 +79,12 @@ connected with multiple sensors at the same time, while Librelink
 only handles one sensor at a time. Juggluco also sends data from only
 one sensor at a time to Libreview. It does this by first sending the
 data from one sensor and only after no data is available from that
-sensor, it sends the data from the following sensor. 
-</p>
+sensor, it sends the data from the following sensor. When Juggluco is
+switched to a following sensor, Juggluco will not turn back to a
+previous one, to imitate the one sensor policy of Librelink. This
+means that when you run multiple sensors at a time and a later added
+one ends earlier than an earlier added sensor, this earlier sensor
+will send no data anymore to Libreview.</p>
 <p><b>Get Account ID</b>: If you only want to receive the LibreView
 account ID, but not send data to Libreview, you can fill in your
 E-Mail address and Password and press on &quot;<i>Get Account ID</i>&quot;.
@@ -90,8 +95,8 @@ makes it possible to use a FreeStyle Libre 3 sensor that was already
 used with Abbotts Libre 3 app with this LibreView account. Starting
 the sensor with Juggluco is reported not to work.</p>
 <p><b>WARNING</b>: The Freestyle Libre 3 sensor should be activated
-with this account. When you later switch to an account in the Libre 3
-app, scanning the sensor will result in an error.<br/>
+with this account.</p>
+<p><br/>
 <br/>
 <br/>
 

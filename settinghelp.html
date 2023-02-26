@@ -3,9 +3,9 @@
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 	<title></title>
-	<meta name="generator" content="LibreOffice 7.4.5.1 (Linux)"/>
+	<meta name="generator" content="LibreOffice 7.5.0.3 (Linux)"/>
 	<meta name="created" content="2021-02-27T14:01:21.977498081"/>
-	<meta name="changed" content="2023-02-03T15:25:40.195773184"/>
+	<meta name="changed" content="2023-02-21T16:11:45.465338949"/>
 	<style type="text/css">
 		@page { size: 8.27in 11.69in; margin: 0.79in }
 		h1 { margin-bottom: 0.08in; background: transparent }
@@ -107,6 +107,10 @@ addition, xDrip displays its own interpretation of received glucose
 values. Mirror devices can also sent to xDrip.</p>
 <p>See <a href="https://github.com/jakobheyman/xdripJH">https://github.com/jakobheyman/xdripJH</a>
 for an attempt to update the glucose value of xDrip every minute.</p>
+<p>Freestyle Libre 3 sensors send missed values after a disconnection
+period. These values are not sent with this broadcast. You will
+receive them if you turn on the Web server in Juggluco and make xDrip
+a Nightscout follower of Juggluco.</p>
 <p>Juggluco can also directly contact with xDrip watch apps, so that
 the watch app displays more recent glucose values. To use this
 feature check <i>&quot;xDrip webserver&quot;</i> in the left menu
@@ -137,15 +141,26 @@ broadcasts</a>. If you specify Juggluco as data-source in G-Watch,
 you need to turn on this broadcast.</p>
 <p>The application apps listening to this broadcast are shown. Check
 the apps you want to send this broadcast to.</p>
+<h2 class="western">Web server</h2>
+<p>Web server that can be used with xDrip watches and some Nightscout
+apps. Previously called xDrip webserver.</p>
 <h2 class="western">Glucose in android status bar</h2>
-<p style="line-height: 100%; margin-bottom: 0in">If set glucose
+<p style="line-height: 100%; margin-bottom: 0in">If set, glucose
 values streaming via Bluetooth are quietly displayed in a
-notification and the android status bar. On some smartphones, the
-glucose value is only shown in the Android status bar after changing
-Androids notification settings. On Realme GT 5G for example, you have
-to go to applist-&gt;Juggluco-&gt;manage notifications, tab on
-glucoseNotification and turn off &quot;Set to Silent&quot;. &quot;Display
-in status bar&quot; will now be shown turned on.</p>
+notification and the android status bar. If you turn it off, instead
+of a number, a dot is shown and the notification tells nothing more
+than &quot;<i>To connect to sensor</i>&quot; or &quot;<i>To exchange
+data</i>&quot;. An app that stays running in the background, is
+obliged by Android to have such visible notification (otherwise it is
+easily stopped by Android). Juggluco only turns off the notification,
+when &quot;<i>Sensor via Bluetooth</i>&quot; is turned off and there
+are no mirror connections.</p>
+<p style="line-height: 100%; margin-bottom: 0in">On some smartphones,
+the glucose value is only shown in the Android status bar after
+changing Androids notification settings. On Realme GT 5G for example,
+you have to go to applist-&gt;Juggluco-&gt;manage notifications, tab
+on glucoseNotification and turn off &quot;Set to Silent&quot;.
+&quot;Display in status bar&quot; will now be shown turned on.</p>
 <p style="font-weight: normal; line-height: 100%; margin-bottom: 0in">
 You can also get an android notification by selecting <i>Notify</i>
 in the left middle menu. In that case the notification will be sent

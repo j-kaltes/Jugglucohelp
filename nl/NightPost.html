@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 7.5.0.3 (Linux)"/>
+	<meta name="created" content="2023-03-10T12:04:13.361070488"/>
+	<meta name="changed" content="2023-03-10T16:55:08.955661091"/>
+</head>
+<body lang="nl-NL" dir="ltr"><p>Uploaden naar een Nightscout-server. 
+</p>
+<p>In de meeste gevallen kunt u ook de webserver in Juggluco of
+<a href="https://www.juggluco.nl/Juggluco/cmdline">juggluco-server</a>
+gebruiken. Alleen AAPS en NSclient weigeren te werken zonder
+verbinding met <a href="https://github.com/nightscout/cgm-remote-monitor">cgm-remote-monitor</a>. 
+</p>
+<p>AAPS werkt alleen maar als er een verbinding is met een
+Nightscout-server. Als de functionaliteit van deze Artificial
+Pancreas echt afhankelijk is van een Nightscout-server, kunnen ze de
+Nightscout-server beter in AAPS zetten, dan het gevaarlijk
+afhankelijk te maken van een internetverbinding. Als de kern
+functionaliteit van AAPS niet afhankelijk is van Nightscout, kunnen
+ze beter de verplichting om gebruik te maken van deze
+Nightscout-server wegnemen.</p>
+<p>Alle streamwaarden worden geüpload naar de Nightscout-server op
+het moment dat ze binnenkomen. Bij gebruik van meerdere sensoren
+worden alle waarden van alle sensoren geüpload. Sommige Garmin
+horloge-apps/wijzerplaten/widgets gaan ervan uit dat de waarden 5
+minuten uit elkaar liggen. Wanneer ze glucosewaarden met een
+tussenpoos van één minuut ontvangen, tonen ze alleen het laatste
+vijfde deel van de curve. Om die reden plaatst de webserver die is
+ingebouwd in Juggluco de waarden 5 minuten uit elkaar, behalve
+wanneer &quot;interval=secs&quot; is ingesteld op een lagere waarde.</p>
+<p><b>URL</b> : de url moet de vorm hebben van
+https://hostnaam:poort, bijvoorbeeld
+https://mijnnaam.herokuapp.com:6789</p>
+<p><b>Actief</b> : Zet de server aan</p>
+<p><b>Herzend data</b>: Upload alle gegevens opnieuw naar de
+Nightscout-server</p>
+<p><b>Zend nu</b> : Normaal gesproken worden gegevens direct
+verzonden wanneer deze binnenkomen van de sensor of een
+kloonverbinding. Druk op deze knop als een eerdere poging om de een
+of andere reden mislukt is.</p>
+</body>
+</html>

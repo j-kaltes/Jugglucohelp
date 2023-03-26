@@ -5,7 +5,17 @@
 	<title></title>
 	<meta name="generator" content="LibreOffice 7.5.0.3 (Linux)"/>
 	<meta name="created" content="00:00:00"/>
-	<meta name="changed" content="2023-02-26T12:13:32.971330251"/>
+	<meta name="changed" content="2023-03-25T14:10:56.681890959"/>
+	<meta name="created" content="00:00:00">
+	<meta name="created" content="00:00:00">
+	<meta name="created" content="00:00:00">
+	<meta name="created" content="00:00:00">
+	<meta name="created" content="00:00:00">
+	<meta name="created" content="00:00:00">
+	<meta name="created" content="00:00:00">
+	<meta name="created" content="00:00:00">
+	<meta name="created" content="00:00:00">
+	<meta name="created" content="00:00:00">
 	<meta name="created" content="00:00:00">
 	<meta name="created" content="00:00:00">
 	<meta name="created" content="00:00:00">
@@ -28,11 +38,21 @@ einige Nightscout</span> <span lang="de-DE">Apps</span> <span lang="de-DE">könn
 davon Gebrauch machen. xDrip, Diabox und eine
 <a href="https://github.com/dabear/FloatingGlucose/releases">Windows-Floating-Glucose-</a>
 App können mit http verwendet werden, wenn „</span><span lang="de-DE"><i>Nur
-lokal</i></span>“ <span lang="de-DE">nicht eingestellt ist.</span></p>
-<p style="line-height: 100%; margin-bottom: 0in"><span lang="de-DE">Wenn
-Sie über das Internet auf Juggluco zugreifen möchten, müssen Sie
-einen Port von Ihrem Modem weiterleiten. Siehe
-<a href="https://www.juggluco.nl/Juggluco/phones/index.html">https://www.juggluco.nl/Juggluco/phones/index.html</a></span></p>
+lokal</i></span>“ <span lang="de-DE">nicht eingestellt ist.</span>
+<span lang="de-DE">Unter MacOS gilt dasselbe für Nightscout Menu
+Bar, Gluco Status und Gluco Tracker (alle im Apple Store).</span>
+<span lang="de-DE">Auch für <a href="https://github.com/someoneAnyone/Nightscouter">Nightscouter</a>
+(IOS) und <a href="https://github.com/nightscout/nightguard">Nightguard</a>
+(IOS und WatchOS) benötigen Sie nur http.</span></p>
+<p style="line-height: 100%; margin-bottom: 0in">Wenn Sie über das
+Internet auf Juggluco zugreifen möchten, müssen Sie einen Port von
+Ihrem Modem weiterleiten. Siehe:</p>
+<ul>
+	<li><p style="line-height: 100%; margin-bottom: 0in"><a href="https://www.makeuseof.com/tag/what-is-port-forwarding-and-how-can-it-help-me"><span lang="de-DE">https://www.makeuseof.com/tag/what-is-port-forwarding-and-how-can-it-help-me</span></a></p>
+	<li><p style="line-height: 100%; margin-bottom: 0in"><a href="https://www.juggluco.nl/Juggluco/phones/index.html"><span lang="de-DE">https://www.juggluco.nl/Juggluco/phones/index.html</span></a></p>
+	<li><p style="line-height: 100%; margin-bottom: 0in">Linkes
+	mittleres Menü-&gt;Klon-&gt;Verbindung hinzufügen-&gt;Hilfe</p>
+</ul>
 <p style="line-height: 100%; margin-bottom: 0in"><span lang="de-DE">Andere
 Nightscout-Follower verwenden nur https und das erfordert, dass
 Juggluco über einen authentifizierten SSL-Schlüssel für den
@@ -89,18 +109,18 @@ Klon).</span></p>
 Nsclient funktionieren nicht als Follower von Juggluco, aber Sie
 können ihnen Glukosewerte mit der xDrip-Broadcast in Juggluco senden
 (linkes Menü-&gt; Einstellungen-&gt; xDrip Broadcast).</p>
-<p style="line-height: 100%; margin-bottom: 0in"><span lang="de-DE">Sie
-benötigen SSL für Diabetes:M, <a href="https://play.google.com/store/apps/details?id=se.cornixit.nightwatch">Nightwatch</a>
-und <a href="https://slingithub.github.io/CheckmateWeb">Checkmate</a>.
-Geben Sie als Nightscout-Server-URL an: </span>
-</p><p>
-<i>https://hostname:port</i>
-</p><p>
-<i>hostname</i></span>
-<span lang="de-DE">ist der Hostname des authentifizierten Schlüssels,
-den Sie Juggluco gegeben haben, </span><span lang="de-DE"><i>port</i></span>
-<span lang="de-DE">ist der Port, den Sie in diesem Bildschirm
-angegeben haben (Standard: 17581).</span></p>
+<p style="line-height: 100%; margin-bottom: 0in">SSL benötigen Sie
+für die Android-Apps Diabetes:M, <a href="https://play.google.com/store/apps/details?id=se.cornixit.nightwatch">Nightwatch</a>
+und <a href="https://slingithub.github.io/CheckmateWeb">Checkmate</a>,
+Sugarmate (MacOS) und <a href="https://github.com/JohanDegraeve/xdripswift">Xdrip4ios</a>.
+<span lang="de-DE">Geben Sie als Nightscout-Server-URL an: </span>
+</p>
+<p><i>https://hostname:port</i> 
+</p>
+<p><i>hostname</i> <span lang="de-DE">ist der Hostname des
+authentifizierten Schlüssels, den Sie Juggluco gegeben haben,</span>
+<span lang="de-DE">port ist der Port, den Sie an den hier angegebenen
+Port weitergeleitet haben (Standard: 17581).</span></p>
 <p style="line-height: 100%; margin-bottom: 0in">Der Webserver kann
 auch auf einem Linux-Rechner betrieben werden. Es erhält seine Daten
 von einer Klonverbindung von Juggluco, die mit dem Sensor verbunden
@@ -110,12 +130,13 @@ Nightscout-Follower (z. B. auf einem iPhone) mit diesem Server
 verbinden. Wenn es eine Nightscout-App gibt, die mit diesem Webserver
 nicht funktioniert, teilen Sie es mir bitte mit. Vielleicht kann es
 mit ein paar Änderungen zum Laufen gebracht werden.</p>
-<p style="line-height: 100%; margin-bottom: 0in"><b>api_secret:</b>
-Geben Sie an, dass Follower das http-Header-Element api api_secret
-auf diesen Wert setzen sollen. Nicht alle Nightscout-Apps haben eine
-Option zum Setzen von api_secret, das bedeutet, dass Sie sie nicht
-verwenden können, wenn Secret auf einen Wert gesetzt ist. api_secret
-unterscheidet sich von einem Nightscout-Token.</p>
+<p style="line-height: 100%; margin-bottom: 0in"><b>api_secret</b>:
+Geben Sie an, dass Follower das HTTP-Header-Element api<b>_</b>secret
+auf diesen Wert setzen sollen. In Juggluco 4.9.1 oder höher
+funktioniert das Testen dieses Geheimnisses auch, wenn die Follower
+dieses Geheimnis als Nightscout-Token verwenden oder den
+api<font size="4" style="font-size: 14pt"><b>-</b></font>secret-Header
+mit einem SHA1-codierten Geheimnis verwenden.</p>
 <p style="line-height: 100%; margin-bottom: 0in"><strong><span lang="de-DE">Sichtbar</span></strong><span lang="de-DE">:
 Geheimnis</span> <span lang="de-DE">sichtbar machen.</span></p>
 <p style="line-height: 100%; margin-bottom: 0in"><strong><span lang="de-DE">Port</span></strong><span lang="de-DE">:
@@ -140,11 +161,54 @@ Webserver läuft.</span></p>
 <p style="line-height: 100%; margin-bottom: 0in"><strong><span lang="de-DE">Nur
 lokal</span></strong><span lang="de-DE">: Auf den http-Server kann
 nur mit localhost zugegriffen werden. Dies gilt nicht für https.</span></p>
-<p style="line-height: 100%; margin-bottom: 0in"><br/>
-
-</p>
-<p style="line-height: 100%; margin-bottom: 0in"><br/>
-
-</p>
+<p style="line-height: 100%; margin-bottom: 0in"><b>Mengen geben</b>:
+Ermöglichen Sie es, die eingegebenen Mengen über
+<a href="http://localhost:17580/api/v1/treatments?count=3">http://localhost:17580/api/v1/treatments?count=3</a>
+zu erhalten. (Sie müssen für jedes Etikett angeben, was damit
+geschehen soll. Dies wird auch zum Senden von Mengen an Libreview
+verwendet.) Über diese Schnittstelle kann xDrip Mengen von Juggluco
+empfangen. In xDrip können Sie dies auf zwei Arten tun:</p>
+<ol>
+	<li><p style="line-height: 100%; margin-bottom: 0in">Nehmen Sie als
+	„Datenquelle“ „Nightscout Follower“ und geben Sie als
+	„<span style="font-variant: normal"><span style="font-style: normal">Follow
+	URL</span></span>“ http://127.0.0.1:17580 an und aktivieren Sie
+	„<i>Behandlungen herunterladen</i>“.</p>
+	<li><p style="line-height: 100%; margin-bottom: 0in">Nehmen Sie eine
+	andere <i>Datenquelle</i>, z. B. <i>Libre (gepatchte App)</i>, und
+	aktivieren Sie Einstellungen-&gt;Cloud-Upload-&gt; API Upload
+	(REST). Geben Sie als Basis URL
+	http://somekeynotused@127.0.0.1:17580/api/v1/ ein und aktivieren Sie
+	„<i>Behandlungen herunterladen</i>“. Das Hochladen auf Juggluco
+	ist nicht möglich, daher werden nur Behandlungen heruntergeladen
+	und einige Fehlermeldungen generiert.</p>
+</ol>
+<p style="line-height: 100%; margin-bottom: 0in">Wenn &quot;<i>Nur
+lokal</i>&quot; deaktiviert ist, können Sie auch die Heimnetzwerk-IP
+des Telefons verwenden, auf dem Juggluco läuft, und, wenn Sie Ihr
+Modem so konfigurieren, dass es an 17580 dieses Telefons
+weiterleitet, die externe IP Ihres Telefons. Wenn Sie Juggluco einen
+privaten Schlüssel und ein Full Chain für einen Hostnamen gegeben
+haben, über den auf das Telefon zugegriffen werden kann, und die
+Verwendung von SSL aktiviert haben, können Sie auch diesen Hostnamen
+und den hier angegebenen Port verwenden, indem Sie https anstelle von
+http verwenden.</p>
+<p style="line-height: 100%; margin-bottom: 0in">Wenn Sie
+Behandlungen zu Diabetes:M hochladen möchten, können Sie entweder
+die Daten von Juggluco an Libreview senden und die Daten in Libreview
+mit „Glukosedaten herunterladen“ speichern und diese Daten in
+Diabetes:M mit Daten-&gt;Aus anderen Quellen importieren-&gt;Freestyle
+importieren oder erhalten Sie einen authentifizierten Schlüssel für
+den externen Hostnamen Ihres Telefons und geben Sie als Link externe
+Quelle Nightscout mit als URL https://IhrHostname:Port an, wobei
+IhrHostname der Hostname Ihres Telefons ist, auf dem Juggluco läuft,
+für das Sie einen authentifizierten Schlüssel erhalten haben und
+Port ist der Port, den Sie hier erwähnt haben. Es scheint nicht
+automatisch zu synchronisieren, also musst du in Diabetes:M selbst
+auf Sync drücken.</p>
+<p style="line-height: 100%; margin-bottom: 0in">Weitere
+Informationen zu den in Juggluco implementierten
+Nightscout/xDrip-Webserver-Befehlen finden Sie unter
+<a href="https://www.juggluco.nl/Juggluco/webserver.html">https://www.juggluco.nl/Juggluco/webserver.html</a></p>
 </body>
 </html>

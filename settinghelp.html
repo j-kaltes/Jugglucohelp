@@ -5,7 +5,7 @@
 	<title></title>
 	<meta name="generator" content="LibreOffice 7.5.0.3 (Linux)"/>
 	<meta name="created" content="2021-02-27T14:01:21.977498081"/>
-	<meta name="changed" content="2023-02-21T16:11:45.465338949"/>
+	<meta name="changed" content="2023-03-10T17:01:32.567280128"/>
 	<style type="text/css">
 		@page { size: 8.27in 11.69in; margin: 0.79in }
 		h1 { margin-bottom: 0.08in; background: transparent }
@@ -95,11 +95,11 @@ without root check.</p>
 values and amounts to Libreview and to get the account id used during
 Freestyle Libre 3 sensor activation. Touch to change settings.</p>
 <h2 class="western">Librelink broadcast</h2>
-<p>Sends the Librelink broadcast (originally send by the patched
-German Librelink app 2.3.0), to send the Bluetooth glucose stream
-data every minute to xDrip. In xDrip you need to set Libre2 (patched
-App) as hardware data source. The glucose values displayed in xDrip
-are different from the values it receives. For some reason xDrip only
+<p>Use the Librelink broadcast (originally send by the patched German
+Librelink app 2.3.0), to send the Bluetooth glucose stream data every
+minute to xDrip. In xDrip you need to set Libre2 (patched App) as
+hardware data source. The glucose values displayed in xDrip are
+different from the values it receives. For some reason xDrip only
 updates its value every 5 minutes, probably because it was made for
 devices that send only once per 5 minutes (A watch face connected to
 xDrip regularly displayed more than 9 minute old values.) In
@@ -110,7 +110,8 @@ for an attempt to update the glucose value of xDrip every minute.</p>
 <p>Freestyle Libre 3 sensors send missed values after a disconnection
 period. These values are not sent with this broadcast. You will
 receive them if you turn on the Web server in Juggluco and make xDrip
-a Nightscout follower of Juggluco.</p>
+a Nightscout follower of Juggluco. Nightscout server:
+http://127.0.0.1:17580</p>
 <p>Juggluco can also directly contact with xDrip watch apps, so that
 the watch app displays more recent glucose values. To use this
 feature check <i>&quot;xDrip webserver&quot;</i> in the left menu
@@ -144,6 +145,8 @@ the apps you want to send this broadcast to.</p>
 <h2 class="western">Web server</h2>
 <p>Web server that can be used with xDrip watches and some Nightscout
 apps. Previously called xDrip webserver.</p>
+<h2 class="western">Uploader</h2>
+<p>Upload to a Nightscout server.</p>
 <h2 class="western">Glucose in android status bar</h2>
 <p style="line-height: 100%; margin-bottom: 0in">If set, glucose
 values streaming via Bluetooth are quietly displayed in a

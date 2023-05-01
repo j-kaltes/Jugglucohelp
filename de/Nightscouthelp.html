@@ -3,9 +3,12 @@
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 	<title></title>
-	<meta name="generator" content="LibreOffice 7.5.0.3 (Linux)"/>
+	<meta name="generator" content="LibreOffice 7.5.2.2 (Linux)"/>
 	<meta name="created" content="00:00:00"/>
-	<meta name="changed" content="2023-03-25T14:10:56.681890959"/>
+	<meta name="changed" content="2023-04-29T22:58:36.619532532"/>
+	<meta name="created" content="00:00:00">
+	<meta name="created" content="00:00:00">
+	<meta name="created" content="00:00:00">
 	<meta name="created" content="00:00:00">
 	<meta name="created" content="00:00:00">
 	<meta name="created" content="00:00:00">
@@ -41,7 +44,8 @@ App können mit http verwendet werden, wenn „</span><span lang="de-DE"><i>Nur
 lokal</i></span>“ <span lang="de-DE">nicht eingestellt ist.</span>
 <span lang="de-DE">Unter MacOS gilt dasselbe für Nightscout Menu
 Bar, Gluco Status und Gluco Tracker (alle im Apple Store).</span>
-<span lang="de-DE">Auch für <a href="https://github.com/someoneAnyone/Nightscouter">Nightscouter</a>
+<span lang="de-DE">Auch für <a href="https://github.com/someoneAnyone/Nightscouter">Nightscouter</a></span>
+<span lang="de-DE">und <a href="https://github.com/jonfawcett/LoopFollow">LoopFollow</a>
 (IOS) und <a href="https://github.com/nightscout/nightguard">Nightguard</a>
 (IOS und WatchOS) benötigen Sie nur http.</span></p>
 <p style="line-height: 100%; margin-bottom: 0in">Wenn Sie über das
@@ -112,8 +116,10 @@ können ihnen Glukosewerte mit der xDrip-Broadcast in Juggluco senden
 <p style="line-height: 100%; margin-bottom: 0in">SSL benötigen Sie
 für die Android-Apps Diabetes:M, <a href="https://play.google.com/store/apps/details?id=se.cornixit.nightwatch">Nightwatch</a>
 und <a href="https://slingithub.github.io/CheckmateWeb">Checkmate</a>,
-Sugarmate (MacOS) und <a href="https://github.com/JohanDegraeve/xdripswift">Xdrip4ios</a>.
-<span lang="de-DE">Geben Sie als Nightscout-Server-URL an: </span>
+Sugarmate (MacOS und IOS) und <a href="https://github.com/JohanDegraeve/xdripswift">Xdrip4ios</a>,
+Shuggah und Cockpit (IOS).</p>
+<p style="line-height: 100%; margin-bottom: 0in">Geben Sie als
+Nightscout-Server-URL an: 
 </p>
 <p><i>https://hostname:port</i> 
 </p>
@@ -129,7 +135,11 @@ Ein anderes Telefon kann sich über eine Klonverbindung oder als
 Nightscout-Follower (z. B. auf einem iPhone) mit diesem Server
 verbinden. Wenn es eine Nightscout-App gibt, die mit diesem Webserver
 nicht funktioniert, teilen Sie es mir bitte mit. Vielleicht kann es
-mit ein paar Änderungen zum Laufen gebracht werden.</p>
+mit ein paar Änderungen zum Laufen gebracht werden. (Die IOS-Apps
+Nightscout und Nightscout X und die Android-App NSClient sind
+spezifisch für ein bestimmtes Nightscout-Serverprogramm und
+funktionieren nicht mit Juggluco.) 
+</p>
 <p style="line-height: 100%; margin-bottom: 0in"><b>api_secret</b>:
 Geben Sie an, dass Follower das HTTP-Header-Element api<b>_</b>secret
 auf diesen Wert setzen sollen. In Juggluco 4.9.1 oder höher

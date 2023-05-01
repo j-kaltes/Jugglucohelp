@@ -3,24 +3,21 @@
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 	<title></title>
-	<meta name="generator" content="LibreOffice 7.5.0.3 (Linux)"/>
+	<meta name="generator" content="LibreOffice 7.5.2.2 (Linux)"/>
 	<meta name="created" content="2023-03-10T12:04:13.361070488"/>
-	<meta name="changed" content="2023-03-10T16:49:16.739990036"/>
+	<meta name="changed" content="2023-04-28T12:27:20.549447188"/>
 </head>
 <body lang="de-DE" dir="ltr"><p>Auf einen Nightscout-Server
 hochladen. 
 </p>
 <p>In den meisten Fällen können Sie auch den Webserver in Juggluco
 oder <a href="https://www.juggluco.nl/Juggluco/cmdline">juggluco-server</a>
-verwenden. Nur AAPS und NSclient verweigern die Arbeit, wenn <a href="https://github.com/nightscout/cgm-remote-monitor">cgm-remote-monitor</a> nicht verbunden ist.</p>
-<p>AAPS funktioniert nicht, wenn keine Verbindung zu einem
-Nightscout-Server besteht. Wenn die Funktionalität dieser
-künstlichen Bauchspeicheldrüse wirklich von einem Nightscout-Server
-abhängt, könnten sie den Nightscout-Server besser in AAPS stellen,
-anstatt ihn gefährlich von einer Internetverbindung abhängig zu
-machen. Wenn die Kernfunktionen von AAPS nicht von Nightscout
-abhängig sind, könnten sie besser die Verpflichtung zur Nutzung
-dieses Nightscout-Servers aufheben.</p>
+verwenden. Nur AAPS und NSclient verweigern die Arbeit, wenn
+<a href="https://github.com/nightscout/cgm-remote-monitor">cgm-remote-monitor</a>
+nicht verbunden ist. Der Webserver in Juggluco gibt auch Mengen in
+Form von Nightscout-Behandlungen aus (
+<a href="https://www.juggluco.nl/Juggluco/webserver.html">https://www.juggluco.nl/Juggluco/webserver.html</a>),
+der Uploader lädt nur Glukosewerte hoch.</p>
 <p>Alle Stream-Werte werden im Moment ihres Eintreffens auf den
 Nightscout-Server hochgeladen. Wenn mehrere Sensoren verwendet
 werden, werden alle Werte aller Sensoren hochgeladen. Einige Garmin
@@ -39,5 +36,13 @@ Nightscout-Server hoch</p>
 wenn sie vom Sensor oder einer Klonverbindung ankommen. Drücken Sie
 auf diese Schaltfläche, wenn ein vorheriger Versuch aus irgendeinem
 Grund fehlgeschlagen ist.</p>
+<p>Die WearOS-Version Juggluco 4.15.0 und höher kann auch
+Glukosewerte auf Nightscout hochladen. In fast allen Fällen können
+Sie sie besser über eine Juggluco-Version auf einem Telefon oder
+Tablet oder über einen Juggluco-Server auf einem Computer senden.
+Dadurch wird der Akku entladen, insbesondere wenn keine Verbindung
+zum Nightscout-Server hergestellt werden kann, sodass Sie <i>Active</i>
+besser ausschalten können, wenn keine zuverlässige Verbindung
+besteht.</p>
 </body>
 </html>

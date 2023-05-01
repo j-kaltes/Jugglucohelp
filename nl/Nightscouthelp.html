@@ -3,9 +3,13 @@
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 	<title>Webserver</title>
-	<meta name="generator" content="LibreOffice 7.5.0.3 (Linux)"/>
+	<meta name="generator" content="LibreOffice 7.5.2.2 (Linux)"/>
 	<meta name="created" content="00:00:00"/>
-	<meta name="changed" content="2023-03-25T14:12:10.864891124"/>
+	<meta name="changed" content="2023-04-30T11:36:53.072842858"/>
+	<meta name="created" content="00:00:00">
+	<meta name="created" content="00:00:00">
+	<meta name="created" content="00:00:00">
+	<meta name="created" content="00:00:00">
 	<meta name="created" content="00:00:00">
 	<meta name="created" content="00:00:00">
 	<meta name="created" content="00:00:00">
@@ -32,6 +36,7 @@ Floating Glucose-</a> app kunnen worden gebruikt met http als &quot;alleen
 lokaal&quot; niet is ingesteld.</span> Op MacOS geldt hetzelfde voor
 Nightscout Menu Bar, Gluco Status en Gluco Tracker (allemaal in Apple
 Store). Je hebt ook alleen http nodig voor <a href="https://github.com/someoneAnyone/Nightscouter">Nightscouter</a>
+en <a href="https://github.com/jonfawcett/LoopFollow">LoopFollow</a>
 (IOS) en <a href="https://github.com/nightscout/nightguard">Nightguard</a>
 (IOS en WatchOS).</p>
 <p style="line-height: 100%; margin-bottom: 0in"><span lang="nl-NL">Als
@@ -73,7 +78,8 @@ te drukken.</span></p>
 ontving ik drie bestanden: private.key, certificate.crt en
 ca_bundle.crt.</p>
 <p style="line-height: 100%; margin-bottom: 0in"><span lang="nl-NL">private.key
-is de private sleutel, die u aan Juggluco moet geven door op &quot;</span><em><span lang="nl-NL">Private
+is de private sleutel, die </span><span lang="nl-NL">je</span><span lang="nl-NL">
+aan Juggluco moet geven door op &quot;</span><em><span lang="nl-NL">Private
 Key</span></em><span lang="nl-NL">&quot; te drukken.</span></p>
 <p style="line-height: 100%; margin-bottom: 0in">Om de <i>Full Chain</i>
 te maken, moet je certificate.crt en ca_bundle.crt samenvoegen.</p>
@@ -102,8 +108,9 @@ glucosewaarden naar sturen met de xDrip-Broadcast in Juggluco
 <p style="line-height: 100%; margin-bottom: 0in">Je hebt SSL nodig
 voor de Android apps Diabetes:M, <a href="https://play.google.com/store/apps/details?id=se.cornixit.nightwatch">Nightwatch</a>
 en <a href="https://slingithub.github.io/CheckmateWeb">Checkmate</a>
-, Sugarmate (MacOS) en <a href="https://github.com/JohanDegraeve/xdripswift">Xdrip4ios</a>
-. <span lang="nl-NL">Specificeer als Nightscout server URL: </span>
+, Sugarmate (MacOS en IOS) en <a href="https://github.com/JohanDegraeve/xdripswift">Xdrip4ios</a>,
+Shuggah en Cockpit (IOS). <span lang="nl-NL">Specificeer als
+Nightscout server URL: </span>
 </p>
 <p><i>https://hostnaam:poort</i> 
 </p>
@@ -121,7 +128,11 @@ sensor heeft: <a href="https://www.juggluco.nl/Juggluco/cmdline/index.html">http
 kan verbinding maken met deze server via een kloon-verbinding of als
 Nightscout-volger (bijvoorbeeld op een Iphone). Laat het me weten als
 er een Nightscout-app is die niet werkt met deze webserver. Misschien
-kan het met een paar wijzigingen werkend worden gemaakt.</p>
+kan het met een paar wijzigingen werkend worden gemaakt. (De IOS-apps
+Nightscout en Nightscout X en de Android-app NSClient zijn specifiek
+voor één bepaald Nightscout-serverprogramma en werken niet met
+Juggluco.) 
+</p>
 <p style="line-height: 100%; margin-bottom: 0in"><b>api_secret</b>:
 Geef op dat volgers het api<b>_</b>secret http-header-element op deze
 waarde moeten instellen. In Juggluco 4.9.1 of hoger werkt het testen

@@ -5,7 +5,7 @@
 	<title></title>
 	<meta name="generator" content="LibreOffice 7.5.2.2 (Linux)"/>
 	<meta name="created" content="2022-07-29T11:36:48.688428529"/>
-	<meta name="changed" content="2023-04-15T21:45:21.638060132"/>
+	<meta name="changed" content="2023-05-11T15:23:03.370242041"/>
 	<style type="text/css">
 		@page { margin: 0.79in }
 		p { line-height: 115%; margin-bottom: 0.1in }
@@ -21,19 +21,35 @@
 manieren kunnen stream glucose waarden van Juggluco naar horloges
 verzonden en daarop weergegeven worden.</p>
 <h2 class="western">Melding</h2>
-<p style="line-height: 100%; margin-bottom: 0in">Als <i>Meld</i><i>ing</i>
+<p style="line-height: 100%; margin-bottom: 0in">Als <i>Melding</i>
 is ingeschakeld, wordt er een Android-melding gemaakt telkens wanneer
 er een nieuwe glucosewaarde binnenkomt. Op sommige horloges worden
 notificaties alleen naar het horloge gestuurd als er een nieuwe
 notificatie wordt aangemaakt, hiervoor moet je <i><b>Apart</b></i>
-aanzetten .<span style="font-style: normal"> Bij deze horloges moet
-je ook </span><i>Apart</i><span style="font-style: normal">
-inschakelen om alarmmeldingen op het horloge te ontvangen</span>.</p>
+aanzetten .<span style="font-variant: normal"> </span><span style="font-variant: normal"><span style="font-style: normal">Bij
+deze horloges moet je ook </span></span><i>Apart</i><span style="font-variant: normal">
+</span><span style="font-variant: normal"><span style="font-style: normal">inschakelen
+om alarmmeldingen op het horloge te ontvangen</span></span>.</p>
 <h2 class="western">Watchdrip</h2>
 <p style="line-height: 100%; margin-bottom: 0in"><span lang="nl-NL">Door
 deze aan te zetten, stuurt Juggluco glucosewaarden naar <a class="western" href="https://bigdigital.home.blog/2022/06/16/watchdrip-a-new-application-for-xdrip-watch-integration">Watchdrip+</a>
 . Watchdrip+ stuurt wijzerplaten met glucosewaarden naar
 MiBand/Amazfit-horloges.</span></p>
+<h2 class="western">GadgetBridge</h2>
+<p style="line-height: 100%; margin-bottom: 0in">GadgetBridge (<a class="western" href="https://codeberg.org/Freeyourgadget/Gadgetbridge/wiki">Wiki</a>)
+maakt het mogelijk om weersinformatie weer te geven op
+MiBand/Amazfit-horloges. Met de Gadgetbridge-optie ingeschakeld, zal
+Juggluco glucosewaarden naar GadgetBridge sturen onder het
+voorwendsel dat het weersinformatie is. Dit heeft boven Watchdrip als
+voordeel dat het veel sneller is, maar heeft als nadeel dat er minder
+informatie wordt weergegeven. Juggluco zet de glucosewaarde en een
+richtingspijl in de locatie van het weer. Deze locatie wordt
+weergegeven onder Weer op het horloge. Ik heb geen wijzerplaat
+gevonden die deze locatie weergeeft. De afgeronde glucosewaarde,
+wordt als de huidige temperatuur overgezonen, de waarde voor de komma
+wordt als de maximale temperatuur en de waarde na de komma als de
+minimale temperatuur. De richting van verandering bepaalt het
+weerpictogram: sneeuw is dalende glucose, regen is stijgende glucose.</p>
 <h2 class="western">Kerfstok</h2>
 <p style="line-height: 100%; margin-bottom: 0in"><span lang="nl-NL">Kerfstok
 is een horloge app voor sommige Garmin horloges waarmee je nummers
@@ -58,15 +74,16 @@ Juggluco verbonden is de waarden maximaal 1 minuut oud zijn (als er
 geen connectie problemen of zo optreden). Juggluco zendt altijd de
 recentste glucose waarden, maar die worden enkel naar de xDrip
 horloge app verzonden nadat die er om gevraagd heeft. Watch faces en
-data fields op </span><span lang="nl-NL"><b>Garmin</b></span><span lang="nl-NL">
-horloges vragen elke 5 minute naar een glucose waarden omdat Garmin
-een hogere update frequentie niet toelaat. Via xDrip kon dat er toe
-leiden dat een 10 minute oude glucose waarden getoond werd. Direct
-verbonden aan Juggluco zijn die waarden maximaal 6 minuten oud (als
-alles goed gaat). Als je een programmeerbare Garmin horloge hebt
-waarop Kerfstok niet werkt omdat het geen touchscreen heeft, bestaan
-er de volgende mogelijkheden om toch een niet al te oude glucose
-waarden op je horloge te zien. Een xDrip widget
+data fields op </span><span lang="nl-NL"><b>Garmin</b></span>
+<span lang="nl-NL">horloges vragen elke 5 minute naar een glucose
+waarden omdat Garmin een hogere update frequentie niet toelaat. Via
+xDrip kon dat er toe leiden dat een 10 minute oude glucose waarden
+getoond werd. Direct verbonden aan Juggluco zijn die waarden maximaal
+6 minuten oud (als alles goed gaat). Als je een programmeerbare
+Garmin horloge hebt waarop Kerfstok niet werkt omdat het geen
+touchscreen heeft, bestaan er de volgende mogelijkheden om toch een
+niet al te oude glucose waarden op je horloge te zien. Een xDrip
+widget
 (<a class="western" href="https://apps.garmin.com/en-US/apps/73115e04-dc9f-4765-ad88-e7ae283ce995">https://apps.garmin.com/en-US/apps/73115e04-dc9f-4765-ad88-e7ae283ce995</a>)
 vertoont direct na het opstarten altijd de meest recente waarde en
 kan ook tijdens het draaien van een sport activiteit horloge app
@@ -77,8 +94,8 @@ andere mogelijkheid is een xDrip sport app
 te gebruiken en die zo op te starten dat het moment waarop het de
 glucose waarden opvraagt net na het binnenkomen van een nieuwe
 glucose waarden bij Juggluco is. Volgens een gebruiker bestaat er ook
-een wijzerplaat (watch face) for </span><span lang="nl-NL"><b>Fitbit</b></span><span lang="nl-NL">
-horloges dat werkt met de xDrip webserver:
+een wijzerplaat (watch face) for </span><span lang="nl-NL"><b>Fitbit</b></span>
+<span lang="nl-NL">horloges dat werkt met de xDrip webserver:
 <a class="western" href="https://glancewatchface.com/">https://glancewatchface.com</a></span></p>
 <p><b>local only</b>: server accepteert enkel verbindingen van
 localhost (127.0.0.1). Als je het uitzet kunnen ook andere hosts

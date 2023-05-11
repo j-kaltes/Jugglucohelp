@@ -5,7 +5,7 @@
 	<title></title>
 	<meta name="generator" content="LibreOffice 7.5.2.2 (Linux)"/>
 	<meta name="created" content="2022-03-03T14:07:37.938004739"/>
-	<meta name="changed" content="2023-04-16T12:02:10.675327426"/>
+	<meta name="changed" content="2023-05-11T15:21:46.816723882"/>
 	<style type="text/css">
 		@page { size: 8.27in 11.69in; margin: 0.79in }
 		p { margin-bottom: 0.1in; background: transparent }
@@ -30,6 +30,21 @@ For these watches you also have to switch on </span><span lang="en-US"><i>Separa
 on, Juggluco sends glucose values to <a href="https://bigdigital.home.blog/2022/06/16/watchdrip-a-new-application-for-xdrip-watch-integration">Watchdrip+</a>.
 Watchdrip+ sends watch faces, showing glucose values, to
 MiBand/Amazfit watches.</p>
+<h2 class="western">GadgetBridge</h2>
+<p>GadgetBridge (<a href="https://codeberg.org/Freeyourgadget/Gadgetbridge/wiki">Wiki</a>)
+makes it possible to display weather information on MiBand/Amazfit
+watches. With the Gadgetbridge option turned on, will Juggluco send
+glucose values to GadgetBridge under the pretext that it is weather
+information. This had the advantage above Watchdrip that it is much
+faster, but has the disadvantage that less information is displayed.
+Juggluco puts the glucose value and a direction arrow in the location
+of the weather. This location is displayed under Weather on the
+watch. I haven't found any watch face that displayed this location.
+The rounded glucose value is put in the current temperature. For
+those who use mmol, the value before the point is put in the maximal
+temperature and the value after the point in the minimal temperature.
+The direction of change determines the weather icon: snow is falling
+glucose, rain is rising glucose.</p>
 <h2 class="western">Kerfstok</h2>
 <p style="line-height: 100%; margin-bottom: 0in"><span lang="en-US">Kerfstok
 is watch app by which you can enter numbers (like insulin doses),</span>
@@ -49,18 +64,18 @@ can receive glucose values from the Glucodata Broadcast (see Left
 menu-&gt;Settings).</p>
 <h2 class="western">xDrip watch apps</h2>
 <p style="line-height: 100%; margin-bottom: 0in"><span lang="en-US">Juggluco
-incorporates an xDrip</span><span lang="en-US">/Nightscout</span><span lang="en-US">
-webserver. This makes it possible to directly use xDrip watch apps
-with Juggluco. xDrip displays a new glucose value only every 5
-minutes, while Juggluco displays a new glucose value every minute.
-Juggluco also sends to the xDrip watch apps the most recent glucose
-value. The glucose values are only send to the watches if the watch
-app asks for them, thus how old the displayed values are depends on
-when the watch app asks for them. For example watch faces and data
-fields on Garmin watches only ask for a glucose value every 5
-minutes. Via xDrip this often let to 10 minute old glucose values.
-When directly connected with Juggluco, these watch faces show up to 6
-minute old glucose values. Under </span><span lang="en-US"><b>Garmin</b></span><span lang="en-US">,
+incorporates an xDrip/Nightscout</span> <span lang="en-US">webserver.
+This makes it possible to directly use xDrip watch apps with
+Juggluco. xDrip displays a new glucose value only every 5 minutes,
+while Juggluco displays a new glucose value every minute. Juggluco
+also sends to the xDrip watch apps the most recent glucose value. The
+glucose values are only send to the watches if the watch app asks for
+them, thus how old the displayed values are depends on when the watch
+app asks for them. For example watch faces and data fields on Garmin
+watches only ask for a glucose value every 5 minutes. Via xDrip this
+often let to 10 minute old glucose values. When directly connected
+with Juggluco, these watch faces show up to 6 minute old glucose
+values. Under </span><span lang="en-US"><b>Garmin</b></span><span lang="en-US">,
 if you can't use Kerfstok, you have the following options to
 regularly receive a recent glucose value. An xDrip widget
 (<a href="https://apps.garmin.com/en-US/apps/73115e04-dc9f-4765-ad88-e7ae283ce995">https://apps.garmin.com/en-US/apps/73115e04-dc9f-4765-ad88-e7ae283ce995</a>)

@@ -12,14 +12,13 @@ Common/src/main/cpp/curve/***jugglucotext.cpp***
 
 The entries in *strings.xml* have a name used by the program and text shown to the user that is different in different languages.
 For example different translations of the entry with the name *visible* are:
-`
-    values/strings.xml:		<string name="visible">Visible</string>  
-    values-de/strings.xml:		<string name="visible">Sichtbar</string>  
-    values-it/strings.xml:		<string name="visible">Visibile</string>  
-    values-nl/strings.xml:		<string name="visible">Tonen</string>  
-    values-pl/strings.xml:		<string name="visible">Pokaż</string>  
-    values-pt/strings.xml:		<string name="visible">Visível</strig>  
-`
+`values/strings.xml:		<string name="visible">Visible</string>`  
+`values-de/strings.xml:		<string name="visible">Sichtbar</string>`  
+`values-it/strings.xml:		<string name="visible">Visibile</string>`  
+`values-nl/strings.xml:		<string name="visible">Tonen</string>`  
+`values-pl/strings.xml:		<string name="visible">Pokaż</string>`  
+`values-pt/strings.xml:		<string name="visible">Visível</string>`  
+
 The name "visible" stays the same but word(s) between <string name="visible"> and </string> are language specific.  
   
 In *jugglucotext.cpp* the text between quotes has to be translated, except for "jugglucotext.h".  

@@ -19,7 +19,7 @@ For example different translations of the entry with the name *visible* are:
 `values-pl/strings.xml:		<string name="visible">Pokaż</string>`  
 `values-pt/strings.xml:		<string name="visible">Visível</string>`  
 
-The name "visible" stays the same but word(s) between <string name="visible"> and </string> are language specific.  
+The name "visible" stays the same but word(s) between `<string name="visible">` and `</string>` are language specific.  
   
 In *jugglucotext.cpp* the text between quotes is translated, except for "jugglucotext.h".  
 For example:  

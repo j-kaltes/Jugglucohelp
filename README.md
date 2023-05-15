@@ -2,15 +2,9 @@
 To write a translation of Juggluco you just translate the files ending in **.html** making use of LibreOffice.
 
 To make a full translation also the following files of the
-Juggluco source need to be translated:
+Juggluco source need to be translated: Common/src/main/res/values/strings.xml and Common/src/main/cpp/curve/jugglucotext.cpp
 
-Common/src/main/res/values/***strings.xml***
-
-and
-
-Common/src/main/cpp/curve/***jugglucotext.cpp***
-
-The entries in *strings.xml* have a name used by the program and text shown to the user that is different in different languages.
+The entries in ****strings.xml**** have a name used by the program and text shown to the user that is different in different languages.
 For example different translations of the entry with the name *visible* are:
 `values/strings.xml:		<string name="visible">Visible</string>`  
 `values-de/strings.xml:		<string name="visible">Sichtbar</string>`  
@@ -21,7 +15,7 @@ For example different translations of the entry with the name *visible* are:
 
 The name "visible" stays the same but word(s) between `<string name="visible">` and `</string>` are language specific.  
   
-In *jugglucotext.cpp* the text between quotes is translated, except for "jugglucotext.h".  
+In ****jugglucotext.cpp**** the text between quotes is translated, except for "jugglucotext.h".  
 For example:  
 jugglucotext.cpp:	.daylabel={"Sun","Mon","Tue","Wed","Thu","Fri","Sat"},  
 Translations:  

@@ -21,7 +21,7 @@ For example different translations of the entry with the name *visible* are:
 
 The name "visible" stays the same but word(s) between <string name="visible"> and </string> are language specific.  
   
-In *jugglucotext.cpp* the text between quotes has to be translated, except for "jugglucotext.h".  
+In *jugglucotext.cpp* the text between quotes is translated, except for "jugglucotext.h".  
 For example:  
 jugglucotext.cpp:	.daylabel={"Sun","Mon","Tue","Wed","Thu","Fri","Sat"},  
 Translations:  

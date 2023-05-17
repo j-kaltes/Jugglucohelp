@@ -25,3 +25,8 @@ nljugglucotext.cpp:	.daylabel={"zon","maa","din","woe","don","vri","zat"},
 pljugglucotext.cpp:	.daylabel={"nie","pon","wto","śro","czw","pią","sob"},  
 ptjugglucotext.cpp:	.daylabel={"Dom","Seg","Ter","Qua","Qui","Sex","Sáb"},  
   
+All translations should be short enough to fit on the display, especially text that is displayed on WearOS watches.
+jugglucotext.cpp contains some additional length restrictions. The strings in labels and shortinit should not be longer than 11 bytes. In unaccented English text each character is one byte, but accented text uses more than one byte for one character.
+labels and shortinit are just examples of what users can do and don't need to be translated literally. Labels are labels for the Amounts entered and shortinit are shortcuts that can be used in the Garmin watch app Kerfstok.
+
+The abbreviations for days and month don't have an absolute byte number restriction, but should be three characters long, so they don't use to much space.

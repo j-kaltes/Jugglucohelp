@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title>Statistiques</title>
+	<meta name="generator" content="LibreOffice 7.3.7.2 (Linux)"/>
+	<meta name="created" content="00:00:00"/>
+	<meta name="changed" content="2023-05-21T20:27:23.071823733"/>
+	<meta name="created" content="00:00:00">
+	<meta name="created" content="00:00:00">
+	<meta name="created" content="00:00:00">
+	<meta name="created" content="00:00:00">
+	<meta name="created" content="00:00:00">
+	<meta name="created" content="00:00:00">
+	<meta name="created" content="00:00:00">
+	<meta name="created" content="00:00:00">
+	<meta name="created" content="00:00:00">
+	<meta name="created" content="00:00:00">
+	<style type="text/css">
+		@page { size: 21.01cm 29.69cm; margin-left: 2.01cm; margin-right: 0.99cm; margin-top: 0.99cm; margin-bottom: 0.99cm }
+		h1 { margin-bottom: 0.2cm; background: transparent }
+		h1.western { font-family: "Liberation Serif", serif }
+		h1.cjk { font-family: "Noto Serif CJK SC"; font-size: 24pt }
+		h1.ctl { font-family: "Mangal"; font-size: 24pt }
+		p { line-height: 115%; margin-bottom: 0.25cm; background: transparent }
+		h3 { margin-top: 0.25cm; margin-bottom: 0.2cm; background: transparent }
+		h3.western { font-family: "Liberation Serif", serif }
+		h3.cjk { font-family: "Noto Serif CJK SC" }
+		h3.ctl { font-family: "Mangal" }
+		a:link { so-language: zxx }
+	</style>
+</head>
+<body lang="en-US" dir="ltr"><h1 class="western">Statistiques</h1>
+<p>Quelques statistiques tirées d' <a href="https://www.healthline.com/diabetesmine/ambulatory-glucose-profile">AGP</a>
+licence libre, avec quelques modifications mineures.</p>
+<p>Le nombre de jours analysés peut être modifié en appuyant sur
+le bouton <b>Jours</b>. La période se termine au moment de la
+position de fin d'écran et s'étend sur le nombre de jours spécifié
+en arrière dans le temps. Toutes les données sont uniquement basées
+sur les valeurs de glucose reçues chaque minute via Bluetooth depuis
+le capteur (appelé <i>flux</i> dans Juggluco).</p>
+<p>Sur la gauche de l'écran se trouvent le pourcentage de mesures
+tombant dans certaines plages de glucose.</p>
+<h3 class="western">% du temps actif</h3>
+<p>Le pourcentage de temps pendant lequel Juggluco a reçu des
+valeurs de glucose du capteur.</p>
+<h3 class="western">HbA1c estimé</h3>
+<p>Estime H<span lang="en-US">bA1c avec une ancienne formule à
+partir du glucose moyen (Nathan et al (2008)). Voir
+<a href="https://professional.diabetes.org/diapro/glucose_calc">https://professional.diabetes.org/diapro/glucose_calc</a></span>
+<span lang="en-US">pour le calcul.</span></p>
+<p><span lang="en-US">Il est affiché ici au cas où les gens
+recherchent la valeur indiquée dans l'application Libre 2 d'Abbott.
+Le GMI remplace cet indicateur depuis</span> <span lang="en-US">2018.</span></p>
+<h3 class="western">Indicateur de gestion du glucose (GMI)</h3>
+<p><span lang="en-US">Calculé à partir du glucose moyen avec une
+certaine formule généralement utilisée (voir
+<a href="https://www.jaeb.org/gmi/">https://www.jaeb.org/gmi/</a> ).
+Il s'agit d'une prédiction empiriquement déterminée de l'HbA1c
+(également appelée A1c), donnée en pourcentage et en mmol/mol.
+Pour moi personnellement, l'HbA1C estimé est un meilleur prédicteur
+que le GMI, mais il est utilisé dans l'application Libre 3 d'Abbott.</span></p>
+<h3 class="western">Variabilité glycémique&nbsp;:</h3>
+<p>Le coefficient de variation (% CV), en tant que mesure de la
+variabilité du glucose. Des valeurs plus élevées signifient que le
+taux de glucose est moins constant.</p>
+<h3 class="western">Graphique récapitulatif</h3>
+<p>(Uniquement présent lorsqu'au moins 9 jours de valeurs de glucose
+de flux sont disponibles).</p>
+<p>Toutes les valeurs de glucose du flux au cours de cette période
+sont utilisées pour dessiner un graphique composite montrant pour
+chaque minute de la journée comment les valeurs de glucose ont été
+distribuées. La ligne médiane noire ou blanche montre la valeur de
+glucose en dessous de laquelle 50&nbsp;% des valeurs de glucose se
+situent à chaque minute de la journée. Le bleu le plus clair est la
+zone dans laquelle se trouvent toutes les valeurs. En bleu un peu
+plus foncé on trouve la zone autour de la médiane où se situent
+90% des valeurs. Le bleu le plus foncé est la zone autour de la
+médiane de 50&nbsp;% des valeurs. Si vous voyez les bordures de la
+zone sous forme de lignes, vous pouvez également la représenter
+comme suit&nbsp;: sous la ligne la plus basse se trouvent 0&nbsp;%
+des valeurs, sous la deuxième ligne la plus basse (entre le bleu le
+plus clair et le bleu foncé moyen) 5&nbsp;% de la valeurs, en
+dessous de la troisième ligne (entre le bleu le plus foncé et le
+bleu foncé moyen) 25 % des valeurs, en dessous de la ligne noire 50
+% des valeurs. Suivi par 75%.</p>
+<p>Pour des raisons esthétiques, la courbe est lissée avec un
+filtre binomial.</p>
+<p>Appuyez sur l'écran pour fermer le graphique récapitulatif, sauf
+que lorsque vous appuyez sur la bordure gauche ou droite, le
+graphique recule ou avance dans la journée. La courbe peut également
+être déplacée vers l'avant et vers l'arrière par défilement.
+L'échelle de temps peut être modifiée en déplaçant deux doigts
+l'un vers l'autre ou l'un de l'autre.</p>
+</body>
+</html>

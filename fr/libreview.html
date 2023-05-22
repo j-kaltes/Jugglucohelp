@@ -1,0 +1,156 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 6.4.7.2 (Linux)"/>
+	<meta name="created" content="2022-06-27T17:51:41.582328716"/>
+	<meta name="changed" content="2023-05-21T11:26:40.176415634"/>
+	<style type="text/css">
+		@page { size: 21.01cm 29.69cm; margin: 2.01cm }
+		p { margin-bottom: 0.25cm; background: transparent }
+		a.cjk:link { so-language: zxx }
+		a.ctl:link { so-language: zxx }
+	</style>
+</head>
+<body lang="en-US" dir="ltr"><h1>Libreview</h1>
+<p style="margin-bottom: 0cm; line-height: 100%">Juggluco peut
+envoyer des données et des montants de glucose à Libreview.</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; line-height: 100%">Si vous utilisez
+l'application Abbott Libre pour les capteurs Freestyle Libre 2,
+Libreview est basé sur les données d'historique de la mémoire du
+capteur. Pour cela, vous devez scanner le capteur.</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; line-height: 100%">Juggluco utilise les
+données de flux reçues via Bluetooth pour créer ces points de 15
+minutes en faisant la moyenne des valeurs de flux autour de chaque
+point. De temps en temps, il envoie également une valeur de flux
+individuelle de la même manière que les valeurs numérisées
+individuelles sont envoyées à Libreview par l'application Librelink
+d'Abbott. Juggluco n'a pas besoin d'être constamment connecté à
+Internet pour que toutes les données soient envoyées à Libreview.
+Comme l'application Librelink, il envoie les données des 89 derniers
+jours à Libreview. Ce qui est nécessaire est que Juggluco soit
+constamment connecté à un capteur Freestyle Libre 2 via Bluetooth.
+Pour les capteurs Freestyle Libre 3, les données d'historique de 5
+minutes sont utilisées, de sorte que toutes les valeurs précédentes
+sont envoyées à Libreview.</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><span lang="en-US">Pour
+utiliser ce service, vous devez créer un compte Libreview sur
+<a class="western" href="https://libreview.com/">https://libreview.com</a>
+et spécifier ici son adresse e-mail et son mot de passe. N'envoyez
+pas plusieurs fois des données de la même période vers le même
+compte Libreview (par exemple depuis l'application Librelink et
+Juggluco). </span><span lang="en-US">Dans Libreview,</span><span lang="en-US">
+</span><span lang="en-US">v</span><span lang="en-US">ous pouvez
+supprimer des appareils existants dans Paramètres du compte -&gt;
+Mes appareils ou vous pouvez créer un nouveau compte Libreview.</span></p>
+<p style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><span lang="en-US">Pour
+activer </span><span lang="en-US">l’envoi des données dans
+Juggluco</span><span lang="en-US">, vous devez également cocher «
+</span><span lang="en-US"><i><b>Envoyer vers libreview</b></i></span>
+<span lang="en-US"><i>»</i></span><span lang="en-US">. </span>
+</p>
+<p style="margin-bottom: 0cm; line-height: 100%">Juggluco enverra de
+nouvelles données à Libreview chaque fois que vous quitterez
+l’appli si cela n'a pas été fait dans les 20 minutes précédentes.
+Vous pouvez également envoyer manuellement à Libreview en appuyant
+sur <i>&quot; </i><i><b>Envoyer maintenant</b></i> <i>&quot;</i>.</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; line-height: 100%">Outre les valeurs de
+glucose, les quantités peuvent également être envoyées à
+Libreview. Pour cela, vous devez toucher «&nbsp;<i><b>Envoyer les
+</b></i><i><b>quantités</b></i>&nbsp;» et spécifier la
+signification de chaque étiquette.</p>
+<p style="margin-bottom: 0cm; line-height: 100%">À partir de
+Juggluco 4.1.0, les valeurs de glucose des capteurs FreeStyle Libre 3
+sont également envoyées à LibreView.</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><b>Libre3 immédiat</b>
+: Envoyez les valeurs de glucose à Libreview immédiatement
+lorsqu'elles arrivent des capteurs Libre 3. Ceci n'est utile qu'en
+combinaison avec LibreLinkUp. Pour l'utiliser, vous devez ajouter une
+connexion LibrelinkUp à ce compte Libreview dans l'une des
+applications Libre d'Abbott. Parfois, la valeur n'est pas
+immédiatement visible, car l'affichage de <span style="font-weight: normal">LibreLinkUp</span>
+n'est pas rafraîchi automatiquement. L'utilisation de LibreLinkup
+est assez risquée si vous ne regardez pas de près, car lorsque vous
+touchez le graphique, il affiche une ancienne valeur au lieu de la
+valeur de glucose actuelle.</p>
+<p style="margin-bottom: 0cm; line-height: 100%">LibreLinkUp ne peut
+pas être utilisé avec les capteurs Libre 2: on ne peut pas
+prétendre de manière plausible scanner toutes les minutes tout au
+long de la journée. Au lieu de cela, utilisez une connexion miroir
+ou Nightscout.</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><b>Renvoyer les
+données</b>&nbsp;: recommencer&nbsp;; renvoyer les données des 90
+derniers jours à Libreview. Vous devez appuyer dessus lorsque vous
+passez à un nouveau compte Libreview.</p>
+<p style="margin-bottom: 0cm; line-height: 100%">Le résultat de la
+dernière tentative d'envoi vers Libreview est affiché sous le
+bouton &quot;Obtenir l'ID de compte&quot;.</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; line-height: 100%">Étant donné que
+les valeurs envoyées à Libreview sont d'abord moyennées sur 15
+minutes puis analysées, il peut y avoir de petites différences
+entre les valeurs affichées dans l'écran de statistiques de
+Juggluco et Libreview. Par exemple, Libreview indique 100&nbsp;% du
+temps d'activité, tandis que l'écran de statistiques de Juggluco
+indique 96,0&nbsp;%. De plus, certaines valeurs hautes et basses
+seront moyennées, de sorte que Libreview donne un <i>temps un peu
+plus élevé dans la cible</i> que l'écran de statistiques de
+Juggluco. Étant donné que les valeurs d'historique réelles sont
+moins extrêmes que la moyenne des valeurs de flux autour d'une
+valeur d'historique, cette différence sera plus importante lorsque
+Libreview est basé sur des valeurs numérisées.</p>
+<p style="margin-bottom: 0cm; line-height: 100%">Juggluco peut être
+connecté à plusieurs capteurs en même temps, tandis que Librelink
+ne gère qu'un seul capteur à la fois. Juggluco envoie également
+les données d'un seul capteur à la fois à Libreview. Pour ce
+faire, il envoie d'abord les données d'un capteur et seulement après
+qu'aucune donnée n'est disponible de ce capteur, il envoie les
+données du capteur suivant. Lorsque Juggluco est commuté sur un
+capteur suivant, il ne reviendra pas à un capteur précédent, pour
+imiter la politique de capteur unique de Librelink. Cela signifie que
+lorsque vous exécutez plusieurs capteurs à la fois et qu'un capteur
+ajouté ultérieurement se termine plus tôt qu'un capteur ajouté
+précédemment, ce capteur antérieur n'enverra plus de données à
+Libreview.</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+<p><b>Obtenir l'identifiant du compte</b> : Si vous souhaitez
+uniquement recevoir l'identifiant du compte LibreView, mais pas
+envoyer de données à Libreview, vous pouvez renseigner votre
+adresse e-mail et votre mot de passe et appuyer sur « Obtenir l'
+<i>identifiant du compte</i> ». Sur la même ligne avant ce bouton,
+l'ID de compte sera affiché (cela peut prendre un certain temps et
+l'écran n'est pas actualisé automatiquement). La récupération de
+l'ID de compte à partir du serveur LibreView permet d'utiliser un
+capteur FreeStyle Libre 3 qui était déjà utilisé avec
+l'application Abbott Libre 3 avec ce compte LibreView. Pour rappel,
+le démarrage du capteur avec Juggluco ne fonctionne pas.</p>
+<p><b>ATTENTION</b> : Le capteur Freestyle Libre 3 doit être activé
+avec ce compte.</p>
+</body>
+</html>

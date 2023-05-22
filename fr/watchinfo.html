@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 7.3.7.2 (Linux)"/>
+	<meta name="created" content="2022-03-03T14:07:37.938004739"/>
+	<meta name="changed" content="2023-05-22T15:54:11.888598941"/>
+	<style type="text/css">
+		@page { size: 21.01cm 29.69cm; margin: 2.01cm }
+		p { margin-bottom: 0.25cm; background: transparent }
+		h2.cjk { font-family: "Droid Sans Fallback" }
+		h2.ctl { font-family: "Droid Sans Devanagari" }
+	</style>
+</head>
+<body lang="en-US" dir="ltr"><h1>Montre</h1>
+<p style="line-height: 100%; margin-bottom: 0cm">Actuellement,
+Juggluco a six moyens d’envoyer les valeurs de glucose sur votre
+montre.</p>
+<h2 class="western">Notifier</h2>
+<p style="line-height: 100%; margin-bottom: 0cm"><span lang="en-US">Lorsque
+</span><span lang="en-US"><i>Notifier</i></span> <span lang="en-US">est
+activé, une notification Android est créée chaque fois qu'une
+nouvelle valeur de glucose arrive. Sur certaines montres, les
+notifications ne sont envoyées à la montre que lorsqu'une nouvelle
+notification est créée ; pour elles vous devez activer </span><span lang="en-US"><i><b>Séparer</b></i></span>
+<span lang="en-US">. Pour ces montres, vous devez également activer
+</span><span lang="en-US"><i>Séparé</i></span> <span lang="en-US">pour
+recevoir des notifications d'alarme sur la montre.</span></p>
+<h2 class="western">Watchdrip</h2>
+<p style="line-height: 100%; margin-bottom: 0cm">En l'activant,
+Juggluco envoie les valeurs de glucose à <a href="https://bigdigital.home.blog/2022/06/16/watchdrip-a-new-application-for-xdrip-watch-integration">Watchdrip+</a>
+. Watchdrip + envoie des cadrans de montre, indiquant les valeurs de
+glucose, aux montres MiBand / Amazfit.</p>
+<h2 class="western">GadgetBridge</h2>
+<p>Gadget Bridge (<a href="https://codeberg.org/Freeyourgadget/Gadgetbridge/wiki">Wiki</a>)
+permet d'afficher les informations météo sur les montres
+MiBand/Amazfit. Avec l'option Gadgetbridge activée, Juggluco enverra
+des valeurs de glucose à GadgetBridge sous prétexte qu'il s'agit
+d'informations météorologiques. Cela a l'avantage par rapport à
+Watchdrip d'être beaucoup plus rapide, mais a l'inconvénient
+d'afficher moins d'informations. Juggluco met la valeur de glucose et
+une flèche de direction à l'emplacement de la météo. Cet
+emplacement s'affiche sous Météo sur la montre. Je n'ai trouvé
+aucun cadran de montre affichant cet emplacement. 
+</p>
+<p>Pour ceux qui utilisent mmol/L: la valeur avant le point est mise
+dans la température maximale et la valeur après le point dans la
+température minimale.  Les valeurs en mg/dL sont trop grandes pour
+etre affichées sous forme de température, dès lors le dernier
+chiffre est mis dans la température minimale et ceux avant dans la
+température maximale. Par exemple, 106 mg/dL est affiché sous
+forme: température maximale 10 et minimale 6.</p>
+<p>La direction du changement détermine l'icône météo: la neige
+fait chuter le glucose, la pluie fait monter le glucose. La valeur de
+glucose est aussi placée dans la température actuelle. Au-dessus de
+0 signifie valeur en hausse, en-dessous de zéro signifie valeur en
+baisse.</p>
+<h2 class="western">Kerfstok</h2>
+<p style="line-height: 100%; margin-bottom: 0cm"><span lang="en-US">Kerfstok
+est une application de montre grâce à laquelle vous pouvez saisir
+des quantités</span> <span lang="en-US">(comme des doses
+d'insuline), mais elle affiche également la valeur de glucose
+actuelle. Dès qu'une nouvelle valeur de glucose arrive, Juggluco
+l'envoie à Kerfstok. Kerfstok affiche donc toujours la valeur de
+glucose la plus récente. Kerfstok peut également enregistrer toutes
+les activités prises en charge par Garmin et peut afficher la
+vitesse et la distance. Voir Watch-&gt;Kerfstok Status-&gt; Help et
+<a href="https://www.juggluco.nl/Kerfstok">https://www.juggluco.nl/Kerfstok</a></span></p>
+<h2 class="western">Broadcaster</h2>
+<p style="line-height: 100%; margin-bottom: 0cm">Les applications
+peuvent recevoir des valeurs de glucose d'un des broadcasts de
+glucose envoyés par Juggluco et envoyer ces valeurs de glucose à
+une montre. Par exemple, G-Watch ( <a href="https://play.google.com/store/apps/details?id=sk.trupici.g_watch">TizenOS</a>
+ou <a href="https://play.google.com/store/apps/details?id=sk.trupici.gwatch.wear">WearOS</a>
+) peut recevoir des valeurs de glucose à partir de la diffusion
+Glucodata (voir menu de gauche-&gt; Paramètres).</p>
+<h2 class="western">Applications de montre xDrip</h2>
+<p style="line-height: 100%; margin-bottom: 0cm">Juggluco intègre un
+serveur Web xDrip/Nightscout. Cela permet d'utiliser directement les
+applications de montre xDrip avec Juggluco. xDrip affiche une
+nouvelle valeur de glucose toutes les 5 minutes seulement, tandis que
+Juggluco affiche une nouvelle valeur de glucose toutes les minutes.
+Juggluco envoie également aux applications de montre xDrip la valeur
+de glucose la plus récente. Les valeurs de glucose ne sont envoyées
+aux montres que si l'application de la montre les demande. Ainsi,
+l'ancienneté des valeurs affichées dépend du moment où
+l'application de la montre les demande. Par exemple, les cadrans et
+les champs de données des montres Garmin ne demandent une valeur de
+glucose que toutes les 5 minutes. Via xDrip, cela laisse souvent des
+valeurs de glucose vieilles de 10 minutes. Lorsqu'ils sont
+directement connectés à Juggluco, ces cadrans de montre affichent
+jusqu'à 6 minutes de valeurs de glucose.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><span lang="en-US">Sous
+</span><span lang="en-US"><b>Garmin</b></span><span lang="en-US">, si
+vous ne pouvez pas utiliser Kerfstok, vous disposez des options
+suivantes pour recevoir régulièrement une valeur de glucose
+récente. Un widget xDrip (
+<a href="https://apps.garmin.com/en-US/apps/73115e04-dc9f-4765-ad88-e7ae283ce995">https://apps.garmin.com/en-US/apps/73115e04-dc9f-4765-ad88-e7ae283ce995</a>
+) peut également être utilisé lors de l'enregistrement d'une
+activité. Donc, si vous avez une main libre, vous pouvez passer à
+ce widget xDrip tout en enregistrant une activité avec une
+application sportive Garmin standard. Il existe également une
+application xDrip sport qui met régulièrement à jour sa valeur de
+glucose :
+<a href="https://apps.garmin.com/en-US/apps/aaf6533b-bca1-4365-9131-9f882f6f148c">https://apps.garmin.com/en-US/apps/aaf6533b-bca1-4365-9131-9f882f6f148c</a>
+. Vous pouvez essayer de démarrer à un moment, afin qu'il demande
+une valeur de glucose juste après qu'elle soit disponible. Les
+champs de données et les cadrans de montre seraient la solution
+idéale, mais les restrictions imposées par Garmin les rendent peu
+utiles.</span></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><span lang="en-US">Selon
+un utilisateur, il existe également un cadran de montre pour les
+montres </span><span lang="en-US"><b>Fitbit</b></span> <span lang="en-US">qui
+fonctionne avec le serveur Web xDrip : <a href="https://glancewatchface.com/">https://glancewatchface.com</a></span></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><span lang="en-US">Pour
+plus d'informations sur l'interface du serveur Web, voir
+<a href="https://www.juggluco.nl/Juggluco/webserver.html">https://www.juggluco.nl/Juggluco/webserver.html</a></span></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><b>local seulement</b>
+: n'accepte que les connexions de localhost (127.0.0.1). Si vous le
+désactivez, d'autres hôtes peuvent également accéder au serveur.
+Cela ne s'applique qu'à http, https est toujours possible. Si vous
+ne configurez pas votre pare-feu pour rediriger vers le port 17580,
+ce ne seront que des hôtes sur votre réseau domestique.</p>
+<h2 class="western">Wear OS Juggluco</h2>
+<p>Il existe une version de Juggluco portée sur Wear OS. L'affichage
+est adapté au plus petit écran et un cadran de montre est ajouté.
+Le cadran de la montre peut être installé comme un cadran de montre
+Wear OS habituel et affiche à côté de l'heure également la valeur
+de glucose actuelle reçue via Bluetooth.</p>
+</body>
+</html>

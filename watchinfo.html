@@ -5,7 +5,7 @@
 	<title></title>
 	<meta name="generator" content="LibreOffice 7.5.2.2 (Linux)"/>
 	<meta name="created" content="2022-03-03T14:07:37.938004739"/>
-	<meta name="changed" content="2023-05-11T15:21:46.816723882"/>
+	<meta name="changed" content="2023-05-19T16:09:33.396676324"/>
 	<style type="text/css">
 		@page { size: 8.27in 11.69in; margin: 0.79in }
 		p { margin-bottom: 0.1in; background: transparent }
@@ -40,11 +40,17 @@ faster, but has the disadvantage that less information is displayed.
 Juggluco puts the glucose value and a direction arrow in the location
 of the weather. This location is displayed under Weather on the
 watch. I haven't found any watch face that displayed this location.
-The rounded glucose value is put in the current temperature. For
-those who use mmol, the value before the point is put in the maximal
-temperature and the value after the point in the minimal temperature.
-The direction of change determines the weather icon: snow is falling
-glucose, rain is rising glucose.</p>
+Only for <b>mmol/L</b>: the value before the point is put in the
+maximal temperature and the value after the point in the minimal
+temperature. The values of <b>mg/dL</b> are too large for
+temperatures, for that reason the last digit is put in minimal
+temperature and the numbers before the last digit in the maximal
+temperature. Thus 106 mg/dL becomes: maximal temperature 10, minimal
+temperature 6.</p>
+<p>The direction of change determines the weather icon: snow is
+falling glucose, rain is rising glucose. It is also put in the
+current temperature. Larger than zero means rising glucose, lower
+than zero means falling glucose.</p>
 <h2 class="western">Kerfstok</h2>
 <p style="line-height: 100%; margin-bottom: 0in"><span lang="en-US">Kerfstok
 is watch app by which you can enter numbers (like insulin doses),</span>

@@ -3,9 +3,9 @@
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 	<title></title>
-	<meta name="generator" content="LibreOffice 7.4.5.1 (Linux)"/>
+	<meta name="generator" content="LibreOffice 7.5.0.3 (Linux)"/>
 	<meta name="created" content="2021-09-11T17:23:06.572014143"/>
-	<meta name="changed" content="2023-02-11T10:54:47.480472661"/>
+	<meta name="changed" content="2023-03-18T20:56:50.108076475"/>
 	<style type="text/css">@page { size: 8.27in 11.69in; margin: 0.79in } p { margin-bottom: 0.1in; background: transparent }</style>
 </head>
 <body lang="pl-PL" dir="ltr"><h1>Sensor</h1>
@@ -16,6 +16,7 @@
 <p style="line-height: 100%; margin-bottom: 0in"><i><b>Wakelock</b></i>: Niekt&oacute;rzy użytkownicy Androida 13 skarżą się, że Bluetooth przestaje działać. Możliwe, że włączenie tej opcji im pomaga. Na moim smartfonie nie jest to potrzebne, a na Watch4 nie robi r&oacute;żnicy. Jeśli działa, to zwiększy zużycie baterii.</p>
 <p style="line-height: 100%; margin-bottom: 0in"><i><b>Rozłącz</b></i>: zakończ połączenie z tym sensorem przez Bluetooth. Jeśli p&oacute;źniej chcesz ponownie otrzymywać wartości glukozy z tego sensora, wystarczy, że ponownie go zeskanujesz.</p>
 <p style="line-height: 100%; margin-bottom: 0in"><i><b>Turbo</b></i>: Zwiększa wysiłek włożony w kontakt z sensorem w nadziei, że spowoduje to mniej błęd&oacute;w w połączeniu, ale może zużywać więcej baterii. Wydaje się być potrzebny na Watch4 z czujnikami Freestyle Libre 2, ale nie z czujnikami Freestyle Libre 3 i na żadnym ze smartfon&oacute;w, na kt&oacute;rych wypr&oacute;bowałem tę opcję.</p>
+<p style="line-height: 100%; margin-bottom: 0in"><b>Android 13</b>: Dw&oacute;ch użytkownik&oacute;w z wadliwym telefonem z Androidem 13 stwierdziło, że to ustawienie rozwiązało ich problemy z połączeniem Bluetooth. Dw&oacute;ch użytkownik&oacute;w z Androidem 13, kt&oacute;rzy wcześniej nie mieli problem&oacute;w z połączeniem, stwierdziło, że mieli problemy z połączeniem po włączeniu tego ustawienia.</p>
 <p style="line-height: 100%; margin-bottom: 0in"><i><b>Informacje</b></i>: Podaje czas rozpoczęcia i zakończenia oraz czas ostatniego skanowania i strumienia z sensora.</p>
 <p style="line-height: 100%; margin-bottom: 0in">Aby połączyć się z sensorem Freestyle Libre 2 za pośrednictwem &bdquo;Bluetooth Low Energy&rdquo;, Bluetooth powinien być włączony. Zanim sensor zostanie pomyślnie zeskanowany przez tę aplikację, nic się nie stanie. Czujnika nie należy łączyć z czytnikiem FreeStyle Libre ani innymi apletami na smartfonach. Alarmy w aplikacji Abbott Librelink powinny być wyłączone lub cała aplikacja powinna być zatrzymana. Zdaje się, że niekt&oacute;re aplikacje Librelink kontaktują się z sensorem, gdy alarmy są wyłączone, i mogą powodować problemy z połączeniem, więc dla pewności użyj <i>&quot;Wymuś zamknięcie&quot; </i>. Opcje <b>Sensor przez Bluetooth/Użyj Bluetooth</b> powinny być włączone.</p>
 <p style="line-height: 100%; margin-bottom: 0in">Jeśli powyższe warunki są spełnione, nadal może upłynąć dużo czasu, zanim aplikacja otrzyma wartości glukozy z sensora. Często trwa to minutę, ale innym razem znacznie dłużej. <i>Etap połączenia</i> sprawia najwięcej trudności. Najczęściej zdarzają się niepowodzenia ze statusem=133, kt&oacute;ry jest argumentem statusowym funkcji <a href="https://developer.android.com/reference/android/bluetooth/BluetoothGattCallback#onConnectionStateChange(android.bluetooth.BluetoothGatt,%20int,%20int)">onConnectionStateChange(bluetoothGatt, int status, int newState)</a>. Jeśli wyjmiesz baterię z czujnika, r&oacute;wnież otrzymasz ten błąd, więc wydaje się, że jest to coś w rodzaju <i>urządzenia Bluetooth nie znalezionego</i>. Czasami pomaga wyłączenie i włączenie Bluetooth lub ponowne uruchomienie telefonu albo wyłączenie połączenia Bluetooth innych urządzeń. Inne problemy czasami można rozwiązać przez zeskanowanie sensora.</p>

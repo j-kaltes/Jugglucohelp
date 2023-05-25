@@ -26,3 +26,5 @@ help: helptexts.zip
 	make -C pt pthelptexts.zip 
 	cp helptexts.zip pt/pthelptexts.zip de/dehelptexts.zip nl/nlhelptexts.zip it/ithelptexts.zip /home/jka/html/j-kaltes.github.io/Juggluco/translation
 
+
+	

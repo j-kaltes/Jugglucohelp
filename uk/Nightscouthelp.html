@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 7.5.3.2 (Windows)"/>
+	<meta name="created" content="2023-02-21T11:28:36.352406009"/>
+	<meta name="changed" content="2023-06-01T16:08:49.510000000"/>
+	<style type="text/css">
+		@page { size: 21.01cm 29.69cm; margin: 2.01cm }
+		h1 { margin-bottom: 0.2cm; background: transparent }
+		h1.western { font-family: "Liberation Sans", sans-serif; font-size: 18pt }
+		h1.cjk { font-family: "Source Han Sans CN"; font-size: 18pt }
+		h1.ctl { font-family: "Droid Sans Devanagari"; font-size: 18pt }
+		p { margin-bottom: 0.25cm; background: transparent }
+		pre { font-family: "Liberation Mono", monospace; background: transparent }
+	</style>
+</head>
+<body lang="uk-UA" dir="ltr"><h1 class="western">Web server</h1>
+<p style="line-height: 100%; margin-bottom: 0cm">Juggluco містить
+веб-сервер, за допомогою якого інші
+програми можуть отримувати значення
+рівня глюкози від Juggluco. Його можна
+використовувати для годинників xDrip і
+деяких програм Nightscout.<br/>
+Користуватися
+програмами, створеними для використання
+веб-сервера xDrip, відносно легко. Просто
+перевірте активність. Після цього вони
+можуть отримувати глюкозу з локального
+хосту на порт 17580. Nightscout server URL:
+http://127.0.0.1:17580 
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><span lang="uk-UA">Також
+цим можуть скористатися деякі послідовники
+Nightscout. xDrip, Diabox і програму <a href="https://github.com/dabear/FloatingGlucose/releases">Windows
+Floating Glucose</a> можна використовувати з
+http, якщо не встановлено параметр «</span><span lang="uk-UA"><i>Лише
+локально</i></span><span lang="uk-UA">». У MacOS те саме
+стосується панелі меню Nightscout, Gluco Status і
+Gluco Tracker (усі в Apple Store). Вам також потрібен
+лише http для <a href="https://github.com/someoneAnyone/Nightscouter">Nightscouter</a>
+і <a href="https://github.com/jonfawcett/LoopFollow">LoopFollow</a>
+(IOS) і <a href="https://github.com/nightscout/nightguard">Nightguard</a>
+(IOS and WatchOS).</span></p>
+<p style="line-height: 100%; margin-bottom: 0cm">Якщо ви хочете
+отримати доступ до Juggluco через Інтернет,
+вам потрібно перенаправити порт зі
+свого модему. Ознайомитись:</p>
+<ul>
+	<li><p style="line-height: 100%; margin-bottom: 0cm"><a href="https://www.makeuseof.com/tag/what-is-port-forwarding-and-how-can-it-help-me"><span lang="uk-UA">https://www.makeuseof.com/tag/what-is-port-forwarding-and-how-can-it-help-me</span></a></p>
+	<li><p style="line-height: 100%; margin-bottom: 0cm"><a href="https://www.juggluco.nl/Juggluco/phones/index.html"><span lang="uk-UA">https://www.juggluco.nl/Juggluco/phones/index.html</span></a></p>
+	<li><p style="line-height: 100%; margin-bottom: 0cm">Середнє
+	ліве меню-&gt;Клон-&gt;Додати підключення-&gt;Довідка</p>
+</ul>
+<p style="line-height: 100%; margin-bottom: 0cm"><span lang="uk-UA">Інші
+послідовники Nightscout використовують лише
+https, і це вимагає, щоб у Juggluco був
+автентифікований ключ SSL для доменного
+імені, яке використовується для доступу
+до Juggluco. Якщо ваша зовнішня IP-адреса має
+пов’язане ім’я хоста, ви можете отримати
+сертифікат безкоштовно через <a href="https://certbot.eff.org/instructions">Certbot</a>
+або <a href="https://www.sslforfree.com/">ZeroSSL</a>. Ви не
+можете використовувати його, якщо ваш
+зовнішній IP не має імені хоста. Ви можете
+отримати безкоштовне доменне ім’я з
+<a href="https://www.freenom.com/">https://www.freenom.com</a>. Я
+спробував, але протягом кількох тижнів
+без будь-якого сповіщення вони просто
+забрали в мене домен, і коли я спробував
+зареєструвати його знову, це мало ціну.
+Ви можете купити ім’я хосту за кілька
+євро на рік (наприклад на
+<a href="https://www.strato.nl/domeinnaam">https://www.strato.nl/domeinnaam</a>).</span></p>
+<p style="line-height: 100%; margin-bottom: 0cm">Якщо ви
+отримали ключові файли від центру SSL,
+ви повинні надати їх Juggluco. Приватний
+ключ можна прочитати, натиснувши
+«<i>Приватний ключ</i>», повний ланцюжок,
+натиснувши «<i>Повний ланцюжок</i>».</p>
+<p style="line-height: 100%; margin-bottom: 0cm">Від ZeroSSL.com я
+отримав три файли: private.key, certificate.crt і
+ca_bundle.crt.</p>
+<p style="line-height: 100%; margin-bottom: 0cm">private.key – це
+приватний ключ, який ви повинні надати
+Juggluco, натиснувши «Приватний ключ».</p>
+<p style="line-height: 100%; margin-bottom: 0cm">Щоб створити
+повний ланцюжок, вам потрібно об’єднати
+certificate.crt і ca_bundle.crt.</p>
+<p style="line-height: 100%; margin-bottom: 0cm">Linux:</p>
+<pre style="margin-bottom: 0.51cm">cat certificate.crt ca_bundle.crt &gt;  fullchain.pem</pre><p style="line-height: 100%; margin-bottom: 0cm">
+Windows cmd.com:</p>
+<pre style="margin-bottom: 0.51cm">copy certificate.crt + ca_bundle.crt  fullchain.pem</pre><p style="line-height: 100%; margin-bottom: 0cm">
+Windows Powershell:</p>
+<p>cat certificate.crt &gt; fullchain.pem<br/>
+cat ca_bundle.crt &gt;&gt;
+fullchain.pem</p>
+<p style="line-height: 100%; margin-bottom: 0cm">Після
+використання Certbot я знайшов приватний
+ключ у /etc/letsencrypt/live/myhostname/privkey.pem<br/>
+і
+повний ланцюжок у
+/etc/letsencrypt/live/myhostname/fullchain.pem. &quot;myhostname&quot;
+- це ім'я хоста, яке я використовував.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><span lang="uk-UA">Якщо
+ви просто хочете надіслати значення
+глюкози з одного Android на інший, вам краще
+скористатися функцією <a href="https://www.juggluco.nl/Juggluco/mgdL/index.html#mirror">Клон</a></span>
+<span lang="uk-UA">Juggluco (ліве середнє меню-&gt;Клон).</span></p>
+<p style="line-height: 100%; margin-bottom: 0cm">Android Aps і
+Nsclient не працюють як послідовники
+Juggluco, але ви можете надсилати їм значення
+глюкози за допомогою трансляції xDrip у
+Juggluco (меню зліва-&gt;налаштування-&gt;xDrip
+Broadcast).</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><span lang="uk-UA">Вам
+потрібен SSL для програм Android Diabetes:M,
+<a href="https://play.google.com/store/apps/details?id=se.cornixit.nightwatch">Nightwatch</a>
+і <a href="https://slingithub.github.io/CheckmateWeb">Checkmate</a>,
+Sugarmate (MacOS і IOS) і <a href="https://github.com/JohanDegraeve/xdripswift">Xdrip4ios</a>,
+Shuggah і Cockpit (IOS). Вкажіть URL-адресу сервера
+Nightscout:</span></p>
+<p><i>https://hostname:port</i> 
+</p>
+<p><i>hostname</i> це ім’я хоста автентифікованого
+ключа, який ви надали Juggluco, port — це порт,
+який ви переслали на порт, який ви вказали
+на цьому екрані (за замовчуванням:
+17581).</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><span lang="uk-UA">Веб-сервер
+також можна запустити на комп’ютері з
+ОС Linux. Він отримуватиме свої дані через
+<a href="https://www.juggluco.nl/Juggluco/mgdL/index.html#mirror">дзеркальне
+підключення</a> від Juggluco, підключеного
+до датчика: <a href="https://www.juggluco.nl/Juggluco/cmdline/index.html">https://www.juggluco.nl/Juggluco/cmdline</a>.</span></p>
+<p style="line-height: 100%; margin-bottom: 0cm">Інший телефон
+може підключитися до цього сервера
+через дзеркальне підключення або як
+підписник Nightscout (наприклад, на Iphone). Якщо
+є програма Nightscout, яка не працює з цим
+веб-сервером, повідомте мені. Можливо,
+його можна змусити працювати з деякими
+змінами. (Програми для iOS Nightscout і Nightscout
+X, а також програма для Android NSClient є
+специфічними для однієї конкретної
+серверної програми Nightscout і не працюватимуть
+із Juggluco.)</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><b>api_secret</b>:
+вкажіть, що послідовники повинні
+встановити це значення для елемента
+заголовка http api_secret. У Juggluco 4.9.1 або пізнішої
+версії також працює тестування цього
+секрету, коли підписники використовують
+цей секрет як маркер Nightscout або
+використовують заголовок api-secret із
+секретом, закодованим SHA1.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><strong><span lang="uk-UA">Видимий</span></strong><span lang="uk-UA">:
+зробити секрет видимим.</span></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><strong><span lang="uk-UA">Port</span></strong><span lang="uk-UA">:
+укажіть мережевий порт, який використовується
+для зв’язку з https-сервером. За замовчуванням
+17581.</span></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><strong><span lang="uk-UA">Зберегти</span></strong><span lang="uk-UA">:
+зберегти зміни Secret або Port.</span></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><strong><span lang="uk-UA">Use
+SSL</span></strong><span lang="uk-UA">: використовувати
+SSL (https). Для SSL вам потрібно надати
+приватний ключ і повний ланцюжок для
+імені хоста, який використовується для
+зв’язку з цією службою.</span></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><strong><span lang="uk-UA">Приватний
+ключ</span></strong><span lang="uk-UA">: виберіть файл,
+що містить закритий ключ. Дивись вище.</span></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><strong><span lang="uk-UA">Повний
+ланцюжок</span></strong><span lang="uk-UA">: виберіть
+файл, що містить повний ланцюжок, див.
+вище.</span></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><strong><span lang="uk-UA">Лише
+локально</span></strong><span lang="uk-UA">: до
+http-сервера можна отримати доступ лише
+через localhost. Це не стосується https.</span></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><span lang="uk-UA"><b>Надайте
+суми</b></span><span lang="uk-UA">: дозволити отримати
+введені суми за допомогою
+<a href="http://localhost:17580/api/v1/treatments?count=3">http://localhost:17580/api/v1/treatments?count=3</a>.
+(Ви повинні вказати для кожної мітки,
+що з нею потрібно зробити. Раніше це
+було так само, як і для Libreview, після версії
+4.18.0 ви можете розмістити мітки в різних
+категоріях для Libreview і цього веб-сервера.)
+Через цей інтерфейс xDrip може отримувати
+суми від Juggluco. У xDrip це можна зробити
+двома способами:</span></p>
+<ol>
+	<li><p style="line-height: 100%; margin-bottom: 0cm"><span style="font-variant: normal"><span lang="uk-UA"><span style="font-style: normal">Візьміть
+	як </span></span></span><span style="font-variant: normal"><span lang="uk-UA"><i>«Апаратне
+	джерело даних», «Послідовник Nightscout» </i></span></span><span style="font-variant: normal"><span lang="uk-UA"><span style="font-style: normal">і
+	вкажіть як </span></span></span><span style="font-variant: normal"><span lang="uk-UA"><i>«Перейти
+	URL»,</i></span></span><span style="font-variant: normal">
+	</span><span style="font-variant: normal"><span lang="uk-UA"><span style="font-style: normal"><a href="http://localhost:17580/api/v1/treatments?count=3">http://127.0.0.1:17580</a>
+	і позначте</span></span></span><span style="font-variant: normal">
+	</span><span style="font-variant: normal"><span lang="uk-UA"><i>«Завантажити
+	лікування»</i></span></span><span style="font-variant: normal">
+	</span>
+	</p>
+	<li><p style="font-variant: normal; font-style: normal; line-height: 100%; margin-bottom: 0cm">
+	Візьміть інше апаратне джерело даних,
+	наприклад Libre (програму з виправленнями),
+	і ввімкніть налаштування-&gt;Завантаження
+	в хмару-&gt;Синхронізація Nightscout (REST-API).
+	Введіть URL-адресу базового API,
+	http://somekey@127.0.0.1:17580/api/v1/ і ввімкніть
+	«Завантажувати процедури». Завантаження
+	в Juggluco неможливе, тому це лише завантажує
+	лікування та генерує деякі повідомлення
+	про помилки.</p>
+</ol>
+<p style="line-height: 100%; margin-bottom: 0cm"><span style="font-variant: normal"><span style="font-style: normal">Якщо
+прапорець «</span></span><span style="font-variant: normal"><i>Лише
+локально</i></span><span style="font-variant: normal"><span style="font-style: normal">»
+знято, ви також можете використовувати
+IP-адресу домашньої мережі телефону, на
+якому запущено Juggluco, і зовнішню IP-адресу
+вашого телефону, коли ви налаштовуєте
+модем на переадресацію на 17580 цього
+телефону. Якщо ви надали Juggluco приватний
+ключ і повний ланцюжок для імені хоста,
+за допомогою якого можна отримати доступ
+до телефону та ввімкнути його за допомогою
+SSL, ви також можете використовувати це
+ім’я хоста та вказаний тут порт,
+використовуючи https замість http.<br/>
+Якщо
+ви хочете завантажити лікування в
+Diabetes:M, ви можете надіслати дані Juggluco в
+Libreview і зберегти дані в Libreview за допомогою
+«З</span></span><span style="font-variant: normal"><i>авантажити
+дані про рівень глюкози</i></span><span style="font-variant: normal"><span style="font-style: normal">»
+та імпортувати ці дані в Diabetes:M за
+допомогою «Дані-&gt;Імпорт з інших
+джерел-&gt;Freestyle». або отримайте
+автентифікований ключ для зовнішнього
+імені хоста вашого телефону та вкажіть
+як посилання на зовнішнє джерело,
+Nightscout із URL-адресою https://yourhostname:Port, де
+ваше ім’я хосту – це ім’я хосту вашого
+телефону, на якому запущено Juggluco, для
+якого ви отримали автентифікований
+ключ а порт — це порт, який ви тут згадали.
+Здається, він не синхронізується
+автоматично, тому в Diabetes:M вам потрібно
+самостійно натиснути «Синхронізувати».<br/>
+</span></span><span style="font-variant: normal"><span style="font-style: normal"><b>Активний</b></span></span><span style="font-variant: normal"><span style="font-style: normal">:
+веб-сервер працює.</span></span></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><span lang="uk-UA">Для
+отримання додаткової інформації про
+команди веб-сервера Nightscout/xDrip, реалізовані
+в Juggluco, див. <a href="https://www.juggluco.nl/Juggluco/webserver.html">https://www.juggluco.nl/Juggluco/webserver.html</a></span></p>
+</body>
+</html>

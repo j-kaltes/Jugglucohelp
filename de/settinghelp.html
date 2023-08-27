@@ -3,9 +3,9 @@
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 	<title></title>
-	<meta name="generator" content="LibreOffice 7.5.2.2 (Linux)"/>
+	<meta name="generator" content="LibreOffice 7.5.4.2 (Linux)"/>
 	<meta name="created" content="2021-02-27T14:01:21.977498081"/>
-	<meta name="changed" content="2023-06-07T11:16:14.825629074"/>
+	<meta name="changed" content="2023-06-30T10:50:24.663066239"/>
 	<style type="text/css">
 		@page { size: 8.27in 11.69in; margin: 0.79in }
 		h1 { margin-bottom: 0.08in; background: transparent }
@@ -139,19 +139,11 @@ xDrip selbst deaktivieren, wenn Sie den in Juggluco verwenden
 möchten.</p>
 <h2 class="western" align="left">xDrip Broadcast</h2>
 <p align="left" style="line-height: 100%; margin-bottom: 0in">Senden
-Sie dieselbe Broadcast, die in xDrip aktiviert ist mit
-„<span lang="de-DE"><i>Einstellungen-&gt;Inter-App
-Einstellingen-&gt;Lokaler Broadcast</i></span>“
-(com.eveningoutpost.dexdrip.BgEstimate). Apps wie AndroidAPS hören
-darauf. Apps, die auf Android 11 oder höher abzielen, müssen
-AndroidManifest.xml Folgendes hinzufügen, damit sie funktionieren:</p>
-<p>&lt;queries&gt; <br/>
-&nbsp;&nbsp; &lt;package
-android:name=&quot;tk.glucodata&quot;/&gt; <br/>
-&lt;/queries&gt; 
-</p>
-<p align="left">Jede Minute sendet Juggluco einen Glukosewert an alle
-Anwendungen, die ihn abhören.</p>
+Sie die gleiche Broadcast, die in xDrip mit
+„Einstellungen-&gt;Inter-App-Einstellungen-&gt;Lokaler Broadcast“
+aktiviert wurde. Apps wie AndroidAPS hören es sich an. Im Gegensatz
+zur ursprünglichen xDrip-Broadcast, die alle 5 Minuten ausgestrahlt
+wurde, sendet Juggluco diese Broadcast jede Minute.</p>
 <h2 class="western" align="left">Glucodata Broadcast</h2>
 <p align="left" style="line-height: 100%; margin-bottom: 0in">Eine
 neue Broadcast, die dieselbe Funktion wie die xDrip Broadcast hat.

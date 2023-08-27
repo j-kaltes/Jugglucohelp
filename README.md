@@ -30,3 +30,7 @@ jugglucotext.cpp contains some additional length restrictions. The strings in la
 labels and shortinit are just examples of what users can do and don't need to be translated literally. Labels are labels for the Amounts entered and shortinit are shortcuts that can be used in the Garmin watch app Kerfstok.
 
 The abbreviations for days and month don't have an absolute byte number restriction, but should be three characters long, so they don't use too much space.
+
+The easiest way to make a translation is to ask me to translate the above files with Google Translate. A native speaker of the language can thereafter read this translation and remove the mistakes.
+
+You can send an E-Mail to jaapkorthalsaltes@gmail.com.

@@ -3,9 +3,9 @@
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 	<title></title>
-	<meta name="generator" content="LibreOffice 7.5.2.2 (Linux)"/>
+	<meta name="generator" content="LibreOffice 7.5.5.2 (Linux)"/>
 	<meta name="created" content="2022-06-27T17:51:41.582328716"/>
-	<meta name="changed" content="2023-05-05T17:01:26.768544448"/>
+	<meta name="changed" content="2023-09-23T15:27:50.676115969"/>
 	<style type="text/css">
 		@page { size: 8.27in 11.69in; margin: 0.79in }
 		p { margin-bottom: 0.1in; background: transparent }
@@ -15,23 +15,20 @@
 </head>
 <body lang="en-US" dir="ltr"><h1>Libreview</h1>
 <p style="line-height: 100%; margin-bottom: 0in">Juggluco can send
-glucose data and amounts to Libreview.</p>
-<p style="line-height: 100%; margin-bottom: 0in">If you use Abbotts
-Libre app for Freestyle Libre 2 sensors, Libreview is based on the
-history data out of the memory of the sensor. For this you need to
-scan the sensor.</p>
-<p style="line-height: 100%; margin-bottom: 0in">Juggluco uses the
-stream data received via Bluetooth to create these 15 minute points
-by averaging the stream values around each point. Now and then it
-also sends an individual stream value in the same way as individual
-scanned values are sent to Libreview by Abbott's Librelink app.
-Juggluco doesn't need to be constantly connected to the internet for
-all data to be sent to Libreview. Like the Librelnk app, it sends
-data from the last 89 days to Libreview. What is necessary is that
-Juggluco is constantly connected to a Freestyle Libre 2 sensor via
-Bluetooth. For Freestyle Libre 3 sensors the 5 minutes history data
-is used, so that all previous values are sent to Libreview. 
-</p>
+glucose data and amounts to Libreview. Juggluco uses the stream data
+received via Bluetooth to create these 15 minute points by averaging
+the stream values around each point. Now and then it also sends an
+individual stream value in the same way as individual scanned values
+are sent to Libreview by Abbott's Librelink app. Juggluco doesn't
+need to be constantly connected to the internet for all data to be
+sent to Libreview. Like the Librelnk app, it sends data from the last
+89 days to Libreview. What is necessary is that Juggluco is
+constantly connected to a Freestyle Libre 2 sensor via Bluetooth. For
+Freestyle Libre 3 sensors the 5 minutes history data is used, so that
+all previous values are sent to Libreview. From Juggluco 6.0.0 on
+history values will also be used when &quot;<i>Stream history</i>&quot;
+is enabled in Left menu-&gt;Sensor or with US/CA/AU Libre 2 sensors
+and Libre 0 sensors.</p>
 <p style="line-height: 100%; margin-bottom: 0in"><span lang="en-US">To
 make use of this service, you need to create a Libreview account at
 <a class="western" href="https://libreview.com/">https://libreview.com</a>
@@ -56,19 +53,16 @@ label means.</p>
 <p style="line-height: 100%; margin-bottom: 0in">Starting with
 Juggluco 4.1.0 glucose values from FreeStyle Libre 3 sensors are also
 send to LibreView.</p>
-<p style="line-height: 100%; margin-bottom: 0in"><b>Libre3 immediate</b>:
+<p style="line-height: 100%; margin-bottom: 0in"><b>Immediate</b>:
 Send glucose values to Libreview immediately when they arrive from
-Libre 3 sensors. This is only useful in combination with LibreLinkUp.
-To make use of it you need to add a LibrelinkUp connection to this
-Libreview account in one of Abbott's Libre apps. Sometimes the value
-is not immediately visible, because display of <span style="font-weight: normal">LibreLinkUp</span>
-isn't redrawn automatically. Using LibreLinkup is quite dangerous if
-you don't look closely, because when you touch the graph, it shows an
-old value instead of the current glucose value.</p>
-<p style="line-height: 100%; margin-bottom: 0in">LibreLinkUp can not
-be used with Libre 2 sensors: one cannot plausibly claim to scan
-every minute the whole day long. Instead, make use of a mirror
-connection or Nightscout.</p>
+Libre 2 or 3 sensors. This is only useful in combination with
+LibreLinkUp. To make use of it you need to add a LibrelinkUp
+connection to this Libreview account in one of Abbott's Libre apps.
+Sometimes the value is not immediately visible, because display of
+<span style="font-weight: normal">LibreLinkUp</span> isn't redrawn
+automatically. Using LibreLinkup is quite dangerous if you don't look
+closely, because when you touch the graph, it shows an old value
+instead of the current glucose value.</p>
 <p style="line-height: 100%; margin-bottom: 0in"><b>Resend data</b>:
 Start anew; resend data of the last 90 days to Libreview. You need to
 press this when switching to a new Libreview account.</p>

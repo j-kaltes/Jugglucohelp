@@ -3,9 +3,9 @@
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 	<title></title>
-	<meta name="generator" content="LibreOffice 7.5.2.2 (Linux)"/>
+	<meta name="generator" content="LibreOffice 7.5.5.2 (Linux)"/>
 	<meta name="created" content="2021-02-27T14:01:21.977498081"/>
-	<meta name="changed" content="2023-05-23T11:11:21.985696099"/>
+	<meta name="changed" content="2023-09-20T22:21:02.756291495"/>
 	<style type="text/css">@page { size: 8.27in 11.69in; margin: 0.79in } h1 { margin-bottom: 0.08in; background: transparent } h1.western { font-family: "Liberation Serif", serif } h1.cjk { font-family: "Noto Serif CJK SC" } h1.ctl { font-family: "Mangal" } p { margin-bottom: 0.1in; background: transparent } h2 { margin-top: 0.14in; margin-bottom: 0.08in; background: transparent } h2.western { font-family: "Liberation Sans", sans-serif; font-size: 16pt } h2.cjk { font-family: "Noto Sans CJK SC"; font-size: 16pt } h2.ctl { font-family: "Mangal"; font-size: 16pt }</style>
 </head>
 <body lang="pl-PL" dir="ltr"><h1 class="western">Ustawienia</h1>
@@ -45,9 +45,8 @@
 <p>Sensory Freestyle Libre 3 wysyłają nieodebrane wartości po okresie rozłączenia. Wartości te nie są wysyłane wraz z tą transmisją. Otrzymasz je, jeśli włączysz opcję &bdquo;Web server&rdquo; w Juggluco i sprawisz, że xDrip będzie odbiorcą (followerem) Nightscout sygnał&oacute;w z Juggluco. Serwer Nightscout: http://127.0.0.1:17580</p>
 <p>Juggluco może r&oacute;wnież bezpośrednio kontaktować się z aplikacjami xDrip na zegarkach, dzięki czemu aplikacja zegarka wyświetla bardziej aktualne wartości glukozy. Aby skorzystać z tej funkcji zaznacz <i>&quot;xDrip webserver&quot;</i> w lewym menu w zakładce <b>Zegarek</b>. Więcej informacji można znaleźć w: lewe menu -&gt; Zegarek -&gt; Pomoc. Tylko jedna aplikacja może nasłuchiwać na porcie sieciowym używanym przez webserwer xDrip, dlatego też musisz wyłączyć <i>&quot;xDrip webservice</i>&quot; w samym xDrip, jeśli chcesz korzystać z tego w Juggluco.</p>
 <h2 class="western">Nadawanie xDrip</h2>
-<p>Wyślij ten sam sygnał transmisji, kt&oacute;ry został włączony w xDrip w <i>&quot;Ustawienia-&gt;Ustawienia innych aplikacji-&gt;Nadawaj lokalnie&quot;</i> (com.eveningoutpost.dexdrip.BgEstimate). Nasłuchują go aplikacje takie jak AndroidAPS. Aplikacje skierowane na Androida 11 lub wyższą wersję muszą dodać następujące elementy do AndroidManifest.xml, aby działały:</p>
-<p>&lt;queries&gt; <br/> &nbsp;&nbsp; &lt;package android:name=&quot;tk.glucodata&quot;/&gt; <br/> &lt;/queries&gt;</p>
-<h2 class="western">Glucodata broadcast (Transmisja danych Glucodata)</h2>
+<p>Wyślij ten sam sygnał transmisji, kt&oacute;ry został włączony w xDrip w <i>&quot;Ustawienia-&gt;Ustawienia innych aplikacji-&gt;Nadawaj lokalnie&quot;</i>. Nasłuchują go aplikacje takie jak AndroidAPS. W przeciwieństwie do oryginalnej transmisji xDrip, kt&oacute;ra była nadawana co 5 minut, Juggluco nadaje tę transmisję co minutę.</p>
+<h2 class="western">Glucodata broadcast (Transmisja danych dot. glukozy)</h2>
 <p>Nowa transmisja, kt&oacute;ra ma taką samą funkcję jak transmisja xDrip. Prosty przykład aplikacji, kt&oacute;ra zapisuje otrzymane wartości glukozy do logcat, można znaleźć tutaj: <a href="https://www.juggluco.nl/Juggluco/glucosebroadcast.html">Glucose broadcasts</a>. Jeśli określisz Juggluco jako źr&oacute;dło danych w G-Watch, musisz włączyć tę transmisję.</p>
 <p>Pokazane są aplikacje nasłuchujące tej transmisji. Zaznacz aplikacje, do kt&oacute;rych chcesz wysłać tę transmisję.</p>
 <h2 class="western">Web server</h2>
@@ -68,6 +67,8 @@
 <p style="font-weight: normal">Ustaw alarmy dla wysokiego i niskiego poziomu stężenia glukozy, alarm utraty sygnału i dla powiadomienia o ponownie dostępnej wartości glukozy.</p>
 <h2 class="western">Etykiety wart. liczb.</h2>
 <p style="line-height: 100%; margin-bottom: 0in">Określ etykiety używane dla wartości liczbowych. Przejdź do ekranu, aby określić, kt&oacute;re etykiety użyć do ustalenia wartości takich jak dawki insuliny, spożycie węglowodan&oacute;w i godziny spędzone na grze w piłkę nożną. Jeśli korzystasz r&oacute;wnież z aplikacji Kerfstok na zegarek Garmin, etykiety te są wysyłane do aplikacji na zegarek.</p>
+<h2 class="western">Język</h2>
+<p style="line-height: 100%; margin-bottom: 0in">Aplikacja Juggluco jest wyświetlana w wybranym języku. Jeśli nie wybrano żadnego kodu języka, używany jest język systemowy.</p>
 <h2 class="western">Przypomnienia</h2>
 <p style="font-weight: normal; line-height: 100%; margin-bottom: 0in">Określ, że alarm powinien się włączyć, jeśli nie wprowadziłeś określonej ilości jedzenia lub lek&oacute;w w określonym czasie.</p>
 <h2 class="western">Kolory</h2>

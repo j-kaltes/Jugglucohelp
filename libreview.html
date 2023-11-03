@@ -3,9 +3,9 @@
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 	<title></title>
-	<meta name="generator" content="LibreOffice 7.5.5.2 (Linux)"/>
+	<meta name="generator" content="LibreOffice 7.5.7.1 (Linux)"/>
 	<meta name="created" content="2022-06-27T17:51:41.582328716"/>
-	<meta name="changed" content="2023-10-01T20:42:26.415878085"/>
+	<meta name="changed" content="2023-11-01T12:14:11.993323839"/>
 	<style type="text/css">
 		@page { size: 8.27in 11.69in; margin: 0.79in }
 		p { margin-bottom: 0.1in; background: transparent }
@@ -15,20 +15,16 @@
 </head>
 <body lang="en-US" dir="ltr"><h1>Libreview</h1>
 <p style="line-height: 100%; margin-bottom: 0in">Juggluco can send
-glucose data and amounts to Libreview. Juggluco uses the stream data
-received via Bluetooth to create these 15 minute points by averaging
-the stream values around each point. Now and then it also sends an
-individual stream value in the same way as individual scanned values
-are sent to Libreview by Abbott's Librelink app. Juggluco doesn't
-need to be constantly connected to the internet for all data to be
-sent to Libreview. Like the Librelnk app, it sends data from the last
-89 days to Libreview. What is necessary is that Juggluco is
-constantly connected to a Freestyle Libre 2 sensor via Bluetooth. For
-Freestyle Libre 3 sensors the 5 minutes history data is used, so that
-all previous values are sent to Libreview. From Juggluco 6.0.0 on
-history values will also be used when &quot;<i>Stream history</i>&quot;
-is enabled in Left menu-&gt;Sensor or with US/CA/AU Libre 2 sensors
-and Libre 0 sensors.</p>
+glucose data and amounts to Libreview. When using Libre 0 or 3
+sensors, US/CA/AU Libre 2 sensors or other Libre 2 sensors with
+<i>Stream History</i> set, Juggluco sends the history values to
+Libreview. If Libre 2 sensors are used without &quot;<i>Stream
+history</i>&quot;,Juggluco uses the stream data received via
+Bluetooth to create these 15 minute points by averaging the stream
+values around each point.</p>
+<p style="line-height: 100%; margin-bottom: 0in">Like the Librelink
+app, it sends data from the last 89 days to Libreview. 
+</p>
 <p style="line-height: 100%; margin-bottom: 0in"><span lang="en-US">To
 make use of this service, you need to create a Libreview account at
 <a class="western" href="https://libreview.com/">https://libreview.com</a>
@@ -50,28 +46,24 @@ it to Libreview by pressing <i>&quot;</i><i><b>Send now</b></i><i>&quot;</i>.</p
 values, amounts can also be sent to Libreview. For this you need to
 touch &quot;<i><b>Send amounts</b></i>&quot; and specify what each
 label means.</p>
-<p style="line-height: 100%; margin-bottom: 0in">Starting with
-Juggluco 4.1.0 glucose values from FreeStyle Libre 3 sensors are also
-send to LibreView.</p>
 <p style="line-height: 100%; margin-bottom: 0in"><b>Immediate</b>:
 Send glucose values to Libreview immediately when they arrive from
 Libre 2 or 3 sensors. This is only useful in combination with
 LibreLinkUp. To make use of it you need to add a LibrelinkUp
-connection to this Libreview account in one of Abbott's Libre apps.
-Sometimes the value is not immediately visible, because display of
-<span style="font-weight: normal">LibreLinkUp</span> isn't redrawn
-automatically. Using LibreLinkup is quite dangerous if you don't look
-closely, because when you touch the graph, it shows an old value
-instead of the current glucose value.</p>
+connection to this Libreview account in one of Abbott's Libre apps
+(you don't need to use it for anything else). Sometimes the value is
+not immediately visible, because display of <span style="font-weight: normal">LibreLinkUp</span>
+isn't redrawn automatically. Using LibreLinkup is quite dangerous if
+you don't look closely, because when you touch the graph, it shows an
+old value instead of the current glucose value.</p>
 <p style="line-height: 100%; margin-bottom: 0in"><b>Spy Views</b>:
 When this option is set, Juggluco will send to Libreview whether a
-value is viewed or not (with some restrictions to prevent the display
-of too many circles). When this option is turned off, Juggluco will
+value is viewed or not. When this option is turned off, Juggluco will
 always say that it is not viewed. This option will only reliably send
-this information to Libreview when also Immediate is turned on.
-Juggluco should be constantly connected to the internet to catch all
-views from Libre 3, Libre 2 remembers them all as long as it is not
-killed.</p>
+this information to Libreview when also <i>Immediate</i> is turned
+on. Juggluco should be constantly connected to the internet to catch
+all views from Libre 3, Libre 2 remembers them all as long as it is
+not killed.</p>
 <p style="line-height: 100%; margin-bottom: 0in"><b>Resend data</b>:
 Start anew; resend data of the last 90 days to Libreview. You need to
 press this when switching to a new Libreview account.</p>
@@ -109,8 +101,7 @@ On the same line before this button, the Account ID will be shown
 (this can take some time and the screen is not refreshed
 automatically). Retrieving the Account ID from the LibreView server
 makes it possible to use a FreeStyle Libre 3 sensor that was already
-used with Abbotts Libre 3 app with this LibreView account. Starting
-the sensor with Juggluco is reported not to work.</p>
+used with Abbotts Libre 3 app with this LibreView account.</p>
 <p><b>WARNING</b>: The Freestyle Libre 3 sensor should be activated
 with this account.<br/>
 <br/>

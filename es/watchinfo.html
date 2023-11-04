@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 7.5.2.2 (Linux)"/>
+	<meta name="created" content="2022-03-03T14:07:37.938004739"/>
+	<meta name="changed" content="2023-05-19T16:09:33.396676324"/>
+	<style type="text/css">
+		@page { size: 8.27in 11.69in; margin: 0.79in }
+		p { margin-bottom: 0.1in; background: transparent }
+		h2.cjk { font-family: "Droid Sans Fallback" }
+		h2.ctl { font-family: "Droid Sans Devanagari" }
+	</style>
+</head>
+<body lang="en-US" dir="ltr"><h1>Watch</h1>
+<p style="line-height: 100%; margin-bottom: 0in">Currently, Juggluco
+has six ways to get glucose values on your watch.</p>
+<h2 class="western">Notify</h2>
+<p style="line-height: 100%; margin-bottom: 0in"><span lang="en-US">When
+</span><span lang="en-US"><i>Notify</i></span> <span lang="en-US">is
+turned on, an Android notification is created every time a new
+glucose value arrives. On some watches notifications are only send to
+the watch when a new notification is created, for them you have to
+turn on </span><span lang="en-US"><i><b>Separate</b></i></span><span lang="en-US">.
+For these watches you also have to switch on </span><span lang="en-US"><i>Separate</i></span>
+<span lang="en-US">to receive alarm notifications on the watch.</span></p>
+<h2 class="western">Watchdrip</h2>
+<p style="line-height: 100%; margin-bottom: 0in">By switching this
+on, Juggluco sends glucose values to <a href="https://bigdigital.home.blog/2022/06/16/watchdrip-a-new-application-for-xdrip-watch-integration">Watchdrip+</a>.
+Watchdrip+ sends watch faces, showing glucose values, to
+MiBand/Amazfit watches.</p>
+<h2 class="western">GadgetBridge</h2>
+<p>GadgetBridge (<a href="https://codeberg.org/Freeyourgadget/Gadgetbridge/wiki">Wiki</a>)
+makes it possible to display weather information on MiBand/Amazfit
+watches. With the Gadgetbridge option turned on, will Juggluco send
+glucose values to GadgetBridge under the pretext that it is weather
+information. This had the advantage above Watchdrip that it is much
+faster, but has the disadvantage that less information is displayed.
+Juggluco puts the glucose value and a direction arrow in the location
+of the weather. This location is displayed under Weather on the
+watch. I haven't found any watch face that displayed this location.
+Only for <b>mmol/L</b>: the value before the point is put in the
+maximal temperature and the value after the point in the minimal
+temperature. The values of <b>mg/dL</b> are too large for
+temperatures, for that reason the last digit is put in minimal
+temperature and the numbers before the last digit in the maximal
+temperature. Thus 106 mg/dL becomes: maximal temperature 10, minimal
+temperature 6.</p>
+<p>The direction of change determines the weather icon: snow is
+falling glucose, rain is rising glucose. It is also put in the
+current temperature. Larger than zero means rising glucose, lower
+than zero means falling glucose.</p>
+<h2 class="western">Kerfstok</h2>
+<p style="line-height: 100%; margin-bottom: 0in"><span lang="en-US">Kerfstok
+is watch app by which you can enter numbers (like insulin doses),</span>
+<span lang="en-US">but it also displays the current glucose value.
+Immediately as a new glucose value arrives, Juggluco sends it to
+Kerfstok. So Kerfstok displays always the most recent glucose value.
+Kerfstok can also record all activities supported by Garmin and can
+display speed and distance. See Watch-&gt;Kerfstok Status-&gt; Help
+and <a href="https://www.juggluco.nl/Kerfstok">https://www.juggluco.nl/Kerfstok</a></span></p>
+<h2 class="western">Broadcast</h2>
+<p style="line-height: 100%; margin-bottom: 0in">Apps can receive
+glucose values from one of the glucose broadcasts send by Juggluco
+and send these glucose values to a watch. For example G-Watch
+(<a href="https://play.google.com/store/apps/details?id=sk.trupici.g_watch">TizenOS</a>
+or <a href="https://play.google.com/store/apps/details?id=sk.trupici.gwatch.wear">WearOS</a>)
+can receive glucose values from the Glucodata Broadcast (see Left
+menu-&gt;Settings).</p>
+<h2 class="western">xDrip watch apps</h2>
+<p style="line-height: 100%; margin-bottom: 0in"><span lang="en-US">Juggluco
+incorporates an xDrip/Nightscout</span> <span lang="en-US">webserver.
+This makes it possible to directly use xDrip watch apps with
+Juggluco. xDrip displays a new glucose value only every 5 minutes,
+while Juggluco displays a new glucose value every minute. Juggluco
+also sends to the xDrip watch apps the most recent glucose value. The
+glucose values are only send to the watches if the watch app asks for
+them, thus how old the displayed values are depends on when the watch
+app asks for them. For example watch faces and data fields on Garmin
+watches only ask for a glucose value every 5 minutes. Via xDrip this
+often let to 10 minute old glucose values. When directly connected
+with Juggluco, these watch faces show up to 6 minute old glucose
+values. Under </span><span lang="en-US"><b>Garmin</b></span><span lang="en-US">,
+if you can't use Kerfstok, you have the following options to
+regularly receive a recent glucose value. An xDrip widget
+(<a href="https://apps.garmin.com/en-US/apps/73115e04-dc9f-4765-ad88-e7ae283ce995">https://apps.garmin.com/en-US/apps/73115e04-dc9f-4765-ad88-e7ae283ce995</a>)
+can also be used during the recording of an activity. So if you have
+a hand free, you can switch to this xDrip widget while recording an
+activity with a standard Garmin sport app. There is also an xDrip
+sport app that updates its glucose value regularly:
+<a href="https://apps.garmin.com/en-US/apps/aaf6533b-bca1-4365-9131-9f882f6f148c">https://apps.garmin.com/en-US/apps/aaf6533b-bca1-4365-9131-9f882f6f148c</a>.
+You can try to start at a moment, so that it will request a glucose
+values just after it is available. Data fields and watch faces would
+be the ideal solution, but restrictions imposed by Garmin make them
+of little value. </span>
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><span lang="en-US">According
+to a user there exist also a watch face for </span><span lang="en-US"><b>Fitbit</b></span>
+<span lang="en-US">watches that works with the xDrip webserver:
+<a href="https://glancewatchface.com/">https://glancewatchface.com</a></span></p>
+<p style="line-height: 100%; margin-bottom: 0in"><span lang="en-US">For
+more information on the web server interface see
+<a href="https://www.juggluco.nl/Juggluco/webserver.html">https://www.juggluco.nl/Juggluco/webserver.html</a></span></p>
+<p style="line-height: 100%; margin-bottom: 0in"><b>local only</b>:
+only accept connections from localhost (127.0.0.1). If you turn it
+off, also other hosts can access the server. This only applies to
+http, https is always possible. If you don't configure your firewall
+to redirect to port 17580, this will be only hosts on your home
+network.</p>
+<h2 class="western">WearOS Juggluco</h2>
+<p>There is a version of Juggluco ported to Wear OS. The display is
+adapted to the smaller screen and a watch face is added. The watch
+face can be installed as a usual Wear OS watch face and displays
+beside the time also the current glucose value received via
+Bluetooth.</p>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 7.5.2.2 (Linux)"/>
+	<meta name="created" content="2023-03-10T12:04:13.361070488"/>
+	<meta name="changed" content="2023-05-15T17:57:32.523407317"/>
+</head>
+<body lang="en-US" dir="ltr"><p>Upload to a Nightscout server.</p>
+<p>In most cases you can also use the webserver in Juggluco or
+<a href="https://www.juggluco.nl/Juggluco/cmdline">juggluco-server</a>,
+only AAPS and NSclient refuse to work when not connected to
+<a href="https://github.com/nightscout/cgm-remote-monitor">cgm-remote-monitor</a>.
+The web server in Juggluco also gives amounts in the form of
+Nightscout treatments
+(<a href="https://www.juggluco.nl/Juggluco/webserver.html">https://www.juggluco.nl/Juggluco/webserver.html</a>),
+the uploader only uploads glucose values.</p>
+<p>All stream values are uploaded to the Nightscout server at the
+moment they arrive. When multiple sensor are used, all values of all
+sensors are uploaded. Some Garmin watch apps/faces/widgets assume
+that the values are space 5 minutes apart. When they receive glucose
+values one minute apart, they will only show the last fifth of the
+curve. For that reason, the webserver incorporated in Juggluco spaces
+the values 5 minutes apart, except when &quot;interval=secs&quot; is
+set to a lower value.</p>
+<p><b>URL</b>: the url should be in the form of https://hostname:port
+for example, https://myname.herokuapp.com:6789</p>
+<p><b>Active</b>: Turn on uploader</p>
+<p><b>Resend data</b>: Upload all data again to the Nightscout server</p>
+<p><b>Send now</b>: Normally data is immediately send when it arrives
+from the sensor or a mirror connection. Press on this button when for
+some reason a previous attempt failed.</p>
+<p>The WearOS version Juggluco 4.15.0 and later can also upload
+glucose values to Nightscout. In nearly all cases you can better send
+them via a Juggluco version on a phone or tablet or via Juggluco
+server on a computer. It will drain the battery, especially when it
+is unable to contact the Nightscout server, so you can better turn
+<i>Active</i> off when there is no reliable connection.</p>
+</body>
+</html>

@@ -37,6 +37,92 @@ a:active {
 		a:link { so-language: zxx }
 		a:visited { so-language: zxx }
 	</style>
+ <base href="https://www.google.nl/" id="baseurl" target="_blank">
+<script type="text/javascript"> 
+function getunitarg(){ 
+	const params = new URLSearchParams(document.location.search);
+	const unit = params.get("unit");
+	if(unit == "mg/dL") { 
+		return 2;
+		} 
+	else { 
+		if(unit=="mmol/L") {
+		   return 1;
+		   }
+	 	}
+	return 0;
+    } 
+let mmol=[
+"AM",
+"AU",
+"BA",
+"BG",
+"BW",
+"BY",
+"CA",
+"CH",
+"CN",
+"CZ",
+"DK",
+"EE",
+"FI",
+"GB",
+"HK",
+"HR",
+"HU",
+"IE",
+"IS",
+"KW",
+"KZ",
+"LT",
+"LV",
+"MT",
+"MY",
+"NA",
+"NL",
+"NO",
+"NZ",
+"RS",
+"RU",
+"SE",
+"SI",
+"SK",
+"UA",
+"ZA"];
+
+
+
+
+
+
+function getunit() {
+	var unit=getunitarg();
+	if(unit!=0) {
+		return unit;
+		}
+
+	var userLang = navigator.language || navigator.userLanguage;
+	var  co=userLang.toUpperCase();
+	var hit=false;
+	for(const element of mmol) {
+	  if(co.includes(element)) {
+		return 1;
+		}
+	   }
+	  return 2;
+	 }
+
+
+
+function checkVisitedLink(){ 
+	if(getunit()!=1) {
+		document.getElementById("baseurl").href = "https://www.juggluco.nl/Jugglucohelp/mgdL/"; 
+		} 
+	else { 
+	   document.getElementById("baseurl").href = "https://www.juggluco.nl/Jugglucohelp/"; } 
+   } 
+   checkVisitedLink(); 
+   </script> 
   </head>
   <body dir="ltr" bgcolor="#000000" lang="en-US"><img src="left.jpg" style="object-fit:contain; width:15cm;                   height:auto;margin: 1cm 1cm 1cm 1cm;">
     <img src="leftmiddle.jpg" style="object-fit:contain; width:15cm;                   height:auto;margin: 1cm 1cm 1cm 1cm;">

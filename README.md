@@ -1,4 +1,6 @@
 # Juggluco help files
+These files are also visible under https://www.juggluco.nl/Jugglucohelp
+
 To write a translation of Juggluco you just translate the files ending in **.html** making use of LibreOffice.
 
 To make a full translation also the following files of the

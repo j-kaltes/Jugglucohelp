@@ -1528,7 +1528,7 @@ raw з: ^apple.*\\braw\\b<br/>
 <![CDATA[
 <h1 class="western">Статыстыка</h1>
 <p><span lang="be-BY">Некаторая статыстыка ўзятая
-з <a class="western" href="https://www.healthline.com/diabetesmine/ambulatory-glucose-profile">AGP</a>
+з <a class="western" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8991298">AGP</a>
 без ліцэнзіі, з невялікімі зменамі.</span></p>
 <p>Колькасць прааналізаваных дзён можна
 змяніць, націснуўшы кнопку <b>Дні</b>.

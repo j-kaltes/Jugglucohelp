@@ -37,8 +37,10 @@ a:active {
 		a:link { so-language: zxx }
 		a:visited { so-language: zxx }
 	</style>
- <base href="https://www.google.nl/" id="baseurl" target="_blank">
+ <base href="https://www.juggluco.nl/Jugglucohelp/mgdL/" id="baseurl" target="_blank">
+
 <script type="text/javascript"> 
+var unitstr='xyz';
 function getunitarg(){ 
 	const params = new URLSearchParams(document.location.search);
 	const unit = params.get("unit");
@@ -103,25 +105,28 @@ function getunit() {
 
 	var userLang = navigator.language || navigator.userLanguage;
 	var  co=userLang.toUpperCase();
-	var hit=false;
+
 	for(const element of mmol) {
 	  if(co.includes(element)) {
+		window.location.search += 'unit=mmol/L';
 		return 1;
 		}
 	   }
-	  return 2;
+	window.location.search += 'unit=mg/dL';
 	 }
 
 
 
-function checkVisitedLink(){ 
+function setbaseurl(){ 
 	if(getunit()!=1) {
 		document.getElementById("baseurl").href = "https://www.juggluco.nl/Jugglucohelp/mgdL/"; 
+		unitstr='mg/dL';
 		} 
 	else { 
 	   document.getElementById("baseurl").href = "https://www.juggluco.nl/Jugglucohelp/"; } 
+		unitstr='mmol/L';
    } 
-   checkVisitedLink(); 
+   setbaseurl();
    </script> 
   </head>
   <body dir="ltr" bgcolor="#000000" lang="en-US"><img src="left.jpg" style="object-fit:contain; width:15cm;                   height:auto;margin: 1cm 1cm 1cm 1cm;">
@@ -320,7 +325,8 @@ display
         </tr>
         <tr>
           <td style="border: none; padding: 0in" width="96" valign="top">
-            <p><font color="#ffff6d"><a href="https://www.juggluco.nl/Jugglucohelp/stathelp.html">Statistics</a></font></p>
+            <p><font color="#ffff6d"><a href="https://www.juggluco.nl/Jugglucohelp/stathelp.html" onclick= "location.href=this.href+'?unit='+unitstr;return false;" >Statistics</a></font></p>
+               
           </td>
         </tr>
         <tr>

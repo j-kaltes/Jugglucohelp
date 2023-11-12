@@ -16,7 +16,7 @@
 		h3.ctl { font-family: "Mangal" }
 		a:link { so-language: zxx }
 	</style>
- <base href="https://www.google.nl/" id="baseurl" target="_blank">
+ <base href="https://www.juggluco.nl/Jugglucohelp/mgdL/" id="baseurl" target="_blank">
 <script type="text/javascript"> 
 function getunitarg(){ 
 	const params = new URLSearchParams(document.location.search);
@@ -82,25 +82,27 @@ function getunit() {
 
 	var userLang = navigator.language || navigator.userLanguage;
 	var  co=userLang.toUpperCase();
-	var hit=false;
 	for(const element of mmol) {
 	  if(co.includes(element)) {
+		window.location.search += 'unit=mmol/L';
 		return 1;
 		}
 	   }
+	window.location.search += 'unit=mg/dL';
+
 	  return 2;
 	 }
 
 
 
-function checkVisitedLink(){ 
+function setbaseurl(){ 
 	if(getunit()!=1) {
 		document.getElementById("baseurl").href = "https://www.juggluco.nl/Jugglucohelp/mgdL/"; 
 		} 
 	else { 
 	   document.getElementById("baseurl").href = "https://www.juggluco.nl/Jugglucohelp/"; } 
    } 
-   checkVisitedLink(); 
+   setbaseurl();
    </script> 
 </head>
 

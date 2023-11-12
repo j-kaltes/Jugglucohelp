@@ -2,10 +2,8 @@
 <html>
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-	<title></title>
-	<meta name="generator" content="LibreOffice 7.5.7.1 (Linux)"/>
-	<meta name="created" content="2021-02-27T14:01:21.977498081"/>
-	<meta name="changed" content="2023-10-17T13:06:46.653815304"/>
+    <link rel="icon" href="https://www.juggluco.nl/Juggluco/arrow.png">
+	<title>Settings</title>
 	<style type="text/css">
 		@page { size: 8.27in 11.69in; margin: 0.79in }
 		h1 { margin-bottom: 0.08in; background: transparent }
@@ -18,6 +16,102 @@
 		h2.cjk { font-family: "Noto Sans CJK SC"; font-size: 16pt }
 		h2.ctl { font-family: "Mangal"; font-size: 16pt }
 	</style>
+ <base href="https://www.juggluco.nl/Jugglucohelp/mgdL/" id="baseurl" target="_blank">
+
+<script type="text/javascript"> 
+var unitstr='mg/dL';
+function getunitarg(){ 
+	const params = new URLSearchParams(document.location.search);
+	const unit = params.get("unit");
+	if(unit===null)	 {
+		return 0;
+		}
+	if(unit == "mg/dL") { 
+		return 2;
+		} 
+	else { 
+		if(unit=="mmol/L") {
+		   return 1;
+		   }
+	 	}
+
+	return 0;
+    } 
+let mmol=[
+"AM",
+"AU",
+"BA",
+"BG",
+"BW",
+"BY",
+"CA",
+"CH",
+"CN",
+"CZ",
+"DK",
+"EE",
+"FI",
+"GB",
+"HK",
+"HR",
+"HU",
+"IE",
+"IS",
+"KW",
+"KZ",
+"LT",
+"LV",
+"MT",
+"MY",
+"NA",
+"NL",
+"NO",
+"NZ",
+"RS",
+"RU",
+"SE",
+"SI",
+"SK",
+"UA",
+"ZA"];
+
+
+
+
+
+
+function getunit() {
+	var unit=getunitarg();
+	if(unit!=0) {
+		return unit;
+		}
+
+	var userLang = navigator.language || navigator.userLanguage;
+	var  co=userLang.toUpperCase();
+
+	for(const element of mmol) {
+	  if(co.includes(element)) {
+		return 1;
+		}
+	   }
+
+	return 2;
+	 }
+
+
+
+function setbaseurl(){ 
+	if(getunit()!=1) {
+		document.getElementById("baseurl").href = "https://www.juggluco.nl/Jugglucohelp/mgdL/"; 
+		unitstr='mg/dL';
+		} 
+	else { 
+	       document.getElementById("baseurl").href = "https://www.juggluco.nl/Jugglucohelp/";  
+		unitstr='mmol/L';
+		}
+   	} 
+   setbaseurl();
+   </script> 
 </head>
  <img src="settings.jpg" alt="Setttings" style="object-fit:contain; width:15cm;                   height:auto;">
 <body lang="en-US" dir="ltr"><h1 class="western">Settings</h1>
@@ -163,7 +257,7 @@ in the left middle menu. In that case the notification will be sent
 to some smartwatches, if it is configured that way. That works with
 Garmin watches, I don't know if it works with anything else. Alarms
 also generate notifications.</p>
-<h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/floatingconfig.html">Floating glucose</a></h2>
+<h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/floatingconfig.html" onclick= "location.href=this.href+'?unit='+unitstr;return false;"  >Floating glucose</a></h2>
 <p>When you turn this on, a small image with the current glucose
 value is constantly present on the screen independent of which app is
 in the foreground. If you turn it on the first time, you will be

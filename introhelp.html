@@ -2,10 +2,7 @@
 <html>
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <title></title>
-    <meta name="generator" content="LibreOffice 7.5.7.1 (Linux)">
-    <meta name="created" content="2021-05-17T15:18:29.246943856">
-    <meta name="changed" content="2023-11-10T17:37:01.706351562">
+    <title>Intro help</title>
     <style>
 a:link {
   color: pink;
@@ -40,10 +37,13 @@ a:active {
  <base href="https://www.juggluco.nl/Jugglucohelp/mgdL/" id="baseurl" target="_blank">
 
 <script type="text/javascript"> 
-var unitstr='xyz';
+var unitstr='mg/dL';
 function getunitarg(){ 
 	const params = new URLSearchParams(document.location.search);
 	const unit = params.get("unit");
+	if(unit===null)	 {
+		return 0;
+		}
 	if(unit == "mg/dL") { 
 		return 2;
 		} 
@@ -52,6 +52,11 @@ function getunitarg(){
 		   return 1;
 		   }
 	 	}
+	 console.log("unit wrong");
+//	params.delete("unit");
+//	window.location.search = params;
+//	 console.log("search="+	window.location.search);
+
 	return 0;
     } 
 let mmol=[
@@ -108,11 +113,17 @@ function getunit() {
 
 	for(const element of mmol) {
 	  if(co.includes(element)) {
-		window.location.search += 'unit=mmol/L';
+	 	console.log("LANG mmol/L");
+//		window.location.search += 'unit=mmol/L';
+//	 	console.log("getunit search="+	window.location.search);
 		return 1;
 		}
 	   }
-	window.location.search += 'unit=mg/dL';
+	 console.log("LANG mg/dL");
+//	window.location.search += 'unit=mg/dL';
+//	console.log("getunit search="+	window.location.search);
+
+	return 2;
 	 }
 
 
@@ -120,12 +131,15 @@ function getunit() {
 function setbaseurl(){ 
 	if(getunit()!=1) {
 		document.getElementById("baseurl").href = "https://www.juggluco.nl/Jugglucohelp/mgdL/"; 
+		 console.log("unitstr=mg/dL");
 		unitstr='mg/dL';
 		} 
 	else { 
-	   document.getElementById("baseurl").href = "https://www.juggluco.nl/Jugglucohelp/"; } 
+	       document.getElementById("baseurl").href = "https://www.juggluco.nl/Jugglucohelp/";  
+		 console.log("unitstr=mmol/L");
 		unitstr='mmol/L';
-   } 
+		}
+   	} 
    setbaseurl();
    </script> 
   </head>

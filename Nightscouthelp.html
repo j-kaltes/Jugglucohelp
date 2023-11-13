@@ -24,7 +24,7 @@ values from Juggluco. It can be used by xDrip watches and some
 Nightscout apps.</p>
 <p style="line-height: 100%; margin-bottom: 0in">Using apps that are
 made to make use of the xDrip webserver is relatively easy. Just
-check active. Hereafter they can receive glucose from localhost on
+check active. Hereafter they can receive glucose from 127.0.0.1 on
 port 17580. Nightscout server URL: http://127.0.0.1:17580 
 </p>
 <p style="line-height: 100%; margin-bottom: 0in">Also, some
@@ -134,11 +134,11 @@ select a file containing the private key. See above.</p>
 <p style="line-height: 100%; margin-bottom: 0in"><strong>Full Chain</strong>:
 select a file containing the Full Chain, see above.</p>
 <p style="line-height: 100%; margin-bottom: 0in"><strong>Local only</strong>:
-the http server can only be accessed with localhost. This doesn't
+the http server can only be accessed with localhost (127.0.0.1). This doesn't
 apply to https.</p>
 <p style="line-height: 100%; margin-bottom: 0in"><b>Give Amounts</b>:
 make it possible to receive the entered amounts using
-<a href="http://localhost:17580/api/v1/treatments?count=3">http://localhost:17580/api/v1/treatments?count=3</a>.
+<a href="http://127.0.0.1:17580/api/v1/treatments?count=3">http://127.0.0.1:17580/api/v1/treatments?count=3</a>.
 (You have to specify for each label what has to be done with it.
 Previously this was the same as for Libreview, after version 4.18.0
 you can place the labels in different categories for Libreview and
@@ -150,7 +150,7 @@ Juggluco. In xDrip you can do this in two ways:</p>
 	<i>&quot;Nightscout Follower&quot;</i><span style="font-variant: normal">
 	</span><span style="font-variant: normal"><span style="font-style: normal">and
 	giving as “Follow URL”</span></span><i>,</i><span style="font-variant: normal">
-	</span><span style="font-variant: normal"><span style="font-style: normal"><a href="http://localhost:17580/api/v1/treatments?count=3">http://127.0.0.1:17580</a>
+	</span><span style="font-variant: normal"><span style="font-style: normal"><a href="http://127.0.0.1:17580/api/v1/treatments?count=3">http://127.0.0.1:17580</a>
 	and check </span></span>“<i>Download Treatments”.</i><span style="font-variant: normal">
 	</span>
 	</p>

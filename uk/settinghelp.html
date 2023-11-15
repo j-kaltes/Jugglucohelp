@@ -5,7 +5,7 @@
 	<title></title>
 	<meta name="generator" content="LibreOffice 7.5.3.2 (Windows)"/>
 	<meta name="created" content="2021-02-27T14:01:21.977498081"/>
-	<meta name="changed" content="2023-06-01T16:16:48.755000000"/>
+	<meta name="changed" content="2023-11-13T14:24:43.121000000"/>
 	<style type="text/css">
 		@page { size: 21.01cm 29.69cm; margin: 2.01cm }
 		h1 { margin-bottom: 0.2cm; background: transparent }
@@ -134,7 +134,7 @@ Libre 2 і 3 у Libreview і отримати ідентифікатор
 облікового запису, який використовується
 під час активації датчика Freestyle Libre 3.
 Торкніться, щоб змінити налаштування.</p>
-<h2 class="western">Пропатчена трансляція Libre</h2>
+<h2 class="western">В xDrip</h2>
 <p>Використовуйте трансляцію Patched Libre
 (спочатку надіслану виправленою німецькою
 програмою Librelink 2.3.0), щоб щохвилини
@@ -153,9 +153,10 @@ xDrip. У xDrip вам потрібно встановити Libre2
 xDrip відображає власні інтерпретація
 отриманих значень глюкози. Дзеркальні
 пристрої також можна надсилати в xDrip.</p>
-<p>Перегляньте <a href="https://github.com/jakobheyman/xdripJH">https://github.com/jakobheyman/xdripJH</a>,
+<p><span lang="uk-UA">Перегляньте
+<a href="https://github.com/jakobheyman/xdripJH">https://github.com/jakobheyman/xdripJH</a>,
 щоб спробувати оновити значення глюкози
-xDrip щохвилини.</p>
+xDrip щохвилини.</span></p>
 <p>Датчики Freestyle Libre 3 надсилають пропущені
 значення після періоду відключення. Ці
 значення не надсилаються з цією
@@ -176,30 +177,24 @@ xDrip, щоб програма відображала останні
 xDrip, тому вам потрібно вимкнути «<i>xDrip
 webservice</i>» у самому xDrip, якщо ви хочете
 використовувати порт у Juggluco.</p>
-<h2 class="western">Трансляція xDrip</h2>
+<h2 class="western">В AAPS</h2>
 <p>Надішліть ту саму трансляцію, яку
 ввімкнено в xDrip, за допомогою
-«<i>Налаштування-&gt;Налаштування між
-програмами-&gt;Локальна трансляція</i>»
-(com.eveningoutpost.dexdrip.BgEstimate). Такі програми,
-як AndroidAPS, слухають це. Додатки, націлені
-на Android 11 або новішої версії, повинні
-додати в AndroidManifest.xml наступне, щоб він
-працював: 
-</p>
-<p>&lt;queries&gt; <br/>
-&nbsp;&nbsp; &lt;package
-android:name=&quot;tk.glucodata&quot;/&gt; <br/>
-&lt;/queries&gt;</p>
+«Налаштування-&gt;Налаштування між
+програмами-&gt;Локальна трансляція».
+Такі програми, як AndroidAPS, слухають це. На
+відміну від оригінальної трансляції
+xDrip, яка транслювалася кожні 5 хвилин,
+Juggluco транслює цю трансляцію щохвилини.</p>
 <h2 class="western">Трансляція Glucodata</h2>
-<p>Нова трансляція, яка має ту саму
-функцію, що й трансляція xDrip. Простий
+<p><span lang="uk-UA">Нова трансляція, яка має ту
+саму функцію, що й трансляція xDrip. Простий
 приклад програми, яка записує отримані
 значення глюкози в logcat, можна знайти
 тут: <a href="https://www.juggluco.nl/Juggluco/glucosebroadcast.html">Glucose
 broadcasts</a>. Якщо ви вказали Juggluco як джерело
 даних у G-Watch, вам потрібно ввімкнути цю
-трансляцію.</p>
+трансляцію.</span></p>
 <p>Показані додатки, які слухають цю
 трансляцію. Перевірте програми, у які
 ви хочете надіслати цю трансляцію.</p>
@@ -276,6 +271,11 @@ Android. Наприклад, на Realme GT 5G вам потрібно
 у футбол. Якщо ви також використовуєте
 програму годинника Garmin Kerfstok, ці мітки
 надсилаються до програми годинника.</p>
+<h2 class="western">Мова</h2>
+<p style="line-height: 100%; margin-bottom: 0cm">Juggluco
+відображається вибраною мовою. Якщо
+код мови не вибрано, використовується
+системна мова.</p>
 <h2 class="western">Нагадування</h2>
 <p style="font-weight: normal; line-height: 100%; margin-bottom: 0cm">
 Вкажіть, що сигнал тривоги має спрацювати,

@@ -5,7 +5,7 @@
 	<title></title>
 	<meta name="generator" content="LibreOffice 7.5.7.1 (Linux)"/>
 	<meta name="created" content="2022-06-27T17:51:41.582328716"/>
-	<meta name="changed" content="2023-11-01T12:14:11.993323839"/>
+	<meta name="changed" content="2023-11-16T12:44:35.706546205"/>
 	<style type="text/css">
 		@page { size: 8.27in 11.69in; margin: 0.79in }
 		p { margin-bottom: 0.1in; background: transparent }
@@ -13,15 +13,13 @@
 		a.ctl:link { so-language: zxx }
 	</style>
 </head>
-
 <img src="libreview.jpg"  style="object-fit:contain; width:15cm;                   height:auto;margin: 1cm 1cm 1cm 1cm;">
 <body lang="en-US" dir="ltr"><h1>Libreview</h1>
 <p style="line-height: 100%; margin-bottom: 0in">Juggluco can send
 glucose data and amounts to Libreview. When using Libre 0 or 3
 sensors, US/CA/AU Libre 2 sensors or other Libre 2 sensors with
-<i>Stream History</i> set, Juggluco sends the history values to
-Libreview. If Libre 2 sensors are used without &quot;<i>Stream
-history</i>&quot;,Juggluco uses the stream data received via
+<i>Bluetooth History</i> set, Juggluco sends the history values to
+Libreview. If Libre 2 sensors are used without &quot;<i>Bluetooth history</i>&quot;,Juggluco uses the stream data received via
 Bluetooth to create these 15 minute points by averaging the stream
 values around each point.</p>
 <p style="line-height: 100%; margin-bottom: 0in">Like the Librelink
@@ -46,15 +44,17 @@ it wasn't done in the previous 20 minutes. You can also manually send
 it to Libreview by pressing <i>&quot;</i><i><b>Send now</b></i><i>&quot;</i>.</p>
 <p style="line-height: 100%; margin-bottom: 0in">Beside glucose
 values, amounts can also be sent to Libreview. For this you need to
-touch &quot;<i><b><a href="https://www.juggluco.nl/Jugglucohelp/librenumhelp.html">Send amounts</a></b></i>&quot; and specify what each
-label means.</p>
+touch &quot;<a class="western" href="https://www.juggluco.nl/Jugglucohelp/librenumhelp.html"><i><b>Send
+amounts</b></i></a>&quot; and specify what each label means.</p>
 <p style="line-height: 100%; margin-bottom: 0in"><b>Immediate</b>:
 Send glucose values to Libreview immediately when they arrive from
 Libre 2 or 3 sensors. This is only useful in combination with
 LibreLinkUp. To make use of it you need to add a LibrelinkUp
-connection to this Libreview account in one of Abbott's Libre apps
-(you don't need to use it for anything else). Sometimes the value is
-not immediately visible, because display of <span style="font-weight: normal">LibreLinkUp</span>
+connection to this Libreview account in one of Abbott's Libre apps.
+(If there is no Abbott Libre app in your country, you can use the
+<a class="western" href="https://www.juggluco.nl/Juggluco/libre3/patched.html">patched
+Libre 3 app</a>.) Sometimes the value is not immediately visible,
+because display of <span style="font-weight: normal">LibreLinkUp</span>
 isn't redrawn automatically. Using LibreLinkup is quite dangerous if
 you don't look closely, because when you touch the graph, it shows an
 old value instead of the current glucose value.</p>
@@ -83,7 +83,7 @@ target </i>than the statistics screen of Juggluco. Because the
 history values created on the sensors are less extreme than the
 average of the stream values around a history value, this difference
 will be larger when Libreview is based on the <i>history</i> values
-as when &quot;Stream History&quot; is enabled in Juggluco or
+as when &quot;Bluetooth History&quot; is enabled in Juggluco or
 Librelink is used.</p>
 <p style="line-height: 100%; margin-bottom: 0in">Juggluco can be
 connected with multiple sensors at the same time, while Librelink
@@ -96,17 +96,17 @@ previous one, to imitate the one sensor policy of Librelink. This
 means that when you run multiple sensors at a time and a later added
 one ends earlier than an earlier added sensor, this earlier sensor
 will send no data anymore to Libreview.</p>
-<p><b><a href="https://www.juggluco.nl/Jugglucohelp/getaccountidhelp.html">Get Account ID</a></b>: If you only want to receive the LibreView
-account ID, but not send data to Libreview, you can fill in your
-E-Mail address and Password and press on &quot;<i><a href="https://www.juggluco.nl/Jugglucohelp/getaccountidhelp.html">Get Account ID</a></i>&quot;.
-On the same line before this button, the Account ID will be shown
-(this can take some time and the screen is not refreshed
-automatically). Retrieving the Account ID from the LibreView server
-makes it possible to use a FreeStyle Libre 3 sensor that was already
-used with Abbotts Libre 3 app with this LibreView account.</p>
+<p><a class="western" href="https://www.juggluco.nl/Jugglucohelp/getaccountidhelp.html"><b>Get
+Account ID</b></a>: If you only want to receive the LibreView account
+ID, but not send data to Libreview, you can fill in your E-Mail
+address and Password and press on &quot;<a class="western" href="https://www.juggluco.nl/Jugglucohelp/getaccountidhelp.html"><i>Get
+Account ID</i></a>&quot;. On the same line before this button, the
+Account ID will be shown (this can take some time and the screen is
+not refreshed automatically). Retrieving the Account ID from the
+LibreView server makes it possible to use a FreeStyle Libre 3 sensor
+that was already used with Abbotts Libre 3 app with this LibreView
+account.</p>
 <p><b>WARNING</b>: The Freestyle Libre 3 sensor should be activated
-with this account.<br/>
-
-</p>
+with this account.</p>
 </body>
 </html>

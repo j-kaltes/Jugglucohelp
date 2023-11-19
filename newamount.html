@@ -4,9 +4,96 @@
 	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 	<title></title>
 	<meta name="generator" content="LibreOffice 7.5.7.1 (Linux)"/>
-	<meta name="created" content="2023-11-19T17:59:07.699175262"/>
-	<meta name="changed" content="2023-11-19T20:02:25.346457278"/>
+ <base href="https://www.juggluco.nl/Jugglucohelp/mgdL/" id="baseurl" target="_blank">
+<script type="text/javascript"> 
+function getunitarg(){ 
+	const params = new URLSearchParams(document.location.search);
+	const unit = params.get("unit");
+	if(unit == "mg/dL") { 
+		return 2;
+		} 
+	else { 
+		if(unit=="mmol/L") {
+		   return 1;
+		   }
+	 	}
+	return 0;
+    } 
+let mmol=[
+"AM",
+"AU",
+"BA",
+"BG",
+"BW",
+"BY",
+"CA",
+"CH",
+"CN",
+"CZ",
+"DK",
+"EE",
+"FI",
+"GB",
+"HK",
+"HR",
+"HU",
+"IE",
+"IS",
+"KW",
+"KZ",
+"LT",
+"LV",
+"MT",
+"MY",
+"NA",
+"NL",
+"NO",
+"NZ",
+"RS",
+"RU",
+"SE",
+"SI",
+"SK",
+"UA",
+"ZA"];
+
+
+
+
+
+
+
+function getunit() {
+	var unit=getunitarg();
+	if(unit!=0) {
+		return unit;
+		}
+
+	var userLang = navigator.language || navigator.userLanguage;
+	var  co=userLang.toUpperCase();
+	for(const element of mmol) {
+	  if(co.includes(element)) {
+		return 1;
+		}
+	   }
+
+	  return 2;
+	 }
+
+
+
+function setbaseurl(){ 
+	if(getunit()!=1) {
+		document.getElementById("baseurl").href = "https://www.juggluco.nl/Jugglucohelp/mgdL/"; 
+		} 
+	else { 
+	   document.getElementById("baseurl").href = "https://www.juggluco.nl/Jugglucohelp/"; 
+	   } 
+      } 
+   setbaseurl();
+   </script> 
 </head>
+<img src="newamount.jpg"  style="object-fit:contain; width:15cm;                   height:auto;margin: 1cm 1cm 1cm 1cm;">
 <body lang="en-US" dir="ltr"><h1>New Amount</h1>
 <p>With <b>New amount</b> you can enter numbers associated with an
 arbitrary Label. You can set labels under left menu→Settings→<a href="https://www.juggluco.nl/Jugglucohelp/labelhelp.html">Number

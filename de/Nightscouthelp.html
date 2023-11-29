@@ -95,9 +95,7 @@ verketten.</p>
 Windows-cmd.com:</p>
 <pre style="margin-bottom: 0.2in">copy certificate.crt + ca_bundle.crt fullchain.pem</pre><p style="line-height: 100%; margin-bottom: 0in">
 Windows-Powershell:</p>
-<p>cat certificate.crt &gt; fullchain.pem<br/>
-cat ca_bundle.crt &gt;&gt;
-fullchain.pem</p>
+<pre>gc certificate.crt,ca_bundle.crt -Encoding Byte -Read 512 | sc fullchain.pem -Encoding Byte</pre>
 <p style="line-height: 100%; margin-bottom: 0in"><span lang="de-DE">Nachdem
 ich Certbot verwendet hatte, fand ich den privaten Schlüssel in
 /etc/letsencrypt/live/myhostname/privkey.pem</span> <span lang="de-DE">und

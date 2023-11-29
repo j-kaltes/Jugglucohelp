@@ -88,9 +88,7 @@ te maken, moet je certificate.crt en ca_bundle.crt samenvoegen.</p>
 Windows cmd.com:</p>
 <pre style="margin-bottom: 0.2in">copy certificate.crt + ca_bundle.crt fullchain.pem</pre><p style="line-height: 100%; margin-bottom: 0in">
 Windows PowerShell:</p>
-<p>cat certificate.crt &gt; fullchain.pem <br/>
-cat ca_bundle.crt &gt;&gt;
-fullchain.pem</p>
+<pre>gc certificate.crt,ca_bundle.crt -Encoding Byte -Read 512 | sc fullchain.pem -Encoding Byte</pre>
 <p style="line-height: 100%; margin-bottom: 0in"><span lang="nl-NL">Nadat
 ik Certbot had gebruikt, vond ik de private key</span> <span lang="nl-NL">in
 /etc/letsencrypt/live/myhostname/privkey.pem</span> <span lang="nl-NL">en

@@ -5,7 +5,7 @@
 	<title></title>
 	<meta name="generator" content="LibreOffice 7.5.8.2 (Linux)"/>
 	<meta name="created" content="2023-02-21T11:28:36.352406009"/>
-	<meta name="changed" content="2023-11-30T15:17:26.207000528"/>
+	<meta name="changed" content="2023-12-02T11:12:25.467816844"/>
 	<style type="text/css">
 		@page { size: 8.27in 11.69in; margin: 0.79in }
 		h1 { margin-bottom: 0.08in; background: transparent }
@@ -29,10 +29,11 @@ port 17580. Nightscout server URL: http://127.0.0.1:17580
 </p>
 <p style="line-height: 100%; margin-bottom: 0in">Also, some
 Nightscout followers can make use of it. xDrip, Diabox, a <a href="https://github.com/dabear/FloatingGlucose/releases">Windows
-Floating Glucose</a> app and a Windows, Linux and macOS <a href="https://github.com/kashamalasha/nightscout-widget-electron"><i>ELECTRON</i>
-widget</a> can be used with http when &quot;local only&quot; is not
-set. On MacOS the same is true for Nightscout Menu Bar, Gluco Status
-and Gluco Tracker (all in Apple Store). You also only need http for
+Floating Glucose</a> app and a Windows, Linux and macOS widget
+(<a href="https://github.com/kashamalasha/nightscout-widget-electron">Owlet</a>)
+can be used with http when &quot;local only&quot; is not set. On
+MacOS the same is true for Nightscout Menu Bar, Gluco Status and
+Gluco Tracker (all in Apple Store). You also only need http for
 <a href="https://github.com/someoneAnyone/Nightscouter">Nightscouter</a>
 and <a href="https://github.com/jonfawcett/LoopFollow">LoopFollow</a>
 (IOS) and <a href="https://github.com/nightscout/nightguard">Nightguard</a>
@@ -44,7 +45,8 @@ your modem. See:</p>
 	<li><p style="line-height: 100%; margin-bottom: 0in"><a href="https://www.makeuseof.com/tag/what-is-port-forwarding-and-how-can-it-help-me">https://www.makeuseof.com/tag/what-is-port-forwarding-and-how-can-it-help-me</a></p>
 	<li><p style="line-height: 100%; margin-bottom: 0in"><a href="https://www.juggluco.nl/Juggluco/phones/index.html">https://www.juggluco.nl/Juggluco/phones/index.html</a></p>
 	<li><p style="line-height: 100%; margin-bottom: 0in">Left middle
-	menu-&gt;Mirror-&gt;<a href="https://www.juggluco.nl/Jugglucohelp/addconnection.html">Add Conection</a>-&gt;Help</p>
+	menu-&gt;Mirror-&gt;<a href="https://www.juggluco.nl/Jugglucohelp/addconnection.html">Add
+	Conection</a>-&gt;Help</p>
 </ul>
 <p style="line-height: 100%; margin-bottom: 0in">Other Nightscout
 followers only make use of https and that requires that Juggluco has
@@ -87,7 +89,8 @@ function (Left middle menu-&gt;<a href="https://www.juggluco.nl/Jugglucohelp/con
 <p style="line-height: 100%; margin-bottom: 0in">Android Aps and
 Nsclient don't work as follower of Juggluco, but you can send glucose
 values to them with the xDrip broadcast in Juggluco (left
-menu-&gt;<a href="https://www.juggluco.nl/Jugglucohelp/settinghelp.html">Settings</a>-&gt;xDrip Broadcast).</p>
+menu-&gt;<a href="https://www.juggluco.nl/Jugglucohelp/settinghelp.html">Settings</a>-&gt;xDrip
+Broadcast).</p>
 <p style="line-height: 100%; margin-bottom: 0in">You need SSL for the
 Android apps Diabetes:M, <a href="https://play.google.com/store/apps/details?id=se.cornixit.nightwatch">Nightwatch</a>
 and <a href="https://slingithub.github.io/CheckmateWeb">Checkmate</a>,
@@ -113,10 +116,18 @@ particular Nightscout server program and will not work with
 Juggluco.)</p>
 <p style="line-height: 100%; margin-bottom: 0in"><b>api_secret</b>:
 Specify that followers should set the ap<span style="font-weight: normal">i</span><b>_</b>secret
-http header element to this value. In Juggluco 4.9.1 or higher does
-testing on this secret also work when the followers use this secret
-as Nightscout token or use the api<b>-</b>secret header with an SHA1
-encoded secret.</p>
+http header element to this value. This secret also works when the
+followers use this secret as <a href="https://www.juggluco.nl/Juggluco/webserver.html#token">Nightscout
+token</a> or use the api<b>-</b>secret header with an SHA1 encoded
+secret. Starting with Juggluco 7.1.15 it is also possible to make the
+api_secret the first element of the path of the Nightscout server
+URL. If xyz is the api_secret and http://hostname:port is the
+Nightscout server URL, you can specify http://hostname:port/xzy as
+the Nightscout server URL. To make use of the Windows, Linux, macOS
+widget <a href="https://github.com/kashamalasha/nightscout-widget-electron">Owlet</a>,
+this is the only way to make use of the api_secret. <i>NIGHTSCOUT
+TOKEN</i> in the <a href="https://github.com/kashamalasha/nightscout-widget-electron">Owlet</a>
+settings has no effect.</p>
 <p style="line-height: 100%; margin-bottom: 0in"><strong>Visible</strong>:
 Make Secret visible.</p>
 <p style="line-height: 100%; margin-bottom: 0in"><strong>Port</strong>:

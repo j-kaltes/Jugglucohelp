@@ -4,6 +4,8 @@
 	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 	<title></title>
 	<meta name="generator" content="LibreOffice 7.5.8.2 (Linux)"/>
+	<meta name="created" content="00:00:00"/>
+	<meta name="changed" content="2023-12-03T11:43:12.141848510"/>
 </head>
 <body lang="de-DE" dir="ltr"><h1>Webserver</h1>
 <p style="line-height: 100%; margin-bottom: 0in">Juggluco enthält
@@ -18,7 +20,8 @@ Nightscout-Server-URL: http://127.0.0.1:17580.</p>
 <p style="line-height: 100%; margin-bottom: 0in"><span lang="de-DE">Auch
 einige Nightscout</span> <span lang="de-DE">Apps</span> <span lang="de-DE">können
 davon Gebrauch machen. xDrip, Diabox, eine <a href="https://github.com/dabear/FloatingGlucose/releases">Windows-Floating-Glucose-</a>
-App und ein Windows-, Linux- und macOS-Widget (<a href="https://github.com/kashamalasha/nightscout-widget-electron">Owlet</a>) können mit http verwendet werden, wenn „</span><span lang="de-DE"><i>Nur
+App und ein Windows-, Linux- und macOS-Widget (<a href="https://github.com/kashamalasha/nightscout-widget-electron">Owlet</a>)
+können mit http verwendet werden, wenn „</span><span lang="de-DE"><i>Nur
 lokal</i></span>“ <span lang="de-DE">nicht eingestellt ist.</span>
 <span lang="de-DE">Unter MacOS gilt dasselbe für Nightscout Menu
 Bar, Gluco Status und Gluco Tracker (alle im Apple Store).</span>
@@ -33,7 +36,7 @@ Ihrem Modem weiterleiten. Siehe:</p>
 	<li><p style="line-height: 100%; margin-bottom: 0in"><a href="https://www.makeuseof.com/tag/what-is-port-forwarding-and-how-can-it-help-me"><span lang="de-DE">https://www.makeuseof.com/tag/what-is-port-forwarding-and-how-can-it-help-me</span></a></p>
 	<li><p style="line-height: 100%; margin-bottom: 0in"><a href="https://www.juggluco.nl/Juggluco/phones/index.html"><span lang="de-DE">https://www.juggluco.nl/Juggluco/phones/index.html</span></a></p>
 	<li><p style="line-height: 100%; margin-bottom: 0in">Linkes
-	mittleres Menü-&gt;Klon-&gt;Verbindung hinzufügen-&gt;Hilfe</p>
+	mittleres Menü-&gt;Klon-&gt;<a href="https://www.juggluco.nl/Jugglucohelp/de/addconnection.html">Verbindung hinzufüge</a>n-&gt;Hilfe</p>
 </ul>
 <p style="line-height: 100%; margin-bottom: 0in"><span lang="de-DE">Andere
 Nightscout-Follower verwenden nur https und das erfordert, dass
@@ -82,12 +85,11 @@ ist der von mir verwendete Hostname.</span></p>
 <p style="line-height: 100%; margin-bottom: 0in"><span lang="de-DE">Wenn
 Sie nur Glukosewerte von einem Android zum anderen senden möchten,
 können Sie besser die <a href="https://www.juggluco.nl/Juggluco/index.html#mirror">Klonfunktion</a></span>
-<span lang="de-DE">von Juggluco verwenden (linkes mittleres Menü -&gt;
-Klon).</span></p>
+<span lang="de-DE">von Juggluco verwenden (linkes mittleres Menü -&gt; <a href="https://www.juggluco.nl/Jugglucohelp/de/connectionoverview.html">Klon</a>).</span></p>
 <p style="line-height: 100%; margin-bottom: 0in">Android Aps und
 Nsclient funktionieren nicht als Follower von Juggluco, aber Sie
 können ihnen Glukosewerte mit der xDrip-Broadcast in Juggluco senden
-(linkes Menü-&gt; Einstellungen-&gt; xDrip Broadcast).</p>
+(linkes Menü-&gt; <a href="https://www.juggluco.nl/Jugglucohelp/de/settinghelp.html">Einstellungen</a>-&gt; xDrip Broadcast).</p>
 <p style="line-height: 100%; margin-bottom: 0in">SSL benötigen Sie
 für die Android-Apps Diabetes:M, <a href="https://play.google.com/store/apps/details?id=se.cornixit.nightwatch">Nightwatch</a>
 und <a href="https://slingithub.github.io/CheckmateWeb">Checkmate</a>,
@@ -124,7 +126,11 @@ mit einem SHA1-codierten Geheimnis verwenden. Ab Juggluco 7.1.15 ist
 es auch möglich, api_secret zum ersten Element des Pfads der
 Nightscout-Server-URL zu machen. Wenn xyz das api_secret und
 http://hostname:port die Nightscout-Server-URL ist, können Sie
-http://hostname:port/xzy als Nightscout-Server-URL angeben. Um das Windows-, Linux- und macOS-Widget <a href="https://github.com/kashamalasha/nightscout-widget-electron">Owlet</a> zu nutzen, ist dies die einzige Möglichkeit, das api_secret zu nutzen.Das  <i>NIGHTSCOUT TOKEN</i> in den <a href="https://github.com/kashamalasha/nightscout-widget-electron">Owlet-</a> Einstellungen hat keine Auswirkung.</p>
+http://hostname:port/xzy als Nightscout-Server-URL angeben. Für
+<a href="https://github.com/kashamalasha/nightscout-widget-electron">Owlet</a>
+ist dies die einzige Möglichkeit, das api_secret zu nutzen. <i>Das
+NIGHTSCOUT TOKEN</i> in <a href="https://github.com/kashamalasha/nightscout-widget-electron">den
+Owlet-</a> Einstellungen hat keine Auswirkung.</p>
 <p style="line-height: 100%; margin-bottom: 0in"><strong><span lang="de-DE">Sichtbar</span></strong><span lang="de-DE">:
 Geheimnis</span> <span lang="de-DE">sichtbar machen.</span></p>
 <p style="line-height: 100%; margin-bottom: 0in"><strong><span lang="de-DE">Port</span></strong><span lang="de-DE">:

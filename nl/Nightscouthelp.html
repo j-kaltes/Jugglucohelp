@@ -5,7 +5,9 @@
 	<title>Webserver</title>
 	<meta name="generator" content="LibreOffice 7.5.8.2 (Linux)"/>
 	<meta name="created" content="00:00:00"/>
-	<meta name="changed" content="2023-12-30T17:27:45.466512420"/>
+	<meta name="changed" content="2024-01-01T13:32:24.077168145"/>
+	<meta name="created" content="00:00:00">
+	<meta name="created" content="00:00:00">
 	<meta name="created" content="00:00:00">
 	<meta name="created" content="00:00:00">
 	<meta name="created" content="00:00:00">
@@ -51,10 +53,10 @@ Juggluco een geverifieerde SSL-sleutel heeft voor de domeinnaam die
 wordt gebruikt om toegang te krijgen tot Juggluco. Als je</span>
 <span lang="nl-NL">externe IP een bijbehorende hostnaam heeft, kan</span>
 <span lang="nl-NL">je</span> <span lang="nl-NL">gratis een
-certificaat krijgen via <a href="https://certbot.eff.org/instructions">Certbot</a>
-of <a href="https://www.sslforfree.com/">ZeroSSL</a> . Je</span> <span lang="nl-NL">kunt
-er geen gebruik van maken als je</span> <span lang="nl-NL">externe IP
-geen hostnaam heeft. Je</span> <span lang="nl-NL">kan</span> <span lang="nl-NL">een
+certificaat krijgen via <a href="https://certbot.eff.org/instructions">Certbot</a>.</span>
+<span lang="nl-NL">Je</span> <span lang="nl-NL">kunt er geen gebruik
+van maken als je</span> <span lang="nl-NL">externe IP geen hostnaam
+heeft. Je</span> <span lang="nl-NL">kan</span> <span lang="nl-NL">een
 gratis domeinnaam krijgen van <a href="https://www.freenom.com/">https://www.freenom.com</a>
 . Ik heb het geprobeerd, maar binnen een paar weken zonder enige
 kennisgeving namen ze het domein gewoon van me af en toen ik het
@@ -69,23 +71,18 @@ geven. De private key kan worden ingelezen door op &quot;</span><em><span lang="
 Key</span></em><span lang="nl-NL">&quot; te drukken, de Full Chain
 door op &quot;</span><em><span lang="nl-NL">Full Chain</span></em><span lang="nl-NL">&quot;
 te drukken.</span></p>
-<p style="line-height: 100%; margin-bottom: 0in">Van ZeroSSL.com
-ontving ik drie bestanden: private.key, certificate.crt en
-ca_bundle.crt.</p>
-<p style="line-height: 100%; margin-bottom: 0in"><span lang="nl-NL">private.key
-is de private sleutel, die je</span> <span lang="nl-NL">aan Juggluco
-moet geven door op &quot;</span><em><span lang="nl-NL">Private Key</span></em><span lang="nl-NL">&quot;
-te drukken.</span></p>
-<p style="line-height: 100%; margin-bottom: 0in">Om de <i>Full Chain</i>
-te maken, moet je certificate.crt en ca_bundle.crt samenvoegen.</p>
-<p style="line-height: 100%; margin-bottom: 0in">Linux:</p>
-<pre style="margin-bottom: 0.2in">cat certificate.crt ca_bundle.crt &gt; fullchain.pem</pre><p style="line-height: 100%; margin-bottom: 0in">
-Windows cmd.com:</p>
-<pre style="margin-bottom: 0.2in">copy certificate.crt + ca_bundle.crt fullchain.pem</pre><p style="line-height: 100%; margin-bottom: 0in">
-Windows PowerShell:</p>
-<pre style="margin-bottom: 0.2in">gc certificate.crt,ca_bundle.crt -Encoding Byte -Read 512 | sc fullchain.pem -Encoding Byte</pre><p style="line-height: 100%; margin-bottom: 0in">
-<span lang="nl-NL">Nadat ik Certbot had gebruikt, vond ik de private
-key</span> <span lang="nl-NL">in
+<p style="line-height: 100%; margin-bottom: 0in">Nadat je Certbot
+hebt geïnstalleerd en poort 80 (http) van je modem naar je computer
+hebt omgeleid, kunt je eenvoudigweg het volgende commando uitvoeren:</p>
+<pre style="margin-bottom: 0.2in">certbot certonly --standalone --preferred-challenges http -d <i>mijnhostnaam</i></pre><p style="line-height: 100%; margin-bottom: 0in">
+Zie <a href="https://devpress.csdn.net/linux/62e7999e907d7d59d1c8cfd0.html">https://devpress.csdn.net/linux/62e7999e907d7d59d1c8cfd0.html</a>
+. 
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><span lang="nl-NL">Nadat
+ik Certbot had gebruikt, vond ik de private key</span> <span lang="nl-NL">in
 /etc/letsencrypt/live/myhostname/privkey.pem</span> <span lang="nl-NL">en
 de</span> <span lang="nl-NL">Full Chain</span> <span lang="nl-NL">in
 /etc/letsencrypt/live/mijnhostnaam/fullchain.pem. &quot;</span><span lang="nl-NL"><i>mijn</i></span><em><span lang="nl-NL"><i>hostnaam</i></span></em><span lang="nl-NL">&quot;

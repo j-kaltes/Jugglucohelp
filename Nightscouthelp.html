@@ -5,7 +5,7 @@
 	<title></title>
 	<meta name="generator" content="LibreOffice 7.5.8.2 (Linux)"/>
 	<meta name="created" content="2023-02-21T11:28:36.352406009"/>
-	<meta name="changed" content="2023-12-30T17:13:13.161804673"/>
+	<meta name="changed" content="2024-01-01T13:24:19.176746659"/>
 	<style type="text/css">
 		@page { size: 8.27in 11.69in; margin: 0.79in }
 		h1 { margin-bottom: 0.08in; background: transparent }
@@ -52,10 +52,9 @@ your modem. See:</p>
 followers only make use of https and that requires that Juggluco has
 an authenticated SSL key for the domain name used to access Juggluco.
 If your external IP has an associated hostname, you can get a
-certificate for free via <a href="https://certbot.eff.org/instructions">Certbot</a>
-or <a href="https://www.sslforfree.com/">ZeroSSL</a>. You can't make
-use of it if your external IP doesn't have a hostname. You can get a
-free domain name from <a href="https://www.freenom.com/">https://www.freenom.com</a>.
+certificate for free via <a href="https://certbot.eff.org/instructions">Certbot</a>.
+You can't make use of it if your external IP doesn't have a hostname.
+You can get a free domain name from <a href="https://www.freenom.com/">https://www.freenom.com</a>.
 I tried it, but within a few weeks without any notification they just
 took the domain away from me and when I tried to register it again it
 had a price. You can buy a hostname for a few Euro's a year (for
@@ -64,23 +63,16 @@ example from <a href="https://www.strato.nl/domeinnaam">https://www.strato.nl/do
 the key files from an SSL authority, you have to give them to
 Juggluco. The private key can be read in by pressing &quot;<em>Private
 Key</em>&quot;, the Full Chain by pressing &quot;<em>Full Chain</em>&quot;.</p>
-<p style="line-height: 100%; margin-bottom: 0in">From ZeroSSL.com I
-received three files: private.key, certificate.crt and ca_bundle.crt.</p>
-<p style="line-height: 100%; margin-bottom: 0in">private.key is the
-private key, you have to give to Juggluco by pressing &quot;<em>Private
-Key</em>&quot;.</p>
-<p style="line-height: 100%; margin-bottom: 0in">To make the full
-chain, you have to concatenate certificate.crt and ca_bundle.crt.</p>
-<p style="line-height: 100%; margin-bottom: 0in">Linux:</p>
-<pre style="margin-bottom: 0.2in">cat certificate.crt ca_bundle.crt &gt;  fullchain.pem</pre><p style="line-height: 100%; margin-bottom: 0in">
-Windows cmd.com:</p>
-<pre style="margin-bottom: 0.2in">copy certificate.crt + ca_bundle.crt  fullchain.pem</pre><p style="line-height: 100%; margin-bottom: 0in">
-Windows Powershell, something like:</p>
-<pre style="margin-bottom: 0.2in">gc certificate.crt,ca_bundle.crt -Encoding Byte -Read 512 | sc fullchain.pem -Encoding Byte</pre><p style="line-height: 100%; margin-bottom: 0in">
-After using Certbot I found the Private key in
-/etc/letsencrypt/live/myhostname/privkey.pem</p>
-<p style="line-height: 100%; margin-bottom: 0in">and the full chain
-in /etc/letsencrypt/live/myhostname/fullchain.pem. &quot;<em>myhostname</em>&quot;
+<p style="line-height: 100%; margin-bottom: 0in">After installing
+Certbot and having redirected port 80 (http) from your modem to your
+computer, you can simply press:</p>
+<pre>certbot certonly --standalone --preferred-challenges http -d <i>myhostname</i></pre><p style="line-height: 100%; margin-bottom: 0in">
+See <a href="https://devpress.csdn.net/linux/62e7999e907d7d59d1c8cfd0.html">https://devpress.csdn.net/linux/62e7999e907d7d59d1c8cfd0.html</a>.
+</p>
+<p style="line-height: 100%; margin-bottom: 0in">After using Certbot
+I found the Private key in
+/etc/letsencrypt/live/myhostname/privkey.pem and the full chain in
+/etc/letsencrypt/live/myhostname/fullchain.pem. &quot;<em>myhostname</em>&quot;
 is the hostname I used.</p>
 <p style="line-height: 100%; margin-bottom: 0in">If you just want to
 send glucose values from one Android to the other, you can better use
@@ -142,9 +134,10 @@ select a file containing the private key. See above.</p>
 <p style="line-height: 100%; margin-bottom: 0in"><strong>Full Chain</strong>:
 select a file containing the Full Chain, see above.</p>
 <p style="line-height: 100%; margin-bottom: 0in"><b>Interval</b>:
-default minimal interval (in seconds) between glucose values. Normally this is
-270 seconds. A request can also change this value by supplying the interval=
-option. See <a href="https://www.juggluco.nl/Juggluco/webserver.html">https://www.juggluco.nl/Juggluco/webserver.html</a></p>
+default minimal interval (in seconds) between glucose values.
+Normally this is 270 seconds. A request can also change this value by
+supplying the interval= option. See
+<a href="https://www.juggluco.nl/Juggluco/webserver.html">https://www.juggluco.nl/Juggluco/webserver.html</a></p>
 <p style="line-height: 100%; margin-bottom: 0in"><strong>Local only</strong>:
 the http server can only be accessed with localhost (127.0.0.1). This
 doesn't apply to https.</p>

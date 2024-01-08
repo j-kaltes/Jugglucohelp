@@ -2,21 +2,17 @@
 <html>
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-	<title></title>
-	<meta name="generator" content="LibreOffice 7.5.2.2 (Linux)"/>
+	<title>Uploader</title>
+	<meta name="generator" content="LibreOffice 7.5.9.2 (Linux)"/>
 	<meta name="created" content="2023-03-10T12:04:13.361070488"/>
-	<meta name="changed" content="2023-05-15T17:57:32.523407317"/>
+	<meta name="changed" content="2024-01-08T12:47:03.330748057"/>
 </head>
  <img src="uploader.jpg" alt="Uploader" style="object-fit:contain; width:15cm;                   height:auto;">
-<body lang="en-US" dir="ltr"><p>Upload to a Nightscout server.</p>
-<p>In most cases you can also use the webserver in Juggluco or
-<a href="https://www.juggluco.nl/Juggluco/cmdline">juggluco-server</a>,
+<body lang="en-US" dir="ltr"><h1>Upload to a Nightscout server.</h1>
+<p>In most cases you can also use the <a href="https://www.juggluco.nl/Jugglucohelp/Nightscouthelp.html">web
+server in Juggluco</a> or <a href="https://www.juggluco.nl/Juggluco/cmdline">juggluco-server</a>,
 only AAPS and NSclient refuse to work when not connected to
-<a href="https://github.com/nightscout/cgm-remote-monitor">cgm-remote-monitor</a>.
-The web server in Juggluco also gives amounts in the form of
-Nightscout treatments
-(<a href="https://www.juggluco.nl/Juggluco/webserver.html">https://www.juggluco.nl/Juggluco/webserver.html</a>),
-the uploader only uploads glucose values.</p>
+<a href="https://github.com/nightscout/cgm-remote-monitor">cgm-remote-monitor</a>.</p>
 <p>All stream values are uploaded to the Nightscout server at the
 moment they arrive. When multiple sensor are used, all values of all
 sensors are uploaded. Some Garmin watch apps/faces/widgets assume
@@ -28,6 +24,17 @@ set to a lower value.</p>
 <p><b>URL</b>: the url should be in the form of https://hostname:port
 for example, https://myname.herokuapp.com:6789</p>
 <p><b>Active</b>: Turn on uploader</p>
+<p><b>Give Amounts</b>: Also send amounts as treatments to
+Nightscout. Touching the checkbox brings you to a dialog in which you
+can specify for every label what it means in Nightscout. These
+specifications are shared with web server in Juggluco (<a href="https://www.juggluco.nl/Jugglucohelp/Nightscouthelp.html">Left
+menu→Settings→Web server</a>). Only when all labels are handled,
+can you check “<i>Give Amounts</i>”. If you later add a new
+label, you have to remember yourself to specify what to do with it.
+<span lang="en-US">Because of a bug in <a href="https://github.com/nightscout/cgm-remote-monitor">Nightscout</a>,
+insertions at older time periods or deletions are only shown after
+items with a new time are added. </span><span lang="en-US">This means
+that it is better to send less often to Nightscout.</span></p>
 <p><b>Resend data</b>: Upload all data again to the Nightscout server</p>
 <p><b>Send now</b>: Normally data is immediately send when it arrives
 from the sensor or a mirror connection. Press on this button when for

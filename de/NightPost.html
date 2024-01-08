@@ -3,21 +3,19 @@
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 	<title></title>
-	<meta name="generator" content="LibreOffice 7.5.2.2 (Linux)"/>
+	<meta name="generator" content="LibreOffice 7.5.9.2 (Linux)"/>
 	<meta name="created" content="2023-03-10T12:04:13.361070488"/>
-	<meta name="changed" content="2023-04-28T12:27:20.549447188"/>
+	<meta name="changed" content="2024-01-08T12:52:02.967784211"/>
 </head>
 <body lang="de-DE" dir="ltr"><p>Auf einen Nightscout-Server
 hochladen. 
 </p>
-<p>In den meisten Fällen können Sie auch den Webserver in Juggluco
-oder <a href="https://www.juggluco.nl/Juggluco/cmdline">juggluco-server</a>
+<p><span lang="de-DE">In den meisten Fällen können Sie auch den
+<a href="https://www.juggluco.nl/Jugglucohelp/de/Nightscouthelp.html">Webserver
+in Juggluco</a> oder <a href="https://www.juggluco.nl/Juggluco/cmdline">juggluco-server</a>
 verwenden. Nur AAPS und NSclient verweigern die Arbeit, wenn
 <a href="https://github.com/nightscout/cgm-remote-monitor">cgm-remote-monitor</a>
-nicht verbunden ist. Der Webserver in Juggluco gibt auch Mengen in
-Form von Nightscout-Behandlungen aus (
-<a href="https://www.juggluco.nl/Juggluco/webserver.html">https://www.juggluco.nl/Juggluco/webserver.html</a>),
-der Uploader lädt nur Glukosewerte hoch.</p>
+nicht verbunden ist.</span></p>
 <p>Alle Stream-Werte werden im Moment ihres Eintreffens auf den
 Nightscout-Server hochgeladen. Wenn mehrere Sensoren verwendet
 werden, werden alle Werte aller Sensoren hochgeladen. Einige Garmin
@@ -30,6 +28,19 @@ auf einen niedrigeren Wert eingestellt ist.</p>
 <p><b>URL</b> : Die URL sollte die Form https://hostname:port haben,
 z. B. https://myname.herokuapp.com:6789</p>
 <p><b>Aktiv</b> : Server einschalten</p>
+<p><span lang="de-DE"><b>Mengen</b></span><span lang="de-DE"> </span><span lang="de-DE"><b>geben</b></span><span lang="de-DE">:
+Auch Mengen als Behandlungen an Nightscout senden. Durch Berühren
+der Checkbox gelangen Sie zu einem Dialog, in dem Sie für jedes
+Label festlegen können, was es in Nightscout bedeutet. Diese
+Spezifikationen werden mit dem Webserver in Juggluco geteilt ( <a href="https://www.juggluco.nl/Jugglucohelp/de/Nightscouthelp.html">Linkes
+Menü→Einstellungen→Webserver</a> ). Erst wenn alle Labels
+verarbeitet sind, können Sie „ </span><span lang="de-DE"><i>Mengen
+geben</i></span><span lang="de-DE">“ ankreuzen. Wenn Sie später
+ein neues Etikett hinzufügen, müssen Sie selbst festlegen, was
+damit geschehen soll. Aufgrund eines Fehlers in <a href="https://github.com/nightscout/cgm-remote-monitor">Nightscout</a>
+werden Einfügungen zu älteren Zeiträumen oder Löschungen erst
+angezeigt, nachdem Elemente mit einer neuen Zeit hinzugefügt wurden.
+Das bedeutet, dass es besser ist, seltener an Nightscout zu senden.</span></p>
 <p><b>Daten erneut senden</b>: Laden Sie alle Daten erneut auf den
 Nightscout-Server hoch</p>
 <p><b>Jetzt senden</b>: Normalerweise werden Daten sofort gesendet,

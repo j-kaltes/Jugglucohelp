@@ -5,7 +5,7 @@
 	<title>Uploader</title>
 	<meta name="generator" content="LibreOffice 7.5.9.2 (Linux)"/>
 	<meta name="created" content="2023-03-10T12:04:13.361070488"/>
-	<meta name="changed" content="2024-01-10T22:33:24.217912685"/>
+	<meta name="changed" content="2024-01-15T18:16:02.266417333"/>
 </head>
  <img src="uploader.jpg" alt="Uploader" style="object-fit:contain; width:15cm;                   height:auto;">
 <body lang="en-US" dir="ltr"><h1>Upload to a Nightscout server.</h1>
@@ -24,6 +24,11 @@ set to a lower value.</p>
 <p><b>URL</b>: the url should be in the form of https://hostname:port
 for example, https://myname.herokuapp.com:6789</p>
 <p><b>Active</b>: Turn on uploader</p>
+<p><b>test V3</b>:  Let Juggluco use api/v3 to upload to Nightscout.
+Don’t use it to upload to a Nightscout server that previously
+received V2 uploads and don’t send V2 uploads to a Nightscout
+server that previously received V3 uploads. 
+</p>
 <p><b>Give Amounts</b>: Also send amounts as treatments to
 Nightscout. Touching the checkbox brings you to a dialog in which you
 can specify for every label what it means in Nightscout. These
@@ -34,9 +39,9 @@ label, you have to remember yourself to specify what to do with it.
 <span lang="en-US">Because of a bug in <a href="https://github.com/nightscout/cgm-remote-monitor">Nightscout</a>,
 insertions at older time periods or deletions are only shown after
 items with a new time are added. This means that it is better to send
-less often to Nightscout. </span><span lang="en-US">Now it is done
-every time the user switches away from Juggluco by turning off the
-display or going to another app.</span></p>
+less often to Nightscout. Now it is done every time the user switches
+away from Juggluco by turning off the display or going to another
+app.</span></p>
 <p><b>Resend data</b>: Upload all data again to the Nightscout server</p>
 <p><b>Send now</b>: Normally data is immediately send when it arrives
 from the sensor or a mirror connection. Press on this button when for

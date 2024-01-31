@@ -5,14 +5,16 @@
 	<title>Uploader</title>
 	<meta name="generator" content="LibreOffice 7.5.9.2 (Linux)"/>
 	<meta name="created" content="2023-03-10T12:04:13.361070488"/>
-	<meta name="changed" content="2024-01-15T18:16:02.266417333"/>
+	<meta name="changed" content="2024-01-31T15:14:51.902418501"/>
 </head>
  <img src="uploader.jpg" alt="Uploader" style="object-fit:contain; width:15cm;                   height:auto;">
-<body lang="en-US" dir="ltr"><h1>Upload to a Nightscout server.</h1>
+<body lang="en-US" dir="ltr"><h1>Upload to Nightscout server</h1>
 <p>In most cases you can also use the <a href="https://www.juggluco.nl/Jugglucohelp/Nightscouthelp.html">web
-server in Juggluco</a> or <a href="https://www.juggluco.nl/Juggluco/cmdline">juggluco-server</a>,
-only AAPS and NSclient refuse to work when not connected to
-<a href="https://github.com/nightscout/cgm-remote-monitor">cgm-remote-monitor</a>.</p>
+server in Juggluco</a> or <a href="https://www.juggluco.nl/Juggluco/cmdline">juggluco-server</a>.
+Only a few apps, that do nothing more than displaying the Nightscout
+web page, need <a href="https://github.com/nightscout/cgm-remote-monitor">cgm-remote-monitor</a>.
+You can even use AAPS and AAPSClient with the web server in Juggluco
+7.4.1.</p>
 <p>All stream values are uploaded to the Nightscout server at the
 moment they arrive. When multiple sensor are used, all values of all
 sensors are uploaded. Some Garmin watch apps/faces/widgets assume
@@ -24,7 +26,7 @@ set to a lower value.</p>
 <p><b>URL</b>: the url should be in the form of https://hostname:port
 for example, https://myname.herokuapp.com:6789</p>
 <p><b>Active</b>: Turn on uploader</p>
-<p><b>test V3</b>:  Let Juggluco use api/v3 to upload to Nightscout.
+<p><b>test V3</b>: Let Juggluco use api/v3 to upload to Nightscout.
 Don’t use it to upload to a Nightscout server that previously
 received V2 uploads and don’t send V2 uploads to a Nightscout
 server that previously received V3 uploads. 

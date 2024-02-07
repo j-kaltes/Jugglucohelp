@@ -3,9 +3,9 @@
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 	<title></title>
-	<meta name="generator" content="LibreOffice 7.4.3.2 (Linux)"/>
+	<meta name="generator" content="LibreOffice 7.5.9.2 (Linux)"/>
 	<meta name="created" content="2023-01-12T21:50:54.526066453"/>
-	<meta name="changed" content="2023-01-16T17:55:38.420536049"/>
+	<meta name="changed" content="2024-02-06T17:42:45.780120311"/>
 	<style type="text/css">
 		@page { size: 8.27in 11.69in; margin: 0.79in }
 		h1 { margin-bottom: 0.08in; background: transparent }
@@ -28,17 +28,17 @@ auf einem anderen Gerät. Um eine Verbindung herzustellen, muss einer
 der Juggluco's auf einem Port lauschen und der andere muss Kontakt zu
 diesem Port herstellen. Der Port, auf dem diese Instanz von Juggluco
 lauscht, wurde auf dem vorherigen Bildschirm angegeben (Linkes
-mittleres Menü-&gt; <a href="https://www.juggluco.nl/Jugglucohelp/de/connectionoverview.html">Klon</a>). Hier gibst du den Port an, mit dem diese
-Instanz von Juggluco Kontakt aufnimmt, wenn sie aktiv Kontakt
-aufnimmt. Wenn diese Instanz von Juggluco nicht auf einem Port
-lauschen kann, wählen Sie &quot;<b>Nur aktiv</b>&quot;. Wenn die
-andere Seite keinen Port abhören kann, wähle &quot;<b>Nur passiv</b>&quot;,
-andernfalls lasse &quot;<b>Beide</b>&quot; markiert. Der Juggluco auf
-der anderen Seite sollte &quot;<i>Nur passiv&quot; </i>angeben, wenn
-du hier <i>&quot;Nur aktiv&quot; </i>auswählst und &quot;<i>Nur
-aktiv&quot;</i>, wenn du hier &quot;<i>Nur passiv&quot; </i>auswählst
-und <i>&quot;Beide&quot;</i>, wenn du hier <i>&quot;Beide&quot;
-</i>auswählst.</p>
+mittleres Menü-&gt; <a href="https://www.juggluco.nl/Jugglucohelp/de/connectionoverview.html">Klon</a>).
+Hier gibst du den Port an, mit dem diese Instanz von Juggluco Kontakt
+aufnimmt, wenn sie aktiv Kontakt aufnimmt. Wenn diese Instanz von
+Juggluco nicht auf einem Port lauschen kann, wählen Sie &quot;<b>Nur
+aktiv</b>&quot;. Wenn die andere Seite keinen Port abhören kann,
+wähle &quot;<b>Nur passiv</b>&quot;, andernfalls lasse &quot;<b>Beide</b>&quot;
+markiert. Der Juggluco auf der anderen Seite sollte &quot;<i>Nur
+passiv&quot; </i>angeben, wenn du hier <i>&quot;Nur aktiv&quot;
+</i>auswählst und &quot;<i>Nur aktiv&quot;</i>, wenn du hier &quot;<i>Nur
+passiv&quot; </i>auswählst und <i>&quot;Beide&quot;</i>, wenn du
+hier <i>&quot;Beide&quot; </i>auswählst.</p>
 <p align="left" style="line-height: 100%; margin-bottom: 0in">Wenn
 diese Instanz von Juggluco aktiv Kontakt aufnimmt, sollten Sie die
 IP(s) angeben, mit denen sie Kontakt aufnehmen soll. Wenn dieser Host
@@ -50,10 +50,19 @@ Geräte an, da diese dann jeweils nur einen Teil der Daten erhalten.
 <p align="left" style="line-height: 100%; margin-bottom: 0in">In
 allen Fällen außer &quot;Nur aktiv&quot; können Sie &quot;<b>Erkennen</b>&quot;
 wählen; in diesem Fall speichert Juggluco die erste IP, die Juggluco
-kontaktiert, als IP der anderen Seite. Um zu überprüfen, ob das
-richtige Gerät Kontakt aufnimmt, gibt es zwei Möglichkeiten: Wählen
-Sie '<b>IP</b><b> testen</b>', um die IP zu testen. Wenn Sie '<b>Etikett
-t</b><b>est</b><b>en</b><b>' </b><span style="font-weight: normal">wählen</span>,
+kontaktiert, als IP der anderen Seite. 
+</p>
+<p align="left" style="line-height: 100%; margin-bottom: 0in"><b>H</b><b>ostname</b>:
+Geben Sie einen Hostnamen anstelle von IPs an. Dadurch ist die
+Verbindung von einem Nameserver abhängig, wodurch die Verbindung
+langsamer wird und die Verbindung zum Nameserver unterbrochen werden
+kann. Dies sollte nur aktiviert werden, wenn Sie keine statische IP
+konfigurieren können und der Hostname automatisch der dynamischen IP
+zugewiesen wird.</p>
+<p align="left" style="line-height: 100%; margin-bottom: 0in">Um zu
+überprüfen, ob das richtige Gerät Kontakt aufnimmt, gibt es zwei
+Möglichkeiten: Wählen Sie '<b>IP</b> <b>testen</b>', um die IP zu
+testen. Wenn Sie '<b>Etikett testen' </b><span style="font-weight: normal">wählen</span>,
 wird ein Kontakt nur hergestellt, wenn beide Seiten das gleiche
 Etikett angegeben haben.</p>
 <p align="left" style="line-height: 100%; margin-bottom: 0in">Wählen
@@ -144,7 +153,7 @@ Authentifizierungsdaten verwendet oder neue Daten mit alten Daten
 Angaben zu den Mengen sind völlig unabhängig.</p>
 <ol>
 	<ol>
-		<h2 class="western" align="left">Netzwerkprobleme</h2>
+		<li style="display: block"><h2 class="western" align="left">Netzwerkprobleme</h2>
 	</ol>
 </ol>
 <p align="left">Eine strenge komplementäre Spezifikation auf beiden

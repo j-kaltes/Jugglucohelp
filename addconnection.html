@@ -3,9 +3,9 @@
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 	<title></title>
-	<meta name="generator" content="LibreOffice 7.5.7.1 (Linux)"/>
+	<meta name="generator" content="LibreOffice 7.5.9.2 (Linux)"/>
 	<meta name="created" content="2021-07-02T15:57:22.472063254"/>
-	<meta name="changed" content="2023-11-12T20:07:24.800803740"/>
+	<meta name="changed" content="2024-02-06T17:39:44.205305283"/>
 	<style type="text/css">
 		@page { size: 8.27in 11.69in; margin: 0.79in }
 		p { margin-bottom: 0.1in; background: transparent }
@@ -14,23 +14,22 @@
 	</style>
 </head>
  <img src="addconnection.jpg" alt="Uploader" style="object-fit:contain; width:15cm;                   height:auto;">
-<body lang="en-US" >
-<h1>Add connection</h1>
+<body lang="en-US" dir="ltr"><h1>Add connection</h1>
 <p style="line-height: 100%; margin-bottom: 0in">Specify a connection
 with another instance of Juggluco. Juggluco on one device sends via
 IP/TCP data to a Juggluco on another device. To establish a
 connection, one of the Juggluco's has to listen on a port and the
 other has to make contact to that port. The port this instance of
 Juggluco is listening on, was given in the previous screen (Left
-middle menu-&gt;<a href="https://www.juggluco.nl/Jugglucohelp/connectionoverview.html">Mirror</a>). Here you specify the port this instance of
-Juggluco contacts to if it actively makes contact. If this instance
-of Juggluco can't listen on a port, select &quot;<b>Active only</b>&quot;.
-If the other side can't listen on a port, select &quot;<b>Passive
-only</b>&quot;, otherwise leave &quot;<b>Both</b>&quot; checked. The
-Juggluco on the other side should specify <i>Passive only </i>if you
-select here <i>Active only</i> and <i>Active only</i> if you select
-here <i>Passive</i> <i>only</i> and <i>Both</i> if you select here
-<i>Both</i>.</p>
+middle menu-&gt;<a href="https://www.juggluco.nl/Jugglucohelp/connectionoverview.html">Mirror</a>).
+Here you specify the port this instance of Juggluco contacts to if it
+actively makes contact. If this instance of Juggluco can't listen on
+a port, select &quot;<b>Active only</b>&quot;. If the other side
+can't listen on a port, select &quot;<b>Passive only</b>&quot;,
+otherwise leave &quot;<b>Both</b>&quot; checked. The Juggluco on the
+other side should specify <i>Passive only </i>if you select here
+<i>Active only</i> and <i>Active only</i> if you select here <i>Passive</i>
+<i>only</i> and <i>Both</i> if you select here <i>Both</i>.</p>
 <p style="line-height: 100%; margin-bottom: 0in">If this instance of
 Juggluco actively makes contact, you should specify the IP(s) it
 should contact with. If that host has multiple IPs, you specify more
@@ -41,6 +40,12 @@ home network and sometimes directly as portable hotspot.
 specify the IPs of multiple devices, in that case they will each
 receive only part of the data. </b>
 </p>
+<p style="line-height: 100%; margin-bottom: 0in"><b>hostname</b>:
+Specify one hostname instead of IPs. This will make the connection
+dependent on a nameserver thus slower and under influence of
+disruption of the nameserver connection. This should only be turned
+on in case you can’t get configure a static IP and the hostname is
+automatically assigned to the dynamic IP.</p>
 <p style="line-height: 100%; margin-bottom: 0in">In all cases except
 'Active only', you can select '<b>Detect</b>'; in this case Juggluco
 saves the first IP contacting Juggluco as the IP of the other side.

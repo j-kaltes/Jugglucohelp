@@ -2,17 +2,110 @@
 <html>
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-	<title></title>
-	<meta name="generator" content="LibreOffice 7.5.2.2 (Linux)"/>
-	<meta name="created" content="2023-02-03T15:10:20.572719075"/>
-	<meta name="changed" content="2023-04-26T20:45:07.385363929"/>
-	<style type="text/css">@page { size: 8.27in 11.69in; margin-left: 0.79in; margin-right: 0.39in; margin-top: 0.39in; margin-bottom: 0.39in } h1 { margin-bottom: 0.08in; background: transparent } h1.western { font-family: "Liberation Serif", serif } h1.cjk { font-family: "Droid Sans Fallback"; font-size: 24pt } h1.ctl { font-family: "Droid Sans Devanagari"; font-size: 24pt } p { line-height: 115%; margin-bottom: 0.1in; background: transparent }</style>
-</head>
-<body lang="pl-PL" dir="ltr"><h1 class="western">Pływająca wart. gluk.</h1>
+	<title>Pływ. gluk.</title>
+	<base target="_blank">
+	<meta name="generator" content="LibreOffice 7.5.7.1 (Linux)"/>
+	<meta name="created" content="00:00:00"/>
+	<meta name="changed" content="2023-11-18T20:05:01.245424345"/>
+	<style type="text/css">@page { size: 8.27in 11.69in; margin-left: 0.79in; margin-right: 0.39in; margin-top: 0.39in; margin-bottom: 0.39in } p { margin-bottom: 0.1in; background: transparent } h1 { margin-bottom: 0.08in; background: transparent } h1.western { font-family: "Liberation Serif", serif } h1.cjk { font-family: "Droid Sans Fallback" } h1.ctl { font-family: "Droid Sans Devanagari" }</style>
+ <base href="https://www.juggluco.nl/Jugglucohelp/pl/mgdL/" id="baseurl" target="_blank">
+
+<script type="text/javascript"> 
+function getunitarg(){ 
+	const params = new URLSearchParams(document.location.search);
+	const unit = params.get("unit");
+	if(unit===null)	 {
+		return 0;
+		}
+	if(unit == "mg/dL") { 
+		return 2;
+		} 
+	else { 
+		if(unit=="mmol/L") {
+		   return 1;
+		   }
+	 	}
+
+	return 0;
+    } 
+let mmol=[
+"AM",
+"AU",
+"BA",
+"BG",
+"BW",
+"BY",
+"CA",
+"CH",
+"CN",
+"CZ",
+"DK",
+"EE",
+"FI",
+"GB",
+"HK",
+"HR",
+"HU",
+"IE",
+"IS",
+"KW",
+"KZ",
+"LT",
+"LV",
+"MT",
+"MY",
+"NA",
+"NL",
+"NO",
+"NZ",
+"RS",
+"RU",
+"SE",
+"SI",
+"SK",
+"UA",
+"ZA"];
+
+
+
+
+
+
+function getunit() {
+	var unit=getunitarg();
+	if(unit!=0) {
+		return unit;
+		}
+
+	var userLang = navigator.language || navigator.userLanguage;
+	var  co=userLang.toUpperCase();
+
+	for(const element of mmol) {
+	  if(co.includes(element)) {
+		return 1;
+		}
+	   }
+
+	return 2;
+	 }
+
+
+
+function setbaseurl(){ 
+	if(getunit()!=1) {
+		document.getElementById("baseurl").href = "https://www.juggluco.nl/Jugglucohelp/pl/mgdL/"; 
+		} 
+	else { 
+	       document.getElementById("baseurl").href = "https://www.juggluco.nl/Jugglucohelp/pl/";  
+		}
+   	} 
+   setbaseurl();
+   </script> 
+</head><img src="floatingglucose.jpg"  style="object-fit:contain; width:15cm;                   height:auto;"><body lang="pl-PL" dir="ltr"><h1 class="western">Pływ. gluk.</h1>
 <p>Tutaj możesz ustawić rozmiar czcionki oraz kolor pierwszego planu i tła pływającej wartości stęż. glukozy. Możesz r&oacute;wnież ustawić tło na <b>Przezroczyste</b>, dzięki czemu będzie ono niewidoczne.</p>
-<p><b>Dotykowa</b>: po włączeniu tej opcji można przesunąć palcem pływającą wartość glukozy i usunąć ją przez długie naciśnięcie. Gdy opcja &bdquo;dotykowa&rdquo; nie jest włączona, dotknięcie przechodzi na widok pod pływającą wartością glukozy, więc możesz używać aplikacji widocznej pod nią. Możesz r&oacute;wnież uczynić pływającą wartość glukozy niedotykalną, <b>naciskając</b> na nią <b>dwukrotnie</b>.</p>
+<p><b>Dotykowa</b>: po włączeniu tej opcji można przesunąć palcem pływającą wartość glukozy i usunąć ją przez długie naciśnięcie (bez poruszania). Gdy opcja &bdquo;dotykowa&rdquo; nie jest włączona, dotknięcie przechodzi na widok pod pływającą wartością glukozy, więc możesz używać aplikacji widocznej pod nią. Możesz r&oacute;wnież uczynić pływającą wartość glukozy niedotykalną, <b>naciskając</b> na nią <b>dwukrotnie</b>.</p>
 <p>Po wpisaniu <b>rozmiaru czcionki</b>, musisz nacisnąć przycisk <i>&quot;Wprowadź&rdquo;, </i> <i>&quot;Gotowe</i>&rdquo; lub &quot;✓&quot; na klawiaturze programowej.</p>
-<p>Możesz włączyć lub wyłączyć Pływającą wartość glukozy za pomocą pola wyboru <i>&quot;Pływająca wart. gluk.</i>&quot; w ustawieniach. Można r&oacute;wnież wyłączyć &quot;Pływającą wartość glukozy&quot;, <b>naciskając długo</b> na niej na ekranie. Na przykład, gdy ustawiłeś tak duży rozmiar czcionki, że nie jesteś już w stanie wpisać mniejszego jej rozmiaru na klawiaturze programowej.</p>
+<p>Opcję pływającej glukozy można włączać i wyłączać za pomocą lewego środkowego menu-&gt;Pływ. wart. Można r&oacute;wnież wyłączyć &quot;Pływającą wartość glukozy&quot;, <b>naciskając długo</b> na niej na ekranie. Na przykład, gdy ustawiłeś tak duży rozmiar czcionki, że nie jesteś już w stanie wpisać mniejszego jej rozmiaru na klawiaturze programowej.</p>
 <p>Aby m&oacute;c wyświetlać treści na wierzchu innych aplikacji, Juggluco potrzebuje specjalnego uprawnienia. Na WearOS, a także Android Auto trzeba użyć adb, aby nadać to uprawnienie, wpisując w wierszu poleceń komendę:</p>
 <p style="line-height: 100%; margin-bottom: 0in"><b>adb shell pm grant tk.glucodata android.permission.SYSTEM_ALERT_WINDOW</b></p>
 <p style="line-height: 100%; margin-bottom: 0in; background: transparent">W niekt&oacute;rych zegarkach (na przykład TicWatch Pro) można r&oacute;wnież zezwolić na to za pomocą: Android/WearOS Ustawienia -&gt;Aplikacje i powiadomienia -&gt; Informacje o aplikacjach -&gt; Juggluco -&gt; Zaawansowane -&gt; Wyświetlaj nad aplikacjami.</p>

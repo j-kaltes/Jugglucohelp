@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<base target="_blank">
+	<meta name="generator" content="LibreOffice 7.5.8.2 (Linux)"/>
+	<meta name="changed" content="2023-12-27T20:18:01.744399555"/>
+ <base href="https://www.juggluco.nl/Jugglucohelp/pl/mgdL/" id="baseurl" target="_blank">
+<script type="text/javascript"> 
+function getunitarg(){ 
+	const params = new URLSearchParams(document.location.search);
+	const unit = params.get("unit");
+	if(unit == "mg/dL") { 
+		return 2;
+		} 
+	else { 
+		if(unit=="mmol/L") {
+		   return 1;
+		   }
+	 	}
+	return 0;
+    } 
+let mmol=[
+"AM",
+"AU",
+"BA",
+"BG",
+"BW",
+"BY",
+"CA",
+"CH",
+"CN",
+"CZ",
+"DK",
+"EE",
+"FI",
+"GB",
+"HK",
+"HR",
+"HU",
+"IE",
+"IS",
+"KW",
+"KZ",
+"LT",
+"LV",
+"MT",
+"MY",
+"NA",
+"NL",
+"NO",
+"NZ",
+"RS",
+"RU",
+"SE",
+"SI",
+"SK",
+"UA",
+"ZA"];
+
+
+
+
+
+
+
+function getunit() {
+	var unit=getunitarg();
+	if(unit!=0) {
+		return unit;
+		}
+
+	var userLang = navigator.language || navigator.userLanguage;
+	var  co=userLang.toUpperCase();
+	for(const element of mmol) {
+	  if(co.includes(element)) {
+		return 1;
+		}
+	   }
+
+	  return 2;
+	 }
+
+
+
+function setbaseurl(){ 
+	if(getunit()!=1) {
+		document.getElementById("baseurl").href = "https://www.juggluco.nl/Jugglucohelp/pl/mgdL/"; 
+		} 
+	else { 
+	   document.getElementById("baseurl").href = "https://www.juggluco.nl/Jugglucohelp/pl/"; 
+	   } 
+      } 
+   setbaseurl();
+   </script> 
+</head><img src="newamount.jpg"  style="object-fit:contain; width:15cm;                   height:auto;margin: 1cm 1cm 1cm 1cm;"><body lang="pl-PL" dir="ltr"><h1>Nowa wartość</h1>
+<p>Za pomocą opcji <b>Nowa wartość</b> można wprowadzać liczby powiązane z dowolną etykietą. Etykiety można ustawić w lewym menu→Ustawienia→<a href="https://www.juggluco.nl/Jugglucohelp/pl/labelhelp.html">Etykiety wart. liczb.</a>. <i>Wartości</i> wprowadzone pod określoną etykietą będą wyświetlane na konkretnej wysokości na wykresie określonej przez daną etykietę.</p>
+<p>Wartość można p&oacute;źniej zmienić, naciskając ją i przytrzymując. Można ją r&oacute;wnież wybrać z listy wprowadzonych wartości w lewym menu środkowym→Lista.</p>
+<p>Możliwe jest r&oacute;wnież odbieranie danych dawek <b>Insuliny</b> z pen&oacute;w <a href="https://www.juggluco.nl/Juggluco/index.html#novopens" onclick="location.href='https://www.juggluco.nl/Juggluco/index.html?unit='+unitstr+'#novopens';return false;">NovoPen® 6 lub NovoPen Echo® Plus</a> poprzez zeskanowanie pena NFC. Po zeskanowaniu można zmienić, pod jaką etykietą dawki są zapisywane w Juggluco i ograniczyć dawki do dawek dawanych <b>po</b> określonej dacie i godzinie. Gdy w pamięci pena znajdują się setki dawek, może minąć ponad 30 sekund, zanim wszystkie zostaną odebrane przez Juggluco za pośrednictwem NFC.</p>
+<p>W lewym menu-&gt;Ustawienia-&gt;<a href="https://www.juggluco.nl/Jugglucohelp/pl/labelhelp.html">Etykiety wart. liczb.</a> określa się r&oacute;wnież, pod kt&oacute;rą etykietą należy wprowadzić węglowodany posiłku. W pozycji <i>Nowa wartość</i> dla tej etykiety wyświetlany jest przycisk <b>Posiłek</b> . Naciśnięcie tego przycisku <a href="https://www.juggluco.nl/Jugglucohelp/pl/mealhelp.html"><i>Posiłek</i></a> powoduje wyświetlenie ekranu, na kt&oacute;rym można określić składniki posiłku. Następnie obliczana jest zawartość węglowodan&oacute;w automatycznie lub można ją określić ręcznie, a następnie obliczana jest wymagana ilość jednego składnika.</p>
+<p><br/> <br/></p>
+</body>
+</html>

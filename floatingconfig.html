@@ -4,16 +4,17 @@
 	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 	<title>Floating Glucose</title>
 	<base target="_blank">
-	<meta name="generator" content="LibreOffice 7.5.7.1 (Linux)"/>
+	<meta name="generator" content="LibreOffice 7.6.4.1 (Linux)"/>
 	<meta name="created" content="00:00:00"/>
-	<meta name="changed" content="2023-11-18T20:05:01.245424345"/>
+	<meta name="changed" content="2024-02-29T12:19:09.186429930"/>
+	<meta name="created" content="00:00:00">
 	<style type="text/css">
 		@page { size: 8.27in 11.69in; margin-left: 0.79in; margin-right: 0.39in; margin-top: 0.39in; margin-bottom: 0.39in }
-		p { margin-bottom: 0.1in; background: transparent }
 		h1 { margin-bottom: 0.08in; background: transparent }
 		h1.western { font-family: "Liberation Serif", serif }
 		h1.cjk { font-family: "Droid Sans Fallback" }
 		h1.ctl { font-family: "Droid Sans Devanagari" }
+		p { margin-bottom: 0.1in; background: transparent }
 	</style>
  <base href="https://www.juggluco.nl/Jugglucohelp/mgdL/" id="baseurl" target="_blank">
 
@@ -112,30 +113,39 @@ function setbaseurl(){
  <img src="floatingglucoseconfig.png"  style="object-fit:contain; width:15cm;                   height:auto;">
 <body lang="en-US" dir="ltr"><h1 class="western">Floating glucose</h1>
 <p>Here you can set the font size and foreground and background color
-of the floating glucose. You can also set background to <b>Transparent</b>,
-making it invisible.</p>
+of the floating glucose. 
+</p>
 <p><b>Touchable</b>: when set you can move the floating glucose with
 your finger and remove it by long pressing it (without moving). When
 touchable is unset, touch input goes to the window beneath the
 floating glucose, so you can use the app under the floating glucose.
 You can also make the floating glucose untouchable by <b>double
 tapping</b> it.</p>
+<p><b>Transparent:</b> background invisible.</p>
+<p><b>Above</b>: the floating glucose also present above Juggluco.</p>
+<p><b>Time</b>: timestamp of the glucose value.</p>
+<p><b>Active</b>: turn it on.</p>
 <p>After typing the <b>font size</b>, you have to press the “<i>Enter”,
 </i>“<i>Done”</i> or &quot;✓&quot; -button on the soft
 keyboard.</p>
 <p>You can turn on and off Floating glucose with left middle
-menu-&gt;Float. You can also turn off “Floating glucose” by <b>long
-pressing</b> on the floating glucose value. For example when you have
-set the font size so large that you are not able anymore to type a
-smaller font size on the soft keyboard.</p>
+menu-&gt;Float. 
+</p>
+<p>You can switch to Juggluco by tapping the <b>arrow side</b> of the
+floating glucose. Double tapping the glucose value side results in
+the floating glucose becoming untouchable. <b>Long pressing</b> the
+glucose value results in the display of only a small glucose value so
+you can interact with what is underneath, tapping the small display
+enlarges it again. Moving while touching the glucose value side,
+<b>moves</b> the floating glucose.</p>
 <p>To display over other apps Juggluco needs a special permission. On
 WearOS and also Android Automotive you need to use adb to give this
 permission:</p>
-<p style="line-height: 100%; margin-bottom: 0in"><b>adb shell pm
-grant tk.glucodata android.permission.SYSTEM_ALERT_WINDOW</b></p>
-<p style="line-height: 100%; margin-bottom: 0in; background: transparent">
-On some watches (for example TicWatch Pro), you can also allow it
-with: Android/WearOS settings-&gt;Apps &amp; notifications-&gt; App
+<p style="margin-bottom: 0in"><b>adb shell pm grant tk.glucodata
+android.permission.SYSTEM_ALERT_WINDOW</b></p>
+<p style="background: transparent">On some watches (for example
+TicWatch Pro), you can also allow it with: Android/WearOS
+settings-&gt;Apps &amp; notifications-&gt; App
 info-&gt;Juggluco-&gt;Advanced-&gt;Display over other apps.</p>
 </body>
 </html>

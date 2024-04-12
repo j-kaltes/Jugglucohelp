@@ -2,6 +2,7 @@
 #include <iostream>
 #include <algorithm>
 using namespace std;
+#define NOLOGS_H 1
 #include "inout.h"
 void rewritefile(const char *name) {
 Readall cont(name);

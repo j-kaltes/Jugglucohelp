@@ -1,64 +1,71 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>WearOS</title>
-<meta charset="utf-8">
-</head><img src="wearosconfig.jpg"  style="object-fit:contain; width:15cm;                   height:auto;"><body>
-  <p><h1>Wear Os</h1></p>
-  <p><strong>Bezpośrednie połączenie sensor-zegarek</strong>: Opcja ta określa, czy zegarek powinien być bezpośrednio połączony z sensorem. Można ją zmienić tylko wtedy, gdy zegarek i telefon są zsynchronizowane. Użyj Klonowanie -&gt;Synchronizacja i Wzn&oacute;w poł. na telefonie i zegarku, aby zsynchronizować telefon i zegarek.</p>
-  <p><strong>Nawiąż połączenie z zegarkiem</strong>: Opcję tę należy nacisnąć raz po zainstalowaniu i uruchomieniu Juggluco na zegarku WearOS.</p>
-  <p><strong>Ust. domyślne</strong>: Spowoduje to przywr&oacute;cenie domyślnych ustawień połączenia. Obejmuje to ustawienia, kt&oacute;re można zmienić w Lewe menu -&gt; <a href="https://www.juggluco.nl/Jugglucohelp/pl/connectionoverview.html">Klon</a> na zegarku i w Lewym środkowym menu -&gt; Klonowanie na telefonie. Obejmuje to ustawienia takie jak &quot;Tr. aktywny&quot; i &quot;Skany&quot;. Przycisk ten można nacisnąć, gdy ustawienia zostały przypadkowo zmienione przez wodę pod prysznicem lub podczas snu. W przypadku resetowania poprzez ponowną instalację wersji na zegarek lub usunięcie danych, należy r&oacute;wnież usunąć połączenie w ramach klonowania w telefonie.</p>
-  <p>Specjalna wersja Juggluco może działać bezpośrednio na zegarku z systemem Wear Os. Potrzebuje on smartfona z Androidem i NFC do zeskanowania sensora, a poprzez połączenie TCP dane te są przesyłane do zegarka z systemem Wear OS. Następnie istnieją dwie możliwości:</p>
-  <ol>
-    <li>
-      <p>Sensor pozostaje połączony ze smartfonem, a smartfon wysyła każdą otrzymaną wartość glukozy przez Bluetooth do zegarka z systemem Wear OS przez TCP;</p>
-    </li>
-    <li>
-      <p>Możliwe jest r&oacute;wnież bezpośrednie połączenie sensora z zegarkiem z systemem Wear OS. Do tego potrzebny jest zegarek z systemem Wear OS i dobrą łącznością Bluetooth.</p>
-    </li>
-  </ol>
-  <p>Aplikację Juggluco dla systemu Wear OS możecie pobrać z Google Play na sw&oacute;j zegarek [uwaga tłumacza: opcja już niemożliwa; instrukcja instalacji znajduje się pod adresem: http://jkaltes.byethost16.com/JugglucoWearOS/install/adb.html]. Niekt&oacute;re obrazy pokazane są na stronie <a href="https://www.juggluco.nl/JugglucoWearOS/index.html">https://www.juggluco.nl/JugglucoWearOS</a></p>
-  <p>Aby ją uruchomić wykonaj następujące czynności:</p>
-  <ul>
-    <li>
-      <p>Upewnij się, że zar&oacute;wno Bluetooth jak i WIFI działają na zegarku i telefonie;</p>
-    </li>
-    <li>
-      <p>Sprawdź, czy w zegarku pozostało wystarczająco dużo wolnego miejsca na dysku i pamięci RAM. Możliwe, że aplikacja Juggluco musi zostać ponownie zainstalowana, jeśli w krytycznym momencie w urządzeniu zabraknie miejsca na dysku;</p>
-    </li>
-    <li>
-      <p>Spraw, aby aplikacja Juggluco na telefon działała z sensorem. Trzeba kilka razy zeskanować sensor z włączoną opcją &quot;Sensor przez Bluetooth&quot;. Odbieranie wartości glukozy w telefonie przez Bluetooth nie jest konieczne;</p>
-    </li>
-    <li>
-      <p>Zainstaluj aplikację Juggluco w wersji Wear OS na swoim zegarku Wear Os i uruchom ją;</p>
-    </li>
-    <li>
-      <p>Na telefonie przejdź do lewego menu -&gt; Zegarek -&gt; <a href="https://www.juggluco.nl/Jugglucohelp/pl/wearosinfo.html">Wear Os -&gt; Konfiguracja</a> W menu rozwijanym powinien pojawić się Tw&oacute;j zegarek. Naciśnij &bdquo;Nawiąż połączenie z zegarkiem&rdquo;;</p>
-    </li>
-    <li>
-      <p>Jeśli wszystko poszło dobrze, w obu Juggluco skonfigurowane jest połączenie TCP i wszystkie dane z telefonu są przesyłane do zegarka. Może to trwać długo, jeśli korzystałeś z Juggluco przez długi czas. Możesz sprawdzić, czy połączenie TCP jest skonfigurowane, sprawdzając w oknie dialogowym Klonowanie (telefon: lewe środkowe menu -&gt; <a href="https://www.juggluco.nl/Jugglucohelp/pl/connectionoverview.html">Klonowanie</a>, zegarek: lewe menu-&gt;Klon). Powinno pojawić się połączenie o takim samym id, jakie widnieje w menu rozwijanym dla zegarka. Na zegarku powinno znajdować się r&oacute;wnież IP telefonu. Jeśli ich nie ma lub strona zegarka nie zawiera IP, naciśnij ponownie na &quot;Nawiąż połączenie z zegarkiem&quot;. Jeśli nadal go nie ma, sprawdź połączenie Bluetooth oraz aplikację telefonu odpowiedzialną za połączenie z zegarkiem. (Gdy zegarek już otrzymał dane, naciśnięcie &quot;Nawiąż połączenie z zegarkiem&quot; powoduje ponowne wysłanie ich wszystkich, więc r&oacute;wnie dobrze można by ponownie zainstalować zegarkową wersję Juggluco. P&oacute;źniej, jeśli nie pokazuje się właściwe IP, należy w telefonie wyłączyć i włączyć połączenie zewnętrzne (WIFI lub dane kom&oacute;rkowe).</p>
-    </li>
-    <li>
-      <p>Jeśli wszystko poszło dobrze, te same dane, co na telefonie, wyświetlane są na zegarkowej wersji Juggluco. Każda nowa wartość stęż. glukozy odebrana przez telefon jest wysyłana przez TCP do zegarka. Niekt&oacute;re ustawienia, takie jak jednostka miary, poziomy alarm&oacute;w stęż. glukozy i przypomnienia są r&oacute;wnież przekazywane do zegarka. P&oacute;źniejsze zmiany powinny być dokonywane na samym zegarku.</p>
-    </li>
-    <li>
-      <p>Jeśli masz smartwatch z dobrą łącznością Bluetooth i lubisz otrzymywać wartości glukozy na zegarku bez konieczności noszenia telefonu, możesz połączyć zegarkową wersję Juggluco bezpośrednio z sensorem. Po przesłaniu wszystkich wartości do zegarka, można zaznaczyć <strong>&quot;Bezpośrednie połączenie sensor-zegarek&quot;</strong>. Dzięki temu opcja <i>&quot;Sensor przez Bluetooth&quot;</i> zostaje wyłączona w telefonie i włączona w zegarku. Wartości strumienia są teraz przesyłane z zegarka do telefonu, co można sprawdzić w oknie dialogowym Klonowania. Nie można zmienić &quot;Bezpośredniego połączenia sensor-zegarek&quot;, gdy zegarek i telefon nie są zsynchronizowane.</p>
-    </li>
-    <li>
-      <p>Jeśli chcesz wysłać wartości z zegarka do telefonu, należy samodzielnie odwr&oacute;cić kierunek wysyłania w oknie dialogowym Klonowania, odznaczając go w telefonie i zaznaczając w zegarku. W telefonie należy r&oacute;wnież ustawić <i>&quot;Odbieraj</i>&quot;. Jeśli wszystko nie jest ustawione dokładnie tak, jak trzeba, to nie działa. Opcja &quot;Nie zmieniaj wartości&quot; powinna zostać zmieniona. Etykiety <i>wartości</i> są zawsze wysyłane z wartościami. Jeśli zmienisz kierunek przesyłania wartości z zegarka na telefon, nie możesz zmienić etykiet. Nie powinno to być zbyt łatwe;</p>
-    </li>
-  </ul>
-  <p>Jeśli sensor ma bezpośrednie połączenie Bluetooth z zegarkiem i jego wartości są wysyłane do smartfona, zeskanowane wartości powinny być r&oacute;wnież wysyłane z telefonu do zegarka, a wartości strumienia powinny być zsynchronizowane przed zeskanowaniem czujnika za pomocą Juggluco (ustawienia są skonfigurowane automatycznie w ten spos&oacute;b). W przeciwnym razie stare wartości mogą być wysyłane z powrotem do zegarka lub zmodyfikowane informacje uwierzytelniające nie są wysyłane do zegarka, co spowoduje błędy <i>Odblokuj klucz</i>.</p>
-  <p>Zmiany w połączeniu powinny być r&oacute;wnież dokonywane tylko w momencie synchronizacji danych; dane na telefonie i zegarku powinny być kompletnymi kopiami (z tym że można pominąć wszystkie dane dotyczące wartości).</p>
-  <p>Za pierwszym razem, gdy trzeba przenieść dużo danych ze smartfona do zegarka, można podpiąć zegarek do ładowarki. M&oacute;j zegarek włącza WIFI, gdy jest podłączony do ładowarki.</p>
-  <p><strong>Połączenie zegarek - telefon</strong></p>
-  <p>Podczas inicjalizacji, gdy wszystkie dane są przesyłane z telefonu do zegarka, potrzebne jest połączenie Wi-Fi między zegarkiem a telefonem. P&oacute;źniej dane są wysyłane w małych kawałkach przez TCP. W moim zegarku jest to przekierowane przez Bluetooth, ale tylko wtedy, gdy telefon ma połączenie zewnętrzne, na przykład Wi-Fi z siecią domową, połączenie danych kom&oacute;rkowych lub przenośny hotspot. W przeciwnym razie połączenie między telefonem a zegarkiem po jakimś czasie ustaje, ponieważ Wi-Fi jest wyłączane przez system w celu oszczędzania baterii.</p>
-  <p>Aplikacja Juggluco sama wykrywa IP drugiej strony, więc nie trzeba ich ustawiać. Jeśli przełączysz się z Wi-Fi na dane mobilne, IP zostaną zmienione automatycznie. Czasami trzeba wyłączyć i włączyć Wi-Fi lub dane kom&oacute;rkowe na smartfonie, zanim to zadziała (Juggluco określa IP w momencie włączenia Wi-Fi lub danych kom&oacute;rkowych, ale czasami IP nie jest wtedy jeszcze dostępne).</p>
-  <p>Automatyczne określanie IP drugiej strony jest specyficzne dla połączenia z zegarkiem WearOS; dla innych połączeń w ramach Klonowania nadal musisz określić IP drugiej strony.</p>
-  <p><strong>Tarcza zegarka</strong></p>
-  <p>Juggluco dla Wear OS zawiera tarczę zegarka, kt&oacute;ra opr&oacute;cz godziny i maksymalnie czterech komplikacji pokazuje Tw&oacute;j aktualny poziom glukozy. Aby z niej skorzystać należy wybrać tę tarczę zegarka np. w aplikacji towarzyszącej zegarka w zakładce &quot;Pobrane&quot;. Zwykle po wybudzeniu ekranu widać ostatnią wartość glukozy. Gdy wyświetlacz znajduje się w trybie ambient (zawsze włączony), wartość glukozy jest aktualizowana tylko w przypadku zmiany wskaźnika minut lub naciśnięcia przycisku czy podniesienia ręki. Tak więc wyświetlana wartość może być op&oacute;źniona do jednej minuty.</p>
-  <p>Jest też komplikacja, kt&oacute;ra wykorzystuje transmisję Glucodata z wersji WearOS do wyświetlania wartości glukozy w każdej tarczy zegarka, kt&oacute;ra akceptuje tę komplikację: <a href="https://github.com/pachi81/GlucoDataHandler/releases">https://github.com/pachi81/GlucoDataHandler/releases</a></p>
-  <p>Trzecią opcją jest włączenie <i>Pływająca wart. glukozy</i> w ustawieniach Juggluco na zegarku. Gdy Juggluco ma odpowiednie uprawnienia, wartość glukozy wyświetlana jest nad innymi aplikacjami. W ten spos&oacute;b można zobaczyć aktualną wartość glukozy podczas korzystania z dowolnych tarcz zegarka lub aplikacji monitorujących aktywność. Aby uzyskać więcej informacji, zobacz, w wersji Juggluco na telefonie, lewe menu -&gt; Ustawienia -&gt; <a href="https://www.juggluco.nl/Jugglucohelp/pl/floatingconfig.html">Pływająca wart. gluk.</a> -&gt; Pomoc.</p>
-  <p>&nbsp;&nbsp; &nbsp;&nbsp;</p>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title>WearOS</title>
+	<meta name="generator" content="LibreOffice 7.6.4.1 (Linux)"/>
+	<meta name="created" content="00:00:00"/>
+	<meta name="changed" content="2024-03-09T12:14:15.056310937"/>
+	<style type="text/css">h2.cjk { font-family: "Droid Sans Fallback" } h2.ctl { font-family: "Droid Sans Devanagari" } h5.cjk { font-family: "Droid Sans Fallback" } h5.ctl { font-family: "Droid Sans Devanagari" }</style>
+</head><img src="wearosconfig.jpg"  style="object-fit:contain; width:15cm;                   height:auto;"><body lang="pl-PL" dir="ltr"><h1>Wear Os</h1>
+<p><strong>Bezpośrednie połączenie sensor-zegarek</strong>: Opcja ta określa, czy zegarek powinien być bezpośrednio połączony z sensorem. Można ją zmienić tylko wtedy, gdy zegarek i telefon są zsynchronizowane. Użyj Klonowanie -&gt;Synchronizacja i Wzn&oacute;w poł. na telefonie i zegarku, aby zsynchronizować telefon i zegarek.</p>
+<p><strong>Nawiąż połączenie z zegarkiem</strong>: Opcję tę należy nacisnąć raz po zainstalowaniu i uruchomieniu Juggluco na zegarku WearOS.</p>
+<p><strong>Ust. domyślne</strong>: Spowoduje to przywr&oacute;cenie domyślnych ustawień połączenia. Obejmuje to ustawienia, kt&oacute;re można zmienić w Lewe menu -&gt; <a href="https://www.juggluco.nl/Jugglucohelp/connectionoverview.html">Klon</a> na zegarku i w Lewym środkowym menu -&gt; Klonowanie na telefonie. Obejmuje to ustawienia takie jak &quot;Tr. aktywny&quot; i &quot;Skany&quot;. Przycisk ten można nacisnąć, gdy ustawienia zostały przypadkowo zmienione przez wodę pod prysznicem lub podczas snu. W przypadku resetowania poprzez ponowną instalację wersji na zegarek lub usunięcie danych, należy r&oacute;wnież usunąć połączenie w ramach klonowania w telefonie.</p>
+<p>Specjalna wersja Juggluco może działać bezpośrednio na zegarku z systemem Wear Os. Potrzebuje on smartfona z Androidem i NFC do zeskanowania sensora, a poprzez połączenie TCP dane te są przesyłane do zegarka z systemem Wear OS. Następnie istnieją dwie możliwości:</p>
+<ol>
+	<li><p>Sensor pozostaje połączony ze smartfonem, a smartfon wysyła każdą otrzymaną wartość glukozy przez Bluetooth do zegarka z systemem Wear OS przez TCP;</p></li>
+	<li><p>Możliwe jest r&oacute;wnież bezpośrednie połączenie sensora z zegarkiem z systemem Wear OS. Do tego potrzebny jest zegarek z systemem Wear OS i dobrą łącznością Bluetooth.</p></li>
+</ol>
+<p>Niekt&oacute;re obrazy pokazane są na stronie <a href="https://www.juggluco.nl/JugglucoWearOS/index.html">https://www.juggluco.nl/JugglucoWearOS</a></p>
+<p>Aby ją uruchomić wykonaj następujące czynności:</p>
+<ul>
+	<li><p>Upewnij się, że zar&oacute;wno Bluetooth jak i WIFI działają na zegarku i telefonie;</p></li>
+	<li><p>Sprawdź, czy w zegarku pozostało wystarczająco dużo wolnego miejsca na dysku i pamięci RAM. Możliwe, że aplikacja Juggluco musi zostać ponownie zainstalowana, jeśli w krytycznym momencie w urządzeniu zabraknie miejsca na dysku;</p></li>
+	<li><p>Spraw, aby aplikacja Juggluco na telefon działała z sensorem. Trzeba kilka razy zeskanować sensor z włączoną opcją &quot;Sensor przez Bluetooth&quot;. Odbieranie wartości glukozy w telefonie przez Bluetooth nie jest konieczne;</p></li>
+	<li><p>Zainstaluj aplikację Juggluco w wersji Wear OS na swoim zegarku Wear Os i uruchom ją;</p></li>
+	<li><p>Na telefonie przejdź do lewego menu -&gt; Zegarek -&gt; <a href="https://www.juggluco.nl/Jugglucohelp/wearosinfo.html">Wear Os -&gt; Konfiguracja</a> W menu rozwijanym powinien pojawić się Tw&oacute;j zegarek. Naciśnij &bdquo;Nawiąż połączenie z zegarkiem&rdquo;;</p></li>
+	<li><p>Jeśli wszystko poszło dobrze, w obu Juggluco skonfigurowane jest połączenie TCP i wszystkie dane z telefonu są przesyłane do zegarka. Może to trwać długo, jeśli korzystałeś z Juggluco przez długi czas. Możesz sprawdzić, czy połączenie TCP jest skonfigurowane, sprawdzając w oknie dialogowym Klonowanie (telefon: lewe środkowe menu -&gt; <a href="https://www.juggluco.nl/Jugglucohelp/connectionoverview.html">Klonowanie</a>, zegarek: lewe menu-&gt;Klon). Powinno pojawić się połączenie o takim samym id, jakie widnieje w menu rozwijanym dla zegarka. Na zegarku powinno znajdować się r&oacute;wnież IP telefonu. Jeśli ich nie ma lub strona zegarka nie zawiera IP, naciśnij ponownie na &quot;Nawiąż połączenie z zegarkiem&quot;. Jeśli nadal go nie ma, sprawdź połączenie Bluetooth oraz aplikację telefonu odpowiedzialną za połączenie z zegarkiem. (Gdy zegarek już otrzymał dane, naciśnięcie &quot;Nawiąż połączenie z zegarkiem&quot; powoduje ponowne wysłanie ich wszystkich, więc r&oacute;wnie dobrze można by ponownie zainstalować zegarkową wersję Juggluco. P&oacute;źniej, jeśli nie pokazuje się właściwe IP, należy w telefonie wyłączyć i włączyć połączenie zewnętrzne (WIFI lub dane kom&oacute;rkowe).</p></li>
+	<li><p>Jeśli wszystko poszło dobrze, te same dane, co na telefonie, wyświetlane są na zegarkowej wersji Juggluco. Każda nowa wartość stęż. glukozy odebrana przez telefon jest wysyłana przez TCP do zegarka. Niekt&oacute;re ustawienia, takie jak jednostka miary, poziomy alarm&oacute;w stęż. glukozy i przypomnienia są r&oacute;wnież przekazywane do zegarka. P&oacute;źniejsze zmiany powinny być dokonywane na samym zegarku.</p></li>
+	<li><p>Jeśli masz smartwatch z dobrą łącznością Bluetooth i lubisz otrzymywać wartości glukozy na zegarku bez konieczności noszenia telefonu, możesz połączyć zegarkową wersję Juggluco bezpośrednio z sensorem. Po przesłaniu wszystkich wartości do zegarka, można zaznaczyć <strong>&quot;Bezpośrednie połączenie sensor-zegarek&quot;</strong>. Dzięki temu opcja <i>&quot;Sensor przez Bluetooth&quot;</i> zostaje wyłączona w telefonie i włączona w zegarku. Wartości strumienia są teraz przesyłane z zegarka do telefonu, co można sprawdzić w oknie dialogowym Klonowania. Nie można zmienić &quot;Bezpośredniego połączenia sensor-zegarek&quot;, gdy zegarek i telefon nie są zsynchronizowane.</p></li>
+	<li><p>Jeśli chcesz wysłać wartości z zegarka do telefonu, należy samodzielnie odwr&oacute;cić kierunek wysyłania w oknie dialogowym Klonowania, odznaczając go w telefonie i zaznaczając w zegarku. W telefonie należy r&oacute;wnież ustawić <i>&quot;Odbieraj</i>&quot;. Jeśli wszystko nie jest ustawione dokładnie tak, jak trzeba, to nie działa. Opcja &quot;Nie zmieniaj wartości&quot; powinna zostać zmieniona. Etykiety <i>wartości</i> są zawsze wysyłane z wartościami. Jeśli zmienisz kierunek przesyłania wartości z zegarka na telefon, nie możesz zmienić etykiet. Nie powinno to być zbyt łatwe;</p></li>
+</ul>
+<p>Jeśli sensor ma bezpośrednie połączenie Bluetooth z zegarkiem i jego wartości są wysyłane do smartfona, zeskanowane wartości powinny być r&oacute;wnież wysyłane z telefonu do zegarka, a wartości strumienia powinny być zsynchronizowane przed zeskanowaniem czujnika za pomocą Juggluco (ustawienia są skonfigurowane automatycznie w ten spos&oacute;b). W przeciwnym razie stare wartości mogą być wysyłane z powrotem do zegarka lub zmodyfikowane informacje uwierzytelniające nie są wysyłane do zegarka, co spowoduje błędy <i>Odblokuj klucz</i>.</p>
+<p>Zmiany w połączeniu powinny być r&oacute;wnież dokonywane tylko w momencie synchronizacji danych; dane na telefonie i zegarku powinny być kompletnymi kopiami (z tym że można pominąć wszystkie dane dotyczące wartości).</p>
+<p>Za pierwszym razem, gdy trzeba przenieść dużo danych ze smartfona do zegarka, można podpiąć zegarek do ładowarki. M&oacute;j zegarek włącza WIFI, gdy jest podłączony do ładowarki.</p>
+<h2 class="western"><strong>Połączenie zegarek - telefon</strong></h2>
+<p>Połączenie zegarek-telefon jest adaptacją połączenia w ramach klonowania, kt&oacute;re można skonfigurować między telefonami z systemem Juggluco a komputerami, na kt&oacute;rych działa <a href="https://www.juggluco.nl/Juggluco/cmdline">serwer Juggluco</a>. Gdy połączenie między telefonem a zegarkiem jest ustanawiane automatycznie w opisany powyżej spos&oacute;b, ma ono następujące dodatki:</p>
+<ul>
+	<li><p>Adres IP drugiej strony połączenia jest określany automatycznie. Zwykle nie trzeba nic robić bezpośrednio z połączeniem w ramach klonowania. Zamiast tego można użyć Lewego menu→Zegarek→ WearOS, przycisk Konfiguracja, aby zmienić ustawienia. Wyjątek stanowi sytuacja, gdy chce się wprowadzić liczby na zegarku. W&oacute;wczas należy ręcznie zmienić ustawienia klona zgodnie z opisem poniżej <a href="#enteronwatch"><i>Wpisz na zegarku</i></a>.</p></li>
+	<li><p>Jeśli połączenie WIFI między telefonem a zegarkiem nie działa, Juggluco przełącza się na korzystanie z protokołu TCP przez Bluetooth. Gdy do zegarka trzeba przesłać dużą ilość danych przy pierwszym użyciu, w zegarku można wyłączyć opcję WIFI.</p></li>
+</ul>
+<p style="margin-bottom: 0in">Gdy żadne dane nie są wymieniane między Juggluco w telefonie i na zegarku, należy zwr&oacute;cić uwagę na następujące kwestie:</p>
+<ul>
+	<li><p style="margin-bottom: 0in">Bluetooth powinien być włączony w zegarku i telefonie (WIFI można wyłączyć);</p></li>
+	<li><p style="margin-bottom: 0in">Aplikacja towarzysząca zegarka powinna wyświetlać, że zegarek jest połączony z telefonem;</p></li>
+	<li><p style="margin-bottom: 0in">W lewym menu→Klon na zegarku i lewym środkowym menu→Klonowanie na telefonie powinien zostać automatycznie utworzony wpis połączenia z identyfikatorem zegarka (ten sam identyfikator, kt&oacute;ry jest wyświetlany w lewym menu→Zegarek→&quot;WearOS, konfiguracja&quot; na telefonie).</p></li>
+	<li><p style="margin-bottom: 0in">Pom&oacute;c może naciśnięcie przycisk&oacute;w Reinicjalizacji i/lub Synchronizacji w lewym menu→Klon na zegarku;</p></li>
+	<li><p style="margin-bottom: 0in">Czasami trzeba zrobić to samo na telefonie. Następnie może być konieczne ponowne wykonanie tej czynności na zegarku;</p></li>
+	<li><p style="margin-bottom: 0in">Pom&oacute;c może wyłączenie i włączenie Bluetooth w telefonie lub zegarku. Następnie należy ponownie nacisnąć przyciski Reinicjalizacji i Synchronizacji na zegarku;</p></li>
+	<li><p style="margin-bottom: 0in">Czasami konieczne jest zrobienie tego samego przy połączeniu przez WIFI lub dane kom&oacute;rkowe;</p></li>
+	<li><p style="margin-bottom: 0in">Czasami konieczne jest ponowne uruchomienie telefonu i/lub zegarka, aby przywr&oacute;cić działanie Bluetooth;</p></li>
+	<li><p style="margin-bottom: 0in">Czasami możliwe jest, że ustawienia połączenia w ramach klonowania zostaną w jakiś spos&oacute;b zmienione na nieprawidłowe. Można je zresetować do oryginalnych wartości, naciskając na telefonie lewe menu→Zegarek→WearOS, Konfiguracja→Ust. domyślne. Ma to r&oacute;wnież skutek taki, że sensor połączy się z telefonem zamiast z zegarkiem. Dane obecne tylko na zegarku zostaną zastąpione;</p></li>
+	<li><p style="margin-bottom: 0in">Jeśli wszystko inne zawiedzie, można ponownie zainstalować wersję aplikacji przeznaczoną na zegarek i zacząć od nowa. W takim przypadku należy usunąć istniejące połączenie zegarka w lewym środkowym menu→Klonowanie.</p></li>
+	<li><p style="margin-bottom: 0in">Jeśli w jakiś spos&oacute;b brakuje danych na telefonie, ale są one obecne na zegarku, jest to znacznie trudniejsze. Najpierw trzeba utworzyć działające połączenie w ramach klonowania, aby odbierać dane w telefonie.</p></li>
+</ul>
+<h2 class="western"><a name="enteronwatch"></a>Wpisz na zegarku</h2>
+<p>Jeśli wprowadzasz ilości insuliny, węglowodan&oacute;w i aktywności na zegarku, nie możesz już tego robić na telefonie. R&oacute;wnież skanowanie pen&oacute;w insulinowych nie jest już możliwe.</p>
+<p>Obecnie nie ma do tego jednego przycisku. Po obu stronach połączenia w ramach klonowania między zegarkiem a telefonem towarzyszącym należy wprowadzić zmiany w ustawieniach połączenia w ramach klonowania. Najpierw należy upewnić się, że telefon i zegarek są zsynchronizowane, a następnie wykonać następujące czynności:</p>
+<h5 class="western">TELEFON:</h5>
+<p>Przejdź do lewego środkowego menu→Klonowanie. Naciśnij połączenie zegarka, a następnie <i>Zmień</i>. Odznacz <i>Wartości</i> i sprawdź, czy opcja <i>Odbieraj</i> jest zaznaczona. Następnie naciśnij &quot;<i>Zapisz</i>&quot;, a potem &quot;<i>Zamknij</i>&quot;. Włącz opcję &bdquo;<i>Klon wysyła wartości</i>&rdquo;.</p>
+<h5 class="western">ZEGAREK:</h5>
+<p>Przejdź do lewego menu→Klon. Naciśnij połączenie zegarka, a następnie Zmień. Włącz opcję &quot;<i>Wartości</i>&quot;. Włącz opcję &quot;<i>Teraz</i>&quot; jako punkt czasu, do kt&oacute;rego wszystkie dane są już obecne w telefonie. Następnie naciśnij &quot;<i>Zapisz</i>&quot;, a potem &quot;<i>Zamknij</i>&quot;. Wyłącz opcję &bdquo;<i>Klon wysyła wartości</i>&rdquo;.</p>
+<h2 class="western"><strong>Tarcza zegarka</strong></h2>
+<p>Juggluco dla Wear OS zawiera tarczę zegarka, kt&oacute;ra opr&oacute;cz godziny i maksymalnie czterech komplikacji pokazuje Tw&oacute;j aktualny poziom glukozy. Aby z niej skorzystać należy wybrać tę tarczę zegarka np. w aplikacji towarzyszącej zegarka w zakładce &quot;Pobrane&quot;. Zwykle po wybudzeniu ekranu widać ostatnią wartość glukozy. Gdy wyświetlacz znajduje się w trybie ambient (zawsze włączony), wartość glukozy jest aktualizowana tylko w przypadku zmiany wskaźnika minut lub naciśnięcia przycisku czy podniesienia ręki. Tak więc wyświetlana wartość może być op&oacute;źniona do jednej minuty.</p>
+<p>Jest też komplikacja, kt&oacute;ra wykorzystuje transmisję Glucodata z wersji WearOS do wyświetlania wartości glukozy w każdej tarczy zegarka, kt&oacute;ra akceptuje tę komplikację: <a href="https://github.com/pachi81/GlucoDataHandler/releases">https://github.com/pachi81/GlucoDataHandler/releases</a></p>
+<p>Trzecią opcją jest włączenie <i>Pływająca wart. glukozy</i> w ustawieniach Juggluco na zegarku. Gdy Juggluco ma odpowiednie uprawnienia, wartość glukozy wyświetlana jest nad innymi aplikacjami. W ten spos&oacute;b można zobaczyć aktualną wartość glukozy podczas korzystania z dowolnych tarcz zegarka lub aplikacji monitorujących aktywność. Aby uzyskać więcej informacji, zobacz, w wersji Juggluco na telefonie, lewe menu -&gt; Ustawienia -&gt; <a href="https://www.juggluco.nl/Jugglucohelp/floatingconfig.html">Pływająca wart. gluk.</a> -&gt; Pomoc.</p>
+<h2 class="western">Followers (Obserwatorzy)</h2>
+<p style="margin-bottom: 0in">Z aplikacji towarzyszącej można ponownie wysyłać dane do innych urządzeń przez Internet, jak opisano w Lewym środkowym menu→<a href="https://www.juggluco.nl/Jugglucohelp/connectionoverview.html">Klonowanie</a>. Możliwe jest r&oacute;wnież podłączenie zegarka bezpośrednio do serwera w Internecie, a stamtąd do telefonu obserwującego, jak opisano na stronie: <a href="https://www.juggluco.nl/Juggluco/cmdline/watch">https://www.juggluco.nl/Juggluco/cmdline/watch</a></p>
+<p style="margin-bottom: 0in"><br/></p>
+<p style="margin-bottom: 0in"><br/></p>
 </body>
 </html>

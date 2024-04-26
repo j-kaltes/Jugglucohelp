@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 7.6.5.2 (Windows)"/>
+	<meta name="created" content="2023-02-21T11:28:36.352406009"/>
+	<meta name="changed" content="2024-03-30T12:45:42.391000000"/>
+	<style type="text/css">
+		@page { size: 21.01cm 29.69cm; margin: 2.01cm }
+		h1 { margin-bottom: 0.2cm; background: transparent }
+		h1.western { font-family: "Liberation Sans", sans-serif; font-size: 18pt }
+		h1.cjk { font-family: "Source Han Sans CN"; font-size: 18pt }
+		h1.ctl { font-family: "Droid Sans Devanagari"; font-size: 18pt }
+		p { margin-bottom: 0.25cm; background: transparent }
+		pre { font-family: "Liberation Mono", monospace; background: transparent }
+	</style>
+</head>
+<img src="webserver.jpg" name="Изображение1" align="left" width="2400" height="1080" border="0"/>
+<body lang="en-US" dir="ltr"><h1 class="western"><font face="Times New Roman, serif"><font size="6" style="font-size: 24pt"><span lang="ru-RU">В</span>еб
+сервер</font></font></h1>
+<p style="margin-bottom: 0cm"><font face="Times New Roman, serif"><span lang="ru-RU"><span lang="en-US">Jug</span></span><span lang="en-US"><span lang="ru-RU">g</span></span><span lang="ru-RU"><span lang="en-US">luco</span></span>
+включает в себя веб-сервер, с помощью
+которого другие приложения могут
+получать значения уровня глюкозы от
+Juggluco. Его можно использовать с часами
+xDrip и некоторыми приложениями Nightscout.</font></p>
+<p style="margin-bottom: 0cm"><font face="Times New Roman, serif">Использовать
+приложения, созданные для использования
+веб-сервера xDrip относительно легко.
+Просто проверьте активн<span lang="ru-RU">ость</span>.
+В дальнейшем они смогут получать глюкозу
+с адреса 127.0.0.1 по порту 17580. URL сервера
+Nightscout: http://127.0.0.1:17580.</font></p>
+<p style="margin-bottom: 0cm"><font face="Times New Roman, serif">Кроме
+того, им могут воспользоваться некоторые
+последователи Nightscout. xDrip, Diabox, приложение
+<a href="https://github.com/dabear/FloatingGlucose/releases">Windows
+Floating Glucose</a> и виджет Windows, Linux и macOS (<a href="https://github.com/kashamalasha/nightscout-widget-electron">Owlet</a>)
+можно использовать с http, если не установлен
+параметр «Только локально». В MacOS то же
+самое относится к строке меню Nightscout,
+статусу Gluco и трекеру Gluco (все в Apple Store).
+Вам также нужен только http для <a href="https://github.com/someoneAnyone/Nightscouter">Nightscouter</a>
+и <a href="https://github.com/jonfawcett/LoopFollow">LoopFollow
+</a>(IOS) и <a href="https://github.com/nightscout/nightguard">Nightguard</a>
+(IOS и WatchOS).</font></p>
+<p style="margin-bottom: 0cm"><font face="Times New Roman, serif">Если
+вы хотите получить доступ к Juggluco через
+Интернет, вам необходимо перенаправить
+порт с вашего модема/<span lang="ru-RU">роутера</span>.
+<span lang="ru-RU">Смотрите</span>:</font></p>
+<ul>
+	<li><p style="margin-bottom: 0cm"><a href="https://www.makeuseof.com/tag/what-is-port-forwarding-and-how-can-it-help-me"><font face="Times New Roman, serif">https://www.makeuseof.com/tag/what-is-port-forwarding-and-how-can-it-help-me</font></a></p></li>
+	<li><p style="margin-bottom: 0cm"><a href="https://www.juggluco.nl/Juggluco/phones/index.html"><font face="Times New Roman, serif">https://www.juggluco.nl/Juggluco/phones/index.html</font></a></p></li>
+	<li><p style="margin-bottom: 0cm"><font face="Times New Roman, serif">Левое
+	среднее меню-&gt;Зеркало-&gt;<a href="https://www.juggluco.nl/Jugglucohelp/addconnection.html">Добавить
+	соединение</a>-&gt;Справка.</font></p></li>
+</ul>
+<p style="margin-bottom: 0cm"><font face="Times New Roman, serif">Другие
+последователи Nightscout используют только
+https, для этого требуется, чтобы у Juggluco
+был аутентифицированный SSL-ключ для
+доменного имени, используемого для
+доступа к Juggluco. Если с вашим внешним
+IP-адресом связано имя хоста, вы можете
+бесплатно получить сертификат через
+<a href="https://certbot.eff.org/instructions">Certbot</a>. Вы не
+сможете использовать его, если у вашего
+внешнего IP-адреса нет имени хоста. Вы
+можете получить бесплатное доменное
+имя на сайте <a href="https://www.freenom.com/">https://www.freenom.com</a>.
+Я попробовал, но через несколько недель
+без какого-либо уведомления они просто
+забрали у меня домен, а когда я попытался
+зарегистрировать его снова, у него была
+цена. Вы можете купить имя хоста за
+несколько евро в год (например, на
+<a href="https://www.strato.nl/domeinnaam">https://www.strato.nl/domeinnaam</a>).</font></p>
+<p style="margin-bottom: 0cm"><font face="Times New Roman, serif">После
+установки Certbot и перенаправления порта
+80 (http) с модема на компьютер вы можете
+просто нажать:</font></p>
+<pre style="margin-bottom: 0.51cm"><font face="Times New Roman, serif"><i>certbot certonly --standalone --preferred-challenges http -d имя_хоста</i></font></pre><p>
+<font face="Times New Roman, serif">См.
+<a href="https://devpress.csdn.net/linux/62e7999e907d7d59d1c8cfd0.html">https://devpress.csdn.net/linux/62e7999e907d7d59d1c8cfd0.html</a>.</font></p>
+<p style="margin-bottom: 0cm"><font face="Times New Roman, serif">После
+использования Certbot я нашел закрытый
+ключ в /etc/letsencrypt/live/myhostname/privkey.pem и полную
+цепочку в /etc/letsencrypt/live/myhostname/fullchain.pem.
+«myhostname» — это имя хоста, которое я
+использовал.</font></p>
+<p style="margin-bottom: 0cm"><font face="Times New Roman, serif">Если
+вы получили файлы ключей от центра SSL,
+вам необходимо передать их Juggluco. Закрытый
+ключ можно прочитать, нажав «Частный
+ключ», а полную цепочку — нажав «Полная
+цепочка».</font></p>
+<p style="margin-bottom: 0cm"><font face="Times New Roman, serif">Если
+вы просто хотите отправить значения
+уровня глюкозы с одного Android на другой,
+вам лучше использовать функцию <a href="https://www.juggluco.nl/Juggluco/index.html#mirror">зеркала</a>
+Jugfluco (левое среднее меню-&gt; <a href="https://www.juggluco.nl/Jugglucohelp/connectionoverview.html">Зеркало</a>).</font></p>
+<p style="margin-bottom: 0cm"><font face="Times New Roman, serif">Вам
+нужен SSL для приложений Android AAPS, Diabetes:M,
+Nightwatch и Checkmate, Sugarmate (MacOS и IOS) и Xdrip4ios,
+Shuggah и Cockpit (IOS). Укажите в качестве
+URL-адреса сервера Nightscout:</font></p>
+<p><font face="Times New Roman, serif">https://имя хоста:порт</font></p>
+<p><font face="Times New Roman, serif">имя хоста — это
+имя хоста аутентифицированного ключа,
+который вы предоставили <span lang="en-US"><span lang="ru-RU">Jug</span></span><span lang="en-US"><span lang="ru-RU">g</span></span><span lang="en-US"><span lang="ru-RU">luco</span></span>,
+порт — это порт, который вы перенаправили
+на порт, указанный вами на этом экране
+(по умолчанию: 17581).</font></p>
+<p style="margin-bottom: 0cm"><font face="Times New Roman, serif">AAPS
+можно использовать с Juggluco 7.3.0 и выше.
+Для этого вам необходимо выбрать
+NSClientV3 в AAPS со следующими настройками:</font></p>
+<ul>
+	<li><p style="margin-bottom: 0cm"><font face="Times New Roman, serif">используйте
+	в качестве токена доступа NS указанный
+	здесь API-секрет;</font></p></li>
+	<li><p style="margin-bottom: 0cm"><font face="Times New Roman, serif">снимите
+	флажок «Подключаться к веб-сокетам»;</font></p></li>
+	<li><p style="margin-bottom: 0cm"><font face="Times New Roman, serif">в
+	разделе «Синхронизация» отключите все
+	загрузки. Включите только:</font></p>
+	<ul>
+		<li><p style="margin-bottom: 0cm"><font face="Times New Roman, serif">Получение/заполнение
+		данных CGM;</font></p></li>
+		<li><p style="margin-bottom: 0cm"><font face="Times New Roman, serif">Получ<span lang="ru-RU">ение</span>
+		инсулин<span lang="ru-RU">а</span>;</font></p></li>
+		<li><p style="margin-bottom: 0cm"><font face="Times New Roman, serif">Получ<span lang="ru-RU">ение</span>
+		углевод<span lang="ru-RU">ов</span>;</font></p></li>
+		<li><p style="margin-bottom: 0cm"><font face="Times New Roman, serif">Получать
+		терапевтические мероприятия;</font></p></li>
+	</ul>
+	<li><p style="margin-bottom: 0cm"><font face="Times New Roman, serif">Отключите
+	все «расширенные настройки».</font></p></li>
+</ul>
+<p style="margin-bottom: 0cm"><font face="Times New Roman, serif">Вставка
+сумм перед ранее введенными суммами
+приводит к тому, что AAPS будет иметь
+дублирующиеся процедуры. Это также
+происходит, когда интерфейс v3 используется
+с сервером Nightscout, который получает
+загрузки v3 от Juggluco.</font></p>
+<p><font face="Times New Roman, serif">Иногда AAPS начинает
+запрашивать у сервера лечение только
+после принудительной остановки и
+перезапуска AAPS.</font></p>
+<p style="margin-bottom: 0cm"><font face="Times New Roman, serif">Веб-сервер
+также можно запустить на компьютере с
+Linux. Он будет получать свои данные через
+<a href="https://www.juggluco.nl/Juggluco/index.html#mirror">зеркальное
+соединение</a> от Juggluco, подключенное к
+датчику: <a href="https://www.juggluco.nl/Juggluco/cmdline/index.html">https://www.juggluco.nl/Juggluco/cmdline</a>.</font></p>
+<p style="margin-bottom: 0cm"><font face="Times New Roman, serif">Другой
+телефон может подключиться к этому
+серверу через зеркальное соединение
+или в качестве подписчика Nightscout (например,
+на Iphone). Если какое-либо приложение
+Nightscout не работает с этим веб-сервером,
+сообщите мне. Возможно, его можно
+заставить работать с некоторыми
+изменениями. (Приложения IOS Nightscout и
+Nightscout X предназначены только для одной
+конкретной серверной программы Nightscout
+и не будут работать с Juggluco.)</font></p>
+<p style="margin-bottom: 0cm"><font face="Times New Roman, serif"><b>api_secret:
+</b></font><font face="Times New Roman, serif">укажите, что
+подписчики должны установить это
+значение для элемента заголовка http
+api_secret. Этот секрет также работает, когда
+последователи используют этот секрет
+в качестве <a href="https://www.juggluco.nl/Juggluco/webserver.html#token">токена
+Nightscout</a> или используют заголовок
+API-секрета с секретом, закодированным
+SHA1. Начиная с Juggluco 7.1.15 также можно сделать
+api_secret первым элементом пути URL-адреса
+сервера Nightscout. Если xyz — это api_secret, а
+http://имя_хоста:порт — это URL-адрес сервера
+Nightscout, вы можете указать
+http://имя_хоста:порт/x</font><font face="Times New Roman, serif">y</font><font face="Times New Roman, serif">z
+в качестве URL-адреса сервера Nightscout.</font></p>
+<p style="margin-bottom: 0cm"><font face="Times New Roman, serif"><b>Видимый:
+</b>сделать секрет видимым</font></p>
+<p style="margin-bottom: 0cm"><font face="Times New Roman, serif"><b>Порт:</b>
+укажите сетевой порт, используемый для
+связи с https-сервером. По умолчанию —
+17581.</font></p>
+<p style="margin-bottom: 0cm"><font face="Times New Roman, serif"><b>Сохранить:
+</b>сохранить изменения </font>
+</p>
+<p style="margin-bottom: 0cm"><font face="Times New Roman, serif"><b>Использовать
+SSL:</b> используйте SSL (https). Для SSL вам
+необходимо указать закрытый ключ и
+полную цепочку для имени хоста,
+используемого для связи с этой службой.</font></p>
+<p style="margin-bottom: 0cm"><font face="Times New Roman, serif"><b>Закрытый
+ключ: </b>выберите файл, содержащий
+закрытый ключ. См. выше.</font></p>
+<p style="margin-bottom: 0cm"><font face="Times New Roman, serif"><b>Полная
+цепочка: </b>выберите файл, содержащий
+полную цепочку, см. выше.</font></p>
+<p style="margin-bottom: 0cm"><font face="Times New Roman, serif"><b>Интервал:
+</b></font><font face="Times New Roman, serif">минимальный
+интервал по умолчанию (в секундах) между
+значениями уровня глюкозы. Обычно это
+270 секунд. Запрос также может изменить
+это значение, указав опцию интервала=.
+См. <a href="https://www.juggluco.nl/Juggluco/webserver.html">https://www.juggluco.nl/Juggluco/webserver.html</a>.</font></p>
+<p style="margin-bottom: 0cm"><font face="Times New Roman, serif"><b>Только
+локально:</b> доступ к http-серверу возможен
+только через локальный хост (127.0.0.1). Это
+не относится к https.</font></p>
+<p style="margin-bottom: 0cm"><font face="Times New Roman, serif"><span lang="ru-RU"><b>Указать
+суммы</b></span></font><font face="Times New Roman, serif"><b>:
+</b></font><font face="Times New Roman, serif">разрешить
+получение введенных сумм с помощью
+<a href="http://127.0.0.1:17580/api/v1/treatments?count=3">http://127.0.0.1:17580/api/v1/treatments?count=3</a>.
+(Вы должны указать для каждой метки, что
+с ней нужно делать. Раньше это было так
+же, как и для Libreview, после версии 4.18.0 вы
+можете размещать метки в разных категориях
+для Libreview и этого веб-сервера.) Через
+этот интерфейс xDrip может получить суммы
+от Juggluco. В xDrip это можно сделать двумя
+способами:</font></p>
+<ol>
+	<li><p style="margin-bottom: 0cm"><span style="font-variant: normal"><font face="Times New Roman, serif">Возьмите
+	«Аппаратный источник данных», «Nightscout
+	Follower» и укажите «Следовать по URL»,
+	<a href="http://127.0.0.1:17580/api/v1/treatments?count=3">http://127.0.0.1:17580</a>
+	и отметьте «Загрузить процедуры».</font></span></p></li>
+	<li><p style="margin-bottom: 0cm"><font face="Times New Roman, serif"><span style="font-variant: normal">Возьмите
+	другой аппаратный источник данных,
+	например Libre (пропатченное приложение),
+	и включите «Настройки» -&gt; «Загрузка
+	в облако» -&gt; Nightscout Sync (REST-API). Введите в
+	качестве URL-адреса базового API
+	http://somekey@127.0.0.1:17580/api/v1/ и включите
+	«Загрузить процедуры». Загрузка в
+	Juggluco невозможна, поэтому загружаются
+	только процедуры и выдаются сообщения
+	об ошибках.</span></font></p></li>
+</ol>
+<p style="margin-bottom: 0cm"><font face="Times New Roman, serif"><span style="font-variant: normal">Если
+флажок «Только локально» снят, вы также
+можете использовать IP-адрес домашней
+сети телефона, на котором работает
+Juggluco, когда вы настраиваете модем для
+пересылки на номер 17580 </span><span style="font-variant: normal"><span lang="ru-RU">как
+</span></span><span style="font-variant: normal"> внешний
+IP-адрес вашего телефона. Если вы
+предоставили Juggluco закрытый ключ и полную
+цепочку для имени хоста, по которому
+можно получить доступ к телефону, и
+включили использование SSL, вы также
+можете использовать имя хоста и указанный
+здесь порт, используя https вместо http.</span></font></p>
+<p style="margin-bottom: 0cm"><font face="Times New Roman, serif"><span style="font-variant: normal">Если
+вы хотите загрузить методы лечения в
+Diabetes:M, вы можете либо отправить данные
+Juggluco в Libreview и сохранить данные в Libreview
+с помощью «Загрузить данные о глюкозе»,
+а затем импортировать эти данные в
+Diabetes:M с помощью </span><span style="font-variant: normal"><span lang="ru-RU">Данные</span></span><span style="font-variant: normal">-&gt;Импорт
+из других источников-&gt;Freestyle. или получите
+аутентифицированный ключ для внешнего
+имени хоста вашего телефона и укажите
+в качестве ссылки внешний источник
+Nightscout с URL-адресом: https://yourhostname:Port, где
+yourhostname — это имя хоста вашего телефона,
+на котором работает Juggluco, для которого
+вы получили аутентифицированный ключ,
+а Порт — это порт, который вы здесь
+упомянули. Похоже, он не синхронизируется
+автоматически, поэтому в Diabetes:M вам
+придется самостоятельно </span><span style="font-variant: normal"><span lang="ru-RU">вручную
+</span></span><span style="font-variant: normal">нажимать
+«Синхронизировать».</span></font></p>
+<p style="margin-bottom: 0cm"><font face="Times New Roman, serif"><b>Активно</b>:
+веб-сервер работает.</font></p>
+<p style="margin-bottom: 0cm"><font face="Times New Roman, serif">Дополнительную
+информацию о командах веб-сервера
+Nightscout/xDrip, реализованных в Juggluco, см. на
+странице <a href="https://www.juggluco.nl/Juggluco/webserver.html">https://www.juggluco.nl/Juggluco/webserver.html.</a></font></p>
+<p style="margin-bottom: 0cm"><br/>
+
+</p>
+</body>
+</html>

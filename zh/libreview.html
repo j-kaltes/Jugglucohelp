@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title>Libreview</title>
+	<style type="text/css">
+		@page { size: 8.27in 11.69in; margin: 0.79in }
+		p { margin-bottom: 0.1in; background: transparent }
+		a.cjk:link { so-language: zxx }
+		a.ctl:link { so-language: zxx }
+	</style>
+</head>
+<img src="libreview.jpg"  style="object-fit:contain; width:15cm;                   height:auto;margin: 1cm 1cm 1cm 1cm;">
+<body lang="zh-CN" dir="ltr"><h1>Libreview（不确定中国大陆地区是否可用，自行测试）</h1>
+<p style="line-height: 100%; margin-bottom: 0in">Juggluco 可以将血糖数据和标签发送到 Libreview。当使用 Libre 0 或 3 传感器、美国/加拿大/澳大利亚 Libre 2 传感器或设置了<i>蓝牙历史记录</i>的其他 Libre 2 传感器时，Juggluco 将历史值发送到 Libreview。如果 Libre 2 传感器在没有“<i>蓝牙历史记录</i>”的情况下使用，Juggluco 将使用通过蓝牙接收的流数据来创建这些 15 分钟点，方法是对每个点周围的流值进行平均。</p>
+<p style="line-height: 100%; margin-bottom: 0in">与 Librelink 应用程序一样，它将过去 89 天的数据发送到 Libreview。</p>
+<p style="line-height: 100%; margin-bottom: 0in"><span lang="zh-CN">要使用此服务，您需要在<a class="western" href="https://libreview.com/">https://libreview.com</a> 创建一个 Libreview 账户，并在此处指定其电子邮件地址和密码。</span> <span lang="zh-CN">不要将相同时期的数据多次发送到同一个 Libreview 账户（例如从 Librelink 应用程序和 Juggluco）。您可以在 Libreview 中的账户设置-&gt;我的设备中删除现有设备，或者您可以使用一个新的 Libreview 账户。</span></p>
+<p style="line-height: 100%; margin-bottom: 0in"><span lang="zh-CN">要打开它，您还需要勾选“</span><span lang="zh-CN"><i><b>发送到 libreview</b></i></span><span lang="zh-CN"><i>”。</i></span><span lang="zh-CN">
+</span>
+</p>
+<p style="line-height: 100%; margin-bottom: 0in">每当您切换离开 Juggluco 且上次 20 分钟内未完成时，Juggluco 将向 Libreview 发送新数据。您也可以通过按<i>“</i><i><b>立即发送</b></i><i>”</i>手动将其发送到 Libreview。</p>
+<p style="line-height: 100%; margin-bottom: 0in">除了血糖值，还可以将标签发送到 Libreview。为此，您需要点击“<a class="western" href="https://www.juggluco.nl/Jugglucohelp/librenumhelp.html"><i><b>发送标签</b></i></a>”并指定每个标签的含义。</p>
+<p style="line-height: 100%; margin-bottom: 0in"><b>RU</b>：如果您使用的是<a class="western" href="https://libreview.ru/">https://libreview.<span style="text-decoration: none"><b>ru</b></span></a> 而不是 <a class="western" href="https://libreview.com/">https://libreview.com</a>，则需要设置此选项。这仅适用于 Libre 2 传感器。Libre 3 传感器只能与 libreview.com 一起使用，因为没有俄罗斯的 Libre 3 应用程序。</p>
+<p style="line-height: 100%; margin-bottom: 0in"><b>立即发送</b>：当 Libre 2 或 3 传感器到达时，立即将血糖值发送到 Libreview。这仅在与 LibreLinkUp 结合使用时有用。要使用它，您需要在 Abbott 的 Libre 应用程序中将 LibreLinkUp 连接添加到此 Libreview 账户。如果您所在国家没有 Abbott Libre 应用程序，您可以使用<a class="western" href="https://www.juggluco.nl/Juggluco/libre3/patched.html">修补版 Libre 3 应用程序</a>。有时，值不会立即显示，因为 LibreLinkUp 的显示不会自动重绘。如果您不仔细查看，使用 LibreLinkUp 非常危险，因为当您触摸图表时，它会显示旧值而不是当前血糖值。</p>
+
+<p style="line-height: 100%; margin-bottom: 0in"><b>查看状态同步</b>：当设置此选项时，Juggluco 将向 Libreview 发送值是否被查看的信息。当关闭此选项时，Juggluco 将始终表示未查看。仅当同时打开<i>立即发送</i>时，此选项才会可靠地将此信息发送到 Libreview。为了捕捉 Libre 3 的所有查看情况，Juggluco 应该始终连接到互联网，Libre 2 可以记住所有查看情况，只要它没有被终止。</p>
+<p style="line-height: 100%; margin-bottom: 0in"><b>选择数据发送</b>：重新开始；从指定的日期和时间重新发送数据。当切换到新的 Libreview 账户时，您需要按下此按钮。</p>
+<p style="line-height: 100%; marg  in-bottom: 0in">下方的“获取账户 ID”按钮下方显示了上次尝试发送到 Libreview 的结果。</p>
+<p style="line-height: 100%; margin-bottom: 0in">由于发送到 Libreview 的值首先被转换为每 15 分钟的一个数据点，然后进行分析，因此 Juggluco 的统计屏幕和 Libreview 显示的值之间可能存在小的差异。例如，Libreview 表示 100% 的时间处于活动状态，而 Juggluco 的统计屏幕表示 96.0%。此外，一些高值和低值将被平均掉，因此 Libreview 给出的<i>目标时间</i>比 Juggluco 的统计屏幕更高。由于传感器上创建的历史值比围绕历史值的流值的平均值更不极端，因此当 Libreview 基于<i>历史</i>值时（例如在 Juggluco 中启用“蓝牙历史”或使用 Librelink 时），这种差异会更大。</p>
+<p style="line-height: 100%; margin-bottom: 0in">Juggluco 可以同时连接多个传感器，而 Librelink 一次只能处理一个传感器。Juggluco 也一次只将一个传感器的数据发送到 Libreview。它首先发送一个传感器的数据，只有在该传感器没有可用数据后，才发送下一个传感器的数据。当 Juggluco 切换到下一个传感器时，Juggluco 不会回到前一个传感器，以模仿 Librelink 的一个传感器策略。这意味着当您同时运行多个传感器且后添加的传感器比先添加的传感器更早结束时，这个先添加的传感器将不再向 Libreview 发送数据。</p>
+<p><a class="western" href="https://www.juggluco.nl/Jugglucohelp/getaccountidhelp.html"><b>获取账户 ID</b></a>：如果您只想接收 LibreView 账户 ID，但不想将数据发送到 Libreview，您可以填写您的电子邮件地址和密码，然后按“<a class="western" href="https://www.juggluco.nl/Jugglucohelp/getaccountidhelp.html"><i>获取账户 ID</i></a>”。在此按钮之前的同一行，将显示账户 ID（这可能需要一些时间，且屏幕不会自动刷新）。从 LibreView 服务器检索账户 ID，使得可以使用与此 LibreView 账户已经使用的 Abbotts Libre 3 应用程序的 FreeStyle Libre 3 传感器。</p>
+
+<p><b>警告</b>：应该使用此账户激活 Freestyle Libre 3 传感器。</p>
+</body>
+</html>
+
+

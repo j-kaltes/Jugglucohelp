@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title>悬浮窗</title>
+	<base target="_blank">
+	<meta name="generator" content="LibreOffice 7.6.4.1 (Linux)"/>
+	<meta name="created" content="00:00:00"/>
+	<meta name="changed" content="2024-02-29T12:19:09.186429930"/>
+	<meta name="created" content="00:00:00">
+	<style type="text/css">
+		@page { size: 8.27in 11.69in; margin-left: 0.79in; margin-right: 0.39in; margin-top: 0.39in; margin-bottom: 0.39in }
+		h1 { margin-bottom: 0.08in; background: transparent }
+		h1.western { font-family: "Liberation Serif", serif }
+		h1.cjk { font-family: "Droid Sans Fallback" }
+		h1.ctl { font-family: "Droid Sans Devanagari" }
+		p { margin-bottom: 0.1in; background: transparent }
+	</style>
+ <base href="https://www.juggluco.nl/Jugglucohelp/mgdL/" id="baseurl" target="_blank">
+
+<script type="text/javascript"> 
+function getunitarg(){ 
+	const params = new URLSearchParams(document.location.search);
+	const unit = params.get("unit");
+	if(unit===null)	 {
+		return 0;
+		}
+	if(unit == "mg/dL") { 
+		return 2;
+		} 
+	else { 
+		if(unit=="mmol/L") {
+		   return 1;
+		   }
+	 	}
+
+	return 0;
+    } 
+let mmol=[
+"AM",
+"AU",
+"BA",
+"BG",
+"BW",
+"BY",
+"CA",
+"CH",
+"CN",
+"CZ",
+"DK",
+"EE",
+"FI",
+"GB",
+"HK",
+"HR",
+"HU",
+"IE",
+"IS",
+"KW",
+"KZ",
+"LT",
+"LV",
+"MT",
+"MY",
+"NA",
+"NL",
+"NO",
+"NZ",
+"RS",
+"RU",
+"SE",
+"SI",
+"SK",
+"UA",
+"ZA"];
+
+
+
+
+
+
+function getunit() {
+	var unit=getunitarg();
+	if(unit!=0) {
+		return unit;
+		}
+
+	var userLang = navigator.language || navigator.userLanguage;
+	var  co=userLang.toUpperCase();
+
+	for(const element of mmol) {
+	  if(co.includes(element)) {
+		return 1;
+		}
+	   }
+
+	return 2;
+	 }
+
+
+
+function setbaseurl(){ 
+	if(getunit()!=1) {
+		document.getElementById("baseurl").href = "https://www.juggluco.nl/Jugglucohelp/mgdL/"; 
+		} 
+	else { 
+	       document.getElementById("baseurl").href = "https://www.juggluco.nl/Jugglucohelp/";  
+		}
+   	} 
+   setbaseurl();
+   </script> 
+</head>
+ <img src="floatingglucoseconfig.png"  style="object-fit:contain; width:15cm;                   height:auto;">
+<body lang="en-US" dir="ltr"><h1 class="western">悬浮窗</h1>
+<p>在这里，您可以设置悬浮窗的字体大小、前景色和背景色。文字颜色和背景颜色选项切换可以更改对应的颜色。
+</p>
+<p><b>可触摸</b>：设置后，您可以用手指移动悬浮窗，并通过长按（不移动）来移除它。当未设置可触摸时，触摸输入会传递到悬浮窗下面的窗口，因此您可以使用悬浮窗下面的应用。您也可以通过<b>双击</b>悬浮窗来使其不可触摸。</p>
+<p><b>透明</b>：悬浮窗改成透明。</p>
+<p><b>置顶</b>：悬浮窗也会显示在Juggluco之上。</p>
+<p><b>时间</b>：血糖值的时间戳。</p>
+<p><b>开启悬浮窗</b>：开启它。</p>
+<p>输入<b>字体大小</b>后，您需要按软键盘上的“<i>Enter”，</i>“<i>Done</i>”或“✓”按钮。</p>
+
+	<p>您可以通过左侧中间菜单的 Float 来开启或关闭悬浮窗。
+	</p>
+	<p>通过点击悬浮窗的<b>箭头侧</b>可以切换到 Juggluco。双击血糖值侧会使悬浮窗变得不可触摸。<b>长按</b>血糖值会仅显示一个小的血糖值，以便您可以与下方的内容互动，点击小显示屏会再次放大。触摸血糖值侧边时移动，<b>移动</b>悬浮窗。</p>
+	<p>要在其他应用上显示 Juggluco 需要特殊权限。在 WearOS 和 Android Automotive 上，您需要使用 adb 来授予此权限：</p>
+	<p style="margin-bottom: 0in"><b>adb shell pm grant tk.glucodata android.permission.SYSTEM_ALERT_WINDOW</b></p>
+	<p style="background: transparent">在一些手表上（例如 TicWatch Pro），您也可以通过 Android/WearOS 设置-&gt;应用与通知-&gt;应用信息-&gt;Juggluco-&gt;高级-&gt;在其他应用上显示 来允许它。</p>
+	</body>
+	</html>

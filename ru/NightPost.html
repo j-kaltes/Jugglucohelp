@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title>Uploader</title>
+	<meta name="generator" content="LibreOffice 7.6.5.2 (Windows)"/>
+	<meta name="created" content="2023-03-10T12:04:13.361070488"/>
+	<meta name="changed" content="2024-03-30T12:02:00.570000000"/>
+</head>
+<img src="uploader.jpg" name="Изображение1" align="left" width="1402" height="631" border="0"/>
+<body lang="en-US" dir="ltr"><h1>
+<br/>
+<br/>
+
+</h1>
+<p><br/>
+<br/>
+
+</p>
+<p><br/>
+<br/>
+
+</p>
+<p><br/>
+<br/>
+
+</p>
+<h1><font face="Times New Roman, serif">Загрузить на
+</font><font face="Times New Roman, serif"><span lang="ru-RU">сервер
+</span></font><font face="Times New Roman, serif"><span lang="en-US">Nightscout</span></font></h1>
+<p><font face="Times New Roman, serif">В большинстве
+случаев вы также можете использовать
+<a href="https://www.juggluco.nl/Jugglucohelp/Nightscouthelp.html">веб-сервер</a>
+в Juggluco или <a href="https://www.juggluco.nl/Juggluco/cmdline">juggluco-server</a>.
+Некоторым</font> <font face="Times New Roman, serif">приложениям,
+которые не делают ничего, кроме отображения
+веб-страницы Nightscout, нужен <a href="https://github.com/nightscout/cgm-remote-monitor">cgm-remote-monitor.</a>
+Вы даже можете использовать AAPS и
+AAPSClient с веб-сервером в Juggluco 7.4.1.</font></p>
+<p><font face="Times New Roman, serif">Все значения потока
+загружаются на сервер Nightscout в момент
+их поступления. При использовании
+нескольких датчиков загружаются все
+значения всех датчиков. Некоторые
+приложения/циферблаты/виджеты для часов
+Garmin предполагают изменение значений с
+интервалом в 5 минут. Когда они получают
+значения глюкозы с интервалом в одну
+минуту, они показывают только последнюю
+пятую часть кривой. По этой причине
+веб-сервер, встроенный в Juggluco, разделяет
+значения на 5 минут, за исключением
+случаев, когда для параметра «интервал
+= секунды» установлено меньшее значение.</font></p>
+<p><font face="Times New Roman, serif">URL-адрес: URL-адрес
+должен иметь вид https://имя хоста:порт,
+например https://myname.herokuapp.com:6789.</font></p>
+<p><font face="Times New Roman, serif">Активно: включение
+загрузчика</font></p>
+<p><font face="Times New Roman, serif">test V3: позвольте
+Juggluco использовать API/v3 для загрузки в
+Nightscout. Не используйте его для загрузки
+на сервер Nightscout, который ранее получал
+загрузки V1, и не отправляйте загрузки
+V1 на сервер Nightscout, который ранее получал
+загрузки V3. На месте api_secret нужно указать
+Access Token с разрешением на загрузку процедур
+и записей. Вы можете создать его в
+веб-интерфейсе Nightscout в разделе «Инструменты
+администратора».</font></p>
+<p><font face="Times New Roman, serif">Выдавайте суммы:
+также отправляйте суммы в виде лечения
+в Nightscout. Прикосновение к флажку приведет
+вас к диалоговому окну, в котором вы
+можете указать для каждой метки, что
+она означает в Nightscout. Эти характеристики
+доступны веб-серверу в Juggluco (Левое меню
+→ Настройки → <a href="https://www.juggluco.nl/Jugglucohelp/Nightscouthelp.html">Веб-сервер</a>).
+Только когда все метки обработаны, можно
+поставить галочку «Выдать суммы». Если
+вы позже добавите новую метку, вам
+придется не забыть самостоятельно
+указать, что с ней делать. Из-за ошибки
+в <a href="https://github.com/nightscout/cgm-remote-monitor">Nightscout</a>
+вставки в более старые периоды времени
+или удаления отображаются только после
+добавления новых элементов с новым
+временем. Это значит, что в Nightscout лучше
+отправлять реже. Теперь это происходит
+каждый раз, когда пользователь
+переключается с Juggluco, выключая дисплей
+или переходя в другое приложение.</font></p>
+<p><font face="Times New Roman, serif">Повторная отправка
+данных: повторно загрузите все данные
+на сервер Nightscout.</font></p>
+<p><font face="Times New Roman, serif">Отправить сейчас:
+обычно данные отправляются немедленно,
+когда они поступают от датчика или
+зеркального соединения. Нажмите на эту
+кнопку, если по какой-то причине предыдущая
+попытка не удалась.</font></p>
+<p><font face="Times New Roman, serif">Версия WearOS Juggluco
+4.15.0 и более поздних версий также может
+загружать значения уровня глюкозы в
+Nightscout. Почти во всех случаях вам лучше
+отправлять их через версию Juggluco на
+телефоне или планшете или через сервер
+Juggluco на компьютере. Это разряжает
+батарею, особенно если не удается
+связаться с сервером Nightscout, поэтому
+лучше отключить “Активно”, когда нет
+надежного соединения.</font></p>
+</body>
+</html>

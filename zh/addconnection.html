@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 7.5.9.2 (Linux)"/>
+	<meta name="created" content="2021-07-02T15:57:22.472063254"/>
+	<meta name="changed" content="2024-02-06T17:39:44.205305283"/>
+	<style type="text/css">
+		@page { size: 8.27in 11.69in; margin: 0.79in }
+		p { margin-bottom: 0.1in; background: transparent }
+		h2.cjk { font-family: "Droid Sans Fallback" }
+		h2.ctl { font-family: "Droid Sans Devanagari" }
+	</style>
+</head>
+ <img src="addconnection.jpg" alt="Uploader" style="object-fit:contain; width:15cm;                   height:auto;">
+<body lang="en-US" dir="ltr"><h1>添加连接</h1>
+<p style="line-height: 100%; margin-bottom: 0in">指定与另一个Juggluco实例的连接。一个设备上的Juggluco通过IP/TCP将数据发送到另一个设备上的Juggluco。要建立连接，一个Juggluco必须在在一个端口监听，另一个在一个端口主动连接。这个Juggluco的端口在前一个屏幕中给出（左中菜单-&gt;<a href="https://www.juggluco.nl/Jugglucohelp/connectionoverview.html">镜像</a>）。在这里，您指定这个Juggluco互相联系的端口（主动联系）。如果要Juggluco主动传送数据，请选择“<b>仅主动</b>”。如果另一方选择被动传送数据，请选择“<b>仅被动</b>”，（仅主动适用于有一侧设备IP总变化，这里选主动本机理论上可以无视IP变化，仅被动就是对面可以无视，双方IP稳定可选择双向，都需要设置对面的IP）要双向同步数据“<b>双向</b>”选中。另一方的Juggluco应该根据您在这里选择的情况指定。</p>
+<p style="line-height: 100%; margin-bottom: 0in">如果这个Juggluco仅主动，您应该指定它应该联系的IP。如果那个主机有多个IP，您可以指定多个；例如，当两个设备有时通过家庭网络连接，有时直接作为便携式热点连接时。
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><b>警告：永远不要指定多个设备的IP，否则它们将各自只接收到部分数据（意思就是数据会乱七八糟的）（可以一个设备的多个IP，不可以多个设备的多个IP，多个设备需要多个添加连接，而不是一个）。</b>
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><b>主机名</b>：指定一个主机名而不是IP。这将使连接依赖于DNS名称服务器，因此会慢一些，并受到DNS名称服务器连接中断的影响。只有在您无法配置静态IP且主机名自动分配给动态IP（DHCP）的情况下，才应开启此选项。</p>
+<p style="line-height: 100%; margin-bottom: 0in">除了'仅主动'之外的所有情况，您都可以选择'<b>检测</b>'；在这种情况下，Juggluco会将首次联系Juggluco的IP保存为另一方的IP。验证正确的设备是否正在联系可以通过两种方式：选择'<b>测试IP</b>'来测试IP。如果您选择<b>测试标签</b>，则只有当双方都指定了相同的标签时，才会建立联系。</p>
+<p style="line-height: 100%; margin-bottom: 0in">选择<b>接收数据</b>如果您希望此应用程序充当镜像应用。
+</p>
+<p style="line-height: 100%; margin-bottom: 0in">如果您希望此设备成为数据的发送方（<b>发送数据</b>），您需要指定要发送的数据。</p>
+
+<p style="line-height: 100%; margin-bottom: 0in"><b>标签</b>：您指定的剂量、食物和运动数据。</p>
+<p style="line-height: 100%; margin-bottom: 0in"><b>扫描</b>：通过扫描传感器接收的数据（在Libre2下为扫描和历史记录，在Libre3下仅为通过蓝牙访问传感器所需的数据）。</p>
+<p style="line-height: 100%; margin-bottom: 0in"><b>蓝牙</b>：通过蓝牙接收的数据。在Libre3下，这包括历史数据。</p>
+<p style="line-height: 100%; margin-bottom: 0in">有时接收设备上已经存在一些数据。您可以指定这些数据存在的时间：</p>
+<p style="line-height: 100%; margin-bottom: 0in"><i>开始：</i>没有数据存在，全部传送</p>
+<p style="line-height: 100%; margin-bottom: 0in"><i>现在：</i>所有数据都存在，从现在开始发送</p>
+<p style="line-height: 100%; margin-bottom: 0in">或者在主界面的视图，拖动到确定的特定日期，就会在这个设置里看到这个日期 从这个日期传送数据。</p>
+<p style="line-height: 100%; margin-bottom: 0in">当向现有连接添加数据源时，开始日期仅决定添加的数据源。例如，如果扫描数据和蓝牙数据已经发送到主机，现在添加了标签，开始日期仅决定发送的标签。
+</p>
+<p style="line-height: 100%; margin-bottom: 0in">如果两个设备通过不安全的连接连接，可以通过在连接的两端指定相同的（最多）16个字符的<b>密码</b>对数据进行签名和加密。选择<b>保存</b>以保存您指定的内容。<b>删除</b>将删除连接。</p>
+<p style="line-height: 100%; margin-bottom: 0in">在最简单的情况下，所有连接都属于您的家庭网络，因此您可以使用本地IP。您也可以通过Wi-Fi通过互联网连接，这种情况下您应该查阅您的调制解调器手册了解如何将外部端口转发到您家庭网络的IP和端口。
+</p>
+<p style="line-height: 100%; margin-bottom: 0in">通过移动数据连接通过互联网连接的两部智能手机可以直接相互连接，如果其中一个可以在网络端口上监听（这种事情在中国大陆不可能，一定要使用一台带有公网IP的服务器作为中转，有一定技术难度）。如果两者都不能（例如，如果两者都没有单独的IP），它们仍然可以通过第三个设备相互通信。一种可能性（这种也不可能，中国大陆目前宽带几乎不可能有固定公网IP）是在家中通过调制解调器连接到互联网的Android设备（最低Android 4.4）上运行Juggluco。另一种可能性是在计算机上运行属于Juggluco的命令行程序（例如，您的PC或Amazon AWS）：
+<a href="https://www.juggluco.nl/Juggluco/cmdline/index.html">https://www.juggluco.nl/Juggluco/cmdline/index.html</a></p>
+<p style="line-height: 100%; margin-bottom: 0in">端口转发教程：</p>
+<p style="line-height: 100%; margin-bottom: 0in"><a href="https://portforward.com/how-to-port-forward/">https://portforward.com/how-to-port-forward/</a></p>
+<p style="line-height: 100%; margin-bottom: 0in"><a href="https://stevessmarthomeguide.com/understanding-port-forwarding/">https://stevessmarthomeguide.com/understanding-port-forwarding/</a></p>
+<p style="line-height: 100%; margin-bottom: 0in">可以在没有NFC的设备上通过蓝牙接收葡萄糖值（参见<a href="https://www.juggluco.nl/Juggluco/mirror">https://www.juggluco.nl/Juggluco/mirror</a>）：在NFC设备上通过NFC初始化传感器，然后将扫描和蓝牙数据发送到非NFC设备。之后，反转连接蓝牙数据，关闭NFC设备的蓝牙连接并在非NFC设备上打开，并在NFC设备中关闭“通过蓝牙的传感器”并在非NFC设备中打开。因此，您可以在一台设备上扫描，并在另一台设备上通过蓝牙获取葡萄糖值。但是在所有设备上都应该有所有传感器数据。如果设备交换数据，它们总是应该接收到扫描和蓝牙数据。因此，您应该始终将蓝牙数据发送回NFC设备，将扫描数据发送回非NFC设备。否则，数据将不同步，导致使用旧的认证数据或新数据被旧数据覆盖。</p>
+
+<p style="line-height: 100%; margin-bottom: 0in">标签数据完全独立。</p>
+<h2 class="western">网络问题</h2>
+<p>连接的两端需要严格的互补规范。一个简单的遗漏可能会使数据传输失败。</p>
+<p>连接可能会挂起，需要通过关闭或打开WIFI或按同步按钮来重置。此外，将<i>仅主动-仅被动</i>连接切换为<i>双向</i>或相反（人话就是多试试），也可能会有所不同。</p>
+<p>您还应该考虑连接更改时IP的更改。例如，在家庭网络上使用的IP与便携式热点上使用的IP不同。</p>
+<p><br/>
+<br/>
+</p>
+</body>
+</html>
+

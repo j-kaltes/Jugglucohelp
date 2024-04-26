@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+       <link rel="icon" href="../arrow.png">
+	<title>Juggluco</title>
+	<style>
+        h3{text-align: right;}
+
+
+	</style>
+	<script>
+function getunitarg(){ 
+	const params = new URLSearchParams(document.location.search);
+	const unit = params.get("unit");
+	if(unit == "mg/dL") { 
+		return 2;
+		} 
+	else { 
+		if(unit=="mmol/L") {
+		   return 1;
+		   }
+	 	}
+	return 0;
+    } 
+let mmol=[
+"AM",
+"AU",
+"BA",
+"BG",
+"BW",
+"BY",
+"CA",
+"CH",
+"CN",
+"CZ",
+"DK",
+"EE",
+"FI",
+"GB",
+"HK",
+"HR",
+"HU",
+"IE",
+"IS",
+"KW",
+"KZ",
+"LT",
+"LV",
+"MT",
+"MY",
+"NA",
+"NL",
+"NO",
+"NZ",
+"RS",
+"RU",
+"SE",
+"SI",
+"SK",
+"UA",
+"ZA"];
+
+
+
+
+
+
+function getunit() {
+	var unit=getunitarg();
+	if(unit!=0) {
+		return unit;
+		}
+
+	var userLang = navigator.language || navigator.userLanguage;
+	var  co=userLang.toUpperCase();
+	var hit=false;
+	for(const element of mmol) {
+	  if(co.includes(element)) {
+		return 1;
+		}
+	   }
+	  return 2;
+	 }
+if(getunit()==1) {
+	 window.location = "https://www.juggluco.nl/Jugglucohelp/introhelp.html?unit=mmol/L";
+	}
+else  {
+	 window.location = "https://www.juggluco.nl/Jugglucohelp/introhelp.html?unit=mg/dL";
+	 }
+</script>
+</head>
+<body lang="en-US" link="#000080" vlink="#800000" dir="ltr"><h2 class="western">
+<p>
+<a href="https://www.juggluco.nl/Juggluco">https://www.juggluco.nl/Juggluco</a>
+</p>
+</body>
+</html>
+
+
+
+

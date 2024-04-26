@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title>统计数据</title>
+	<meta name="generator" content="LibreOffice 7.5.8.2 (Linux)"/>
+	<meta name="created" content="00:00:00"/>
+	<meta name="changed" content="2023-12-25T10:32:53.684602023"/>
+	<style type="text/css">
+		@page { size: 8.27in 11.69in; margin-left: 0.79in; margin-right: 0.39in; margin-top: 0.39in; margin-bottom: 0.39in }
+		h1 { margin-bottom: 0.08in; background: transparent }
+		h1.western { font-family: "Liberation Serif", serif }
+		h1.cjk { font-family: "Noto Serif CJK SC"; font-size: 24pt }
+		h1.ctl { font-family: "Mangal"; font-size: 24pt }
+		p { line-height: 115%; margin-bottom: 0.1in; background: transparent }
+		h3 { margin-top: 0.1in; margin-bottom: 0.08in; background: transparent }
+		h3.western { font-family: "Liberation Serif", serif }
+		h3.cjk { font-family: "Noto Serif CJK SC" }
+		h3.ctl { font-family: "Mangal" }
+	</style>
+ <base href="https://www.juggluco.nl/Jugglucohelp/mgdL/" id="baseurl" target="_blank">
+<script type="text/javascript"> 
+function getunitarg(){ 
+	const params = new URLSearchParams(document.location.search);
+	const unit = params.get("unit");
+	if(unit == "mg/dL") { 
+		return 2;
+		} 
+	else { 
+		if(unit=="mmol/L") {
+		   return 1;
+		   }
+	 	}
+	return 0;
+    } 
+let mmol=[
+"AM",
+"AU",
+"BA",
+"BG",
+"BW",
+"BY",
+"CA",
+"CH",
+"CN",
+"CZ",
+"DK",
+"EE",
+"FI",
+"GB",
+"HK",
+"HR",
+"HU",
+"IE",
+"IS",
+"KW",
+"KZ",
+"LT",
+"LV",
+"MT",
+"MY",
+"NA",
+"NL",
+"NO",
+"NZ",
+"RS",
+"RU",
+"SE",
+"SI",
+"SK",
+"UA",
+"ZA"];
+
+
+
+
+
+
+
+function getunit() {
+	var unit=getunitarg();
+	if(unit!=0) {
+		return unit;
+		}
+
+	var userLang = navigator.language || navigator.userLanguage;
+	var  co=userLang.toUpperCase();
+	for(const element of mmol) {
+	  if(co.includes(element)) {
+		return 1;
+		}
+	   }
+
+	  return 2;
+	 }
+
+
+
+function setbaseurl(){ 
+	if(getunit()!=1) {
+		document.getElementById("baseurl").href = "https://www.juggluco.nl/Jugglucohelp/mgdL/"; 
+		} 
+	else { 
+	   document.getElementById("baseurl").href = "https://www.juggluco.nl/Jugglucohelp/"; 
+	   } 
+      } 
+   setbaseurl();
+   </script> 
+</head>
+
+ <img src="stats.png"  style="object-fit:contain; width:15cm;                   height:auto;">
+ <img src="summarygraph.jpg"  style="object-fit:contain; width:15cm;                   height:auto;">
+<body lang="en-US" dir="ltr"><h1 class="western">统计数据</h1>
+<p>一些从 <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8991298">AGP</a>
+中获取的统计数据，经过了一些小的修改。</p>
+<p>可以通过按下<b>天数</b>按钮来修改分析的天数。时期在屏幕结束位置的时间结束，并向后延伸指定的天数。所有数据仅基于每分钟通过蓝牙从传感器接收的血糖值（在Juggluco中称为<i>流</i>）。</p>
+<p>在屏幕的左侧是落入某些血糖范围的测量百分比。</p>
+<h3 class="western">活跃时间的百分比</h3>
+<p>Juggluco从传感器接收血糖值的时间百分比。</p>
+<h3 class="western">估计的A1C</h3>
+<p>用旧公式从平均血糖估计H<span lang="en-US">bA1c（Nathan</span> <span lang="en-US">et al (2008)）。参见
+<a href="https://professional.diabetes.org/diapro/glucose_calc">https://professional.diabetes.org/diapro/glucose_calc</a></span>
+<span lang="en-US">查看计算器。</span></p>
+<p><span lang="en-US">如果人们正在寻找Abbott的Libre</span> <span lang="en-US">2
+应用中显示的值，它在这里显示。GMI是这个指标的2018年替代品。</span>
+</p>
+<h3 class="western">血糖管理指标（GMI）</h3>
+<p><span lang="en-US">根据一般使用的公式从平均血糖计算（参见<a href="https://www.jaeb.org/gmi/">https://www.jaeb.org/gmi/</a>）。
+它是HbA1c（也称为A1c）的经验性预测，以百分比和mmol/mol给出。</span> <span lang="en-US">对我个人来说，估计的A1C是比GMI更好的预测器，但它在Abbott的Libre 3应用中使用。</span></p>
+<h3 class="western">血糖变异性：</h3>
+<p>作为衡量血糖变异性的系数，%CV=(SD/mean)*100%。较高的变异系数意味着血糖值离平均值更远。
+</p>
+<h3 class="western">摘要图</h3>
+<p>（仅当至少有9天的流血糖值可用时存在）。</p>
+<p>在此期间的所有流血糖值被用来绘制一个综合图表，显示每天的每一分钟血糖值是如何分布的。黑色或白色的中位线显示了每天每一分钟50%的血糖值低于该值的血糖值。最浅的蓝色是所有值所在的区域。较深的蓝色是围绕中位数的区域，其中90%的值位于该区域。最深的蓝色是围绕中位数的50%的值的区域。如果您将区域的边界视为线条，那么您也可以将其描述如下：在最低线下有0%的值，在第二低线下（在最浅的蓝色和中间的深蓝色之间）有5%的值，在第三线下（在最深的蓝色和中间的深蓝色之间）有25%的值，在黑线下有50%的值。接着是75%，95%和100%。
+</p>
+<p>出于审美原因，曲线用二项式滤波器平滑处理。</p>
+<p>点击屏幕关闭摘要图，除了当点击左边或右边的边界时，图表会向后或向前移动。通过滚动也可以向前和向后移动曲线。通过将两个手指向彼此靠近或远离来改变时间尺度。</p>
+</body>
+</html>

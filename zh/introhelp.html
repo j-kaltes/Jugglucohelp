@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <link rel="icon" href="https://www.juggluco.nl/Juggluco/arrow.png">
+    <title>这是一个简介</title>
+    <style>
+a:link {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: lightblue;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: green;
+  background-color: transparent;
+  text-decoration: underline;
+}
+</style> <style type="text/css">
+		@page { size: 8.27in 11.69in; margin: 0.79in }
+		td p { line-height: 115%; orphans: 2; widows: 2; margin-bottom: 0.1in; background: transparent }
+		p { orphans: 2; widows: 2; margin-bottom: 0.1in; background: transparent }
+	</style>
+ <base href="https://www.juggluco.nl/Jugglucohelp/mgdL/" id="baseurl" target="_blank">
+
+<script type="text/javascript"> 
+var unitstr='mg/dL';
+function getunitarg(){ 
+	const params = new URLSearchParams(document.location.search);
+	const unit = params.get("unit");
+	if(unit===null)	 {
+		return 0;
+		}
+	if(unit == "mg/dL") { 
+		return 2;
+		} 
+	else { 
+		if(unit=="mmol/L") {
+		   return 1;
+		   }
+	 	}
+	 console.log("unit wrong");
+//	params.delete("unit");
+//	window.location.search = params;
+//	 console.log("search="+	window.location.search);
+
+	return 0;
+    } 
+let mmol=[
+"AM",
+"AU",
+"BA",
+"BG",
+"BW",
+"BY",
+"CA",
+"CH",
+"CN",
+"CZ",
+"DK",
+"EE",
+"FI",
+"GB",
+"HK",
+"HR",
+"HU",
+"IE",
+"IS",
+"KW",
+"KZ",
+"LT",
+"LV",
+"MT",
+"MY",
+"NA",
+"NL",
+"NO",
+"NZ",
+"RS",
+"RU",
+"SE",
+"SI",
+"SK",
+"UA",
+"ZA"];
+
+
+
+
+
+
+function getunit() {
+	var unit=getunitarg();
+	if(unit!=0) {
+		return unit;
+		}
+
+	var userLang = navigator.language || navigator.userLanguage;
+	var  co=userLang.toUpperCase();
+
+	for(const element of mmol) {
+	  if(co.includes(element)) {
+	 	console.log("LANG mmol/L");
+//		window.location.search += 'unit=mmol/L';
+//	 	console.log("getunit search="+	window.location.search);
+		return 1;
+		}
+	   }
+	 console.log("LANG mg/dL");
+//	window.location.search += 'unit=mg/dL';
+//	console.log("getunit search="+	window.location.search);
+
+	return 2;
+	 }
+
+
+
+function setbaseurl(){ 
+	if(getunit()!=1) {
+		document.getElementById("baseurl").href = "https://www.juggluco.nl/Jugglucohelp/mgdL/"; 
+		 console.log("unitstr=mg/dL");
+		unitstr='mg/dL';
+		} 
+	else { 
+	       document.getElementById("baseurl").href = "https://www.juggluco.nl/Jugglucohelp/";  
+		 console.log("unitstr=mmol/L");
+		unitstr='mmol/L';
+		}
+   	} 
+   setbaseurl();
+   </script> 
+  </head>
+  <img src="left.png" style="object-fit:contain; width:15cm;                   height:auto;margin: 1cm 1cm 1cm 1cm;">
+    <img src="leftmiddle.png" style="object-fit:contain; width:15cm;                   height:auto;margin: 1cm 1cm 1cm 1cm;">
+    <img src="rightmiddle.png" style="object-fit:contain; width:15cm;                   height:auto;margin: 1cm 1cm 1cm 1cm;">
+    <img src="right.png" style="object-fit:contain; width:15cm;                   height:auto;margin: 1cm 1cm 1cm 1cm;">
+  <body dir="ltr" bgcolor="#000000" lang="en-US">
+    <p style="line-height: 115%; margin-bottom: 0in"> <font color="#ffffff"><font
+          face="Cambria, serif"><font style="font-size: 14pt" size="4"><b>Juggluco</b></font></font>
+          是一个用于控制糖尿病患者血糖的小程序。它可以扫描Freestyle Libre (0 和 2) 传感器（通过NFC）并通过蓝牙接收来自 <font color="#4f81bd"><font face="Calibri, serif"><i><b>Freestyle Libre 2</b></i></font></font><font color="#4f81bd"> </font><font
+                 color="#4f81bd"><font face="Calibri, serif"><i><b>和 3</b></i></font></font>
+          传感器的血糖值。</font></p>
+          <p style="line-height: 115%; margin-bottom: 0in"><font color="#ffffff">当程序首次运行时，你可以（在初始化之后）通过将其靠近智能手机的NFC传感器来扫描Freestyle Libre <b>2</b> 传感器。之后，Juggluco将尝试与Freestyle Libre 2传感器建立蓝牙连接，并在不进行扫描的情况下每分钟接收一次血糖值。</font></p>
+          <p style="line-height: 115%; margin-bottom: 0in"><font color="#ffffff">要接管已激活的FreeStyle Libre <b>3</b> 传感器（我不知道中国大陆是否可用），你需要在 <a href="https://www.juggluco.nl/Jugglucohelp/libreview.html">设置->Libreview</a> 中指定你用于激活传感器的Libreview账户信息，按下 <a href="https://www.juggluco.nl/Jugglucohelp/getaccountidhelp.html">"获取账户ID"</a> 并等待账户ID到达后再进行扫描。</font></p>
+          <p style="line-height: 115%; margin-bottom: 0in"><font color="#ffffff"><span
+                 lang="en-US">该程序包含四个</span> <font color="#4f81bd"><font
+                   face="Cambria, serif"><font style="font-size: 13pt" size="3"><span lang="en-US"><b>菜单</b></span></font></font></font>
+                   ：通过触摸显示屏的空白部分，你可以打开一个菜单。触摸屏幕的左四分之一部分会打开左侧菜单，中间部分的左侧会打开第二个
+                   菜单，中间部分的右侧会打开第三个菜单，屏幕的右四分之一部分会打开第四个菜单。 </font> </p>
+          <p style="line-height: 100%; orphans: 0; widows: 0; margin-top: 0.08in; margin-bottom: 0.08in; background: transparent; page-break-after: avoid">
+          <font color="#ffffff"><font style="font-size: 12pt" size="3"><i>菜单4:移动选项</i></font></font></p>
+          <table cellspacing="0" cellpadding="0" width="96">
+          <colgroup><col width="96"> </colgroup>
+          <tbody>
+          <tr>
+          <td style="border: none; padding: 0in" width="96" valign="top">
+          <p> <font color="#ffff6d">15:10 ↗ 93</font></p>
+          </td>
+          </tr>
+          <tr>
+          <td style="border: none; padding: 0in" width="96" valign="top">
+          <p><font color="#ffff6d"><a href="https://www.juggluco.nl/Jugglucohelp/searchhelp.html">搜索</a></font></p>
+          </td>
+          </tr>
+          <tr>
+          <td style="
+border: none; padding: 0in" width="96" valign="top">
+<p><font color="#ffff6d">日期</font></p>
+</td>
+</tr>
+<tr>
+<td style="border: none; padding: 0in" width="96" valign="top">
+<p><font color="#ffff6d">向前一天</font></p>
+</td>
+</tr>
+<tr style="background: transparent">
+<td style="border: none; padding: 0in" width="96" valign="top">
+<p><font color="#ffff6d">向后一天</font></p>
+</td>
+</tr>
+<tr>
+<td style="border: none; padding: 0in" width="96" valign="top">
+<p><font color="#ffff6d">向前一周</font></p>
+</td>
+</tr>
+<tr>
+<td style="border: none; padding: 0in" width="96" valign="top">
+<p><font color="#ffff6d">向后一周</font></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="line-height: 115%; margin-bottom: 0in"><font color="#ffffff"><span
+       lang="en-US">通过在屏幕上左右移动，你可以左右移动曲线。你也可以使用</span><font color="#4f81bd"><font
+         face="Cambria, serif"><span lang="en-US"><b>移动选项</b></span></font></font>
+<span lang="en-US">来移动。使用</span><font color="#4f81bd"><font
+         face="Cambria, serif"><span lang="en-US"><i><b>日期</b></i></span></font></font>
+<span lang="en-US">来选择日期，使用</span><font color="#4f81bd"><font
+         face="Cambria, serif"><span lang="en-US"><i><b>搜索</b></i></span></font></font>
+<span lang="en-US">来搜索血糖值和输入的数字。</span>
+<span lang="en-US">右侧菜单的第一项是当前时间，通过选择它你可以跳转到图表的最右侧（即现在）。</span></font></p>
+<p style="line-height: 115%; margin-bottom: 0in"><font color="#ffffff">如果在设置中设置了<i>手动缩放血糖</i>，在屏幕的上半部分上下移动会改变图表的最大值，在屏幕的下半部分上下移动会改变最小值。如果在设置中设置了<i>手动缩放时间</i>，你可以通过改变两个手指之间的距离来增加或减少屏幕上显示的时间量。</font></p>
+<p style="line-height: 100%; orphans: 0; widows: 0; margin-top: 0.08in; margin-bottom: 0.08in; background: transparent; page-break-after: avoid">
+<font color="#ffffff"><font style="font-size: 12pt" size="3"><i>菜单 3:
+显示选项</i></font></font></p>
+<table cellspacing="0" cellpadding="0" width="138">
+<colgroup><col width="138"> </colgroup>
+<tbody>
+<tr>
+<td style="border: none; padding: 0in" width="138" valign="top">
+<p><font color="#ffff6d">最后一次扫描</font></p>
+</td>
+</tr>
+<tr>
+<td style="border: none; padding: 0in" width="138" valign="top">
+<p><font color="#ffff6d">扫描数据            [x]</font></p>
+</td>
+</tr>
+<tr>
+<td style="border: none; padding: 0in" width="138" valign="top">
+<p><font color="#ffff6d">蓝牙数据          [x]</font></p>
+  </td>
+  </tr>
+  <tr>
+  <td style="border: none; padding: 0in" width="138" valign="top">
+  <p><font color="#ffff6d">历史数据         [x]</font></p>
+  </td>
+  </tr>
+  <tr>
+  <td style="border: none; padding: 0in" width="138" valign="top">
+  <p><font color="#ffff6d">标签数据      [x]</font></p>
+  </td>
+  </tr>
+  <tr>
+  <td style="border: none; padding: 0in" width="138" valign="top">
+  <p><font color="#ffff6d"><a href="https://www.juggluco.nl/Jugglucohelp/mealhelp.html">餐饮</a>          [  ]</font></p>
+  </td>
+  </tr>
+  <tr>
+  <td style="border: none; padding: 0in" width="138" valign="top" height="42">
+  <p> <font color="#ffff6d">暗黑模式   [x]</font></p>
+  </td>
+  </tr>
+  </tbody>
+  </table>
+  <p style="line-height: 115%; margin-bottom: 0in"><font color="#ffffff"><span
+         lang="en-US">中间右侧的菜单</span> <font color="#4f81bd"><font face="Cambria, serif"><span
+             lang="en-US"><b>包含显示选项</b></span></font></font>。<span lang="en-US">要查看最后一次扫描，请触摸第一项。</span>
+  <span lang="en-US">在<i>扫描</i>后面的叉号表示图表中显示了扫描结果。扫描是你在扫描Libre 0或2传感器时获得的当前血糖值。扫描还会将传感器最近8小时的15分钟测量值传输到智能手机。这些值的显示可以通过触摸<i>历史数据</i>来控制。Libre 3传感器通过蓝牙发送历史值，它们是每5分钟一次。<i>蓝牙数据</i>代表来自Freestyle libre 2和3传感器的每分钟通过蓝牙发送到这个小程序的血糖值。</font></p>
+  <p style="line-height: 115%; margin-bottom: 0in"><font color="#ffffff">你可以输入各种数字（带有任何你喜欢的标签）来记录你的胰岛素、碳水化合物和活动。它们会在指定的时间和日期以固定高度显示在血糖图表中。<span lang="en-US">触摸图表中的点</span> <span lang="en-US">或输入的数字会提供有关该项目的信息。你可以通过长按来编辑输入的数字。也可以通过左中菜单中的数字列表进行编辑</span> <span lang="en-US">并触摸相应的数据元素。</span> <i>输入数据</i>决定了输入数字的显示。在<i>设置</i>中，你可以指定你喜欢用于这些数字的<a href="https://www.juggluco.nl/Jugglucohelp/labelhelp.html">标签</a>。在数字的上方会显示相应的标签。</font></p>
+  <p style="line-height: 100%; orphans: 0; widows: 0; margin-top: 0.08in; margin-bottom: 0.08in; background: transparent; page-break-after: avoid">
+  <font color="#ffffff"><font style="font-size: 12pt" size="3"><i>菜单 2:
+  中间左侧</i></font></font></p>
+  <table style="width: 119px; height: 337px;" cellspacing="0" cellpadding="0">
+    <colgroup><col width="96"> </colgroup>
+    <tbody>
+    <tr>
+    <td style="border: none; padding: 0in" width="96" valign="top">
+    <p><font color="#ffff6d"><a href="https://www.juggluco.nl/Jugglucohelp/helpexport.html">导出</a></font></p>
+    </td>
+    </tr>
+    <tr>
+    <td style="border: none; padding: 0in" width="96" valign="top">
+    <p><font color="#ffff6d"><a href="https://www.juggluco.nl/Jugglucohelp/connectionoverview.html">镜像</a></font></p>
+    </td>
+    </tr>
+    <tr>
+    <td style="border: none; padding: 0in" width="96" valign="top">
+    <p><font color="#ffff6d"><a href="https://www.juggluco.nl/Jugglucohelp/newamount.html" onclick= "location.href=this.href+'?unit='+unitstr;return false;">新建标签</a></font></p>
+    </td>
+    </tr>
+    <tr>
+    <td style="border: none; padding: 0in" width="96" valign="top">
+    <p><font color="#ffff6d">列表</font></p>
+    </td>
+    </tr>
+    <tr><td style="border: none; padding: 0in" width="96" valign="top">
+      <p><font color="#ffff6d"><a href="https://www.juggluco.nl/Jugglucohelp/stathelp.html" onclick= "location.href=this.href+'?unit='+unitstr;return false;" >统计</a></font></p>
+      </td>
+      </tr>
+      <tr>
+      <td style="border: none; padding: 0in" width="96" valign="top">
+      <p><font color="#ffff6d"><a href="https://www.juggluco.nl/Jugglucohelp/talkhelp.html">播报</a></font></p>
+      </td>
+      </tr>
+      <tr>
+      <td style="border: none; padding: 0in" width="96" valign="top">
+      <p align="left"><font color="#ffff6d">悬浮窗[ ]</font></p>
+      </td>
+      </tr>
+      </tbody>
+      </table>
+      <p style="line-height: 115%; margin-bottom: 0in"><font color="#ffffff">你可以通过点击中间左侧菜单中的<font color="#4f81bd"><font face="Cambria, serif"><font
+                 style="font-size: 13pt" size="3"><span lang="en-US"><b>新建标签</b></span></font></font></font>来添加一些标注（例如胰岛素，运动量，食用的碳水化合物）。<font color="#4f81bd"><font
+               face="Cambria, serif"><span lang="en-US"><b>导出</b></span></font></font><span lang="en-US">会将数据以.csv（制表符分隔值）格式保存到文件中。</span><font color="#4f81bd"><font face="Cambria, serif"><span
+                 lang="en-US"><b>镜像</b></span></font></font> <span lang="en-US">可以通过IP/TCP将数据发送到运行此应用程序的不同设备上，以显示相同的信息。</span><font color="#4f81bd"><font face="Cambria, serif"><span lang="en-US"><b>列表</b></span></font></font><span lang="en-US">提供了输入数字的列表。如果Juggluco通过蓝牙接收到足够的血糖值，你可以通过点击</span><font color="#4f81bd"><font face="Cambria, serif"><span
+                 lang="en-US"><b>统计</b></span></font></font><span lang="en-US">来查看一些统计数据。它显示了在某些血糖范围内的测量百分比、血糖管理指标（HbA1c的预测指标）、血糖波动性以及每天每个时刻低于100%、95%、75%、50%、25%和0%的血糖值的总结图。</span><span lang="en-US">在</span><font color="#4f81bd"><font face="Cambria, serif"><span lang="en-US"><b>播报</b></span></font></font><span lang="en-US">中，你可以让Juggluco朗读传入的血糖值、触摸的图表元素或消息。<b>悬浮窗</b>打开</span><font color="#4f81bd"><font face="Cambria, serif"><span lang="en-US"><b>悬浮血糖</b></span></font></font><span lang="en-US">。一个在其他应用上方屏幕上显示的血糖值。<a href="https://www.juggluco.nl/Jugglucohelp/floatingconfig.html" onclick= "location.href=this.href+'?unit='+unitstr;return false;"  >在设置中，你可以更改其颜色和大小。</a></span></font></p>
+      <p style="line-height: 100%; orphans: 0; widows: 0; margin-top: 0.08in; margin-bottom: 0.08in; background: transparent; page-break-after: avoid">
+      <font color="#ffffff"><font style="font-size: 12pt" size="3"><i>菜单 1: 左侧</i></font></font></p>
+<table cellspacing="0" cellpadding="0" width="120">
+<colgroup><col width="120"> </colgroup>
+<tbody>
+<tr>
+<td style="border: none; padding: 0in" width="120" valign="top">
+<p><font color="#ffff6d">主菜单        [ ]</font></p>
+</td>
+</tr>
+<tr>
+<td style="border: none; padding: 0in" width="120" valign="top">
+<p><font color="#ffff6d"><a href="https://www.juggluco.nl/Jugglucohelp/watchinfo.html">手表</a></font></p>
+</td>
+</tr>
+<tr>
+<td style="border: none; padding: 0in" width="120" valign="top">
+<p><font color="#ffff6d"><a href="https://www.juggluco.nl/Jugglucohelp/sensorhelp.html">传感器</a></font></p>
+</td>
+</tr>
+<tr>
+<td style="border: none; padding: 0in" width="120" valign="top" height="26">
+<p><font color="#ffff6d"><a href="https://www.juggluco.nl/Jugglucohelp/settinghelp.html" onclick= "location.href=this.href+'?unit='+unitstr;return false;" >设置</a></font></p>
+</td>
+</tr>
+<tr>
+<td style="border: none; padding: 0in" width="120" valign="top" height="26">
+<p> <font color="#ffff6d"><a href="https://www.juggluco.nl/Jugglucohelp/about.html">关于</a></font></p>
+</td>
+</tr>
+<tr>
+<td style="border: none; padding: 0in" width="120" valign="top">
+<p><font color="#ffff6d">关闭应用</font></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="line-height: 115%; margin-bottom: 0in"><font color="#ffffff"><span
+       lang="en-US">在</span><font color="#4f81bd"><font face="Cambria, serif"><span
+           lang="en-US"><b>左侧菜单</b></span></font></font><span lang="en-US">中，
+你可以找到</span><font color="#4f81bd"><font face="Cambria, serif"><span
+           lang="en-US"><b>设置</b></span></font></font><span lang="en-US">，
+用于设置血糖单位为mmol/L或mg/dL，</span> <span lang="en-US">指定</span>
+<span lang="en-US"><a href="https://www.juggluco.nl/Jugglucohelp/labelhelp.html">标签</a>，
+设置<a href="https://www.juggluco.nl/Jugglucohelp/alarmhelp.html">血糖警报</a>和<a href="https://www.juggluco.nl/Jugglucohelp/reminders.html">药物提醒</a></span> <span lang="en-US">以及显示范围。系统
+UI决定是否显示安卓控制和状态栏。在</span><font
+       color="#4f81bd"><font face="Cambria, serif"><span lang="en-US"><b>手表</b></span></font></font>
+<span lang="en-US">中，你可以指定Juggluco向各种智能手表发送数据（仅限 Wear OS，佳明，miband，xdrip 手表程序等）（全智能手表等同于安卓手机，在镜像里同步）。在</span><font color="#4f81bd"><font face="Cambria, serif"><span
+           lang="en-US"><b>传感器</b></span></font></font><span lang="en-US">中，
+你可以查看与传感器的连接情况。点击</span><font
+       color="#4f81bd"><font face="Cambria, serif"><span lang="en-US"><b>主菜单</b></span></font></font>
+<span lang="en-US">可以同时显示所有提到的菜单，以便talkback可以阅读。关闭应用可以用来退出Juggluco。</span></font></p>
+<p style="line-height: 115%; margin-bottom: 0in"><br>
+</p>
+<p style="line-height: 115%; margin-bottom: 0in"><br>
+</p>
+<p style="line-height: 115%; margin-bottom: 0in"><br>
+</p>
+
+  </body>
+</html>
+
+
+

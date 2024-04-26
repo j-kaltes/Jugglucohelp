@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 7.5.9.2 (Linux)"/>
+	<meta name="created" content="2023-02-21T11:28:36.352406009"/>
+	<meta name="changed" content="2024-01-15T20:49:09.440854208"/>
+	<style type="text/css">
+		@page { size: 8.27in 11.69in; margin: 0.79in }
+		h1 { margin-bottom: 0.08in; background: transparent }
+		h1.western { font-family: "Liberation Sans", sans-serif; font-size: 18pt }
+		h1.cjk { font-family: "Source Han Sans CN"; font-size: 18pt }
+		h1.ctl { font-family: "Droid Sans Devanagari"; font-size: 18pt }
+		p { margin-bottom: 0.1in; background: transparent }
+		pre { font-family: "Liberation Mono", monospace; background: transparent }
+	</style>
+</head>
+ <img src="webserver.jpg" alt="Webserver" style="object-fit:contain; width:15cm;                   height:auto;">
+<body lang="zh-CN" dir="ltr"><h1 class="western">网络服务器（这是一个本地服务器，跟隔壁Uploader的不一样，最好是用于本地使用ns同步数据的）</h1>
+<p style="line-height: 100%; margin-bottom: 0in">Juggluco 集成了一个 网络服务器，其他应用程序可以通过它从 Juggluco 接收血糖值。它可用于 xDrip 手表和一些 Nightscout 应用程序。</p>
+<p style="line-height: 100%; margin-bottom: 0in">使用为 xDrip Web 服务器制作的应用程序相对简单。只需检查激活。之后，他们可以从 127.0.0.1 的端口 17580 接收血糖值。Nightscout 服务器 URL：http://127.0.0.1:17580</p>
+<p style="line-height: 100%; margin-bottom: 0in">此外，一些 Nightscout 关注者也可以使用它。xDrip、Diabox、<a href="https://github.com/dabear/FloatingGlucose/releases">Windows Floating Glucose</a> 应用程序和 Windows、Linux 和 macOS 小部件（<a href="https://github.com/kashamalasha/nightscout-widget-electron">Owlet</a>）可以在“仅限本地”未设置时使用 http。在 macOS 上，对于 Nightscout Menu Bar、Gluco Status 和 Gluco Tracker（所有在 Apple Store 中）也是如此。对于 <a href="https://github.com/someoneAnyone/Nightscouter">Nightscouter</a> 和 <a href="https://github.com/jonfawcett/LoopFollow">LoopFollow</a>（IOS）以及 <a href="https://github.com/nightscout/nightguard">Nightguard</a>（IOS 和 WatchOS），您也只需要 http。</p>
+<p style="line-height: 100%; margin-bottom: 0in">如果您想通过互联网访问 Juggluco，您需要从您的调制解调器转发一个端口。参见：</p>
+<ul>
+	<li><p style="line-height: 100%; margin-bottom: 0in"><a href="https://www.makeuseof.com/tag/what-is-port-forwarding-and-how-can-it-help-me">https://www.makeuseof.com/tag/what-is-port-forwarding-and-how-can-it-help-me</a></p>
+	<li><p style="line-height: 100%; margin-bottom: 0in"><a href="https://www.juggluco.nl/Juggluco/phones/index.html">https://www.juggluco.nl/Juggluco/phones/index.html</a></p>
+	<li><p style="line-height: 100%; margin-bottom: 0in">左侧菜单栏中间-&gt;镜像-&gt;<a href="https://www.juggluco.nl/Jugglucohelp/addconnection.html">添加连接</a>-&gt;帮助</p>
+</ul>
+<p style="line-height: 100%; margin-bottom: 0in">其他 Nightscout 关注者只使用 https，这要求 Juggluco 具有用于访问 Juggluco 的域名的认证 SSL 密钥。如果您的外部 IP 有关联的主机名，您可以通过 <a href="https://certbot.eff.org/instructions">Certbot</a> 免费获取证书。如果您的外部 IP 没有主机名，您将无法使用它。您可以从 <a href="https://www.freenom.com/">https://www.freenom.com</a> 免费获取一个域名。我尝试了，但几周后，没有任何通知，他们只是将域名从我这里拿走了，当我试图再次注册时，它有一个价格。您可以每年花几欧元购买一个主机名（例如从 <a href="https://www.strato.nl/domeinnaam">https://www.strato.nl/domeinnaam</a>）。</p>
+<p style="line-height: 100%; margin-bottom: 0in">安装 Certbot 并将您的调制解调器的端口 80（http）重定向到您的计算机后，您可以简单地按：</p>
+<pre style="margin-bottom: 0.2in">certbot certonly --standalone --preferred-challenges http -d <i>myhostname</i></pre>
+<p>参见 <a href="https://devpress.csdn.net/linux/62e7999e907d7d59d1c8cfd0.html">https://devpress.csdn.net/linux/62e7999e907d7d59d1c8cfd0.html</a>。</p>
+<p style="line-height: 100%; margin-bottom: 0in">使用 Certbot 后，我在 /etc/letsencrypt/live/myhostname/privkey.pem 中找到了私钥，完整链在 /etc/letsencrypt/live/myhostname/fullchain.pem 中。“<em>myhostname</em>”是我使用的主机名。</p>
+<p style="line-height: 100%; margin-bottom: 0in">如果您已从 SSL 机构收到密钥文件，您必须将其提供给 Juggluco。可以通过按“<em>私钥</em>”读取私钥，通过按“<em>完整链</em>”读取完整链。</p>
+<p style="line-height: 100%; margin-bottom: 0in">如果您只想将血糖值从一个 Android 设备发送到另一个 Android 设备，您可以更好地使用 Juggluco 的 <a href="https://www.juggluco.nl/Juggluco/index.html#mirror">镜像</a> 功能（左侧菜单栏中间-&gt;<a href="https://www.juggluco.nl/Jugglucohelp/connectionoverview.html">镜像</a>）。</p>
+<p style="line-height: 100%; margin-bottom: 0in">您需要 SSL 来使用 Android 应用 AAPS、Diabetes:M、<a href="https://play.google.com/store/apps/details?id=se.cornixit.nightwatch">Nightwatch</a> 和 <a href="https://slingithub.github.io/CheckmateWeb">Checkmate</a>、Sugarmate（MacOS 和 IOS）和 <a href="https://github.com/JohanDegraeve/xdripswift">Xdrip4ios</a>、Shuggah 和 Cockpit（IOS）。将 Nightscout 服务器 URL 指定为：</p>
+<p><i>https://hostname:port</i></p>
+<p><i>hostname</i> 是您提供给 Juggluco 的认证密钥的主机名，<i>port</i> 是您在此屏幕中指定的端口（默认值：17581）。</p>
+<p style="line-height: 100%; margin-bottom: 0in">AAPS 可以与 Juggluco 7.3.0 及更高版本一起使用。为此，您需要在 AAPS 中选择 <i>NSClientV3</i>，并使用以下设置：</p>
+<ul>
+	<li><p style="line-height: 100%; margin-bottom: 0in">使用此处指定的 api-secret 用作 <i>NS 访问令牌</i>；</p>
+		<li><p style="line-height: 100%; margin-bottom: 0in">取消勾选“<i>连接到 WebSockets</i>”；</p>
+		<li><p style="line-height: 100%; margin-bottom: 0in">在“<i>同步</i>”下，关闭所有上传。只打开：</p>
+		<ul>
+			<li><p style="line-height: 100%; margin-bottom: 0in">接收/回填 CGM 数据；</p>
+			<li><p style="line-height: 100%; margin-bottom: 0in">接收胰岛素；</p>
+			<li><p style="line-height: 100%; margin-bottom: 0in">接收碳水化合物；</p>
+			<li><p style="line-height: 100%; margin-bottom: 0in">接收治疗事件；</p>
+		</ul>
+		<li><p style="line-height: 100%; margin-bottom: 0in">关闭所有“<i>高级设置</i>”。</p>
+	</ul>
+	<p style="line-height: 100%; margin-bottom: 0in">在较早输入的量之前插入量，会导致 AAPS 有重复的治疗。当使用 v3 接口与从 Juggluco 接收 v3 上传的 Nightscout 服务器一起使用时，也会发生这种情况。</p><p>有时，AAPS 只有在强制停止并重新启动后才开始向服务器请求治疗。</p>
+	<p style="line-height: 100%; margin-bottom: 0in">Web 服务器也可以在 Linux 计算机上运行。它将从与传感器连接的 Juggluco 的<a href="https://www.juggluco.nl/Juggluco/index.html#mirror">镜像连接</a>接收数据：<a href="https://www.juggluco.nl/Juggluco/cmdline/index.html">https://www.juggluco.nl/Juggluco/cmdline</a>。</p>
+	<p style="line-height: 100%; margin-bottom: 0in">另一部手机可以通过镜像连接或作为 Nightscout 关注者连接到此服务器（例如在 iPhone 上）。如果有一个不适用于此 Web 服务器的 Nightscout 应用，请告诉我。也许可以通过一些更改使其正常工作。（IOS 应用 Nightscout 和 Nightscout X 是针对特定 Nightscout 服务器程序的，不会与 Juggluco 一起工作。）</p>
+	<p style="line-height: 100%; margin-bottom: 0in"><b>api_secret</b>：指定关注者应将 api_secret http 头元素设置为此值。当关注者使用此密钥作为<a href="https://www.juggluco.nl/Juggluco/webserver.html#token">Nightscout 令牌</a>或使用带有 SHA1 编码密钥的 api-secret 头时，此密钥也有效。从 Juggluco 7.1.15 开始，也可以将 api_secret 作为 Nightscout 服务器 URL 路径的第一个元素。如果 xyz 是 api_secret，http://hostname:port 是 Nightscout 服务器 URL，您可以指定 http://hostname:port/xyz 作为 Nightscout 服务器 URL。</p>
+	<p style="line-height: 100%; margin-bottom: 0in"><strong>可见</strong>：使密钥可见。</p>
+	<p style="line-height: 100%; margin-bottom: 0in"><strong>端口</strong>：指定用于联系 https 服务器的网络端口。默认值是 17581。</p>
+	<p style="line-height: 100%; margin-bottom: 0in"><strong>保存</strong>：保存密钥或端口的修改。</p>
+	<p style="line-height: 100%; margin-bottom: 0in"><strong>使用 SSL</strong>：使用 SSL（https）。对于 SSL，您需要为用于联系此服务的主机名提供私钥和完整链。</p>
+	<p style="line-height: 100%; margin-bottom: 0in"><strong>私钥</strong>：选择包含私钥的文件。见上文。</p>
+	<p style="line-height: 100%; margin-bottom: 0in"><strong>完整链</strong>：选择包含完整链的文件，见上文（其实就是指的证书文件）。</p>
+	<p style="line-height: 100%; margin-bottom: 0in"><b>interval（间隔）</b>：血糖值之间的默认最小间隔时间（以秒为单位）。通常为 270 秒。请求还可以通过提供 interval= 选项来更改此值。见<a href="https://www.juggluco.nl/Juggluco/webserver.html">https://www.juggluco.nl/Juggluco/webserver.html</a></p>
+	<p style="line-height: 100%; margin-bottom: 0in"><strong>仅限本地（不清楚到底是除本地外只能使用https还是本地只能使用http，应该是后者）</strong>：http 服务器只能使用 localhost（127.0.0.1）访问。这不适用于 https。</p>
+	<p style="line-height: 100%; margin-bottom: 0in"><b>发送标签</b>：使得可以通过<a href="http://127.0.0.1:17580/api/v1/treatments?count=3">http://127.0.0.1:17580/api/v1/treatments?count=3</a>接收输入的标签。（您必须为每个标签指定定义。以前这与 Libreview 相同，但在 4.18.0 版本之后，您可以将标签放在不同的类别中，（意思就是区分了）用于 Libreview 和此 Web 服务器。）通过此接口，xDrip 可以从 Juggluco 接收量。在 xDrip 中，您可以通过两种方式执行此操作：</p>
+	<ol>
+		<li><p style="line-height: 100%; margin-bottom: 0in">将“<i>硬件数据源</i>”设为<i>“Nightscout 关注者”</i>，并将“跟随 URL”设为 <a href="http://127.0.0.1:17580/api/v1/treatments?count=3">http://127.0.0.1:17580</a>，勾选“下载治疗”。</p>
+		<li><p style="line-height: 100%; margin-bottom: 0in">选择另一个硬件数据源，例如 <i>Libre（修补的应用）</i>，并打开设置-&gt;云上传-&gt;Nightscout 同步（REST-API）。将基础 API URL 输入为 http://somekey@127.0.0.1:17580/api/v1/ 并打开“下载治疗”。上传到 Juggluco 是不可能的，所以这只会下载治疗并生成一些错误消息。</p>
+	</ol>
+	<p style="line-height: 100%; margin-bottom: 0in">当“仅限本地”未选中时，您还可以使用运行 Juggluco 的手机的家庭网络 IP，当您配置调制解调器转发到该手机的 17580 时，也可以使用手机的外部 IP。如果您已经为可以通过该主机名访问的手机提供了私钥和完整链，并打开了“使用 SSL”，则可以使用该主机名和您在此处指定的端口，使用 https 而不是 http。</p>
+	<p style="line-height: 100%; margin-bottom: 0in">当您想要将治疗上传到 Diabetes:M 时，您可以将 Juggluco 的数据发送到 Libreview 并使用“下载血糖数据”保存 Libreview 中的数据，然后在 Diabetes:M 中使用数据-&gt;从其他来源导入-&gt;Freestyle 导入这些数据，或者为您手机的外部主机名获取经过认证的密钥，并将外部来源链接设为 Nightscout，URL 为 https://yourhostname:Port，其中 yourhostname 是运行 Juggluco 的手机的主机名，您已经收到了认证的密钥，Port 是您在此处提到的端口。似乎不会自动同步，所以在 Diabetes:M 中，您需要自己按下同步。</p>
+
+	<p style="line-height: 100%; margin-bottom: 0in"><strong>活动</strong>：点击就代表激活了Web 服务器，正在运行。</p>
+	<p style="line-height: 100%; margin-bottom: 0in">有关 Juggluco 中实现的 Nightscout/xDrip Web 服务器命令的更多信息，请参见 <a href="https://www.juggluco.nl/Juggluco/webserver.html">https://www.juggluco.nl/Juggluco/webserver.html</a></p>
+	<p style="line-height: 100%; margin-bottom: 0in"><br/>
+	</p>
+	</body>
+	</html>

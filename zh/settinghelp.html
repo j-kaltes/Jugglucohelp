@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Settings</title>
+    <base target="_blank">
+    <meta name="generator" content="LibreOffice 7.5.9.2 (Linux)">
+    <meta name="created" content="00:00:00">
+    <meta name="changed" content="2024-01-28T20:38:07.406015517">
+    <style type="text/css">
+		@page { size: 8.27in 11.69in; margin: 0.79in }
+		h1 { margin-bottom: 0.08in; background: transparent }
+		h1.western { font-family: "Liberation Serif", serif }
+		h1.cjk { font-family: "Noto Serif CJK SC" }
+		h1.ctl { font-family: "Mangal" }
+		p { margin-bottom: 0.1in; background: transparent }
+		h2 { margin-top: 0.14in; margin-bottom: 0.08in; background: transparent }
+		h2.western { font-family: "Liberation Sans", sans-serif; font-size: 16pt }
+		h2.cjk { font-family: "Noto Sans CJK SC"; font-size: 16pt }
+		h2.ctl { font-family: "Mangal"; font-size: 16pt }
+	</style> <base href="https://www.juggluco.nl/Jugglucohelp/mgdL/" id="baseurl"
+      target="_blank">
+    <script type="text/javascript"> 
+var unitstr='mg/dL';
+function getunitarg(){ 
+	const params = new URLSearchParams(document.location.search);
+	const unit = params.get("unit");
+	if(unit===null)	 {
+		return 0;
+		}
+	if(unit == "mg/dL") { 
+		return 2;
+		} 
+	else { 
+		if(unit=="mmol/L") {
+		   return 1;
+		   }
+	 	}
+
+	return 0;
+    } 
+let mmol=[
+"AM",
+"AU",
+"BA",
+"BG",
+"BW",
+"BY",
+"CA",
+"CH",
+"CN",
+"CZ",
+"DK",
+"EE",
+"FI",
+"GB",
+"HK",
+"HR",
+"HU",
+"IE",
+"IS",
+"KW",
+"KZ",
+"LT",
+"LV",
+"MT",
+"MY",
+"NA",
+"NL",
+"NO",
+"NZ",
+"RS",
+"RU",
+"SE",
+"SI",
+"SK",
+"UA",
+"ZA"];
+
+
+
+
+
+
+function getunit() {
+	var unit=getunitarg();
+	if(unit!=0) {
+		return unit;
+		}
+
+	var userLang = navigator.language || navigator.userLanguage;
+	var  co=userLang.toUpperCase();
+
+	for(const element of mmol) {
+	  if(co.includes(element)) {
+		return 1;
+		}
+	   }
+
+	return 2;
+	 }
+
+
+
+function setbaseurl(){ 
+	if(getunit()!=1) {
+		document.getElementById("baseurl").href = "https://www.juggluco.nl/Jugglucohelp/mgdL/"; 
+		unitstr='mg/dL';
+		} 
+	else { 
+	       document.getElementById("baseurl").href = "https://www.juggluco.nl/Jugglucohelp/";  
+		unitstr='mmol/L';
+		}
+   	} 
+   setbaseurl();
+   </script>
+  </head>
+ <img src="settings.jpg" alt="设置" style="object-fit:contain; width:15cm; height:auto;">
+  <body dir="ltr" lang="en-US">
+    <h1 class="western">设置</h1>
+    <h2 class="western">单位</h2>
+    <p style="line-height: 100%; margin-bottom: 0in">选择葡萄糖值应以mmol/L或mg/dL给出。</p>
+    <h2 class="western">图表显示范围：低-高</h2>
+    <p style="line-height: 100%; margin-bottom: 0in">给出一个低值和高值，使得屏幕底部对应于最低值，顶部对应于最高值。当屏幕上显示的所有葡萄糖值都在这些范围内时，才使用这些值。否则，范围将扩大以使所有值可见。当你取3 mmol/L（54 mg/dL）和9 mmol/L（162 mg/dL），并且可见显示屏上的所有值都在5 mmol/L和6 mmol/L之间时，图表显示一个从3到9的葡萄糖轴。</p>
+    <p style="line-height: 100%; margin-bottom: 0in">如果<b>手动缩放葡萄糖</b>开启，你可以更改这个：在屏幕顶部移动你的手指，上半部分的图表会上下移动；在屏幕底部移动则会使图表的下半部分上下移动。</p>
+    <h2 class="western">警戒线显示范围：低-高</h2>
+    <p style="line-height: 100%; margin-bottom: 0in">显示的较高侧被不同颜色标记，以便您更容易看到高值。低值也是如此。一个红线被用来显示显示屏的过低侧。</p>
+    <h2 class="western">葡萄糖轴左（太抽象了，没办法翻译）</h2>
+    <p>将图表中的葡萄糖水平数字放在屏幕的左侧。如果你想将当前葡萄糖值放在屏幕中间，例如在Wear OS中，这很有用。</p>
+    <h2 class="western">反转屏幕</h2>
+    <p style="line-height: 100%; margin-bottom: 0in">将显示屏上下颠倒。默认情况下开启，因为否则我有时会在扫描传感器时不小心触碰到OK。</p>
+    <p style="line-height: 100%; margin-bottom: 0in">有些人要求竖屏模式，但我已经关闭了，因为它完全不适合葡萄糖图表的显示。</p>
+    <h2 class="western">NFC声音</h2>
+    <p>在扫描时除了振动外还发出声音。</p>
+    <h2 class="western">扫描启动应用程序（只要扫描nfc自动跳转到这里）</h2>
+    <p>如果勾选，当你通过NFC扫描传感器时，即使这个应用没有显示，也会启动这个应用。如果多个应用有这个设置，安卓会显示一个选择器让你选择你想使用哪个应用。不知何故，选择一个不起作用，选择下次也不起作用。所以在这种情况下，你不能在没有前台应用的情况下扫描。在这个应用中关闭它，将使至少一个应用可以通过这种方式激活。</p>
+    <p>如果你有root权限，你还可以禁用Abbott的Librelink应用的NFC激活（不适用于Libre3）：</p>
+    <p>在adb shell或termux中成为root，并输入：</p>
+    <p>pm disable com.freestylelibre.app.nl/com.librelink.app.ui.common.NFCScanActivity</p>
+    <p>在Librelink 2.7.1及更低版本中，你必须按下：</p>
+    <p>pm disable com.freestylelibre.app.nl/com.librelink.app.ui.common.ScanSensorActivity</p>
+    <p><span lang="en-US">com.freestylelibre.app.nl是这里的荷兰版Librelink，应该用你正在使用的版本替换。你可以通过键入</span> <span lang="en-US">(即使没有root)：</span></p>
+    <p>pm list package freestylelibre</p>
+    <p>之后，你仍然可以在Librelink在前台时用它进行扫描，但否则它不会被启动。Librelink 2.5.2及更高版本如果检测到root会自行崩溃。但在Magisk中，你可以通过重命名Magisk并将单独的应用添加到拒绝列表（Magisk 24.3）或Magiskhide（Magisk 23.0）中来轻松隐藏root。你也应该将Juggluco添加到拒绝列表中。除非你使用美国Freestyle Libre 2传感器，否则你也可以使用没有root检查的旧版本Librelink。</p>
+    <p>没有root，在adb shell下，你也可以禁用整个应用：</p>
+    <p>pm disable-user --user 0 com.freestylelibre.app.nl</p>
+    <p>在联系Abbott客户服务之前，你可以用以下方式重新启用它：</p>
+    <p>pm enable com.freestylelibre.app.nl</p>
+    <h2 class="western">Health Connect</h2>
+    <p>将每分钟的葡萄糖值发送到<a href="https://play.google.com/store/apps/details?id=com.google.android.apps.healthdata">Health Connect</a>。你可以授权其他应用访问这些葡萄糖值，例如<a href="https://play.google.com/store/apps/details?id=com.google.android.apps.fitness">Google Fit</a>。其他应用再次可以从Google Fit获取数据。</p>
+    <h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/libreview.html">Libreview</a></h2>
+    <p>与Libreview连接，将Freestyle Libre 2和3的葡萄糖值和数量发送到Libreview，并获取在Freestyle Libre 3传感器激活期间使用的帐户ID。触摸以更改设置。</p>
+    <h2 class="western">修补的Libre广播（其实就是魔改版）</h2>
+    <p>使用修补的Libre广播（最初由修补的德国Librelink应用2.3.0发送），每分钟将蓝牙葡萄糖流数据发送到xDrip。在xDrip中，你需要将Libre2（修补的应用）设置为硬件数据源。xDrip中显示的葡萄糖值与它接收到的值不同。由于某种原因，xDrip每5分钟只更新一次它的值，可能是因为它是为每5分钟只发送一次的设备制作的（与xDrip连接的手表表盘经常显示超过9分钟的旧值）。此外，xDrip显示它对接收到的葡萄糖值的自己的解释。镜像设备也可以发送到xDrip。</p>
+    <p>参见<a href="https://github.com/jakobheyman/xdripJH">https://github.com/jakobheyman/xdripJH</a>，试图每分钟更新xDrip的葡萄糖值。</p>
+    <p>Freestyle Libre 3传感器在断开连接期间发送遗漏的值。这些值不会通过此广播发送。如果你打开Juggluco的Web服务器并使xDrip成为Juggluco的Nightscout追随者，你将收到这些值。Nightscout服务器：http://127.0.0.1:17580</p>
+    <p>Juggluco还可以直接与xDrip手表应用联系，使手表应用显示更近的葡萄糖值。要使用此功能，请在左侧菜单下的<b>手表</b>下勾选<i>"xDrip Web服务器"</i>。有关更多信息，请参阅左侧菜单-&gt;<a href="https://www.juggluco.nl/Jugglucohelp/watchinfo.html">手表</a>下的帮助。只有一个应用可以监听xDrip Web服务器使用的网络端口，所以如果你想使用Juggluco中的一个，你需要关闭xDrip本身的"<i>xDrip Web服务</i>"。</p>
+    <h2 class="western">xDrip广播</h2>
+    <p>发送与在xDrip中开启的相同的广播，通过"<i>设置-&gt;应用间设置-&gt;本地广播"</i>。像AndroidAPS这样的应用会监听它。与原始的xDrip广播不同，后者每5分钟广播一次，Juggluco每分钟广播这个广播一次。</p>
+    <h2 class="western">Glucodata广播</h2>
+    <p>一个新的广播，具有与xDrip广播相同的功能。一个将接收到的葡萄糖值写入logcat的简单示例应用，你可以在这里找到：<a href="https://www.juggluco.nl/Juggluco/glucosebroadcast.html">葡萄糖广播</a>。如果你在G-Watch中指定Juggluco为数据源，你需要打开这个广播。</p>
+    <p>监听这个广播的应用程序显示出来。勾选你想发送这个广播的应用。</p>
+    <h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/Nightscouthelp.html">Web服务器</a></h2>
+    <p>Web服务器可用于xDrip手表和一些Nightscout应用。以前称为xDrip Web服务器。</p>
+    <h2>体内还有多少胰岛素（IOB）</h2>
+    <p>IOB是衡量从先前的胰岛素剂量中剩余多少胰岛素的指标。为此，您必须在“<i>快速作用胰岛素</i>”类别下的标签中输入胰岛素剂量。您可以在左侧菜单→设置→Web服务器→<a href="https://www.juggluco.nl/Jugglucohelp/setlibrenumtype.html">发送标签</a>下指定哪些标签是“<i>快速作用胰岛素</i>”。</p>
+    <h2 class="western">固定当前时刻</h2>
+    <p>当设置了“<i>固定当前时刻</i>”时，显示屏上的时间段向左滚动，以便当前时间始终位于屏幕的同一点。一些用户在距离他们几米远的计算机上运行Juggluco。当“<i>固定当前时刻</i>”关闭时，当前葡萄糖值的位置随着时间的推移向右移动，以致于几个小时后它不再可见。这使得有必要走到计算机前并将屏幕滚动几厘米。当“<i>固定当前时刻</i>”打开时，不再需要这种干扰。</p>
+    <h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/NightPost.html">Uploader</a></h2>
+    <p>上传到Nightscout服务器。</p>
+    <h2 class="western">葡萄糖通知</h2>
+    <p style="line-height: 100%; margin-bottom: 0in">（以前称为“<i>安卓状态栏中的葡萄糖</i>”）。如果设置，通过蓝牙流传输的葡萄糖值将在通知和安卓状态栏中静默显示。如果你关闭它，代替数字，将显示一个点，通知将只告诉“<i>连接到传感器</i>”或“<i>交换数据</i>”。在后台持续运行的应用被安卓要求有这样的可见通知（否则它很容易被安卓停止）。当“<i>通过蓝牙的传感器</i>”关闭并且没有镜像连接时，Juggluco才关闭通知。</p>
+    <p style="line-height: 100%; margin-bottom: 0in">在某些智能手机上，只有在更改安卓通知设置后，葡萄糖值才会显示在安卓状态栏中。例如，在Realme GT 5G上，您必须转到applist-&gt;Juggluco-&gt;manage notifications，点击glucoseNotification并关闭“设置为静音”。 “在状态栏显示”现在将显示为打开。</p>
+    <p style="font-weight: normal; line-height: 100%; margin-bottom: 0in">你也可以通过选择左中菜单中的<i>通知</i>来获得一个安卓通知。在这种情况下，如果配置了，通知将发送到一些智能手表。这适用于Garmin手表，我不知道它是否适用于其他任何东西。报警也会生成通知。</p>
+    <h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/floatingconfig.html" onclick="location.href=this.href+'?unit='+unitstr;return false;">悬浮窗设置</a></h2>
+    <p>当你打开这个功能时，一个带有当前葡萄糖值的小图像会持续出现在屏幕上，无论哪个应用处于前台。如果你第一次打开它，你将被引导到一个应用列表中，你必须给予Juggluco<b>在其他应用上显示</b>的权限。</p>
+    <h2 class="western">通过蓝牙连接传感器（如果直连必开！关闭等于不连接传感器）</h2>
+    <p>选择此应用是否通过蓝牙连接到Freestyle libre 2或3传感器。这对于报警和持续葡萄糖监测是必要的。</p>
+    <h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/alarmhelp.html">警报</a></h2>
+    <p style="font-weight: normal">设置高低葡萄糖报警、信号丢失报警和值可用通知。</p>
+    <h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/labelhelp.html">设置标签</a></h2>
+    <p style="line-height: 100%; margin-bottom: 0in">指定用于数量的标签。转到一个屏幕以确定使用哪些标签来设置数量，如胰岛素剂量、碳水化合物消耗和花费足球时间的小时数。如果您还使用Garmin手表应用Kerfstok，这些标签将发送到手表应用。</p>
+    <h2 class="western">语言</h2>
+    <p style="line-height: 100%; margin-bottom: 0in">Juggluco以所选语言显示。当没有选择语言代码时，使用系统语言。</p>
+    <h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/reminders.html">提醒</a></h2>
+    <p style="font-weight: normal; line-height: 100%; margin-bottom: 0in">指定如果在一定时间内没有输入一定数量的食物或药物，应发出警报。</p>
+    <h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/colorhelp.html">颜色</a></h2>
+    <p style="line-height: 100%; margin-bottom: 0in">更改曲线、扫描和数字的颜色。要切换<i>黑暗模式</i>，使用右中菜单-&gt;黑暗模式。</p>
+    <h2 class="western"><br><br></h2>
+  </body>
+</html>

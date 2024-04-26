@@ -148,43 +148,43 @@ function setbaseurl(){
     <p>pm enable com.freestylelibre.app.nl</p>
     <h2 class="western">Health Connect</h2>
     <p>将每分钟的葡萄糖值发送到<a href="https://play.google.com/store/apps/details?id=com.google.android.apps.healthdata">Health Connect</a>。你可以授权其他应用访问这些葡萄糖值，例如<a href="https://play.google.com/store/apps/details?id=com.google.android.apps.fitness">Google Fit</a>。其他应用再次可以从Google Fit获取数据。</p>
-    <h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/libreview.html">Libreview</a></h2>
+    <h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/zh/libreview.html">Libreview</a></h2>
     <p>与Libreview连接，将Freestyle Libre 2和3的葡萄糖值和数量发送到Libreview，并获取在Freestyle Libre 3传感器激活期间使用的帐户ID。触摸以更改设置。</p>
     <h2 class="western">修补的Libre广播（其实就是魔改版）</h2>
     <p>使用修补的Libre广播（最初由修补的德国Librelink应用2.3.0发送），每分钟将蓝牙葡萄糖流数据发送到xDrip。在xDrip中，你需要将Libre2（修补的应用）设置为硬件数据源。xDrip中显示的葡萄糖值与它接收到的值不同。由于某种原因，xDrip每5分钟只更新一次它的值，可能是因为它是为每5分钟只发送一次的设备制作的（与xDrip连接的手表表盘经常显示超过9分钟的旧值）。此外，xDrip显示它对接收到的葡萄糖值的自己的解释。镜像设备也可以发送到xDrip。</p>
     <p>参见<a href="https://github.com/jakobheyman/xdripJH">https://github.com/jakobheyman/xdripJH</a>，试图每分钟更新xDrip的葡萄糖值。</p>
     <p>Freestyle Libre 3传感器在断开连接期间发送遗漏的值。这些值不会通过此广播发送。如果你打开Juggluco的Web服务器并使xDrip成为Juggluco的Nightscout追随者，你将收到这些值。Nightscout服务器：http://127.0.0.1:17580</p>
-    <p>Juggluco还可以直接与xDrip手表应用联系，使手表应用显示更近的葡萄糖值。要使用此功能，请在左侧菜单下的<b>手表</b>下勾选<i>"xDrip Web服务器"</i>。有关更多信息，请参阅左侧菜单-&gt;<a href="https://www.juggluco.nl/Jugglucohelp/watchinfo.html">手表</a>下的帮助。只有一个应用可以监听xDrip Web服务器使用的网络端口，所以如果你想使用Juggluco中的一个，你需要关闭xDrip本身的"<i>xDrip Web服务</i>"。</p>
+    <p>Juggluco还可以直接与xDrip手表应用联系，使手表应用显示更近的葡萄糖值。要使用此功能，请在左侧菜单下的<b>手表</b>下勾选<i>"xDrip Web服务器"</i>。有关更多信息，请参阅左侧菜单-&gt;<a href="https://www.juggluco.nl/Jugglucohelp/zh/watchinfo.html">手表</a>下的帮助。只有一个应用可以监听xDrip Web服务器使用的网络端口，所以如果你想使用Juggluco中的一个，你需要关闭xDrip本身的"<i>xDrip Web服务</i>"。</p>
     <h2 class="western">xDrip广播</h2>
     <p>发送与在xDrip中开启的相同的广播，通过"<i>设置-&gt;应用间设置-&gt;本地广播"</i>。像AndroidAPS这样的应用会监听它。与原始的xDrip广播不同，后者每5分钟广播一次，Juggluco每分钟广播这个广播一次。</p>
     <h2 class="western">Glucodata广播</h2>
     <p>一个新的广播，具有与xDrip广播相同的功能。一个将接收到的葡萄糖值写入logcat的简单示例应用，你可以在这里找到：<a href="https://www.juggluco.nl/Juggluco/glucosebroadcast.html">葡萄糖广播</a>。如果你在G-Watch中指定Juggluco为数据源，你需要打开这个广播。</p>
     <p>监听这个广播的应用程序显示出来。勾选你想发送这个广播的应用。</p>
-    <h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/Nightscouthelp.html">Web服务器</a></h2>
+    <h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/zh/Nightscouthelp.html">Web服务器</a></h2>
     <p>Web服务器可用于xDrip手表和一些Nightscout应用。以前称为xDrip Web服务器。</p>
     <h2>体内还有多少胰岛素（IOB）</h2>
-    <p>IOB是衡量从先前的胰岛素剂量中剩余多少胰岛素的指标。为此，您必须在“<i>快速作用胰岛素</i>”类别下的标签中输入胰岛素剂量。您可以在左侧菜单→设置→Web服务器→<a href="https://www.juggluco.nl/Jugglucohelp/setlibrenumtype.html">发送标签</a>下指定哪些标签是“<i>快速作用胰岛素</i>”。</p>
+    <p>IOB是衡量从先前的胰岛素剂量中剩余多少胰岛素的指标。为此，您必须在“<i>快速作用胰岛素</i>”类别下的标签中输入胰岛素剂量。您可以在左侧菜单→设置→Web服务器→<a href="https://www.juggluco.nl/Jugglucohelp/zh/setlibrenumtype.html">发送标签</a>下指定哪些标签是“<i>快速作用胰岛素</i>”。</p>
     <h2 class="western">固定当前时刻</h2>
     <p>当设置了“<i>固定当前时刻</i>”时，显示屏上的时间段向左滚动，以便当前时间始终位于屏幕的同一点。一些用户在距离他们几米远的计算机上运行Juggluco。当“<i>固定当前时刻</i>”关闭时，当前葡萄糖值的位置随着时间的推移向右移动，以致于几个小时后它不再可见。这使得有必要走到计算机前并将屏幕滚动几厘米。当“<i>固定当前时刻</i>”打开时，不再需要这种干扰。</p>
-    <h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/NightPost.html">Uploader</a></h2>
+    <h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/zh/NightPost.html">Uploader</a></h2>
     <p>上传到Nightscout服务器。</p>
     <h2 class="western">葡萄糖通知</h2>
     <p style="line-height: 100%; margin-bottom: 0in">（以前称为“<i>安卓状态栏中的葡萄糖</i>”）。如果设置，通过蓝牙流传输的葡萄糖值将在通知和安卓状态栏中静默显示。如果你关闭它，代替数字，将显示一个点，通知将只告诉“<i>连接到传感器</i>”或“<i>交换数据</i>”。在后台持续运行的应用被安卓要求有这样的可见通知（否则它很容易被安卓停止）。当“<i>通过蓝牙的传感器</i>”关闭并且没有镜像连接时，Juggluco才关闭通知。</p>
     <p style="line-height: 100%; margin-bottom: 0in">在某些智能手机上，只有在更改安卓通知设置后，葡萄糖值才会显示在安卓状态栏中。例如，在Realme GT 5G上，您必须转到applist-&gt;Juggluco-&gt;manage notifications，点击glucoseNotification并关闭“设置为静音”。 “在状态栏显示”现在将显示为打开。</p>
     <p style="font-weight: normal; line-height: 100%; margin-bottom: 0in">你也可以通过选择左中菜单中的<i>通知</i>来获得一个安卓通知。在这种情况下，如果配置了，通知将发送到一些智能手表。这适用于Garmin手表，我不知道它是否适用于其他任何东西。报警也会生成通知。</p>
-    <h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/floatingconfig.html" onclick="location.href=this.href+'?unit='+unitstr;return false;">悬浮窗设置</a></h2>
+    <h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/zh/floatingconfig.html" onclick="location.href=this.href+'?unit='+unitstr;return false;">悬浮窗设置</a></h2>
     <p>当你打开这个功能时，一个带有当前葡萄糖值的小图像会持续出现在屏幕上，无论哪个应用处于前台。如果你第一次打开它，你将被引导到一个应用列表中，你必须给予Juggluco<b>在其他应用上显示</b>的权限。</p>
     <h2 class="western">通过蓝牙连接传感器（如果直连必开！关闭等于不连接传感器）</h2>
     <p>选择此应用是否通过蓝牙连接到Freestyle libre 2或3传感器。这对于报警和持续葡萄糖监测是必要的。</p>
-    <h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/alarmhelp.html">警报</a></h2>
+    <h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/zh/alarmhelp.html">警报</a></h2>
     <p style="font-weight: normal">设置高低葡萄糖报警、信号丢失报警和值可用通知。</p>
-    <h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/labelhelp.html">设置标签</a></h2>
+    <h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/zh/labelhelp.html">设置标签</a></h2>
     <p style="line-height: 100%; margin-bottom: 0in">指定用于数量的标签。转到一个屏幕以确定使用哪些标签来设置数量，如胰岛素剂量、碳水化合物消耗和花费足球时间的小时数。如果您还使用Garmin手表应用Kerfstok，这些标签将发送到手表应用。</p>
     <h2 class="western">语言</h2>
     <p style="line-height: 100%; margin-bottom: 0in">Juggluco以所选语言显示。当没有选择语言代码时，使用系统语言。</p>
-    <h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/reminders.html">提醒</a></h2>
+    <h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/zh/reminders.html">提醒</a></h2>
     <p style="font-weight: normal; line-height: 100%; margin-bottom: 0in">指定如果在一定时间内没有输入一定数量的食物或药物，应发出警报。</p>
-    <h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/colorhelp.html">颜色</a></h2>
+    <h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/zh/colorhelp.html">颜色</a></h2>
     <p style="line-height: 100%; margin-bottom: 0in">更改曲线、扫描和数字的颜色。要切换<i>黑暗模式</i>，使用右中菜单-&gt;黑暗模式。</p>
     <h2 class="western"><br><br></h2>
   </body>

@@ -9,12 +9,12 @@
 <base href="https://www.juggluco.nl/Jugglucohelp/" id="baseurl" target="_blank"></head>
  <img src="uploader.jpg" alt="Uploader" style="object-fit:contain; width:15cm;                   height:auto;">
 <body lang="zh-CN" dir="ltr"><h1>上传到 Nightscout 服务器</h1>
-<p>在大多数情况下，您也可以使用 <a href="https://www.juggluco.nl/Jugglucohelp/Nightscouthelp.html">Juggluco 中的 Web 服务器</a> 或 <a href="https://www.juggluco.nl/Juggluco/cmdline">juggluco-server</a>。只有一些仅显示 Nightscout 网页的应用程序需要 <a href="https://github.com/nightscout/cgm-remote-monitor">cgm-remote-monitor</a>。您甚至可以在 Juggluco 7.4.1 中使用 AAPS 和 AAPSClient 与 Juggluco 中的 Web 服务器一起使用。</p>
+<p>在大多数情况下，您也可以使用 <a href="https://www.juggluco.nl/Jugglucohelp/zh/Nightscouthelp.html">Juggluco 中的 Web 服务器</a> 或 <a href="https://www.juggluco.nl/Juggluco/cmdline">juggluco-server</a>。只有一些仅显示 Nightscout 网页的应用程序需要 <a href="https://github.com/nightscout/cgm-remote-monitor">cgm-remote-monitor</a>。您甚至可以在 Juggluco 7.4.1 中使用 AAPS 和 AAPSClient 与 Juggluco 中的 Web 服务器一起使用。</p>
 <p>所有蓝牙接收的值在到达时都会上传到 Nightscout 服务器。当使用多个传感器时，所有传感器的所有值都会被上传。一些 Garmin 手表应用/表盘/小部件假设值之间间隔 5 分钟。当它们接收到每分钟一个的血糖值时，它们只会显示曲线的最后五分之一。因此，Juggluco 中集成的 Web 服务器将值间隔 5 分钟，除非设置了“interval=secs”为较低的值。</p>
 <p><b>URL</b>：URL 应该是 https://hostname:port 的形式，例如，https://myname.herokuapp.com:6789</p>
 <p><b>活动</b>：打开上传器</p>
 <p><b>test V3</b>：（使用V3协议）让 Juggluco 使用 api/v3 上传到 Nightscout。不要将其用于之前接收过 V1 上传的 Nightscout 服务器，也不要将 V1 上传发送到之前接收过 V3 上传的 Nightscout 服务器。在 api_secret 的位置，您需要指定一个具有上传治疗和条目权限的<i>访问令牌</i>。您可以在 Nightscout 网络界面的 Admin Tools 下创建一个。</p>
-<p><b>发送标签</b>：还将标签的信息作为治疗值发送到 Nightscout。点击复选框将带您进入一个对话框，您可以在其中为每个标签指定它在 Nightscout 中的含义。这些规格与 Juggluco 中的 网络 服务器共享（<a href="https://www.juggluco.nl/Jugglucohelp/Nightscouthelp.html">左侧菜单→设置→Web 服务器</a>）。只有当所有标签都被设定了以后时，您才能使用“<i>发送标签</i>”。如果您稍后添加了一个新标签，您必须自己设定指定要对其做什么。由于 <a href="https://github.com/nightscout/cgm-remote-monitor">Nightscout</a> 中的一个错误，（意思是你必须新加一个便签值才能变更较早时间的）在添加具有新时间的项目后，才会显示较早时间段的插入或删除。最好不要频繁向 Nightscout 发送。现在每次用户切换离开 Juggluco 时都会执行，例如关闭显示屏或转到另一个应用程序。</p>
+<p><b>发送标签</b>：还将标签的信息作为治疗值发送到 Nightscout。点击复选框将带您进入一个对话框，您可以在其中为每个标签指定它在 Nightscout 中的含义。这些规格与 Juggluco 中的 网络 服务器共享（<a href="https://www.juggluco.nl/Jugglucohelp/zh/Nightscouthelp.html">左侧菜单→设置→Web 服务器</a>）。只有当所有标签都被设定了以后时，您才能使用“<i>发送标签</i>”。如果您稍后添加了一个新标签，您必须自己设定指定要对其做什么。由于 <a href="https://github.com/nightscout/cgm-remote-monitor">Nightscout</a> 中的一个错误，（意思是你必须新加一个便签值才能变更较早时间的）在添加具有新时间的项目后，才会显示较早时间段的插入或删除。最好不要频繁向 Nightscout 发送。现在每次用户切换离开 Juggluco 时都会执行，例如关闭显示屏或转到另一个应用程序。</p>
 <p><b>重新发送数据（注意是所有）</b>：再次将所有数据上传到 Nightscout 服务器</p>
 <p><b>立即发送（其实就是重试）</b>：通常数据在从传感器或镜像连接到达时立即发送。当出于某种原因之前的尝试失败时，按下此按钮。</p>
 	

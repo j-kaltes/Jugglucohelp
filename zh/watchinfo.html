@@ -25,17 +25,17 @@
 <h2 class="western">GadgetBridge</h2>
 <p><a href="https://gadgetbridge.org">GadgetBridge</a> 可使MiBand/Amazfit手表显示天气信息。在打开Gadgetbridge选项后，Juggluco会将血糖值作为天气信息发送到GadgetBridge。与Watchdrip相比，这样做的优点是速度更快，但缺点是显示的信息较少。Juggluco将血糖值和方向箭头放置在天气的位置上。天气位置显示在手表上的天气下面。我还没有找到显示此位置的任何表盘。仅适用于<b>mmol/L</b>单位：小数点之前的值放在最高温度，小数点之后的值放在最低温度。对于<b>mg/dL</b>的值来说，数字太大，无法用作温度，因此将最后一位放在最低温度，倒数第二位以前的数字放在最高温度。因此，106 mg/dL变成：最高温度10，最低温度6。</p>
 <p>变化的方向决定了天气图标：下降的血糖是下雪，上升的血糖是下雨。它也显示在当前温度中。大于零表示血糖上升，小于零表示血糖下降。</p>
-<h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/kerfstok.html">Kerfstok</a></h2>
+<h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/zh/kerfstok.html">Kerfstok</a></h2>
 <p>Kerfstok是一款手表应用程序，您可以通过该应用程序输入数字（如胰岛素剂量），但它还会显示当前的血糖值。每当到达新的血糖值时，Juggluco会立即将其发送到Kerfstok上。因此，Kerfstok始终显示最新的血糖值。Kerfstok还可以记录Garmin支持的所有活动，并显示速度和距离。请参见 Watch->Kerfstok 状态->帮助和<a href="https://www.juggluco.nl/Kerfstok">https://www.juggluco.nl/Kerfstok</a></p>
 <h2 class="western"><a href="https://www.juggluco.nl/Juggluco/glucosebroadcast.html">广播</a></h2>
-<p>应用程序可以从Juggluco发送的血糖广播中接收血糖值，并将这些血糖值发送到手表。例如，G-Watch（<a href="https://play.google.com/store/apps/details?id=sk.trupici.g_watch">TizenOS</a>或<a href="https://play.google.com/store/apps/details?id=sk.trupici.gwatch.wear">WearOS</a>）可以从Glucodata广播中接收血糖值（请参见左侧菜单-><a href="https://www.juggluco.nl/Jugglucohelp/settinghelp.html">设置</a>）。</p>
-<h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/Nightscouthelp.html">xDrip手表应用程序</a></h2>
+<p>应用程序可以从Juggluco发送的血糖广播中接收血糖值，并将这些血糖值发送到手表。例如，G-Watch（<a href="https://play.google.com/store/apps/details?id=sk.trupici.g_watch">TizenOS</a>或<a href="https://play.google.com/store/apps/details?id=sk.trupici.gwatch.wear">WearOS</a>）可以从Glucodata广播中接收血糖值（请参见左侧菜单-><a href="https://www.juggluco.nl/Jugglucohelp/zh/settinghelp.html">设置</a>）。</p>
+<h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/zh/Nightscouthelp.html">xDrip手表应用程序</a></h2>
 <p>Juggluco内置了xDrip/Nightscout web服务器。这使得直接在Juggluco中使用xDrip手表应用程序成为可能。xDrip每5分钟显示一次新的血糖值，而Juggluco每分钟显示一次新的血糖值。Juggluco还会将最新的血糖值发送到xDrip手表应用程序。只有当手表应用程序请求它们时，才会将血糖值发送到手表，因此显示的值的年龄取决于手表应用程序何时请求它们。例如，Garmin手表上的表盘和数据字段只在每5分钟请求一次血糖值。通过xDrip，这通常导致获得10分钟之前的血糖值。当与Juggluco直接连接时，这些表盘会显示高达6分钟之前的血糖值。在</p>
 <p>Garmin上，如果无法使用Kerfstok，则有以下选项可以定期接收最新的血糖值。可以在记录活动期间使用xDrip小部件（<a href="https://apps.garmin.com/en-US/apps/73115e04-dc9f-4765-ad88-e7ae283ce995">https://apps.garmin.com/en-US/apps/73115e04-dc9f-4765-ad88-e7ae283ce995</a>）。因此，如果空闲，您可以在录制标准Garmin运动应用程序的同时切换到此xDrip小部件。还有一个更新血糖值的xDrip运动应用程序：<a href="https://apps.garmin.com/en-US/apps/aaf6533b-bca1-4365-9131-9f882f6f148c">https://apps.garmin.com/en-US/apps/aaf6533b-bca1-4365-9131-9f882f6f148c</a>。您可以尝试在某一时刻启动，以便它在可用后立即请求血糖值。数据字段和表盘将是理想的解决方案，但Garmin施加的限制使它们的价值很小。</p>
 <p>根据用户的说法，Fitbit手表也有一个使用xDrip web服务器的表盘：<a href="https://glancewatchface.com/">https://glancewatchface.com</a></p>
 <p>有关web服务器接口的更多信息，请参见<a href="https://www.juggluco.nl/Juggluco/webserver.html">https://www.juggluco.nl/Juggluco/webserver.html</a></p>
 <p><b>仅限本地</b>：仅接受来自本地主机（127.0.0.1）的连接。如果关闭此选项，则其他主机也可以访问服务器。这仅适用于http，https始终可用。如果您未配置防火墙将端口重定向到端口17580，则仅适用于家庭网络中的主机。</p>
-<h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/wearosinfo.html">WearOS Juggluco</a></h2>
+<h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/zh/wearosinfo.html">WearOS Juggluco</a></h2>
 <p>Juggluco移植到了Wear OS上。显示屏适应了较小的屏幕，并添加了一个手表表盘。可以将该手表表盘安装为普通的Wear OS手表表盘，并显示通过蓝牙接收到的当前血糖值。</p>
 </body>
 </html>

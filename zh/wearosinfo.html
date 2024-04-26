@@ -9,7 +9,7 @@
 <h1>Wear Os</h1>
 <p><strong>手表直接连接传感器</strong>：此选项使手表与传感器直接连接。仅在手表和手机同步时可更改此设置。使用“镜像 -&gt; 同步并重新初始化”在手机和手表上同步手表和手机。</p>
 <p><strong>初始化手表应用程序</strong>：在手表上安装Juggluco(Wear Os版)并运行后，需要按下此按钮。</p>
-<p><strong>恢复默认</strong>：将连接设置为其默认值。它包括左侧菜单 -&gt; <a href="https://www.juggluco.nl/Jugglucohelp/connectionoverview.html">镜像</a>（手表上）和左中部菜单 -&gt; 镜像（手机上）中更改的设置。它包括诸如“仅激活”和“扫描”之类的设置。如果因淋浴或睡眠时不慎更改了设置，则可以按下此按钮。如果通过重新安装手表版本或清除数据重置，则还需要在手机上移除镜像连接。</p>
+<p><strong>恢复默认</strong>：将连接设置为其默认值。它包括左侧菜单 -&gt; <a href="https://www.juggluco.nl/Jugglucohelp/zh/connectionoverview.html">镜像</a>（手表上）和左中部菜单 -&gt; 镜像（手机上）中更改的设置。它包括诸如“仅激活”和“扫描”之类的设置。如果因淋浴或睡眠时不慎更改了设置，则可以按下此按钮。如果通过重新安装手表版本或清除数据重置，则还需要在手机上移除镜像连接。</p>
 <p>特殊版本的Juggluco可以直接在Wear Os手表上运行。它需要一台带有NFC的Android智能手机来扫描传感器，并通过TCP连接将数据发送到Wear OS手表。之后你可以选择：</p>
 <ol>
 	<li><p>默认传感器与手机连接，并且通过蓝牙将接收到的血糖值通过TCP发送到Wear OS手表；</p></li>
@@ -22,8 +22,8 @@
 	<li><p>确保手表具有足够的可用存储空间和内存。如果设备在关键时刻存储空间不足，可能需要重新安装Juggluco；</p></li>
 	<li><p>让Juggluco手机版本与传感器配对。您需要使用“通过蓝牙扫描传感器”多次扫描传感器。无需通过蓝牙在手机上接收血糖值；</p></li>
 	<li><p>在Wear Os手表上安装Juggluco Wear OS版本并启动它；</p></li>
-	<li><p>打开手机上的左侧菜单 -&gt; 手表 -&gt; <a href="https://www.juggluco.nl/Jugglucohelp/wearosinfo.html">Wear Os配置</a>。您的手表应显示在列表中。按下“初始化手表应用程序”；</p></li>
-	<li><p>如果一切顺利，手机和手表会成功连接，并且手机上的所有数据都会发送到手表。这可能需要很长时间，如果您使用Juggluco已经很长时间了。您可以通过查看镜像对话框（手机：左中部菜单 -&gt; <a href="https://www.juggluco.nl/Jugglucohelp/connectionoverview.html">镜像</a>，手表：左侧菜单 -&gt; 镜像）。应该显示与手表下拉列表中显示的相同ID的连接。在手表上也应包含手机的IP地址。如果这两者不在或者手表侧不包含IP，则应该再次按下“初始化手表应用程序”。如果仍然不行，请检查蓝牙连接或与手表连接的手机app。（当手表已经接收到数据时，按下“初始化手表应用程序”将重发所有数据。</p></li>
+	<li><p>打开手机上的左侧菜单 -&gt; 手表 -&gt; <a href="https://www.juggluco.nl/Jugglucohelp/zh/wearosinfo.html">Wear Os配置</a>。您的手表应显示在列表中。按下“初始化手表应用程序”；</p></li>
+	<li><p>如果一切顺利，手机和手表会成功连接，并且手机上的所有数据都会发送到手表。这可能需要很长时间，如果您使用Juggluco已经很长时间了。您可以通过查看镜像对话框（手机：左中部菜单 -&gt; <a href="https://www.juggluco.nl/Jugglucohelp/zh/connectionoverview.html">镜像</a>，手表：左侧菜单 -&gt; 镜像）。应该显示与手表下拉列表中显示的相同ID的连接。在手表上也应包含手机的IP地址。如果这两者不在或者手表侧不包含IP，则应该再次按下“初始化手表应用程序”。如果仍然不行，请检查蓝牙连接或与手表连接的手机app。（当手表已经接收到数据时，按下“初始化手表应用程序”将重发所有数据。</p></li>
 	<li><p>如果一切顺利，手机版本和手表版本的Juggluco显示相同的数据。手机接收的每个血糖值都会通过TCP发送到手表。一些设置，例如单位，血糖警报级别和提醒也会传输到手表。如果想要修改请在手表本身上操作。</p>
 	<li><p>如果您有蓝牙连接良好的Wear Os手表，并且希望在不携带手机的情况下在手表上接收血糖值，可以直接将Juggluco手表版本与传感器连接。在将所有值发送到手表后，您可以勾选<strong>“手表直接连接传感器”</strong>。通过此操作，在手机上关闭“通过蓝牙扫描传感器”，并在手表上打开它。观看的流式值现在会从手表发送到手机，您可以在镜像对话框中检查。在手表和手机不同步时无法更改“手表直接连接传感器”设置。</p></li>
 	<li><p>//如果您想将“标签”从手表发送到手机，您应该在镜像对话框中自行反转发送方向，即在手机上取消选中，并在手表上选中。在手机上也应设置“接收来自...”。如果所有设置都不正确，将无法正常工作。应更改“不更改“标签””。“标签”的标签始终与“标签”一起发送。如果更改发送“标签”从手表到手机的传输方向，无法更改标签。这不应该太容易。</p></li>
@@ -61,7 +61,7 @@
 <h2 class="western"><strong>表盘</strong></h2>
 <p>Wear OS的Juggluco包括一个表盘，可以显示当前的血糖水平、时间和最多四个复杂功能。要使用它，您必须选择此表盘，例如在手表伴侣应用程序中选择"已下载"。当屏幕唤醒时，通常会显示最后的血糖值。当显示处于环境（始终显示）模式时，只有在分钟指示器增加或按下按钮或抬起手臂时，血糖值才会更新。因此，显示的值可能会延迟高达一分钟。</p>
 <p>还有一种复杂功能使用WearOS版本的Glucodata广播显示血糖值，可以在接受此复杂功能的每个表盘上使用：<a href="https://github.com/pachi81/GlucoDataHandler/releases">https://github.com/pachi81/GlucoDataHandler/releases</a></p>
-<p>第三个选项是在 Juggluco 手表的设置中打开 <i>Floating Glucose</i>。当 Juggluco 有适当的权限时，一个血糖值会显示在其他应用程序上方。这样，您在使用任意的表盘或监测您活动的应用程序时，可以看到您当前的血糖值。有关更多信息，请参见 Juggluco 手机版本中的左侧菜单 -&gt; 设置 -&gt; <a href="https://www.juggluco.nl/Jugglucohelp/floatingconfig.html">Floating
+<p>第三个选项是在 Juggluco 手表的设置中打开 <i>Floating Glucose</i>。当 Juggluco 有适当的权限时，一个血糖值会显示在其他应用程序上方。这样，您在使用任意的表盘或监测您活动的应用程序时，可以看到您当前的血糖值。有关更多信息，请参见 Juggluco 手机版本中的左侧菜单 -&gt; 设置 -&gt; <a href="https://www.juggluco.nl/Jugglucohelp/zh/floatingconfig.html">Floating
 	glucose</a> -&gt; 帮助。</p>
 <p><br/>
 <br/>

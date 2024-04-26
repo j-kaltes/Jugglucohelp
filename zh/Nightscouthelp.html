@@ -25,7 +25,7 @@
 <ul>
 	<li><p style="line-height: 100%; margin-bottom: 0in"><a href="https://www.makeuseof.com/tag/what-is-port-forwarding-and-how-can-it-help-me">https://www.makeuseof.com/tag/what-is-port-forwarding-and-how-can-it-help-me</a></p>
 	<li><p style="line-height: 100%; margin-bottom: 0in"><a href="https://www.juggluco.nl/Juggluco/phones/index.html">https://www.juggluco.nl/Juggluco/phones/index.html</a></p>
-	<li><p style="line-height: 100%; margin-bottom: 0in">左侧菜单栏中间-&gt;镜像-&gt;<a href="https://www.juggluco.nl/Jugglucohelp/addconnection.html">添加连接</a>-&gt;帮助</p>
+	<li><p style="line-height: 100%; margin-bottom: 0in">左侧菜单栏中间-&gt;镜像-&gt;<a href="https://www.juggluco.nl/Jugglucohelp/zh/addconnection.html">添加连接</a>-&gt;帮助</p>
 </ul>
 <p style="line-height: 100%; margin-bottom: 0in">其他 Nightscout 关注者只使用 https，这要求 Juggluco 具有用于访问 Juggluco 的域名的认证 SSL 密钥。如果您的外部 IP 有关联的主机名，您可以通过 <a href="https://certbot.eff.org/instructions">Certbot</a> 免费获取证书。如果您的外部 IP 没有主机名，您将无法使用它。您可以从 <a href="https://www.freenom.com/">https://www.freenom.com</a> 免费获取一个域名。我尝试了，但几周后，没有任何通知，他们只是将域名从我这里拿走了，当我试图再次注册时，它有一个价格。您可以每年花几欧元购买一个主机名（例如从 <a href="https://www.strato.nl/domeinnaam">https://www.strato.nl/domeinnaam</a>）。</p>
 <p style="line-height: 100%; margin-bottom: 0in">安装 Certbot 并将您的调制解调器的端口 80（http）重定向到您的计算机后，您可以简单地按：</p>
@@ -33,7 +33,7 @@
 <p>参见 <a href="https://devpress.csdn.net/linux/62e7999e907d7d59d1c8cfd0.html">https://devpress.csdn.net/linux/62e7999e907d7d59d1c8cfd0.html</a>。</p>
 <p style="line-height: 100%; margin-bottom: 0in">使用 Certbot 后，我在 /etc/letsencrypt/live/myhostname/privkey.pem 中找到了私钥，完整链在 /etc/letsencrypt/live/myhostname/fullchain.pem 中。“<em>myhostname</em>”是我使用的主机名。</p>
 <p style="line-height: 100%; margin-bottom: 0in">如果您已从 SSL 机构收到密钥文件，您必须将其提供给 Juggluco。可以通过按“<em>私钥</em>”读取私钥，通过按“<em>完整链</em>”读取完整链。</p>
-<p style="line-height: 100%; margin-bottom: 0in">如果您只想将血糖值从一个 Android 设备发送到另一个 Android 设备，您可以更好地使用 Juggluco 的 <a href="https://www.juggluco.nl/Juggluco/index.html#mirror">镜像</a> 功能（左侧菜单栏中间-&gt;<a href="https://www.juggluco.nl/Jugglucohelp/connectionoverview.html">镜像</a>）。</p>
+<p style="line-height: 100%; margin-bottom: 0in">如果您只想将血糖值从一个 Android 设备发送到另一个 Android 设备，您可以更好地使用 Juggluco 的 <a href="https://www.juggluco.nl/Juggluco/index.html#mirror">镜像</a> 功能（左侧菜单栏中间-&gt;<a href="https://www.juggluco.nl/Jugglucohelp/zh/connectionoverview.html">镜像</a>）。</p>
 <p style="line-height: 100%; margin-bottom: 0in">您需要 SSL 来使用 Android 应用 AAPS、Diabetes:M、<a href="https://play.google.com/store/apps/details?id=se.cornixit.nightwatch">Nightwatch</a> 和 <a href="https://slingithub.github.io/CheckmateWeb">Checkmate</a>、Sugarmate（MacOS 和 IOS）和 <a href="https://github.com/JohanDegraeve/xdripswift">Xdrip4ios</a>、Shuggah 和 Cockpit（IOS）。将 Nightscout 服务器 URL 指定为：</p>
 <p><i>https://hostname:port</i></p>
 <p><i>hostname</i> 是您提供给 Juggluco 的认证密钥的主机名，<i>port</i> 是您在此屏幕中指定的端口（默认值：17581）。</p>

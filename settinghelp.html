@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <title>Settings</title>
-    <base target="_blank">
-    <meta name="generator" content="LibreOffice 7.5.9.2 (Linux)">
-    <meta name="created" content="00:00:00">
-    <meta name="changed" content="2024-01-28T20:38:07.406015517">
-    <style type="text/css">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title>Settings</title>
+	<base target="_blank">
+	<meta name="generator" content="LibreOffice 7.6.5.2 (Linux)"/>
+	<meta name="created" content="00:00:00"/>
+	<meta name="changed" content="2024-05-08T21:50:52.625275614"/>
+	<meta name="created" content="00:00:00">
+	<style type="text/css">
 		@page { size: 8.27in 11.69in; margin: 0.79in }
 		h1 { margin-bottom: 0.08in; background: transparent }
 		h1.western { font-family: "Liberation Serif", serif }
@@ -144,6 +145,15 @@ of the display.</p>
 <p>Place the numbers of the glucose level in the graph on the left of
 the screen. Useful if you want to place your current glucose in the
 middle of the screen, for example in Wear OS.</p>
+<h2 class="western">Threshold</h2>
+<p>Apply a threshold to the rate of change of glucose values. Only
+when the rate of change diverges the specified amount from 0 is the
+rate of change arrow different from horizontal. You can use arbitrary
+values between 0 and 0.8. The threshold is used to prevent giving to
+much meaning to small absolute rate of change values. It is very well
+possible that the rate of change show a slowly rising glucose value,
+but in reality it is falling. The threshold is used to make a more
+cautious statement.</p>
 <h2 class="western">Invert screen</h2>
 <p style="margin-bottom: 0in">Turn the display upside down. It is
 switch on by default, because otherwise I did now and then
@@ -221,17 +231,20 @@ for more information. Only one app can listen to the network port
 used by the xDrip webserver, so you need to turn off &quot;<i>xDrip
 webservice</i>&quot; in xDrip itself if you want to make use of the
 one in Juggluco.</p>
-<h2 id="eversense" class="western">EverSense</h2>
-<p>Yet another glucose broadcast. It can be used to send every minute a
-glucose value to xDrip. xDrip will ignore nearly all of them because
-of its insistence on one value in 5 minutes. You can remove this
-restriction by editing the source code of xDrip. Change <i>4 * 60 * 1000</i>
-to <i>55 * 1000</i> in
+<h2 class="western"><a name="eversense"></a>EverSense</h2>
+<p>Yet another glucose broadcast. It can be used to send every minute
+a glucose value to xDrip. xDrip will ignore nearly all of them
+because of its insistence on one value in 5 minutes. You can remove
+this restriction by editing the source code of xDrip. Change <i>4 *
+60 * 1000</i> to <i>55 * 1000</i> in
 <a href="https://github.com/NightscoutFoundation/xDrip/blob/645e8b4cb8fa3ad7b280f598d6f2f6bdb84ce392/app/src/main/java/com/eveningoutpost/dexdrip/models/BgReading.java#L969">app/src/main/java/com/eveningoutpost/dexdrip/models/BgReading.java</a>,
 so that it becomes:</p>
-<p>public static BgReading readingNearTimeStamp(long startTime) {<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;long margin = (55 * 1000);<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return readingNearTimeStamp(startTime, margin);<br>
+<p>public static BgReading readingNearTimeStamp(long startTime)
+{<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;long
+margin = (55 * 1000);<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return
+readingNearTimeStamp(startTime, margin);<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</p>
 <p>The advantage over the Patched Libre broadcast is, that xDrip
 doesn’t transform the glucose values in some unspecified manner.</p>

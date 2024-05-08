@@ -1,5 +1,5 @@
-JUGGLUCOPATH=/Users/pangwei/AndroidStudioProjects/Juggluco
-#JUGGLUCOPATH=/home/jka/src/android/Glucodata/
+#JUGGLUCOPATH=/Users/pangwei/AndroidStudioProjects/Juggluco
+JUGGLUCOPATH=/home/jka/src/android/Glucodata/
 all: html.xml
 html2xml: html2xml.cpp
 	 g++ -I${JUGGLUCOPATH}/Common/src/main/cpp -I${JUGGLUCOPATH}/Common/src/main/cpp/share -g -std=c++20 $^ -o $@

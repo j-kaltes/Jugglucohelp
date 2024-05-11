@@ -94,9 +94,7 @@ dauern, bis die App Glukosewerte vom Sensor erhält.&nbsp;Oft dauert
 es eine Minute, aber manchmal dauert es viel
 länger.&nbsp;Die&nbsp;</font><font face="times new roman"><i>Verbindungsphase</i></font>&nbsp;<font face="times new roman">verursacht
 die meisten Probleme.</font> <font face="times new roman">Am
-häufigsten sind Fehler mit status=133, dem Statusargument von
-onConnectionStateChange(BluetoothGatt bluetoothGatt, int status, int
-newState).</font> <font face="times new roman">Wenn Sie die Batterie
+häufigsten sind Fehler mit status=133, dem Statusargument von <a href=https://developer.android.com/reference/android/bluetooth/BluetoothGattCallback#onConnectionStateChange(android.bluetooth.BluetoothGatt,%20int,%20int)">onConnectionStateChange(BluetoothGatt bluetoothGatt, int status, int newState)</a>.</font> <font face="times new roman">Wenn Sie die Batterie
 aus einem Sensor entfernen, erhalten Sie auch diesen Fehler, also
 scheint es so etwas wie&nbsp;</font><font face="times new roman"><i>Bluetooth-Gerät
 nicht gefunden</i></font>&nbsp;<font face="times new roman">zu sein

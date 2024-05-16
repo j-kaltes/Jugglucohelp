@@ -19,6 +19,8 @@ helptexts.zip: ${FILES}
 files:
 	@echo ${FILES}
 
+links.html:${FILES}
+	@sh mklinks.sh $^ > $@
 help: helptexts.zip 
 	make -C de dehelptexts.zip 
 	make -C nl nlhelptexts.zip 

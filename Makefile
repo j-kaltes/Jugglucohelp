@@ -6,8 +6,8 @@ html2xml: html2xml.cpp
 
 FILES=ringtone.html reminders.html connectionoverview.html addconnection.html locationpermission.html introhelp.html searchhelp.html shortcuthelp.html labelhelp.html settinghelp.html sensorhelp.html kerfstok.html   getlib.html newlabelhelp.html battery.html nutrients.html mealhelp.html colorhelp.html stathelp.html alarmhelp.html flashpermission.html nearbypermission.html watchinfo.html wearosinfo.html about.html disturbhelp.html libreview.html garminconfig.html librenumhelp.html setlibrenumtype.html  floatingconfig.html getaccountidhelp.html Nightscouthelp.html NightPost.html notificationpermission.html staticnum.html talkhelp.html nightnumhelp.html helpexport.html newamount.html healthpermission.html IOB.html  changestart.html camerapermission.html
 
-html.xml: ${FILES}
-	 ./html2xml  $^ > $@
+html.xml: ${FILES} html2xml
+	 ./html2xml  ${FILES} > $@
 
 install: html.xml
 	cp html.xml /o/home/jka/src/android/Glucodata/Common/src/mobile/res/values

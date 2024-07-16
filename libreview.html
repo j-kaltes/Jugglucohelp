@@ -3,6 +3,9 @@
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 	<title>Libreview</title>
+	<meta name="generator" content="LibreOffice 7.6.7.2 (Linux)"/>
+	<meta name="created" content="00:00:00"/>
+	<meta name="changed" content="2024-07-15T21:40:11.810060764"/>
 	<style type="text/css">
 		@page { size: 8.27in 11.69in; margin: 0.79in }
 		p { margin-bottom: 0.1in; background: transparent }
@@ -13,13 +16,8 @@
 <img src="libreview.jpg"  style="object-fit:contain; width:15cm;                   height:auto;margin: 1cm 1cm 1cm 1cm;">
 <body lang="en-US" dir="ltr"><h1>Libreview</h1>
 <p style="line-height: 100%; margin-bottom: 0in">Juggluco can send
-glucose data and amounts to Libreview. When using Libre 0 or 3
-sensors, US/CA/AU Libre 2 sensors or other Libre 2 sensors with
-<i>Bluetooth History</i> set, Juggluco sends the history values to
-Libreview. If Libre 2 sensors are used without &quot;<i>Bluetooth
-history</i>&quot;,Juggluco uses the stream data received via
-Bluetooth to create these 15 minute points by averaging the stream
-values around each point.</p>
+glucose data and amounts to Libreview. 
+</p>
 <p style="line-height: 100%; margin-bottom: 0in">Like the Librelink
 app, it sends data from the last 89 days to Libreview. 
 </p>
@@ -48,7 +46,8 @@ amounts</b></i></a>&quot; and specify what each label means.</p>
 to set this if you make use of <a class="western" href="https://libreview.ru/">https://libreview.<span style="text-decoration: none"><b>ru</b></span></a>
 instead of <a class="western" href="https://libreview.com/">https://libreview.com</a>.
 This only applies to Libre 2 sensors. Libre 3 sensors can only be
-used with libreview.com, because no Russian Libre 3 app exists.</p>
+used with libreview.com, because no Russian Abbott Libre 3 app
+exists.</p>
 <p style="line-height: 100%; margin-bottom: 0in"><b>Immediate</b>:
 Send glucose values to Libreview immediately when they arrive from
 Libre 2 or 3 sensors. This is only useful in combination with
@@ -75,19 +74,15 @@ press this when switching to a new Libreview account.</p>
 <p style="line-height: 100%; margin-bottom: 0in">Result of the last
 time trying to send to Libreview is displayed below the &quot;Get
 Account ID&quot; button.</p>
-<p style="line-height: 100%; margin-bottom: 0in">Because the values
-sent to Libreview are first transformed to one data point in every 15
-minutes and then analyzed, there can be small differences between the
-values shown in Juggluco's statistics screen and Libreview. For
-example Libreview says 100% of the time active, while Juggluco's
-statistics screen says 96.0%. Also some high and low values will be
-averaged away, so that Libreview gives a somewhat higher <i>time in
-target </i>than the statistics screen of Juggluco. Because the
-history values created on the sensors are less extreme than the
-average of the stream values around a history value, this difference
-will be larger when Libreview is based on the <i>history</i> values
-as when &quot;Bluetooth History&quot; is enabled in Juggluco or
-Librelink is used.</p>
+<p style="line-height: 100%; margin-bottom: 0in">Libreview uses the
+history values for its analysis and Juggluco uses the stream values
+for its statistics screen (<a class="western" href="https://www.juggluco.nl/Jugglucohelp/stathelp.html">left
+middle menu-&gt;Statistics</a>).  This difference causes small
+differences between Libreview and the statistics of Juggluco. Because
+the stream values are more extreme, Juggluco is somewhat more
+negative: lower time in range, larger variability. Also <i>time
+sensor active</i> is smaller according to Juggluco; it counts every
+missing stream value.</p>
 <p style="line-height: 100%; margin-bottom: 0in">Juggluco can be
 connected with multiple sensors at the same time, while Librelink
 only handles one sensor at a time. Juggluco also sends data from only
@@ -109,7 +104,6 @@ not refreshed automatically). Retrieving the Account ID from the
 LibreView server makes it possible to use a FreeStyle Libre 3 sensor
 that was already used with Abbotts Libre 3 app with this LibreView
 account.</p>
-<p><b>WARNING</b>: The Freestyle Libre 3 sensor should be activated
-with this account.</p>
+<p>Data from Sibionics sensors is not sent to Libreview.</p>
 </body>
 </html>

@@ -3,9 +3,10 @@
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 	<title></title>
-	<meta name="generator" content="LibreOffice 7.6.5.2 (Linux)"/>
+	<meta name="generator" content="LibreOffice 7.6.7.2 (Linux)"/>
 	<meta name="created" content="00:00:00"/>
-	<meta name="changed" content="2024-05-08T21:58:58.485237520"/>
+	<meta name="changed" content="2024-07-15T21:59:42.704717973"/>
+	<meta name="created" content="00:00:00">
 	<meta name="created" content="00:00:00">
 	<meta name="created" content="00:00:00">
 	<meta name="created" content="00:00:00">
@@ -15,7 +16,8 @@
 <body lang="en-US" dir="ltr"><h1>Sensor</h1>
 <p style="border: none; padding: 0in"><font face="basic roman">T<font face="Liberation Serif, serif">he
 spinner contains the name of the sensor. If Juggluco is using more
-than one sensor at the same time, you can select for which sensor to
+than one sensor at the same time, you can select </font><font face="Liberation Serif, serif">the</font><font face="Liberation Serif, serif">
+sensor </font><font face="Liberation Serif, serif">for which </font><font face="Liberation Serif, serif">to
 show information.</font></font></p>
 <p style="border: none; padding: 0in"><a href="https://www.juggluco.nl/Jugglucohelp/battery.html"><font face="Liberation Serif, serif"><i><b>Doze
 mode</b></i></font></a> <font face="Liberation Serif, serif">leads
@@ -29,10 +31,8 @@ When you turn this option on, the History values are also received
 via Bluetooth. Also, other things will work differently. To Libreview
 will be sent the history values, instead of averages of the stream
 values. The disadvantage is that it is slower. This can be an issue
-on WearOS watches.</font></p>
-<p style="border: none; padding: 0in"><font face="Liberation Serif, serif">This
-option has no effect on Libre 3 and US Libre 2 sensors; they always
-receive history values via Bluetooth.</font></p>
+on WearOS watches. This option has no effect on Libre 3 and US Libre
+2 sensors; they always receive history values via Bluetooth.</font></p>
 <p style="border: none; padding: 0in"><font face="Liberation Serif, serif"><i><b>Permission</b></i>:
 Previous versions of Juggluco required location permission to find
 the device address of the sensor. This is no longer necessary for the
@@ -40,21 +40,22 @@ sensors I use. Maybe there are still sensors out there for which it
 is necessary; in that case you can turn it on. After the first
 contact Juggluco saves the device address and location permission is
 always useless. The device address, if known, is displayed after the
-sensor identifier. Red means a US-like sensor.</font></p>
-<p style="border: none; padding: 0in"><font face="Liberation Serif, serif">Android
-12 has a new Nearby devices permission, which can be used instead of
+sensor identifier. Red means a US-like sensor. Android 12 has a new
+<i>Nearby devices</i> permission, which can be used instead of
 location permission for searching for a Bluetooth device address, but
 it is also needed for later contact with Bluetooth devices.</font></p>
 <p style="border: none; padding: 0in"><font face="Liberation Serif, serif"><i><b>Forget</b></i><i>:</i>
 Let Juggluco forget the device address and scan for the device
 address. For some sensors this is needed to get a connection and is
-then done automatically by Juggluco. With this button you can manually say
-that Juggluco should do that, because there are maybe other occasions in which
-it is also needed.</font></p>
+then done automatically by Juggluco. With this button you can
+manually say that Juggluco should do that, because there are maybe
+other occasions in which it is also needed.</font></p>
 <p style="border: none; padding: 0in"><font face="Liberation Serif, serif"><i><b>Terminate</b></i>:
-stop connecting to this sensor via Bluetooth. If later you want to again
-receive stream glucose values from this sensor, you only have to scan
-it again.</font></p>
+stop connecting to this sensor via Bluetooth. If later you want to
+again receive stream glucose values from this sensor, you only have
+to scan it again. If the sensor is directly connected with the watch,
+you need first to turn that off and then press on <i>Terminate</i> on
+the phone and then on <i>Sync</i> on the watch.</font></p>
 <p style="border: none; padding: 0in"><font face="Liberation Serif, serif"><i><b>Turbo</b></i>:
 Increases effort to contact with sensor in the hope that it results
 in less connection errors, but can uses more battery power. Seems to
@@ -62,7 +63,8 @@ be needed on Watch4 with Freestyle Libre 2 sensors, but not with
 Freestyle Libre 3 sensors and on none of the smartphones I tried it
 on.</font></p>
 <p style="border: none; padding: 0in"><font face="Liberation Serif, serif"><b>Android</b>:
-Let Android instead of Juggluco make the connection with the sensor.</font></p>
+Let Android instead of Juggluco make the connection with the sensor.
+Don’t use it!</font></p>
 <p style="border: none; padding: 0in"><font face="Liberation Serif, serif"><i><b>Info</b></i>:
 Gives start and end times and last scan and stream times of sensor.</font></p>
 <p style="border: none; padding: 0in"><font face="Liberation Serif, serif">To
@@ -78,7 +80,7 @@ If you have started the sensor with Freestyle Reader and you can’t
 turn it off, you can prevent it from getting into contact with the
 sensor by putting the reader in a </font><a href="https://www.offgridweb.com/preparation/faraday-bags-testing-commercial-and-diy-wireless-signal-blockers/amp"><font face="Liberation Serif, serif"><u>Faraday
 cage</u></font></a><font face="Liberation Serif, serif">.</font></p>
-<p style="border: none; padding: 0in">&nbsp;<font face="Liberation Serif, serif"><b>Sensor
+<p style="border: none; padding: 0in"><font face="Liberation Serif, serif"><b>Sensor
 via Bluetooth/Use Bluetooth</b></font> <font face="Liberation Serif, serif">should
 be turned on.</font></p>
 <p style="border: none; padding: 0in"><font face="Liberation Serif, serif">If
@@ -94,16 +96,20 @@ It means </font><font face="Liberation Serif, serif"><i>Bluetooth
 device not found</i></font><font face="Liberation Serif, serif">.
 Nearly always it just takes some time before the device is found. It
 is also possible that the sensor is connected to another device,
-temperary not functioning well, other devices are interfering or the
+temporary not functioning well, other devices are interfering or the
 Bluetooth of Android doesn’t function. Sometimes turning Bluetooth
 off and on seems to help or rebooting the phone or turning off the
 Bluetooth connection of other devices. Other problems are sometimes
-resolved by scanning the sensor.</font></p>
+resolved by scanning the sensor. </font><font face="Liberation Serif, serif">Intervening
+water (including body water) can be a problem, so that wearing a
+WearOS watch on a different arm than the sensor can give connection
+problems when the arms are held in a way that the body is positioned
+between watch and sensor.</font></p>
 <p style="border: none; padding: 0in"><font face="Liberation Serif, serif">Scanning
-the sensor with Juggluco (with <i>Sensor via Bluetooth</i> enabled)
-on another phone, will steal the connection away from this phone and
-it can take some time, with scanning in between, to get it back
-again.</font></p>
-<p style="border: none; padding: 0in">&nbsp;</p>
+the sensor with Juggluco (with </font><font face="Liberation Serif, serif"><i>Sensor
+via Bluetooth</i></font><font face="Liberation Serif, serif">
+enabled) on another phone, will steal the connection away from this
+phone and it can take some time, with scanning in between, to get it
+back again.</font></p>
 </body>
 </html>

@@ -3,9 +3,9 @@
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 	<title></title>
-	<meta name="generator" content="LibreOffice 7.6.5.2 (Linux)"/>
+	<meta name="generator" content="LibreOffice 24.2.6.2 (Linux)"/>
 	<meta name="created" content="2022-07-28T11:55:41.167905165"/>
-	<meta name="changed" content="2024-05-08T21:52:49.976005074"/>
+	<meta name="changed" content="2024-11-22T17:44:45.677083380"/>
 	<style type="text/css">
 		@page { margin: 0.79in }
 		p { margin-bottom: 0.1in }
@@ -14,7 +14,10 @@
 		h2.ctl { font-family: "Mangal"; font-size: 16pt }
 	</style>
 </head>
-<body lang="nl-NL" dir="ltr"><h1>Instellingen</h1>
+<body lang="nl-NL" dir="ltr"><h1><br/>
+<br/>
+
+</h1>
 <h2 class="western">Eenheid</h2>
 <p style="margin-bottom: 0in">Geef aan of glucose waarden in mmol/L
 of mg/dL weergegeven moeten worden.</p>
@@ -96,65 +99,6 @@ hele Librelink app uit te schakelen met:</p>
 <p>Voordat je Abbotts klantenservice belt, kun je het weer
 inschakelen met het volgende commando:</p>
 <p>adb shell pm enable com.freestylelibre.app.nl</p>
-<h2 class="western">Health Connect</h2>
-<p>Stuur minutieuze glucosewaarden naar <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.healthdata">Health
-Connect</a> . Je kunt andere apps toegang geven tot deze
-glucosewaarden, bijvoorbeeld <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.fitness">Google
-Fit</a> . Andere apps kunnen weer gegevens van Google Fit krijgen.</p>
-<h2 class="western">Libreview</h2>
-<p style="margin-bottom: 0in">Geeft aan of stream Freestyle Libre 2
-glucose waarden naar Libreview verzonden worden. Voor Freestyle Libre
-3 sensoren kun je je Account Id nummer van Libreview laten halen.
-Druk er op om de instellingen te wijzigen.</p>
-<h2 class="western">Patched Libre</h2>
-<p>Als dit aanstaat, zendt Juggluco elke minuut een stream glucose
-waarde naar xDrip. In xDrip moet je Libre2 (patched) App als hardware
-gegevensbron aangeven. De glucose waarden die xDrip weergeeft zijn
-verschillend van die het ontvangen heeft. Om een of andere reden,
-vernieuwt het zijn glucosewaarde enkel eens in de 5 minuten;
-waarschijnlijk omdat het gemaakt is voor sensoren die slechts eens in
-de 5 minuten een glucosewaarde verzenden. Daarbij genereert xDrip
-haar eigen interpretatie van de verkregen glucosewaarden.</p>
-<p>Juggluco kloons (zie linker midden menu→kloon) kunnen ook naar
-xDrip zenden. 
-</p>
-<p>Nieuwere versies van Juggluco kunnen glucosewaarden direct naar
-xDrip horloges zenden. Om hier gebruik van te maken moet xDrip
-webserver aangevinkt worden in Linker menu→Horloge. Om conflicten
-te voorkomen moet xDrip webservice in xDrip niet ook aanstaan.</p>
-<h2 class="western">EverSense</h2>
-<p style="background: transparent">Nog een glucose broadcast. Hiermee
-kan elke minuut een glucosewaarde naar xDrip worden verzonden. xDrip
-negeert ze bijna allemaal vanwege het vasthouden aan één waarde in
-5 minuten. Je kunt deze beperking verwijderen door de broncode van
-xDrip te bewerken. Wijzig&nbsp;<i>4 * 60 * 1000</i>&nbsp;in&nbsp;<i>55
-*
-1000</i>&nbsp;in&nbsp;<a href="https://github.com/NightscoutFoundation/xDrip/blob/645e8b4cb8fa3ad7b280f598d6f2f6bdb84ce392/app/src/main/java/com/eveningoutpost/dexdrip/models/BgReading.java#L969">app/src/main/java/com/eveningoutpost/dexdrip/models/BgReading.java</a>&nbsp;,
-zodat het wordt:</p>
-<p>public static BgReading readingNearTimeStamp(long startTime)
-{<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;long
-margin = (55 * 1000);<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return
-readingNearTimeStamp(startTime, margin);<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</p>
-<p style="background: transparent">Het voordeel ten opzichte van de
-Patched Libre broadcast is dat xDrip de glucosewaarden niet op een
-onnavolgbare wijze transformeert.</p>
-<h2 class="western">xDrip broadcast</h2>
-<p>Stuur dezelfde broadcast als ingeschakeld in xDrip met
-&quot;Settings-&gt;Inter-app-settings-&gt;Broadcast locally&quot;.
-Apps zoals AndroidAPS luisteren ernaar. In tegenstelling tot de
-originele xDrip Broadcast die elke 5 minuten werd uitgezonden, zendt
-Juggluco deze broadcast elke minuut uit.</p>
-<h2 class="western">Glucodata broadcast</h2>
-<p>Juggluco heeft een eigen glucose broadcast, glucodata.Minute. See
-<a href="https://www.juggluco.nl/Juggluco/glucosebroadcast.html">https://www.juggluco.nl/Juggluco/glucosebroadcast.html</a>
-voor meer informatie.</p>
-<p>Vink de apps aan die deze broadcast moeten ontvangen.</p>
-<h2 class="western">Webserver</h2>
-<p>Webserver die kan worden gebruikt met xDrip-horloges en sommige
-Nightscout-apps. Voorheen xDrip webserver genoemd.</p>
 <h2 class="western">Insulin onboard (IOB)</h2>
 <p>IOB is een maat voor hoeveel insuline van eerdere insulinedoses
 nog aanwezig is. Hiervoor moet je insulinedoses invoeren onder een
@@ -173,8 +117,6 @@ van tijd naar rechts verschuiven, zodat deze na een paar uur niet
 meer zichtbaar is. Hierdoor is het noodzakelijk om naar de computer
 te lopen en het scherm een paar centimeter to scrollen. Wanneer “<i>Vast
 nu</i>” is ingeschakeld, is deze afleiding niet langer nodig.</p>
-<h2 class="western">Uploader</h2>
-<p>Uploaden naar Nightscout-server.</p>
 <h2 class="western">Glucosemelding</h2>
 <p style="margin-bottom: 0in">(Heette vroeger &quot;<i>Glucose op
 Android statusbalk</i>&quot;). Als dit aanstaat worden stream glucose
@@ -192,14 +134,15 @@ getoond, ongeacht welke app zich in de voorgrond bevind. Als je het
 de eerste keer inschakelt, wordt je doorverwezen naar een lijst met
 apps waarin je Juggluco toestemming moet geven <b>over andere apps
 heen weer te geven</b>.</p>
-<h2 class="western">Sensor via Bluetooth</h2>
-<p>Geef aan dat Juggluco via Bluetooth contact maakt met Freestyle
-Libre 2 sensoren. Dit is nodig voor de CGM en alarmen.</p>
 <h2 class="western">Alarmen</h2>
 <p>Hieronder valt alles dat afgaat in Juggluco afhankelijk van de
 stream glucose waarden ontvangen via Bluetooth: hoog en laag glucose
 alarmen, signaal verlies alarm, waarde aanwezig melding en glucose in
 statusbalk.</p>
+<h2 class="western">Deel gegevens</h2>
+<p>Verschillende manieren om gegevens van Juggluco naar andere apps
+of servers te sturen. (Om gegevens naar horloges te sturen, ga naar
+het linkermenu -&gt; Horloge.)</p>
 <h2 class="western">Nummer labels</h2>
 <p>Specificeer labels voor hoeveelheden. Als gebruikt maakt van de
 Garmin watch app Kerfstok, worden deze labels ook naar Kerfstok

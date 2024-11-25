@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 24.2.6.2 (Linux)"/>
+	<meta name="created" content="2024-11-22T17:46:12.353868729"/>
+	<meta name="changed" content="2024-11-22T17:48:45.341261508"/>
+	<style type="text/css">
+		h2 { margin-top: 0.14in; margin-bottom: 0.08in; background: transparent }
+		h2.western { font-family: "Liberation Sans", sans-serif; font-size: 16pt }
+		h2.cjk { font-family: "Noto Sans CJK SC"; font-size: 16pt }
+		h2.ctl { font-family: "Mangal"; font-size: 16pt }
+	</style>
+</head>
+<body lang="nl-NL" dir="ltr"><h1>Daten austauschen</h1>
+<h2 class="western">Health Connect</h2>
+<p>Senden Sie minutengenaue Glukosewerte an <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.healthdata">Health
+Connect</a> . Sie können anderen Apps Zugriff auf diese Glukosewerte
+gewähren, beispielsweise <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.fitness">Google
+Fit</a> . Andere Apps können wiederum auf Daten von Google Fit
+zugreifen.</p>
+<h2 class="western" align="left">Libreview</h2>
+<p align="left">Verbinden Sie sich mit Libreview, um die Glukosewerte
+and Mengen des Freestyle Libre 2 und 3 an Libreview zu senden und die
+Konto-ID zu erhalten, die bei der Aktivierung des Freestyle Libre
+3-Sensors verwendet wird. 
+</p>
+<h2 class="western" align="left">Patched Libre broadcast</h2>
+<p align="left">Sendet die Bluetooth-Glukose-Stream-Daten jede Minute
+an xDrip. In xDrip müssen Sie Libre (patched App) als
+Hardware-Datenquelle einstellen. Die in xDrip angezeigten
+Glukosewerte unterscheiden sich von den Werten, die es empfängt. Aus
+irgendeinem Grund aktualisiert xDrip seinen Wert nur alle 5 Minuten,
+wahrscheinlich, weil es für Geräte entwickelt wurde, die nur einmal
+alle 5 Minuten senden (eine mit xDrip verbundene Armbanduhr zeigte
+regelmäßig mehr als 9 Minuten alte Werte an). Darüber hinaus zeigt
+xDrip seine eigene Interpretation der empfangenen Glukosewerte an.
+Auch Klongeräte können an xDrip senden.</p>
+<p align="left">Siehe <a href="https://github.com/jakobheyman/xdripJH"><u>https://github.com/jakobheyman/xdripJH</u></a>
+für einen Versuch, den Glukosewert von xDrip jede Minute zu
+aktualisieren.</p>
+<p align="left">Freestyle Libre 3-Sensoren senden fehlende Werte nach
+einer Unterbrechungszeit. Diese Werte werden mit diesem Broadcast
+nicht gesendet. Sie erhalten sie, wenn Sie den Webserver in Juggluco
+einschalten und xDrip zu einem Nightscout-Follower von Juggluco
+machen (http://127.0.0.1:17580).</p>
+<p align="left">Juggluco kann auch direkt mit xDrip-Uhren-Apps in
+Kontakt treten, so dass die Uhren-App aktuellere Glukosewerte
+anzeigt. Um diese Funktion zu nutzen, wählen Sie <i>&quot;xDrip
+Webserver&quot; </i>im linken Menü unter <b>Uhr</b>. Weitere
+Informationen finden Sie in der Hilfe unter linkes Menü-&gt;Uhr. Nur
+eine App kann den vom xDrip-Webserver verwendeten Netzwerkport
+abhören, daher müssen Sie den „<i>xDrip-Webservice“</i> in
+xDrip selbst deaktivieren, wenn Sie den in Juggluco verwenden
+möchten.</p>
+<h2 class="western" align="left">EverSense</h2>
+<p style="background: transparent">Noch eine Glukosebroadcast. Damit
+kann jede Minute ein Glukosewert an xDrip gesendet werden. xDrip
+ignoriert fast alle davon, da es auf einem Wert in 5 Minuten besteht.
+Sie können diese Einschränkung aufheben, indem Sie den Quellcode
+von xDrip bearbeiten. Ändern Sie&nbsp;<i>4 * 60 * 1000</i>&nbsp;in&nbsp;<i>55
+*
+1000</i>&nbsp;in&nbsp;<a href="https://github.com/NightscoutFoundation/xDrip/blob/645e8b4cb8fa3ad7b280f598d6f2f6bdb84ce392/app/src/main/java/com/eveningoutpost/dexdrip/models/BgReading.java#L969">app/src/main/java/com/eveningoutpost/dexdrip/models/BgReading.java</a>&nbsp;,
+sodass Folgendes entsteht:</p>
+<p>public static BgReading readingNearTimeStamp(long startTime)
+{<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;long
+margin = (55 * 1000);<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return
+readingNearTimeStamp(startTime, margin);<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</p>
+<p style="background: transparent">Der Vorteil gegenüber der Patched
+Libre broadcast besteht darin, dass xDrip die Glukosewerte nicht auf
+eine nicht spezifizierte Weise umwandelt.</p>
+<h2 class="western" align="left">xDrip Broadcast</h2>
+<p align="left" style="margin-bottom: 0in">Senden Sie die gleiche
+Broadcast, die in xDrip mit
+„Einstellungen-&gt;Inter-App-Einstellungen-&gt;Lokaler Broadcast“
+aktiviert wurde. Apps wie AndroidAPS hören es sich an. Im Gegensatz
+zur ursprünglichen xDrip-Broadcast, die alle 5 Minuten ausgestrahlt
+wurde, sendet Juggluco diese Broadcast jede Minute.</p>
+<h2 class="western" align="left">Glucodata Broadcast</h2>
+<p align="left" style="margin-bottom: 0in">Eine neue Broadcast, die
+dieselbe Funktion wie die xDrip Broadcast hat. Eine einfache
+Beispielanwendung, die empfangene Glukosewerte in logcat schreibt,
+finden Sie hier: <a href="https://www.juggluco.nl/Juggluco/glucosebroadcast.html">Glucose
+broadcasts</a>.</p>
+<p align="left" style="margin-bottom: 0in">Wenn Sie Juggluco als
+Datenquelle in G-Watch angeben, müssen Sie diese Broadcast
+aktivieren.</p>
+<p align="left" style="margin-bottom: 0in">Geben Sie die Apps an, an
+die diese Broadcast gesendet werden soll.</p>
+<h2 class="western">Webserver</h2>
+<p align="left" style="margin-bottom: 0in">Webserver, der mit
+xDrip-Uhren und einigen Nightscout-Apps verwendet werden kann. Früher
+xDrip-Webserver genannt.</p>
+<h2 class="western">Uploader</h2>
+<p align="left" style="margin-bottom: 0in">Auf einen
+Nightscout-Server hochladen.</p>
+<h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/de/connectionoverview.html">Klon/Mirror</a></h2>
+Senden Sie alle Daten über eine Internetverbindung an eine andere Instanz von Juggluco und erstellen Sie so einen Klon von Juggluco auf einem anderen Gerät. Vorhandene Daten werden überschrieben.
+</body>
+</html>

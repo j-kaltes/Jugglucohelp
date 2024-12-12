@@ -3,9 +3,11 @@
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 	<title></title>
-	<meta name="generator" content="LibreOffice 7.6.7.2 (Linux)"/>
+	<meta name="generator" content="LibreOffice 24.2.7.2 (Linux)"/>
 	<meta name="created" content="00:00:00"/>
-	<meta name="changed" content="2024-07-15T21:59:42.704717973"/>
+	<meta name="changed" content="2024-12-12T15:34:44.333253629"/>
+	<meta name="created" content="00:00:00">
+	<meta name="created" content="00:00:00">
 	<meta name="created" content="00:00:00">
 	<meta name="created" content="00:00:00">
 	<meta name="created" content="00:00:00">
@@ -16,9 +18,8 @@
 <body lang="en-US" dir="ltr"><h1>Sensor</h1>
 <p style="border: none; padding: 0in"><font face="basic roman">T<font face="Liberation Serif, serif">he
 spinner contains the name of the sensor. If Juggluco is using more
-than one sensor at the same time, you can select </font><font face="Liberation Serif, serif">the</font><font face="Liberation Serif, serif">
-sensor </font><font face="Liberation Serif, serif">for which </font><font face="Liberation Serif, serif">to
-show information.</font></font></p>
+than one sensor at the same time, you can select the</font> <font face="Liberation Serif, serif">sensor
+for which to show information.</font></font></p>
 <p style="border: none; padding: 0in"><a href="https://www.juggluco.nl/Jugglucohelp/battery.html"><font face="Liberation Serif, serif"><i><b>Doze
 mode</b></i></font></a> <font face="Liberation Serif, serif">leads
 you to a screen with information on how to disable battery
@@ -32,8 +33,16 @@ via Bluetooth. Also, other things will work differently. To Libreview
 will be sent the history values, instead of averages of the stream
 values. The disadvantage is that it is slower. This can be an issue
 on WearOS watches. This option has no effect on Libre 3 and US Libre
-2 sensors; they always receive history values via Bluetooth.</font></p>
-<p style="border: none; padding: 0in"><font face="Liberation Serif, serif"><i><b>Permission</b></i>:
+2 sensors; they always receive history values via Bluetooth.</p>
+<p >⏰: Let Juggluco use an alarm
+clock function to ensure the correct timing of connecting to Dexcom
+G7 sensors. Without it, when the device is in deep sleep when not
+used, it will sometimes not awake to reconnect to the sensor and it
+will not immediately receive a glucose value. My WearOS watch had
+this problem in the middle of the night, probably because I moved
+very little. Because of backfill afterwards and slow awakening, I
+didn’t see it on the watch and phone, only in the log files.</p>
+<p style="border: none; padding: 0in"><i><b>Permission</b></i>:
 Previous versions of Juggluco required location permission to find
 the device address of the sensor. This is no longer necessary for the
 sensors I use. Maybe there are still sensors out there for which it
@@ -64,7 +73,15 @@ Freestyle Libre 3 sensors and on none of the smartphones I tried it
 on.</font></p>
 <p style="border: none; padding: 0in"><font face="Liberation Serif, serif"><b>Android</b>:
 Let Android instead of Juggluco make the connection with the sensor.
-Don’t use it! In most cases it will take longer before a connection is established. This option was introduced because of a broken Android 13 version, which is later repaired. You should only turn this on when in this sensor screen no recent times are displayed. That means that no connection errors or sensor errors are shown, but also no values are received and you can get it working again by turning off and on Bluetooth. When you try to connect European Libre 2 sensor with two apps on the same phone at the same time (that is only then possible), you can also get in that state.</font></p>
+Don’t use it! In most cases it will take longer before a connection
+is established. This option was introduced because of a broken
+Android 13 version, which is later repaired. You should only turn
+this on when in this sensor screen no recent times are displayed.
+That means that no connection errors or sensor errors are shown, but
+also no values are received and you can get it working again by
+turning off and on Bluetooth. When you try to connect European Libre
+2 sensor with two apps on the same phone at the same time (that is
+only then possible), you can also get in that state.</font></p>
 <p style="border: none; padding: 0in"><font face="Liberation Serif, serif"><i><b>Info</b></i>:
 Gives start and end times and last scan and stream times of sensor.</font></p>
 <p style="border: none; padding: 0in"><font face="Liberation Serif, serif">To
@@ -100,16 +117,16 @@ temporary not functioning well, other devices are interfering or the
 Bluetooth of Android doesn’t function. Sometimes turning Bluetooth
 off and on seems to help or rebooting the phone or turning off the
 Bluetooth connection of other devices. Other problems are sometimes
-resolved by scanning the sensor. </font><font face="Liberation Serif, serif">Intervening
-water (including body water) can be a problem, so that wearing a
-WearOS watch on a different arm than the sensor can give connection
-problems when the arms are held in a way that the body is positioned
-between watch and sensor.</font></p>
+resolved by scanning the sensor. Intervening water (including body
+water) can be a problem, so that wearing a WearOS watch on a
+different arm than the sensor can give connection problems when the
+arms are held in a way that the body is positioned between watch and
+sensor.</font></p>
 <p style="border: none; padding: 0in"><font face="Liberation Serif, serif">Scanning
 the sensor with Juggluco (with </font><font face="Liberation Serif, serif"><i>Sensor
-via Bluetooth</i></font><font face="Liberation Serif, serif">
-enabled) on another phone, will steal the connection away from this
-phone and it can take some time, with scanning in between, to get it
-back again.</font></p>
+via Bluetooth</i></font> <font face="Liberation Serif, serif">enabled)
+on another phone, will steal the connection away from this phone and
+it can take some time, with scanning in between, to get it back
+again.</font></p>
 </body>
 </html>

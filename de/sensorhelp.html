@@ -3,9 +3,10 @@
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 	<title></title>
-	<meta name="generator" content="LibreOffice 7.6.5.2 (Linux)"/>
+	<meta name="generator" content="LibreOffice 24.2.7.2 (Linux)"/>
 	<meta name="created" content="00:00:00"/>
-	<meta name="changed" content="2024-05-08T22:06:43.297011046"/>
+	<meta name="changed" content="2024-12-12T15:34:20.426845724"/>
+	<meta name="created" content="00:00:00">
 	<meta name="created" content="00:00:00">
 </head>
 <img src="sensor.jpg"  style="object-fit:contain; width:15cm;                   height:auto;">
@@ -41,10 +42,18 @@ die History-Werte auch über Bluetooth empfangen. Auch andere Dinge
 werden anders funktionieren. An Libreview werden die History-Werte
 anstelle der Durchschnittswerte der Streamwerte gesendet. Der
 Nachteil ist, dass es langsamer ist. Dies kann bei WearOS-Uhren ein
-Problem sein.</font></p>
-<p style="border: none; padding: 0in"><font face="times new roman">Diese
-Option ist für Libre 3-Sensoren und US Libre 2-Sensoren immer
-aktiviert.</font></p>
+Problem sein. Diese Option ist für Libre 3-Sensoren und US Libre
+2-Sensoren immer aktiviert.</p>
+<p >⏰: Lassen Sie Juggluco eine Weckerfunktion verwenden, um den richtigen
+Zeitpunkt für die Verbindung mit Dexcom G7-Sensoren sicherzustellen.
+Wenn sich das Gerät sonst im Tiefschlaf befindet und nicht verwendet
+wird, wacht es manchmal nicht auf, um sich wieder mit dem Sensor zu
+verbinden, und es empfängt nicht sofort einen Glukosewert. Meine
+WearOS-Uhr hatte dieses Problem mitten in der Nacht, wahrscheinlich
+weil ich mich sehr wenig bewegte. Aufgrund des anschließenden
+Auffüllens und des langsamen Erwachens habe ich es nicht auf der Uhr
+und auf dem Telefon gesehen, sondern nur in den Protokolldateien.</p>
+</font>
 <p style="border: none; padding: 0in"><font face="times new roman"><b>Vergessen</b>:
 Lassen Sie Juggluco die Geräteadresse vergessen und nach der
 Geräteadresse suchen. Bei einigen Sensoren ist dies erforderlich, um
@@ -94,9 +103,11 @@ dauern, bis die App Glukosewerte vom Sensor erhält.&nbsp;Oft dauert
 es eine Minute, aber manchmal dauert es viel
 länger.&nbsp;Die&nbsp;</font><font face="times new roman"><i>Verbindungsphase</i></font>&nbsp;<font face="times new roman">verursacht
 die meisten Probleme.</font> <font face="times new roman">Am
-häufigsten sind Fehler mit status=133, dem Statusargument von <a href=https://developer.android.com/reference/android/bluetooth/BluetoothGattCallback#onConnectionStateChange(android.bluetooth.BluetoothGatt,%20int,%20int)">onConnectionStateChange(BluetoothGatt bluetoothGatt, int status, int newState)</a>.</font> <font face="times new roman">Wenn Sie die Batterie
-aus einem Sensor entfernen, erhalten Sie auch diesen Fehler, also
-scheint es so etwas wie&nbsp;</font><font face="times new roman"><i>Bluetooth-Gerät
+häufigsten sind Fehler mit status=133, dem Statusargument von
+<a href="https://developer.android.com/reference/android/bluetooth/BluetoothGattCallback#onConnectionStateChange(android.bluetooth.BluetoothGatt,%20int,%20int)%22">onConnectionStateChange(BluetoothGatt
+bluetoothGatt, int status, int newState)</a>.</font> <font face="times new roman">Wenn
+Sie die Batterie aus einem Sensor entfernen, erhalten Sie auch diesen
+Fehler, also scheint es so etwas wie&nbsp;</font><font face="times new roman"><i>Bluetooth-Gerät
 nicht gefunden</i></font>&nbsp;<font face="times new roman">zu sein
 .&nbsp;Manchmal scheint es zu helfen, Bluetooth aus- und
 einzuschalten oder das Telefon neu zu starten oder die

@@ -7,6 +7,7 @@
 	<meta name="created" content="2023-03-10T12:04:13.361070488"/>
 	<meta name="changed" content="2024-02-25T16:47:13.327404998"/>
 </head>
+ <img src="../uploader.jpg" alt="Uploader" style="object-fit:contain; width:15cm;                   height:auto;">
 <body lang="de-DE" dir="ltr"><h1>Hochladen</h1>
 <p><span lang="de-DE">In den meisten Fällen können Sie auch den
 <a href="https://www.juggluco.nl/Jugglucohelp/de/Nightscouthelp.html">Webserver
@@ -64,5 +65,23 @@ Dadurch wird der Akku entladen, insbesondere wenn keine Verbindung
 zum Nightscout-Server hergestellt werden kann, sodass Sie <i>Active</i>
 besser ausschalten können, wenn keine zuverlässige Verbindung
 besteht.</p>
+<h2 class="western"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Fehler</font></font></h2>
+<p style="line-height: 100%; margin-bottom: 0in"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Zwei Fehlermeldungen sorgen oft für Verwirrung.</font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Wenn die Fehlermeldung “<b>upload failure:</b>” gefolgt von nichts lautet, sind die möglichen Ursachen:</font></font></p>
+<ul>
+	<li><p style="line-height: 100%; margin-bottom: 0in"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Die Netzwerkverbindung ist ausgeschaltet;</font></font></p></li>
+	<li><p style="line-height: 100%; margin-bottom: 0in"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Der Hostname ist falsch geschrieben.</font></font></p>
+	<p style="line-height: 100%; margin-bottom: 0in"></p></li>
+</ul>
+<p style="line-height: 100%; margin-bottom: 0in"><b>upload failure: java.io.FileNotFoundException</b>: NIGHTSCOUTURL/api/v1/entries</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Hier steht NIGHTSCOUTURL für die Server-URL, die nach „Nightscout-URL“ eingegeben wird.</font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Dies hat eine der folgenden Ursachen:</font></font></p>
+<ul>
+	<li><p style="line-height: 100%; margin-bottom: 0in"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Die URL zeigt auf die falsche Site. Beispielsweise fehlt der Port nach dem Hostnamen und deshalb verbindet sich Juggluco mit einem normalen Webserver.</font></font></p></li>
+	<li><p style="line-height: 100%; margin-bottom: 0in"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Das api_secret ist falsch;</font></font></p></li>
+	<li><p style="line-height: 100%; margin-bottom: 0in"><span lang="en-US"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">NIGHTSCOUTURL enthält einen Pfad, der dort nicht vorkommen sollte. Beispielsweise
+	 </font></font></span><font style="vertical-align: inherit;"><span lang="en-US"><font style="vertical-align: inherit;">lautet die </font></span></font><span lang="en-US"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nightscout -URL </font></font></span><font style="vertical-align: inherit;"><span lang="en-US"><a href="https://ahost.org:8887/"><font style="vertical-align: inherit;">https://ahost.org:8887</font></a></span><span lang="en-US"><font style="vertical-align: inherit;"> und Sie haben </font></span><span lang="en-US"><a href="https://ahost.org:8887/extra"><font style="vertical-align: inherit;">https://ahost.org:8887/extra</font></a></span><span lang="en-US"><font style="vertical-align: inherit;"> eingegeben </font></span><span lang="en-US"><font style="vertical-align: inherit;">.</font></span></font><span lang="en-US"><font style="vertical-align: inherit;"></font><a href="https://ahost.org:8887/"><font style="vertical-align: inherit;"></font></a><font style="vertical-align: inherit;"></font></span><span lang="en-US"><font style="vertical-align: inherit;"></font></span><span lang="en-US">
+	<a href="https://ahost.org:8887/extra"><font style="vertical-align: inherit;"></font></a><font style="vertical-align: inherit;"></font></span></p></li>
+</ul>
 </body>
 </html>

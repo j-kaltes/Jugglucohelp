@@ -7,8 +7,8 @@
 	<meta name="created" content="2023-03-10T12:04:13.361070488"/>
 	<meta name="changed" content="2024-02-25T16:44:06.601011232"/>
 </head>
-<body lang="nl-NL" dir="ltr"><h1>Upload Nightscout. 
-</h1>
+ <img src="../uploader.jpg" alt="Uploader" style="object-fit:contain; width:15cm;                   height:auto;">
+<body lang="nl-NL" dir="ltr"><h1>Nightscout uploader</h1>
 <p>In de meeste gevallen kun je ook de <a href="https://www.juggluco.nl/Jugglucohelp/nl/Nightscouthelp.html">webserver
 in Juggluco</a> of <a href="https://www.juggluco.nl/Juggluco/cmdline">juggluco-server</a>
 gebruiken. Slechts een paar apps, die niets anders doen dan de
@@ -65,5 +65,23 @@ tablet of via de Juggluco-server op een computer. Het zal de batterij
 leegmaken, vooral als het geen contact kan maken met de
 Nightscout-server, dus je kunt <i>Active</i> beter uitschakelen als
 er geen betrouwbare verbinding is.</p>
+<h2 class="western"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Fouten</font></font></h2>
+<p style="line-height: 100%; margin-bottom: 0in"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Twee foutmeldingen zorgen vaak voor verwarring.</font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Wanneer de foutmelding " </font></font><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">upload failure:</font></font></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> " is, gevolgd door niets, zijn de mogelijke oorzaken:</font></font></p>
+<ul>
+	<li><p style="line-height: 100%; margin-bottom: 0in"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">De netwerkverbinding is uitgeschakeld;</font></font></p></li>
+	<li><p style="line-height: 100%; margin-bottom: 0in"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">De hostnaam is verkeerd gespeld.</font></font></p>
+	<p style="line-height: 100%; margin-bottom: 0in"></p></li>
+</ul>
+<p style="line-height: 100%; margin-bottom: 0in"><b>upload failure: java.io.FileNotFoundException</b>: NIGHTSCOUTURL/api/v1/entries</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Hier staat NIGHTSCOUTURL voor de server-URL die na “Nightscout URL” is ingevoerd.</font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Dit wordt veroorzaakt door een van de volgende oorzaken:</font></font></p>
+<ul>
+	<li><p style="line-height: 100%; margin-bottom: 0in"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">De URL verwijst naar de verkeerde site. Bijvoorbeeld de poort na de hostnaam ontbreekt en daardoor maakt Juggluco verbinding met een normale webserver;</font></font></p></li>
+	<li><p style="line-height: 100%; margin-bottom: 0in"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">De api_secret is fout;</font></font></p></li>
+	<li><p style="line-height: 100%; margin-bottom: 0in"><span lang="en-US"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">NIGHTSCOUTURL bevat een pad dat er niet hoort te zijn. Bijvoorbeeld, de
+	 </font></font></span><span lang="en-US"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nightscout </font></font></span><span lang="en-US"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">URL is </font></font><a href="https://ahost.org:8887/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://ahost.org:8887</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> en je hebt </font></font></span><font style="vertical-align: inherit;"><span lang="en-US"><a href="https://ahost.org:8887/extra"><font style="vertical-align: inherit;">https://ahost.org:8887/extra</font></a></span></font><span lang="en-US"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ingevoerd </font></font></span><font style="vertical-align: inherit;"><span lang="en-US"><font style="vertical-align: inherit;">.</font></span></font><span lang="en-US">
+	<a href="https://ahost.org:8887/extra"><font style="vertical-align: inherit;"></font></a><font style="vertical-align: inherit;"></font></span></p></li>
+</ul>
 </body>
 </html>

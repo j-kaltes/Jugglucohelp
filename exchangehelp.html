@@ -3,9 +3,9 @@
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 	<title>Exchange Data</title>
-	<meta name="generator" content="LibreOffice 24.2.6.2 (Linux)"/>
+	<meta name="generator" content="LibreOffice 24.2.7.2 (Linux)"/>
 	<meta name="created" content="2024-11-21T21:25:03.749778838"/>
-	<meta name="changed" content="2024-11-26T17:30:29.905598688"/>
+	<meta name="changed" content="2024-12-23T22:39:48.715341909"/>
 	<style type="text/css">
 		@page { margin: 0.79in }
 		p { line-height: 115%; margin-bottom: 0.1in }
@@ -54,10 +54,13 @@ webservice</i>&quot; in xDrip itself if you want to make use of the
 one in Juggluco.</p>
 <h2 class="western"><a name="eversense"></a>EverSense</h2>
 <p>Yet another glucose broadcast. It can be used to send every minute
-a glucose value to xDrip. xDrip will ignore nearly all of them
-because of its insistence on one value in 5 minutes. You can remove
-this restriction by editing the source code of xDrip. Change <i>4 *
-60 * 1000</i> to <i>55 * 1000</i> in
+a glucose value to xDrip. In xDrip you need to set “<i>460G/EverSense</i>”
+as the <i>Hardware Data Source</i>. 
+</p>
+<p>xDrip will ignore nearly all of them because of its insistence on
+one value in 5 minutes. You can remove this restriction by editing
+the source code of xDrip. Change <i>4 * 60 * 1000</i> to <i>55 * 1000</i>
+in
 <a href="https://github.com/NightscoutFoundation/xDrip/blob/645e8b4cb8fa3ad7b280f598d6f2f6bdb84ce392/app/src/main/java/com/eveningoutpost/dexdrip/models/BgReading.java#L969">app/src/main/java/com/eveningoutpost/dexdrip/models/BgReading.java</a>,
 so that it becomes:</p>
 <p>public static BgReading readingNearTimeStamp(long startTime)

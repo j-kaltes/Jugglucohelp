@@ -3,7 +3,7 @@
 #include <algorithm>
 using namespace std;
 #define NOLOGS_H 1
-#include "inout.h"
+#include "inout.hpp"
 void rewritefile(const char *name) {
 Readall cont(name);
 if(!cont.data()) {
@@ -69,7 +69,22 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
 <resources>
 )");
 write(STDOUT_FILENO,resstart.data(),resstart.size());
-for(int i=1;i<argc;i++)
+int startpos;
+const char *option=argv[1];
+if(!memcmp(option,"-f",2)) {
+    const char *filename=option+2;
+    Readall start(filename);
+    if(start.data()) {
+        write(STDOUT_FILENO,start.data(),start.size());
+        }
+     else {
+        fprintf(stderr,"%s contains no data\n",filename);
+        }
+    startpos=2;
+    }
+else
+    startpos=1;
+for(int i=startpos;i<argc;i++)
 	rewritefile(argv[i]);
 const string_view resend("</resources>\n");
 write(STDOUT_FILENO,resend.data(),resend.size());

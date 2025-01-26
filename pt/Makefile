@@ -11,9 +11,15 @@ html2xml: html2xml.cpp
 html.xml: $(FILES)
 	 ../html2xml  $^ > $@
 
-install: html.xml
+WEARFILES=locationpermission.html nearbypermission.html 
+wearhtml.xml:${WEARFILES} 
+	 ../html2xml  $^ > $@
+
+install: html.xml wearhtml.xml
 	mkdir -p /o/home/jka/src/android/Glucodata/Common/src/mobile/res/values-pt
 	cp html.xml /o/home/jka/src/android/Glucodata/Common/src/mobile/res/values-pt
+	mkdir -p /o/home/jka/src/android/Glucodata/Common/src/wear/res/values-pt
+	cp wearhtml.xml  /o/home/jka/src/android/Glucodata/Common/src/wear/res/values-pt/html.xml
 
 pthelptexts.zip: ${FILES}
 	 zip  $@ $^ 

@@ -9,10 +9,15 @@ FILES=NightPost.html Nightscouthelp.html about.html addconnection.html alarmhelp
 html.xml:${FILES}
 	 ../html2xml  $^ > $@
 
-install: html.xml
+
+WEARFILES=staticnum.html locationpermission.html nearbypermission.html notificationpermission.html 
+wearhtml.xml:${WEARFILES} 
+	 ../html2xml  $^ > $@
+install: html.xml wearhtml.xml
 	mkdir -p /o/home/jka/src/android/Glucodata/Common/src/mobile/res/values-uk
 	cp html.xml /o/home/jka/src/android/Glucodata/Common/src/mobile/res/values-uk
-
+	mkdir -p /o/home/jka/src/android/Glucodata/Common/src/wear/res/values-uk
+	cp wearhtml.xml  /o/home/jka/src/android/Glucodata/Common/src/wear/res/values-uk/html.xml
 dehelptexts.zip:${FILES}
 
 

@@ -11,9 +11,15 @@ html.xml:${FILES}
 	 ../html2xml  $^ > $@
 
 
-install: html.xml
+WEARFILES=staticnum.html locationpermission.html nearbypermission.html notificationpermission.html 
+wearhtml.xml:${WEARFILES} 
+	 ../html2xml  $^ > $@
+install: html.xml wearhtml.xml
 	mkdir -p /o/home/jka/src/android/Glucodata/Common/src/mobile/res/values-fr
 	cp html.xml /o/home/jka/src/android/Glucodata/Common/src/mobile/res/values-fr
+	mkdir -p /o/home/jka/src/android/Glucodata/Common/src/wear/res/values-fr
+	cp wearhtml.xml  /o/home/jka/src/android/Glucodata/Common/src/wear/res/values-fr/html.xml
+
 
 helptexts.zip: ${FILES}
 	 zip  $@ $^ 

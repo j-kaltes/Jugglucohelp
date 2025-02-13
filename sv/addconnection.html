@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Lägg till anslutning</title>
+    <meta name="changed" content="2024-10-02T09:49:53" />
+  </head>
+
+ <img src="addconnection.png" alt="Add Connection" style="object-fit:contain; width:15cm;                   height:auto;">
+  <body lang="sv-SE" dir="ltr"><p><a href="https://www.juggluco.nl/Jugglucohelp/be/addconnection.html">be</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/de/addconnection.html">de</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/fr/addconnection.html">fr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/it/addconnection.html">it</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/nl/addconnection.html">nl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pl/addconnection.html">pl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pt/addconnection.html">pt</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ru/addconnection.html">ru</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/sv/addconnection.html">sv</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/uk/addconnection.html">uk</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/zh/addconnection.html">zh</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/addconnection.html?lang=en">en</a>&emsp;&emsp;</p>
+
+    <h1>Lägg till anslutning</h1>
+
+    <p>Ange en anslutning till en annan instans av Juggluco.</p>
+    <p>
+      Juggluco på en enhet skickar data via IP/TCP till Juggluco på en annan
+      enhet. För att upprätta en anslutning måste en instans lyssna på en port,
+      medan den andra instansen måste kontakta den porten.
+    </p>
+    <p>
+      En anslutning kan vara "<b>Endast aktiv</b>", "<b>Endast passiv</b>" eller
+      "<b>Båda</b>". En <i>passiv</i> instans av Juggluco lyssnar på den port
+      som anges på föregående skärm (vänster mittmeny →
+      <a href="https://www.juggluco.nl/Jugglucohelp/sv/connectionoverview.html"
+        >Spegling</a
+      >). En <i>aktiv</i> instans kontaktar den passiva instansen på den port
+      som anges på denna skärm. Om den ena instansen är "<i>Endast aktiv</i>"
+      bör den andra instansen vara "<i>Endast passiv</i>". Om "<i>Båda</i>"
+      valts, bör båda instanserna ha "<i>Båda</i>" valt.
+    </p>
+    <p>
+      Om denna instans av Juggluco aktivt tar kontakt måste du ange vilken eller
+      vilka IP-adresser den ska kontakta. Om den andra instansen har flera
+      IP-adresser (till exempel när två enheter ibland är anslutna via ett
+      hemnätverk och ibland direkt som portabel hotspot) kan du ange mer än en.
+    </p>
+    <p>
+      <b
+        >VARNING: Ange aldrig IP-adressen för flera enheter, i så fall kommer de
+        bara att ta emot en del av datan.</b
+      >
+    </p>
+
+    <p>
+      <b>värdnamn</b>: Ange ett värdnamn istället för en IP-adress. Detta gör
+      att anslutningen blir beroende av en namnserver, vilket kan göra den
+      långsammare och känslig för avbrott i namnservern. Det här alternativet
+      bör endast användas om du inte kan ställa in en statisk IP-adress och
+      värdnamnet automatiskt kopplas till den dynamiska IP-adressen.
+    </p>
+
+    <p>
+      <b>Detektera</b>: I alla alternativ utom "Endast aktiv" kan du välja
+      "Detektera". I så fall sparar Juggluco den första IP-adressen som
+      kontaktar den som den andra sidans IP-adress. För att kontrollera om rätt
+      enhet tar kontakt finns det två sätt: Du kan välja "Testa IP" för att
+      testa IP-adressen. Om du väljer "Testa etikett" upprättas en anslutning
+      endast om båda sidor har angett samma etikett.
+    </p>
+    <p>
+      Välj <b>Ta emot från</b> om du vill att den här enheten ska fungera som
+      speglings-app.
+    </p>
+    <p>
+      Om du vill att den här enheten ska vara <b>avsändaren</b> av data måste du
+      ange vilken data som ska skickas.
+    </p>
+
+    <p><b>Värden</b>: dos, mat och sportdata som du har angett.</p>
+    <p>
+      <b>Skanningar</b>: data som tas emot genom att skanna sensorn (skanningar
+      och historik under Libre2, under Libre3 endast data som behövs för att
+      komma åt sensorn via Bluetooth).
+    </p>
+    <p>
+      <b>Strömmande</b>: data som tas emot av Bluetooth. Under Libre3 inkluderar
+      detta historikdata.
+    </p>
+
+    <p>
+      Ibland finns vissa data redan på den mottagande enheten. Du kan ange tills
+      när dessa data finns:
+    </p>
+
+    <p><b>Start</b>: inga data finns</p>
+    <p><b>Nu</b>: all data finns</p>
+    <p>
+      Eller ett specifikt <b>datum</b> som bestäms av skärmens startposition.
+    </p>
+    <p>
+      När en datakälla läggs till i en befintlig anslutning, gäller startdatumet
+      endast den tillagda datakällan. Till exempel om skanningar och strömmande
+      redan har skickats till värden, och värden nu har lagts till, bestämmer
+      startdatumet bara vilka värden som ska skickas.
+    </p>
+    <p>
+      <b>Lösenord:</b>
+      Om två enheter är anslutna via en osäker anslutning kan data signeras och
+      krypteras genom att ange samma lösenord (maximalt 16 tecken) på båda sidor
+      av anslutningen.
+    </p>
+    <p><b>Spara</b>: Välj Spara för att spara det du har angett.</p>
+    <p><b>Radera</b>: tar bort denna anslutning.</p>
+    <p>
+      I det enklaste användningsfallet är alla anslutningar kopplade till ditt
+      hemnätverk, vilket gör att du kan använda lokala IP-adresser. Du kan också
+      ansluta över internet via Wi-Fi. I så fall bör du kolla din modemmanual
+      för att se hur du vidarebefordrar en extern port till en IP-adress och
+      port på ditt hemnätverk.
+    </p>
+    <p>
+      Två smartphones som är anslutna via mobildata kan kommunicera direkt med
+      varandra, förutsatt att en av dem kan lyssna på en nätverksport. Om ingen
+      av dem har en individuell IP-adress kan de fortfarande kommunicera genom
+      en tredje enhet. En möjlighet är att köra Juggluco på en Android-enhet
+      (minst Android 4.4) som är ansluten till internet via ett modem. En annan
+      möjlighet är att använda ett
+      <a href="https://www.juggluco.nl/Juggluco/cmdline/index.html"
+        >kommandoradsprogram</a
+      >
+      som tillhör Juggluco på en dator, som din PC eller en server på Amazon
+      AWS.
+    </p>
+
+    <p>Handledning för vidarebefordran av portar:</p>
+    <ul>
+      <li>
+        <a href="https://portforward.com/how-to-port-forward/"
+          >https://portforward.com/how-to-port-forward/</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://stevessmarthomeguide.com/understanding-port-forwarding/"
+          >https://stevessmarthomeguide.com/understanding-port-forwarding/</a
+        >
+      </li>
+    </ul>
+
+    <p>
+      Det går att ta emot glukosvärden via Bluetooth på en enhet utan NFC (se
+      https://www.juggluco.nl/Juggluco/mirror). Först måste du initiera sensorn
+      via NFC på en enhet som har NFC, och sedan kan du skicka "Skanningar" och
+      "Strömmande" till enheten utan NFC. Efter det vänder du på anslutningen
+      för strömmande data: stäng av Bluetooth-anslutningen på NFC-enheten och
+      slå på den på enheten utan NFC. Glöm inte att stänga av "sensor via
+      Bluetooth" på båda enheterna.
+    </p>
+
+    <p>
+      Det betyder att du kan skanna med en enhet och få glukosvärden via
+      Bluetooth på en annan. Men på alla enheter bör all sensordata vara
+      tillgänglig. När enheter utbyter data ska de alltid ta emot både
+      skanningsdata och strömmande data. Du bör alltid skicka tillbaka
+      strömmande data till NFC-enheten och skanningsdata till enheten utan NFC.
+      Annars kan data bli osynkroniserade, vilket kan leda till att gamla
+      autentiseringsdata används eller att nya data skrivs över med gamla.
+    </p>
+    <p>Manuellt angivna värden är helt oberoende.</p>
+
+    <h2>Nätverksproblem</h2>
+    <p>
+      En strikt matchning av specifikationer på båda sidor av uppkopplingen är
+      nödvändig. En enkel miss kan göra att dataöverföringen inte fungerar.
+    </p>
+    <p>
+      Det är möjligt att uppkopplingen hänger sig och behöver startas om genom
+      att slå på eller av WIFI, eller trycka på Synkronisera. Att ändra en
+      anslutning som bara är aktiv eller passiv till båda, eller tvärtom, kan
+      också påverka.
+    </p>
+    <p>
+      Du bör även tänka på att IP-adresser kan ändras beroende på vilken
+      uppkoppling du använder. Till exempel måste olika IP-adresser användas på
+      ditt hemnätverk jämfört med när du använder en portabel hotspot.
+    </p>
+  </body>
+</html>

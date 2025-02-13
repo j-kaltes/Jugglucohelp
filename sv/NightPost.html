@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Uploader</title>
+    <meta name="changed" content="2024-09-08T13:26:46" />
+  </head>
+  <img
+    src="uploader.png"
+    alt="Uploader"
+    style="object-fit: contain; width: 15cm; height: auto"
+  />
+  <body lang="sv-SE" dir="ltr"><p><a href="https://www.juggluco.nl/Jugglucohelp/be/NightPost.html">be</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/de/NightPost.html">de</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/fr/NightPost.html">fr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/nl/NightPost.html">nl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pl/NightPost.html">pl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ru/NightPost.html">ru</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/sv/NightPost.html">sv</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/uk/NightPost.html">uk</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/zh/NightPost.html">zh</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/NightPost.html?lang=en">en</a>&emsp;&emsp;</p>
+    <h1>Ladda upp till Nightscout-server</h1>
+    <p>
+      I de flesta fall kan du även använda
+      <a href="https://www.juggluco.nl/Jugglucohelp/sv/Nightscouthelp.html"
+        >webbservern i Juggluco</a
+      >
+      eller
+      <a href="https://www.juggluco.nl/Juggluco/cmdline">juggluco-server</a>.
+      Endast ett fåtal appar, som inte gör något mer än att visa
+      Nightscout-webbsidan, behöver
+      <a href="https://github.com/nightscout/cgm-remote-monitor"
+        >cgm-remote-monitor</a
+      >. Du kan till och med använda AAPS och AAPSClient med webbservern i
+      Juggluco 7.4.1 eller senare.
+    </p>
+    <p>
+      Alla strömmade värden laddas upp till Nightscout-servern i det ögonblick
+      de anländer. När flera sensorer används laddas alla värden för alla
+      sensorer upp. Vissa Garmin-klockappar/urtavlor/widgets antar att värdena
+      kommmer med 5 minuters mellanrum. När de får glukosvärden med en minuts
+      mellanrum visar de bara den sista femtedelen av kurvan. Av den anledningen
+      placerar webbservern som är inbyggd i Juggluco värdena 5 minuter från
+      varandra, förutom när &quot;intervall=sekunder&quot; är satt till ett
+      lägre värde.
+    </p>
+    <p>
+      <b>URL</b>: URL:en ska vara i form av https://värdnamn:port till exempel:
+      https://example.com:6789
+    </p>
+    <p><b>Aktiv</b>: Aktivera uppladdningsprogrammet</p>
+    <p>
+      <b>test V3</b>: Låt Juggluco använda API/v3 för att ladda upp till
+      Nightscout. Använd den inte för att ladda upp till en Nightscout-server
+      som tidigare tagit emot V1-uppladdningar och skicka inte V1-uppladdningar
+      till en Nightscout-server som tidigare tagit emot V3-uppladdningar. På
+      platsen för api_secret måste du ange <i>Access Token</i> med tillstånd att
+      ladda upp behandlingar och poster. Du kan skapa en i Nightscouts
+      webbgränssnitt under Admin Tool.
+    </p>
+    <p>
+      Skicka värden: Skicka även värden som behandlingar till Nightscout. Om du
+      trycker på kryssrutan kommer du till en dialogruta där du kan ange för
+      varje etikett vad det betyder i Nightscout. Dessa specifikationer delas
+      med webbservern i Juggluco (<a
+        href="https://www.juggluco.nl/Jugglucohelp/sv/Nightscouthelp.html"
+        >vänster meny→Inställningar→Webserver</a
+      >). Först när alla etiketter är hanterade kan du markera "Skicka värden".
+      Om du senare lägger till en ny etikett måste du komma ihåg dig själv för
+      att ange vad du ska göra med den.
+      <span>
+        På grund av en bugg i
+        <a href="https://github.com/nightscout/cgm-remote-monitor">Nightscout</a
+        >, visas insättningar vid äldre tidsperioder eller raderingar endast
+        efter att objekt med en ny tid har lagts till. Det gör att det är bättre
+        att skicka mer sällan till Nightscout. Nu görs det varje gång användaren
+        byter bort från Juggluco genom att stänga av displayen eller gå till en
+        annan app.
+      </span>
+    </p>
+    <p>
+      <b>Skicka data igen</b>: Ladda upp all data igen till Nightscout-servern
+    </p>
+    <p>
+      <b>Skicka nu</b>: Normalt skickas data direkt när de kommer från sensorn
+      eller en spegelanslutning. Tryck på den här knappen för att skicka data
+      igen efter att ett tidigare försök av någon anledning misslyckats.
+    </p>
+    <p>
+      WearOS-versionen av Juggluco 4.15.0 eller senare kan ladda upp
+      glukosvärden direkt till Nightscout, men det tar mycket energi och du
+      riskerar att tömma batteriet, särskilt när det inte går att kontakta
+      Nightscout-servern. I nästan alla fall är det bättre skicka dem via
+      Juggluco på telefonen, surfplattan eller via Juggluco-servern på datorn.
+      Då kan du stänga av <i>Aktiv</i> när det inte finns någon tillförlitlig
+      anslutning.
+    </p>
+  </body>
+</html>

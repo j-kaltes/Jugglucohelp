@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 24.2.6.2 (Linux)"/>
+	<meta name="created" content="2024-11-22T17:42:05.475054011"/>
+	<meta name="changed" content="2024-11-22T17:44:17.436257678"/>
+	<style type="text/css">
+		h2.western { font-family: "Liberation Sans", sans-serif; font-size: 16pt }
+		h2.cjk { font-family: "Noto Serif CJK SC"; font-size: 16pt }
+		h2.ctl { font-family: "Mangal"; font-size: 16pt }
+	</style>
+</head>
+ <img src="dataexchange.png" alt="Setttings" style="object-fit:contain; width:15cm;                   height:auto;">
+<body lang="nl-NL" dir="ltr"><h1>Deel gegevens</h1>
+<h2 class="western">Health Connect</h2>
+<p>Stuur minutieuze glucosewaarden naar <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.healthdata">Health
+Connect</a> . Je kunt andere apps toegang geven tot deze
+glucosewaarden, bijvoorbeeld <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.fitness">Google
+Fit</a> . Andere apps kunnen weer gegevens van Google Fit krijgen.</p>
+<h2 class="western">Libreview</h2>
+<p style="margin-bottom: 0in">Geeft aan of stream Freestyle Libre 2
+glucose waarden naar Libreview verzonden worden. Voor Freestyle Libre
+3 sensoren kun je je Account Id nummer van Libreview laten halen.
+Druk er op om de instellingen te wijzigen.</p>
+<h2 class="western">Patched Libre</h2>
+<p>Als dit aanstaat, zendt Juggluco elke minuut een stream glucose
+waarde naar xDrip. In xDrip moet je Libre2 (patched) App als hardware
+gegevensbron aangeven. De glucose waarden die xDrip weergeeft zijn
+verschillend van die het ontvangen heeft. Om een of andere reden,
+vernieuwt het zijn glucosewaarde enkel eens in de 5 minuten;
+waarschijnlijk omdat het gemaakt is voor sensoren die slechts eens in
+de 5 minuten een glucosewaarde verzenden. Daarbij genereert xDrip
+haar eigen interpretatie van de verkregen glucosewaarden.</p>
+<p>Juggluco kloons (zie linker midden menu→kloon) kunnen ook naar
+xDrip zenden. 
+</p>
+<p>Nieuwere versies van Juggluco kunnen glucosewaarden direct naar
+xDrip horloges zenden. Om hier gebruik van te maken moet xDrip
+webserver aangevinkt worden in Linker menu→Horloge. Om conflicten
+te voorkomen moet xDrip webservice in xDrip niet ook aanstaan.</p>
+<h2 class="western">EverSense</h2>
+<p style="background: transparent">Nog een glucose broadcast. Hiermee
+kan elke minuut een glucosewaarde naar xDrip worden verzonden. xDrip
+negeert ze bijna allemaal vanwege het vasthouden aan één waarde in
+5 minuten. Je kunt deze beperking verwijderen door de broncode van
+xDrip te bewerken. Wijzig&nbsp;<i>4 * 60 * 1000</i>&nbsp;in&nbsp;<i>55
+*
+1000</i>&nbsp;in&nbsp;<a href="https://github.com/NightscoutFoundation/xDrip/blob/645e8b4cb8fa3ad7b280f598d6f2f6bdb84ce392/app/src/main/java/com/eveningoutpost/dexdrip/models/BgReading.java#L969">app/src/main/java/com/eveningoutpost/dexdrip/models/BgReading.java</a>&nbsp;,
+zodat het wordt:</p>
+<p>public static BgReading readingNearTimeStamp(long startTime)
+{<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;long
+margin = (55 * 1000);<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return
+readingNearTimeStamp(startTime, margin);<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</p>
+<p style="background: transparent">Het voordeel ten opzichte van de
+Patched Libre broadcast is dat xDrip de glucosewaarden niet op een
+onnavolgbare wijze transformeert.</p>
+<h2 class="western">xDrip broadcast</h2>
+<p>Stuur dezelfde broadcast als ingeschakeld in xDrip met
+&quot;Settings-&gt;Inter-app-settings-&gt;Broadcast locally&quot;.
+Apps zoals AndroidAPS luisteren ernaar. In tegenstelling tot de
+originele xDrip Broadcast die elke 5 minuten werd uitgezonden, zendt
+Juggluco deze broadcast elke minuut uit.</p>
+<h2 class="western">Glucodata broadcast</h2>
+<p>Juggluco heeft een eigen glucose broadcast, glucodata.Minute. See
+<a href="https://www.juggluco.nl/Juggluco/glucosebroadcast.html">https://www.juggluco.nl/Juggluco/glucosebroadcast.html</a>
+voor meer informatie.</p>
+<p>Vink de apps aan die deze broadcast moeten ontvangen.</p>
+<h2 class="western">Webserver</h2>
+<p>Webserver die kan worden gebruikt met xDrip-horloges en sommige
+Nightscout-apps. Voorheen xDrip webserver genoemd.</p>
+<h2 class="western">Uploader</h2>
+<p>Uploaden naar Nightscout-server.</p>
+<h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/nl/connectionoverview.html">Kloon/Mirror</a></h2>
+<p>Stuur alle data via een internetverbinding naar een andere instantie van Juggluco en maak zo een kloon van Juggluco op een ander apparaat. Bestaande data wordt overschreven.</p>
+<h2><a href="https://www.juggluco.nl/Jugglucohelp/nl/helpexport.html">Export</a></h2><p>Gegevens opslaan in een bestand.</p>
+</body>
+</html>

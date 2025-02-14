@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 7.3.7.2 (Linux)"/>
+	<meta name="created" content="2021-02-27T14:01:21.977498081"/>
+	<meta name="changed" content="2023-05-21T20:19:34.090956867"/>
+	<style type="text/css">
+		@page { size: 21.01cm 29.69cm; margin: 2.01cm }
+		h1 { margin-bottom: 0.2cm; background: transparent }
+		h1.western { font-family: "Liberation Serif", serif }
+		h1.cjk { font-family: "Noto Serif CJK SC" }
+		h1.ctl { font-family: "Mangal" }
+		p { margin-bottom: 0.25cm; background: transparent }
+		h2 { margin-top: 0.36cm; margin-bottom: 0.2cm; background: transparent }
+		h2.western { font-family: "Liberation Sans", sans-serif; font-size: 16pt }
+		h2.cjk { font-family: "Noto Sans CJK SC"; font-size: 16pt }
+		h2.ctl { font-family: "Mangal"; font-size: 16pt }
+	</style>
+</head>
+<body lang="en-US" dir="ltr"><h1 class="western">Paramètres</h1>
+<h2 class="western">Unité</h2>
+<p style="line-height: 100%; margin-bottom: 0cm">Sélectionnez si les
+valeurs de glucose doivent être données en mmol/L ou en mg/dL.</p>
+<h2 class="western">Plage graphique :</h2>
+<p style="line-height: 100%; margin-bottom: 0cm">Entrez une valeur
+basse et haute, de sorte que le bas de l'écran corresponde au plus
+bas et le haut au plus haut. Ces valeurs ne sont utilisées que
+lorsque toutes les valeurs de glucose affichées à l'écran se
+situent dans ces limites. Sinon, les limites sont élargies afin que
+toutes les valeurs soient visibles. Lorsque vous entrez 3 mmol/L (54
+mg/dL) et 9 mmol/L (162 mg/dL) et que toutes les valeurs sur
+l'affichage visible sont comprises entre 5 mmol/L et 6 mmol/L, le
+graphique affiche une glycémie axe de 3 à 9. 
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">Si <b>Mise à
+l’échelle manuelle</b> est activé, vous pouvez modifier ceci&nbsp;:
+déplacer votre doigt sur le haut de l'écran, déplace la moitié
+supérieure du graphique vers le haut et vers le bas&nbsp;; se
+déplacer sur le bas de l'écran déplace la moitié inférieure du
+graphique vers le haut et vers le bas.</p>
+<h2 class="western">Plage cible&nbsp;:</h2>
+<p style="line-height: 100%; margin-bottom: 0cm">Le côté supérieur
+de l'écran est coloré différemment afin que vous puissiez voir
+plus facilement les valeurs élevées. Il en est de même pour les
+valeurs faibles. Une ligne rouge s'affiche pour indiquer le côté
+trop bas de l'affichage.</p>
+<h2 class="western"><font face="Liberation Sans, sans-serif"><font size="4" style="font-size: 16pt"><b>A</b></font></font>xe
+du glucose à GAUCHE</h2>
+<p>Ceci place l’axe du niveau de glucose à gauche de l'écran dans
+le graphique. Utile si vous souhaitez placer votre glycémie actuelle
+au milieu de l'écran, par exemple dans Wear OS.</p>
+<h2 class="western">Inverser l'écran</h2>
+<p style="line-height: 100%; margin-bottom: 0cm">Retourne l'écran.
+Il est activé par défaut, car sinon j'ai accidentellement touché
+OK de temps en temps lors de la numérisation d'un capteur.</p>
+<p style="line-height: 100%; margin-bottom: 0cm">Certaines personnes
+demandent le mode portrait, mais je l'ai désactivé, car il est
+totalement inapproprié pour l'affichage du graphique de glucose.</p>
+<h2 class="western">Son NFC</h2>
+<p>Faire du son pendant la numérisation en plus des vibrations.</p>
+<h2 class="western"><font face="Liberation Sans, sans-serif"><font size="4" style="font-size: 16pt"><b>Scanner</b></font></font>
+démarre l'appli</h2>
+<p>Si cette case est cochée, Juggluco sera lancé lorsque vous
+scannez un capteur via NFC même si il n'est pas affichée. Si
+plusieurs applications ont ce paramètre, Android affichera un
+sélecteur à partir duquel sélectionner l'application que vous
+souhaitez utiliser. Parfois, en choisir une ne fonctionne pas et en
+sélectionner une pour être choisie la prochaine fois non plus.
+Donc, dans ce cas, vous ne pouvez pas numériser sans une application
+au premier plan. Désactiver l’option dans cette application
+permettra d'activer au moins une application de cette manière.</p>
+<p>Si vous avez un accès root, vous pouvez également désactiver
+l'activation NFC de l'application Librelink d'Abbott (ne fonctionne
+pas avec Libre3)&nbsp;:</p>
+<p>Devenez root dans adb shell ou termux et tapez&nbsp;:</p>
+<p>  pm disable
+com.freestylelibre.app.nl/com.librelink.app.ui.common.NFCScanActivity</p>
+<p>Sur Librelink 2.7.1 et inférieur, vous deviez exécuter&nbsp;:</p>
+<p>  pm disable
+com.freestylelibre.app.nl/com.librelink.app.ui.common.ScanSensorActivity</p>
+<p>com.freestylelibre.app.nl est ici la version néerlandaise de
+Librelink, celle-ci doit être remplacée par la version que vous
+utilisez. Vous pouvez trouver son nom en tapant (même sans root) :</p>
+<p>  pm list package freestylelibre</p>
+<p>Ensuite, vous pouvez toujours utiliser Librelink pour scanner
+lorsqu'il est au premier plan, mais il ne sera pas démarré
+autrement. Librelink 2.5.2 et les versions ultérieures se bloquent
+s'ils détectent le mode root. Mais dans Magisk, vous pouvez
+facilement masquer root en renommant Magisk et en ajoutant des
+applications individuelles à la liste de refus (Magisk 24.3) ou
+Magiskhide (Magisk 23.0). Vous devez également ajouter Juggluco à
+la liste de refus. Sauf lorsque vous utilisez des capteurs US
+Freestyle Libre 2, vous pouvez également utiliser une ancienne
+version de Librelink sans vérification root.</p>
+<p>Sans root, sous adb shell, vous pouvez également désactiver
+toute l'application&nbsp;:</p>
+<p>  pm disable-user --user 0 com.freestylelibre.app.nl</p>
+<p>Avant d'appeler le service client d'Abbott, vous pouvez la
+réactiver avec&nbsp;:</p>
+<p>  pm enable com.freestylelibre.app.nl</p>
+<h2 class="western">Libreview</h2>
+<p>Connectez-vous avec Libreview pour envoyer les valeurs et les
+quantités de glucose Freestyle Libre 2 et 3 à Libreview et pour
+obtenir l'identifiant de compte utilisé lors de l'activation du
+capteur Freestyle Libre 3. Touchez pour modifier les paramètres.</p>
+<h2 class="western">Broadcast <font face="Liberation Sans, sans-serif"><font size="4" style="font-size: 16pt"><b>L</b></font></font>ibre
+<font face="Liberation Sans, sans-serif"><font size="4" style="font-size: 16pt"><b>P</b></font></font>atché</h2>
+<p>Utilisez la diffusion “Libre Patché” (préparé à partir de
+l'application allemande Patched Librelink 2.3.0) pour envoyer les
+données du flux de glucose Bluetooth toutes les minutes à xDrip.
+Dans xDrip, vous devez définir Libre2 (application patchée) comme
+source de données matérielle. Les valeurs de glucose affichées
+dans xDrip sont différentes des valeurs qu'il reçoit. Pour une
+raison quelconque, xDrip ne met à jour sa valeur que toutes les 5
+minutes, probablement parce qu'il a été conçu pour les appareils
+qui n'envoient qu'une fois toutes les 5 minutes (un cadran de montre
+connecté à xDrip affichait régulièrement des valeurs de plus de 9
+minutes). De plus, xDrip affiche ses propres interprétation des
+valeurs de glucose reçues. Les appareils miroirs peuvent également
+être envoyés à xDrip.</p>
+<p>Voir <a href="https://github.com/jakobheyman/xdripJH">https://github.com/jakobheyman/xdripJH</a>
+pour une tentative de mise à jour de la valeur de glucose de xDrip
+toutes les minutes.</p>
+<p>Les capteurs Freestyle Libre 3 envoient les valeurs manquées
+après une période de déconnexion. Ces valeurs ne sont pas envoyées
+avec ce broadcast. Vous les recevrez si vous activez le serveur Web
+dans Juggluco et faites de xDrip un disciple Nightscout de Juggluco.
+Serveur Nightscout : http://127.0.0.1:17580</p>
+<p>Juggluco peut également contacter directement les applications de
+montre xDrip, de sorte que l'application de montre affiche des
+valeurs de glucose plus récentes. Pour utiliser cette
+fonctionnalité, cochez <i>&quot;xDrip webserver&quot;</i> dans le
+menu de gauche sous <b>Montre</b>. Voir Aide dans le menu de gauche-&gt;
+regarder pour plus d'informations. Une seule application peut écouter
+le port réseau utilisé par le serveur Web xDrip, vous devez donc
+désactiver &quot; <i>xDrip webservice</i> &quot; dans xDrip lui-même
+si vous souhaitez utiliser celui de Juggluco.</p>
+<h2 class="western"><font face="Liberation Sans, sans-serif"><font size="4" style="font-size: 16pt"><b>broadcast</b></font></font>
+xDrip local</h2>
+<p>Envoyez le même broadcast que celui activé dans xDrip avec &quot;
+<i>Paramètres -&gt; Paramètres inter-applications -&gt; Diffuser
+localement&quot;</i> (com.eveningoutpost.dexdrip.BgEstimate). Des
+applications comme AndroidAPS écoutent ces braodcasts. Les
+applications ciblant Android&nbsp;11 ou version ultérieure doivent
+ajouter les éléments suivants à AndroidManifest.xml pour que cela
+fonctionne&nbsp;: 
+</p>
+<p>&lt;queries&gt; <br/>
+&nbsp;&nbsp; &lt;package
+android:name=&quot;tk.glucodata&quot;/&gt; <br/>
+&lt;/queries&gt; 
+</p>
+<p>Chaque minute, Juggluco envoie une valeur de glucose à toutes les
+applications écoutant cette diffusion, xDrip uniquement à quelques
+applications bien connues, sauf lorsque vous spécifiez explicitement
+le nom.</p>
+<h2 class="western"><font face="Liberation Sans, sans-serif"><font size="4" style="font-size: 16pt"><b>Broadcast</b></font></font>
+de Glucodata</h2>
+<p>Une nouvelle diffusion qui a la même fonction que la diffusion
+xDrip. Vous pouvez trouver ici un exemple d'application simple qui
+écrit les valeurs de glucose reçues dans logcat: <a href="https://www.juggluco.nl/Juggluco/glucosebroadcast.html">Glucose
+broadcasts</a> . Si vous spécifiez Juggluco comme source de données
+dans G-Watch, vous devez activer ce broadcast.</p>
+<p>Les applications d'application écoutant ce broadcast sont
+affichées. Cochez les applications auxquelles vous souhaitez envoyer
+ce broadcast.</p>
+<h2 class="western">Serveur Web</h2>
+<p>Serveur Web pouvant être utilisé avec les montres xDrip et
+certaines applications Nightscout. Précédemment appelé serveur Web
+xDrip.</p>
+<h2 class="western">Uploader</h2>
+<p>Téléchargez sur un serveur Nightscout.</p>
+<h2 class="western">Glucose dans la barre d'état android</h2>
+<p style="line-height: 100%; margin-bottom: 0cm">Si elles sont
+définies, les valeurs de glucose diffusées via Bluetooth sont
+affichées discrètement dans une notification et la barre d'état
+Android. Si vous l'éteignez, au lieu d'un chiffre, un point
+s'affiche et la notification ne dit rien de plus que « <i>Se
+connecter au capteur</i> » ou « <i>Échanger des données</i> ».
+Une application qui continue de fonctionner en arrière-plan est
+obligée par Android d'avoir une telle notification visible (sinon
+elle est facilement arrêtée par Android). Juggluco ne désactive la
+notification que lorsque &quot; <i>Capteur via Bluetooth</i> &quot;
+est désactivé et qu'il n'y a pas de connexion miroir.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">Sur certains
+smartphones, la valeur de glucose n'est affichée dans la barre
+d'état Android qu'après avoir modifié les paramètres de
+notification d'Android. Sur Realme GT 5G par exemple, il faut aller
+dans applist -&gt; Juggluco -&gt; gérer les notifications, onglet
+sur glucose - Notification et désactiver &quot;Set to Silent&quot;.
+&quot;Affichage dans la barre d'état&quot; sera désormais affiché
+activé.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="font-weight: normal; line-height: 100%; margin-bottom: 0cm">
+Vous pouvez également recevoir une notification Android en
+sélectionnant <i>Notifier</i> dans le menu du milieu à gauche. Dans
+ce cas, la notification sera envoyée à certaines smartwatches, si
+elles sont configurées de cette façon. Cela fonctionne avec les
+montres Garmin, je ne sais pas si cela fonctionne avec d’autres.
+Les alarmes génèrent également des notifications.</p>
+<h2 class="western">Glucose flottant</h2>
+<p>Lorsque vous l'activez, une petite image avec la valeur de glucose
+actuelle est constamment présente à l'écran, quelle que soit
+l'application au premier plan. Quand vous l’activez pour la
+première fois, vous serez dirigé vers une liste d'applications dans
+lesquelles vous devez autoriser Juggluco à s'afficher <b>sur
+d'autres applications</b> .</p>
+<h2 class="western">Config</h2>
+<p>Spécifiez la taille de la police et les couleurs de la valeur <i>de
+glucose flottant</i>.</p>
+<h2 class="western">Capteur via bluetooth</h2>
+<p>Sélectionne si cette application se connecte via Bluetooth avec
+un capteur Freestyle libre 2 ou 3. Ceci est nécessaire pour les
+alarmes et la surveillance continue de la glycémie.</p>
+<h2 class="western"><b>Alarmes</b></h2>
+<p style="font-weight: normal">Réglez les alarmes de glucose haut et
+bas, l'alarme de perte de signal et la notification de valeur
+disponible.</p>
+<h2 class="western">Étiquettes des quantités</h2>
+<p style="line-height: 100%; margin-bottom: 0cm">Spécifiez les
+libellés utilisés pour les quantités. Accédez à cet écran pour
+déterminer les étiquettes à utiliser pour définir les quantités,
+telles que les doses d'insuline, la consommation de glucides et les
+heures passées à jouer au football. Si vous utilisez également
+l'application de montre Garmin Kerfstok, ces étiquettes sont
+envoyées à l'application de la montre.</p>
+<h2 class="western">Rappels</h2>
+<p style="font-weight: normal; line-height: 100%; margin-bottom: 0cm">
+Spécifiez qu'une alarme doit se déclencher si vous n'avez pas entré
+une certaine quantité de nourriture ou de médicament dans un
+certain laps de temps.</p>
+<h2 class="western">Couleurs</h2>
+<p style="line-height: 100%; margin-bottom: 0cm">Changez les couleurs
+des courbes, des scans et des nombres.</p>
+</body>
+</html>

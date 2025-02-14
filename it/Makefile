@@ -6,9 +6,9 @@ html.xml:ringtone.html reminders.html connectionoverview.html addconnection.html
 	 ./html2xml  $^ > $@
 
 
-WEARFILES=locationpermission.html nearbypermission.html 
+WEARFILES=locationpermission.in.html nearbypermission.in.html 
 wearhtml.xml:${WEARFILES} 
-	 ../html2xml  $^ > $@
+	 ../html2xml -i  $^ > $@
 install: html.xml wearhtml.xml
 	mkdir -p /o/home/jka/src/android/Glucodata/Common/src/mobile/res/values-it
 	cp html.xml /o/home/jka/src/android/Glucodata/Common/src/mobile/res/values-it

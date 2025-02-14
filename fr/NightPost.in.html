@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 6.4.7.2 (Linux)"/>
+	<meta name="created" content="2023-03-10T12:04:13.361070488"/>
+	<meta name="changed" content="2023-05-21T11:37:23.530954813"/>
+</head>
+<body lang="en-US" dir="ltr"><p><b>Téléchargez sur un serveur
+Nightscout.</b></p>
+<p>Dans la plupart des cas, vous pouvez également utiliser le
+serveur Web dans Juggluco ou <a href="https://www.juggluco.nl/Juggluco/cmdline">juggluco-server</a>
+, seuls AAPS et NSclient refusent de fonctionner lorsqu'ils ne sont
+pas connectés à <a href="https://github.com/nightscout/cgm-remote-monitor">cgm-remote-monitor</a>
+. Le serveur Web de Juggluco donne également des montants sous forme
+de traitements Nightscout (
+<a href="https://www.juggluco.nl/Juggluco/webserver.html">https://www.juggluco.nl/Juggluco/webserver.html</a>
+). Le téléchargeur ne télécharge que les valeurs de glucose.</p>
+<p>Toutes les valeurs de flux sont téléchargées sur le serveur
+Nightscout au moment où elles arrivent. Lorsque plusieurs capteurs
+sont utilisés, toutes les valeurs de tous les capteurs sont
+téléchargées. Certaines applications/visages/widgets de montre
+Garmin supposent que les valeurs sont espacées de 5 minutes.
+Lorsqu'ils reçoivent des valeurs de glucose à une minute
+d'intervalle, ils n'affichent que le dernier cinquième de la courbe.
+Pour cette raison, le serveur Web intégré à Juggluco espace les
+valeurs de 5 minutes, sauf lorsque &quot;interval=secs&quot; est
+défini sur une valeur inférieure.</p>
+<p><b>URL</b> : l'url doit être sous la forme <i>https://hostname:port</i>
+par exemple <i>https://myname.herokuapp.com:6789</i></p>
+<p><b>Actif</b>&nbsp;: Active le téléchargement</p>
+<p><b>Renvoyer les données</b>&nbsp;: téléchargez à nouveau
+toutes les données sur le serveur Nightscout</p>
+<p><b>Envoyer maintenant</b> : normalement, les données sont
+immédiatement envoyées lorsqu'elles arrivent du capteur ou d'une
+connexion miroir. Appuyez sur ce bouton lorsque, pour une raison
+quelconque, une tentative précédente a échoué.</p>
+<p>La version WearOS Juggluco 4.15.0 et les versions ultérieures
+peuvent également télécharger des valeurs de glucose sur
+Nightscout. Dans presque tous les cas il vaut mieux les envoyer via
+une version Juggluco sur téléphone ou tablette ou via serveur
+Juggluco sur ordinateur. Sur WearOS, cela videra la batterie en
+particulier lorsqu'elle ne peut pas contacter le serveur Nightscout.
+Il vaut donc mieux désactiver <i>Acti</i><i>f</i> sur WearOS
+lorsqu'il n'y a pas de connexion fiable.</p>
+</body>
+</html>

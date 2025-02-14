@@ -1,0 +1,116 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 6.4.7.2 (Linux)"/>
+	<meta name="created" content="2021-09-11T17:23:06.572014143"/>
+	<meta name="changed" content="2023-05-21T15:22:44.297266688"/>
+	<style type="text/css">
+		@page { size: 21.01cm 29.69cm; margin: 2.01cm }
+		p { margin-bottom: 0.25cm; background: transparent }
+	</style>
+</head>
+<body lang="en-US" dir="ltr"><h1>Capteur</h1>
+<p style="margin-bottom: 0cm; line-height: 100%">Le menu déroulant
+contient le nom du capteur. Si Juggluco utilise plusieurs capteurs en
+même temps, vous pouvez sélectionner pour quel capteur afficher les
+informations.</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><i><b>M</b></i><i><b>ode
+</b></i><i><b>sommeil? (Doze)</b></i> vous amène à un écran avec
+des informations sur la façon de désactiver les optimisations de
+batterie pour Juggluco, qui peuvent empêcher Juggluco de
+fonctionner.</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><i><b>Autorisation</b></i>
+: Les versions précédentes de Juggluco nécessitaient une
+autorisation de localisation pour trouver l'adresse de l'appareil du
+capteur. Ce n'est plus nécessaire pour les capteurs que j'utilise.
+Peut-être existe-t-il encore des capteurs pour lesquels c'est
+nécessaire; dans ce cas vous pouvez l'activer. Après le premier
+contact, Juggluco enregistre l'adresse de l'appareil et
+l'autorisation de localisation est toujours inutile. L'adresse de
+l'appareil, si elle est connue, est affichée après l'identifiant du
+capteur. Le rouge signifie un capteur de type américain.</p>
+<p style="margin-bottom: 0cm; line-height: 100%">Android 12 dispose
+d'une nouvelle autorisation d'appareils à proximité, qui peut être
+utilisée à la place de l'autorisation de localisation pour
+rechercher une adresse d'appareil Bluetooth, mais elle est également
+nécessaire pour un contact ultérieur avec des appareils Bluetooth.</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><i><b>Wakelock</b></i>
+: Certains utilisateurs d'Android 13 se plaignent que le Bluetooth
+cesse de fonctionner. Il est possible que l'activation de cette
+option les aide. Sur mon smartphone, je n'en ai pas besoin et sur
+Watch4, cela ne fait aucune différence. Si cela fonctionne, cela
+augmentera l'utilisation de la batterie.</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><i><b>Terminer</b></i>
+: arrête la connexion à ce capteur via Bluetooth. Si plus tard vous
+souhaitez à nouveau recevoir les valeurs de flux de glucose de ce
+capteur, il vous suffit de le scanner à nouveau.</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><i><b>Turbo</b></i>
+: Augmente l'effort de contact avec le capteur dans l'espoir qu'il en
+résulte moins d'erreurs de connexion, mais peut utiliser plus
+d'énergie de la batterie. Semble être nécessaire sur Watch4 avec
+les capteurs Freestyle Libre 2, mais pas avec les capteurs Freestyle
+Libre 3 et sur aucun des smartphones sur lesquels je l'ai essayé.</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><b>Android 13</b> :
+Deux utilisateurs avec un téléphone Android 13 bogué ont affirmé
+que ce paramètre résolvait leurs problèmes de connexion Bluetooth.
+Deux utilisateurs d'Android 13 qui n'avaient pas eu de problèmes de
+connexion auparavant ont affirmé avoir eu des problèmes de
+connexion à cause de ce paramètre.</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><i><b>Info</b></i> :
+Donne les heures de début et de fin et les dernières heures de
+balayage et de flux du capteur.</p>
+<p style="margin-bottom: 0cm; line-height: 100%">Pour se connecter à
+un capteur Freestyle Libre 2 via Bluetooth Low Energy, le Bluetooth
+doit être activé. Avant que le capteur ne soit scanné avec succès
+par cette application, rien ne se passera. Le capteur ne doit pas
+être connecté au lecteur FreeStyle Libre ou à d'autres applis sur
+les smartphones.</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><u>Les alarmes de
+l'application Abbott Librelink doivent être désactivées</u><span style="text-decoration: none">
+</span><span style="text-decoration: none">(</span><span style="text-decoration: none">ou
+l'application arrêtée</span><span style="text-decoration: none">)</span><span style="text-decoration: none">.</span></p>
+<p style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; line-height: 100%">Certaines
+applications Librelink semblent contacter le capteur alors que les
+alarmes sont désactivées et peuvent causer des problèmes de
+connexion, alors utilisez « <i>forcer l'arrêt</i> » pour en être
+certain. <b>C</b><b>apteur via Bluetooth/Utiliser Bluetooth</b> doit
+être activé.</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; line-height: 100%">Si les conditions
+ci-dessus sont remplies, cela peut encore prendre un certain temps
+avant que l'application reçoive les valeurs de glucose du capteur.
+Souvent, cela prend une minute, mais à d'autres moments, cela prend
+beaucoup plus de temps. L' <i>étape de connexion</i> donne le plus
+de difficultés. Les problèmes plus fréquents sont les échecs avec
+status=133, qui est l'argument status de
+<a href="https://developer.android.com/reference/android/bluetooth/BluetoothGattCallback#onConnectionStateChange(android.bluetooth.BluetoothGatt,%20int,%20int)">onConnectionStateChange(BluetoothGatt
+bluetoothGatt, int status, int newState)</a> . Si vous retirez la
+batterie d'un capteur, vous obtenez également cette erreur, il
+semble donc que ce soit quelque chose comme <i>Bluetooth device not
+found</i>. Parfois, l'activation et la désactivation de Bluetooth
+semble aider à redémarrer le téléphone ou à désactiver la
+connexion Bluetooth d'autres appareils. D'autres problèmes sont
+parfois résolus en scannant le capteur.</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; line-height: 100%">La numérisation du
+capteur avec Juggluco (avec <i>le capteur via Bluetooth</i> activé)
+sur un autre téléphone “volera” la connexion de ce téléphone
+et cela peut prendre un certain temps, avec la numérisation entre
+les deux, pour la récupérer.</p>
+</body>
+</html>

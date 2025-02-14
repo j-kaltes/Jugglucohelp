@@ -9,9 +9,9 @@ html.xml:${FILES}
 
 
 
-WEARFILES=staticnum.html locationpermission.html nearbypermission.html notificationpermission.html 
+WEARFILES=staticnum.in.html locationpermission.in.html nearbypermission.in.html notificationpermission.in.html 
 wearhtml.xml:${WEARFILES} 
-	 ../html2xml  $^ > $@
+	 ../html2xml -i $^ > $@
 
 install: html.xml wearhtml.xml
 	mkdir -p /o/home/jka/src/android/Glucodata/Common/src/mobile/res/values-de

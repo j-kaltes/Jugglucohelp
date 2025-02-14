@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title>Przesył danych</title>
+	<meta name="generator" content="LibreOffice 24.2.6.2 (Linux)"/>
+	<meta name="created" content="2024-11-21T21:25:03.749778838"/>
+	<meta name="changed" content="2024-11-23T15:56:59.875064212"/>
+	<style type="text/css">@page { margin: 0.79in } p { line-height: 115%; margin-bottom: 0.1in } h2 { margin-top: 0.14in; margin-bottom: 0.08in; background: transparent } h2.western { font-family: "Liberation Sans", sans-serif; font-size: 16pt } h2.cjk { font-family: "Noto Sans CJK SC"; font-size: 16pt } h2.ctl { font-family: "Mangal"; font-size: 16pt }</style>
+</head>
+<body lang="pl-PL" dir="ltr"><h1>Przesył danych</h1>
+<h2 class="western">Health Connect</h2>
+<p>Wysyłaj co minutę wartości glukozy do <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.healthdata">Health Connect</a>. Dostępu do tych wartości glukozy można udzielić innym aplikacjom, na przykład <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.fitness">Google Fit</a>. Inne aplikacje r&oacute;wnież mogą uzyskać dostęp do danych z Google Fit.</p>
+<h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/pl/libreview.html">Libreview</a></h2>
+<p>Połącz się z Libreview, aby wysłać wartości stężenia glukozy Freestyle Libre 2 i 3 oraz wartości wpis&oacute;w do Libreview oraz aby uzyskać identyfikator konta używany podczas aktywacji sensora Freestyle Libre 3. Dotknij, aby zmienić ustawienia.</p>
+<h2 class="western">Wysyłaj do xDrip</h2>
+<p>Używaj sygnału Patched Libre broadcast (kt&oacute;ry pierwotnie wysyłany był przez poprawioną niemiecką aplikację Librelink w wersji 2.3.0), aby co minutę wysyłać dane strumienia glukozy przez Bluetooth do xDrip. W xDrip musisz ustawić Libre2 (patched App) jako sprzętowe źr&oacute;dło danych. Wartości glukozy wyświetlane w xDrip są inne niż wartości, kt&oacute;re otrzymuje. Z jakiegoś powodu xDrip aktualizuje swoją wartość tylko co 5 minut, prawdopodobnie dlatego, że został stworzony dla urządzeń, kt&oacute;re wysyłają tylko raz na 5 minut. (Tarcza zegarka podłączona do xDrip regularnie wyświetlała stare wartości sprzed ponad 9 minut.) Dodatkowo xDrip wyświetla własną interpretację otrzymanych wartości glukozy. Urządzenia klony r&oacute;wnież mogą wysyłać wartości do xDrip.</p>
+<p>Zobacz <a href="https://github.com/jakobheyman/xdripJH">https://github.com/jakobheyman/xdripJH</a>, aby zapoznać się z pr&oacute;bami aktualizacji wartości glukozy w xDrip co minutę.</p>
+<p>Sensory Freestyle Libre 3 wysyłają nieodebrane wartości po okresie rozłączenia. Wartości te nie są wysyłane wraz z tą transmisją. Otrzymasz je, jeśli włączysz opcję &bdquo;Serwer WWW&rdquo; w Juggluco i sprawisz, że xDrip będzie odbiorcą (followerem) Nightscout sygnał&oacute;w z Juggluco. Serwer Nightscout: http://127.0.0.1:17580</p>
+<p>Juggluco może r&oacute;wnież bezpośrednio kontaktować się z aplikacjami xDrip na zegarkach, dzięki czemu aplikacja zegarka wyświetla bardziej aktualne wartości glukozy. Aby skorzystać z tej funkcji zaznacz <i>&quot;xDrip webserver&quot;</i> w lewym menu w zakładce <b>Zegarek</b>. Więcej informacji można znaleźć w: lewe menu -&gt; <a href="https://www.juggluco.nl/Jugglucohelp/pl/watchinfo.html">Zegarek</a> -&gt; Pomoc. Tylko jedna aplikacja może nasłuchiwać na porcie sieciowym używanym przez webserwer xDrip, dlatego też musisz wyłączyć <i>&quot;xDrip webservice</i>&quot; w samym xDrip, jeśli chcesz korzystać z tego w Juggluco.</p>
+<h2 class="western"><a name="eversense"></a>EverSense</h2>
+<p>Kolejna transmisja wartości glukozy. Może być używana do wysyłania co minutę wartości glukozy do xDrip. xDrip zignoruje prawie wszystkie z nich, ponieważ ciągle wyświetla jedną wartości na 5 minut. Ograniczenie to można usunąć poprzez edycję kodu źr&oacute;dłowego xDrip. Należy zmienić  <i>4 * 60 * 1000</i> na <i>55 * 1000</i> w <a href="https://github.com/NightscoutFoundation/xDrip/blob/645e8b4cb8fa3ad7b280f598d6f2f6bdb84ce392/app/src/main/java/com/eveningoutpost/dexdrip/models/BgReading.java#L969">app/src/main/java/com/eveningoutpost/dexdrip/models/BgReading.java</a>, aby wpis ten wyglądał tak:</p>
+<p>public static BgReading readingNearTimeStamp(long startTime) {<br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;long margin = (55 * 1000);<br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return readingNearTimeStamp(startTime, margin);<br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</p>
+<p>Przewagą nad transmisją Patched Libre (opcja Wysyłaj do xDrip) jest to, że xDrip nie przekształca wartości glukozy w jakiś nieokreślony spos&oacute;b.</p>
+<h2 class="western">Nadawaj zamiast xDrip</h2>
+<p>Wyślij ten sam sygnał transmisji, kt&oacute;ry został włączony w xDrip w <i>&quot;Ustawienia-&gt;Ustawienia innych aplikacji-&gt;Nadawaj lokalnie&quot;</i>. Nasłuchują go aplikacje takie jak AndroidAPS. W przeciwieństwie do oryginalnej transmisji xDrip, kt&oacute;ra była nadawana co 5 minut, Juggluco nadaje tę transmisję co minutę.</p>
+<h2 class="western">Glucodata broadcast (Transmisja danych dot. glukozy)</h2>
+<p>Nowa transmisja, kt&oacute;ra ma taką samą funkcję jak transmisja xDrip. Prosty przykład aplikacji, kt&oacute;ra zapisuje otrzymane wartości glukozy do logcat, można znaleźć tutaj: <a href="https://www.juggluco.nl/Juggluco/glucosebroadcast.html">Glucose broadcasts</a>. Jeśli określisz Juggluco jako źr&oacute;dło danych w G-Watch, musisz włączyć tę transmisję.</p>
+<p>Pokazane są aplikacje nasłuchujące tej transmisji. Zaznacz aplikacje, do kt&oacute;rych chcesz wysłać tę transmisję.</p>
+<h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/pl/Nightscouthelp.html">Serwer sieciowy</a></h2>
+<p>Serwer WWW = serwer sieciowy, kt&oacute;ry może być używany z zegarkami xDrip i niekt&oacute;rymi aplikacjami Nightscout. Wcześniej określany był jako &bdquo;xDrip webserver&rdquo;.</p>
+<h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/pl/NightPost.html">Uploader</a></h2>
+<p>Prześlij na serwer Nightscout.</p>
+<h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/pl/connectionoverview.html">Klonowanie</a></h2>
+<p lang="pl-PL" style="line-height: 100%; margin-bottom: 0in">Przesyłaj wszystkie dane za pośrednictwem połączenia internetowego do aplikacji Juggluco działającej na innym urządzeniu, tworząc w ten spos&oacute;b klon Juggluco na tym innym urządzeniu. Istniejące dane zostaną zastąpione.</p>
+<p lang="pl-PL" style="line-height: 100%; margin-bottom: 0in"><br/></p>
+</body>
+</html>

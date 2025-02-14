@@ -17,10 +17,10 @@ FILES=ringtone.html reminders.html connectionoverview.html addconnection.html lo
 html.xml: Makefile html2xml ${FILES} 
 	 ./html2xml ${FILES} > $@
 
-WEARFILES=staticnum.html locationpermission.html nearbypermission.html notificationpermission.html 
+WEARFILES=staticnum.in.html locationpermission.in.html nearbypermission.in.html notificationpermission.in.html 
 
 wearhtml.xml:${WEARFILES} 
-	 ../html2xml  $^ > $@
+	 ../html2xml -i  $^ > $@
 install: html.xml wearhtml.xml
 	mkdir -p ${JUGGLUCOPATH}/Common/src/mobile/res/values-zh
 	cp html.xml ${JUGGLUCOPATH}/Common/src/mobile/res/values-zh

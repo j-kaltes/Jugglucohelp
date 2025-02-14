@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Larm</title>
+    <meta name="changed" content="2024-10-02T15:46:45" />
+  </head>
+    <img
+      src="mirroroverview.png"
+      style="object-fit: contain; width: 15cm; height: auto"
+    />
+  <body lang="sv-SE" dir="ltr">
+    <h1>Spegling</h1>
+    <p>
+      Skicka data till eller ta emot data från en annan enhet. Du kan ansluta
+      till en Android-enhet som kör Juggluco för att visa data på samma sätt som
+      här. Efter att ha tagit emot skanningsdata kan spegelenheten även kontakta
+      sensorn via Bluetooth. För att säkerställa att endast en av enheterna
+      kommer i kontakt med sensorn stängs "<i>Sensor via Bluetooth</i>" av
+      automatiskt när strömmande värden kommer via IP/TCP.
+    </p>
+
+    <p>
+      På den här skärmen, efter <b>wlan</b>, visas enhetens lokala IP-adress som
+      du bör ange på den andra enheten på ditt hemnätverk som du ansluter till
+      (eller ditt modem om du ansluter på distans).
+    </p>
+
+    <p>
+      Efter <b>Port</b> kan du ändra vilken TCP-port som den här appen lyssnar
+      på för anslutningar.
+    </p>
+
+    <p>
+      Genom att klicka på
+      <a href="https://www.juggluco.nl/Jugglucohelp/sv/addconnection.html"
+        >Lägg till anslutning</a
+      >
+      kan du ange vilka värdar som ska anslutas och hur du ska ansluta.
+    </p>
+
+    <p>
+      En pålitlig nätverksanslutning är på Android störd av alla typer av
+      batterioptimeringar och bakgrundsbegränsningar. Tryck på
+      <a href="https://www.juggluco.nl/Jugglucohelp/sv/battery.html">Slumra?</a>
+      För att få hjälp att ändra inställningarna.
+    </p>
+
+    <p>
+      Om Juggluco fungerar som en speglings-app (tar emot glukosvärden från en
+      annan enhet som kör Juggluco), kan du trycka på <b>Larm</b> för att komma
+      till en dialogruta där du kan ange larm för låg och hög glukosnivå och
+      relaterade meddelanden.
+    </p>
+
+    <p>
+      <b>Spegeln skickar värden</b>: Om appen tar emot information om medicin,
+      mat och träning från samma app på en annan enhet, bör du inte lägga till
+      eller ändra dessa uppgifter här. Genom att kryssa i detta gör du det
+      omöjligt att ändra informationen.
+    </p>
+
+    <p>
+      <b>Synkronisering</b>: skickar ny data till en ansluten enhet eller ber om
+      ny data.
+    </p>
+
+    <p><b>Återskapa</b>: Stänger befintlig anslutning och skapar en ny.</p>
+    <p>
+      <b>Wifi</b> (endast WearOS): När detta inte är ikryssat stängs WIFI av
+      automatiskt efter en stund av WearOS för att spara batteri, och Juggluco
+      växlar då till Bluetooth för anslutningen mellan telefonen och klockan.
+      När det är ikryssat ombeds WearOS om att hålla WIFI igång längre, men det
+      kan ändå stängas av till slut. Att ändra den här inställningen är
+      vanligtvis inte nödvändigt, och tillverkarna av WearOS anser att det kan
+      leda till ökad batteriförbrukning om WIFI hålls påslaget.
+    </p>
+    <p>
+      Befintliga anslutningar visas i en lista: namnet, IP-porten samt månad,
+      dag och tid för den senaste lyckade synkroniseringen visas. Hur
+      anslutningen används förkortas enligt följande:
+    </p>
+    <ul>
+      <li>n: manuella värden</li>
+      <li>s: skannade värden</li>
+      <li>b: strömmade värden (bluetooth)</li>
+      <li>r: tar emot</li>
+    </ul>
+
+    <p>
+      För mer information om Speglings-anslutningar läs hjälpen under "<i
+        ><a href="https://www.juggluco.nl/Jugglucohelp/sv/addconnection.html"
+          >Lägg till anslutning</a
+        ></i
+      >" och se
+      <a href="https://www.juggluco.nl/Juggluco/index.html#mirror"
+        >https://www.juggluco.nl/Juggluco/index.html#mirror</a
+      >
+    </p>
+
+    <h1>Stationär dator</h1>
+    <p>
+      Du kan köra Android Juggluco-appen på en Windows-, Macintosh- eller
+      Linux-dator med hjälp av en Android-emulator (till exempel
+      <a href="https://www.genymotion.com/">Genymotion</a>). Juggluco på
+      emulatorn tar emot data via en speglings-anslutning från en
+      Android-telefon som är ansluten till sensorn. Nyp-rörelser (flytta två
+      fingrar till eller från varandra) kan simuleras genom att trycka på en
+      tangent (Kontroll i Genymotion) medan du flyttar muspekaren.
+    </p>
+  </body>
+</html>

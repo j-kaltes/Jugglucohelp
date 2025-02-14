@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<base target="_blank">
+	<meta name="generator" content="LibreOffice 7.5.8.2 (Linux)"/>
+	<meta name="changed" content="2023-12-27T20:18:01.744399555"/>
+ <base href="https://www.juggluco.nl/Jugglucohelp/mgdL/" id="baseurl" target="_blank">
+<script type="text/javascript"> 
+function getunitarg(){ 
+	const params = new URLSearchParams(document.location.search);
+	const unit = params.get("unit");
+	if(unit == "mg/dL") { 
+		return 2;
+		} 
+	else { 
+		if(unit=="mmol/L") {
+		   return 1;
+		   }
+	 	}
+	return 0;
+    } 
+let mmol=[
+"AM",
+"AU",
+"BA",
+"BG",
+"BW",
+"BY",
+"CA",
+"CH",
+"CN",
+"CZ",
+"DK",
+"EE",
+"FI",
+"GB",
+"HK",
+"HR",
+"HU",
+"IE",
+"IS",
+"KW",
+"KZ",
+"LT",
+"LV",
+"MT",
+"MY",
+"NA",
+"NL",
+"NO",
+"NZ",
+"RS",
+"RU",
+"SE",
+"SI",
+"SK",
+"UA",
+"ZA"];
+
+
+
+
+
+
+
+function getunit() {
+	var unit=getunitarg();
+	if(unit!=0) {
+		return unit;
+		}
+
+	var userLang = navigator.language || navigator.userLanguage;
+	var  co=userLang.toUpperCase();
+	for(const element of mmol) {
+	  if(co.includes(element)) {
+		return 1;
+		}
+	   }
+
+	  return 2;
+	 }
+
+
+
+function setbaseurl(){ 
+	if(getunit()!=1) {
+		document.getElementById("baseurl").href = "https://www.juggluco.nl/Jugglucohelp/mgdL/"; 
+		} 
+	else { 
+	   document.getElementById("baseurl").href = "https://www.juggluco.nl/Jugglucohelp/"; 
+	   } 
+      } 
+   setbaseurl();
+   </script> 
+</head>
+<img src="newamount.png"  style="object-fit:contain; width:15cm;                   height:auto;margin: 1cm 1cm 1cm 1cm;">
+<body lang="en-US" dir="ltr"><h1>New Amount</h1>
+<p>With <b>New amount</b> you can enter numbers associated with an
+arbitrary Label. You can set labels under left menu→Settings→<a href="https://www.juggluco.nl/Jugglucohelp/labelhelp.html">Number
+Labels</a>. The <i>Amounts</i> entered with a particular label will
+be shown at certain height in the graph determined by the label.</p>
+<p>You can later change the amount by long pressing it. You can also
+select it from the list of entered amounts under Left middle
+menu→List.</p>
+<p>It is also possible to receive <b>Insulin</b> dose data from
+<a href="https://www.juggluco.nl/Juggluco/index.html#novopens" onclick="location.href='https://www.juggluco.nl/Juggluco/index.html?unit='+unitstr+'#novopens';return false;">NovoPen®
+6 or NovoPen Echo® Plus</a> by scanning the NFC pen. After scanning
+you can change under what label the doses are saved in Juggluco and
+restrict doses to doses from <b>after</b> a certain date and time.
+When hundreds of doses are present in the memory of the pen, it can
+take more than 30 seconds before they are all received via NFC by
+Juggluco.</p>
+<p>Under Left menu-&gt;Settings-&gt;<a href="https://www.juggluco.nl/Jugglucohelp/labelhelp.html">Number
+Labels</a> is also specified under which label you enter the
+carbohydrates of a meal. In <i>New amount</i>, a <b>Meal</b> button
+is displayed for this label. Tapping this <a href="https://www.juggluco.nl/Jugglucohelp/mealhelp.html"><i>Meal</i></a>
+button brings you to to a display in which you can specify a meal out
+of its components. The carbohydrates content is then calculated or
+you can specify the carbohydrate content and the needed quantify of
+one ingredient is then calculated.</p>
+<p><br/>
+<br/>
+
+</p>
+</body>
+</html>

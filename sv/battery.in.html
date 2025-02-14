@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Batteri</title>
+    <meta name="changed" content="2024-10-02T13:12:03" />
+  </head>
+  <body lang="sv-SE" dir="ltr">
+    <h1>Slumra inte</h1>
+    <p>
+      Vanligtvis går en Android-enhet in i slumra-läge (för att spara batteri)
+      när den inte används. Om du vill vara säker på att glukosvärden tas emot
+      via Bluetooth eller TCP/IP utan avbrott, måste du stänga av
+      batterioptimeringen för Juggluco. Ibland kan det också vara nödvändigt att
+      stänga av optimeringen för hela enheten för att förhindra att Android
+      stänger av Juggluco.
+    </p>
+
+    <p>
+      Många enheter har extra batterioptimering, till exempel
+      <i>aktivitet i bakgrunden</i> och <i>autostart</i> som måste ändras. Du
+      hittar dem under Android-inställningar->Batteri. Se
+      <a href="https://dontkillmyapp.com/">https://dontkillmyapp.com</a>. När du
+      använder Watch 4 eller 5 måste du <i>Tillåt bakgrundsaktivitet</i> i
+      Galaxy Wearable companion-appen, Klockinställningar->Appar->Juggluco. För
+      klockor som inte har den här inställningen kan du använda följande
+      kommando från din dator genom att ansluta via
+      <a href="https://www.juggluco.nl/JugglucoWearOS/install/adb.html">adb</a>:
+    </p>
+    <kbd>adb shell cmd appops set tk.glucodata RUN_IN_BACKGROUND allow</kbd>
+  </body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 24.2.6.2 (Linux)"/>
+	<meta name="created" content="2021-02-27T14:01:21.977498081"/>
+	<meta name="changed" content="2024-12-01T22:07:34.379008659"/>
+	<style type="text/css">
+		@page { size: 8.27in 11.69in; margin: 0.79in }
+		h1 { margin-bottom: 0.08in; background: transparent }
+		h1.western { font-family: "Liberation Serif", serif }
+		h1.cjk { font-family: "Noto Serif CJK SC" }
+		h1.ctl { font-family: "Mangal" }
+		p { margin-bottom: 0.1in; background: transparent }
+		h2 { margin-top: 0.14in; margin-bottom: 0.08in; background: transparent }
+		h2.western { font-family: "Liberation Sans", sans-serif; font-size: 16pt }
+		h2.cjk { font-family: "Noto Sans CJK SC"; font-size: 16pt }
+		h2.ctl { font-family: "Mangal"; font-size: 16pt }
+	</style>
+</head>
+ <img src="settings.png" alt="Setttings" style="object-fit:contain; width:15cm;                   height:auto;">
+<body lang="de-DE" dir="ltr"><h1 class="western" align="left">Einstellungen</h1>
+<h2 class="western" align="left">Einheit</h2>
+<p align="left" style="margin-bottom: 0in">Wählen Sie, ob die
+Glukosewerte in mmol/L oder dm/dL angegeben werden sollen.</p>
+<h2 class="western" align="left">Nfc-Ton</h2>
+<p align="left">Erzeugen Sie beim Scannen zusätzlich zur Vibration
+einen Ton.</p>
+<h2 class="western" align="left">Scannen startet App</h2>
+<p align="left">Wenn diese Option aktiviert ist, wird diese App
+gestartet, wenn Sie einen Sensor über NFC scannen, auch wenn diese
+App nicht angezeigt wird. Wenn mehrere Apps diese Einstellung haben,
+zeigt Android ein Auswahlmenü an, aus dem Sie die gewünschte App
+auswählen können. Irgendwie funktioniert die Auswahl einer App
+nicht und die Auswahl einer App, die beim nächsten Mal ausgewählt
+werden soll, auch nicht. In diesem Fall können Sie also nicht
+scannen, ohne dass eine App im Vordergrund ist. Wenn man das in
+dieser App ausschaltet, kann zumindest eine App auf diese Weise
+aktiviert werden.</p>
+<p align="left">Wenn Sie Root-Zugriff haben, können Sie auch die
+NFC-Aktivierung von Abbotts Librelink-App deaktivieren (funktioniert
+nicht mit Libre3).</p>
+<p align="left">Werden Sie root in der adb-Shell oder termux und
+geben Sie ein:</p>
+<p>pm disable
+com.freestylelibre.app.de/com.librelink.app.ui.common.NFCScanActivity</p>
+<p align="left">Bei Librelink 2.7.1 und niedriger mussten Sie
+Folgendes drücken:</p>
+<p>pm disable
+com.freestylelibre.app.de/com.librelink.app.ui.common.ScanSensorActivity</p>
+<p align="left">com.freestylelibre.app.de sollte durch die von Ihnen
+verwendete Version ersetzt werden. So finden Sie den Namen::</p>
+<p>pm list package freestylelibre</p>
+<p align="left">Danach können Sie Librelink immer noch zum Scannen
+verwenden, wenn es sich im Vordergrund befindet, aber es wird sonst
+nicht gestartet. Librelink 2.5.2 - 2.8.2 stürzen selbst ab, wenn sie
+Root erkennen. Aber in Magisk können Sie Root leicht verstecken,
+indem Sie Magisk umbenennen und einzelne Anwendungen zur Denyliste
+(Magisk 24.3) oder Magiskhide (Magisk 23.0) hinzufügen. Sie sollten
+auch Juggluco zur Denyliste hinzufügen. Außer bei der Verwendung
+von US Freestyle Libre 2 Sensoren, können Sie auch eine ältere
+Version von Librelink ohne Root-Check verwenden.</p>
+<p align="left">Ohne Root, unter adb shell, können Sie auch die
+gesamte App deaktivieren:</p>
+<p align="left">pm disable-user --user 0 com.freestylelibre.app.de</p>
+<p align="left">Bevor Sie den Kundendienst von Abbott anrufen,
+aktivieren Sie ihn erneut mit:</p>
+<p align="left">pm enable com.freestylelibre.app.de</p>
+<h2 class="western" align="left">Glukosebenachrichtigung</h2>
+<p align="left" style="margin-bottom: 0in">(Früher &quot;<i>Glukose
+in der Statusleiste von Android&quot;</i> genannt). Wenn die
+Glukosewerte über Bluetooth gestreamt werden, werden sie in einer
+Benachrichtigung und in der Android-Statusleiste angezeigt. Auf
+einigen Smartphones wird der Glukosewert nur in der
+Android-Statusleiste angezeigt, nachdem man die
+Benachrichtigungseinstellungen des Androiden geändert hat.</p>
+<p style="margin-bottom: 0in">Sie können auch eine
+Android-Benachrichtigung erhalten, indem Sie im linken mittleren Menü
+<i>Benachrichtigen</i> auswählen. In diesem Fall wird die
+Benachrichtigung an einige Smartwatches gesendet, wenn dies so
+konfiguriert ist. Das funktioniert mit Garmin-Uhren, ich weiß nicht,
+ob es mit anderen funktioniert. Alarme generieren auch
+Benachrichtigungen.</p>
+<h2 class="western">Schwebende Glukose</h2>
+<p style="margin-bottom: 0in">Wenn Sie diese einschalten, wird
+unabhängig davon, welche App im Vordergrund ist, ständig ein
+kleines Bild mit dem aktuellen Glukosewert auf dem Bildschirm
+angezeigt. Wenn Sie es das erste Mal einschalten, werden Sie zu einer
+Liste von Apps weitergeleitet, in denen Sie Juggluco die Erlaubnis
+geben müssen, <b>über anderen Apps angezeigt</b> zu werden.</p>
+<h2 class="western" align="left"><b>Alarme</b></h2>
+<p align="left">Stellen Sie Alarme für hohen und niedrigen
+Glukosewert, Signalverlustalarm und Benachrichtigung über
+verfügbaren Wert ein.</p>
+<h2 class="western">Daten austauschen</h2>
+<p align="left">Verschiedene Möglichkeiten, Daten von Juggluco an
+andere Apps oder Server zu senden. (Um Daten an Uhren zu senden,
+gehen Sie zum linken Menü -&gt; Uhren.)</p>
+<h2 class="western" align="left">Zahlenetiketten</h2>
+<p align="left" style="margin-bottom: 0in">Legen Sie die für die
+Mengen verwendeten Bezeichnungen fest. Gehen Sie zum Unterbildschirm,
+um festzulegen, welche Kennzeichnungen zum Festlegen von Mengen
+verwendet werden, z. B. Insulindosen, Kohlenhydratverbrauch und
+Stunden, die Sie mit Fußballspielen verbringen. Wenn Sie auch die
+Garmin-Uhren-App Kerfstok verwenden, werden diese Etiketten an die
+Uhren-App gesendet.</p>
+<h2 class="western" align="left">Erinnerungen</h2>
+<p align="left" style="margin-bottom: 0in">Legen Sie fest, dass ein
+Alarm ausgelöst werden soll, wenn Sie eine bestimmte Menge an
+Lebensmitteln oder Medikamenten nicht innerhalb einer bestimmten
+Zeitspanne eingegeben haben.</p>
+<h2 class="western" align="left">Anzeige</h2>
+<p align="left">Alle Arten von Einstellungen, die sich darauf
+beziehen, wie Daten angezeigt werden, vom Zielbereich bis zur
+Sprache.</p>
+</body>
+</html>

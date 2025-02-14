@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <link rel="icon" href="https://www.juggluco.nl/Juggluco/arrow.png">
+    <title>Intro help</title>
+    <style>
+a:link {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: lightblue;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: green;
+  background-color: transparent;
+  text-decoration: underline;
+}
+</style> <style type="text/css">
+		@page { size: 8.27in 11.69in; margin: 0.79in }
+		td p { line-height: 115%; orphans: 2; widows: 2; margin-bottom: 0.1in; background: transparent }
+		p { orphans: 2; widows: 2; margin-bottom: 0.1in; background: transparent }
+	</style>
+ <base href="https://www.juggluco.nl/Jugglucohelp/mgdL/" id="baseurl" target="_blank">
+
+<script type="text/javascript"> 
+var unitstr='mg/dL';
+function getunitarg(){ 
+	const params = new URLSearchParams(document.location.search);
+	const unit = params.get("unit");
+	if(unit===null)	 {
+		return 0;
+		}
+	if(unit == "mg/dL") { 
+		return 2;
+		} 
+	else { 
+		if(unit=="mmol/L") {
+		   return 1;
+		   }
+	 	}
+	 console.log("unit wrong");
+//	params.delete("unit");
+//	window.location.search = params;
+//	 console.log("search="+	window.location.search);
+
+	return 0;
+    } 
+let mmol=[
+"AM",
+"AU",
+"BA",
+"BG",
+"BW",
+"BY",
+"CA",
+"CH",
+"CN",
+"CZ",
+"DK",
+"EE",
+"FI",
+"GB",
+"HK",
+"HR",
+"HU",
+"IE",
+"IS",
+"KW",
+"KZ",
+"LT",
+"LV",
+"MT",
+"MY",
+"NA",
+"NL",
+"NO",
+"NZ",
+"RS",
+"RU",
+"SE",
+"SI",
+"SK",
+"UA",
+"ZA"];
+
+
+
+
+
+
+function getunit() {
+	var unit=getunitarg();
+	if(unit!=0) {
+		return unit;
+		}
+
+	var userLang = navigator.language || navigator.userLanguage;
+	var  co=userLang.toUpperCase();
+
+	for(const element of mmol) {
+	  if(co.includes(element)) {
+	 	console.log("LANG mmol/L");
+//		window.location.search += 'unit=mmol/L';
+//	 	console.log("getunit search="+	window.location.search);
+		return 1;
+		}
+	   }
+	 console.log("LANG mg/dL");
+//	window.location.search += 'unit=mg/dL';
+//	console.log("getunit search="+	window.location.search);
+
+	return 2;
+	 }
+
+
+
+function setbaseurl(){ 
+	if(getunit()!=1) {
+		document.getElementById("baseurl").href = "https://www.juggluco.nl/Jugglucohelp/mgdL/"; 
+		 console.log("unitstr=mg/dL");
+		unitstr='mg/dL';
+		} 
+	else { 
+	       document.getElementById("baseurl").href = "https://www.juggluco.nl/Jugglucohelp/";  
+		 console.log("unitstr=mmol/L");
+		unitstr='mmol/L';
+		}
+   	} 
+   setbaseurl();
+   </script> 
+  </head>
+  <img src="left.png" style="object-fit:contain; width:15cm;                   height:auto;margin: 1cm 1cm 1cm 1cm;">
+    <img src="leftmiddle.png" style="object-fit:contain; width:15cm;                   height:auto;margin: 1cm 1cm 1cm 1cm;">
+    <img src="rightmiddle.png" style="object-fit:contain; width:15cm;                   height:auto;margin: 1cm 1cm 1cm 1cm;">
+    <img src="right.png" style="object-fit:contain; width:15cm;                   height:auto;margin: 1cm 1cm 1cm 1cm;">
+<body lang="en-US" link="#ffc0cb" vlink="#add8e6" bgcolor="#000000" dir="ltr"><p style="line-height: 115%; margin-bottom: 0in">
+<a href="https://www.juggluco.nl/"><font color="#ffffff"><font face="Cambria, serif"><font size="4" style="font-size: 14pt"><b>Juggluco</b></font></font></font></a><font color="#ffffff">
+is an applet for the control of blood glucose by people with
+diabetes. It can scan Freestyle Libre (0 and 2) sensors (via NFC) and
+receive (via Bluetooth) glucose values from </font><font color="#4f81bd"><i><b>Freestyle Libre 2</b></i></font><font color="#ffffff"> and </font><font color="#4f81bd"><i><b>3</b></i></font><font color="#ffffff">, </font><font color="#4f81bd"><b><i>Sibionics GS1Sb</b></i></font><font color="#ffffff"> and </font><b><i><font color="#4f81bd">Dexcom G7/ONE+</b></i></font><font color="#ffffff"> sensors.</font><font color="#ffffff"></p>
+<p style="line-height: 115%; margin-bottom: 0in"><font color="#ffffff">As
+the program is run for the first time, you can (after initialization)
+scan a Freestyle Libre </font><font color="#ffffff"><b>2</b></font><font color="#ffffff">
+sensor by holding it against the NFC sensor in your smartphone.
+Hereafter Juggluco will try to get a Bluetooth connection with
+Freestyle Libre 2 sensors and receive every minute a glucose value
+without scanning. To take over an activated FreeStyle Libre </font><font color="#ffffff"><b>3</b></font><font color="#ffffff">
+sensor, you need to specify the Libreview Account information you
+used to activate the sensor in <a href="https://www.juggluco.nl/Jugglucohelp/libreview.html">settings-&gt;Exchange
+data-&gt;Libreview</a>, press <a href="https://www.juggluco.nl/Jugglucohelp/getaccountidhelp.html">&quot;Get
+Account ID&quot;</a> and wait for the Account ID to arrive before
+scanning. </font><font color="#ffffff">To connect to</font><font color="#ffffff">
+</font><font color="#4f81bd"><i><b>Sibionics
+GS1Sb</b></i></font><font color="#ffffff">  and </font><font color="#4f81bd"><b><i>Dexcom G7/ONE+</b></i></font><font color="#ffffff"> 
+sensors </font><font color="#ffffff">you need to scan their data
+matrix with left menu-&gt;Photo.</font></p>
+<p style="line-height: 115%; margin-bottom: 0in"><font color="#ffffff"><span lang="en-US">The
+program contains four</span> <font color="#4f81bd"><font face="Cambria, serif"><font size="3" style="font-size: 13pt"><span lang="en-US"><b>menus</b></span></font></font></font><span lang="en-US">;
+by touching on an empty part of the display you can open a</span>
+<span lang="en-US">menu. Touch</span> <span lang="en-US">on the left
+fourth</span> <span lang="en-US">of the screen opens the left menu,
+the left side of the middle part opens the second</span> <span lang="en-US">menu
+and the right part of the middle opens the third</span> <span lang="en-US">menu</span>
+<span lang="en-US">and the right fourth</span> <span lang="en-US">of
+the screen the fourth menu.</span> </font>
+</p>
+<p style="line-height: 100%; orphans: 0; widows: 0; margin-top: 0.08in; margin-bottom: 0.08in; background: transparent; page-break-after: avoid">
+<font color="#ffffff"><font size="3" style="font-size: 12pt"><i>Menu
+4: Movement (right)</i></font></font></p>
+<table width="96" cellpadding="0" cellspacing="0">
+	<col width="96"/>
+	<tr>
+		<td width="96" valign="top" style="border: none; padding: 0in"><p><font color="#ffff6d">15:10&nbsp;&nbsp;&nbsp;↗&nbsp;93</font></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="96" valign="top" style="border: none; padding: 0in"><p><a href="https://www.juggluco.nl/Jugglucohelp/searchhelp.html"><font color="#ffff6d">Search</font></a></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="96" valign="top" style="border: none; padding: 0in"><p><font color="#ffff6d">Date</font></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="96" valign="top" style="border: none; padding: 0in"><p><font color="#ffff6d">Day
+			back</font></p>
+		</td>
+	</tr>
+	<tr style="background: transparent">
+		<td width="96" valign="top" style="border: none; padding: 0in"><p><font color="#ffff6d">Day
+			later</font></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="96" valign="top" style="border: none; padding: 0in"><p><font color="#ffff6d">Week
+			back</font></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="96" valign="top" style="border: none; padding: 0in"><p><font color="#ffff6d">Week
+			Later</font></p>
+		</td>
+	</tr>
+</table>
+<p style="line-height: 115%; margin-bottom: 0in"><font color="#ffffff"><span lang="en-US">By
+moving left and right over the screen you can move the curve left and
+right. You can also move by using the </span><font color="#4f81bd"><font face="Cambria, serif"><span lang="en-US"><b>movement
+menu</b></span></font></font> <span lang="en-US">on the right. Use
+</span><font color="#4f81bd"><font face="Cambria, serif"><span lang="en-US"><i><b>Date</b></i></span></font></font>
+<span lang="en-US">to select a date, </span><font color="#4f81bd"><font face="Cambria, serif"><span lang="en-US"><i><b>Search</b></i></span></font></font>
+<span lang="en-US">to search for glucose values and entered numbers.</span>
+<span lang="en-US">The first item of the right menu is the current
+time and by selecting it you jump to the right of the graph (now).</span></font></p>
+<p style="line-height: 115%; margin-bottom: 0in"><font color="#ffffff">If
+<i>manually scale Glucose</i> is set in Settings, moving up and down
+in the upper part of the screen changes the maximum of the graph, in
+the lower part of the screen it changes the minimum. If <i>Manually
+scale Time </i>is set in settings, you can increase or decrease the
+amount of time displayed on the screen by changing the distance
+between two fingers.</font></p>
+<p style="line-height: 100%; orphans: 0; widows: 0; margin-top: 0.08in; margin-bottom: 0.08in; background: transparent; page-break-after: avoid">
+<font color="#ffffff"><font size="3" style="font-size: 12pt"><i>Menu
+3: Display</i></font></font></p>
+<table width="138" cellpadding="0" cellspacing="0">
+	<col width="138"/>
+	<tr>
+		<td width="138" valign="top" style="border: none; padding: 0in"><p><font color="#ffff6d">Last
+			Scan</font></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="138" valign="top" style="border: none; padding: 0in"><p><font color="#ffff6d">Scans&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[x]</font></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="138" valign="top" style="border: none; padding: 0in"><p><font color="#ffff6d">Stream&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[x]</font></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="138" valign="top" style="border: none; padding: 0in"><p><font color="#ffff6d">History&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[x]</font></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="138" valign="top" style="border: none; padding: 0in"><p><font color="#ffff6d">Amounts&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[x]</font></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="138" valign="top" style="border: none; padding: 0in"><p><font color="#ffff6d"><a href="https://www.juggluco.nl/Jugglucohelp/mealhelp.html">Meals</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp; [&nbsp;&nbsp;]</font></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="138" height="43" valign="top" style="border: none; padding: 0in"><p>
+			<font color="#ffff6d">Dark mode&nbsp;&nbsp;&nbsp;[x]</font></p>
+		</td>
+	</tr>
+</table>
+<p style="line-height: 115%; margin-bottom: 0in"><font color="#ffffff"><span lang="en-US">The
+</span><font color="#4f81bd"><font face="Cambria, serif"><span lang="en-US"><b>right
+of the middle menu</b></span></font></font> <span lang="en-US">contains
+display options. To view the last scan, touch the first</span> <span lang="en-US">item.
+</span>A cross after <i>Scans</i> means that scans are displayed in
+the graph. A scan is the current glucose value you get when you scan
+a Libre 0 or 2 sensor. Scanning also transfers 15 minutes
+measurements of the last 8 hours from sensor to smartphone. Display
+of these values can be controlled by touching <i>History</i>. Libre 3
+sensors send the history values by Bluetooth and they are every 5
+minutes. <i>Stream</i> stands for glucose values sent every minute
+via Bluetooth from a Freestyle Libre 2 and 3 sensors to this applet.</font></p>
+<p style="line-height: 115%; margin-bottom: 0in"><font color="#ffffff">You
+can enter all kind of numbers (with whatever label you like) to
+document you insulin, carbohydrate and activities. They are displayed
+at fixed height in the glucose graph at the specified time and date.
+</font><font color="#ffffff"><span lang="en-US">Touching on points</span></font><font color="#ffffff">
+</font><font color="#ffffff"><span lang="en-US">in the graph or an
+entered number gives information about that item. You can edit an
+entered number by long touching it. Editing is also possible via the
+number list in the left middle menu</span></font><font color="#ffffff">
+</font><font color="#ffffff"><span lang="en-US">and touching the
+corresponding data element.</span></font><font color="#ffffff">
+</font><font color="#ffffff"><i>Amounts</i></font><font color="#ffffff">
+determines the display of entered numbers. In </font><font color="#ffffff"><i>Settings</i></font><font color="#ffffff">,
+you can specify which <a href="https://www.juggluco.nl/Jugglucohelp/labelhelp.html">labels</a>
+you like to use for these numbers. Above one of the numbers the
+corresponding label is shown.</font></p>
+<p style="line-height: 100%; orphans: 0; widows: 0; margin-top: 0.08in; margin-bottom: 0.08in; background: transparent; page-break-after: avoid">
+<font color="#ffffff"><font size="3" style="font-size: 12pt"><i>Menu
+2: Left of middle</i></font></font></p>
+<table cellpadding="0" cellspacing="0">
+	<col width="96"/>
+	<tr>
+		<td width="96" valign="top" style="border: none; padding: 0in"><p><a href="https://www.juggluco.nl/Jugglucohelp/helpexport.html"><font color="#ffff6d">Export</font></a></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="96" valign="top" style="border: none; padding: 0in"><p><a href="https://www.juggluco.nl/Jugglucohelp/connectionoverview.html"><font color="#ffff6d">Mirror</font></a></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="96" valign="top" style="border: none; padding: 0in"><p><a href="https://www.juggluco.nl/Jugglucohelp/newamount.html" onclick="location.href=this.href+'?unit='+unitstr;return false;"><font color="#ffff6d">New
+			Amount</font></a></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="96" valign="top" style="border: none; padding: 0in"><p><font color="#ffff6d">List</font></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="96" valign="top" style="border: none; padding: 0in"><p><a href="https://www.juggluco.nl/Jugglucohelp/stathelp.html" onclick="location.href=this.href+'?unit='+unitstr;return false;"><font color="#ffff6d">Statistics</font></a></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="96" valign="top" style="border: none; padding: 0in"><p><a href="https://www.juggluco.nl/Jugglucohelp/talkhelp.html"><font color="#ffff6d">Talk</font></a></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="96" valign="top" style="border: none; padding: 0in"><p align="left">
+			<font color="#ffff6d">Float&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[&nbsp;]</font></p>
+		</td>
+	</tr>
+</table>
+<p style="line-height: 115%; margin-bottom: 0in"><font color="#ffffff">You
+can enter these numbers by touching </font><font color="#4f81bd"><font face="Cambria, serif"><font size="3" style="font-size: 13pt"><span lang="en-US"><b>New
+Amount</b></span></font></font></font><font color="#ffffff"> in </font><font color="#4f81bd"><font face="Cambria, serif"><span lang="en-US"><b>left
+of the middle menu</b></span></font></font><font color="#ffffff">.
+</font><font color="#4f81bd"><font face="Cambria, serif"><span lang="en-US"><b>Export</b></span></font></font><font color="#ffffff">
+</font><font color="#ffffff"><span lang="en-US">saves data in .tsv
+(tab separated values) format to a file. </span></font><font color="#4f81bd"><font face="Cambria, serif"><span lang="en-US"><b>Mirror</b></span></font></font><font color="#ffffff">
+</font><font color="#ffffff"><span lang="en-US">makes it possible to
+send data via IP/TCP to this app running on a different device to
+display the same information. </span></font><font color="#4f81bd"><font face="Cambria, serif"><span lang="en-US"><b>List</b></span></font></font><font color="#ffffff">
+</font><font color="#ffffff"><span lang="en-US">gives a list of the
+entered numbers. If Juggluco has received enough glucose values via
+Bluetooth, you can see some statistics by touching </span></font><font color="#4f81bd"><font face="Cambria, serif"><span lang="en-US"><b>Statistics</b></span></font></font><font color="#ffffff"><span lang="en-US">.
+It shows the percentage of the measurements in certain glucose
+ranges, the Glucose Management Indicator (a predictor of HbA1c),
+glucose variability and a summary graph showing the glucose value
+below which 100%,95%,75%,50%,25% and 0% of the values lie at each
+moment of the day.</span></font><font color="#ffffff"> </font><font color="#ffffff"><span lang="en-US">In
+</span></font><font color="#4f81bd"><font face="Cambria, serif"><span lang="en-US"><b>Talk</b></span></font></font><font color="#ffffff">
+</font><font color="#ffffff"><span lang="en-US">you can make Juggluco
+speak out incoming glucose values, touched elements of the graph or
+messages. Float turns on </span></font><font color="#4f81bd"><font face="Cambria, serif"><span lang="en-US"><b>Floating
+Glucose</b></span></font></font><font color="#ffffff"><span lang="en-US">.
+A glucose value present on the screen above other apps. <a href="https://www.juggluco.nl/Jugglucohelp/floatingconfig.html" onclick="location.href=this.href+'?unit='+unitstr;return false;">In
+Settings you can change its color and size.</a></span></font></p>
+<p style="line-height: 100%; orphans: 0; widows: 0; margin-top: 0.08in; margin-bottom: 0.08in; background: transparent; page-break-after: avoid">
+<font color="#ffffff"><font size="3" style="font-size: 12pt"><i>Menu
+1: Left</i></font></font></p>
+<table width="120" cellpadding="0" cellspacing="0">
+	<col width="120"/>
+	<tr>
+		<td width="120" valign="top" style="border: none; padding: 0in"><p><font color="#ffff6d">System
+			UI&nbsp;&nbsp;[&nbsp;]</font></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="120" valign="top" style="border: none; padding: 0in"><p><font color="#ffff6d">Menus&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[&nbsp;]</font></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="120" valign="top" style="border: none; padding: 0in"><p><a href="https://www.juggluco.nl/Jugglucohelp/watchinfo.html"><font color="#ffff6d">Watch</font></a></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="120" valign="top" style="border: none; padding: 0in"><p><a href="https://www.juggluco.nl/Jugglucohelp/sensorhelp.html"><font color="#ffff6d">Sensor</font></a></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="120" height="26" valign="top" style="border: none; padding: 0in"><p>
+			<a href="https://www.juggluco.nl/Jugglucohelp/settinghelp.html" onclick="location.href=this.href+'?unit='+unitstr;return false;"><font color="#ffff6d">Settings</font></a></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="120" height="26" valign="top" style="border: none; padding: 0in"><p>
+			<font color="#ffff6d">Photo</font></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="120" valign="top" style="border: none; padding: 0in"><p><font color="#ffff6d">Close</font></p>
+		</td>
+	</tr>
+</table>
+<p style="line-height: 115%; margin-bottom: 0in"><font color="#ffffff"><span lang="en-US">In
+the </span></font><font color="#4f81bd"><font face="Cambria, serif"><span lang="en-US"><b>left
+menu</b></span></font></font><font color="#ffffff"><span lang="en-US">,
+you can find </span></font><font color="#4f81bd"><font face="Cambria, serif"><span lang="en-US"><b>Settings</b></span></font></font><font color="#ffffff"><span lang="en-US">,
+to set the glucose unit to mmol/L or mg/dL, to</span></font><font color="#ffffff">
+</font><font color="#ffffff"><span lang="en-US">specify</span></font><font color="#ffffff">
+</font><font color="#ffffff"><span lang="en-US"><a href="https://www.juggluco.nl/Jugglucohelp/labelhelp.html">labels</a>,
+set <a href="https://www.juggluco.nl/Jugglucohelp/alarmhelp.html">glucose
+alarms</a> and <a href="https://www.juggluco.nl/Jugglucohelp/reminders.html">medication
+reminders</a></span></font><font color="#ffffff"> </font><font color="#ffffff"><span lang="en-US">and
+display ranges. System UI determines if Android controls and status
+bar are shown. In </span></font><font color="#4f81bd"><font face="Cambria, serif"><span lang="en-US"><b>Watch</b></span></font></font><font color="#ffffff">
+</font><font color="#ffffff"><span lang="en-US">you can specify
+Juggluco to send data to all kinds of smartwatches. In </span></font><font color="#4f81bd"><font face="Cambria, serif"><span lang="en-US"><b>Sensor</b></span></font></font><font color="#ffffff"><span lang="en-US">,
+you can see how the connection with the sensor is going. Touch </span></font><font color="#4f81bd"><font face="Cambria, serif"><span lang="en-US"><b>Menus</b></span></font></font><font color="#ffffff">
+</font><font color="#ffffff"><span lang="en-US">to show all the
+mentioned menus at the same time in a way that can be read by
+talkback. Close can be used to exit</span></font><font color="#ffffff">
+</font><font color="#ffffff"><span lang="en-US">Juggluco.</span></font></p>
+<p style="line-height: 115%; margin-bottom: 0in"><br/>
+
+</p>
+<p style="line-height: 115%; margin-bottom: 0in"><br/>
+
+</p>
+<p style="line-height: 115%; margin-bottom: 0in"><br/>
+
+</p>
+</body>
+</html>

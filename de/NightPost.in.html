@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 7.5.9.2 (Linux)"/>
+	<meta name="created" content="2023-03-10T12:04:13.361070488"/>
+	<meta name="changed" content="2024-02-25T16:47:13.327404998"/>
+</head>
+ <img src="../uploader.jpg" alt="Uploader" style="object-fit:contain; width:15cm;                   height:auto;">
+<body lang="de-DE" dir="ltr"><h1>Hochladen</h1>
+<p><span lang="de-DE">In den meisten Fällen können Sie auch den
+<a href="https://www.juggluco.nl/Jugglucohelp/de/Nightscouthelp.html">Webserver
+in Juggluco</a> oder <a href="https://www.juggluco.nl/Juggluco/cmdline">juggluco-server</a>
+verwenden. Nur wenige Apps, die lediglich die Nightscout-Webseite
+anzeigen, benötigen <a href="https://github.com/nightscout/cgm-remote-monitor">cgm-remote-monitor</a>
+Sie können AAPS und AAPSClient sogar mit dem Webserver in Juggluco
+7.4.1 verwenden.</span></p>
+<p>Alle Stream-Werte werden im Moment ihres Eintreffens auf den
+Nightscout-Server hochgeladen. Wenn mehrere Sensoren verwendet
+werden, werden alle Werte aller Sensoren hochgeladen. Einige Garmin
+Watch Apps/Watchface/Widgets gehen davon aus, dass die Werte 5
+Minuten auseinander liegen. Wenn sie Glukosewerte im Abstand von
+einer Minute erhalten, zeigen sie nur das letzte Fünftel der Kurve
+an. Aus diesem Grund setzt der in Juggluco eingebundene Webserver die
+Werte 5 Minuten auseinander, außer wenn &quot;interval=secs&quot;
+auf einen niedrigeren Wert eingestellt ist.</p>
+<p><b>URL</b> : Die URL sollte die Form https://hostname:port haben,
+z. B. https://myname.herokuapp.com:6789</p>
+<p><b>Aktiv</b> : Server einschalten</p>
+<p><b>Test V3</b>: Lassen Sie Juggluco api/v3 zum Hochladen auf
+Nightscout verwenden. Verwenden Sie es nicht zum Hochladen auf einen
+Nightscout-Server, der zuvor V1-Uploads empfangen hat, und senden Sie
+keine V1-Uploads an einen Nightscout-Server, der zuvor V3-Uploads
+empfangen hat. Anstelle des api_secret müssen Sie ein Access Token
+(Zugriffstoken) mit der Berechtigung zum Hochladen von treatments und
+entries angeben. Sie können eines in der Nightscout-Web-Interface
+unter Admin Tools erstellen.</p>
+<p><span lang="de-DE"><b>Mengen</b></span> <span lang="de-DE"><b>geben</b></span><span lang="de-DE">:
+Auch Mengen als Behandlungen an Nightscout senden. Durch Berühren
+der Checkbox gelangen Sie zu einem Dialog, in dem Sie für jedes
+Label festlegen können, was es in Nightscout bedeutet. Diese
+Spezifikationen werden mit dem Webserver in Juggluco geteilt ( <a href="https://www.juggluco.nl/Jugglucohelp/de/Nightscouthelp.html">Linkes
+Menü→Einstellungen→Daten austauschen→Webserver</a> ). Erst wenn alle Labels
+verarbeitet sind, können Sie „ </span><span lang="de-DE"><i>Mengen
+geben</i></span>“ <span lang="de-DE">ankreuzen. Wenn Sie später
+ein neues Etikett hinzufügen, müssen Sie selbst festlegen, was
+damit geschehen soll. Aufgrund eines Fehlers in <a href="https://github.com/nightscout/cgm-remote-monitor">Nightscout</a>
+werden Einfügungen zu älteren Zeiträumen oder Löschungen erst
+angezeigt, nachdem Elemente mit einer neuen Zeit hinzugefügt wurden.
+Das bedeutet, dass es besser ist, seltener an Nightscout zu senden.
+Jetzt geschieht dies jedes Mal, wenn der Benutzer Juggluco verlässt,
+indem er das Display ausschaltet oder zu einer anderen App wechselt.</span></p>
+<p><b>Daten erneut senden</b>: Laden Sie alle Daten erneut auf den
+Nightscout-Server hoch</p>
+<p><b>Jetzt senden</b>: Normalerweise werden Daten sofort gesendet,
+wenn sie vom Sensor oder einer Klonverbindung ankommen. Drücken Sie
+auf diese Schaltfläche, wenn ein vorheriger Versuch aus irgendeinem
+Grund fehlgeschlagen ist.</p>
+<p>Die WearOS-Version Juggluco 4.15.0 und höher kann auch
+Glukosewerte auf Nightscout hochladen. In fast allen Fällen können
+Sie sie besser über eine Juggluco-Version auf einem Telefon oder
+Tablet oder über einen Juggluco-Server auf einem Computer senden.
+Dadurch wird der Akku entladen, insbesondere wenn keine Verbindung
+zum Nightscout-Server hergestellt werden kann, sodass Sie <i>Active</i>
+besser ausschalten können, wenn keine zuverlässige Verbindung
+besteht.</p>
+<h2 class="western"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Fehler</font></font></h2>
+<p style="line-height: 100%; margin-bottom: 0in"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Zwei Fehlermeldungen sorgen oft für Verwirrung.</font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Wenn die Fehlermeldung “<b>upload failure:</b>” gefolgt von nichts lautet, sind die möglichen Ursachen:</font></font></p>
+<ul>
+	<li><p style="line-height: 100%; margin-bottom: 0in"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Die Netzwerkverbindung ist ausgeschaltet;</font></font></p></li>
+	<li><p style="line-height: 100%; margin-bottom: 0in"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Der Hostname ist falsch geschrieben.</font></font></p>
+	<p style="line-height: 100%; margin-bottom: 0in"></p></li>
+</ul>
+<p style="line-height: 100%; margin-bottom: 0in"><b>upload failure: java.io.FileNotFoundException</b>: NIGHTSCOUTURL/api/v1/entries</p>
+<p style="line-height: 100%; margin-bottom: 0in"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Hier steht NIGHTSCOUTURL für die Server-URL, die nach „Nightscout-URL“ eingegeben wird.</font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Dies hat eine der folgenden Ursachen:</font></font></p>
+<ul>
+	<li><p style="line-height: 100%; margin-bottom: 0in"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Die URL zeigt auf die falsche Site. Beispielsweise fehlt der Port nach dem Hostnamen und deshalb verbindet sich Juggluco mit einem normalen Webserver.</font></font></p></li>
+	<li><p style="line-height: 100%; margin-bottom: 0in"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Das api_secret ist falsch;</font></font></p></li>
+	<li><p style="line-height: 100%; margin-bottom: 0in"><span lang="en-US"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">NIGHTSCOUTURL enthält einen Pfad, der dort nicht vorkommen sollte. Beispielsweise
+	 </font></font></span><font style="vertical-align: inherit;"><span lang="en-US"><font style="vertical-align: inherit;">lautet die </font></span></font><span lang="en-US"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nightscout -URL </font></font></span><font style="vertical-align: inherit;"><span lang="en-US"><a href="https://ahost.org:8887/"><font style="vertical-align: inherit;">https://ahost.org:8887</font></a></span><span lang="en-US"><font style="vertical-align: inherit;"> und Sie haben </font></span><span lang="en-US"><a href="https://ahost.org:8887/extra"><font style="vertical-align: inherit;">https://ahost.org:8887/extra</font></a></span><span lang="en-US"><font style="vertical-align: inherit;"> eingegeben </font></span><span lang="en-US"><font style="vertical-align: inherit;">.</font></span></font><span lang="en-US"><font style="vertical-align: inherit;"></font><a href="https://ahost.org:8887/"><font style="vertical-align: inherit;"></font></a><font style="vertical-align: inherit;"></font></span><span lang="en-US"><font style="vertical-align: inherit;"></font></span><span lang="en-US">
+	<a href="https://ahost.org:8887/extra"><font style="vertical-align: inherit;"></font></a><font style="vertical-align: inherit;"></font></span></p></li>
+</ul>
+</body>
+</html>

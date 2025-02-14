@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Larm</title>
+    <meta name="changed" content="2024-10-02T13:12:03" />
+  </head>
+    <img src="alarms.png" style="object-fit:contain; width:15cm;                   height:auto;">
+  <body lang="sv-SE" dir="ltr">
+    <h1>Larm</h1>
+    <h2>Glukoslarm</h2>
+    <p>
+      Värden som tas emot via Bluetooth kan användas för att ställa in larm för
+      låga och höga glukosnivåer.
+    </p>
+
+    <h3>Låg glukosnivå:</h3>
+    <p>Vid vilken nivå (eller under) ett larm ska utlösas.</p>
+
+    <h3>Hög glukosnivå:</h3>
+    <p>Vid vilken nivå (eller över) ett larm ska utlösas.</p>
+
+    <h3>Larm vid signalförlust efter:</h3>
+    <p>
+      Ange hur många minuter som ska gå innan ett larm utlöses om ingen
+      glukosnivå tas emot via Bluetooth.
+    </p>
+
+    <p>Larmen slutar när något av följande villkor uppfylls:</p>
+    <ul>
+      <li>Den angivna tiden har passerat</li>
+      <li>Du rör vid kurvvy</li>
+      <li>
+        Du trycker på Android-meddelandet från Juggluco (när telefonen är
+        upplåst)
+      </li>
+      <li>Du trycker på Avbryt-knappen i larmmeddelandet från Juggluco</li>
+      <li>Du rör vid "Flytande glukos"</li>
+    </ul>
+
+    <h3>Kommunikation återställd:</h3>
+    <p>
+      Ibland slutar sensorn tillfälligt att fungera. Om du aktiverar den här
+      funktionen får du ett meddelande när sensorn börjar fungera igen, men bara
+      om du har sett att värdet saknades i Juggluco-appen. Om du endast märkte
+      att värdet saknades genom Jugglucos meddelande eller dess klockvy, kommer
+      inte aviseringen för återställd kommunikation att aktiveras.
+    </p>
+
+    <p>
+      För varje larm kan du välja vilken
+      <a href="https://www.juggluco.nl/Jugglucohelp/ringtone.html"
+        >ringsignal</a
+      >
+      som ska spelas och hur länge.
+    </p>
+
+    <h3>Larm är larm:</h3>
+    <p>
+      När detta är aktiverat spelas ringsignalen för låg och hög glukosnivå samt
+      signalförlust enligt Androids larmkategori. Detta innebär att volymen
+      styrs av larmvolymen i Android-inställningarna, och larmet tystas inte om
+      telefonens ljud är avstängt eller inställt på vibration. Om "Larm är larm"
+      inte är aktiverat används telefonens vanliga ringsignalsvolym. Detta
+      gäller alltid för notifikationer om tillgängliga värden.
+    </p>
+  </body>
+</html>

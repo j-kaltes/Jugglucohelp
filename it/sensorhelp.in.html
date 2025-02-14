@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 7.5.7.1 (Linux)"/>
+	<meta name="created" content="2021-09-11T17:23:06.572014143"/>
+	<meta name="changedby" content="Matteo Gabriele"/>
+	<meta name="changed" content="2022-05-02T14:27:07.201836581"/>
+	<style type="text/css">
+		@page { size: 8.27in 11.69in; margin: 0.79in }
+		p { margin-bottom: 0.1in; background: transparent }
+	</style>
+</head>
+<body lang="it-IT" dir="ltr"><p align="center" style="line-height: 100%; margin-top: 0.17in; margin-bottom: 0.08in; page-break-after: avoid">
+<font face="Liberation Sans, sans-serif"><font size="6" style="font-size: 28pt"><b>Sensore</b></font></font></p>
+<p style="line-height: 100%; margin-bottom: 0in">Per connettere il
+sensore il Freestyle Libre 2 tramite il Low Energy Bluetooth, il
+Bluetooth deve essere acceso.</p>
+<p style="line-height: 100%; margin-bottom: 0in">Dopo aver
+scansionato il sensore con questa app, non succederà più nulla. Il
+sensore non comunicherà più con il suo reader o con altre app sullo
+smartphone. Gli allarmi dell'app Abbott Librelink devono essere
+spenti e l'app chiusa. Alcune app Librelink sembrano comunicare col
+sensore anche con gli allarmi spenti e questo può creare problemi di
+connessione. Usare “<i>Termina forzatamente</i>” <span style="font-variant: normal"><span style="font-style: normal">per
+interromperla con certezza.</span></span></p>
+<p style="line-height: 100%; margin-bottom: 0in"><span style="font-variant: normal"><span style="font-style: normal"><b>Sensore
+via Bluetooth</b></span></span> <span style="font-variant: normal"><span style="font-style: normal"><span style="font-weight: normal">deve
+essere selezionato.</span></span></span></p>
+<p style="font-variant: normal; font-style: normal; font-weight: normal; line-height: 100%; margin-bottom: 0in">
+Se le suddette condizioni sono soddisfatte, può passare un lungo
+tempo prima che l'app riceva valori di glucosio dal sensore. Spesso
+ci impiega un minuto ma alcune volte ci può volere molto di più.</p>
+<p style="line-height: 100%; margin-bottom: 0in"><span style="font-variant: normal"><span lang="it-IT"><span style="font-style: normal"><span style="font-weight: normal">Il
+</span></span></span></span><span lang="it-IT"><i><span style="font-weight: normal">Stato
+di connessione</span></i></span> <span style="font-variant: normal"><span lang="it-IT"><span style="font-style: normal"><span style="font-weight: normal">mostra
+I problemi. (Il più delle volte l'errore più comune è status=133,
+che è l'argomento dello stato di
+</span></span></span></span><span lang="it-IT"><a href="https://developer.android.com/reference/android/bluetooth/BluetoothGattCallback#onConnectionStateChange(android.bluetooth.BluetoothGatt,%20int,%20int)">onConnectionStateChange(BluetoothGatt
+bluetoothGatt, int status, int newState)</a>). Qualche volta spegnere
+e riaccendere il Bluetooth, riavviare il telefono o spegnere il
+Bluetooth sugli altri dispositivi può risolvere. Altre volte il
+problema può essere risolto scansionando il sensore.</span></p>
+<p style="line-height: 100%; margin-bottom: 0in">Scansionare il
+sensore con Juggluco (con <i>Sensore via Bluetooth</i> <span style="font-variant: normal"><span style="font-style: normal">abilitato)
+su un altro telefono, ruberà la connessione al telefono di partenza.
+Scansionandolo con questo tornerà a lui. (uno dei sensori con
+connessione Bluletooth che ho migrato da un telefono ad uno
+smartwatch Wear Os per circa tre volte, ha dato errore di connessione
+133 per 2 giorni e mezzo, riprendendo a funzionare dopo 373 errori
+registrati).</span></span></p>
+<p style="line-height: 100%; margin-bottom: 0in"><i>Doze mode</i>
+<span style="font-variant: normal"><span style="font-style: normal">apre
+uno schermo in cui poter specificare che il risparmio energetico non
+deve essere applicato a Juggluco. Questo può esere necessario per
+permettere il funzionamento dell'app quando il telefono è in
+standby.</span></span></p>
+<p style="line-height: 100%; margin-bottom: 0in"><i>Permessi</i><span style="font-variant: normal"><span style="font-style: normal">:
+la precedente versione di Juggluco necessitava I permessi relativi
+alla posizione per cercare l'indirizzo del sensore. Questo non è più
+necessario. Può essere però che ci siano sensori che lo richiedano,
+in questo caso devi abilitarlo. Dopo il primo contatto Juggluco salva
+l'indirizzo del dispositivo e I permessi della posizione saranno
+inutili. L'indirizzo del dispositivo, se conosciuto, è mostrato
+vicino all'identificatore del sensore. Se rosso significa che è un
+sensore US.</span></span></p>
+<p style="font-variant: normal; font-style: normal; line-height: 100%; margin-bottom: 0in">
+Android 12 ha un nuovo sistema di permessi relativi ai dispositivi
+nelle vicinanze che può essere usato al posto dei permessi
+precedenti per abilitare la ricerca dell'indirizzo del dispositivo
+tramite Bluetooth.</p>
+<p style="line-height: 100%; margin-bottom: 0in"><i>Dimentica</i><span style="font-variant: normal"><span style="font-style: normal">:
+dimentica l'indirizzo del dispositivo, che andrà riabilitato
+scansionando il sensore di nuovo. Per far questo serve il permesso
+alla posizione sugli </span></span>Android dal 6 al 11. Su Android 12
+serve invece il permesso Dispositivi Vicini.</p>
+<p style="line-height: 100%; margin-bottom: 0in"><i>Reinit</i>:
+Riabilita lo streaming dei valori: Una nuova autenticazione verrà
+creata per comunicare col sensore. Verrà impostato anche l'indirizzo
+del dispositivo.</p>
+</body>
+</html>

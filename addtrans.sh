@@ -1,5 +1,5 @@
-for f in *.html
+for f in *.in.html
 do
     echo $f
-    ./translinks ??/$f
+    echo ./translinks ??/$f
 done

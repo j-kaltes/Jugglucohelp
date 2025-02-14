@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title>Exchange Data</title>
+	<meta name="generator" content="LibreOffice 24.2.7.2 (Linux)"/>
+	<meta name="created" content="2024-11-21T21:25:03.749778838"/>
+	<meta name="changed" content="2024-12-23T22:39:48.715341909"/>
+	<style type="text/css">
+		@page { margin: 0.79in }
+		p { line-height: 115%; margin-bottom: 0.1in }
+		h2 { margin-top: 0.14in; margin-bottom: 0.08in; background: transparent }
+		h2.western { font-family: "Liberation Sans", sans-serif; font-size: 16pt }
+		h2.cjk { font-family: "Noto Sans CJK SC"; font-size: 16pt }
+		h2.ctl { font-family: "Mangal"; font-size: 16pt }
+	</style>
+</head>
+ <img src="dataexchange.png" alt="Exchange data" style="object-fit:contain; width:15cm;                   height:auto;">
+<body lang="nl-NL" dir="ltr"><h1>Exchange data</h1>
+<h2 class="western">Health Connect</h2>
+<p>Send minutely glucose values to <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.healthdata">Health
+Connect</a>. You can give other app access to these glucose values,
+for example <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.fitness">Google
+Fit</a>. Other apps again can get assess to data from Google Fit.</p>
+<h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/libreview.html">Libreview</a></h2>
+<p>Connect with Libreview to send Freestyle Libre 2 and 3 glucose
+values and amounts to Libreview and to get the account id used during
+Freestyle Libre 3 sensor activation. Touch to change settings.</p>
+<h2 class="western">Patched Libre</h2>
+<p>Use the Patched Libre broadcast (originally send by the patched
+German Librelink app 2.3.0), to send the Bluetooth glucose stream
+data every minute to xDrip. In xDrip you need to set Libre2 (patched
+App) as hardware data source. The glucose values displayed in xDrip
+are different from the values it receives. For some reason xDrip only
+updates its value every 5 minutes, probably because it was made for
+devices that send only once per 5 minutes (A watch face connected to
+xDrip regularly displayed more than 9 minute old values.) In
+addition, xDrip displays its own interpretation of received glucose
+values. Mirror devices can also sent to xDrip.</p>
+<p>See <a href="https://github.com/jakobheyman/xdripJH">https://github.com/jakobheyman/xdripJH</a>
+for an attempt to update the glucose value of xDrip every minute.</p>
+<p>Freestyle Libre 3 sensors send missed values after a disconnection
+period. These values are not sent with this broadcast. You will
+receive them if you turn on the Web server in Juggluco and make xDrip
+a Nightscout follower of Juggluco. Nightscout server:
+http://127.0.0.1:17580</p>
+<p>Juggluco can also directly contact with xDrip watch apps, so that
+the watch app displays more recent glucose values. To use this
+feature check <i>&quot;xDrip webserver&quot;</i> in the left menu
+under <b>Watch</b>. See Help under left menu-&gt;<a href="https://www.juggluco.nl/Jugglucohelp/watchinfo.html">Watch</a>
+for more information. Only one app can listen to the network port
+used by the xDrip webserver, so you need to turn off &quot;<i>xDrip
+webservice</i>&quot; in xDrip itself if you want to make use of the
+one in Juggluco.</p>
+<h2 class="western"><a name="eversense"></a>EverSense</h2>
+<p>Yet another glucose broadcast. It can be used to send every minute
+a glucose value to xDrip. In xDrip you need to set “<i>460G/EverSense</i>”
+as the <i>Hardware Data Source</i>. 
+</p>
+<p>xDrip will ignore nearly all of them because of its insistence on
+one value in 5 minutes. You can remove this restriction by editing
+the source code of xDrip. Change <i>4 * 60 * 1000</i> to <i>55 * 1000</i>
+in
+<a href="https://github.com/NightscoutFoundation/xDrip/blob/645e8b4cb8fa3ad7b280f598d6f2f6bdb84ce392/app/src/main/java/com/eveningoutpost/dexdrip/models/BgReading.java#L969">app/src/main/java/com/eveningoutpost/dexdrip/models/BgReading.java</a>,
+so that it becomes:</p>
+<p>public static BgReading readingNearTimeStamp(long startTime)
+{<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;long
+margin = (55 * 1000);<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return
+readingNearTimeStamp(startTime, margin);<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</p>
+<p>The advantage over the Patched Libre broadcast is, that xDrip
+doesn’t transform the glucose values in some unspecified manner.</p>
+<h2 class="western">xDrip broadcast</h2>
+<p>Send the same broadcast as turned on in xDrip with
+&quot;<i>Settings-&gt;Inter-app settings-&gt;Broadcast locally&quot;</i>.
+Apps like AndroidAPS listen to it. Unlike the original xDrip
+broadcast which was broadcast every 5 minutes, Juggluco broadcasts
+this broadcast every minute.</p>
+<h2 class="western">Glucodata broadcast</h2>
+<p>A new broadcast that has the same function as the xDrip broadcast.
+A simple example app that writes received glucose values to logcat
+you can find here: <a href="https://www.juggluco.nl/Juggluco/glucosebroadcast.html">Glucose
+broadcasts</a>. If you specify Juggluco as data-source in G-Watch,
+you need to turn on this broadcast.</p>
+<p>The application apps listening to this broadcast are shown. Check
+the apps you want to send this broadcast to.</p>
+<h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/Nightscouthelp.html">Web
+server</a></h2>
+<p>Web server that can be used with xDrip watches and some Nightscout
+apps. Previously called xDrip webserver.</p>
+<h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/NightPost.html">Uploader</a></h2>
+<p>Upload to a Nightscout server.</p>
+<h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/connectionoverview.html">Mirror/Clone</a></h2>
+<p lang="en-US" style="line-height: 100%; margin-bottom: 0in">Send
+all data via an internet connection to another instance of Juggluco
+thereby creating a clone of Juggluco on another device. Existing data
+will be overwritten.</p>
+<h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/helpexport.html">Export</a></h2>
+<p>Save data to a file.</p>
+<p><br/>
+<br/>
+
+</p>
+</body>
+</html>

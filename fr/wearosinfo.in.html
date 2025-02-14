@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 7.3.7.2 (Linux)"/>
+	<meta name="created" content="00:00:00"/>
+	<meta name="changed" content="2023-05-21T20:58:37.513545106"/>
+	<meta name="created" content="00:00:00">
+	<meta name="created" content="00:00:00">
+	<meta name="created" content="00:00:00">
+	<meta name="created" content="00:00:00">
+	<meta name="created" content="00:00:00">
+	<meta name="created" content="00:00:00">
+	<meta name="created" content="00:00:00">
+	<meta name="created" content="00:00:00">
+	<meta name="created" content="00:00:00">
+	<meta name="created" content="00:00:00">
+	<meta name="created" content="00:00:00">
+	<meta name="created" content="00:00:00">
+	<meta name="created" content="00:00:00">
+	<meta name="created" content="00:00:00">
+	<meta name="created" content="00:00:00">
+	<meta name="created" content="00:00:00">
+	<meta name="created" content="00:00:00">
+	<meta name="created" content="00:00:00">
+	<meta name="created" content="00:00:00">
+	<meta name="created" content="00:00:00">
+	<style type="text/css">
+		@page { size: 21.01cm 29.69cm; margin-left: 2.01cm; margin-right: 0.99cm; margin-top: 0.99cm; margin-bottom: 0.99cm }
+		p { margin-bottom: 0.25cm; background: transparent }
+		h1 { margin-bottom: 0.2cm; background: transparent }
+		h1.western { font-family: "Liberation Serif", serif }
+		h1.cjk { font-family: "Noto Serif CJK SC" }
+		h1.ctl { font-family: "Mangal" }
+		h5 { margin-top: 0.2cm; margin-bottom: 0.1cm; background: transparent }
+		h5.western { font-family: "Liberation Serif", serif }
+		h5.cjk { font-family: "Noto Serif CJK SC" }
+		h5.ctl { font-family: "Mangal" }
+	</style>
+</head>
+<body lang="en-US" dir="ltr"><h1 class="western"><font face="Liberation Serif, serif"><font size="6" style="font-size: 24pt"><b>Wear</b></font></font>
+OS</h1>
+<p><b>Connexion directe capteur-montre</b> : Ceci détermine si la
+montre doit être directement connectée au capteur. Cela ne peut
+être modifié que lorsque la montre et le téléphone sont
+synchronisés. Utilisez Miroir -&gt; Sync et Réinit sur le téléphone
+et la montre pour synchroniser le téléphone et la montre.</p>
+<p><b>Init</b><b>ialiser appli montre</b> : Il faut utiliser cette
+fonction une fois après l'installation de Juggluco sur la montre
+WearOS et son démarrage. 
+</p>
+<p><b>D</b><b>éfaut</b><b>s</b> : Cela définit les paramètres de
+connexion à ses valeurs par défaut. Il s'agit des paramètres qui
+peuvent être modifiés dans le menu de gauche-&gt;Miroir sur la
+montre et le menu central gauche-&gt;Miroir sur le téléphone. Il se
+compose de paramètres tels que &quot;Actif uniquement&quot; et
+&quot;Scans&quot;. Ce bouton doit être utilisé lorsque les
+paramètres ont été modifiés accidentellement par l'eau de la
+douche ou pendant le sommeil. Si vous réinitialisez en réinstallant
+la version de la montre ou en effaçant les données, vous devez
+également le faire pour supprimer la connexion miroir sur le
+téléphone.</p>
+<p>Une version spécifique de Juggluco est faite peut fonctionner
+directement sur une montre Wear Os. Toutefois Juggluco besoin d'être
+aussi installé sur un smartphone Android avec NFC pour scanner le
+capteur (initialisation) et via une connexion TCP ces données sont
+envoyées à la montre Wear OS. Ensuite vous avez deux possibilités
+:</p>
+<ol>
+	<li><p>Le capteur reste connecté au smartphone et le smartphone
+	envoie chaque valeur de glucose qu'il reçoit via Bluetooth à la
+	montre Wear OS via TCP&nbsp;;</p>
+	<li><p>Il est également possible de connecter directement le
+	capteur à la montre Wear OS. Pour cela, vous avez besoin d'une
+	montre Wear OS avec une bonne connectivité Bluetooth. 
+	</p>
+</ol>
+<p>Vous pouvez obtenir Juggluco pour Wear OS via le lien sur le site
+de Juggloco. Certaines images sont présentées sur
+<a href="https://www.juggluco.nl/JugglucoWearOS/index.html">https://www.juggluco.nl/JugglucoWearOS</a></p>
+<p>Pour le faire fonctionner, procédez comme suit&nbsp;:</p>
+<ul>
+	<li><p>Assurez-vous que Bluetooth et WIFI fonctionnent sur la montre
+	et le téléphone&nbsp;;</p>
+	<li><p>Assurez-vous que la montre dispose de suffisamment d'espace
+	de stockage libre et de RAM. Il est possible que Juggluco doive être
+	réinstallé si l'appareil manque d'espace de stockage à un moment
+	critique ;</p>
+	<li><p>Faites en sorte que la version téléphone de Juggluco
+	fonctionne avec le capteur. Vous devez scanner le capteur plusieurs
+	fois avec le réglage &quot;Capteur via Bluetooth&quot;. La
+	réception des valeurs de glucose sur le téléphone via Bluetooth
+	n'est pas nécessaire&nbsp;;</p>
+	<li><p>Installez la version Wear OS de Juggluco sur votre montre
+	Wear OS et démarrez-la ;</p>
+	<li><p>Sur le téléphone, allez dans le menu de gauche-&gt;
+	Montre-&gt; Wear OS -&gt; Config. Votre montre doit être affichée
+	dans le menu déroulant. Appuyez sur &quot;Initialiser appli
+	montre&quot;&nbsp;;</p>
+	<li><p>Si tout s'est bien passé, une connexion TCP est configurée
+	dans les deux Juggluco et toutes les données du téléphone sont
+	envoyées à la montre. Cela peut prendre beaucoup de temps si vous
+	avez utilisé Juggluco pendant longtemps. Vous pouvez vérifier si
+	la connexion TCP est configurée en regardant dans la boîte de
+	dialogue Miroir (téléphone : menu central gauche-&gt;Miroir,
+	montre : menu gauche-&gt;Miroir). Une connexion avec le même
+	identifiant que celui indiqué dans le menu déroulant pour votre
+	montre doit être affichée. Sur la montre, il doit également y
+	avoir l'adresse IP du téléphone. S'il n'y en a pas ou si le côté
+	montre ne contient pas d'adresse IP, appuyez à nouveau sur
+	&quot;Initialiser appli montre&quot;. Si l’IP n'y est toujours
+	pas, vérifiez la connexion Bluetooth et l'application du téléphone
+	responsable de la connexion à votre montre (lorsque la montre a
+	déjà reçu des données, appuyer sur &quot;Init watch app&quot; a
+	pour effet de tout renvoyer, vous pouvez donc tout aussi bien
+	réinstaller la version montre de Juggluco). Si cela ne fonctionne
+	toujours pas et si la bonne adresse IP n'est pas affichée, vous
+	devez activer et désactiver la connexion externe (WIFI ou données
+	mobiles) sur le téléphone.</p>
+	<li><p>Si tout s'est bien passé les mêmes données, telles
+	qu'affichées sur la version téléphone de Juggluco, sont affichées
+	sur la version montre de Juggluco. Chaque nouvelle valeur de glucose
+	reçue par le téléphone est envoyée via TCP à la montre.
+	Certains paramètres tels que l'unité, les niveaux d'alarme de
+	glucose et les rappels sont également transmis à la montre. Des
+	modifications ultérieures doivent être apportées sur la montre
+	elle-même. 
+	</p>
+	<li><p>Si vous avez une smartwatch avec une bonne connectivité
+	Bluetooth et que vous préférez recevoir les valeurs de glucose sur
+	votre montre sans avoir à transporter votre téléphone, vous
+	pouvez connecter la version montre de Juggluco directement au
+	capteur. Une fois toutes les valeurs envoyées à la montre, vous
+	pouvez cocher <b>&quot;Connexion directe capteur-montre&quot;</b> .
+	Ainsi, <i>le &quot;capteur via Bluetooth&quot;</i> est désactivé
+	dans le téléphone et activé dans la montre. Les valeurs de flux
+	sont désormais envoyées de la montre au téléphone, comme vous
+	pouvez le vérifier dans la boîte de dialogue Miroir. Vous ne
+	pouvez pas modifier la &quot;Connexion directe capteur-montre&quot;
+	lorsque la montre et le téléphone ne sont pas synchronisés.</p>
+	<li><p>Si vous souhaitez envoyer des quantités de la montre au
+	téléphone, vous devez inverser vous-même la direction d'envoi
+	dans la boîte de dialogue Miroir en la décochant sur le téléphone
+	et en la cochant sur la montre. Sur le téléphone &quot; <i>Recevoir
+	de</i> &quot; doit également être défini. Si tout n'est pas réglé
+	exactement, cela ne fonctionne pas. &quot;Ne modifiez pas les
+	quantités&quot; doit être activé. Les étiquettes de <i>quantités</i>
+	sont toujours envoyées avec les quantités. Si vous changez le sens
+	de transmission des quantités de la montre au téléphone, vous ne
+	pouvez pas changer les libellés. Cela ne devrait pas être trop
+	difficile.</p>
+</ul>
+<p>Si le capteur a une connexion Bluetooth directe avec la montre et
+que ses valeurs sont envoyées à un smartphone, les valeurs scannées
+doivent également être envoyées du téléphone à la montre et les
+valeurs de flux doivent être synchronisées avant de scanner le
+capteur avec Juggluco (les paramètres sont configurés
+automatiquement de cette façon). Sinon, les anciennes valeurs
+pourraient être renvoyées à la montre ou les informations
+d'authentification modifiées ne seraient pas envoyées à la montre,
+ce qui entraînerait des erreurs <i>de clé de déverrouillage</i> .</p>
+<p>Les modifications de la connexion ne doivent également être
+effectuées que lorsque les données sont synchronisées&nbsp;; les
+données sur le téléphone et la montre doivent être des copies
+complètes (à l'exception que vous pouvez omettre <span style="font-variant: normal"><span style="font-style: normal"><u><span style="font-weight: normal">toutes</span></u></span></span>
+les données de quantités).</p>
+<p>La première fois, lorsque beaucoup de données doivent être
+transférées du smartphone vers la montre, vous pouvez connecter la
+montre au chargeur. Ma montre active le Wi-Fi lorsqu'elle est
+connectée au chargeur.</p>
+<h5 class="western"><font size="3" style="font-size: 12pt">Connexion
+montre-téléphone</font></h5>
+<p>Lors de l'initialisation, lorsque toutes les données sont
+envoyées du téléphone à la montre, vous avez besoin d'une
+connexion Wi-Fi entre la montre et le téléphone. Les données
+ultérieures sont envoyées en petits morceaux via TCP. Sur ma montre
+qui est redirigé via Bluetooth, cela fonctionne uniquement lorsque
+le téléphone dispose d'une connexion externe par exemple Wi-Fi vers
+votre réseau domestique, une connexion de données mobiles ou un
+point d'accès portable. Sinon, la connexion entre le téléphone et
+la montre s'arrête après un certain temps, car le Wi-Fi est
+désactivé par le système pour économiser la batterie.</p>
+<p>Juggluco détecte lui-même les adresses IP de l'autre côté,
+vous n'avez donc pas besoin de les définir. Si vous passez du Wi-Fi
+aux données mobiles, les IP sont automatiquement modifiées.
+Parfois, vous devez éteindre et rallumer le Wi-Fi ou les données
+mobiles sur votre smartphone avant qu'il ne fonctionne (Juggluco
+détermine l'IP au moment où le Wi-Fi ou les données mobiles sont
+activés, mais parfois l'IP n'est alors pas encore disponible).</p>
+<p>La détermination automatique de l'adresse IP de l'autre côté
+est spécifique à la connexion avec une montre WearOS&nbsp;; pour
+les autres connexions miroir, vous devez toujours spécifier les
+adresses IP de l'autre côté.</p>
+<h5 class="western"><font size="3" style="font-size: 12pt">Cadran de
+la montre</font></h5>
+<p>Juggluco pour Wear OS comprend un cadran de montre qui affiche
+votre niveau de glucose actuel en plus de l'heure et jusqu'à quatre
+complications. Pour l'utiliser, vous devez sélectionner ce cadran de
+montre par exemple dans votre application compagnon de montre sous
+&quot;téléchargé&quot;. Normalement, vous verrez la dernière
+valeur de glucose lorsque l'écran se réveillera. Lorsque
+l'affichage est en mode toujours allumé, la valeur de glucose n'est
+mise à jour que lorsque l'indicateur des minutes augmente ou que
+vous appuyez sur un bouton ou que vous levez le bras. Ainsi, la
+valeur affichée peut être retardée jusqu'à une minute.</p>
+<p>Il existe également une complication qui utilise la diffusion
+Glucodata de la version WearOS pour afficher la valeur de glucose sur
+chaque cadran de montre qui accepte la complication :
+<a href="https://github.com/pachi81/GlucoDataHandler/releases">https://github.com/pachi81/GlucoDataHandler/releases</a></p>
+</body>
+</html>

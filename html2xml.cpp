@@ -4,7 +4,7 @@
 using namespace std;
 #define NOLOGS_H 1
 #include "inout.hpp"
-void rewritefile(const char *name) {
+void rewritefile(const char *name,const int stripend=5) {
 Readall cont(name);
 if(!cont.data()) {
 	cerr<<name<<" does not exist\n";
@@ -42,7 +42,7 @@ const char cend[]=R"(]]>
 )";
 
 write(STDOUT_FILENO,strbegin,sizeof(strbegin)-1);
-write(STDOUT_FILENO,label.data(),label.size()-5);
+write(STDOUT_FILENO,label.data(),label.size()-stripend);
 write(STDOUT_FILENO,cdata,sizeof(cdata)-1);
 while(true){
 //	const char *teken=std::find(iter,foundend,'\'');
@@ -69,8 +69,14 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
 <resources>
 )");
 write(STDOUT_FILENO,resstart.data(),resstart.size());
-int startpos;
+int startpos=1;
 const char *option=argv[1];
+int stripend=5;
+if(!memcmp(option,"-i",2)) {
+    stripend=8;
+    ++startpos;
+    option=argv[2];
+    }
 if(!memcmp(option,"-f",2)) {
     const char *filename=option+2;
     Readall start(filename);
@@ -80,12 +86,10 @@ if(!memcmp(option,"-f",2)) {
      else {
         fprintf(stderr,"%s contains no data\n",filename);
         }
-    startpos=2;
+    ++startpos;
     }
-else
-    startpos=1;
 for(int i=startpos;i<argc;i++)
-	rewritefile(argv[i]);
+	rewritefile(argv[i],stripend);
 const string_view resend("</resources>\n");
 write(STDOUT_FILENO,resend.data(),resend.size());
 }

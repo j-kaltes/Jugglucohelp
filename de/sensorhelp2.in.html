@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 24.2.7.2 (Linux)"/>
+	<meta name="created" content="00:00:00"/>
+	<meta name="changed" content="2024-12-12T15:34:20.426845724"/>
+	<meta name="created" content="00:00:00">
+	<meta name="created" content="00:00:00">
+</head>
+<img src="sensor.jpg"  style="object-fit:contain; width:15cm;                   height:auto;">
+<body lang="de-DE" dir="ltr"><p style="border: none; padding: 0in"><font face="liberation serif"><b>Sensor</b></font></p>
+<p style="border: none; padding: 0in"><font face="times new roman">Der
+Spinner enthält den Namen des Sensors.&nbsp;Wenn Juggluco
+gleichzeitig mehr als einen Sensor verwendet, können Sie auswählen,
+für welchen Sensor Informationen angezeigt werden sollen.</font></p>
+<p style="border: none; padding: 0in"><font face="times new roman"><i><b>Doze-Modus</b></i></font>
+<font face="times new roman">führt Sie zu einem Bildschirm mit
+Informationen zum Deaktivieren der Batterieoptimierung für Juggluco,
+die die Funktion von Juggluco verhindern können.</font></p>
+<p style="border: none; padding: 0in"><font face="times new roman"><i><b>Berechtigung</b></i></font><font face="times new roman">:
+Frühere Versionen von Juggluco benötigten eine
+Standortberechtigung, um die Geräteadresse des Sensors zu
+finden.&nbsp;Bei den von mir verwendeten Sensoren ist dies nicht mehr
+nötig.&nbsp;Vielleicht gibt es noch Sensoren, für die es notwendig
+ist;&nbsp;In diesem Fall können Sie es einschalten.&nbsp;Nach dem
+ersten Kontakt speichert Juggluco die Geräteadresse und die
+Standorterlaubnis ist immer nutzlos.&nbsp;Die Geräteadresse wird,
+falls bekannt, nach der Sensorkennung angezeigt.&nbsp;Rot bedeutet
+einen US-ähnlichen Sensor.</font></p>
+<p style="border: none; padding: 0in"><font face="times new roman">Android
+12 hat eine neue Berechtigung für Geräte in der Nähe, die anstelle
+der Standortberechtigung für die Suche nach einer
+Bluetooth-Geräteadresse verwendet werden kann, aber auch für die
+spätere Kontaktaufnahme mit Bluetooth-Geräten benötigt wird.</font></p>
+<p style="border: none; padding: 0in"><font face="times new roman"><i><b>Bluetooth
+history: </b></i>Bei Libre 0 und 2 handelt es sich beim History um
+Werte der Vergangenheit im 15-Minuten-Intervall. Bisher wurden sie
+nur durch Scannen empfangen. Wenn Sie diese Option aktivieren, werden
+die History-Werte auch über Bluetooth empfangen. Auch andere Dinge
+werden anders funktionieren. An Libreview werden die History-Werte
+anstelle der Durchschnittswerte der Streamwerte gesendet. Der
+Nachteil ist, dass es langsamer ist. Dies kann bei WearOS-Uhren ein
+Problem sein. Diese Option ist für Libre 3-Sensoren und US Libre
+2-Sensoren immer aktiviert.</p>
+<p >⏰: Lassen Sie Juggluco eine Weckerfunktion verwenden, um den richtigen
+Zeitpunkt für die Verbindung mit Dexcom G7-Sensoren sicherzustellen.
+Wenn sich das Gerät sonst im Tiefschlaf befindet und nicht verwendet
+wird, wacht es manchmal nicht auf, um sich wieder mit dem Sensor zu
+verbinden, und es empfängt nicht sofort einen Glukosewert. Meine
+WearOS-Uhr hatte dieses Problem mitten in der Nacht, wahrscheinlich
+weil ich mich sehr wenig bewegte. Aufgrund des anschließenden
+Auffüllens und des langsamen Erwachens habe ich es nicht auf der Uhr
+und auf dem Telefon gesehen, sondern nur in den Protokolldateien.</p>
+</font>
+<p style="border: none; padding: 0in"><font face="times new roman"><b>Vergessen</b>:
+Lassen Sie Juggluco die Geräteadresse vergessen und nach der
+Geräteadresse suchen. Bei einigen Sensoren ist dies erforderlich, um
+eine Verbindung herzustellen, und wird dann von Juggluco automatisch
+durchgeführt. Mit dieser Schaltfläche können Sie manuell
+festlegen, dass Juggluco dies tun soll, da es möglicherweise auch
+andere Gelegenheiten gibt, bei denen dies ebenfalls erforderlich ist.</font></p>
+<p style="border: none; padding: 0in"><font face="times new roman"><i><b>Beenden</b></i></font><font face="times new roman">:
+Verbindung zu diesem Sensor über Bluetooth beenden. Wenn Sie später
+wieder Stream-Glukosewerte von diesem Sensor erhalten möchten,
+müssen Sie ihn nur erneut scannen.</font></p>
+<p style="border: none; padding: 0in"><font face="times new roman"><i><b>Turbo</b></i></font><font face="times new roman">:
+Erhöht den Aufwand für den Kontakt mit dem Sensor in der Hoffnung,
+dass dies zu weniger Verbindungsfehlern führt, aber mehr
+Batterieleistung verbraucht. Scheint auf Watch4 mit Freestyle Libre
+2-Sensoren benötigt zu werden, aber nicht mit Freestyle Libre
+3-Sensoren und auf keinem der Smartphones, auf denen ich es
+ausprobiert habe.</font></p>
+<p style="border: none; padding: 0in"><font face="times new roman"><i><b>Android</b></i></font><font face="times new roman">:
+Lassen Sie Android anstelle von Juggluco die Verbindung mit dem
+Sensor herstellen.</font></p>
+<p style="border: none; padding: 0in"><font face="times new roman"><i><b>Info</b></i></font>&nbsp;<font face="times new roman">:
+Gibt Start- und Endzeiten sowie die letzten Scan- und Stream-Zeiten
+des Sensors an.</font></p>
+<p style="border: none; padding: 0in"><font face="times new roman">Um
+sich über Low Energy Bluetooth mit einem Freestyle Libre 2-Sensor zu
+verbinden, sollte Bluetooth eingeschaltet sein.&nbsp;Bevor der Sensor
+von dieser App erfolgreich gescannt wird, passiert nichts.&nbsp;Der
+Sensor sollte nicht mit dem FreeStyle Libre Reader oder anderen
+Applets auf Smartphones verbunden werden.&nbsp;Die Alarme der Abbotts
+Librelink-App sollten ausgeschaltet oder die App angehalten
+werden.&nbsp;Einige Librelink-Apps scheinen den Sensor zu
+kontaktieren, während Alarme ausgeschaltet sind, und können
+Verbindungsprobleme verursachen, also verwenden Sie „&nbsp;</font><font face="times new roman"><i>Stopp
+erzwingen</i></font>&nbsp;“<font face="times new roman">, um
+sicherzugehen. Wenn Sie den Sensor mit Freestyle Reader gestartet
+haben und ihn nicht ausschalten können, können Sie verhindern, dass
+er mit dem Sensor in Kontakt kommt, indem Sie den Reader in einen
+</font><a href="https://www.offgridweb.com/preparation/faraday-bags-testing-commercial-and-diy-wireless-signal-blockers/amp/"><font face="arial"><u>Faradayschen
+Käfig</u></font></a> <font face="times new roman">stecken.</font></p>
+<p style="border: none; padding: 0in"><font face="times new roman"><b>Sensor
+über Bluetooth/Bluetooth</b></font> <font face="times new roman"><b>nutzen</b></font>
+<font face="times new roman">sollte eingeschaltet sein.</font></p>
+<p style="border: none; padding: 0in"><font face="times new roman">Wenn
+die oben genannten Bedingungen erfüllt sind, kann es noch lange
+dauern, bis die App Glukosewerte vom Sensor erhält.&nbsp;Oft dauert
+es eine Minute, aber manchmal dauert es viel
+länger.&nbsp;Die&nbsp;</font><font face="times new roman"><i>Verbindungsphase</i></font>&nbsp;<font face="times new roman">verursacht
+die meisten Probleme.</font> <font face="times new roman">Am
+häufigsten sind Fehler mit status=133, dem Statusargument von
+<a href="https://developer.android.com/reference/android/bluetooth/BluetoothGattCallback#onConnectionStateChange(android.bluetooth.BluetoothGatt,%20int,%20int)%22">onConnectionStateChange(BluetoothGatt
+bluetoothGatt, int status, int newState)</a>.</font> <font face="times new roman">Wenn
+Sie die Batterie aus einem Sensor entfernen, erhalten Sie auch diesen
+Fehler, also scheint es so etwas wie&nbsp;</font><font face="times new roman"><i>Bluetooth-Gerät
+nicht gefunden</i></font>&nbsp;<font face="times new roman">zu sein
+.&nbsp;Manchmal scheint es zu helfen, Bluetooth aus- und
+einzuschalten oder das Telefon neu zu starten oder die
+Bluetooth-Verbindung anderer Geräte auszuschalten.&nbsp;Andere
+Probleme werden manchmal durch Scannen des Sensors gelöst.</font></p>
+<p style="border: none; padding: 0in"><font face="times new roman">Das
+Scannen des Sensors mit Juggluco (mit aktiviertem&nbsp;</font><font face="times new roman"><i>Sensor
+über Bluetooth</i></font>&nbsp;<font face="times new roman">) auf
+einem anderen Telefon stiehlt die Verbindung von diesem Telefon und
+es kann einige Zeit dauern, bis das Scannen zwischendurch
+wiederhergestellt ist.</font></p>
+<p style="border: none; padding: 0in"><font face="Arial"><br/>
+&nbsp;</font>&nbsp;<font face="Arial"><br/>
+&nbsp;</font>&nbsp;<font face="Arial"><br/>
+&nbsp;</font>&nbsp;</p>
+</body>
+</html>

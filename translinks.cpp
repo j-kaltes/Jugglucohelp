@@ -5,6 +5,9 @@
 #include <algorithm>
 #define NOLOGS_H 1
 #include "inout.hpp"
+#include "destruct.hpp"
+#define LOGGER(...) fprintf(stderr,__VA_ARGS__)
+#include "strconcat.hpp"
 /*
 <script type="module" >
 import { setlang } from "https://www.juggluco.nl/Jugglucohelp/code/settrans.js";
@@ -48,25 +51,23 @@ if(start==endinput) {
 	}
 return start-input+1;
 }
-
-int patchfile(const char *fullname,const char *filename,char **names,int nr,bool addscript) {
-    int orlen=strlen(fullname);
-    std::string_view suffix=".nolangs";
-    char bak[100];
-    memcpy(bak,fullname,orlen);
-    memcpy(bak+orlen,suffix.data(),suffix.size()+1);
-    rename(fullname,bak);
-    Readall file(bak);
+strconcat  getendname(std::string_view inname) {
+    return {"",inname.substr(0,inname.size()-7),inname.substr(inname.size()-4)};
+    }
+int patchfile(const char *inname,const char *filename,char **names,int nr,bool addscript) {
+    Readall file(inname);
     if(!file.data()) {
-        perror(bak);
+        perror(inname);
         return -1;
         }
     char *input=file.data();
-    FILE *outfile=fopen(fullname,"w");
+    auto newname=getendname(inname);
+    FILE *outfile=fopen(newname.data(),"w");
     if(!outfile) {
-        perror(fullname);
+        perror(newname.data());
         return -2;
         }
+    destruct _([outfile]{fclose(outfile);});
     int htmlpos;
     if(addscript) {
         htmlpos=includingstring(R"(<html)",input,file.size());
@@ -99,13 +100,14 @@ int main(int argc,char **argv) {
     char **names=argv+1;
     int nr=argc-1;
     if(nr) {
+        auto newname=getendname(names[0]+3);
+        const char *filename=newname.data();
         for(int i=0;i<nr;++i) {
             const char *fullname=names[i];
-            const char *filename=fullname+3;
+         //   const char *filename=fullname+3;
             patchfile(fullname,filename,names,nr,false);
             }
 
-        const char *filename=names[0]+3;
-        patchfile(filename,filename,names,nr,true);
+        patchfile(names[0]+3,filename,names,nr,true);
         }
     }

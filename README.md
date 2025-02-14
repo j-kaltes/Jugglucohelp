@@ -2,7 +2,7 @@
 These files are also visible under https://www.juggluco.nl/Jugglucohelp
 
 To write a translation of Juggluco you just translate the files ending in **.in.html** making use of LibreOffice.
-The html file without .in or generated automatically from the in.html files
+The html file without .in is generated automatically from the .in.html file by adding links to other translations.
 
 To make a full translation also the following files of the
 Juggluco source need to be translated: https://raw.githubusercontent.com/j-kaltes/Juggluco/primary/Common/src/main/res/values/strings.xml and https://raw.githubusercontent.com/j-kaltes/Juggluco/primary/Common/src/main/cpp/curve/jugglucotext.cpp

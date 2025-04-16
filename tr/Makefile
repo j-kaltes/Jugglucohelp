@@ -25,3 +25,6 @@ trhelptexts.zip:${FILES}
 
 
 	 zip  $@ $^ 
+
+links.html:${FILES}
+	@LAN=/tr sh ../mklinks.sh  $^ > $@

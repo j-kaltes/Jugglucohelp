@@ -1,0 +1,230 @@
+   <!DOCTYPE html>
+
+   <html>
+
+   <head>
+
+   <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+
+   <title></title>
+
+   <base target="_blank">
+
+   <meta name="generator" content="LibreOffice 7.5.8.2 (Linux)"/>
+
+   <meta name="changed" content="2023-12-27T20:18:01.744399555"/>
+
+   <base href="https://www.juggluco.nl/Jugglucohelp/mgdL/" id="baseurl"
+   target="_blank">
+
+   <script type="text/javascript">
+
+   function getunitarg(){
+
+   const params = new URLSearchParams(document.location.search);
+
+   const unit = params.get("unit");
+
+   if(unit == "mg/dL") {
+
+   return 2;
+
+   }
+
+   else {
+
+   if(unit=="mmol/L") {
+
+   return 1;
+
+   }
+
+   }
+
+   return 0;
+
+   }
+
+   let mmol=[
+
+   "AM",
+
+   "AU",
+
+   "BA",
+
+   "BG",
+
+   "BW",
+
+   "BY",
+
+   "CA",
+
+   "CH",
+
+   "CN",
+
+   "CZ",
+
+   "DK",
+
+   "EE",
+
+   "FI",
+
+   "GB",
+
+   "HK",
+
+   "HR",
+
+   "HU",
+
+   "IE",
+
+   "IS",
+
+   "KW",
+
+   "KZ",
+
+   "LT",
+
+   "LV",
+
+   "MT",
+
+   "MY",
+
+   "NA",
+
+   "NL",
+
+   "NO",
+
+   "NZ",
+
+   "RS",
+
+   "RU",
+
+   "SE",
+
+   "SI",
+
+   "SK",
+
+   "UA",
+
+   "ZA"
+
+   "TR"];
+
+   function getunit() {
+
+   var unit=getunitarg();
+
+   if(unit!=0) {
+
+   return unit;
+
+   }
+
+   var userLang = navigator.language || navigator.userLanguage;
+
+   var co=userLang.toUpperCase();
+
+   for(const element of mmol) {
+
+   if(co.includes(element)) {
+
+   return 1;
+
+   }
+
+   }
+
+   return 2;
+
+   }
+
+   function setbaseurl(){
+
+   if(getunit()!=1) {
+
+   document.getElementById("baseurl").href =
+   "https://www.juggluco.nl/Jugglucohelp/mgdL/";
+
+   }
+
+   else {
+
+   document.getElementById("baseurl").href =
+   "https://www.juggluco.nl/Jugglucohelp/";
+
+   }
+
+   }
+
+   setbaseurl();
+
+   </script>
+
+   </head>
+
+   <img src="newamount.png" style="object-fit:contain; width:15cm;
+   height:auto;margin: 1cm 1cm 1cm 1cm;">
+
+   <body lang="tr-TR" dir="ltr"><h1>Yeni Miktar</h1>
+
+   <p><b>Yeni miktar</b> sayesinde bir etiket ile iliskili sayilari
+   girebilirsiniz. Etiketleri sol menü->Ayarlar-><a
+   href="https://www.juggluco.nl/Jugglucohelp/labelhelp.html">Sayi
+
+   Etiketleri</a> altinda ayarlayabilirsiniz. Etiketle girilen
+   <i>Miktarlar</i>, grafikte belirlenen yükseklikte gösterilecektir.</p>
+
+   <p>Daha sonra uzun basarak miktari degistirebilirsiniz. Ayrica Sol orta
+   menü->Liste altinda girilen miktarlar listesinden de
+   seçebilirsiniz.</p>
+
+   <p>Ayrica, NFC kalemini tarayarak
+
+   a href="https://www.juggluco.nl/Juggluco/index.html#novopens"
+   onclick="location.href='https://www.juggluco.nl/Juggluco/index.html?uni
+   t='+unitstr+'#novopens';return false;">NovoPen®
+
+   6 veya NovoPen Echo® Plus</a>'tan <b>Insülin</b> doz verilerini almak
+   da mümkündür. Taramadan sonra Juggluco'da hangi etiket altinda dozlarin
+   kaydedilecegini degistirebilir ve dozlari belirli bir tarih ve saatten
+   <b>sonraki</b> dozlarla sinirlayabilirsiniz.
+
+   Kalemin hafizasinda yüzlerce doz oldugunda, bunlarin hepsinin NFC
+   araciligiyla Juggluco tarafindan alinmasi 30 saniyeden fazla
+   sürebilir.</p>
+
+   <p>Sol menü-&gt;Ayarlar-&gt;<a
+   href="https://www.juggluco.nl/Jugglucohelp/labelhelp.html">Sayi
+
+   Etiketleri</a> altinda bir ögünün karbonhidratlarini hangi etikete
+   girdiginiz de belirtilir. <i>Yeni miktar</i>'da, bu etiket için bir
+   <b>Yemek</b> dügmesi görüntülenir. Bu <a
+   href="https://www.juggluco.nl/Jugglucohelp/mealhelp.html"><i>Yemek</i><
+   /a>
+
+   dügmesine dokundugunuzda, bir ögünü bilesenlerine göre
+
+   belirleyebileceginiz bir ekrana gelirsiniz. Burada karbonhidrat
+   içerigini belirtebilir ve ardindan bir bilesenin ihtiyaç duyulan
+   miktarini hesaplayabilirsiniz.</p>
+
+   <p><br/>
+
+   <br/>
+
+   </p>
+
+   </body>
+
+   </html>

@@ -1,0 +1,300 @@
+   <!DOCTYPE html>
+
+   <html>
+
+   <head>
+
+   <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+
+   <title>Statistics</title>
+
+   <meta name="generator" content="LibreOffice 7.5.8.2 (Linux)"/>
+
+   <meta name="created" content="00:00:00"/>
+
+   <meta name="changed" content="2023-12-25T10:32:53.684602023"/>
+
+   <style type="text/css">
+
+   @page { size: 8.27in 11.69in; margin-left: 0.79in; margin-right:
+   0.39in; margin-top: 0.39in; margin-bottom: 0.39in }
+
+   h1 { margin-bottom: 0.08in; background: transparent }
+
+   h1.western { font-family: "Liberation Serif", serif }
+
+   h1.cjk { font-family: "Noto Serif CJK SC"; font-size: 24pt }
+
+   h1.ctl { font-family: "Mangal"; font-size: 24pt }
+
+   p { line-height: 115%; margin-bottom: 0.1in; background: transparent }
+
+   h3 { margin-top: 0.1in; margin-bottom: 0.08in; background: transparent
+   }
+
+   h3.western { font-family: "Liberation Serif", serif }
+
+   h3.cjk { font-family: "Noto Serif CJK SC" }
+
+   h3.ctl { font-family: "Mangal" }
+
+   </style>
+
+   <base href="https://www.juggluco.nl/Jugglucohelp/mgdL/" id="baseurl"
+   target="_blank">
+
+   <script type="text/javascript">
+
+   function getunitarg(){
+
+   const params = new URLSearchParams(document.location.search);
+
+   const unit = params.get("unit");
+
+   if(unit == "mg/dL") {
+
+   return 2;
+
+   }
+
+   else {
+
+   if(unit=="mmol/L") {
+
+   return 1;
+
+   }
+
+   }
+
+   return 0;
+
+   }
+
+   let mmol=[
+
+   "AM",
+
+   "AU",
+
+   "BA",
+
+   "BG",
+
+   "BW",
+
+   "BY",
+
+   "CA",
+
+   "CH",
+
+   "CN",
+
+   "CZ",
+
+   "DK",
+
+   "EE",
+
+   "FI",
+
+   "GB",
+
+   "HK",
+
+   "HR",
+
+   "HU",
+
+   "IE",
+
+   "IS",
+
+   "KW",
+
+   "KZ",
+
+   "LT",
+
+   "LV",
+
+   "MT",
+
+   "MY",
+
+   "NA",
+
+   "NL",
+
+   "NO",
+
+   "NZ",
+
+   "RS",
+
+   "RU",
+
+   "SE",
+
+   "SI",
+
+   "SK",
+
+   "UA",
+
+   "ZA"
+
+   "TR"];
+
+   function getunit() {
+
+   var unit=getunitarg();
+
+   if(unit!=0) {
+
+   return unit;
+
+   }
+
+   var userLang = navigator.language || navigator.userLanguage;
+
+   var co=userLang.toUpperCase();
+
+   for(const element of mmol) {
+
+   if(co.includes(element)) {
+
+   return 1;
+
+   }
+
+   }
+
+   return 2;
+
+   }
+
+   function setbaseurl(){
+
+   if(getunit()!=1) {
+
+   document.getElementById("baseurl").href =
+   "https://www.juggluco.nl/Jugglucohelp/mgdL/";
+
+   }
+
+   else {
+
+   document.getElementById("baseurl").href =
+   "https://www.juggluco.nl/Jugglucohelp/";
+
+   }
+
+   }
+
+   setbaseurl();
+
+   </script>
+
+   </head>
+
+   <img src="stats.png" style="object-fit:contain; width:15cm;
+   height:auto;">
+
+   <img src="summarygraph.png" style="object-fit:contain; width:15cm;
+   height:auto;">
+
+   <body lang="tr-TR" dir="ltr"><p><a href="https://www.juggluco.nl/Jugglucohelp/be/stathelp.html">be</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/de/stathelp.html">de</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/fr/stathelp.html">fr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/it/stathelp.html">it</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/nl/stathelp.html">nl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pl/stathelp.html">pl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pt/stathelp.html">pt</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ru/stathelp.html">ru</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/tr/stathelp.html">tr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/uk/stathelp.html">uk</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/zh/stathelp.html">zh</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/stathelp.html?lang=en">en</a>&emsp;&emsp;</p><h1 class="western">Istatistikler</h1>
+
+   <p>Bazi istatistikler küçük degisikliklerle <a
+   href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8991298">AGP</a>'den
+   alinmistir.</p>
+
+   <p>Analiz edilen gün sayisi <b>Günler</b> dügmesine basilarak
+   degistirilebilir. Süre, ekran konumunun bittigi noktada sona erer ve
+   belirtilen gün sayisini geriye dogru kapsar. Tüm veriler yalnizca
+   sensörden (Juggluco'da <i>akis</i> olarak adlandirilir) Bluetooth
+   araciligiyla her dakika alinan glikoz degerlerine dayanmaktadir.</p>
+
+   <p>Ekranin solunda, belirli glikoz araliklarina düsen ölçümlerin
+   yüzdesi bulunur. Standart araliklar her zaman gösterilir. <a
+   href="https://www.juggluco.nl/Jugglucohelp/displayhelp.html">sol
+
+   menü-&gt;Ayarlar-&gt;Görüntü</a>'de standart olmayan bir hedef araligi
+   belirlenirse hedefte geçen süre, standart araliklarin altinda
+   gösterilir.</p>
+
+   <h3 class="western">% aktif zaman</h3>
+
+   <p>Juggluco'nun sensörden glikoz degerlerini aldigi zaman yüzdesi.</p>
+
+   <h3 class="western">Tahmini A1C</h3>
+
+   <p>Tahminler H<span lang="tr-TR">Ortalama glikozdan eski bir formülle
+   A1c (Nathan</span> <span lang="tr-TR">et al (2008)). Bakiniz
+
+   <a
+   href="https://professional.diabetes.org/diapro/glucose_calc">https://pr
+   ofessional.diabetes.org/diapro/glucose_calc</a></span>
+
+   <span lang="tr-TR">hesaplamak için.</span></p>
+
+   <p><span lang="tr-TR">Burada gösterilmektedir</span> <span
+   lang="tr-TR">insanlar Abbott's Libre'de gösterilen degeri ariyor</span>
+   <span lang="tr-TR">2 uygulamasi. GMI bu göstergenin 2018'deki bir
+   yedegidir.</span>
+
+   </p>
+
+   <h3 class="western">Glucose Management Indicator (GMI)</h3>
+
+   <p><span lang="tr-TR">Genel olarak kullanilan belirli bir formülle
+   ortalama glikozdan hesaplanir (bakiniz <a
+   href="https://www.jaeb.org/gmi/">https://www.jaeb.org/gmi/</a>).
+
+   HbA1c'nin (ayrica A1c olarak da bilinir) yüzde ve mmol/mol olarak
+   verilen deneysel olarak belirlenmis bir tahminidir.</span> <span
+   lang="tr-TR">Benim için kisisel olarak Tahmini A1C, GMI'dan daha iyi
+   bir tahmin edicidir, ancak Abbott'un Libre 3 uygulamasinda
+   kullanilir.</span></p>
+
+   <h3 class="western">Glikoz Degiskenligi:</h3>
+
+   <p>Varyasyon katsayisi, %CV=(SD/ortalama)*100%, glikoz degiskenliginin
+   bir ölçüsü. Daha yüksek bir varyasyon katsayisi, glikoz degerlerinin
+   ortalamadan daha uzak oldugu anlamina gelir.</p>
+
+   <h3 class="western">Özet grafik</h3>
+
+   <p>(Yalnizca en az 9 günlük akis glikoz degeri mevcut oldugunda
+   kullanilir).</p>
+
+   <p>Bu dönemdeki tüm akis glikoz degerleri, günün her dakikasi için
+   glikoz degerlerinin nasil dagildigini gösteren bir bilesik grafik
+   çizmek için alinir. Siyah veya beyaz medyan çizgisi, günün her
+   dakikasinda glikoz degerlerinin %50'sinin altinda bulundugu glikoz
+   degerini gösterir. En açik mavi, tüm degerlerin bulundugu alandir.
+   Biraz daha koyu mavi, degerlerin %90'inin bulundugu medyanin
+   etrafindaki alandir. En koyu mavi, degerlerin %50'sinin medyaninin
+   etrafindaki alandir. Alanlarin sinirlarini çizgiler olarak
+   görüyorsaniz, asagidaki gibi de tasvir edebilirsiniz: En düsük çizginin
+   altinda degerlerin %0'i, ikinci en düsük çizginin altinda (en açik mavi
+   ile orta koyu mavi arasinda) degerlerin %5'i, üçüncü çizginin altinda
+   (en koyu mavi ile orta koyu mavi arasinda) degerlerin %25'i, siyah
+   çizginin altinda degerlerin %50'si. Bunu %75, %95 ve %100 takip eder.
+
+   </p>
+
+   <p>Estetik sebeplerden dolayi egri binom filtresiyle yumusatilir.</p>
+
+   <p>Özet grafigini kapatmak için ekrana dokunun, ancak
+
+   sol veya sag sinira dokunuldugunda grafik gün içinde geriye veya
+   ileriye dogru hareket eder. Egri ayrica kaydirilarak ileri geri hareket
+   ettirilebilir. Zaman ölçegi iki parmagi birbirine dogru veya
+   birbirinden uzaga hareket ettirerek degistirilebilir.</p>
+
+   </body>
+
+   </html>

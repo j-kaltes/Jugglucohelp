@@ -1,0 +1,172 @@
+   <!DOCTYPE html>
+
+   <html>
+
+   <head>
+
+   <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+
+   <title>Uploader</title>
+
+   <meta name="generator" content="LibreOffice 7.5.9.2 (Linux)"/>
+
+   <meta name="created" content="2023-03-10T12:04:13.361070488"/>
+
+   <meta name="changed" content="2024-02-25T16:39:46.214217271"/>
+
+   </head>
+
+   <img src="uploader.png" alt="Uploader" style="object-fit:contain;
+   width:15cm; height:auto;">
+
+   <body lang="tr-TR" dir="ltr"><p><a href="https://www.juggluco.nl/Jugglucohelp/be/NightPost.html">be</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/de/NightPost.html">de</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/fr/NightPost.html">fr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/nl/NightPost.html">nl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pl/NightPost.html">pl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ru/NightPost.html">ru</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/sv/NightPost.html">sv</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/tr/NightPost.html">tr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/uk/NightPost.html">uk</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/zh/NightPost.html">zh</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/NightPost.html?lang=en">en</a>&emsp;&emsp;</p><h1>Nightscout sunucusuna yükleme</h1>
+
+   <p>Çogu durumda suraya da bakabilirsiniz <a
+   href="https://www.juggluco.nl/Jugglucohelp/Nightscouthelp.html">web
+
+   server in Juggluco</a> ya da <a
+   href="https://www.juggluco.nl/Juggluco/cmdline">juggluco-server</a>.
+
+   Sadece Nightscout sayfasini görüntülemeye yarayan birkaç uygulama var.
+   Bunun için: <a
+   href="https://github.com/nightscout/cgm-remote-monitor">cgm-remote-moni
+   tor</a>.
+
+   Juggluco 7.4.1'deki web sunucusuyla AAPS ve AAPSClient'i bile
+   kullanabilirsiniz.</p>
+
+   <p>Tüm akis verileri, geldikleri anda Nightscout sunucusuna yüklenir.
+   Birden fazla sensör kullanildiginda, tüm sensörlerin tüm verileri
+   yüklenir. Bazi Garmin saat uygulamalari / yüzleri / widget'lari,
+   verilerin 5 dakika arayla alindigini varsayar. Glikoz verilerini bir
+   dakika arayla aldiklarinda, egrinin yalnizca son beste birini
+   gösterecektir. Bu nedenle, Juggluco'ya dahil edilen web sunucusu,
+   &quot;interval=secs&quot; daha düsük bir degere ayarlanmadigi sürece
+   degerleri 5 dakika arayla gönderir. </p>
+
+   <p><b>URL</b>: URL su sekilde olmalidir https://hostname:port
+
+   örnegin, https://myname.herokuapp.com:6789</p>
+
+   <p><b>Aktif</b>: Karsiya Yükleyiciyi Aç</p>
+
+   <p><b>Test V3</b>: Juggluco'nun Nightscout'a veri yüklemesi için api/v3
+   kullanmasina izin verin.
+
+   Daha önce V1 yüklemeleri almis bir Nightscout sunucusuna yükleme yapmak
+   için bunu kullanmayin ve daha önce V3 yüklemeleri almis bir Nightscout
+   sunucusuna V1 yüklemeleri göndermeyin.
+
+   api_secret yerine, tedavileri ve girdileri yükleme iznine sahip bir
+   <i>Access Token</i> belirlemeniz gerekir. Nightscout web arayüzünde
+   Yönetici Araçlari altinda Access Token (Erisim Belirteci)
+   olusturabilirsiniz.</p>
+
+   <p><b>Miktarlari Gir</b>: Miktarlari tedavi olarak Nightscout'a
+   gönderin. Onay kutusuna dokunmak sizi her etiketin Nightscout'ta ne
+   anlama geldigini belirtebileceginiz bir iletisim kutusuna yönlendirir.
+   Bu özellikler Juggluco'daki web sunucusuyla paylasilir. (<a
+   href="https://www.juggluco.nl/Jugglucohelp/Nightscouthelp.html"> Sol
+   Menü -> Ayarlar -> Veri Alisverisi -> Web Sunucusu</a>). Tüm etiketler
+   islendiginde,
+
+   kontrol edebilirsiniz. "<i>Miktarlari Gir</i>". Daha sonra yeni bir
+   etiket eklerseniz, bununla ne yapacaginizi belirtmeyi unutmayin.
+
+   <span lang="tr-TR"><a
+   href="https://github.com/nightscout/cgm-remote-monitor">Nightscout</a>'
+   taki bir hata nedeniyle,
+
+   daha eski zaman dilimlerindeki eklemeler veya silmeler yalnizca
+
+   yeni bir zamana sahip ögeler eklendikten sonra gösterilir. Bu,
+   Nightscout'a daha az siklikta veri göndermenin daha iyi oldugu anlamina
+   gelir. Artik kullanici Juggluco'dan ayrilip ekrani her kapattiginda
+   veya baska bir uygulamaya geçtiginde bu yapilir.</span></p>
+
+   <p><b>Veriyi yeniden gönder</b>: Tüm veriyi Nightscout sunucusuna
+   tekrar yükleyin</p>
+
+   <p><b>Simdi Gönder</b>: Normalde veri sensörden veya klon
+   baglantisindan geldiginde hemen gönderilir. Herhangi bir nedenle önceki
+   girisimin basarisiz olmasi durumunda bu dügmeye basin.</p>
+
+   <p>WearOS sürümü Juggluco 4.15.0 ve üzeri sürümlerde glikoz degerlerini
+   Nightscout'a yükleyebilir. Hemen hemen tüm durumlarda bir telefon veya
+   tabletteki Juggluco sürümü veya bir bilgisayar üzerindeki Juggluco
+   sunucusu araciligiyla verileri daha iyi gönderebilirsiniz. Özellikle
+   Nightscout sunucusuyla baglanti kurulamadiginda pil hizli tükenecektir,
+   bu nedenle güvenilir bir baglanti olmadiginda <i>Aktif</i>'i
+   kapatabilirsiniz.</p>
+
+   <h2 class="western">Hata</h2>
+
+   <p style="line-height: 100%; margin-bottom: 0in">Iki hata mesaji
+
+   sik sik karisikliga neden olur.</p>
+
+   <p style="line-height: 100%; margin-bottom: 0in">Hata mesaji
+   "<b>yükleme hatasi:</b>" ve ardindan hiçbir sey gelmediginde, olasi
+   nedenler sunlardir:</p>
+
+   <ul>
+
+   <li><p style="line-height: 100%; margin-bottom: 0in">Ag
+
+   baglantisi kapali;</p></li>
+
+   <li><p style="line-height: 100%; margin-bottom: 0in">Ana bilgisayar adi
+   yanlis yazilmis.</p>
+
+   <p style="line-height: 100%; margin-bottom: 0in"></p></li>
+
+   </ul>
+
+   <p style="line-height: 100%; margin-bottom: 0in"><b>upload failure:
+   java.io.FileNotFoundException</b>:
+
+   NIGHTSCOUTURL/api/v1/entries</p>
+
+   <p style="line-height: 100%; margin-bottom: 0in">Burada NIGHTSCOUTURL
+
+   "Nightscout URL"den sonra girilen sunucu URL'sini ifade eder.</p>
+
+   <p style="line-height: 100%; margin-bottom: 0in">Bunun sebebi
+   asagidakilerden biri olabilir:</p>
+
+   <ul>
+
+   <li><p style="line-height: 100%; margin-bottom: 0in">URL yanlis siteye
+   isaret ediyor. Örnegin, ana bilgisayar adindan sonraki port
+
+   eksik ve bu nedenle Juggluco normal bir web sunucusuna
+   baglaniyor;</p></li>
+
+   <li><p style="line-height: 100%; margin-bottom: 0in">api_secret
+
+   yanlis;</p></li>
+
+   <li><p style="line-height: 100%; margin-bottom: 0in"><span
+   lang="tr-TR">NIGHTSCOUTURL
+
+   orada olmamasi gereken bir yol içeriyor. Örnegin;
+
+   </span><span lang="tr-TR">Nightscout </span><span lang="tr-TR">URL
+
+   <a href="https://ahost.org:8887/">https://ahost.org:8887</a> and
+
+   you </span><span lang="tr-TR">entered</span><span lang="tr-TR">
+
+   <a
+   href="https://ahost.org:8887/extra">https://ahost.org:8887/extra</a>.</
+   span></p></li>
+
+   </ul>
+
+   <p style="line-height: 100%; margin-bottom: 0in"><br/>
+
+   </body>
+
+   </html>
+
+

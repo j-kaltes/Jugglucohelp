@@ -9,7 +9,7 @@ setlang(translations,"battery.html");
 	<title></title>
 	<meta name="generator" content="LibreOffice 24.2.7.2 (Linux)"/>
 	<meta name="created" content="2021-09-22T21:56:37.376793780"/>
-	<meta name="changed" content="2024-12-21T10:22:39.782625233"/>
+	<meta name="changed" content="2025-04-16T17:14:40.957733782"/>
 	<style type="text/css">
 		@page { size: 8.27in 11.69in; margin: 0.79in }
 		h1 { margin-bottom: 0.08in; background: transparent }
@@ -23,21 +23,22 @@ setlang(translations,"battery.html");
 <p style="line-height: 100%; margin-bottom: 0in">Normally when an
 android device is not used, it enters doze mode to use less energy.
 If you need to reliably receive glucose values via Bluetooth or
-TCP/IP you need to switch off battery optimizations for Juggluco and
-sometimes also the whole device to prevent that Androids switches off
-Juggluco. A lot of devices have additional battery optimization-,
-activity in the background - and start at boot settings that have to
-be changed. You can find them under Android settings-&gt;Battery. See
+TCP/IP you need to switch off battery optimizations for Juggluco, and
+sometimes also switch off some battery optimizations for the whole
+device, to prevent that Android switches off Juggluco. A lot of
+devices have additional battery optimization, activity in the
+background  and start at boot settings that have to be changed. You
+can find them under Android settings-&gt;Battery. See
 <a href="https://dontkillmyapp.com/">https://dontkillmyapp.com</a>.</p>
-<p style="line-height: 100%; margin-bottom: 0in">When using Watch 4
-or 5, you have to <i>Allow background activity</i> in the Galaxy
+<p style="line-height: 100%; margin-bottom: 0in">When using Watch 4,
+5, 6 or 7, you have to <i>Allow background activity</i> in the Galaxy
 Wearable companion app, Watch settings-&gt;Apps-&gt;Juggluco. For
-watches that don't have this setting you can use the following
+watches that don't have this setting, you can use the following
 command from your computer:</p>
 <p style="line-height: 100%; margin-bottom: 0in"><b>adb shell cmd
 appops set tk.glucodata RUN_IN_BACKGROUND allow</b></p>
-<p style="line-height: 100%; margin-bottom: 0in"><span style="font-weight: normal">To
-disable doze mode:</span></p>
+<p style="font-weight: normal; line-height: 100%; margin-bottom: 0in">
+To disable doze mode:</p>
 <p style="line-height: 100%; margin-bottom: 0in"><b>adb shell dumpsys
 deviceidle disable</b></p>
 <p style="line-height: 100%; margin-bottom: 0in"><a href="https://www.juggluco.nl/JugglucoWearOS/install/adb.html">Information

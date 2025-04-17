@@ -6,15 +6,12 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
 <p><a href="https://www.juggluco.nl/Jugglucohelp/be/NightPost.html">be</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/de/NightPost.html">de</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/fr/NightPost.html">fr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/nl/NightPost.html">nl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pl/NightPost.html">pl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ru/NightPost.html">ru</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/sv/NightPost.html">sv</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/tr/NightPost.html">tr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/uk/NightPost.html">uk</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/zh/NightPost.html">zh</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/NightPost.html?lang=en">en</a>&emsp;&emsp;</p><h1>Nightscout sunucusuna yükleme</h1>
 
    <p>Çogu durumda suraya da bakabilirsiniz <a
-   href="https://www.juggluco.nl/Jugglucohelp/Nightscouthelp.html">web
-
-   server in Juggluco</a> ya da <a
+   href="https://www.juggluco.nl/Jugglucohelp/tr/Nightscouthelp.html">web server in Juggluco</a> ya da <a
    href="https://www.juggluco.nl/Juggluco/cmdline">juggluco-server</a>.
 
    Sadece Nightscout sayfasini görüntülemeye yarayan birkaç uygulama var.
    Bunun için: <a
-   href="https://github.com/nightscout/cgm-remote-monitor">cgm-remote-moni
-   tor</a>.
+   href="https://github.com/nightscout/cgm-remote-monitor">cgm-remote-monitor</a>.
 
    Juggluco 7.4.1\'deki web sunucusuyla AAPS ve AAPSClient\'i bile
    kullanabilirsiniz.</p>
@@ -50,7 +47,7 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
    gönderin. Onay kutusuna dokunmak sizi her etiketin Nightscout\'ta ne
    anlama geldigini belirtebileceginiz bir iletisim kutusuna yönlendirir.
    Bu özellikler Juggluco\'daki web sunucusuyla paylasilir. (<a
-   href="https://www.juggluco.nl/Jugglucohelp/Nightscouthelp.html"> Sol
+   href="https://www.juggluco.nl/Jugglucohelp/tr/Nightscouthelp.html"> Sol
    Menü -> Ayarlar -> Veri Alisverisi -> Web Sunucusu</a>). Tüm etiketler
    islendiginde,
 
@@ -215,7 +212,7 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
 
    <li><p style="line-height: 100%; margin-bottom: 0in">Sol Orta
    Menü-&gt;Klon-&gt;<a
-   href="https://www.juggluco.nl/Jugglucohelp/addconnection.html">Bagla
+   href="https://www.juggluco.nl/Jugglucohelp/tr/addconnection.html">Bagla
    nti Ekle</a>-&gt;Yardim</p>
 
    </ul>
@@ -246,19 +243,13 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
    80 (http) portunu modeminizden bilgisayariniza yönlendirdikten sonra,
    basitçe basabilirsiniz:</p>
 
-   <pre style="margin-bottom: 0.2in">certbot certonly --standalone
-   --preferred-challenges http -d <i>myhostname</i></pre><p>
+   <pre style="margin-bottom: 0.2in">certbot certonly --standalone --preferred-challenges http -d <i>myhostname</i></pre><p>
 
-   See <a
-   href="https://devpress.csdn.net/linux/62e7999e907d7d59d1c8cfd0.html">ht
-   tps://devpress.csdn.net/linux/62e7999e907d7d59d1c8cfd0.html</a>.
+   See <a href="https://devpress.csdn.net/linux/62e7999e907d7d59d1c8cfd0.html">https://devpress.csdn.net/linux/62e7999e907d7d59d1c8cfd0.html</a>.
 
    </p>
 
-   <p style="line-height: 100%; margin-bottom: 0in">>Certbot\'u
-   kullandiktan sonra
-
-   Özel anahtari
+   <p style="line-height: 100%; margin-bottom: 0in">Certbot\'u kullandiktan sonra Özel anahtari
 
    /etc/letsencrypt/live/myhostname/privkey.pem\'de ve tam zinciri
 
@@ -278,7 +269,7 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
    href="https://www.juggluco.nl/Juggluco/index.html#mirror">klon</a>
 
    fonksiyonunu kullanabilirsiniz. (Sol Orta Menü-&gt;<a
-   href="https://www.juggluco.nl/Jugglucohelp/connectionoverview.html">Klo
+   href="https://www.juggluco.nl/Jugglucohelp/tr/connectionoverview.html">Klo
    n</a>).</p>
 
    <p style="line-height: 100%; margin-bottom: 0in">Android uygulamalari
@@ -564,7 +555,7 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
 
    <ul>
 
-   <li><p align="left" style="margin-bottom: 0in">>Abbott FreeStyle Libre
+   <li><p align="left" style="margin-bottom: 0in">Abbott FreeStyle Libre
    sensörlerine özgü NFC ve Bluetooth komutlari ile FreeStyle Libre
    sensörlerine özgü yorumlama algoritmalari. Hiçbiri
 
@@ -609,42 +600,24 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
 
    </p>
 
-   <p>Juggluco\'yu Italyancaya çeviren <a
-   href="mailto:matteo.gabriele81@gmail.com">Matteo
-
-   Gabriele</a>.</p>
+   <p>Juggluco\'yu Italyancaya çeviren <a href="mailto:matteo.gabriele81@gmail.com">Matteo Gabriele</a>.</p>
 
    <p> Juggluco\'yu Portekizceye çeviren Rui Pinheiro.</p>
 
-   <p>Juggluco\'yu Lehçeye çeviren <a
-   href="mailto:adelis@translaris.pl">Arkadiusz
+   <p>Juggluco\'yu Lehçeye çeviren <a href="mailto:adelis@translaris.pl">Arkadiusz Deliś</a>.</p>
 
-   Delis</a>.</p>
-
-   <p>Juggluco\'yu Belarusçaya çeviren <a
-   href="mailto:3477734n@gmail.com">Nahodkiin
-
-   YAv%gen.</a></p>
+   <p>Juggluco\'yu Belarusçaya çeviren <a href="mailto:3477734n@gmail.com">Находкін Яўген</a>.</p>
 
    <p>Juggluco\'yu Fransizcaya çeviren Fabrice Delfosse.</p>
 
-   <p>Juggluco\'yu Ukraynacaya çeviren <a
-   href="mailto:3477734n@gmail.com">Nahodkiin
+   <p>Juggluco\'yu Ukraynacaya çeviren <a href="mailto:3477734n@gmail.com">Находкін Яўген</a> and <a href="mailto:moydiabet@gmail.com">Дзіма Дыябетык</a>.</p>
 
-   YAv%gen</a> and <a href="mailto:moydiabet@gmail.com">Dziima
+   <p>Juggluco\'yu Çinceye çeviren <font face="Droid Sans"><span lang="zh-CN"><a href="mailto:q.pw@qq.com"><span lang="zh-CN">兜子a</span></a>.</font></p>
 
-   Dyyabetyk</a>.</p>
+   <p>Juggluco\'yu Rusçaya çeviren <a href="mailto:zzzmei_92@mail.ru?subject=Juggluco%20%D0%BD%D0%B0%20%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%BE%D0%BC">Васильев Артем</a>.</p>
 
-   <p>Juggluco\'yu Çinceye çeviren <font face="Droid Sans"><span
-   lang="zh-CN"><a href="mailto:q.pw@qq.com"><span
-   lang="zh-CN"></span></span></font><span lang="zh-CN">a</span></a>.</p>
 
-   <p>Juggluco\'yu Rusçaya çeviren <a
-   href="mailto:zzzmei_92@mail.ru?subject=Juggluco%20%D0%BD%D0%B0%20%D1%80
-   %D1%83%D1%81%D1%81%D0%BA%D0%BE%D0%BC">Vasil\'ev
-
-   Artem</a>.</p>
-
+<p> Türkçe’ye çeviren <a href="mailto:beyazbulut14@gmail.com?subject=Juggluco\'nun%20çevirisi">beyazbulut14@gmail.com</a></a>
    ]]>
 </string>
 <string name="addconnection" >
@@ -657,8 +630,7 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
    baglanti kurmak için, Juggluco\'lardan birinin portu dinlemesi ve
    digerinin o portla iletisim kurmasi gerekir. Bu Juggluco örneginin
    dinledigi port, önceki ekranda verilmistir. (Sol orta menü-&gt;<a
-   href="https://www.juggluco.nl/Jugglucohelp/connectionoverview.html">Mir
-   ror</a>). Burada, Juggluco örneginin aktif olarak iletisim kurmasi
+   href="https://www.juggluco.nl/Jugglucohelp/tr/connectionoverview.html">Klon</a>). Burada, Juggluco örneginin aktif olarak iletisim kurmasi
    durumunda hangi portla iletisim kuracagini belirtirsiniz. Bu Juggluco
    örnegi bir portu dinleyemiyorsa, &quot;<b>Yalnizca aktif</b>&quot;i
    seçin. Diger taraf bir portu dinleyemiyorsa, &quot;<b>Yalnizca
@@ -791,28 +763,24 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
    bilgisayarda (örnegin PC\'niz veya Amazon AWS) çalistirmaktir:
 
    <a
-   href="https://www.juggluco.nl/Juggluco/cmdline/index.html">https://www.
-   juggluco.nl/Juggluco/cmdline/index.html</a></p>
+   href="https://www.juggluco.nl/Juggluco/cmdline/index.html">https://www.juggluco.nl/Juggluco/cmdline/index.html</a></p>
 
    <p style="line-height: 100%; margin-bottom: 0in">Port yönlendirme
 
    egitimleri:</p>
 
    <p style="line-height: 100%; margin-bottom: 0in"><a
-   href="https://portforward.com/how-to-port-forward/">https://portforward
-   .com/how-to-port-forward/</a></p>
+   href="https://portforward.com/how-to-port-forward/">https://portforward.com/how-to-port-forward/</a></p>
 
    <p style="line-height: 100%; margin-bottom: 0in"><a
-   href="https://stevessmarthomeguide.com/understanding-port-forwarding/">
-   https://stevessmarthomeguide.com/understanding-port-forwarding/</a></p>
+   href="https://stevessmarthomeguide.com/understanding-port-forwarding/">https://stevessmarthomeguide.com/understanding-port-forwarding/</a></p>
 
    <p style="line-height: 100%; margin-bottom: 0in">NFC olmayan bir
    cihazda Bluetooth araciligiyla glikoz degerlerini almak mümkündür
    (bakiniz
 
    <a
-   href="https://www.juggluco.nl/Juggluco/mirror">https://www.juggluco.nl/
-   Juggluco/mirror</a>):
+   href="https://www.juggluco.nl/Juggluco/mirror">https://www.juggluco.nl/Juggluco/mirror</a>):
 
    Sensörü NFC cihazinda NFC üzerinden baslatin ve ardindan
 
@@ -913,14 +881,14 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
    almayacaksiniz.</p>
 
    <p style="line-height: 100%; margin-bottom: 0in">Her alarm için hangi
-   <a href="https://www.juggluco.nl/Jugglucohelp/ringtone.html">Zil
+   <a href="https://www.juggluco.nl/Jugglucohelp/tr/ringtone.html">Zil
    Sesinin</a> çalinacagini ve ne kadar süreyle çalacagini
    belirleyebilirsiniz.</p>
 
    <h3 class="western">Alarmi cihazdan ayarla:</h3>
 
    <p>Ayarlandiginda, <a
-   href="https://www.juggluco.nl/Jugglucohelp/ringtone.html">Zil Sesi</a>
+   href="https://www.juggluco.nl/Jugglucohelp/tr/ringtone.html">Zil Sesi</a>
 
    Android Alarmlar kategorisine göre düsük, yüksek ve sinyal kaybi
    alarmlari için çalinir. Bu, Android ayarlarinda ses seviyesinin
@@ -1028,14 +996,14 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
    <p style="line-height: 100%; margin-bottom: 0in"><i><b>
 
    <a
-   href="https://www.juggluco.nl/Jugglucohelp/addconnection.html">Bagla
+   href="https://www.juggluco.nl/Jugglucohelp/tr/addconnection.html">Bagla
    nti ekle</a></b></i>\'ye tiklayarak hangi ana bilgisayarlara nasil
    baglanacaginizi belirtebilirsiniz.</p>
 
    <p style="line-height: 100%; margin-bottom: 0in">Güvenilir bir ag
    baglantisi Android\'de pil optimizasyonu ve arka plan kisitlamalari
    nedeniyle kesintiye ugrarsa, <b><a
-   href="https://www.juggluco.nl/Jugglucohelp/battery.html">Uyku
+   href="https://www.juggluco.nl/Jugglucohelp/tr/battery.html">Uyku
    modu</a></b>na basmak bunu degistirmenize yardimci olur.</p>
 
    <p style="line-height: 100%; margin-bottom: 0in">Juggluco bir Ayna
@@ -1045,7 +1013,7 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
    kutusuna gitmek için <b>Alarmlar</b>\'a basabilirsiniz.</p>
 
    <p style="line-height: 100%; margin-bottom: 0in"><b>Mirror (klon),
-   bir</b><b>baglanti gönderir:</b>Uygulama, baska bir cihazda çalisan bu
+   bir</b><b>baglanti gönderir:</b> Uygulama, baska bir cihazda çalisan bu
    uygulamadan ilaç, yiyecek ve spor verisi miktarlari alirsa, bu
    bilgileri burada eklememeli veya degistirmemelisiniz. Kontrol etmek
    bunu imkansiz hale getirir.
@@ -1062,7 +1030,7 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
    Mevcut baglantiyi kapatir ve yeni bir baglanti olusturur.</p>
 
    <p style="line-height: 100%; margin-bottom: 0in"><b>Wifi</b> (sadece
-   WearOS\'ta):Bu ayar kapali oldugunda, WearOS pil ömrünü korumak için bir
+   WearOS\'ta): Bu ayar kapali oldugunda, WearOS pil ömrünü korumak için bir
    süre sonra WIFI\'yi otomatik olarak kapatir ve Juggluco, telefon ile
    saat arasindaki baglanti için Bluetooth kullanimina geçer.
 
@@ -1090,13 +1058,10 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
 
    <p style="line-height: 100%; margin-bottom: 0in">r: alinan</p>
 
-   <p style="line-height: 100%; margin-bottom: 0in"><br/>
-
-   </p>
 
    <p style="line-height: 100%; margin-bottom: 0in">Daha fazla bilgi için
    Mirror (klon) baglantilari hakkinda yardim bölümünü okuyun&quot;<i><a
-   href="https://www.juggluco.nl/Jugglucohelp/addconnection.html">Bagla
+   href="https://www.juggluco.nl/Jugglucohelp/tr/addconnection.html">Bagla
    nti ekle</a></i>&quot;
 
    Ayrica bakiniz <a class="western"
@@ -1248,7 +1213,7 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
    Degisiklikler veri kaybina yol açacaktir.</p>
 
    <h2 class="western"><a
-   href="https://www.juggluco.nl/Jugglucohelp/shortcuthelp.html">Shortcuts
+   href="https://www.juggluco.nl/Jugglucohelp/tr/shortcuthelp.html">Shortcuts
    </a></h2>
 
    <p style="line-height: 100%; margin-bottom: 0in">Shortcuts are sent
@@ -1274,7 +1239,7 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
    <p style="line-height: 100%; margin-bottom: 0in">Freestyle Libre 3
    sensörünü NFC araciligiyla taramak için gereken Libreview Hesap Kimligi
    nasil alinir?
-   &quot;<strong>Manuel</strong><strong>olarak</strong><strong>&quot;</str
+   &quot;<strong>Manuel olarak</strong>&quot;</str
    ong> seçenegini belirlerseniz, Hesap Kimligini manuel olarak
    girebilirsiniz. Ayrica, "<i>manuel</i>" seçenegini kaldirabilir ve
    &quot;<strong>Libreview\'den</strong>&quot; seçenegine basarak
@@ -1360,10 +1325,7 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
 
    <p>Yemekler html\'de kaydedilir. Diger tüm veriler .tsv
 
-   (<a
-   href="https://en.wikipedia.org/wiki/Tab-separated_values">Tab-separated
-
-   values</a>)\'de kaydedilir. Bu, LibreOffice Calc, Microsoft Excel,
+   (<a href="https://en.wikipedia.org/wiki/Tab-separated_values">Tab-separated values</a>)\'de kaydedilir. Bu, LibreOffice Calc, Microsoft Excel,
    Mathematica veya R gibi programlara yüklenebilir. Ögeleri ayirmak için
    virgül yerine sekmelerin kullanildigi bir tür .csv\'dir. UTF-8 kodlamasi
    kullanilir.</p>
@@ -1371,23 +1333,19 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
    <p>Sütunlarin anlamlari su adreste bulunabilir
 
    <a
-   href="https://www.juggluco.nl/Juggluco/webserver.html">https://www.j
-   uggluco.nl/Juggluco/webserver.html</a></p>
+   href="https://www.juggluco.nl/Juggluco/webserver.html">https://www.juggluco.nl/Juggluco/webserver.html</a></p>
 
    <p><b>Günler</b>: Juggluco 7.1.0\'dan baslayarak, kaydedilecek
 
    gün sayisini seçebilirsiniz. Bitis tarihi ekranin sag siniridir. Bu
    nedenle, Juggluco\'da geçmis verileri görüntülerseniz, yalnizca eski
    veriler disa aktarilir (sol orta menüdekiyle ayni -&gt;<a
-   href="https://www.juggluco.nl/Jugglucohelp/stathelp.html">Istatistikler
-   </a>).</p>
+   href="https://www.juggluco.nl/Jugglucohelp/tr/stathelp.html">Istatistikler</a>).</p>
 
    <p>Juggluco 7.1.0\'dan baslayarak, bu verileri Juggluco\'daki web
    sunucusu üzerinden almak da mümkündür (Sol menü-&gt;Ayarlar-&gt;<a
-   href="https://www.juggluco.nl/Jugglucohelp/exchangehelp.html">Veri
-   degisimi</a>-&gt;Web sunucusu), bkz. <a
-   href="https://www.juggluco.nl/Juggluco/webserver.html">https://www.j
-   uggluco.nl/Juggluco/webserver.html</a></p>
+   href="https://www.juggluco.nl/Jugglucohelp/tr/exchangehelp.html">Veri degisimi</a>-&gt;Web sunucusu), bkz. <a
+   href="https://www.juggluco.nl/Juggluco/webserver.html">https://www.juggluco.nl/Juggluco/webserver.html</a></p>
 
    <p><br/>
 
@@ -1432,9 +1390,9 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
 
    sensörünü devralmak için, sensörü etkinlestirmekte kullandiginiz
    Libreview Hesap bilgilerini <a
-   href="https://www.juggluco.nl/Jugglucohelp/libreview.html">Ayarlar-&
+   href="https://www.juggluco.nl/Jugglucohelp/tr/libreview.html">Ayarlar-&
    gt;Veri Degisimi-&gt;Libreview</a>\'de belirtmeniz, <a
-   href="https://www.juggluco.nl/Jugglucohelp/getaccountidhelp.html">&q
+   href="https://www.juggluco.nl/Jugglucohelp/tr/getaccountidhelp.html">&q
    uot;Hesap Kimligi Al&quot;</a>\'a basmaniz ve taramadan önce Hesap
    Kimliginin gelmesini beklemeniz gerekir. </font></p><p><font
    color="#ffffff"></font><font color="#ffffff">
@@ -1493,7 +1451,7 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
    <tr>
 
    <td width="96" valign="top" style="border: none; padding: 0in"><p><font
-   color="#ffff6d">15:10&nbsp;&nbsp;&nbsp;/^&nbsp;93</font></p>
+   color="#ffff6d">15:10&nbsp;&nbsp;&nbsp;↗&nbsp;93</font></p>
 
    </td>
 
@@ -1502,7 +1460,7 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
    <tr>
 
    <td width="96" valign="top" style="border: none; padding: 0in"><p><a
-   href="https://www.juggluco.nl/Jugglucohelp/searchhelp.html"><font
+   href="https://www.juggluco.nl/Jugglucohelp/tr/searchhelp.html"><font
    color="#ffff6d">Ara</font></a></p>
 
    </td>
@@ -1605,9 +1563,7 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
    <tr>
 
    <td width="138" valign="top" style="border: none; padding:
-   0in"><p><font color="#ffff6d">Last
-
-   Scan</font></p>
+   0in"><p><font color="#ffff6d">Son tarama</font></p>
 
    </td>
 
@@ -1617,8 +1573,7 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
 
    <td width="138" valign="top" style="border: none; padding:
    0in"><p><font
-   color="#ffff6d">Scans&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n
-   bsp;&nbsp;&nbsp;&nbsp;[x]</font></p>
+   color="#ffff6d">Taramalar&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[x]</font></p>
 
    </td>
 
@@ -1628,8 +1583,7 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
 
    <td width="138" valign="top" style="border: none; padding:
    0in"><p><font
-   color="#ffff6d">Stream&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&
-   nbsp;[x]</font></p>
+   color="#ffff6d">Akış&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[x]</font></p>
 
    </td>
 
@@ -1639,8 +1593,7 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
 
    <td width="138" valign="top" style="border: none; padding:
    0in"><p><font
-   color="#ffff6d">Geçmis&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&
-   nbsp;[x]</font></p>
+   color="#ffff6d">Geçmis&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[x]</font></p>
 
    </td>
 
@@ -1661,10 +1614,7 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
 
    <td width="138" valign="top" style="border: none; padding:
    0in"><p><font color="#ffff6d"><a
-   href="https://www.juggluco.nl/Jugglucohelp/mealhelp.html">Yemekler</a>&
-   nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-   &nbsp;&nbsp; [&nbsp;&nbsp;]</font></p>
+   href="https://www.juggluco.nl/Jugglucohelp/tr/mealhelp.html">Yemekler</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [&nbsp;&nbsp;]</font></p>
 
    </td>
 
@@ -1675,12 +1625,11 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
    <td width="138" height="43" valign="top" style="border: none; padding:
    0in"><p>
 
-   <font color="#ffff6d">Koyu Mod&nbsp;&nbsp;&nbsp;[x]</font></p>
+   <font color="#ffff6d">Koyu Mod&nbsp;&nbsp;&nbsp;&nbsp;[x]</font></p>
 
    </td>
 
    </tr>
-
    </table>
 
    <p style="line-height: 115%; margin-bottom: 0in"><font
@@ -1729,8 +1678,7 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
    color="#ffffff"> girilen sayilarin görüntülenmesini belirler.
    </font><font color="#ffffff"><i>Ayarlar</i></font><font
    color="#ffffff"> bölümünde,bu sayilar için hangi <a
-   href="https://www.juggluco.nl/Jugglucohelp/labelhelp.html">etiketleri</
-   a>
+   href="https://www.juggluco.nl/Jugglucohelp/tr/labelhelp.html">etiketleri</a>
 
    kullanmak istediginizi belirtebilirsiniz. Sayilardan birinin üstünde
    karsilik gelen etiket gösterilir.</font></p>
@@ -1742,16 +1690,18 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
    <font color="#ffffff"><font size="3" style="font-size: 12pt"><i>Menü 2:
    Ortanin solu</i></font></font></p>
 
-   <table cellpadding="0" cellspacing="0">
+   <table width="138" cellpadding="0" cellspacing="0">
 
-   <col width="96"/> <tr> <td width="96" valign="top" style="border: none;
+   <col width="138"/>
+
+ <tr> <td width="96" valign="top" style="border: none;
    padding: 0in"><p><a
-   href="https://www.juggluco.nl/Jugglucohelp/helpexport.html"><font
+   href="https://www.juggluco.nl/Jugglucohelp/tr/helpexport.html"><font
    color="#ffff6d">Disa Aktar</font></a></p> </td> </tr> <tr>
 
    <td width="96" valign="top" style="border: none; padding: 0in"><p><a
-   href="https://www.juggluco.nl/Jugglucohelp/connectionoverview.html">
-   <font color="#ffff6d">Mirror</font></a></p>
+   href="https://www.juggluco.nl/Jugglucohelp/tr/connectionoverview.html">
+   <font color="#ffff6d">Klon</font></a></p>
 
    </td>
 
@@ -1760,11 +1710,9 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
    <tr>
 
    <td width="96" valign="top" style="border: none; padding: 0in"><p><a
-   href="https://www.juggluco.nl/Jugglucohelp/newamount.html"
+   href="https://www.juggluco.nl/Jugglucohelp/tr/newamount.html"
    onclick="location.href=this.href+\'?unit=\'+unitstr;return false;"><font
-   color="#ffff6d">New
-
-   Miktar</font></a></p>
+   color="#ffff6d">Yeni Miktar</font></a></p>
 
    </td>
 
@@ -1773,7 +1721,7 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
    <tr>
 
    <td width="96" valign="top" style="border: none; padding: 0in"><p><font
-   color="#ffff6d">List</font></p>
+   color="#ffff6d">Liste</font></p>
 
    </td>
 
@@ -1782,9 +1730,9 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
    <tr>
 
    <td width="96" valign="top" style="border: none; padding: 0in"><p><a
-   href="https://www.juggluco.nl/Jugglucohelp/stathelp.html"
+   href="https://www.juggluco.nl/Jugglucohelp/tr/stathelp.html"
    onclick="location.href=this.href+\'?unit=\'+unitstr;return false;"><font
-   color="#ffff6d">Statistics</font></a></p>
+   color="#ffff6d">İstatistikler</font></a></p>
 
    </td>
 
@@ -1793,8 +1741,8 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
    <tr>
 
    <td width="96" valign="top" style="border: none; padding: 0in"><p><a
-   href="https://www.juggluco.nl/Jugglucohelp/talkhelp.html"><font
-   color="#ffff6d">Seslendir</font></a></p>
+   href="https://www.juggluco.nl/Jugglucohelp/tr/talkhelp.html"><font
+   color="#ffff6d">Seslendirme</font></a></p>
 
    </td>
 
@@ -1806,8 +1754,7 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
    align="left">
 
    <font
-   color="#ffff6d">Yüzen&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n
-   bsp;[&nbsp;]</font></p>
+   color="#ffff6d">Yüzen Glikoz&nbsp;&nbsp;[&nbsp;]</font></p>
 
    </td>
 
@@ -1825,20 +1772,20 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
    color="#ffffff">.
 
    </font><font color="#4f81bd"><font face="Cambria, serif"><span
-   lang="tr-TR"><b>Disa Aktar</b></span></font></font><font
+   lang="tr-TR"><b>Dışa Aktar</b></span></font></font><font
    color="#ffffff">
 
    </font><font color="#ffffff"><span lang="tr-TR">verileri .tsv
 
    (sekmeyle ayrilmis degerler) biçiminde bir dosyaya kaydeder.
    </span></font><font color="#4f81bd"><font face="Cambria, serif"><span
-   lang="tr-TR"><b>Mirror</b></span></font></font><font color="#ffffff">
+   lang="tr-TR"><b>Klon</b></span></font></font><font color="#ffffff">
 
    </font><font color="#ffffff"><span lang="tr-TR">farkli bir cihazda
    çalisan bu uygulamaya IP/TCP üzerinden veri gönderilmesini ve ayni
    bilgilerin görüntülenmesini mümkün kilar. </span></font><font
    color="#4f81bd"><font face="Cambria, serif"><span
-   lang="tr-TR"><b>List</b></span></font></font><font color="#ffffff">
+   lang="tr-TR"><b>Liste</b></span></font></font><font color="#ffffff">
 
    </font><font color="#ffffff"><span lang="tr-TR">girilen sayilarin bir
    listesini verir. Juggluco Bluetooth üzerinden yeterli glikoz degeri
@@ -1866,7 +1813,7 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
    lang="tr-TR">.
 
    Ekranda diger uygulamalarin üzerinde gösterilen glikoz degeri. <a
-   href="https://www.juggluco.nl/Jugglucohelp/floatingconfig.html"
+   href="https://www.juggluco.nl/Jugglucohelp/tr/floatingconfig.html"
    onclick="location.href=this.href+\'?unit=\'+unitstr;return
    false;">Ayarlar\'da renk ve boyutunu
    degistirebilirsiniz.</a></span></font></p>
@@ -1878,16 +1825,14 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
    <font color="#ffffff"><font size="3" style="font-size: 12pt"><i>Menü 1:
    Sol</i></font></font></p>
 
-   <table width="120" cellpadding="0" cellspacing="0">
+   <table width="140" cellpadding="0" cellspacing="0">
 
-   <col width="120"/>
+   <col width="140"/>
 
    <tr>
 
    <td width="120" valign="top" style="border: none; padding:
-   0in"><p><font color="#ffff6d">System
-
-   UI&nbsp;&nbsp;[&nbsp;]</font></p>
+   0in"><p><font color="#ffff6d">Sistem Arayüzü&nbsp;&nbsp;[&nbsp;]</font></p>
 
    </td>
 
@@ -1897,8 +1842,7 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
 
    <td width="120" valign="top" style="border: none; padding:
    0in"><p><font
-   color="#ffff6d">Menüler&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-   [&nbsp;]</font></p>
+   color="#ffff6d">Menüler&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[&nbsp;]</font></p>
 
    </td>
 
@@ -1907,8 +1851,8 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
    <tr>
 
    <td width="120" valign="top" style="border: none; padding: 0in"><p><a
-   href="https://www.juggluco.nl/Jugglucohelp/watchinfo.html"><font
-   color="#ffff6d">Watch</font></a></p>
+   href="https://www.juggluco.nl/Jugglucohelp/tr/watchinfo.html"><font
+   color="#ffff6d">Saat</font></a></p>
 
    </td>
 
@@ -1917,8 +1861,8 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
    <tr>
 
    <td width="120" valign="top" style="border: none; padding: 0in"><p><a
-   href="https://www.juggluco.nl/Jugglucohelp/sensorhelp.html"><font
-   color="#ffff6d">Sensor</font></a></p>
+   href="https://www.juggluco.nl/Jugglucohelp/tr/sensorhelp.html"><font
+   color="#ffff6d">Sensör</font></a></p>
 
    </td>
 
@@ -1929,9 +1873,9 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
    <td width="120" height="26" valign="top" style="border: none; padding:
    0in"><p>
 
-   <a href="https://www.juggluco.nl/Jugglucohelp/settinghelp.html"
+   <a href="https://www.juggluco.nl/Jugglucohelp/tr/settinghelp.html"
    onclick="location.href=this.href+\'?unit=\'+unitstr;return false;"><font
-   color="#ffff6d">Settings</font></a></p>
+   color="#ffff6d">Ayarlar</font></a></p>
 
    </td>
 
@@ -1977,13 +1921,13 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
    lang="tr-TR">specify</span></font><font color="#ffffff">
 
    </font><font color="#ffffff"><span lang="tr-TR"><a
-   href="https://www.juggluco.nl/Jugglucohelp/labelhelp.html">Etiketler</a
+   href="https://www.juggluco.nl/Jugglucohelp/tr/labelhelp.html">Etiketler</a
    >,
 
    set <a
-   href="https://www.juggluco.nl/Jugglucohelp/alarmhelp.html">glikoz
+   href="https://www.juggluco.nl/Jugglucohelp/tr/alarmhelp.html">glikoz
    alarmlari</a> and <a
-   href="https://www.juggluco.nl/Jugglucohelp/reminders.html">ilaç
+   href="https://www.juggluco.nl/Jugglucohelp/tr/reminders.html">ilaç
 
    hatirlaticilari</a></span></font><font color="#ffffff"> </font><font
    color="#ffffff"><span lang="tr-TR">ve görüntüleme araliklari. Sistem
@@ -2153,7 +2097,7 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
    saate gönderilip gönderilmeyecegini belirler.</p></li>
 
    <p style="line-height: 100%; margin-bottom: 0in"><a
-   href="https://www.juggluco.nl/Jugglucohelp/garminconfig.html"><b>Config
+   href="https://www.juggluco.nl/Jugglucohelp/tr/garminconfig.html"><b>Config
    </b></a>:
 
    Karanlik modu, Kisayollari ve Kimligi ayarlayin.</p>
@@ -2177,7 +2121,7 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
 <p><a href="https://www.juggluco.nl/Jugglucohelp/be/labelhelp.html">be</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/de/labelhelp.html">de</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/fr/labelhelp.html">fr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/it/labelhelp.html">it</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/nl/labelhelp.html">nl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pl/labelhelp.html">pl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pt/labelhelp.html">pt</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ru/labelhelp.html">ru</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/tr/labelhelp.html">tr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/uk/labelhelp.html">uk</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/zh/labelhelp.html">zh</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/labelhelp.html?lang=en">en</a>&emsp;&emsp;</p><h1>Miktar etiketleri</h1>
 
    <p style="margin-bottom: 0in; line-height: 115%">Buradan <a
-   href="https://www.juggluco.nl/Jugglucohelp/newlabelhelp.html">olusturab
+   href="https://www.juggluco.nl/Jugglucohelp/tr/newlabelhelp.html">olusturab
    ilirsiniz</a>,
 
    Insülin, karbonhidrat veya fiziksel aktiviteyi belirtmek için grafige
@@ -2217,13 +2161,13 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
 
    Miktarlari Libreview\'e göndermek için. &quot;<i>Miktarlari
    Gönder</i>&quot;i açmadan önce, <a
-   href="https://www.juggluco.nl/Jugglucohelp/setlibrenumtype.html">her
+   href="https://www.juggluco.nl/Jugglucohelp/tr/setlibrenumtype.html">her
    etiket için belirtmeniz gerekir</a> o etiket altinda girilen
 
    miktarlarin Libreview\'e nasil gönderilecegi. Etiketler kendileri Sol
    menü-&gt;Ayarlar-&gt;&quot\'da olusturulabilir, degistirilebilir ve
    silinebilir;<a
-   href="https://www.juggluco.nl/Jugglucohelp/labelhelp.html">Sayi
+   href="https://www.juggluco.nl/Jugglucohelp/tr/labelhelp.html">Sayi
    Etiketleri</a>&quot;.
 
    </p>
@@ -2292,7 +2236,7 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
    <p style="line-height: 100%; margin-bottom: 0in">Glikoz degerlerinin
    yani sira, miktarlar da Libreview\'e gönderilebilir. Bunun için &quot;<a
    class="western"
-   href="https://www.juggluco.nl/Jugglucohelp/librenumhelp.html"><i><b>Mik
+   href="https://www.juggluco.nl/Jugglucohelp/tr/librenumhelp.html"><i><b>Mik
    tarlari gönder</b></i></a>&quot; ögesine dokunmaniz ve her etiketin ne
    anlama geldigini belirtmeniz gerekir.</p>
 
@@ -2350,7 +2294,7 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
 
    geçmis degerlerini kullanir ve Juggluco istatistik ekraninda akis
    degerlerini kullanir (<a class="western"
-   href="https://www.juggluco.nl/Jugglucohelp/stathelp.html">sol
+   href="https://www.juggluco.nl/Jugglucohelp/tr/stathelp.html">sol
 
    orta menü-&gt;Istatistikler</a>). Bu fark, Libreview ile Juggluco
    istatistikleri arasinda küçük farklara neden olur. Akis degerleri daha
@@ -2373,11 +2317,11 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
    gelir.</p>
 
    <p><a class="western"
-   href="https://www.juggluco.nl/Jugglucohelp/getaccountidhelp.html"><b>He
+   href="https://www.juggluco.nl/Jugglucohelp/tr/getaccountidhelp.html"><b>He
    sap Kimligini Al</b></a>: Yalnizca LibreView hesap kimligini almak
    istiyorsaniz, ancak Libreview\'e veri göndermek istemiyorsaniz, E-posta
    adresinizi ve Parolanizi girebilir ve &quot;<a class="western"
-   href="https://www.juggluco.nl/Jugglucohelp/getaccountidhelp.html"><i>He
+   href="https://www.juggluco.nl/Jugglucohelp/tr/getaccountidhelp.html"><i>He
    sap Kimligini Al</i></a>&quot; dügmesine basabilirsiniz. Bu dügmeden
    önceki ayni satirda, Hesap Kimligi gösterilecektir (bu biraz zaman
    alabilir ve ekran otomatik olarak yenilenmez). Hesap Kimligini
@@ -2431,11 +2375,13 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
    listesine gelirsiniz. Orada <i>Tanimla</i>\'ya basarak yeni bir içerik
    tanimlayabilirsiniz. Burada daha sonra o içerigin adini ve karbonhidrat
    içerigini istenilen birimde belirleyebilirsiniz. Ayrica, <i><a
-   href="https://www.juggluco.nl/Jugglucohelp/nutrients.html">Veritabani</
-   a></i>\'na basarak bir gida bilesimi veritabanina girebilir, burada
+   href="https://www.juggluco.nl/Jugglucohelp/tr/nutrients.html">Veritabani</a></i>\'na basarak bir gida bilesimi veritabanina girebilir, burada
    içerikleri arayabilir ve bir gidanin bilesimini görebilir ve
    <i>Seç</i>\'e basarak bu gidanin adini ve karbonhidrat içerigini bir
    içerik tanimina ekleyebilirsiniz.</p>
+   <p><br></p>
+   <p><br></p>
+   <p><br></p>
 
    ]]>
 </string>
@@ -2460,10 +2406,7 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
 <p><a href="https://www.juggluco.nl/Jugglucohelp/de/newamount.html">de</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/nl/newamount.html">nl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pl/newamount.html">pl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ru/newamount.html">ru</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/tr/newamount.html">tr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/zh/newamount.html">zh</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/newamount.html?lang=en">en</a>&emsp;&emsp;</p><h1>Yeni Miktar</h1>
 
    <p><b>Yeni miktar</b> sayesinde bir etiket ile iliskili sayilari
-   girebilirsiniz. Etiketleri sol menü->Ayarlar-><a
-   href="https://www.juggluco.nl/Jugglucohelp/labelhelp.html">Sayi
-
-   Etiketleri</a> altinda ayarlayabilirsiniz. Etiketle girilen
+   girebilirsiniz. Etiketleri sol menü->Ayarlar-><a href="https://www.juggluco.nl/Jugglucohelp/tr/labelhelp.html">Sayi Etiketleri</a> altinda ayarlayabilirsiniz. Etiketle girilen
    <i>Miktarlar</i>, grafikte belirlenen yükseklikte gösterilecektir.</p>
 
    <p>Daha sonra uzun basarak miktari degistirebilirsiniz. Ayrica Sol orta
@@ -2472,11 +2415,7 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
 
    <p>Ayrica, NFC kalemini tarayarak
 
-   a href="https://www.juggluco.nl/Juggluco/index.html#novopens"
-   onclick="location.href=\'https://www.juggluco.nl/Juggluco/index.html?uni
-   t=\'+unitstr+\'#novopens\';return false;">NovoPen®
-
-   6 veya NovoPen Echo® Plus</a>\'tan <b>Insülin</b> doz verilerini almak
+   <a href="https://www.juggluco.nl/Juggluco/index.html#novopens">NovoPen® 6 veya NovoPen Echo® Plus</a>\'tan <b>Insülin</b> doz verilerini almak
    da mümkündür. Taramadan sonra Juggluco\'da hangi etiket altinda dozlarin
    kaydedilecegini degistirebilir ve dozlari belirli bir tarih ve saatten
    <b>sonraki</b> dozlarla sinirlayabilirsiniz.
@@ -2485,14 +2424,9 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
    araciligiyla Juggluco tarafindan alinmasi 30 saniyeden fazla
    sürebilir.</p>
 
-   <p>Sol menü-&gt;Ayarlar-&gt;<a
-   href="https://www.juggluco.nl/Jugglucohelp/labelhelp.html">Sayi
-
-   Etiketleri</a> altinda bir ögünün karbonhidratlarini hangi etikete
+   <p>Sol menü-&gt;Ayarlar-&gt;<a href="https://www.juggluco.nl/Jugglucohelp/tr/labelhelp.html">Sayi Etiketleri</a> altinda bir ögünün karbonhidratlarini hangi etikete
    girdiginiz de belirtilir. <i>Yeni miktar</i>\'da, bu etiket için bir
-   <b>Yemek</b> dügmesi görüntülenir. Bu <a
-   href="https://www.juggluco.nl/Jugglucohelp/mealhelp.html"><i>Yemek</i><
-   /a>
+   <b>Yemek</b> dügmesi görüntülenir. Bu <a href="https://www.juggluco.nl/Jugglucohelp/tr/mealhelp.html"><i>Yemek</i></a>
 
    dügmesine dokundugunuzda, bir ögünü bilesenlerine göre
 
@@ -2545,7 +2479,7 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
    &quot;Ver <i>miktarlar</i>&quot;i açmadan önce, her etiket için o
    etiketin altina girilen miktarlarin nasil verilecegini belirtmeniz
    gerekir. Etiketler, Sol menü-&gt;Ayarlar-&gt;&quot;<a
-   href="https://www.juggluco.nl/Jugglucohelp/labelhelp.html">Sayi
+   href="https://www.juggluco.nl/Jugglucohelp/tr/labelhelp.html">Sayi
    Etiketleri</a>&quot;\'nden olusturulabilir, degistirilebilir ve
    silinebilir.</p>
 
@@ -2752,9 +2686,7 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
    Titresim</p>
 
    <p style="line-height: 100%; margin-bottom: 0in"><b>Rahatsiz
-   etme</b>:Eger
-
-   &quot;<i>Rahatsiz Etmeyin</i>&quot; açiksa, bir alarm çalmadan önce onu
+   etme</b>: Eger &quot;<i>Rahatsiz Etmeyin</i>&quot; açiksa, bir alarm çalmadan önce onu
    kapatin. Eger Juggluco bunun için gereken izne sahip degilse,
    Juggluco\'ya bu izni vermek için bir Android ayarlari ekranina
    yönlendirileceksiniz. &quot;<i>Rahatsiz Etmeyin</i>&quot; özelligini
@@ -2837,7 +2769,7 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
    <p style="line-height: 115%; margin-bottom: 0in"><font
    color="#4f81bd"><font face="Cambria, serif"><font size="3"
    style="font-size: 12pt"><span style="letter-spacing: 0.8pt"><span
-   lang="tr-TR"><i>Scan</i></span></span></font></font></font><span
+   lang="tr-TR"><i>Tarama</i></span></span></font></font></font><span
    lang="tr-TR">:
 
    Taramadan hemen sonra gösterilen deger.</span></p>
@@ -2857,7 +2789,7 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
    <p style="line-height: 115%; margin-bottom: 0in"><font
    color="#4f81bd"><font face="Cambria, serif"><font size="3"
    style="font-size: 12pt"><span style="letter-spacing: 0.8pt"><span
-   lang="tr-TR"><i>Stream</i></span></span></font></font></font><span
+   lang="tr-TR"><i>Akış</i></span></span></font></font></font><span
    lang="tr-TR">:
 
    Freestyle
@@ -2939,7 +2871,7 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
    bilginin gösterilecegi sensörü seçebilirsiniz.</p>
 
    <p style="border: none; padding: 0in"><a
-   href="https://www.juggluco.nl/Jugglucohelp/battery.html"><i><b>Uyku
+   href="https://www.juggluco.nl/Jugglucohelp/tr/battery.html"><i><b>Uyku
    Modu</b></i></a> Juggluco\'nun çalismasini engelleyebilecek Juggluco
    için pil optimizasyonlarinin nasil devre disi birakilacagina dair
    bilgilerin bulundugu bir ekrana yönlendirir.</p>
@@ -3226,7 +3158,7 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
    bilmiyorum. Alarmlar da bildirim üretir.</p>
 
    <h2 class="western"><a
-   href="https://www.juggluco.nl/Jugglucohelp/floatingconfig.html"
+   href="https://www.juggluco.nl/Jugglucohelp/tr/floatingconfig.html"
    onclick="location.href=this.href+\'?unit=\'+unitstr;return false;">Yüzen
    glikoz</a></h2>
 
@@ -3237,7 +3169,7 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
    yönlendirileceksiniz.</p>
 
    <h2 class="western"><a
-   href="https://www.juggluco.nl/Jugglucohelp/alarmhelp.html">Alarmlar</a>
+   href="https://www.juggluco.nl/Jugglucohelp/tr/alarmhelp.html">Alarmlar</a>
    </h2>
 
    <p>Yüksek ve düsük glikoz alarmlari, sinyal kaybi alarmi ve deger
@@ -3245,7 +3177,7 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
    mevcut bildirimini ayarlayin.</p>
 
    <h2 class="western"><a
-   href="https://www.juggluco.nl/Jugglucohelp/labelhelp.html">Sayi
+   href="https://www.juggluco.nl/Jugglucohelp/tr/labelhelp.html">Sayi
    Etiketleri</a></h2>
 
    <p style="margin-bottom: 0in">Miktarlar için kullanilan etiketleri
@@ -3256,7 +3188,7 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
    uygulamasina gönderilir.</p>
 
    <h2 class="western"><a
-   href="https://www.juggluco.nl/Jugglucohelp/exchangehelp.html">Veri
+   href="https://www.juggluco.nl/Jugglucohelp/tr/exchangehelp.html">Veri
    Degisimi</a></h2>
 
    <p>Juggluco\'dan diger uygulamalara veya sunuculara veri göndermenin
@@ -3264,7 +3196,7 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
    gidin-&gt;Saat.)</p>
 
    <h2 class="western"><a
-   href="https://www.juggluco.nl/Jugglucohelp/reminders.html">Hatirlaticil
+   href="https://www.juggluco.nl/Jugglucohelp/tr/reminders.html">Hatirlaticil
    ar</a></h2>
 
    <p style="margin-bottom: 0in">Belirli bir zaman dilimi içerisinde
@@ -3272,7 +3204,7 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
    ayarlayin.</p>
 
    <h2 class="western"><a
-   href="https://www.juggluco.nl/Jugglucohelp/displayhelp.html">Görüntü</a
+   href="https://www.juggluco.nl/Jugglucohelp/tr/displayhelp.html">Görüntü</a
    ></h2>
 
    <p>Hedef araligindan dile kadar verilerin nasil görüntülenecegiyle
@@ -3341,7 +3273,7 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
 
    <p>Ekranin solunda, belirli glikoz araliklarina düsen ölçümlerin
    yüzdesi bulunur. Standart araliklar her zaman gösterilir. <a
-   href="https://www.juggluco.nl/Jugglucohelp/displayhelp.html">sol
+   href="https://www.juggluco.nl/Jugglucohelp/tr/displayhelp.html">sol
 
    menü-&gt;Ayarlar-&gt;Görüntü</a>\'de standart olmayan bir hedef araligi
    belirlenirse hedefte geçen süre, standart araliklarin altinda
@@ -3357,8 +3289,7 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
    A1c (Nathan</span> <span lang="tr-TR">et al (2008)). Bakiniz
 
    <a
-   href="https://professional.diabetes.org/diapro/glucose_calc">https://pr
-   ofessional.diabetes.org/diapro/glucose_calc</a></span>
+   href="https://professional.diabetes.org/diapro/glucose_calc">https://professional.diabetes.org/diapro/glucose_calc</a></span>
 
    <span lang="tr-TR">hesaplamak için.</span></p>
 
@@ -3595,8 +3526,7 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
    düsükse düsen glikoz anlamina gelir.</p>
 
    <h2 class="western"><a
-   href="https://www.juggluco.nl/Jugglucohelp/kerfstok.html">Kerfstok</a><
-   /h2>
+   href="https://www.juggluco.nl/Jugglucohelp/tr/kerfstok.html">Kerfstok</a></h2>
 
    <p style="line-height: 100%; margin-bottom: 0in"><span
    lang="tr-TR">Kerfstok, sayilar (insülin dozlari gibi) girebileceginiz
@@ -3636,17 +3566,15 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
    Glucodata Yayinindan glikoz degerlerini alabilirsiniz (bkz. Sol
 
    menü-&gt;Ayarlar-&gt;<a
-   href="https://www.juggluco.nl/Jugglucohelp/exchangehelp.html">Veri
+   href="https://www.juggluco.nl/Jugglucohelp/tr/exchangehelp.html">Veri
    Degisimi</a>).</p>
 
    <h2 class="western"><a
-   href="https://www.juggluco.nl/Jugglucohelp/Nightscouthelp.html">xDri
+   href="https://www.juggluco.nl/Jugglucohelp/tr/Nightscouthelp.html">xDri
    p saat uygulamalari</a></h2>
 
    <p style="line-height: 100%; margin-bottom: 0in"><span
-   lang="tr-TR">Juggluco
-
-   bir xDrip/Nightscout</span> <span lang="tr-TR">web sunucusunu içerir.
+   lang="tr-TR">Juggluco bir xDrip/Nightscout</span> <span lang="tr-TR">web sunucusunu içerir.
 
    Bu, xDrip saat uygulamalarini dogrudan Juggluco ile kullanmayi mümkün
    kilar. xDrip yalnizca her 5 dakikada bir yeni bir glikoz degeri
@@ -3699,9 +3627,9 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
    lang="tr-TR">Daha önce
 
    Juggluco\'daki web sunucusunu bir saat yüzüyle
-   kullanabiliyordunuz</span> <span lang="tr-TR">Fitbit için
+   kullanabiliyordunuz</span> <span lang="tr-TR"><b>Fitbit</b> için
 
-   </span><span lang="tr-TR"><b>:
+   </span><span lang="tr-TR">:
 
    <a href="https://glancewatchface.com/">https://glancewatchface.com</a>
 
@@ -3730,7 +3658,7 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
    luco.nl/Juggluco/webserver.html</a></span></p>
 
    <h2 class="western"><a
-   href="https://www.juggluco.nl/Jugglucohelp/wearosinfo.html">WearOS
+   href="https://www.juggluco.nl/Jugglucohelp/tr/wearosinfo.html">WearOS
 
    Juggluco</a></h2>
 
@@ -3758,7 +3686,7 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
 
    <p><strong>Varsayilanlar</strong>: Bu, baglanti ayarlarini varsayilan
    degerlere döndürür. Bu, saatin Sol menüsü-&gt;<a
-   href="https://www.juggluco.nl/Jugglucohelp/connectionoverview.html">Ayn
+   href="https://www.juggluco.nl/Jugglucohelp/tr/connectionoverview.html">Ayn
    a(Klon)</a>\'da ve telefonun sol orta menüsü-&gt;Ayna(Klon)\'da
    degistirilebilen ayarlarla ilgilidir. Bu, &quot;<i>Yalnizca
    Etkin</i>&quot; ve &quot;<i>Taramalar"</i> gibi ayarlardan olusur.
@@ -3811,7 +3739,7 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
    Juggluco\'nun Wear OS sürümünü saatinize yükleyin ve baslatin;</p></li>
 
    <li><p>Telefonda, sol menüye gidin-&gt;Saat-&gt;<a
-   href="https://www.juggluco.nl/Jugglucohelp/wearosinfo.html">Wear
+   href="https://www.juggluco.nl/Jugglucohelp/tr/wearosinfo.html">Wear
 
    OS Yapilandir</a>. Saatiniz spinner\'da görüntülenmelidir.
 
@@ -3825,7 +3753,7 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
    edebilirsiniz (telefon:
 
    sol orta menü-&gt;<a
-   href="https://www.juggluco.nl/Jugglucohelp/connectionoverview.html">Ayn
+   href="https://www.juggluco.nl/Jugglucohelp/tr/connectionoverview.html">Ayn
    a(Klon)</a>,
 
    saat: sol-menü-&gt;Ayna(Klon)). Saatiniz için spinner\'da gösterilenle
@@ -4050,7 +3978,7 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
    etkinliginizi izleyen rastgele saat yüzlerini veya uygulamalari
    kullanirken mevcut glikoz degerinizi görebilirsiniz. Daha fazla bilgi
    için, Juggluco\'nun telefon sürümünde, sol menü -&gt; Ayarlar -&gt; <a
-   href="https://www.juggluco.nl/Jugglucohelp/floatingconfig.html">Yüzen
+   href="https://www.juggluco.nl/Jugglucohelp/tr/floatingconfig.html">Yüzen
 
    glikoz</a> -&gt; Yardim\'a bakin.</p>
 
@@ -4059,7 +3987,7 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
    <p style="margin-bottom: 0in">Eslik eden uygulamadan, Sol
 
    orta menü-><a
-   href="https://www.juggluco.nl/Jugglucohelp/connectionoverview.html">Ayn
+   href="https://www.juggluco.nl/Jugglucohelp/tr/connectionoverview.html">Ayn
    a</a> altinda açiklandigi gibi internet üzerinden diger cihazlara
    tekrar gönderebilirsiniz.
 
@@ -4148,9 +4076,7 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
    <p>IOB formüllerinin nasil belirlendigi asagidaki web sayfasinda
    açiklanmistir:
 
-   <a
-   href="https://www.juggluco.nl/Juggluco/IOB/overview.html">https://www.j
-   uggluco.nl/Juggluco/IOB/overview.html</a></p>
+   <a href="https://www.juggluco.nl/Juggluco/IOB/overview.html">https://www.juggluco.nl/Juggluco/IOB/overview.html</a></p>
 
    <p>Eger kullandiginiz hizli etkili insülin listede yoksa bana e-posta
    gönderebilirsiniz.</p>
@@ -4206,7 +4132,7 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
    veri alabilir.</p>
 
    <h2 class="western"><a
-   href="https://www.juggluco.nl/Jugglucohelp/libreview.html">Libreview</a
+   href="https://www.juggluco.nl/Jugglucohelp/tr/libreview.html">Libreview</a
    ></h2>
 
    <p>Freestyle Libre 2 ve 3 glikoz degerlerini ve miktarlarini
@@ -4248,7 +4174,7 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
    görüntüler. Bu özelligi kullanmak için sol menüde <b>Saat</b>\'in
    altindaki <i>&quot;Web Sunucusu&quot;</i>\'nu kontrol edin. Daha fazla
    bilgi için sol menüdeki Yardim\'a bakin-&gt;<a
-   href="https://www.juggluco.nl/Jugglucohelp/watchinfo.html">Saat</a>
+   href="https://www.juggluco.nl/Jugglucohelp/tr/watchinfo.html">Saat</a>
 
    xDrip web sunucusu tarafindan kullanilan ag portunu yalnizca bir
    uygulama dinleyebilir, bu nedenle Juggluco\'dakini kullanmak
@@ -4320,7 +4246,7 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
    istediginiz uygulamalari kontrol edin.</p>
 
    <h2 class="western"><a
-   href="https://www.juggluco.nl/Jugglucohelp/Nightscouthelp.html">Web
+   href="https://www.juggluco.nl/Jugglucohelp/tr/Nightscouthelp.html">Web
 
    server</a></h2>
 
@@ -4328,13 +4254,13 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
    sunucusu. Daha önce xDrip web sunucusu olarak adlandiriliyordu.</p>
 
    <h2 class="western"><a
-   href="https://www.juggluco.nl/Jugglucohelp/NightPost.html">Karsiya
+   href="https://www.juggluco.nl/Jugglucohelp/tr/NightPost.html">Karsiya
    Yükleyici</a></h2>
 
    <p>Nightscout sunucusuna veri yükleyin.</p>
 
    <h2 class="western"><a
-   href="https://www.juggluco.nl/Jugglucohelp/connectionoverview.html">Mir
+   href="https://www.juggluco.nl/Jugglucohelp/tr/connectionoverview.html">Mir
    ror/Clone</a></h2>
 
    <p lang="tr-TR" style="line-height: 100%; margin-bottom: 0in">Tüm
@@ -4342,7 +4268,7 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
    Juggluco\'ya gönderin. Mevcut verilerin üzerine yazilacaktir.</p>
 
    <h2 class="western"><a
-   href="https://www.juggluco.nl/Jugglucohelp/helpexport.html">Disa
+   href="https://www.juggluco.nl/Jugglucohelp/tr/helpexport.html">Disa
    Aktar</a></h2>
 
    <p>Verileri bir dosyaya kaydedin.</p>
@@ -4360,7 +4286,7 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
 <p><a href="https://www.juggluco.nl/Jugglucohelp/de/displayhelp.html">de</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/nl/displayhelp.html">nl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/tr/displayhelp.html">tr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/displayhelp.html?lang=en">en</a>&emsp;&emsp;</p><h1>Görüntü ayarlari</h1>
 
    <h2 class="western"><a
-   href="https://www.juggluco.nl/Jugglucohelp/colorhelp.html"><span
+   href="https://www.juggluco.nl/Jugglucohelp/tr/colorhelp.html"><span
    lang="tr-TR">Renkler</span></a></h2>
 
    <p style="margin-bottom: 0in">Egrilerin, taramalarin ve
@@ -4447,7 +4373,7 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
    uygun degil.</p>
 
    <h2 class="western"><a
-   href="https://www.juggluco.nl/Jugglucohelp/IOBhelp.html">Insulin
+   href="https://www.juggluco.nl/Jugglucohelp/tr/IOBhelp.html">Insulin
    onboard (IOB)</a></h2>
 
    <p><span lang="tr-TR">IOB, önceki dozlardan kanda ne kadar insülin
@@ -4455,7 +4381,7 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
    "</span><span lang="tr-TR"><i>HizliEtkili</i></span><span
    lang="tr-TR">" kategorisindeki bir etiketin altina girmelisiniz. Sol
    menü->Ayarlar->Veri Degisimi->Web Sunucusu-><a
-   href="https://www.juggluco.nl/Jugglucohelp/setlibrenumtype.html">Miktar
+   href="https://www.juggluco.nl/Jugglucohelp/tr/setlibrenumtype.html">Miktar
    lari Gir</a> altindan
 
    hangi etiketlerin "</span><span
@@ -4505,11 +4431,7 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
    yasadiginiz sorunlarin açiklamasina ek olarak trace.log ve
    logcat.txt\'yi
 
-   <a
-   href="mailto:jaapkorthalsaltes@gmail.com?subject=Log%20files">jaapkorth
-   alsaltes@gmail.com adresine gönderebilirsiniz</a>
-
-   </p>
+   <a href="mailto:jaapkorthalsaltes@gmail.com?subject=Log%20files">jaapkorthalsaltes@gmail.com</a> adresine gönderebilirsiniz.</p>
 
    <p style="line-height: 100%; margin-bottom: 0in"><b>File size</b>:
 
@@ -4582,7 +4504,7 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
    tekrar taramaniz gerekir.</p>
 
    <p><a
-   href="https://www.juggluco.nl/Jugglucohelp/sensorhelp.html"><b>Bluet
+   href="https://www.juggluco.nl/Jugglucohelp/tr/sensorhelp.html"><b>Bluet
    ooth kullanin</b></a>: Bu cihazi dogrudan Bluetooth üzerinden
    sensörlerle baglayin. Bunu, hangi cihazin sensörlerle dogrudan baglanti
    kuracagini degistirmek için kullanabilirsiniz. Daha önce sensörle
@@ -4590,11 +4512,7 @@ To modify, change the html files in https://github.com/j-kaltes/Jugglucohelp -->
    <i>Akis</i> degerlerinin ters yönde gönderilmesi için her iki cihazda
    da klon (ayna) ayarlarini degistirmeniz gerekir. Diger taraf bir WearOS
    saati oldugunda, bunu tek bir dügmeyle yapabilirsiniz: <a
-   href="https://www.juggluco.nl/Jugglucohelp/wearosinfo.html">Sol
-
-   menü->Watch->WearOS config</a>->"Dogrudan sensör-saat
-
-   baglantisi".
+   href="https://www.juggluco.nl/Jugglucohelp/tr/wearosinfo.html">Sol menü->Watch->WearOS config</a> -> "Dogrudan sensör-saat baglantisi".
 
    </p>
 

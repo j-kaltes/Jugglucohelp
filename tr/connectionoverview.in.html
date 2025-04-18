@@ -1,151 +1,53 @@
-   <!DOCTYPE html>
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<title></title>
+<meta name="generator" content="LibreOffice 7.5.2.2 (Linux)"/>
+<meta name="created" content="2021-07-03T11:12:10.718650249"/>
+<meta name="changed" content="2023-05-15T21:07:48.437976671"/>
+<style type="text/css">
+@page { size: 8.27in 11.69in; margin: 0.79in }
+p { line-height: 115%; margin-bottom: 0.1in; background: transparent }
+a.cjk:link { so-language: zxx }
+a.ctl:link { so-language: zxx }
+</style>
+</head>
+<img src="mirroroverview.png" style="object-fit:contain; width:15cm; height:auto;">
+<body lang="tr-TR" dir="ltr"><h1>Klon (Yansıtma)</h1>
+<p style="line-height: 100%; margin-bottom: 0in"><span lang="tr-TR">Başka bir cihaza veri gönderin veya başka bir cihazdan veri alın. Juggluco çalıştıran bir android cihaza bağlanarak verileri burada olduğu gibi görüntüleyebilirsiniz.</span> <span lang="tr-TR">Tarama verilerini aldıktan sonra, ayna (klon) cihazı sensörle Bluetooth üzerinden de iletişim kurabilir. Cihazlardan yalnızca birinin sensörle iletişim kurduğundan emin olmak için, Akış değerleri IP/TCP üzerinden geldiğinde &quot;</span><span lang="tr-TR"><i>Bluetooth üzerinden Sensör</i></span><span lang="tr-TR">&quot; otomatik olarak kapatılır.</span></p>
+<p style="line-height: 100%; margin-bottom: 0in">Bu ekranda <i>wlan</i>'dan sonra bu cihazın yerel wlan IP'si gösterilir, bunu bağlandığınız ev ağınızdaki diğer cihazda (ya da uzaktan bağlanıyorsanız modeminizde) belirtmeniz gerekir.</p>
+<p style="line-height: 100%; margin-bottom: 0in"><i>Port</i>'tan sonra, bu uygulamanın bağlantılar için dinlediği TCP portunu değiştirebilirsiniz.</p>
+<p style="line-height: 100%; margin-bottom: 0in"><i><b>
+<a href="https://www.juggluco.nl/Jugglucohelp/tr/addconnection.html">Bağlantı ekle</a></b></i>'ye tıklayarak hangi ana bilgisayarlara nasıl bağlanacağınızı belirtebilirsiniz.</p>
+<p style="line-height: 100%; margin-bottom: 0in">Güvenilir bir ağ bağlantısı Android'de pil optimizasyonu ve arka plan kısıtlamaları nedeniyle kesintiye uğrarsa, <b><a href="https://www.juggluco.nl/Jugglucohelp/tr/battery.html">Uyku modu</a></b>na basmak bunu değiştirmenize yardımcı olur.</p>
+<p style="line-height: 100%; margin-bottom: 0in">Juggluco bir Ayna (klon) uygulaması olarak çalışıyorsa (Juggluco çalıştıran başka bir cihazdan glikoz değerlerini alıyorsa), düşük ve yüksek glikoz alarmlarını ve ilgili bildirimleri belirleyebileceğiniz bir iletişim kutusuna gitmek için <b>Alarmlar</b>'a basabilirsiniz.</p>
+<p style="line-height: 100%; margin-bottom: 0in"><b>Mirror (klon), bir</b><b>bağlantı gönderir:</b>Uygulama, başka bir cihazda çalışan bu uygulamadan ilaç, yiyecek ve spor verisi miktarları alırsa, bu bilgileri burada eklememeli veya değiştirmemelisiniz. Kontrol etmek bunu imkansız hale getirir.
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><b>Sync</b> Bağlı cihaza yeni veri gönderir veya ister.
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><b>Yeniden Başlat</b>:
+Mevcut bağlantıyı kapatır ve yeni bir bağlantı oluşturur.</p>
+<p style="line-height: 100%; margin-bottom: 0in"><b>Wifi</b> (sadece WearOS'ta):Bu ayar kapalı olduğunda, WearOS pil ömrünü korumak için bir süre sonra WIFI'yi otomatik olarak kapatır ve Juggluco, telefon ile saat arasındaki bağlantı için Bluetooth kullanımına geçer. 
+Açık olduğunda ise, WearOS'tan WIFI'yi açık tutması istenir ve kapanması daha uzun sürer, ancak yine de kapanabilir. Bu seçeneği ayarlamak normalde gerekli değildir ve WearOS üreticileri WIFI'yi açmanın pil kullanımını arttıracağını düşünüyor.</p>
+<p style="line-height: 100%; margin-bottom: 0in">Mevcut bağlantılar bir listede gösterilir, etiket, IP portu ve son başarılı senkronizasyonun ayı, günü ve saati gösterilir.
+</p>
+<p style="line-height: 100%; margin-bottom: 0in">Bağlantının nasıl kullanıldığı aşağıdaki gibi kısaltılmıştır:</p>
+<p style="line-height: 100%; margin-bottom: 0in">n: miktarlar (sayılar)</p>
+<p style="line-height: 100%; margin-bottom: 0in">s: taramalar</p>
+<p style="line-height: 100%; margin-bottom: 0in">b: akış (bluetooth)</p>
+<p style="line-height: 100%; margin-bottom: 0in">r: alınan</p>
+<p style="line-height: 100%; margin-bottom: 0in"><br/>
 
-   <html>
+</p>
+<p style="line-height: 100%; margin-bottom: 0in">Daha fazla bilgi için Mirror (klon) bağlantıları hakkında yardım bölümünü okuyun&quot;<i><a href="https://www.juggluco.nl/Jugglucohelp/tr/addconnection.html">Bağlantı ekle</a></i>&quot;
+Ayrıca bakınız <a class="western" href="https://www.juggluco.nl/Juggluco/index.html#mirror">https://www.juggluco.nl/Juggluco/index.html#mirror</a></p>
+<h1>Masaüstü bilgisayar</h1>
+<p>Android Juggluco uygulamasını bir Android Emülatörü yardımıyla Windows, Macintosh veya Linux bilgisayarda çalıştırabilirsiniz (örneğin <a class="western" href="https://www.genymotion.com/">Genymotion</a>).
+Emülatördeki Juggluco, sensöre bağlı bir Android telefondan bir Mirror (klon) bağlantısı aracılığıyla veri alır. Pinch
+hareketleri (iki parmağı birbirine doğru yakınlaştırma veya uzaklaştırma) fare işaretçisini hareket ettirirken bir tuşa (Genymotion'da Kontrol) basılarak simüle edilebilir.</p>
+<p style="line-height: 100%; margin-bottom: 0in"><br/>
 
-   <head>
-
-   <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-
-   <title></title>
-
-   <meta name="generator" content="LibreOffice 7.5.2.2 (Linux)"/>
-
-   <meta name="created" content="2021-07-03T11:12:10.718650249"/>
-
-   <meta name="changed" content="2023-05-15T21:07:48.437976671"/>
-
-   <style type="text/css">
-
-   @page { size: 8.27in 11.69in; margin: 0.79in }
-
-   p { line-height: 115%; margin-bottom: 0.1in; background: transparent }
-
-   a.cjk:link { so-language: zxx }
-
-   a.ctl:link { so-language: zxx }
-
-   </style>
-
-   </head>
-
-   <img src="mirroroverview.png" style="object-fit:contain; width:15cm;
-   height:auto;">
-
-   <body lang="tr-TR" dir="ltr"><h1>Klon (Yansitma)</h1>
-
-   <p style="line-height: 100%; margin-bottom: 0in"><span
-   lang="tr-TR">Baska bir cihaza veri gönderin veya baska bir cihazdan
-   veri alin. Juggluco çalistiran bir android cihaza baglanarak verileri
-   burada oldugu gibi görüntüleyebilirsiniz.</span> <span
-   lang="tr-TR">Tarama verilerini aldiktan sonra, ayna (klon) cihazi
-   sensörle Bluetooth üzerinden de iletisim kurabilir. Cihazlardan
-   yalnizca birinin sensörle iletisim kurdugundan emin olmak için, Akis
-   degerleri IP/TCP üzerinden geldiginde &quot;</span><span
-   lang="tr-TR"><i>Bluetooth üzerinden Sensör</i></span><span
-   lang="tr-TR">&quot; otomatik olarak kapatilir.</span></p>
-
-   <p style="line-height: 100%; margin-bottom: 0in">Bu ekranda
-   <i>wlan</i>'dan sonra bu cihazin yerel wlan IP'si gösterilir, bunu
-   baglandiginiz ev aginizdaki diger cihazda (ya da uzaktan
-   baglaniyorsaniz modeminizde) belirtmeniz gerekir.</p>
-
-   <p style="line-height: 100%; margin-bottom: 0in"><i>Port</i>'tan sonra,
-   bu uygulamanin baglantilar için dinledigi TCP portunu
-   degistirebilirsiniz.</p>
-
-   <p style="line-height: 100%; margin-bottom: 0in"><i><b>
-
-   <a
-   href="https://www.juggluco.nl/Jugglucohelp/tr/addconnection.html">Bagla
-   nti ekle</a></b></i>'ye tiklayarak hangi ana bilgisayarlara nasil
-   baglanacaginizi belirtebilirsiniz.</p>
-
-   <p style="line-height: 100%; margin-bottom: 0in">Güvenilir bir ag
-   baglantisi Android'de pil optimizasyonu ve arka plan kisitlamalari
-   nedeniyle kesintiye ugrarsa, <b><a
-   href="https://www.juggluco.nl/Jugglucohelp/tr/battery.html">Uyku
-   modu</a></b>na basmak bunu degistirmenize yardimci olur.</p>
-
-   <p style="line-height: 100%; margin-bottom: 0in">Juggluco bir Ayna
-   (klon) uygulamasi olarak çalisiyorsa (Juggluco çalistiran baska bir
-   cihazdan glikoz degerlerini aliyorsa), düsük ve yüksek glikoz
-   alarmlarini ve ilgili bildirimleri belirleyebileceginiz bir iletisim
-   kutusuna gitmek için <b>Alarmlar</b>'a basabilirsiniz.</p>
-
-   <p style="line-height: 100%; margin-bottom: 0in"><b>Mirror (klon),
-   bir</b><b>baglanti gönderir:</b> Uygulama, baska bir cihazda çalisan bu
-   uygulamadan ilaç, yiyecek ve spor verisi miktarlari alirsa, bu
-   bilgileri burada eklememeli veya degistirmemelisiniz. Kontrol etmek
-   bunu imkansiz hale getirir.
-
-   </p>
-
-   <p style="line-height: 100%; margin-bottom: 0in"><b>Sync</b> Bagli
-   cihaza yeni veri gönderir veya ister.
-
-   </p>
-
-   <p style="line-height: 100%; margin-bottom: 0in"><b>Yeniden Baslat</b>:
-
-   Mevcut baglantiyi kapatir ve yeni bir baglanti olusturur.</p>
-
-   <p style="line-height: 100%; margin-bottom: 0in"><b>Wifi</b> (sadece
-   WearOS'ta): Bu ayar kapali oldugunda, WearOS pil ömrünü korumak için bir
-   süre sonra WIFI'yi otomatik olarak kapatir ve Juggluco, telefon ile
-   saat arasindaki baglanti için Bluetooth kullanimina geçer.
-
-   Açik oldugunda ise, WearOS'tan WIFI'yi açik tutmasi istenir ve
-   kapanmasi daha uzun sürer, ancak yine de kapanabilir. Bu seçenegi
-   ayarlamak normalde gerekli degildir ve WearOS üreticileri WIFI'yi
-   açmanin pil kullanimini arttiracagini düsünüyor.</p>
-
-   <p style="line-height: 100%; margin-bottom: 0in">Mevcut baglantilar bir
-   listede gösterilir, etiket, IP portu ve son basarili senkronizasyonun
-   ayi, günü ve saati gösterilir.
-
-   </p>
-
-   <p style="line-height: 100%; margin-bottom: 0in">Baglantinin nasil
-   kullanildigi asagidaki gibi kisaltilmistir:</p>
-
-   <p style="line-height: 100%; margin-bottom: 0in">n: miktarlar
-   (sayilar)</p>
-
-   <p style="line-height: 100%; margin-bottom: 0in">s: taramalar</p>
-
-   <p style="line-height: 100%; margin-bottom: 0in">b: akis
-   (bluetooth)</p>
-
-   <p style="line-height: 100%; margin-bottom: 0in">r: alinan</p>
-
-
-   <p style="line-height: 100%; margin-bottom: 0in">Daha fazla bilgi için
-   Mirror (klon) baglantilari hakkinda yardim bölümünü okuyun&quot;<i><a
-   href="https://www.juggluco.nl/Jugglucohelp/tr/addconnection.html">Bagla
-   nti ekle</a></i>&quot;
-
-   Ayrica bakiniz <a class="western"
-   href="https://www.juggluco.nl/Juggluco/index.html#mirror">https://www.j
-   uggluco.nl/Juggluco/index.html#mirror</a></p>
-
-   <h1>Masaüstü bilgisayar</h1>
-
-   <p>Android Juggluco uygulamasini bir Android Emülatörü yardimiyla
-   Windows, Macintosh veya Linux bilgisayarda çalistirabilirsiniz (örnegin
-   <a class="western" href="https://www.genymotion.com/">Genymotion</a>).
-
-   Emülatördeki Juggluco, sensöre bagli bir Android telefondan bir Mirror
-   (klon) baglantisi araciligiyla veri alir. Pinch
-
-   hareketleri (iki parmagi birbirine dogru yakinlastirma veya
-   uzaklastirma) fare isaretçisini hareket ettirirken bir tusa
-   (Genymotion'da Kontrol) basilarak simüle edilebilir.</p>
-
-   <p style="line-height: 100%; margin-bottom: 0in"><br/>
-
-   </p>
-
-   </body>
-
-   </html>
-
+</p>
+</body>
+</html>

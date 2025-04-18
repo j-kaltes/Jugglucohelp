@@ -1,238 +1,81 @@
-   <!DOCTYPE html>
-
-   <html>
-
-   <head>
-
-   <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-
-   <title></title>
-
-   <meta name="generator" content="LibreOffice 7.5.9.2 (Linux)"/>
-
-   <meta name="created" content="2021-07-02T15:57:22.472063254"/>
-
-   <meta name="changed" content="2024-02-06T17:39:44.205305283"/>
-
-   <style type="text/css">
-
-   @page { size: 8.27in 11.69in; margin: 0.79in }
-
-   p { margin-bottom: 0.1in; background: transparent }
-
-   h2.cjk { font-family: "Droid Sans Fallback" }
-
-   h2.ctl { font-family: "Droid Sans Devanagari" }
-
-   </style>
-
-   </head>
-
-   <img src="addconnection.png" alt="Add Connection"
-   style="object-fit:contain; width:15cm; height:auto;">
-
-   <body lang="tr-TR" dir="ltr"><h1>Baglanti Ekle</h1>
-
-   <p style="line-height: 100%; margin-bottom: 0in">Baska bir Juggluco
-   örnegiyle bir baglanti belirtin. Bir cihazdaki Juggluco, IP/TCP
-   araciligiyla baska bir cihazdaki Juggluco'ya veri gönderir. Bir
-   baglanti kurmak için, Juggluco'lardan birinin portu dinlemesi ve
-   digerinin o portla iletisim kurmasi gerekir. Bu Juggluco örneginin
-   dinledigi port, önceki ekranda verilmistir. (Sol orta menü-&gt;<a
-   href="https://www.juggluco.nl/Jugglucohelp/tr/connectionoverview.html">Klon</a>). Burada, Juggluco örneginin aktif olarak iletisim kurmasi
-   durumunda hangi portla iletisim kuracagini belirtirsiniz. Bu Juggluco
-   örnegi bir portu dinleyemiyorsa, &quot;<b>Yalnizca aktif</b>&quot;i
-   seçin. Diger taraf bir portu dinleyemiyorsa, &quot;<b>Yalnizca
-   Pasif</b>&quot; seçenegini seçin,
-
-   aksi takdirde &quot;<b>Her Ikisi</b>&quot; seçenegini isaretli birakin.
-   Diger taraftaki Juggluco, burada <i>Yalnizca Pasif</i> seçenegini
-   seçerseniz
-
-   <i>Yalnizca Aktif</i> ve burada <i>Yalnizca Pasif</i> seçenegini
-   seçerseniz
-
-   <i>Yalnizca Aktif</i> seçenegini belirtir ve burada <i>Her Ikisi</i>
-   seçenegini seçerseniz <i>Her Ikisi</i> seçenegini belirtir.</p>
-
-   <p style="line-height: 100%; margin-bottom: 0in">Eger bu
-
-   Juggluco örnegi aktif olarak iletisim kurarsa, iletisim kurmasi gereken
-   IP(leri) belirtmelisiniz. Eger bu ana bilgisayarin birden fazla IP'si
-   varsa, birden fazla belirtmelisiniz; örnegin iki cihaz bazen bir ev agi
-   üzerinden ve bazen de dogrudan tasinabilir erisim noktasi olarak
-   baglandiginda.
-
-   </p>
-
-   <p style="line-height: 100%; margin-bottom: 0in"><b>UYARI: Asla birden
-   fazla cihazin IP'sini belirtmeyin, bu durumda her biri
-
-   sadece verinin bir kismini alacaktir. </b>
-
-   </p>
-
-   <p style="line-height: 100%; margin-bottom: 0in"><b>hostname</b>:
-
-   IP'ler yerine bir ana bilgisayar adi belirtin. Bu, baglantiyi bir ad
-   sunucusuna bagimli hale getirir, dolayisiyla daha yavas ve ad sunucusu
-   baglantisinin kesintiye ugramasindan etkilenir. Bu yalnizca statik bir
-   IP yapilandiramadiginizda ve ana bilgisayar adi otomatik olarak dinamik
-   IP'ye atandiginda açilmalidir.</p>
-
-   <p style="line-height: 100%; margin-bottom: 0in">'Yalnizca Etkin'
-   haricindeki tüm durumlarda '<b>Algila</b>' seçenegini seçebilirsiniz;
-   bu durumda Juggluco, Juggluco ile iletisime geçen ilk IP'yi diger
-   tarafin IP'si olarak kaydeder.
-
-   Dogru cihazin temas kurup kurmadigini dogrulamak iki sekilde
-   yapilabilir:
-
-   IP'yi test etmek için '<b>IP Testi</b>'ni seçin. <b>Etiket Testi</b>'ni
-   seçerseniz,
-
-   sadece her iki taraf da ayni etiketi belirtmisse bir temas kurulur.</p>
-
-   <p style="line-height: 100%; margin-bottom: 0in">Bu uygulamanin klon
-   (ayna) uygulamasi olarak çalismasini istiyorsaniz <b>'den al</b>'i
-   seçin.
-
-   </p>
-
-   <p style="line-height: 100%; margin-bottom: 0in">Bu
-
-   cihazin <b>gönderici</b> olmasini istiyorsaniz, hangi
-
-   verilerin gönderilecegini belirtmeniz gerekir.</p>
-
-   <p style="line-height: 100%; margin-bottom: 0in"><b>Miktarlar</b>:
-
-   Belirttiginiz doz, besin ve spor verileriniz.</p>
-
-   <p style="line-height: 100%; margin-bottom: 0in"><b>Taramalar</b>:
-   Sensör taranarak alinan veriler (Libre 2'de taramalar ve geçmis,
-
-   ve Libre 3'te yalnizca Bluetooth araciligiyla sensöre erismek için
-   gereken veriler).</p>
-
-   <p style="line-height: 100%; margin-bottom: 0in"><b>Akis</b>: Bluetooth
-   tarafindan alinan veri. Libre3 için buna geçmis verilerde dahildir.</p>
-
-   <p style="line-height: 100%; margin-bottom: 0in">Bazen bazi veriler
-
-   alici cihazda zaten mevcuttur. Bu verilerin
-
-   ne zamana kadar mevcut olacagini belirtebilirsiniz:</p>
-
-   <p style="line-height: 100%; margin-bottom: 0in"><i>Basla: </i>veri
-   yok</p>
-
-   <p style="line-height: 100%; margin-bottom: 0in"><i>Simdi: </i>tüm
-   veriler mevcut</p>
-
-   <p style="line-height: 100%; margin-bottom: 0in">Veya ekranin baslangiç
-   pozisyonuna göre belirlenen bir tarih.</p>
-
-   <p style="line-height: 100%; margin-bottom: 0in">Bir veri kaynagi
-
-   mevcut bir baglantiya eklendiginde, baslangiç tarihi yalnizca
-
-   eklenen veri kaynagini belirler. Örnegin, Taramalar ve Akislar zaten
-   ana bilgisayara önceden gönderildiyse ve Miktarlar yeni eklendiyse,
-   baslangiç tarihi yalnizca gönderilen Miktarlari belirler.
-
-   </p>
-
-   <p style="line-height: 100%; margin-bottom: 0in">Iki cihaz güvenli
-   olmayan bir baglanti üzerinden baglandiginda, baglantinin her iki
-   tarafinda ayni (en fazla) 16 karakterli <b>sifre</b> belirtilerek
-   veriler imzalanabilir ve sifrelenebilir. Belirttiklerinizi kaydetmek
-   için <b>Kaydet</b>'i seçin. <b>Sil</b> bu baglanti
-
-   belirtimini silecektir.</p>
-
-   <p style="line-height: 100%; margin-bottom: 0in">En basit durumda, tüm
-   baglantilar ev aginiza aittir, bu nedenle yerel IP'leri
-   kullanabilirsiniz. Ayrica Wi-Fi üzerinden internete baglanabilirsiniz,
-   bu durumda harici bir portu ev aginizdaki bir IP ve porta nasil
-   yönlendireceginiz konusunda modem kilavuzunuza basvurmalisiniz.
-
-   </p>
-
-   <p style="line-height: 100%; margin-bottom: 0in">Internet üzerinden
-   mobil veri baglantisiyla baglanan iki akilli telefon, eger bunlardan
-   biri ag baglanti noktasinda dinleme yapabiliyorsa, dogrudan
-   birbirleriyle baglanti kurabilir.
-
-   Ikisi de yapamazsa (örnegin hiçbiri bireysel IP'ye sahip degilse), yine
-   de üçüncü bir cihaz araciligiyla birbirleriyle iletisim kurabilirler.
-   Bir olasilik Juggluco'yu evde bir modem araciligiyla internete bagli
-   bir Android cihazda (en az Android 4.4) çalistirmaktir. Baska bir
-   olasilik da Juggluco'ya ait bir komut satiri programini bir
-   bilgisayarda (örnegin PC'niz veya Amazon AWS) çalistirmaktir:
-
-   <a
-   href="https://www.juggluco.nl/Juggluco/cmdline/index.html">https://www.juggluco.nl/Juggluco/cmdline/index.html</a></p>
-
-   <p style="line-height: 100%; margin-bottom: 0in">Port yönlendirme
-
-   egitimleri:</p>
-
-   <p style="line-height: 100%; margin-bottom: 0in"><a
-   href="https://portforward.com/how-to-port-forward/">https://portforward.com/how-to-port-forward/</a></p>
-
-   <p style="line-height: 100%; margin-bottom: 0in"><a
-   href="https://stevessmarthomeguide.com/understanding-port-forwarding/">https://stevessmarthomeguide.com/understanding-port-forwarding/</a></p>
-
-   <p style="line-height: 100%; margin-bottom: 0in">NFC olmayan bir
-   cihazda Bluetooth araciligiyla glikoz degerlerini almak mümkündür
-   (bakiniz
-
-   <a
-   href="https://www.juggluco.nl/Juggluco/mirror">https://www.juggluco.nl/Juggluco/mirror</a>):
-
-   Sensörü NFC cihazinda NFC üzerinden baslatin ve ardindan
-
-   Tarama ve Akis verilerini NFC olmayan cihaza gönderin. Bundan sonra
-   Akis verileri için baglantiyi tersine çevirin ve NFC cihazindaki
-   Bluetooth baglantisini kapatin ve NFC olmayan cihazda açin ve ayrica
-   NFC cihazindaki &quot;Bluetooth üzerinden sensör&quot;ü kapatin ve NFC
-   olmayan cihazda açin. Böylece bir cihazla tarama yapabilir ve baska bir
-   cihazda Bluetooth üzerinden glikoz degerlerini alabilirsiniz. Ancak tüm
-   cihazlarda tüm sensör verileri mevcut olmalidir. Cihazlar veri
-   alisverisinde bulunursa, her zaman hem tarama hem de akis verilerini
-   almalidirlar. Bu nedenle Akis verilerini her zaman NFC cihazina ve
-   tarama verilerini NFC olmayan cihaza geri göndermelisiniz. Aksi
-   takdirde veriler senkronizasyondan çikacak ve eski kimlik dogrulama
-   verileri kullanilacak veya yeni veriler eski verilerin üzerine
-   yazilacaktir.</p>
-
-   <p style="line-height: 100%; margin-bottom: 0in">Miktarlar verisi
-
-   tamamen bagimsizdir.</p>
-
-   <h2 class="western">Ag sorunlari</h2>
-
-   <p>Baglantinin her iki tarafinda da kesin bir tamamlayici sartname
-   gereklidir. Basit bir ihmal, veri iletimini imkansiz hale
-   getirebilir.</p>
-
-   <p>Baglantinin askida kalmasi ve WIFI'yi açip kapatarak veya Sync'e
-   basarak sifirlanmasi gerekebilir. Ayrica,
-
-   <i>activeonly-passiveonly</i> baglantisini <i>her ikisine</i> veya tam
-   tersine çevirmek fark yaratabilir.</p>
-
-   <p>Baglanti degisikligiyle birlikte IP degisikligini de göz önünde
-   bulundurmalisiniz. Örnegin; ev aginda, tasinabilir bir erisim
-   noktasindan farkli IP'ler kullanilmalidir.</p>
-
-   <p><br/>
-
-   <br/>
-
-   </p>
-
-   </body>
-
-   </html>
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<title></title>
+<meta name="generator" content="LibreOffice 7.5.9.2 (Linux)"/>
+<meta name="created" content="2021-07-02T15:57:22.472063254"/>
+<meta name="changed" content="2024-02-06T17:39:44.205305283"/>
+<style type="text/css">
+@page { size: 8.27in 11.69in; margin: 0.79in }
+p { margin-bottom: 0.1in; background: transparent }
+h2.cjk { font-family: "Droid Sans Fallback" }
+h2.ctl { font-family: "Droid Sans Devanagari" }
+</style>
+</head>
+<img src="addconnection.png" alt="Add Connection" style="object-fit:contain; width:15cm; height:auto;">
+<body lang="tr-TR" dir="ltr"><h1>Bağlantı Ekle</h1>
+<p style="line-height: 100%; margin-bottom: 0in">Başka bir Juggluco örneğiyle bir bağlantı belirtin. Bir cihazdaki Juggluco, IP/TCP aracılığıyla başka bir cihazdaki Juggluco'ya veri gönderir. Bir bağlantı kurmak için, Juggluco'lardan birinin portu dinlemesi ve diğerinin o portla iletişim kurması gerekir. Bu Juggluco örneğinin dinlediği port, önceki ekranda verilmiştir. (Sol orta menü-&gt;<a href="https://www.juggluco.nl/Jugglucohelp/tr/connectionoverview.html">Mirror</a>). Burada, Juggluco örneğinin aktif olarak iletişim kurması durumunda hangi portla iletişim kuracağını belirtirsiniz. Bu Juggluco örneği bir portu dinleyemiyorsa, &quot;<b>Yalnızca aktif</b>&quot;i seçin. Diğer taraf bir portu dinleyemiyorsa, &quot;<b>Yalnızca Pasif</b>&quot; seçeneğini seçin,
+aksi takdirde &quot;<b>Her İkisi</b>&quot; seçeneğini işaretli bırakın. Diğer taraftaki Juggluco, burada <i>Yalnızca Pasif</i> seçeneğini seçerseniz
+<i>Yalnızca Aktif</i> ve burada <i>Yalnızca Pasif</i> seçeneğini seçerseniz
+<i>Yalnızca Aktif</i> seçeneğini belirtir ve burada <i>Her İkisi</i> seçeneğini seçerseniz <i>Her İkisi</i> seçeneğini belirtir.</p>
+<p style="line-height: 100%; margin-bottom: 0in">Eğer bu
+Juggluco örneği aktif olarak iletişim kurarsa, iletişim kurması gereken IP(leri) belirtmelisiniz. Eğer bu ana bilgisayarın birden fazla IP'si varsa, birden fazla belirtmelisiniz; örneğin iki cihaz bazen bir ev ağı üzerinden ve bazen de doğrudan taşınabilir erişim noktası olarak bağlandığında. 
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><b>UYARI: Asla birden fazla cihazın IP'sini belirtmeyin, bu durumda her biri
+sadece verinin bir kısmını alacaktır. </b>
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><b>hostname</b>:
+IP'ler yerine bir ana bilgisayar adı belirtin. Bu, bağlantıyı bir ad sunucusuna bağımlı hale getirir, dolayısıyla daha yavaş ve ad sunucusu bağlantısının kesintiye uğramasından etkilenir. Bu yalnızca statik bir IP yapılandıramadığınızda ve ana bilgisayar adı otomatik olarak dinamik IP'ye atandığında açılmalıdır.</p>
+<p style="line-height: 100%; margin-bottom: 0in">'Yalnızca Etkin' haricindeki tüm durumlarda '<b>Algıla</b>' seçeneğini seçebilirsiniz; bu durumda Juggluco, Juggluco ile iletişime geçen ilk IP'yi diğer tarafın IP'si olarak kaydeder.
+Doğru cihazın temas kurup kurmadığını doğrulamak iki şekilde yapılabilir:
+IP'yi test etmek için '<b>IP Testi</b>'ni seçin. <b>Etiket Testi</b>'ni seçerseniz,
+sadece her iki taraf da aynı etiketi belirtmişse bir temas kurulur.</p>
+<p style="line-height: 100%; margin-bottom: 0in">Bu uygulamanın klon (ayna) uygulaması olarak çalışmasını istiyorsanız <b>’den al</b>'ı seçin.
+</p>
+<p style="line-height: 100%; margin-bottom: 0in">Bu
+cihazın <b>gönderici</b> olmasını istiyorsanız, hangi
+verilerin gönderileceğini belirtmeniz gerekir.</p>
+<p style="line-height: 100%; margin-bottom: 0in"><b>Miktarlar</b>:
+Belirttiğiniz doz, besin ve spor verileriniz.</p>
+<p style="line-height: 100%; margin-bottom: 0in"><b>Taramalar</b>: Sensör taranarak alınan veriler (Libre 2'de taramalar ve geçmiş,
+ve Libre 3'te yalnızca Bluetooth aracılığıyla sensöre erişmek için gereken veriler).</p>
+<p style="line-height: 100%; margin-bottom: 0in"><b>Akış</b>: Bluetooth tarafından alınan veri. Libre3 için buna geçmiş verilerde dahildir.</p>
+<p style="line-height: 100%; margin-bottom: 0in">Bazen bazı veriler
+alıcı cihazda zaten mevcuttur. Bu verilerin
+ne zamana kadar mevcut olacağını belirtebilirsiniz:</p>
+<p style="line-height: 100%; margin-bottom: 0in"><i>Başla: </i>veri yok</p>
+<p style="line-height: 100%; margin-bottom: 0in"><i>Şimdi: </i>tüm veriler mevcut</p>
+<p style="line-height: 100%; margin-bottom: 0in">Veya ekranın başlangıç ​​pozisyonuna göre belirlenen bir tarih.</p>
+<p style="line-height: 100%; margin-bottom: 0in">Bir veri kaynağı
+mevcut bir bağlantıya eklendiğinde, başlangıç ​​tarihi yalnızca
+eklenen veri kaynağını belirler. Örneğin, Taramalar ve Akışlar zaten ana bilgisayara önceden gönderildiyse ve Miktarlar yeni eklendiyse, başlangıç ​​tarihi yalnızca gönderilen Miktarları belirler.
+</p>
+<p style="line-height: 100%; margin-bottom: 0in">İki cihaz güvenli olmayan bir bağlantı üzerinden bağlandığında, bağlantının her iki tarafında aynı (en fazla) 16 karakterli <b>şifre</b> belirtilerek veriler imzalanabilir ve şifrelenebilir. Belirttiklerinizi kaydetmek için <b>Kaydet</b>'i seçin. <b>Sil</b> bu bağlantı
+belirtimini silecektir.</p>
+<p style="line-height: 100%; margin-bottom: 0in">En basit durumda, tüm bağlantılar ev ağınıza aittir, bu nedenle yerel IP'leri kullanabilirsiniz. Ayrıca Wi-Fi üzerinden internete bağlanabilirsiniz, bu durumda harici bir portu ev ağınızdaki bir IP ve porta nasıl yönlendireceğiniz konusunda modem kılavuzunuza başvurmalısınız. 
+</p>
+<p style="line-height: 100%; margin-bottom: 0in">İnternet üzerinden mobil veri bağlantısıyla bağlanan iki akıllı telefon, eğer bunlardan biri ağ bağlantı noktasında dinleme yapabiliyorsa, doğrudan birbirleriyle bağlantı kurabilir.
+İkisi de yapamazsa (örneğin hiçbiri bireysel IP'ye sahip değilse), yine de üçüncü bir cihaz aracılığıyla birbirleriyle iletişim kurabilirler. Bir olasılık Juggluco'yu evde bir modem aracılığıyla internete bağlı bir Android cihazda (en az Android 4.4) çalıştırmaktır. Başka bir olasılık da Juggluco'ya ait bir komut satırı programını bir bilgisayarda (örneğin PC'niz veya Amazon AWS) çalıştırmaktır:
+<a href="https://www.juggluco.nl/Juggluco/cmdline/index.html">https://www.juggluco.nl/Juggluco/cmdline/index.html</a></p>
+<p style="line-height: 100%; margin-bottom: 0in">Port yönlendirme
+eğitimleri:</p>
+<p style="line-height: 100%; margin-bottom: 0in"><a href="https://portforward.com/how-to-port-forward/">https://portforward.com/how-to-port-forward/</a></p>
+<p style="line-height: 100%; margin-bottom: 0in"><a href="https://stevessmarthomeguide.com/understanding-port-forwarding/">https://stevessmarthomeguide.com/understanding-port-forwarding/</a></p>
+<p style="line-height: 100%; margin-bottom: 0in">NFC olmayan bir cihazda Bluetooth aracılığıyla glikoz değerlerini almak mümkündür (bakınız
+<a href="https://www.juggluco.nl/Juggluco/mirror">https://www.juggluco.nl/Juggluco/mirror</a>):
+Sensörü NFC cihazında NFC üzerinden başlatın ve ardından
+Tarama ve Akış verilerini NFC olmayan cihaza gönderin. Bundan sonra Akış verileri için bağlantıyı tersine çevirin ve NFC cihazındaki Bluetooth bağlantısını kapatın ve NFC olmayan cihazda açın ve ayrıca NFC cihazındaki &quot;Bluetooth üzerinden sensör&quot;ü kapatın ve NFC olmayan cihazda açın. Böylece bir cihazla tarama yapabilir ve başka bir cihazda Bluetooth üzerinden glikoz değerlerini alabilirsiniz. Ancak tüm cihazlarda tüm sensör verileri mevcut olmalıdır. Cihazlar veri alışverişinde bulunursa, her zaman hem tarama hem de akış verilerini almalıdırlar. Bu nedenle Akış verilerini her zaman NFC cihazına ve tarama verilerini NFC olmayan cihaza geri göndermelisiniz. Aksi takdirde veriler senkronizasyondan çıkacak ve eski kimlik doğrulama verileri kullanılacak veya yeni veriler eski verilerin üzerine yazılacaktır.</p>
+<p style="line-height: 100%; margin-bottom: 0in">Miktarlar verisi
+tamamen bağımsızdır.</p>
+<h2 class="western">Ağ sorunları</h2>
+<p>Bağlantının her iki tarafında da kesin bir tamamlayıcı şartname gereklidir. Basit bir ihmal, veri iletimini imkansız hale getirebilir.</p>
+<p>Bağlantının askıda kalması ve WIFI'yi açıp kapatarak veya Sync'e basarak sıfırlanması gerekebilir. Ayrıca,
+<i>activeonly-passiveonly</i> bağlantısını <i>her ikisine</i> veya tam tersine çevirmek fark yaratabilir.</p>
+<p>Bağlantı değişikliğiyle birlikte IP değişikliğini de göz önünde bulundurmalısınız. Örneğin; ev ağında, taşınabilir bir erişim noktasından farklı IP'ler kullanılmalıdır.</p>
+<p><br/>
+<br/>
+
+</p>
+</body>
+</html>

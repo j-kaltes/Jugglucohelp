@@ -1,365 +1,120 @@
-   <!DOCTYPE html>
-
-   <html>
-
-   <head>
-
-   <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-
-   <title>WearOS</title>
-
-   <meta name="generator" content="LibreOffice 24.2.7.2 (Linux)"/>
-
-   <meta name="created" content="00:00:00"/>
-
-   <meta name="changed" content="2025-01-02T10:00:20.838493851"/>
-
-   <style type="text/css">
-
-   h2.cjk { font-family: "Droid Sans Fallback" }
-
-   h2.ctl { font-family: "Droid Sans Devanagari" }
-
-   h5.cjk { font-family: "Droid Sans Fallback" }
-
-   h5.ctl { font-family: "Droid Sans Devanagari" }
-
-   </style>
-
-   </head>
-
-   <img src="wearosconfig.png" style="object-fit:contain; width:15cm;
-   height:auto;">
-
-   <body lang="tr-TR" dir="ltr"><p><a href="https://www.juggluco.nl/Jugglucohelp/be/wearosinfo.html">be</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/de/wearosinfo.html">de</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/fr/wearosinfo.html">fr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/it/wearosinfo.html">it</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/nl/wearosinfo.html">nl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pl/wearosinfo.html">pl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pt/wearosinfo.html">pt</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ru/wearosinfo.html">ru</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/tr/wearosinfo.html">tr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/uk/wearosinfo.html">uk</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/zh/wearosinfo.html">zh</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/wearosinfo.html?lang=en">en</a>&emsp;&emsp;</p><h1>Wear OS</h1>
-
-   <p><strong>Dogrudan sensör-saat baglantisi</strong>: Bu, saatin sensöre
-   dogrudan baglanip baglanmamasi gerektigini belirler. Bu yalnizca saat
-   ve telefon senkronize oldugunda degistirilebilir.
-
-   Telefon ve saat üzerinde Ayna(Klon)-&gt;Sync (Esle) ve Yeniden Baslat'i
-   kullanarak telefon ve saati senkronize edin.</p>
-
-   <p><strong>Saat uygulamasini yeniden baslat</strong>: Juggluco WearOS
-   saatinize yüklendikten ve çalismaya basladiktan sonra bu dügmeye bir
-   kez basilmalidir.</p>
-
-   <p><strong>Varsayilanlar</strong>: Bu, baglanti ayarlarini varsayilan
-   degerlere döndürür. Bu, saatin Sol menüsü-&gt;<a
-   href="https://www.juggluco.nl/Jugglucohelp/tr/connectionoverview.html">Ayn
-   a(Klon)</a>'da ve telefonun sol orta menüsü-&gt;Ayna(Klon)'da
-   degistirilebilen ayarlarla ilgilidir. Bu, &quot;<i>Yalnizca
-   Etkin</i>&quot; ve &quot;<i>Taramalar"</i> gibi ayarlardan olusur.
-
-   Bu dügmeye, ayarlar dusta su ile kazara veya uyku sirasinda
-   degistiginde basilabilir. Saat sürümünü yeniden yükleyerek veya
-   verileri temizleyerek sifirlarsaniz, telefondaki ayna(klon)
-   baglantisini da kaldirmaniz gerekir.</p>
-
-   <p>Juggluco'nun özel bir versiyonu dogrudan bir Wear OS saatinde
-   çalisabilir. Sensörü taramak için NFC'li bir Android telefona ihtiyaç
-   duyar ve bu veriler bir TCP baglantisi araciligiyla Wear OS saatine
-   gönderilir. Bundan sonra iki olasilik vardir:</p>
-
-   <ol>
-
-   <li><p>Sensör telefonla baglantida kalir ve telefon Bluetooth
-   araciligiyla aldigi her glikoz degerini TCP araciligiyla Wear OS
-   saatine gönderir;</p></li>
-
-   <li><p>Sensörü dogrudan Wear OS saatine baglamak da mümkündür. Bunun
-   için iyi Bluetooth baglantisina sahip bir Wear OS saatine ihtiyaciniz
-   var.</p></li>
-
-   </ol>
-
-   <p>Bazi resimler su adreste gösterilmektedir: <a
-   href="https://www.juggluco.nl/JugglucoWearOS/index.html">https://www.juggluco.nl/JugglucoWearOS</a></p>
-
-   <p>Çalismasini saglamak için asagidakileri yapin:</p>
-
-   <ul>
-
-   <li><p>Saatinizde ve telefonunuzda hem Bluetooth hem de WIFI'nin
-   çalistigindan emin olun;</p></li>
-
-   <li><p>Saatin yeterli bos depolama alani ve RAM'e sahip oldugundan emin
-   olun. Kritik bir anda cihazin depolama alani biterse Juggluco'nun
-   yeniden yüklenmesi gerekebilir;</p></li>
-
-   <li><p>Juggluco'nun telefon versiyonunu sensörle çalisir hale getirin.
-   &quot;<i>Bluetooth üzerinden Sensör</i>&quot; ayariyla sensörü birkaç
-   kez taramaniz gerekir;</p></li>
-
-   <li><p><a
-   href="https://www.juggluco.nl/JugglucoWearOS/install/adb.html">Yükle</a
-   >
-
-   Juggluco'nun Wear OS sürümünü saatinize yükleyin ve baslatin;</p></li>
-
-   <li><p>Telefonda, sol menüye gidin-&gt;Saat-&gt;<a
-   href="https://www.juggluco.nl/Jugglucohelp/tr/wearosinfo.html">Wear OS Yapilandir</a>. Saatiniz spinner'da görüntülenmelidir.
-
-   &quot;Saat uygulamasini baslat&quot;; tusuna basin</p></li>
-
-   <li><p>Her sey yolunda giderse, her iki Juggluco'da da bir TCP
-   baglantisi yapilandirilir ve telefondaki tüm veriler saate gönderilir.
-   Juggluco'yu uzun süre kullaniyorsaniz bu uzun sürebilir, bu nedenle çok
-   fazla veri gönderilmesi gerekir. TCP baglantisinin yapilandirilip
-   yapilandirilmadigini ayna(klon) iletisim kutusuna bakarak kontrol
-   edebilirsiniz (telefon:
-
-   sol orta menü-&gt;<a
-   href="https://www.juggluco.nl/Jugglucohelp/tr/connectionoverview.html">Ayn a(Klon)</a>,
-
-   saat: sol-menü-&gt;Ayna(Klon)). Saatiniz için spinner'da gösterilenle
-   ayni kimlige sahip bir baglanti gösterilmelidir. Saatte ayrica
-   telefonun IP'si de bulunmalidir. Bunlar yoksa veya saat tarafi bir IP
-   içermiyorsa, tekrar &quot;<i>Saat uygulamasini baslat</i>&quot;a basin.
-   Hala yoksa, Bluetooth
-
-   baglantisini ve saatinize baglantidan sorumlu telefon uygulamasini
-   kontrol edin. (Saat zaten veri almissa, &quot;<i>Saat uygulamasini
-   baslat</i>&quot;a basmak tüm verileri yeniden gönderme etkisine
-   sahiptir, bu nedenle Juggluco'nun saat sürümünü yeniden
-   yükleyebilirsiniz. Daha sonra, dogru IP gösterilmiyorsa, telefonda
-   harici baglantiyi (WIFI veya Mobil veri) kapatip açmalisiniz.</p></li>
-
-   <li><p>Her sey yolunda giderse, Juggluco'nun telefon versiyonunda
-   görüntülenen ayni veriler, Juggluco'nun saat versiyonunda görüntülenir.
-   Telefon tarafindan alinan her yeni glikoz degeri TCP araciligiyla saate
-   gönderilir. Ünite, glikoz alarm seviyeleri ve
-
-   hatirlaticilar gibi bazi ayarlar da saate iletilir. Daha sonra saatin
-   kendisinde degisiklikler yapilmalidir.</p></li>
-
-   <li><p>Iyi Bluetooth baglantisi olan bir saatiniz varsa ve
-
-   telefonunuzu tasimak zorunda kalmadan saatinizde glikoz degerlerini
-   almak istiyorsaniz, Juggluco'nun saat versiyonunu dogrudan sensöre
-   baglayabilirsiniz. Tüm degerler saate gönderildikten sonra,
-   <strong>&quot;Dogrudan sensör-saat baglantisi&quot;</strong>'ni kontrol
-   edebilirsiniz.
-
-   Bununla, <i>&quot;Bluetooth üzerinden sensör&quot;</i> telefonda
-   kapatilir ve saatte açilir. Akis degerleri artik Ayna (Klon) iletisim
-   kutusunda kontrol edebileceginiz gibi saatten telefona gönderilir. Saat
-   ve telefon senkronize olmadiginda &quot;Dogrudan sensör-saat
-   baglantisi&quot;'ni degistiremezsiniz.</p></li>
-
-   <li><p>Saatten telefona miktarlar göndermek istiyorsaniz,
-
-   telefondaki ayna(klon) iletisim kutusunda, isareti kaldirip saatte
-   isaretleyerek gönderme yönünü tersine çevirmelisiniz.
-
-   Telefonda da &quot;<i>Al</i>&quot; ayari yapilmalidir.
-
-   Her sey tam olarak dogru ayarlanmamissa, çalismaz. &quot;Miktarlari
-   degistirme&quot; isareti degistirilmelidir. <i>Miktarlarin</i>
-   etiketleri her zaman miktarlarla birlikte gönderilir. Saatten telefona
-   miktarlarin iletim yönünü degistirirseniz, etiketleri
-   degistiremezsiniz;</p></li>
-
-   </ul>
-
-   <p>Sensörün saatle dogrudan Bluetooth baglantisi varsa ve degerler bir
-   telefona gönderiliyorsa, taranan degerler telefondan saate de
-   gönderilmeli ve akis degerleri sensör Juggluco ile taranmadan önce
-   senkronize edilmelidir (ayarlar otomatik olarak bu sekilde
-   yapilandirilir.) Aksi takdirde, eski degerler saate geri gönderilebilir
-   veya degistirilen kimlik dogrulama bilgileri saate gönderilmez ve bu da
-   <i>Kilit açma anahtari</i> hatalarina neden olur.</p>
-
-   <p>Baglantidaki degisiklikler de yalnizca veriler senkronize oldugunda
-   yapilmalidir; telefon ve saatteki veriler tam kopyalar olmalidir (tüm
-   miktar verilerini çikarabilmeniz istisnadir).</p>
-
-   <p>Telefondan saateilk baglantida çok fazla veri aktarilmasi
-   gerektiginde, saati sarj cihazina baglayabilirsiniz: benim saatim sarj
-   cihazina baglandiginda WIFI'yi açiyor.</p>
-
-   <h2 class="western"><strong>Saat-Telefon baglantisi</strong></h2>
-
-   <p>Saat-telefon baglantisi, Juggluco çalistiran telefonlar ile <a
-   href="https://www.juggluco.nl/Juggluco/cmdline">Juggluco sunucusu</a> çalistiran bilgisayarlar arasinda yapilandirabileceginiz
-   ayna(klon) baglantisinin bir uyarlamasidir. Telefon ve saat arasindaki
-   baglanti yukarida açiklanan sekilde
-
-   otomatik olarak olusturuldugunda, asagidaki eklemelere sahiptir:</p>
-
-   <ul>
-
-   <li><p>Baglantinin diger tarafinin IP'si otomatik olarak belirlenir.
-   Normalde ayna(klon) baglantisiyla dogrudan bir sey yapmaniz gerekmez.
-   Bunun yerine ayarlari degistirmek için Sol menü->Saat->WearOS
-   yapilandirmasini kullanabilirsiniz. Istisna, saate sayilar girmek
-   istediginiz zamandir. O zaman ayna(klon) ayarlarini <a
-   href="#enteronwatch"><i>Saatte gir</i></a> altinda açiklandigi gibi
-   manuel olarak degistirmeniz gerekir.</p></li>
-
-   <li><p>Telefon ile saat arasindaki WIFI baglantisi çalismiyorsa,
-   Juggluco Bluetooth üzerinden TCP kullanimina geçer.
-
-   Saatin ilk kullaniminda saate çok fazla veri gönderilmesi gerekmedigi
-   sürece, saatin WIFI özelligini kapatabilirsiniz.</p></li>
-
-   </ul>
-
-   <p style="margin-bottom: 0in">Telefondaki
-
-   Juggluco ile saat arasinda veri alisverisi olmadiginda asagidakileri
-   kontrol edebilirsiniz:</p>
-
-   <ul>
-
-   <li><p style="margin-bottom: 0in">Saatte ve telefonda Bluetooth açik
-   olmalidir (WIFI kapatilabilir);</p></li>
-
-   <li><p style="margin-bottom: 0in">Saatin eslik eden uygulamasi
-
-   saatin telefona bagli oldugunu göstermelidir;</p></li>
-
-   <li><p style="margin-bottom: 0in">Saatte Sol menü->Ayna(Klon)
-
-   ve telefonda sol orta menü->Ayna(Klon) saatin tanimlayicisiyla otomatik
-   olarak olusturulmus bir baglanti girisi olmalidir (telefonda Sol
-   menü->Saat->"WearOS config"de görüntülenen tanimlayiciyla
-   ayni.)</p></li>
-
-   <li><p style="margin-bottom: 0in">Saat üzerindeki sol menüde
-
-   ->Mirror(Klon)'da Yeniden Baslat ve/veya Sync(Esle)'ye basmak yardimci
-   olabilir;</p></li>
-
-   <li><p style="margin-bottom: 0in">Bazen aynisini telefonda yapmaniz
-   gerekir. Daha sonra aynisini saatte tekrar yapmaniz
-   gerekebilir;</p></li>
-
-   <li><p style="margin-bottom: 0in">Telefon veya saatinizde Bluetooth'u
-   kapatip açmak yardimci olabilir. Bundan sonra saatinizde Yeniden Baslat
-   ve Sync(Esle)'ye tekrar basmaniz gerekir;</p></li>
-
-   <li><p style="margin-bottom: 0in">Aynisini WIFI veya mobil
-
-   veri ile yapmak gerekebilir;</p></li>
-
-   <li><p style="margin-bottom: 0in">Bazen Bluetooth'un tekrar çalismasi
-   için telefonun ve/veya saatin yeniden baslatilmasi gerekir;</p></li>
-
-   <li><p style="margin-bottom: 0in">Yansitma baglantisindaki
-
-   ayarlarin bir sekilde yanlis degerlerle degistirilmis olmasi mümkündür.
-
-   Telefonda sol menü->Saat->"WearOS yapilandirmasi"->Varsayilan'a basarak
-   bunlari orijinal degerlere sifirlayabilirsiniz. Bu ayrica
-
-   sensörün saat yerine telefona baglanmasi etkisine sahiptir. Yalnizca
-   saatte bulunan veriler geçersiz kilinacaktir;</p></li>
-
-   <li><p style="margin-bottom: 0in">Eger tüm bunlar basarisiz olursa,
-   saat sürümünü yeniden yükleyebilir ve bastan baslayabilirsiniz. Bu
-   durumda, Sol orta menü->Ayna(Klon) altinda mevcut saat baglantisini
-   kaldirmaniz gerekir.</p></li>
-
-   <li><p style="margin-bottom: 0in">Eger bir sekilde veriler telefonda
-   eksikse ama saatte mevcutsa, bu çok daha zordur.
-
-   Bir sekilde önce telefondaki verileri almak için çalisan bir ayna(klon)
-   baglantisi olusturmaniz gerekir.</p></li>
-
-   </ul>
-
-   <h2 class="western"><a name="enteronwatch"></a>Saatten veri girisi</h2>
-
-   <p>Saatten insülin, karbonhidrat ve aktivite miktarlarini girerseniz,
-   artik bunu telefonda yapamazsiniz. Ayrica
-
-   insülin kalemlerinin taranmasi artik mümkün degildir.</p>
-
-   <p>Su anda bunun için tek bir dügme yok. Saat ile eslik eden telefon
-   arasindaki ayna (klon) baglantisinin her iki tarafinda, ayna
-   ayarlarinda degisiklik yapmaniz gerekir. Önce telefon ve saatin
-   senkronize oldugundan emin olun, sonra asagidakileri yapin:</p>
-
-   <h5 class="western">TELEFON:</h5>
-
-   <p>Sol orta menüye gidin->Ayna(Klon). Saat baglantisina ve
-
-   sonra <i>Degistir</i>'e basin. <i>Miktarlar</i>'i kaldirin ve <i>'den
-   Al</i>'in isaretli oldugunu görün. Bundan sonra "<i>Kaydet</i>"e ve
-   sonra "<i>Kapat</i>"a basin. "<i>Ayna miktarlari gönderir</i>"i
-   ayarlayin.</p>
-
-   <h5 class="western">SAAT:</h5>
-
-   <p>Sol menü->Ayna'ya gidin. Saat baglantisina ve ardindan
-
-   Degistir'e basin. "<i>Miktarlar</i>"i ayarlayin. "<i>Simdi</i>"yi tüm
-   verilerin telefonda zaten mevcut oldugu zaman noktasi olarak ayarlayin.
-   Bundan sonra "<i>Kaydet</i>" ve ardindan "<i>Kapat</i>"a basin.
-   "<i>Ayna gönderilen miktarlar</i>" ayarini kaldirin.</p>
-
-   <h2 class="western"><strong>Saat yüzü</strong></h2>
-
-   <p style="margin-bottom: 0in">Wear OS için Juggluco, mevcut glikoz
-   seviyenizi saat ve dört komplikasyona kadar gösteren bir saat yüzü
-   içerir. Bunu kullanmak için, örnegin, saat eslikçi uygulamasinda
-   &quot;indirilen&quot; altinda bu saat yüzünü seçmeniz gerekir.
-   Normalde, ekran uyandiginda son glikoz degerini görürsünüz. Ekran (her
-   zaman açik) modunda oldugunda, glikoz degeri yalnizca dakika göstergesi
-   yükseltildiginde veya bir dügmeye bastiginizda veya kolunuzu
-   kaldirdiginizda güncellenir. Bu nedenle,
-
-   görüntülenen deger bir dakikaya kadar gecikebilir. Saat yüzü
-
-   bazi yeni saatlerde (örnegin Samsung Galaxy Watch 7 ve Watch Ultra)
-   kullanilamaz çünkü pil ömrünü korumak için programlanmis saat yüzlerine
-   izin vermezler.</p>
-
-   <h2 class="western">Komplikasyon</h2>
-
-   <p>Juggluco 8.2.0 ve üzeri, WearOS 5 altinda da kullanilabilen bir
-   glikoz degeri, glikoz oku ve ok+deger komplikasyonu içerir.
-
-   Bu, küçük veya büyük görüntü komplikasyon yuvasini kabul eden her saat
-   yüzüyle kullanilabilir.</p>
-
-   <h2 class="western">Yüzen Glikoz</h2>
-
-   <p>Juggluco'nun saat ayarlarinda <i>Yüzen Glikoz</i>'u açmak için
-   üçüncü bir seçenek. Juggluco dogru izinlere sahip oldugunda, diger
-   uygulamalarin üzerinde bir glikoz degeri görüntülenir. Bu sekilde,
-   etkinliginizi izleyen rastgele saat yüzlerini veya uygulamalari
-   kullanirken mevcut glikoz degerinizi görebilirsiniz. Daha fazla bilgi
-   için, Juggluco'nun telefon sürümünde, sol menü -&gt; Ayarlar -&gt; <a
-   href="https://www.juggluco.nl/Jugglucohelp/tr/floatingconfig.html">Yüzen
-
-   glikoz</a> -&gt; Yardim'a bakin.</p>
-
-   <h2 class="western">Takipçiler</h2>
-
-   <p style="margin-bottom: 0in">Eslik eden uygulamadan, Sol
-
-   orta menü-><a
-   href="https://www.juggluco.nl/Jugglucohelp/tr/connectionoverview.html">Ayn
-   a</a> altinda açiklandigi gibi internet üzerinden diger cihazlara
-   tekrar gönderebilirsiniz.
-
-   Ayrica saati dogrudan internet üzerindeki bir sunucuya ve oradan da su
-   adreste açiklandigi gibi bir takipçi telefonuna baglamak da mümkündür:
-
-   <a
-   href="https://www.juggluco.nl/Juggluco/cmdline/watch">https://www.juggl
-   uco.nl/Juggluco/cmdline/watch</a></p>
-
-   <p style="margin-bottom: 0in"><br/>
-
-   </p>
-
-   <p style="margin-bottom: 0in"><br/>
-
-   </p>
-
-   </body>
-
-   </html>
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<title>WearOS</title>
+<meta name="generator" content="LibreOffice 24.2.7.2 (Linux)"/>
+<meta name="created" content="00:00:00"/>
+<meta name="changed" content="2025-01-02T10:00:20.838493851"/>
+<style type="text/css">
+h2.cjk { font-family: "Droid Sans Fallback" }
+h2.ctl { font-family: "Droid Sans Devanagari" }
+h5.cjk { font-family: "Droid Sans Fallback" }
+h5.ctl { font-family: "Droid Sans Devanagari" }
+</style>
+</head>
+<img src="wearosconfig.png" style="object-fit:contain; width:15cm; height:auto;">
+<body lang="tr-TR" dir="ltr"><p><a href="https://www.juggluco.nl/Jugglucohelp/be/wearosinfo.html">be</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/de/wearosinfo.html">de</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/fr/wearosinfo.html">fr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/it/wearosinfo.html">it</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/nl/wearosinfo.html">nl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pl/wearosinfo.html">pl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pt/wearosinfo.html">pt</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ru/wearosinfo.html">ru</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/tr/wearosinfo.html">tr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/uk/wearosinfo.html">uk</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/zh/wearosinfo.html">zh</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/wearosinfo.html?lang=en">en</a>&emsp;&emsp;</p><h1>Wear OS</h1>
+<p><strong>Doğrudan sensör-saat bağlantısı</strong>: Bu, saatin sensöre doğrudan bağlanıp bağlanmaması gerektiğini belirler. Bu yalnızca saat ve telefon senkronize olduğunda değiştirilebilir.
+Telefon ve saat üzerinde Ayna(Klon)-&gt;Sync (Eşle) ve Yeniden Başlat'ı kullanarak telefon ve saati senkronize edin.</p>
+<p><strong>Saat uygulamasını yeniden başlat</strong>: Juggluco WearOS saatinize yüklendikten ve çalışmaya başladıktan sonra bu düğmeye bir kez basılmalıdır.</p>
+<p><strong>Varsayılanlar</strong>: Bu, bağlantı ayarlarını varsayılan değerlere döndürür. Bu, saatin Sol menüsü-&gt;<a href="https://www.juggluco.nl/Jugglucohelp/tr/connectionoverview.html">Ayna(Klon)</a>'da ve telefonun sol orta menüsü-&gt;Ayna(Klon)'da değiştirilebilen ayarlarla ilgilidir. Bu, &quot;<i>Yalnızca Etkin</i>&quot; ve &quot;<i>Taramalar”</i> gibi ayarlardan oluşur.
+Bu düğmeye, ayarlar duşta su ile kazara veya uyku sırasında değiştiğinde basılabilir. Saat sürümünü yeniden yükleyerek veya verileri temizleyerek sıfırlarsanız, telefondaki ayna(klon) bağlantısını da kaldırmanız gerekir.</p>
+<p>Juggluco'nun özel bir versiyonu doğrudan bir Wear OS saatinde çalışabilir. Sensörü taramak için NFC'li bir Android telefona ihtiyaç duyar ve bu veriler bir TCP bağlantısı aracılığıyla Wear OS saatine gönderilir. Bundan sonra iki olasılık vardır:</p>
+<ol>
+<li><p>Sensör telefonla bağlantıda kalır ve telefon Bluetooth aracılığıyla aldığı her glikoz değerini TCP aracılığıyla Wear OS saatine gönderir;</p></li>
+<li><p>Sensörü doğrudan Wear OS saatine bağlamak da mümkündür. Bunun için iyi Bluetooth bağlantısına sahip bir Wear OS saatine ihtiyacınız var.</p></li>
+</ol>
+<p>Bazı resimler şu adreste gösterilmektedir: <a href="https://www.juggluco.nl/JugglucoWearOS/index.html">https://www.juggluco.nl/JugglucoWearOS</a></p>
+<p>Çalışmasını sağlamak için aşağıdakileri yapın:</p>
+<ul>
+<li><p>Saatinizde ve telefonunuzda hem Bluetooth hem de WIFI'nin çalıştığından emin olun;</p></li>
+<li><p>Saatin yeterli boş depolama alanı ve RAM'e sahip olduğundan emin olun. Kritik bir anda cihazın depolama alanı biterse Juggluco'nun yeniden yüklenmesi gerekebilir;</p></li>
+<li><p>Juggluco'nun telefon versiyonunu sensörle çalışır hale getirin. &quot;<i>Bluetooth üzerinden Sensör</i>&quot; ayarıyla sensörü birkaç kez taramanız gerekir;</p></li>
+<li><p><a href="https://www.juggluco.nl/JugglucoWearOS/install/adb.html">Yükle</a>
+Juggluco'nun Wear OS sürümünü saatinize yükleyin ve başlatın;</p></li>
+<li><p>Telefonda, sol menüye gidin-&gt;Saat-&gt;<a href="https://www.juggluco.nl/Jugglucohelp/tr/wearosinfo.html">Wear
+OS Yapılandır</a>. Saatiniz spinner'da görüntülenmelidir.
+&quot;Saat uygulamasını başlat&quot;; tuşuna basın</p></li>
+<li><p>Her şey yolunda giderse, her iki Juggluco'da da bir TCP bağlantısı yapılandırılır ve telefondaki tüm veriler saate gönderilir. Juggluco'yu uzun süre kullanıyorsanız bu uzun sürebilir, bu nedenle çok fazla veri gönderilmesi gerekir. TCP bağlantısının yapılandırılıp yapılandırılmadığını ayna(klon) iletişim kutusuna bakarak kontrol edebilirsiniz (telefon:
+sol orta menü-&gt;<a href="https://www.juggluco.nl/Jugglucohelp/tr/connectionoverview.html">Ayna(Klon)</a>,
+saat: sol-menü-&gt;Ayna(Klon)). Saatiniz için spinner'da gösterilenle aynı kimliğe sahip bir bağlantı gösterilmelidir. Saatte ayrıca telefonun IP'si de bulunmalıdır. Bunlar yoksa veya saat tarafı bir IP içermiyorsa, tekrar &quot;<i>Saat uygulamasını başlat</i>&quot;a basın. Hala yoksa, Bluetooth
+bağlantısını ve saatinize bağlantıdan sorumlu telefon uygulamasını kontrol edin. (Saat zaten veri almışsa, &quot;<i>Saat uygulamasını başlat</i>&quot;a basmak tüm verileri yeniden gönderme etkisine sahiptir, bu nedenle Juggluco'nun saat sürümünü yeniden yükleyebilirsiniz. Daha sonra, doğru IP gösterilmiyorsa, telefonda harici bağlantıyı (WIFI veya Mobil veri) kapatıp açmalısınız.</p></li>
+<li><p>Her şey yolunda giderse, Juggluco'nun telefon versiyonunda görüntülenen aynı veriler, Juggluco'nun saat versiyonunda görüntülenir. Telefon tarafından alınan her yeni glikoz değeri TCP aracılığıyla saate gönderilir. Ünite, glikoz alarm seviyeleri ve
+hatırlatıcılar gibi bazı ayarlar da saate iletilir. Daha sonra saatin kendisinde değişiklikler yapılmalıdır.</p></li>
+<li><p>İyi Bluetooth bağlantısı olan bir saatiniz varsa ve
+telefonunuzu taşımak zorunda kalmadan saatinizde glikoz değerlerini almak istiyorsanız, Juggluco'nun saat versiyonunu doğrudan sensöre bağlayabilirsiniz. Tüm değerler saate gönderildikten sonra, <strong>&quot;Doğrudan sensör-saat bağlantısı&quot;</strong>'nı kontrol edebilirsiniz.
+Bununla, <i>&quot;Bluetooth üzerinden sensör&quot;</i> telefonda kapatılır ve saatte açılır. Akış değerleri artık Ayna (Klon) iletişim kutusunda kontrol edebileceğiniz gibi saatten telefona gönderilir. Saat ve telefon senkronize olmadığında &quot;Doğrudan sensör-saat bağlantısı&quot;'nı değiştiremezsiniz.</p></li>
+<li><p>Saatten telefona miktarlar göndermek istiyorsanız,
+telefondaki ayna(klon) iletişim kutusunda, işareti kaldırıp saatte işaretleyerek gönderme yönünü tersine çevirmelisiniz.
+Telefonda da &quot;<i>Al</i>&quot; ayarı yapılmalıdır.
+Her şey tam olarak doğru ayarlanmamışsa, çalışmaz. &quot;Miktarları değiştirme&quot; işareti değiştirilmelidir. <i>Miktarların</i> etiketleri her zaman miktarlarla birlikte gönderilir. Saatten telefona miktarların iletim yönünü değiştirirseniz, etiketleri değiştiremezsiniz;</p></li>
+</ul>
+<p>Sensörün saatle doğrudan Bluetooth bağlantısı varsa ve değerler bir telefona gönderiliyorsa, taranan değerler telefondan saate de gönderilmeli ve akış değerleri sensör Juggluco ile taranmadan önce senkronize edilmelidir (ayarlar otomatik olarak bu şekilde yapılandırılır.) Aksi takdirde, eski değerler saate geri gönderilebilir veya değiştirilen kimlik doğrulama bilgileri saate gönderilmez ve bu da <i>Kilit açma anahtarı</i> hatalarına neden olur.</p>
+<p>Bağlantıdaki değişiklikler de yalnızca veriler senkronize olduğunda yapılmalıdır; telefon ve saatteki veriler tam kopyalar olmalıdır (tüm miktar verilerini çıkarabilmeniz istisnadır).</p>
+<p>Telefondan saateilk bağlantıda çok fazla veri aktarılması gerektiğinde, saati şarj cihazına bağlayabilirsiniz: benim saatim şarj cihazına bağlandığında WIFI'yi açıyor.</p>
+<h2 class="western"><strong>Saat-Telefon bağlantısı</strong></h2>
+<p>Saat-telefon bağlantısı, Juggluco çalıştıran telefonlar ile <a href="https://www.juggluco.nl/Juggluco/cmdline">Juggluco
+sunucusu</a> çalıştıran bilgisayarlar arasında yapılandırabileceğiniz ayna(klon) bağlantısının bir uyarlamasıdır. Telefon ve saat arasındaki bağlantı yukarıda açıklanan şekilde
+otomatik olarak oluşturulduğunda, aşağıdaki eklemelere sahiptir:</p>
+<ul>
+<li><p>Bağlantının diğer tarafının IP'si otomatik olarak belirlenir. Normalde ayna(klon) bağlantısıyla doğrudan bir şey yapmanız gerekmez. Bunun yerine ayarları değiştirmek için Sol menü→Saat→WearOS yapılandırmasını kullanabilirsiniz. İstisna, saate sayılar girmek istediğiniz zamandır. O zaman ayna(klon) ayarlarını <a href="#enteronwatch"><i>Saatte gir</i></a> altında açıklandığı gibi manuel olarak değiştirmeniz gerekir.</p></li>
+<li><p>Telefon ile saat arasındaki WIFI bağlantısı çalışmıyorsa, Juggluco Bluetooth üzerinden TCP kullanımına geçer.
+Saatin ilk kullanımında saate çok fazla veri gönderilmesi gerekmediği sürece, saatin WIFI özelliğini kapatabilirsiniz.</p></li>
+</ul>
+<p style="margin-bottom: 0in">Telefondaki
+Juggluco ile saat arasında veri alışverişi olmadığında aşağıdakileri kontrol edebilirsiniz:</p>
+<ul>
+<li><p style="margin-bottom: 0in">Saatte ve telefonda Bluetooth açık olmalıdır (WIFI kapatılabilir);</p></li>
+<li><p style="margin-bottom: 0in">Saatin eşlik eden uygulaması
+saatin telefona bağlı olduğunu göstermelidir;</p></li>
+<li><p style="margin-bottom: 0in">Saatte Sol menü→Ayna(Klon)
+ve telefonda sol orta menü→Ayna(Klon) saatin tanımlayıcısıyla otomatik olarak oluşturulmuş bir bağlantı girişi olmalıdır (telefonda Sol menü→Saat→"WearOS config"de görüntülenen tanımlayıcıyla aynı.)</p></li>
+<li><p style="margin-bottom: 0in">Saat üzerindeki sol menüde
+→Mirror(Klon)'da Yeniden Başlat ve/veya Sync(Eşle)'ye basmak yardımcı olabilir;</p></li>
+<li><p style="margin-bottom: 0in">Bazen aynısını telefonda yapmanız gerekir. Daha sonra aynısını saatte tekrar yapmanız gerekebilir;</p></li>
+<li><p style="margin-bottom: 0in">Telefon veya saatinizde Bluetooth'u kapatıp açmak yardımcı olabilir. Bundan sonra saatinizde Yeniden Başlat ve Sync(Eşle)'ye tekrar basmanız gerekir;</p></li>
+<li><p style="margin-bottom: 0in">Aynısını WIFI veya mobil
+veri ile yapmak gerekebilir;</p></li>
+<li><p style="margin-bottom: 0in">Bazen Bluetooth'un tekrar çalışması için telefonun ve/veya saatin yeniden başlatılması gerekir;</p></li>
+<li><p style="margin-bottom: 0in">Yansıtma bağlantısındaki
+ayarların bir şekilde yanlış değerlerle değiştirilmiş olması mümkündür.
+Telefonda sol menü→Saat→”WearOS yapılandırması”→Varsayılan'a basarak bunları orijinal değerlere sıfırlayabilirsiniz. Bu ayrıca
+sensörün saat yerine telefona bağlanması etkisine sahiptir. Yalnızca saatte bulunan veriler geçersiz kılınacaktır;</p></li>
+<li><p style="margin-bottom: 0in">Eğer tüm bunlar başarısız olursa, saat sürümünü yeniden yükleyebilir ve baştan başlayabilirsiniz. Bu durumda, Sol orta menü→Ayna(Klon) altında mevcut saat bağlantısını kaldırmanız gerekir.</p></li>
+<li><p style="margin-bottom: 0in">Eğer bir şekilde veriler telefonda eksikse ama saatte mevcutsa, bu çok daha zordur.
+Bir şekilde önce telefondaki verileri almak için çalışan bir ayna(klon) bağlantısı oluşturmanız gerekir.</p></li>
+</ul>
+<h2 class="western"><a name="enteronwatch"></a>Saatten veri girişi</h2>
+<p>Saatten insülin, karbonhidrat ve aktivite miktarlarını girerseniz, artık bunu telefonda yapamazsınız. Ayrıca
+insülin kalemlerinin taranması artık mümkün değildir.</p>
+<p>Şu anda bunun için tek bir düğme yok. Saat ile eşlik eden telefon arasındaki ayna (klon) bağlantısının her iki tarafında, ayna ayarlarında değişiklik yapmanız gerekir. Önce telefon ve saatin senkronize olduğundan emin olun, sonra aşağıdakileri yapın:</p>
+<h5 class="western">TELEFON:</h5>
+<p>Sol orta menüye gidin→Ayna(Klon). Saat bağlantısına ve
+sonra <i>Değiştir</i>'e basın. <i>Miktarlar</i>'ı kaldırın ve <i>’den Al</i>'ın işaretli olduğunu görün. Bundan sonra “<i>Kaydet</i>”e ve sonra “<i>Kapat</i>”a basın. “<i>Ayna miktarları gönderir</i>”i ayarlayın.</p>
+<h5 class="western">SAAT:</h5>
+<p>Sol menü→Ayna'ya gidin. Saat bağlantısına ve ardından
+Değiştir'e basın. “<i>Miktarlar</i>”ı ayarlayın. “<i>Şimdi</i>”yi tüm verilerin telefonda zaten mevcut olduğu zaman noktası olarak ayarlayın. Bundan sonra “<i>Kaydet</i>” ve ardından “<i>Kapat</i>”a basın. “<i>Ayna gönderilen miktarlar</i>” ayarını kaldırın.</p>
+<h2 class="western"><strong>Saat yüzü</strong></h2>
+<p style="margin-bottom: 0in">Wear OS için Juggluco, mevcut glikoz seviyenizi saat ve dört komplikasyona kadar gösteren bir saat yüzü içerir. Bunu kullanmak için, örneğin, saat eşlikçi uygulamasında &quot;indirilen&quot; altında bu saat yüzünü seçmeniz gerekir. Normalde, ekran uyandığında son glikoz değerini görürsünüz. Ekran (her zaman açık) modunda olduğunda, glikoz değeri yalnızca dakika göstergesi yükseltildiğinde veya bir düğmeye bastığınızda veya kolunuzu kaldırdığınızda güncellenir. Bu nedenle,
+görüntülenen değer bir dakikaya kadar gecikebilir. Saat yüzü
+bazı yeni saatlerde (örneğin Samsung Galaxy Watch 7 ve Watch Ultra) kullanılamaz çünkü pil ömrünü korumak için programlanmış saat yüzlerine izin vermezler.</p>
+<h2 class="western">Komplikasyon</h2>
+<p>Juggluco 8.2.0 ve üzeri, WearOS 5 altında da kullanılabilen bir glikoz değeri, glikoz oku ve ok+değer komplikasyonu içerir.
+Bu, küçük veya büyük görüntü komplikasyon yuvasını kabul eden her saat yüzüyle kullanılabilir.</p>
+<h2 class="western">Yüzen Glikoz</h2>
+<p>Juggluco'nun saat ayarlarında <i>Yüzen Glikoz</i>'u açmak için üçüncü bir seçenek. Juggluco doğru izinlere sahip olduğunda, diğer uygulamaların üzerinde bir glikoz değeri görüntülenir. Bu şekilde, etkinliğinizi izleyen rastgele saat yüzlerini veya uygulamaları kullanırken mevcut glikoz değerinizi görebilirsiniz. Daha fazla bilgi için, Juggluco'nun telefon sürümünde, sol menü -&gt; Ayarlar -&gt; <a href="https://www.juggluco.nl/Jugglucohelp/tr/floatingconfig.html">Yüzen
+glikoz</a> -&gt; Yardım'a bakın.</p>
+<h2 class="western">Takipçiler</h2>
+<p style="margin-bottom: 0in">Eşlik eden uygulamadan, Sol
+orta menü→<a href="https://www.juggluco.nl/Jugglucohelp/tr/connectionoverview.html">Ayna</a> altında açıklandığı gibi internet üzerinden diğer cihazlara tekrar gönderebilirsiniz.
+Ayrıca saati doğrudan internet üzerindeki bir sunucuya ve oradan da şu adreste açıklandığı gibi bir takipçi telefonuna bağlamak da mümkündür:
+<a href="https://www.juggluco.nl/Juggluco/cmdline/watch">https://www.juggluco.nl/Juggluco/cmdline/watch</a></p>
+<p style="margin-bottom: 0in"><br/>
+
+</p>
+<p style="margin-bottom: 0in"><br/>
+
+</p>
+</body>
+</html>

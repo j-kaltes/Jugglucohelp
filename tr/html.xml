@@ -187,106 +187,207 @@ Web server is running.</p>
 </string>
 <string name="about" >
 <![CDATA[
-<p><a href="https://www.juggluco.nl/Jugglucohelp/be/about.html">be</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/de/about.html">de</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/fr/about.html">fr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/it/about.html">it</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/nl/about.html">nl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pl/about.html">pl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pt/about.html">pt</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ru/about.html">ru</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/sv/about.html">sv</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/tr/about.html">tr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/uk/about.html">uk</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/zh/about.html">zh</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/about.html?lang=en">en</a>&emsp;&emsp;</p><h1>Hakkında</h1>
-<p style="margin-bottom: 0in">Juggluco<a href="https://www.juggluco.nl/Juggluco">Jaap
+<p><a href="https://www.juggluco.nl/Jugglucohelp/be/about.html">be</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/de/about.html">de</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/fr/about.html">fr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/it/about.html">it</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/nl/about.html">nl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pl/about.html">pl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pt/about.html">pt</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ru/about.html">ru</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/sv/about.html">sv</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/tr/about.html">tr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/uk/about.html">uk</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/zh/about.html">zh</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/about.html?lang=en">en</a>&emsp;&emsp;</p><h1 class="western">
+Hakkında</h1>
+<p style="margin-bottom: 0cm">Juggluco, <a href="https://www.juggluco.nl/Juggluco">Jaap
 Korthals Altes tarafından yazıldı.</a></p>
-<p style="margin-bottom: 0in">Standart Android kütüphanelerinin yanı sıra, aşağıdakiler kullanılır:</p>
+<p style="margin-bottom: 0cm">Standart Android kütüphanelerinin
+yanı sıra, aşağıdakiler kullanılır:</p>
 <ul>
-<li><p align="left" style="margin-bottom: 0in">Abbott FreeStyle Libre sensörlerine özgü NFC ve Bluetooth komutları ile FreeStyle Libre sensörlerine özgü yorumlama algoritmaları. Hiçbiri
-belgelenmemiştir.;</p></li>
-<li><p align="left" style="margin-bottom: 0in">Garmin saat ile iletişim kurmak için<a href="https://developer.garmin.com/connect-iq/sdk">
-IQ Mobil SDK\'yı Bağlayın</a>;</p></li>
-<li><p align="left" style="margin-bottom: 0in">Grafikler
-şunlarla oluşturulur: <a href="https://github.com/memononen/nanovg">NanoVG</a>;</p></li>
-<li><p align="left" style="margin-bottom: 0in">Klon (ayna) işlevi şunları kullanır: <a href="https://ascon.iaik.tugraz.at/">Ascon kimlik doğrulaması şifreleme</a>;</p></li>
-<li><p align="left" style="margin-bottom: 0in">Libre3 sensörleri ile iletişim için şunları kullanır <a href="https://github.com/intel/tinycrypt">TinyCrypt</a>;</p></li>
-<li><p align="left" style="margin-bottom: 0in">Renk seçici şunun uyarlamasıdır <a href="https://github.com/yukuku/ambilwarna">AmbilWarna</a>;</p></li>
-<li><p align="left" style="margin-bottom: 0in">NFC NovoPens Desteği, xDrip\'ten alınan kodun bir modifikasyonudur.</p></li>
-<li><p align="left" style="margin-bottom: 0in"><a href="https://www.flaticon.com/free-icons/password" title="password icons">Şifre simgeleri th studio – Flaticon tarafından oluşturuldu.</a>
-</p>
+	<li><p align="left" style="margin-bottom: 0cm">Abbott FreeStyle
+	Libre sensörlerine özgü NFC ve Bluetooth komutları ile FreeStyle
+	Libre sensörlerine özgü yorumlama algoritmaları. Hiçbiri
+	belgelenmemiştir.;</p>
+	<li><p align="left" style="margin-bottom: 0cm">Garmin saat ile
+	iletişim kurmak için<a href="https://developer.garmin.com/connect-iq/sdk">
+	IQ Mobil SDK\'yı Bağlayın</a>;</p>
+	<li><p align="left" style="margin-bottom: 0cm">Grafikler şunlarla
+	oluşturulur: <a href="https://github.com/memononen/nanovg">NanoVG</a>;</p>
+	<li><p align="left" style="margin-bottom: 0cm">Klon (ayna) işlevi
+	şunları kullanır: <a href="https://ascon.iaik.tugraz.at/">Ascon
+	kimlik doğrulaması şifreleme</a>;</p>
+	<li><p align="left" style="margin-bottom: 0cm">Libre3 sensörleri
+	ile iletişim için şunları kullanır <a href="https://github.com/intel/tinycrypt">TinyCrypt</a>;</p>
+	<li><p align="left" style="margin-bottom: 0cm">Renk seçici şunun
+	uyarlamasıdır <a href="https://github.com/yukuku/ambilwarna">AmbilWarna</a>;</p>
+	<li><p align="left" style="margin-bottom: 0cm">NFC NovoPens Desteği,
+	xDrip\'ten alınan kodun bir modifikasyonudur.</p>
+	<li><p align="left" style="margin-bottom: 0cm"><a href="https://www.flaticon.com/free-icons/password"><font color="#000000"><span style="text-decoration: none">Şifre
+	simgeleri,</span></font><span style="text-decoration: none"> </span>th
+	studio – Flaticon <font color="#000000"><span style="text-decoration: none">tarafından
+	oluşturuldu.</span></font></a><span style="text-decoration: none"> </span>
+	</p>
 </ul>
 <p><br/>
 <br/>
 
 </p>
-<p>Juggluco’yu İtalyancaya çeviren <a href="mailto:matteo.gabriele81@gmail.com">Matteo
+<p>Juggluco’yu İtalyanca’ya çeviren <a href="mailto:matteo.gabriele81@gmail.com">Matteo
 Gabriele</a>.</p>
-<p> Juggluco’yu Portekizceye çeviren Rui Pinheiro.</p>
-<p>Juggluco’yu Lehçeye çeviren <a href="mailto:adelis@translaris.pl">Arkadiusz
+<p>Juggluco’yu Portekizce’ye çeviren Rui Pinheiro.</p>
+<p>Juggluco’yu Lehçe’ye çeviren <a href="mailto:adelis@translaris.pl">Arkadiusz
 Deliś</a>.</p>
-<p>Juggluco’yu Belarusçaya çeviren <a href="mailto:3477734n@gmail.com">Находкін
+<p>Juggluco’yu Belarusça’ya çeviren <a href="mailto:3477734n@gmail.com">Находкін
 Яўген.</a></p>
-<p>Juggluco’yu Fransızcaya çeviren Fabrice Delfosse.</p>
-<p>Juggluco’yu Ukraynacaya çeviren <a href="mailto:3477734n@gmail.com">Находкін
+<p>Juggluco’yu Fransızca’ya çeviren Fabrice Delfosse.</p>
+<p>Juggluco’yu Ukraynaca’ya çeviren <a href="mailto:3477734n@gmail.com">Находкін
 Яўген</a> and <a href="mailto:moydiabet@gmail.com">Дзіма
 Дыябетык</a>.</p>
-<p>Juggluco’yu Çinceye çeviren <font face="Droid Sans"><span lang="zh-CN"><a href="mailto:q.pw@qq.com"><span lang="zh-CN">兜子</span></span></font><span lang="zh-CN">a</span></a>.</p>
-<p>Juggluco’yu Rusçaya çeviren <a href="mailto:zzzmei_92@mail.ru?subject=Juggluco%20%D0%BD%D0%B0%20%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%BE%D0%BC">Васильев
+<p>Juggluco’yu Çince’ye çeviren <font face="DejaVu Sans"><span lang="zh-CN"><a href="mailto:q.pw@qq.com"><font face="Droid Sans"><span lang="zh-CN">兜子</span></font></span></font><span lang="zh-CN">a</span></a>.</p>
+<p>Juggluco’yu Rusça’ya çeviren <a href="mailto:zzzmei_92@mail.ru?subject=Juggluco%20%D0%BD%D0%B0%20%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%BE%D0%BC">Васильев
 Артем</a>.</p>
-<p> Türkçe’ye çeviren <a href="mailto:beyazbulut14@gmail.com?subject=Juggluco\'nun%20çevirisi">beyazbulut14@gmail.com</a></a>
+<p>Juggluco’yu Türkçe’ye çeviren <a href="mailto:beyazbulut14@gmail.com?subject=Juggluco\'nun%20%C3%A7evirisi">beyazbulut14@gmail.com</a>
+</p>
 ]]>
 </string>
 <string name="addconnection" >
 <![CDATA[
-<p><a href="https://www.juggluco.nl/Jugglucohelp/be/addconnection.html">be</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/de/addconnection.html">de</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/fr/addconnection.html">fr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/it/addconnection.html">it</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/nl/addconnection.html">nl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pl/addconnection.html">pl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pt/addconnection.html">pt</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ru/addconnection.html">ru</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/sv/addconnection.html">sv</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/tr/addconnection.html">tr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/uk/addconnection.html">uk</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/zh/addconnection.html">zh</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/addconnection.html?lang=en">en</a>&emsp;&emsp;</p><h1>Bağlantı Ekle</h1>
-<p style="line-height: 100%; margin-bottom: 0in">Başka bir Juggluco örneğiyle bir bağlantı belirtin. Bir cihazdaki Juggluco, IP/TCP aracılığıyla başka bir cihazdaki Juggluco\'ya veri gönderir. Bir bağlantı kurmak için, Juggluco\'lardan birinin portu dinlemesi ve diğerinin o portla iletişim kurması gerekir. Bu Juggluco örneğinin dinlediği port, önceki ekranda verilmiştir. (Sol orta menü-&gt;<a href="https://www.juggluco.nl/Jugglucohelp/tr/connectionoverview.html">Mirror</a>). Burada, Juggluco örneğinin aktif olarak iletişim kurması durumunda hangi portla iletişim kuracağını belirtirsiniz. Bu Juggluco örneği bir portu dinleyemiyorsa, &quot;<b>Yalnızca aktif</b>&quot;i seçin. Diğer taraf bir portu dinleyemiyorsa, &quot;<b>Yalnızca Pasif</b>&quot; seçeneğini seçin,
-aksi takdirde &quot;<b>Her İkisi</b>&quot; seçeneğini işaretli bırakın. Diğer taraftaki Juggluco, burada <i>Yalnızca Pasif</i> seçeneğini seçerseniz
-<i>Yalnızca Aktif</i> ve burada <i>Yalnızca Pasif</i> seçeneğini seçerseniz
-<i>Yalnızca Aktif</i> seçeneğini belirtir ve burada <i>Her İkisi</i> seçeneğini seçerseniz <i>Her İkisi</i> seçeneğini belirtir.</p>
-<p style="line-height: 100%; margin-bottom: 0in">Eğer bu
-Juggluco örneği aktif olarak iletişim kurarsa, iletişim kurması gereken IP(leri) belirtmelisiniz. Eğer bu ana bilgisayarın birden fazla IP\'si varsa, birden fazla belirtmelisiniz; örneğin iki cihaz bazen bir ev ağı üzerinden ve bazen de doğrudan taşınabilir erişim noktası olarak bağlandığında. 
+<p><a href="https://www.juggluco.nl/Jugglucohelp/be/addconnection.html">be</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/de/addconnection.html">de</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/fr/addconnection.html">fr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/it/addconnection.html">it</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/nl/addconnection.html">nl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pl/addconnection.html">pl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pt/addconnection.html">pt</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ru/addconnection.html">ru</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/sv/addconnection.html">sv</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/tr/addconnection.html">tr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/uk/addconnection.html">uk</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/zh/addconnection.html">zh</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/addconnection.html?lang=en">en</a>&emsp;&emsp;</p><p>
 </p>
-<p style="line-height: 100%; margin-bottom: 0in"><b>UYARI: Asla birden fazla cihazın IP\'sini belirtmeyin, bu durumda her biri
-sadece verinin bir kısmını alacaktır. </b>
+<h1 class="western">Bağlantı Ekle</h1>
+<p style="line-height: 100%; margin-bottom: 0cm">Başka bir Juggluco
+örneğiyle bir bağlantı belirtin. Bir cihazdaki Juggluco, IP/TCP
+aracılığıyla başka bir cihazdaki Juggluco\'ya veri gönderir. Bir
+bağlantı kurmak için, Juggluco\'lardan birinin portu dinlemesi ve
+diğerinin o portla iletişim kurması gerekir. Bu Juggluco örneğinin
+dinlediği port, önceki ekranda verilmiştir. (Sol orta menü &gt;
+<a href="https://www.juggluco.nl/Jugglucohelp/tr/connectionoverview.html">Klon</a>).
+Burada, Juggluco örneğinin aktif olarak iletişim kurması
+durumunda hangi portla iletişim kuracağını belirtirsiniz. Bu
+Juggluco örneği bir portu dinleyemiyorsa, &quot;<b>Yalnızca
+aktif</b>&quot;i seçin. Diğer taraf bir portu dinleyemiyorsa,
+&quot;<b>Yalnızca Pasif</b>&quot; seçeneğini seçin, aksi takdirde
+&quot;<b>Her İkisi</b>&quot; seçeneğini işaretli bırakın.
+Burada <i>Yalnızca Pasif</i> seçeneğini seçerseniz diğer
+taraftaki Juggluco <i>Yalnızca Aktif,</i> burada <i>Yalnızca Pasif</i>
+seçeneğini seçerseniz diğer taraftaki Juggluco <i>Yalnızca Aktif</i>
+seçeneğini belirtir ve burada <i>Her İkisi</i> seçeneğini
+seçerseniz diğer taraftaki Juggluco <i>Her İkisi</i> seçeneğini
+belirtir.</p>
+<p style="line-height: 100%; margin-bottom: 0cm">Eğer bu Juggluco
+örneği aktif olarak iletişim kurarsa, iletişim kurması gereken
+IP(leri) belirtmelisiniz. Eğer bu ana bilgisayarın birden fazla
+IP\'si varsa, birden fazla IP’yi belirtmelisiniz. Örneğin; iki
+cihaz bazen bir ev ağı üzerinden ve bazen de doğrudan taşınabilir
+erişim noktası olarak bağlandığında. 
 </p>
-<p style="line-height: 100%; margin-bottom: 0in"><b>hostname</b>:
-IP\'ler yerine bir ana bilgisayar adı belirtin. Bu, bağlantıyı bir ad sunucusuna bağımlı hale getirir, dolayısıyla daha yavaş ve ad sunucusu bağlantısının kesintiye uğramasından etkilenir. Bu yalnızca statik bir IP yapılandıramadığınızda ve ana bilgisayar adı otomatik olarak dinamik IP\'ye atandığında açılmalıdır.</p>
-<p style="line-height: 100%; margin-bottom: 0in">\'Yalnızca Etkin\' haricindeki tüm durumlarda \'<b>Algıla</b>\' seçeneğini seçebilirsiniz; bu durumda Juggluco, Juggluco ile iletişime geçen ilk IP\'yi diğer tarafın IP\'si olarak kaydeder.
-Doğru cihazın temas kurup kurmadığını doğrulamak iki şekilde yapılabilir:
-IP\'yi test etmek için \'<b>IP Testi</b>\'ni seçin. <b>Etiket Testi</b>\'ni seçerseniz,
-sadece her iki taraf da aynı etiketi belirtmişse bir temas kurulur.</p>
-<p style="line-height: 100%; margin-bottom: 0in">Bu uygulamanın klon (ayna) uygulaması olarak çalışmasını istiyorsanız <b>’den al</b>\'ı seçin.
+<p style="line-height: 100%; margin-bottom: 0cm"><b>UYARI: Asla
+birden fazla cihazın IP\'sini belirtmeyin, bu durumda her biri sadece
+verinin bir kısmını alacaktır. </b>
 </p>
-<p style="line-height: 100%; margin-bottom: 0in">Bu
-cihazın <b>gönderici</b> olmasını istiyorsanız, hangi
-verilerin gönderileceğini belirtmeniz gerekir.</p>
-<p style="line-height: 100%; margin-bottom: 0in"><b>Miktarlar</b>:
+<p style="line-height: 100%; margin-bottom: 0cm"><b>H</b><b>ostname</b>:
+IP\'ler yerine bir ana bilgisayar adı belirtin. Bu, bağlantıyı bir
+ad sunucusuna bağımlı hale getirir, dolayısıyla daha yavaş ve
+ad sunucusu bağlantısının kesintiye uğramasından etkilenir. Bu
+yalnızca statik bir IP yapılandıramadığınızda ve ana
+bilgisayar adı otomatik olarak dinamik IP\'ye atandığında
+açılmalıdır.</p>
+<p style="line-height: 100%; margin-bottom: 0cm">\'Yalnızca Etkin\'
+haricindeki tüm durumlarda \'<b>Algıla</b>\' seçeneğini
+seçebilirsiniz. Bu durumda Juggluco, Juggluco ile iletişime geçen
+ilk IP\'yi diğer tarafın IP\'si olarak kaydeder. Doğru cihazın
+temas kurup kurmadığını doğrulamak iki şekilde yapılabilir:
+IP\'yi test etmek için \'<b>IP Testi</b>\'ni seçin. <b>Etiket Testi</b>\'ni
+seçerseniz, sadece her iki taraf da aynı etiketi belirtmişse bir
+temas kurulur.</p>
+<p style="line-height: 100%; margin-bottom: 0cm">Bu uygulamanın klon
+(ayna) uygulaması olarak çalışmasını istiyorsanız <b>Gelen</b>’i
+seçin. 
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">Bu cihazın
+<b>gönderici</b> olmasını istiyorsanız, hangi verilerin
+gönderileceğini belirtmeniz gerekir.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><b>Miktarlar</b>:
 Belirttiğiniz doz, besin ve spor verileriniz.</p>
-<p style="line-height: 100%; margin-bottom: 0in"><b>Taramalar</b>: Sensör taranarak alınan veriler (Libre 2\'de taramalar ve geçmiş,
-ve Libre 3\'te yalnızca Bluetooth aracılığıyla sensöre erişmek için gereken veriler).</p>
-<p style="line-height: 100%; margin-bottom: 0in"><b>Akış</b>: Bluetooth tarafından alınan veri. Libre3 için buna geçmiş verilerde dahildir.</p>
-<p style="line-height: 100%; margin-bottom: 0in">Bazen bazı veriler
-alıcı cihazda zaten mevcuttur. Bu verilerin
-ne zamana kadar mevcut olacağını belirtebilirsiniz:</p>
-<p style="line-height: 100%; margin-bottom: 0in"><i>Başla: </i>veri yok</p>
-<p style="line-height: 100%; margin-bottom: 0in"><i>Şimdi: </i>tüm veriler mevcut</p>
-<p style="line-height: 100%; margin-bottom: 0in">Veya ekranın başlangıç ​​pozisyonuna göre belirlenen bir tarih.</p>
-<p style="line-height: 100%; margin-bottom: 0in">Bir veri kaynağı
-mevcut bir bağlantıya eklendiğinde, başlangıç ​​tarihi yalnızca
-eklenen veri kaynağını belirler. Örneğin, Taramalar ve Akışlar zaten ana bilgisayara önceden gönderildiyse ve Miktarlar yeni eklendiyse, başlangıç ​​tarihi yalnızca gönderilen Miktarları belirler.
+<p style="line-height: 100%; margin-bottom: 0cm"><b>Taramalar</b>:
+Sensör taranarak alınan veriler (Libre 2\'de taramalar ve geçmiş,
+ve Libre 3\'te yalnızca Bluetooth aracılığıyla sensöre erişmek
+için gereken veriler).</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><b>Akış</b>:
+Bluetooth tarafından alınan veri. Libre3 için buna geçmiş
+verilerde dahildir.</p>
+<p style="line-height: 100%; margin-bottom: 0cm">Bazen bazı veriler
+alıcı cihazda zaten mevcuttur. Bu verilerin ne zamana kadar mevcut
+olacağını belirtebilirsiniz:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i>Başla: </i>veri
+yok</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i>Şimdi: </i>tüm
+veriler mevcut</p>
+<p style="line-height: 100%; margin-bottom: 0cm">Veya ekranın
+başlangıç ​​pozisyonuna göre belirlenen bir tarih.</p>
+<p style="line-height: 100%; margin-bottom: 0cm">Bir veri kaynağı
+mevcut bir bağlantıya eklendiğinde, başlangıç ​​tarihi
+yalnızca eklenen veri kaynağını belirler. Örneğin, Taramalar ve
+Akışlar zaten ana bilgisayara önceden gönderildiyse ve Miktarlar
+yeni eklendiyse, başlangıç ​​tarihi yalnızca gönderilen
+Miktarları belirler. 
 </p>
-<p style="line-height: 100%; margin-bottom: 0in">İki cihaz güvenli olmayan bir bağlantı üzerinden bağlandığında, bağlantının her iki tarafında aynı (en fazla) 16 karakterli <b>şifre</b> belirtilerek veriler imzalanabilir ve şifrelenebilir. Belirttiklerinizi kaydetmek için <b>Kaydet</b>\'i seçin. <b>Sil</b> bu bağlantı
-belirtimini silecektir.</p>
-<p style="line-height: 100%; margin-bottom: 0in">En basit durumda, tüm bağlantılar ev ağınıza aittir, bu nedenle yerel IP\'leri kullanabilirsiniz. Ayrıca Wi-Fi üzerinden internete bağlanabilirsiniz, bu durumda harici bir portu ev ağınızdaki bir IP ve porta nasıl yönlendireceğiniz konusunda modem kılavuzunuza başvurmalısınız. 
+<p style="line-height: 100%; margin-bottom: 0cm">İki cihaz güvenli
+olmayan bir bağlantı üzerinden bağlandığında, bağlantının
+her iki tarafında aynı (en fazla) 16 karakterli <b>şifre</b>
+belirtilerek veriler imzalanabilir ve şifrelenebilir.
+Belirttiklerinizi kaydetmek için <b>Kaydet</b>\'i seçin. <b>Sil</b>
+bu bağlantı belirtimini silecektir.</p>
+<p style="line-height: 100%; margin-bottom: 0cm">En basit durumda,
+tüm bağlantılar ev ağınıza aittir, bu nedenle yerel IP\'leri
+kullanabilirsiniz. Ayrıca Wi-Fi üzerinden internete
+bağlanabilirsiniz, bu durumda harici bir portu ev ağınızdaki bir
+IP ve porta nasıl yönlendireceğiniz konusunda modem kılavuzunuza
+başvurmalısınız. 
 </p>
-<p style="line-height: 100%; margin-bottom: 0in">İnternet üzerinden mobil veri bağlantısıyla bağlanan iki akıllı telefon, eğer bunlardan biri ağ bağlantı noktasında dinleme yapabiliyorsa, doğrudan birbirleriyle bağlantı kurabilir.
-İkisi de yapamazsa (örneğin hiçbiri bireysel IP\'ye sahip değilse), yine de üçüncü bir cihaz aracılığıyla birbirleriyle iletişim kurabilirler. Bir olasılık Juggluco\'yu evde bir modem aracılığıyla internete bağlı bir Android cihazda (en az Android 4.4) çalıştırmaktır. Başka bir olasılık da Juggluco\'ya ait bir komut satırı programını bir bilgisayarda (örneğin PC\'niz veya Amazon AWS) çalıştırmaktır:
+<p style="line-height: 100%; margin-bottom: 0cm">İnternet üzerinden
+mobil veri bağlantısıyla bağlanan iki akıllı telefon, eğer
+bunlardan biri, ağ bağlantı noktasında dinleme yapabiliyorsa,
+doğrudan birbirleriyle bağlantı kurabilir. İkisi de bağlantı
+yapamazsa (örneğin hiçbiri bireysel IP\'ye sahip değilse), yine de
+üçüncü bir cihaz aracılığıyla birbirleriyle iletişim
+kurabilirler. Bir olasılık, Juggluco\'yu evde bir modem aracılığıyla
+internete bağlı bir Android cihazda (en az Android 4.4)
+çalıştırmaktır. Başka bir olasılık da Juggluco\'ya ait bir
+komut satırı programını bir bilgisayarda (örneğin PC\'niz veya
+Amazon AWS) çalıştırmaktır:
 <a href="https://www.juggluco.nl/Juggluco/cmdline/index.html">https://www.juggluco.nl/Juggluco/cmdline/index.html</a></p>
-<p style="line-height: 100%; margin-bottom: 0in">Port yönlendirme
+<p style="line-height: 100%; margin-bottom: 0cm">Port yönlendirme
 eğitimleri:</p>
-<p style="line-height: 100%; margin-bottom: 0in"><a href="https://portforward.com/how-to-port-forward/">https://portforward.com/how-to-port-forward/</a></p>
-<p style="line-height: 100%; margin-bottom: 0in"><a href="https://stevessmarthomeguide.com/understanding-port-forwarding/">https://stevessmarthomeguide.com/understanding-port-forwarding/</a></p>
-<p style="line-height: 100%; margin-bottom: 0in">NFC olmayan bir cihazda Bluetooth aracılığıyla glikoz değerlerini almak mümkündür (bakınız
-<a href="https://www.juggluco.nl/Juggluco/mirror">https://www.juggluco.nl/Juggluco/mirror</a>):
-Sensörü NFC cihazında NFC üzerinden başlatın ve ardından
-Tarama ve Akış verilerini NFC olmayan cihaza gönderin. Bundan sonra Akış verileri için bağlantıyı tersine çevirin ve NFC cihazındaki Bluetooth bağlantısını kapatın ve NFC olmayan cihazda açın ve ayrıca NFC cihazındaki &quot;Bluetooth üzerinden sensör&quot;ü kapatın ve NFC olmayan cihazda açın. Böylece bir cihazla tarama yapabilir ve başka bir cihazda Bluetooth üzerinden glikoz değerlerini alabilirsiniz. Ancak tüm cihazlarda tüm sensör verileri mevcut olmalıdır. Cihazlar veri alışverişinde bulunursa, her zaman hem tarama hem de akış verilerini almalıdırlar. Bu nedenle Akış verilerini her zaman NFC cihazına ve tarama verilerini NFC olmayan cihaza geri göndermelisiniz. Aksi takdirde veriler senkronizasyondan çıkacak ve eski kimlik doğrulama verileri kullanılacak veya yeni veriler eski verilerin üzerine yazılacaktır.</p>
-<p style="line-height: 100%; margin-bottom: 0in">Miktarlar verisi
+<p style="line-height: 100%; margin-bottom: 0cm"><a href="https://portforward.com/how-to-port-forward/">https://portforward.com/how-to-port-forward/</a></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><a href="https://stevessmarthomeguide.com/understanding-port-forwarding/">https://stevessmarthomeguide.com/understanding-port-forwarding/</a></p>
+<p style="line-height: 100%; margin-bottom: 0cm">NFC olmayan bir
+cihazda Bluetooth aracılığıyla glikoz değerlerini almak
+mümkündür. 
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">Bakınız:
+<a href="https://www.juggluco.nl/Juggluco/mirror">https://www.juggluco.nl/Juggluco/mirror</a>
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">Sensörü, NFC
+üzerinden başlatın ve ardından Tarama ve Akış verilerini NFC
+olmayan cihaza gönderin. Bundan sonra Akış verileri için
+bağlantıyı tersine çevirin ve NFC cihazındaki Bluetooth
+bağlantısını kapatın ve NFC olmayan cihazda bluetoothu açın ve
+ayrıca NFC cihazındaki &quot;Bluetooth üzerinden sensör&quot;ü
+kapatın ve NFC olmayan cihazda açın. Böylece bir cihazla tarama
+yapabilir ve başka bir cihazda Bluetooth üzerinden glikoz
+değerlerini alabilirsiniz. Ancak tüm cihazlarda tüm sensör
+verileri mevcut olmalıdır. Cihazlar veri alışverişinde
+bulunursa, her zaman hem tarama hem de akış verilerini
+almalıdırlar. Bu nedenle Akış verilerini her zaman NFC cihazına
+ve tarama verilerini NFC olmayan cihaza geri göndermelisiniz. Aksi
+takdirde veriler senkronizasyondan çıkacak ve eski kimlik doğrulama
+verileri kullanılacak veya yeni veriler eski verilerin üzerine
+yazılacaktır.</p>
+<p style="line-height: 100%; margin-bottom: 0cm">Miktarlar verisi
 tamamen bağımsızdır.</p>
-<h2 class="western">Ağ sorunları</h2>
-<p>Bağlantının her iki tarafında da kesin bir tamamlayıcı şartname gereklidir. Basit bir ihmal, veri iletimini imkansız hale getirebilir.</p>
-<p>Bağlantının askıda kalması ve WIFI\'yi açıp kapatarak veya Sync\'e basarak sıfırlanması gerekebilir. Ayrıca,
-<i>activeonly-passiveonly</i> bağlantısını <i>her ikisine</i> veya tam tersine çevirmek fark yaratabilir.</p>
-<p>Bağlantı değişikliğiyle birlikte IP değişikliğini de göz önünde bulundurmalısınız. Örneğin; ev ağında, taşınabilir bir erişim noktasından farklı IP\'ler kullanılmalıdır.</p>
+<h2 class="western">Ağ Sorunları</h2>
+<p>Bağlantının her iki tarafında da kesin bir tamamlayıcı
+şartname gereklidir. Basit bir ihmal, veri iletimini imkansız hale
+getirebilir.</p>
+<p>Bağlantının askıda kalması ve WIFI\'yi açıp kapatarak veya
+Eşle\'ye basarak sıfırlanması gerekebilir. Ayrıca, <i>Yalnızca
+aktif –</i><i> </i><i>Yalnızca pasif</i> bağlantısını <i>H</i><i>er
+</i><i>İ</i><i>kisi </i><span style="font-style: normal">ne</span>
+veya tam tersine çevirmek fark yaratabilir.</p>
+<p>Bağlantı değişikliğiyle birlikte IP değişikliğini de göz
+önünde bulundurmalısınız. Örneğin; ev ağında, taşınabilir
+bir erişim noktasından farklı IP\'ler kullanılmalıdır.</p>
 <p><br/>
 <br/>
 
@@ -295,29 +396,53 @@ tamamen bağımsızdır.</p>
 </string>
 <string name="alarmhelp" >
 <![CDATA[
-<p><a href="https://www.juggluco.nl/Jugglucohelp/be/alarmhelp.html">be</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/de/alarmhelp.html">de</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/fr/alarmhelp.html">fr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/it/alarmhelp.html">it</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/nl/alarmhelp.html">nl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pl/alarmhelp.html">pl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pt/alarmhelp.html">pt</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ru/alarmhelp.html">ru</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/sv/alarmhelp.html">sv</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/tr/alarmhelp.html">tr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/uk/alarmhelp.html">uk</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/zh/alarmhelp.html">zh</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/alarmhelp.html?lang=en">en</a>&emsp;&emsp;</p><h1>Alarmlar</h1>
-<h2 class="western">Glikoz alarmları:</h2>
-<p style="line-height: 100%; margin-bottom: 0in">Bluetooth üzerinden alınan akış değerleri, düşük ve yüksek glikoz alarmlarını ayarlamak için kullanılabilir.</p>
-<h3 class="western">Düşük glikoz alarmı:</h3>
-<p style="line-height: 100%; margin-bottom: 0in">Alarmın çalması gereken düşük değer.</p>
-<h3 class="western">Yüksek glikoz alarmı:</h3>
-<p style="line-height: 100%; margin-bottom: 0in">Alarmın çalması gereken yüksek değer.</p>
-<h3 class="western">Sinyal kaybı alarmı:</h3>
-<p style="line-height: 100%; margin-bottom: 0in">Bluetooth üzerinden glikoz değeri alınamaması durumunda alarmın kaç dakika sonra çalması gerektiğini belirtin.</p>
-<p style="line-height: 100%; margin-bottom: 0in">Aşağıdaki koşullardan biri karşılandığında alarmlar <b>dur</b>acaktır:</p>
-<p style="line-height: 100%; margin-bottom: 0in">- Belirtilen süre doldu;</p>
-<p style="line-height: 100%; margin-bottom: 0in">- Eğri görünümüne dokunuldu;</p>
-<p style="line-height: 100%; margin-bottom: 0in">- Juggluco\'nun Android bildirimine dokunuldu (kilitsiz durumda);</p>
-<p style="line-height: 100%; margin-bottom: 0in">- Juggluco\'da alarm bildiriminin iptal düğmesine dokunuldu;</p>
-<p style="line-height: 100%; margin-bottom: 0in">- <i>Yüzen Glikoz</i>\'a dokunuldu.</p>
-<h3 class="western">Mevcut değer:</h3>
-<p style="line-height: 100%; margin-bottom: 0in">Bazen sensör
-çalışmayabilir. Yalnızca Juggluco’nun kendisinde değerin eksik olduğunu gördüğünüz durumda bunu açtığınızda, sensör tekrar çalıştığında bildirim alacaksınız. Değerin yalnızca Juggluco\'nun bildirimi veya saat yüzü nedeniyle eksik olduğunu bildiğinizde, mevcut değer bildirimi almayacaksınız.</p>
-<p style="line-height: 100%; margin-bottom: 0in">Her alarm için hangi <a href="https://www.juggluco.nl/Jugglucohelp/tr/ringtone.html">Zil Sesinin</a> çalınacağını ve ne kadar süreyle çalacağını belirleyebilirsiniz.</p>
-<h3 class="western">Alarmı cihazdan ayarla:</h3>
-<p>Ayarlandığında, <a href="https://www.juggluco.nl/Jugglucohelp/tr/ringtone.html">Zil Sesi</a>
-Android Alarmlar kategorisine göre düşük, yüksek ve sinyal kaybı alarmları için çalınır. Bu, Android ayarlarında ses seviyesinin Alarmlar ses seviyesiyle yönetildiği ve tüm telefonun sesi kapatıldığında veya titreşime ayarlandığında dahi sessize alınmadığı anlamına gelir.
-<i>Alarmı cihazdan ayarla</i> ayarlanmadığında, zil sesi ses seviyesi kullanılır. Bu durum mevcut değer bildirimi için geçerlidir.</p>
+<p><a href="https://www.juggluco.nl/Jugglucohelp/be/alarmhelp.html">be</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/de/alarmhelp.html">de</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/fr/alarmhelp.html">fr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/it/alarmhelp.html">it</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/nl/alarmhelp.html">nl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pl/alarmhelp.html">pl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pt/alarmhelp.html">pt</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ru/alarmhelp.html">ru</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/sv/alarmhelp.html">sv</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/tr/alarmhelp.html">tr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/uk/alarmhelp.html">uk</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/zh/alarmhelp.html">zh</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/alarmhelp.html?lang=en">en</a>&emsp;&emsp;</p>
+<h1 class="western">Alarmlar</h1>
+<h2 class="western">Glikoz Alarmları:</h2>
+<p style="line-height: 100%; margin-bottom: 0cm">Bluetooth üzerinden
+alınan akış değerleri, düşük ve yüksek glikoz alarmlarını
+ayarlamak için kullanılabilir.</p>
+<h3 class="western">Düşük Glikoz Alarmı:</h3>
+<p style="line-height: 100%; margin-bottom: 0cm">Alarmın çalması
+gereken düşük değer.</p>
+<h3 class="western">Yüksek Glikoz Alarmı:</h3>
+<p style="line-height: 100%; margin-bottom: 0cm">Alarmın çalması
+gereken yüksek değer.</p>
+<h3 class="western">Sinyal Kaybı Alarmı:</h3>
+<p style="line-height: 100%; margin-bottom: 0cm">Bluetooth üzerinden
+glikoz değeri alınamaması durumunda alarmın kaç dakika sonra
+çalması gerektiğini belirtin.</p>
+<p style="line-height: 100%; margin-bottom: 0cm">Aşağıdaki
+koşullardan biri karşılandığında alarmlar <span style="font-weight: normal">dur</span>acaktır:</p>
+<p style="line-height: 100%; margin-bottom: 0cm">- Belirtilen süre
+dolduğunda,</p>
+<p style="line-height: 100%; margin-bottom: 0cm">- Eğri görünümüne
+dokunulduğunda,</p>
+<p style="line-height: 100%; margin-bottom: 0cm">- Juggluco\'nun
+Android bildirimine dokunulduğunda (kilitsiz durumda),</p>
+<p style="line-height: 100%; margin-bottom: 0cm">- Juggluco\'da alarm
+bildiriminin iptal düğmesine dokunulduğunda,</p>
+<p style="line-height: 100%; margin-bottom: 0cm">- <i>Yüzen Glikoz</i>\'a
+dokunulduğunda.</p>
+<h3 class="western">Mevcut Veri Bildirimi:</h3>
+<p style="line-height: 100%; margin-bottom: 0cm">Bazen sensör
+çalışmayabilir. Juggluco’da verinin eksik olduğunu gördüğünüz
+durumda bunu açarsanız, sensör tekrar çalıştığında bildirim
+alırsınız. Verinin Juggluco bildirimi veya saat yüzü nedeniyle
+eksik olduğunu bildiğinizde, mevcut veri bildirimi almazsınız.</p>
+<p style="line-height: 100%; margin-bottom: 0cm">Her alarm için
+hangi <a href="https://www.juggluco.nl/Jugglucohelp/tr/ringtone.html">Zil
+Sesinin</a> çalınacağını ve ne kadar süreyle çalacağını
+belirleyebilirsiniz.</p>
+<h3 class="western">Alarmı Cihazdan Ayarla:</h3>
+<p>Bunu açtığınızda, <a href="https://www.juggluco.nl/Jugglucohelp/tr/ringtone.html">Zil
+Sesi</a> Android Alarmlar kategorisine göre düşük, yüksek ve
+sinyal kaybı alarmları için çalınır. Bu, Android ayarlarında
+ses seviyesinin Alarmlar ses seviyesiyle yönetildiği ve tüm
+telefonun sesi kapatıldığında veya titreşime ayarlandığında
+dahi sessize alınmadığı anlamına gelir. <i>Alarmı cihazdan
+ayarla</i> ayarlanmadığında, zil sesi ses seviyesi kullanılır.
+Bu durum mevcut veri bildirimi için geçerlidir.</p>
 <h3 class="western"><br/>
 <br/>
 
@@ -326,20 +451,33 @@ Android Alarmlar kategorisine göre düşük, yüksek ve sinyal kaybı alarmlar�
 </string>
 <string name="battery" >
 <![CDATA[
-<p><a href="https://www.juggluco.nl/Jugglucohelp/be/battery.html">be</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/de/battery.html">de</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/fr/battery.html">fr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/it/battery.html">it</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/nl/battery.html">nl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pl/battery.html">pl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pt/battery.html">pt</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ru/battery.html">ru</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/sv/battery.html">sv</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/tr/battery.html">tr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/uk/battery.html">uk</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/zh/battery.html">zh</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/battery.html?lang=en">en</a>&emsp;&emsp;</p><h1 class="western">Çalışmaya devam et</h1>
-<p style="line-height: 100%; margin-bottom: 0in">Normalde bir
-android cihaz kullanılmadığında, daha az enerji kullanmak için uyku moduna geçer.
-Bluetooth veya TCP/IP üzerinden glikoz değerlerini güvenilir bir şekilde almanız gerekiyorsa, Juggluco için pil optimizasyonlarını kapatmanız gerekir. Bazen Android\'in Juggluco\'yu kapatmasını önlemek için tüm cihaz da kapatılır. Birçok cihazda ek pil optimizasyonu, arka planda etkinlik vardır ve değiştirilmesi gereken önyükleme ayarlarıyla başlar. Bunları Android ayarları-&gt;Pil altında bulabilirsiniz. Bakınız
+<p><a href="https://www.juggluco.nl/Jugglucohelp/be/battery.html">be</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/de/battery.html">de</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/fr/battery.html">fr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/it/battery.html">it</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/nl/battery.html">nl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pl/battery.html">pl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pt/battery.html">pt</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ru/battery.html">ru</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/sv/battery.html">sv</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/tr/battery.html">tr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/uk/battery.html">uk</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/zh/battery.html">zh</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/battery.html?lang=en">en</a>&emsp;&emsp;</p><h1 class="western">
+Çalışmaya devam et</h1>
+<p style="line-height: 100%; margin-bottom: 0cm">Normalde bir android
+cihaz kullanılmadığında, daha az enerji kullanmak için uyku
+moduna geçer. Bluetooth veya TCP/IP üzerinden glikoz değerlerini
+güvenilir bir şekilde almanız gerekiyorsa, Juggluco için pil
+optimizasyonlarını kapatmanız gerekir. Bazen Android\'in
+Juggluco\'yu kapatmasını önlemek için tüm cihazdaki bazı pil
+optimizasyonlarını da kapatmalısınız. Birçok cihazda
+değiştirilmesi gereken <i>ek pil optimizasyonu</i>, <i>arka planda
+etkinlik</i> ve <i>önyüklemede başlatma</i> ayarları vardır.
+Bunları Android Ayarları &gt; Pil altında bulabilirsiniz. Bakınız
 <a href="https://dontkillmyapp.com/">https://dontkillmyapp.com</a>.</p>
-<p style="line-height: 100%; margin-bottom: 0in">Watch 4
-veya 5 kullanırken, Galaxy
-Giyilebilir yardımcı uygulamasında, Saat ayarları-&gt;Uygulamalar-&gt;Juggluco\'da <i>Arka plan aktivitesine izin ver</i> seçeneğini işaretlemeniz gerekir. Bu ayara sahip olmayan saatler için bilgisayarınızdan şu komutu kullanabilirsiniz:</p>
-<p style="line-height: 100%; margin-bottom: 0in"><b>adb shell cmd
+<p style="line-height: 100%; margin-bottom: 0cm">Watch 4 veya 5
+kullanırken, Galaxy Giyilebilir yardımcı uygulamasında, Saat
+Ayarları &gt; Uygulamalar &gt; Juggluco\'da <i>Arka plan aktivitesine
+izin ver</i> seçeneğini işaretlemeniz gerekir. Bu ayara sahip
+olmayan saatler için bilgisayarınızdan şu komutu
+kullanabilirsiniz:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><b>adb shell cmd
 appops set tk.glucodata RUN_IN_BACKGROUND allow</b></p>
-<p style="line-height: 100%; margin-bottom: 0in"><span style="font-weight: normal">Uyku modunu devre dışı bırakmak için:</span></p>
-<p style="line-height: 100%; margin-bottom: 0in"><b>adb shell dumpsys
+<p style="font-weight: normal; line-height: 100%; margin-bottom: 0cm">
+Uyku modunu devre dışı bırakmak için:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><b>adb shell dumpsys
 deviceidle disable</b></p>
-<p style="line-height: 100%; margin-bottom: 0in"><a href="https://www.juggluco.nl/JugglucoWearOS/install/adb.html">adb hakkında bilgi</a></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><a href="https://www.juggluco.nl/JugglucoWearOS/install/adb.html">adb
+hakkında bilgi</a></p>
 ]]>
 </string>
 <string name="colorhelp" >
@@ -351,58 +489,125 @@ deviceidle disable</b></p>
 </string>
 <string name="connectionoverview" >
 <![CDATA[
-<p><a href="https://www.juggluco.nl/Jugglucohelp/be/connectionoverview.html">be</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/de/connectionoverview.html">de</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/fr/connectionoverview.html">fr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/it/connectionoverview.html">it</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/nl/connectionoverview.html">nl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pl/connectionoverview.html">pl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pt/connectionoverview.html">pt</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ru/connectionoverview.html">ru</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/sv/connectionoverview.html">sv</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/tr/connectionoverview.html">tr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/uk/connectionoverview.html">uk</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/zh/connectionoverview.html">zh</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/connectionoverview.html?lang=en">en</a>&emsp;&emsp;</p><h1>Klon (Yansıtma)</h1>
-<p style="line-height: 100%; margin-bottom: 0in"><span lang="tr-TR">Başka bir cihaza veri gönderin veya başka bir cihazdan veri alın. Juggluco çalıştıran bir android cihaza bağlanarak verileri burada olduğu gibi görüntüleyebilirsiniz.</span> <span lang="tr-TR">Tarama verilerini aldıktan sonra, ayna (klon) cihazı sensörle Bluetooth üzerinden de iletişim kurabilir. Cihazlardan yalnızca birinin sensörle iletişim kurduğundan emin olmak için, Akış değerleri IP/TCP üzerinden geldiğinde &quot;</span><span lang="tr-TR"><i>Bluetooth üzerinden Sensör</i></span><span lang="tr-TR">&quot; otomatik olarak kapatılır.</span></p>
-<p style="line-height: 100%; margin-bottom: 0in">Bu ekranda <i>wlan</i>\'dan sonra bu cihazın yerel wlan IP\'si gösterilir, bunu bağlandığınız ev ağınızdaki diğer cihazda (ya da uzaktan bağlanıyorsanız modeminizde) belirtmeniz gerekir.</p>
-<p style="line-height: 100%; margin-bottom: 0in"><i>Port</i>\'tan sonra, bu uygulamanın bağlantılar için dinlediği TCP portunu değiştirebilirsiniz.</p>
-<p style="line-height: 100%; margin-bottom: 0in"><i><b>
-<a href="https://www.juggluco.nl/Jugglucohelp/tr/addconnection.html">Bağlantı ekle</a></b></i>\'ye tıklayarak hangi ana bilgisayarlara nasıl bağlanacağınızı belirtebilirsiniz.</p>
-<p style="line-height: 100%; margin-bottom: 0in">Güvenilir bir ağ bağlantısı Android\'de pil optimizasyonu ve arka plan kısıtlamaları nedeniyle kesintiye uğrarsa, <b><a href="https://www.juggluco.nl/Jugglucohelp/tr/battery.html">Uyku modu</a></b>na basmak bunu değiştirmenize yardımcı olur.</p>
-<p style="line-height: 100%; margin-bottom: 0in">Juggluco bir Ayna (klon) uygulaması olarak çalışıyorsa (Juggluco çalıştıran başka bir cihazdan glikoz değerlerini alıyorsa), düşük ve yüksek glikoz alarmlarını ve ilgili bildirimleri belirleyebileceğiniz bir iletişim kutusuna gitmek için <b>Alarmlar</b>\'a basabilirsiniz.</p>
-<p style="line-height: 100%; margin-bottom: 0in"><b>Mirror (klon), bir</b><b>bağlantı gönderir:</b>Uygulama, başka bir cihazda çalışan bu uygulamadan ilaç, yiyecek ve spor verisi miktarları alırsa, bu bilgileri burada eklememeli veya değiştirmemelisiniz. Kontrol etmek bunu imkansız hale getirir.
+<p><a href="https://www.juggluco.nl/Jugglucohelp/be/connectionoverview.html">be</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/de/connectionoverview.html">de</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/fr/connectionoverview.html">fr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/it/connectionoverview.html">it</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/nl/connectionoverview.html">nl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pl/connectionoverview.html">pl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pt/connectionoverview.html">pt</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ru/connectionoverview.html">ru</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/sv/connectionoverview.html">sv</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/tr/connectionoverview.html">tr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/uk/connectionoverview.html">uk</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/zh/connectionoverview.html">zh</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/connectionoverview.html?lang=en">en</a>&emsp;&emsp;</p><h1 class="western">Klon (Yansıtma)</h1>
+<p style="line-height: 100%; margin-bottom: 0cm"><span lang="tr-TR">Başka
+bir cihaza veri gönderin veya başka bir cihazdan veri alın.
+Juggluco çalıştıran bir android cihaza bağlanarak verileri
+burada olduğu gibi görüntüleyebilirsiniz.</span> <span lang="tr-TR">Tarama
+verilerini aldıktan sonra, ayna (klon) cihazı sensörle Bluetooth
+üzerinden de iletişim kurabilir. Cihazlardan yalnızca birinin
+sensörle iletişim kurduğundan emin olmak için, Akış değerleri
+IP/TCP üzerinden geldiğinde &quot;</span><span lang="tr-TR"><i>Sol
+Menü &gt; Sensör &gt; Bluetooth Kullan</i></span><span lang="tr-TR">&quot;
+otomatik olarak kapatılır.</span></p>
+<p style="line-height: 100%; margin-bottom: 0cm">Bu ekranda <i>wlan</i>\'dan
+sonra bu cihazın yerel wlan IP\'si gösterilir, bunu bağlandığınız
+ev ağınızdaki diğer cihazda (ya da uzaktan bağlanıyorsanız
+modeminizde) belirtmeniz gerekir.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i>Port</i>\'tan
+sonra, bu uygulamanın bağlantılar için dinlediği TCP portunu
+değiştirebilirsiniz.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><a class="western" href="https://www.juggluco.nl/Jugglucohelp/tr/addconnection.html"><i><b>Bağlantı
+ekle</b></i></a>\'ye tıklayarak hangi ana bilgisayarlara nasıl
+bağlanacağınızı belirtebilirsiniz.</p>
+<p style="line-height: 100%; margin-bottom: 0cm">Güvenilir bir ağ
+bağlantısı Android\'de pil optimizasyonu ve arka plan kısıtlamaları
+nedeniyle kesintiye uğrarsa, <a class="western" href="https://www.juggluco.nl/Jugglucohelp/tr/battery.html"><b>Uyku
+modu</b></a>na basmak bunu değiştirmenize yardımcı olur.</p>
+<p style="line-height: 100%; margin-bottom: 0cm">Juggluco bir Ayna
+(klon) uygulaması olarak çalışıyorsa (Juggluco çalıştıran
+başka bir cihazdan glikoz değerlerini alıyorsa), düşük ve
+yüksek glikoz alarmlarını ve ilgili bildirimleri
+belirleyebileceğiniz bir iletişim kutusuna gitmek için <b>Alarmlar</b>\'a
+basabilirsiniz.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><b>Klon</b><b>
+</b><b>miktarları </b><b>gönderir: </b>Uygulama, başka bir cihazda
+çalışan bu uygulamadan ilaç, yiyecek ve spor verisi miktarları
+alırsa, aynı bilgileri burada eklememeli veya değiştirmemelisiniz.
+Aktif etmek bunu imkansız hale getirir. 
 </p>
-<p style="line-height: 100%; margin-bottom: 0in"><b>Sync</b> Bağlı cihaza yeni veri gönderir veya ister.
+<p style="line-height: 100%; margin-bottom: 0cm"><b>Eşle:</b> Bağlı
+cihaza yeni veri gönderir veya alır. 
 </p>
-<p style="line-height: 100%; margin-bottom: 0in"><b>Yeniden Başlat</b>:
+<p style="line-height: 100%; margin-bottom: 0cm"><b>Yeniden Başlat</b>:
 Mevcut bağlantıyı kapatır ve yeni bir bağlantı oluşturur.</p>
-<p style="line-height: 100%; margin-bottom: 0in"><b>Wifi</b> (sadece WearOS\'ta):Bu ayar kapalı olduğunda, WearOS pil ömrünü korumak için bir süre sonra WIFI\'yi otomatik olarak kapatır ve Juggluco, telefon ile saat arasındaki bağlantı için Bluetooth kullanımına geçer. 
-Açık olduğunda ise, WearOS\'tan WIFI\'yi açık tutması istenir ve kapanması daha uzun sürer, ancak yine de kapanabilir. Bu seçeneği ayarlamak normalde gerekli değildir ve WearOS üreticileri WIFI\'yi açmanın pil kullanımını arttıracağını düşünüyor.</p>
-<p style="line-height: 100%; margin-bottom: 0in">Mevcut bağlantılar bir listede gösterilir, etiket, IP portu ve son başarılı senkronizasyonun ayı, günü ve saati gösterilir.
+<p style="line-height: 100%; margin-bottom: 0cm"><b>Wifi</b> (sadece
+WearOS\'ta):Bu ayar kapalı olduğunda, WearOS pil ömrünü korumak
+için bir süre sonra Wifi\'yi otomatik olarak kapatır ve Juggluco,
+telefon ile saat arasındaki bağlantı için Bluetooth kullanımına
+geçer. Açık olduğunda ise, WearOS\'tan Wifi\'yi açık tutması
+istenir ve kapanması daha uzun sürer, ancak yine de kapanabilir. Bu
+seçeneği ayarlamak normalde gerekli değildir ve WearOS üreticileri
+Wifi\'yi açmanın pil kullanımını arttıracağını düşünüyor.</p>
+<p style="line-height: 100%; margin-bottom: 0cm">Mevcut bağlantılar
+bir listede gösterilir, etiket, IP portu ve son başarılı
+senkronizasyonun ayı, günü ve saati gösterilir. 
 </p>
-<p style="line-height: 100%; margin-bottom: 0in">Bağlantının nasıl kullanıldığı aşağıdaki gibi kısaltılmıştır:</p>
-<p style="line-height: 100%; margin-bottom: 0in">n: miktarlar (sayılar)</p>
-<p style="line-height: 100%; margin-bottom: 0in">s: taramalar</p>
-<p style="line-height: 100%; margin-bottom: 0in">b: akış (bluetooth)</p>
-<p style="line-height: 100%; margin-bottom: 0in">r: alınan</p>
-<p style="line-height: 100%; margin-bottom: 0in"><br/>
+<p style="line-height: 100%; margin-bottom: 0cm">Bağlantının nasıl
+kullanıldığı aşağıdaki gibi kısaltılmıştır:</p>
+<p style="line-height: 100%; margin-bottom: 0cm">n: miktarlar
+(sayılar)</p>
+<p style="line-height: 100%; margin-bottom: 0cm">s: taramalar</p>
+<p style="line-height: 100%; margin-bottom: 0cm">b: akış
+(bluetooth)</p>
+<p style="line-height: 100%; margin-bottom: 0cm">r: alınan</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
 
 </p>
-<p style="line-height: 100%; margin-bottom: 0in">Daha fazla bilgi için Mirror (klon) bağlantıları hakkında yardım bölümünü okuyun&quot;<i><a href="https://www.juggluco.nl/Jugglucohelp/tr/addconnection.html">Bağlantı ekle</a></i>&quot;
-Ayrıca bakınız <a class="western" href="https://www.juggluco.nl/Juggluco/index.html#mirror">https://www.juggluco.nl/Juggluco/index.html#mirror</a></p>
-<h1>Masaüstü bilgisayar</h1>
-<p>Android Juggluco uygulamasını bir Android Emülatörü yardımıyla Windows, Macintosh veya Linux bilgisayarda çalıştırabilirsiniz (örneğin <a class="western" href="https://www.genymotion.com/">Genymotion</a>).
-Emülatördeki Juggluco, sensöre bağlı bir Android telefondan bir Mirror (klon) bağlantısı aracılığıyla veri alır. Pinch
-hareketleri (iki parmağı birbirine doğru yakınlaştırma veya uzaklaştırma) fare işaretçisini hareket ettirirken bir tuşa (Genymotion\'da Kontrol) basılarak simüle edilebilir.</p>
-<p style="line-height: 100%; margin-bottom: 0in"><br/>
+<p style="line-height: 100%; margin-bottom: 0cm">Daha fazla bilgi
+için klon bağlantıları hakkında&quot;<a class="western" href="https://www.juggluco.nl/Jugglucohelp/tr/addconnection.html"><i>Bağlantı
+ekle</i></a>&quot; yardım bölümünü okuyun. Ayrıca bakınız
+<a class="western" href="https://www.juggluco.nl/Juggluco/index.html#mirror">https://www.juggluco.nl/Juggluco/index.html#mirror</a></p>
+<h1 class="western">Masaüstü Bilgisayar</h1>
+<p>Android Juggluco uygulamasını bir Android Emülatörü
+yardımıyla Windows, Macintosh veya Linux bilgisayarda
+çalıştırabilirsiniz (örneğin <a class="western" href="https://www.genymotion.com/">Genymotion</a>).
+Emülatördeki Juggluco, sensöre bağlı bir Android telefondan bir
+Klon bağlantısı aracılığıyla veri alır. Pinch hareketleri
+(iki parmağı birbirine doğru yakınlaştırma veya uzaklaştırma)
+fare işaretçisini hareket ettirirken bir tuşa (Genymotion\'da
+Kontrol) basılarak simüle edilebilir.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
 
 </p>
 ]]>
 </string>
 <string name="disturbhelp" >
 <![CDATA[
-<p><a href="https://www.juggluco.nl/Jugglucohelp/be/disturbhelp.html">be</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/de/disturbhelp.html">de</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/fr/disturbhelp.html">fr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/nl/disturbhelp.html">nl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pl/disturbhelp.html">pl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pt/disturbhelp.html">pt</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ru/disturbhelp.html">ru</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/tr/disturbhelp.html">tr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/uk/disturbhelp.html">uk</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/zh/disturbhelp.html">zh</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/disturbhelp.html?lang=en">en</a>&emsp;&emsp;</p><h1>&quot;<i>Rahatsız etmeyin</i>&quot;
-access</h1>
-<p><meta name="created" content="00:00:00">Bazı cihazlarda, alarmlar &quot;<i>Rahatsız Etmeyin</i>&quot; modu sırasında çalışmaz. &quot;<i>Rahatsız Etmeyin</i>&quot; ile alarm çalmadan önce &quot;<i>Rahatsız Etmeyin</i>&quot; modunun kapatılıp kapatılmayacağını belirleyebilirsiniz.</p>
-<p>UYARI: <i>&quot;Rahatsız Etmeyin&quot;</i> sırasında <i>&quot;Oynat&quot;</i>\'a basıldığında alarm çalışıyorsa <i>&quot;Rahatsız Etmeyin&quot;</i> ayarını yapmayın. &quot;Rahatsız Etmeyin&quot; ayarıyla Juggluco, bir alarm zamanı geldiğinde, alarmı çalmadan önce <i>&quot;Rahatsız Etmeyin&quot;</i><i> </i>\'i kapatır. Bir daha <i>&quot;Rahatsız Etmeyin&quot;</i>\'i açmaz. Çünkü bu, &quot;<i>Rahatsız Etmeyin</i>&quot;\'in ayarlanan zaman çizelgesine göre otomatik olarak kapatılmaması gibi istenmeyen bir duruma sebep olur.</p>
+<p><a href="https://www.juggluco.nl/Jugglucohelp/be/disturbhelp.html">be</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/de/disturbhelp.html">de</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/fr/disturbhelp.html">fr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/nl/disturbhelp.html">nl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pl/disturbhelp.html">pl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pt/disturbhelp.html">pt</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ru/disturbhelp.html">ru</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/tr/disturbhelp.html">tr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/uk/disturbhelp.html">uk</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/zh/disturbhelp.html">zh</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/disturbhelp.html?lang=en">en</a>&emsp;&emsp;</p><h1 class="western">
+&quot;<i>Rahatsız </i><i>E</i><i>tmeyin</i>&quot; Modu</h1>
+<p><meta name="created" content="00:00:00">Bazı cihazlarda, alarmlar
+&quot;<i>Rahatsız Etmeyin</i>&quot; modu sırasında çalışmaz.
+&quot;<i>Rahatsız Etmeyin</i>&quot; ile alarm çalmadan önce
+&quot;<i>Rahatsız Etmeyin</i>&quot; modunun kapatılıp
+kapatılmayacağını belirleyebilirsiniz.</p>
+<p><b>UYARI: </b><i>&quot;Rahatsız Etmeyin&quot;</i> sırasında
+<i>&quot;Oynat&quot;</i>\'a basıldığında alarm çalışıyorsa
+<i>&quot;Rahatsız Etmeyin&quot;</i> ayarını yapmayın. <i>&quot;Rahatsız
+Etmeyin&quot;</i> ayarıyla Juggluco, bir alarm zamanı geldiğinde,
+alarmı çalmadan önce <i>&quot;Rahatsız Etmeyin&quot;</i> \'i
+kapatır. Bir daha <i>&quot;Rahatsız Etmeyin&quot;</i>\'i açmaz.
+Çünkü bu, &quot;<i>Rahatsız Etmeyin</i>&quot; in ayarlanan zaman
+çizelgesine göre otomatik olarak kapatılmaması gibi istenmeyen
+bir duruma sebep olur.</p>
 ]]>
 </string>
 <string name="flashpermission" >
 <![CDATA[
-<p><a href="https://www.juggluco.nl/Jugglucohelp/be/flashpermission.html">be</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/de/flashpermission.html">de</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/fr/flashpermission.html">fr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/it/flashpermission.html">it</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/nl/flashpermission.html">nl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pl/flashpermission.html">pl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pt/flashpermission.html">pt</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ru/flashpermission.html">ru</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/tr/flashpermission.html">tr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/uk/flashpermission.html">uk</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/zh/flashpermission.html">zh</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/flashpermission.html?lang=en">en</a>&emsp;&emsp;</p><p style="line-height: 100%; margin-bottom: 0in">
-Bazen flaş kullanımının bazı akıllı telefonlarda kamera izni gerektirdiği iddia ediliyor. Bu nedenle Juggluco önceki sürümlerde bu izni istemişti. Test edilen telefonlarda bu izin gerekli değildir ve Juggluco artık bunu istememektedir.
-Flaş çalışmıyorsa veya telefonunuz çöküyorsa veya flaş kullanırken garip davranıyorsa, kamera izni vermeyi deneyebilirsiniz.</p>
-<p style="line-height: 100%; margin-bottom: 0in">Android ayarlarından daha sonra tekrar kamera iznini kapatabilirsiniz.</p>
-<p style="line-height: 100%; margin-bottom: 0in"><br/>
+<p><a href="https://www.juggluco.nl/Jugglucohelp/be/flashpermission.html">be</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/de/flashpermission.html">de</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/fr/flashpermission.html">fr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/it/flashpermission.html">it</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/nl/flashpermission.html">nl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pl/flashpermission.html">pl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pt/flashpermission.html">pt</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ru/flashpermission.html">ru</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/tr/flashpermission.html">tr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/uk/flashpermission.html">uk</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/zh/flashpermission.html">zh</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/flashpermission.html?lang=en">en</a>&emsp;&emsp;</p><h1 class="western">
+Flaş Kullanımı</h1>
+<p style="line-height: 100%; margin-bottom: 0cm">Flaş kullanımının
+bazı akıllı telefonlarda kamera izni gerektirdiği iddia ediliyor.
+Bu nedenle Juggluco önceki sürümlerde bu izni istemişti. Test
+edilen telefonlarda bu izin gerekli değildir ve Juggluco artık bunu
+istememektedir. 
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">Flaş çalışmıyorsa,
+telefonunuz çöküyorsa veya flaş kullanırken garip davranıyorsa
+kamera izni vermeyi deneyebilirsiniz.</p>
+<p style="line-height: 100%; margin-bottom: 0cm">Android ayarlarından
+daha sonra tekrar kamera iznini kapatabilirsiniz.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
 
 </p>
 ]]>
@@ -410,39 +615,68 @@ Flaş çalışmıyorsa veya telefonunuz çöküyorsa veya flaş kullanırken gar
 <string name="floatingconfig" >
 <![CDATA[
 <p><a href="https://www.juggluco.nl/Jugglucohelp/be/floatingconfig.html">be</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/de/floatingconfig.html">de</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/fr/floatingconfig.html">fr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/nl/floatingconfig.html">nl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pl/floatingconfig.html">pl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ru/floatingconfig.html">ru</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/tr/floatingconfig.html">tr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/uk/floatingconfig.html">uk</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/zh/floatingconfig.html">zh</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/floatingconfig.html?lang=en">en</a>&emsp;&emsp;</p><h1 class="western">Yüzen Glikoz</h1>
-<p>Burada yüzen glikozun yazı tipi boyutunu,ön plan ve arka plan rengini ayarlayabilirsiniz. 
+<p>Burada yüzen glikozun yazı tipi boyutunu,ön plan ve arka plan
+rengini ayarlayabilirsiniz. 
 </p>
-<p><b>Dokunulabilir</b>: Ayarlandığında, yüzen glikozu parmağınızla hareket ettirebilir ve uzun süre basarak (hareket ettirmeden) küçültebilirsiniz. Dokunma özelliği ayarlanmadığında, dokunmatik giriş, yüzen glikozun altındaki pencereye gider, böylece yüzen glikozun altındaki uygulamayı kullanabilirsiniz.
-Ayrıca yüzen glikozu <b>çift dokunarak</b> dokunulmaz hale getirebilirsiniz.</p>
+<p><b>Dokunulabilir</b>: Ayarlandığında, yüzen glikozu
+parmağınızla hareket ettirebilir ve uzun süre basarak (hareket
+ettirmeden) küçültebilirsiniz. Dokunma özelliği
+ayarlanmadığında, dokunmatik giriş, yüzen glikozun altındaki
+pencereye gider. Böylece yüzen glikozun altındaki uygulamayı
+kullanabilirsiniz. Ayrıca yüzen glikozu <b>çift dokunarak</b>
+dokunulmaz hale getirebilirsiniz.</p>
 <p><b>Şeffaf:</b> Arka plan görünmez.</p>
-<p><b>Üstte</b>: Yüzen glikoz aynı zamanda Juggluco\'nun üstünde de gösterilir.</p>
+<p><b>Üstte</b>: Yüzen glikoz aynı zamanda Juggluco\'nun üstünde
+de gösterilir.</p>
 <p><b>Zaman</b>: Glikoz değerinin zaman damgası.</p>
 <p><b>Etkin</b>: Etkinleştirir.</p>
-<p><b>Yazı tipi boyutu</b>nu yazdıktan sonra “<i>Giriş”,
-</i>“<i>Bitti”</i> veya klavyedeki &quot;✓&quot; -düğmesine basmanız gerekir.</p>
-<p>Yüzen glikozu sol ortadaki menüden-&gt;açıp kapatabilirsiniz.
+<p><b>Yazı tipi boyutu</b>nu girdikten sonra “<i>Giriş”,
+</i>“<i>Bitti”</i> veya klavyedeki &quot;✓&quot; -düğmesine
+basmanız gerekir.</p>
+<p>Yüzen glikozu, <i>S</i><i>ol </i><i>O</i><i>rta </i><i>M</i><i>enü
+&gt; </i><i>Yüzen Glikoz</i> sekmesinden açıp kapatabilirsiniz. 
 </p>
-<p>Yüzen glikozun <b>ok tarafına</b> dokunarak Juggluco\'ya geçebilirsiniz. Glikoz değeri tarafına iki kez dokunmak, yüzen glikozun dokunulmaz hale gelmesiyle sonuçlanır. Glikoz değerine <b>uzun süre basmak</b> yalnızca küçük bir glikoz değerinin görüntülenmesiyle sonuçlanır, böylece altındaki uygulamayla etkileşime girebilirsiniz. Küçük ekrana dokunmak onu tekrar büyütür. Glikoz değeri tarafına dokunurken hareket etmek, yüzen glikozu <b>hareket ettirir</b>.</p>
-<p>Juggluco\'nun diğer uygulamalar üzerinde görüntülenmesi için özel bir izne ihtiyaç vardır. WearOS ve Android Automotive\'de bu izni vermek için adb kullanmanız gerekir:</p>
-<p style="margin-bottom: 0in"><b>adb shell pm grant tk.glucodata android.permission.SYSTEM_ALERT_WINDOW</b></p>
-<p style="arka plan: şeffaf">Bazı saatlerde (örneğin TicWatch Pro) buna şu şekilde de izin verebilirsiniz: Android/WearOS ayarlar-&gt;Uygulamalar ve bildirimler-&gt;Uygulama
-bilgisi-&gt;Juggluco-&gt;Gelişmiş-&gt;Diğer uygulamaların üzerinde görüntüle.</p>
+<p>Yüzen glikozun <b>ok tarafına</b> dokunarak Juggluco\'ya
+geçebilirsiniz. Glikoz değeri tarafına iki kez dokunmak, yüzen
+glikozun dokunulmaz hale gelmesiyle sonuçlanır. Glikoz değerine
+<b>uzun süre basmak</b> yalnızca küçük bir glikoz değerinin
+görüntülenmesiyle sonuçlanır, böylece altındaki uygulamayla
+etkileşime girebilirsiniz. Küçülen ekrana dokunmak onu tekrar
+büyütür. Glikoz değeri tarafına dokunurken hareket etmek, yüzen
+glikozu <b>hareket ettirir</b>.</p>
+<p>Juggluco\'nun diğer uygulamalar üzerinde görüntülenmesi için
+özel bir izne ihtiyaç vardır. WearOS ve Android Automotive\'de bu
+izni vermek için adb kullanmanız gerekir:</p>
+<p style="margin-bottom: 0cm"><b>adb shell pm grant tk.glucodata
+android.permission.SYSTEM_ALERT_WINDOW</b></p>
+<p>Bazı saatlerde (örneğin TicWatch Pro) buna şu şekilde de izin
+verebilirsiniz: Android/WearOS ayarlar &gt; Uygulamalar ve
+bildirimler &gt; Uygulama bilgisi &gt; Juggluco &gt; Gelişmiş &gt;
+Diğer uygulamaların üzerinde görüntüle.</p>
 ]]>
 </string>
 <string name="garminconfig" >
 <![CDATA[
-<p><a href="https://www.juggluco.nl/Jugglucohelp/be/garminconfig.html">be</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/de/garminconfig.html">de</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/fr/garminconfig.html">fr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/nl/garminconfig.html">nl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pl/garminconfig.html">pl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pt/garminconfig.html">pt</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ru/garminconfig.html">ru</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/tr/garminconfig.html">tr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/uk/garminconfig.html">uk</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/zh/garminconfig.html">zh</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/garminconfig.html?lang=en">en</a>&emsp;&emsp;</p><h1>Kerfstok yapılandırma</h1>
-<p style="line-height: 100%; margin-bottom: 0in">Kerfstok\'un <b>kaynağı</b> şu adresten indirilebilir:
-<a href="https://www.juggluco.nl/Kerfstok/Kerfstok-source.html"> https://www.juggluco.nl/Kerfstok/Kerfstok-source.html</a>).
-Kullanıcılar bunu değiştirmekte özgürdür. Her saat uygulamasının benzersiz bir tanımlayıcısı vardır. Tanımlayıcı varsayılandan farklıysa, Juggluco\'nun saat uygulamasıyla iletişim kurmak için bunu bilmesi gerekir. Farklı bir tanımlayıcı belirtmek için <b>ID</b> tuşuna basın ve 32 karakterlik dizeyi yazın.
-Bir cihazdaki Juggluco, yalnızca bir saat uygulamasına bağlanabilir. Değişiklikler veri kaybına yol açacaktır.</p>
-<h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/tr/shortcuthelp.html">Shortcuts</a></h2>
-<p style="line-height: 100%; margin-bottom: 0in">Shortcuts are sent
-to the Garmin watch app Kerfstok to easily insert certain values.</p>
-<h2 class="western">Dark mode</h2>
-<p style="line-height: 100%; margin-bottom: 0in">Specify if Kerfstok
-should be white on black instead of black on white.</p>
-<p style="line-height: 100%; margin-bottom: 0in"><br/>
+<p><a href="https://www.juggluco.nl/Jugglucohelp/be/garminconfig.html">be</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/de/garminconfig.html">de</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/fr/garminconfig.html">fr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/nl/garminconfig.html">nl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pl/garminconfig.html">pl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pt/garminconfig.html">pt</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ru/garminconfig.html">ru</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/tr/garminconfig.html">tr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/uk/garminconfig.html">uk</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/zh/garminconfig.html">zh</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/garminconfig.html?lang=en">en</a>&emsp;&emsp;</p><h1 class="western">Kerfstok yapılandırma</h1>
+<p style="line-height: 100%; margin-bottom: 0cm">Kerfstok\'un <b>kaynağı</b>
+şu adresten indirilebilir:
+<a href="https://www.juggluco.nl/Kerfstok/Kerfstok-source.html">https://www.juggluco.nl/Kerfstok/Kerfstok-source.html</a>)
+Kullanıcılar bunu değiştirmekte özgürdür. Her saat
+uygulamasının benzersiz bir tanımlayıcısı vardır. Tanımlayıcı
+varsayılandan farklıysa, Juggluco\'nun saat uygulamasıyla iletişim
+kurmak için bunu bilmesi gerekir. Farklı bir tanımlayıcı
+belirtmek için <b>ID</b> tuşuna basın ve 32 karakterlik dizeyi
+yazın. Bir cihazdaki Juggluco, yalnızca bir saat uygulamasına
+bağlanabilir. Değişiklikler veri kaybına yol açacaktır.</p>
+<h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/tr/shortcuthelp.html">Kısayollar</a></h2>
+<p style="line-height: 100%; margin-bottom: 0cm">Belirli değerleri
+kolayca girebilmek için Garmin saat uygulaması Kerfstok\'a
+kısayollar gönderilir.</p>
+<h2 class="western">Koyu Mod</h2>
+<p style="line-height: 100%; margin-bottom: 0cm">Kerfstok\'un siyah
+üzerine beyaz yerine beyaz üzerine siyah olması gerekip
+gerekmediğini seçin.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
 
 </p>
 ]]>
@@ -450,41 +684,92 @@ should be white on black instead of black on white.</p>
 <string name="getaccountidhelp" >
 <![CDATA[
 <p><a href="https://www.juggluco.nl/Jugglucohelp/be/getaccountidhelp.html">be</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/de/getaccountidhelp.html">de</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/fr/getaccountidhelp.html">fr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/nl/getaccountidhelp.html">nl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pl/getaccountidhelp.html">pl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ru/getaccountidhelp.html">ru</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/tr/getaccountidhelp.html">tr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/uk/getaccountidhelp.html">uk</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/zh/getaccountidhelp.html">zh</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/getaccountidhelp.html?lang=en">en</a>&emsp;&emsp;</p><h1 class="western">Hesap Kimliği Al</h1>
-<p style="line-height: 100%; margin-bottom: 0in">Freestyle Libre 3 sensörünü NFC aracılığıyla taramak için gereken Libreview Hesap Kimliği nasıl alınır? &quot;<strong>Manuel</strong><strong>olarak</strong><strong>&quot;</strong> seçeneğini belirlerseniz, Hesap Kimliğini manuel olarak girebilirsiniz. Ayrıca, “<i>manuel</i>” seçeneğini kaldırabilir ve &quot;<strong>Libreview\'den</strong>&quot; seçeneğine basarak Libreview\'den almak için hesap e-posta adresinizi ve şifrenizi kullanabilirsiniz.</p>
-<p style="line-height: 100%; margin-bottom: 0in">Libreview Hesap kimliğini Libreview\'den almak ve ardından hesabın e-posta adresini ve şifresini &quot;<em>manuel</em><em>olarak</em><em>&quot;</em> ayarlamak ve değiştirmek de mümkündür. Daha sonra &quot;<i>Libreview\'e Gönder</i>&quot; seçeneğini ayarlayıp &quot;<i>Verileri Yeniden Gönder</i>&quot; düğmesine bastığınızda, veriler o Libreview hesabına gönderilecektir, ancak önceki/manuel olarak girilen hesap kimliği yine de sensörü NFC aracılığıyla taramak için kullanılacaktır. Bu şekilde Juggluco, verileri Abbotts Libre 3 uygulamasının kullandığından farklı bir Libreview hesabına gönderir.</p>
+<p style="line-height: 100%; margin-bottom: 0cm">Freestyle Libre 3
+sensörünü NFC aracılığıyla taramak için gereken Libreview
+Hesap Kimliği nasıl alınır? 
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i>&quot;</i><strong><i>Manuel
+olarak&quot;</i></strong> seçeneğini belirlerseniz, Hesap Kimliğini
+manuel olarak girebilirsiniz. Ayrıca, “<i>manuel</i>” seçeneğini
+kaldırabilir ve <i>&quot;</i><strong><i>Libreview\'den</i></strong><i>&quot;</i>
+seçeneğine basarak Libreview\'den almak için hesap e-posta
+adresinizi ve şifrenizi kullanabilirsiniz.</p>
+<p style="line-height: 100%; margin-bottom: 0cm">Libreview Hesap
+kimliğini Libreview\'den almak ve ardından hesabın e-posta adresini
+ve şifresini &quot;<em>manuel olarak&quot;</em> ayarlamak ve
+değiştirmek de mümkündür. Daha sonra &quot;<i>Libreview\'e
+Gönder</i>&quot; seçeneğini ayarlayıp &quot;<i>Verileri Yeniden
+Gönder</i>&quot; düğmesine bastığınızda, veriler o Libreview
+hesabına gönderilecektir, ancak önceki/manuel olarak girilen hesap
+kimliği yine de sensörü NFC aracılığıyla taramak için
+kullanılacaktır. Bu şekilde Juggluco, verileri Abbotts Libre 3
+uygulamasının kullandığından farklı bir Libreview hesabına
+gönderir.</p>
 ]]>
 </string>
 <string name="getlib" >
 <![CDATA[
-<p><a href="https://www.juggluco.nl/Jugglucohelp/be/getlib.html">be</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/de/getlib.html">de</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/fr/getlib.html">fr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/it/getlib.html">it</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/nl/getlib.html">nl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pl/getlib.html">pl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pt/getlib.html">pt</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ru/getlib.html">ru</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/tr/getlib.html">tr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/uk/getlib.html">uk</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/zh/getlib.html">zh</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/getlib.html?lang=en">en</a>&emsp;&emsp;</p><h1>Libre Kütüphanesi</h1>
+<p><a href="https://www.juggluco.nl/Jugglucohelp/be/getlib.html">be</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/de/getlib.html">de</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/fr/getlib.html">fr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/it/getlib.html">it</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/nl/getlib.html">nl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pl/getlib.html">pl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pt/getlib.html">pt</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ru/getlib.html">ru</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/tr/getlib.html">tr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/uk/getlib.html">uk</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/zh/getlib.html">zh</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/getlib.html?lang=en">en</a>&emsp;&emsp;</p><h1 class="western">
+Libre Kütüphanesi</h1>
 <p><font size="4" style="font-size: 14pt"><span lang="tr-TR"><b>Juggluco</b></span></font>
-<span lang="tr-TR"></span><span lang="tr-TR">Abbott\'s
-</span><span lang="tr-TR">Libre</span><span lang="tr-TR"> uygulamasında bir kütüphaneye ihtiyaç var</span><span lang="tr-TR">.
+<span lang="tr-TR">Abbott\'s Libre</span> <span lang="tr-TR">uygulamasında
+bir kütüphaneye ihtiyaç </span><span lang="tr-TR">duyar</span><span lang="tr-TR">.
 </span>
 </p>
-<p><span lang="tr-TR"><b>ABD Freestyle Libre 2 sensörleri </b></span><span lang="tr-TR">ve muhtemelen Kanada gibi diğer ülkelerdeki sensörlerin Abbott\'un Librelink uygulamasının 2.5.2, 2.5.3 veya 2.7.1 sürümünden bir kütüphaneye ihtiyacı var.</span></p>
-<p><span lang="tr-TR"><b>Diğer Sensörler</b></span><span lang="tr-TR"> Librelink\'ten bir kütüphaneyle de çalışır</span><span lang="tr-TR"> Librelink 2.4.0, 2.4.1</span><span lang="tr-TR"> veya</span><span lang="tr-TR"> 2.4.2</span><span lang="tr-TR">. </span><span lang="tr-TR">2.4.2\'den sonraki sürümler pil kullanımı açısından daha kötü hale geldi ve Freestyle Libre 2 sensörleri gibi ABD dışındaki sensörlerde aynı sonuçları veriyor.</span><span lang="tr-TR"></span></p>
-<p><span lang="tr-TR">Ülke kodunun bir önemi yok.</span></p>
-<p><span lang="tr-TR">Librelink\'i içeren .apk Google Play tarafından dağıtılır ve web üzerinde her türlü yerde mevcuttur. Bağlantıların bir listesi şu adreste bulunabilir:
-</span><a href="https://www.juggluco.nl/Juggluco/urls.html"> https://www.juggluco.nl/Juggluco/urls.html</a> </p>
-<p><span lang="tr-TR">APK\'yi indirdikten sonra, </span><span lang="tr-TR"><b>Aç</b></span> <span lang="tr-TR">düğmesine dokunarak Juggluco\'nun onu açmasına izin verebilirsiniz.</span> 
+<p><span lang="tr-TR"><b>ABD Freestyle Libre 2 sensörleri </b></span><span lang="tr-TR">ve
+muhtemelen Kanada gibi diğer ülkelerdeki sensörlerin Abbott\'un
+Librelink uygulamasının 2.5.2, 2.5.3 veya 2.7.1 sürümünden bir
+kütüphaneye ihtiyacı </span><span lang="tr-TR">duyar</span><span lang="tr-TR">.</span></p>
+<p><span lang="tr-TR"><b>Diğer Sensörler</b></span> <span lang="tr-TR">Librelink\'ten
+bir kütüphaneyle de çalışır.</span> <span lang="tr-TR">Librelink
+2.4.0, 2.4.1</span> <span lang="tr-TR">veya</span> <span lang="tr-TR">2.4.2.
+2.4.2\'den sonraki sürümler pil kullanımı açısından daha kötü
+hale geldi ve Freestyle Libre 2 sensörleri gibi ABD dışındaki
+sensörlerde aynı sonuçları veriyor.</span></p>
+<p>Ülke kodunun bir önemi yok.</p>
+<p><span lang="tr-TR">Librelink\'i içeren .apk Google Play tarafından
+dağıtılır ve web üzerinde her türlü yerde mevcuttur.
+Bağlantıların bir listesi şu adreste bulunabilir:
+</span><a href="https://www.juggluco.nl/Juggluco/urls.html">https://www.juggluco.nl/Juggluco/urls.html</a>
 </p>
-<p><span lang="tr-TR">Freestyle Libre sensörüne doğrudan erişim olmadan da Juggluco\'yu çalıştırmak mümkündür. Uygulama, verileri sensörden alan bir telefondan IP/TCP bağlantısı aracılığıyla alabilir. Sensöre erişim olmadan, insülin miktarları, karbonhidratlar ve aktivite gibi diyabet kontrol bilgilerini girmek ve bu verileri Garmin saat uygulaması Kerfstok\'tan almak da mümkündür. Dokun </span><span lang="tr-TR"><b>Sensör Olmadan</b></span>
-<span lang="tr-TR">Juggluco\'yu bu şekilde sınırlar.</span> <span lang="tr-TR"></span></p>
+<p><span lang="tr-TR">APK\'yi indirdikten sonra, </span><span lang="tr-TR"><b>Aç</b></span>
+<span lang="tr-TR">düğmesine dokunarak Juggluco\'nun onu açmasına
+izin verebilirsiniz.</span> 
+</p>
+<p><span lang="tr-TR">Freestyle Libre sensörüne doğrudan erişim
+olmadan da Juggluco\'yu çalıştırmak mümkündür. Uygulama,
+verileri sensörden alan bir telefondan IP/TCP bağlantısı
+aracılığıyla alabilir. Sensöre erişim olmadan, insülin
+miktarları, karbonhidratlar ve aktivite gibi diyabet kontrol
+bilgilerini girmek ve bu verileri Garmin saat uygulaması
+Kerfstok\'tan almak da mümkündür. Dokun &gt; </span><span lang="tr-TR"><b>Sensör
+Olmadan</b></span> <span lang="tr-TR">Juggluco\'yu bu şekilde
+sınırlar.</span> 
+</p>
 ]]>
 </string>
 <string name="helpexport" >
 <![CDATA[
-<p><a href="https://www.juggluco.nl/Jugglucohelp/be/helpexport.html">be</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/de/helpexport.html">de</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/nl/helpexport.html">nl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pl/helpexport.html">pl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ru/helpexport.html">ru</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/tr/helpexport.html">tr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/uk/helpexport.html">uk</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/zh/helpexport.html">zh</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/helpexport.html?lang=en">en</a>&emsp;&emsp;</p><h1>Dışa Aktar</h1>
+<p><a href="https://www.juggluco.nl/Jugglucohelp/be/helpexport.html">be</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/de/helpexport.html">de</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/nl/helpexport.html">nl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pl/helpexport.html">pl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ru/helpexport.html">ru</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/tr/helpexport.html">tr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/uk/helpexport.html">uk</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/zh/helpexport.html">zh</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/helpexport.html?lang=en">en</a>&emsp;&emsp;</p><h1 class="western">Dışa Aktar</h1>
 <p>Verileri Juggluco\'dan bir dosyaya aktarın.</p>
 <p>Yemekler html\'de kaydedilir. Diğer tüm veriler .tsv
 (<a href="https://en.wikipedia.org/wiki/Tab-separated_values">Tab-separated
-values</a>)\'de kaydedilir. Bu, LibreOffice Calc, Microsoft Excel, Mathematica veya R gibi programlara yüklenebilir. Öğeleri ayırmak için virgül yerine sekmelerin kullanıldığı bir tür .csv\'dir. UTF-8 kodlaması kullanılır.</p>
-<p>Sütunların anlamları şu adreste bulunabilir
+values</a>)\'de kaydedilir. Bu, LibreOffice Calc, Microsoft Excel,
+Mathematica veya R gibi programlara yüklenebilir. Öğeleri ayırmak
+için virgül yerine sekmelerin kullanıldığı bir tür .csv\'dir.
+UTF-8 kodlaması kullanılır.</p>
+<p>Sütunların anlamları şu adreste bulunabilir:
 <a href="https://www.juggluco.nl/Juggluco/webserver.html">https://www.juggluco.nl/Juggluco/webserver.html</a></p>
-<p><b>Günler</b>: Juggluco 7.1.0\'dan başlayarak, kaydedilecek
-gün sayısını seçebilirsiniz. Bitiş tarihi ekranın sağ sınırıdır. Bu nedenle, Juggluco\'da geçmiş verileri görüntülerseniz, yalnızca eski veriler dışa aktarılır (sol orta menüdekiyle aynı -&gt;<a href="https://www.juggluco.nl/Jugglucohelp/tr/stathelp.html">İstatistikler</a>).</p>
-<p>Juggluco 7.1.0\'dan başlayarak, bu verileri Juggluco\'daki web sunucusu üzerinden almak da mümkündür (Sol menü-&gt;Ayarlar-&gt;<a href="https://www.juggluco.nl/Jugglucohelp/tr/exchangehelp.html">Veri değişimi</a>-&gt;Web sunucusu), bkz. <a href="https://www.juggluco.nl/Juggluco/webserver.html">https://www.juggluco.nl/Juggluco/webserver.html</a></p>
+<p><b>Günler</b>: Juggluco 7.1.0\'dan başlayarak, kaydedilecek gün
+sayısını seçebilirsiniz. Bitiş tarihi ekranın sağ sınırıdır.
+Bu nedenle, Juggluco\'da geçmiş verileri görüntülerseniz,
+yalnızca eski veriler dışa aktarılır (Sol Orta Menü &gt;
+<a href="https://www.juggluco.nl/Jugglucohelp/tr/stathelp.html">İstatistikler</a>)</p>
+<p>Juggluco 7.1.0\'dan başlayarak, bu verileri Juggluco\'daki web
+sunucusu üzerinden almak da mümkündür. (Sol Menü &gt; Ayarlar &gt;
+<a href="https://www.juggluco.nl/Jugglucohelp/tr/exchangehelp.html">Veri
+değişimi</a> &gt; Web sunucusu)</p>
+<p>Bakınız: <a href="https://www.juggluco.nl/Juggluco/webserver.html">https://www.juggluco.nl/Juggluco/webserver.html</a></p>
 <p><br/>
 <br/>
 
@@ -1518,40 +1803,83 @@ eğrisi kullanacaktır. Etiket hızlı etkili bir insülin anlamına gelmiyorsa 
 </string>
 <string name="healthpermission" >
 <![CDATA[
-<p><a href="https://www.juggluco.nl/Jugglucohelp/de/healthpermission.html">de</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/nl/healthpermission.html">nl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pl/healthpermission.html">pl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ru/healthpermission.html">ru</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/tr/healthpermission.html">tr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/zh/healthpermission.html">zh</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/healthpermission.html?lang=en">en</a>&emsp;&emsp;</p><h1><i>Kan şekeri</i></h1> yazma izni
-<p>Glikoz değerlerini <b>Health Connect</b>\'e yazabilmek için,
-kullanıcının Juggluco\'ya <b>Kan Şekeri</b>\'ni Health Connect\'e yazma izni vermesi gerekir. 
+<p><a href="https://www.juggluco.nl/Jugglucohelp/de/healthpermission.html">de</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/nl/healthpermission.html">nl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pl/healthpermission.html">pl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ru/healthpermission.html">ru</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/tr/healthpermission.html">tr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/zh/healthpermission.html">zh</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/healthpermission.html?lang=en">en</a>&emsp;&emsp;</p><h1 class="western">
+<i>Yazma İzni</i></h1>
+<p><br/>
+<br/>
+
 </p>
-<p>Bu izin, Health Connect\'te glikoz değerlerini almak dışında hiçbir şey için gerekli değildir. Diğer tüm durumlarda Juggluco bu izin olmadan çalışabilir.</p>
+<p>Glikoz değerlerini <b>Health Connect</b>\'e yazabilmek için,
+Juggluco\'ya yazma izni verilmesi gerekir. 
+</p>
+<p>Bu izin, Health Connect\'te glikoz değerlerini almak dışında
+hiçbir şey için gerekli değildir. Diğer tüm durumlarda Juggluco
+bu izin olmadan çalışabilir.</p>
 ]]>
 </string>
 <string name="changestart" >
 <![CDATA[
-<p><a href="https://www.juggluco.nl/Jugglucohelp/de/changestart.html">de</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/nl/changestart.html">nl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pl/changestart.html">pl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ru/changestart.html">ru</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/sv/changestart.html">sv</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/tr/changestart.html">tr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/zh/changestart.html">zh</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/changestart.html?lang=en">en</a>&emsp;&emsp;</p><h1>Başlangıcı değiştir</h1>
-<p>Verilerin Libreview\'e gönderileceği tarihi ve saati değiştirin. Bu, verilerin bir kısmı Libreview\'de zaten mevcut olduğunda yararlı olabilir. Örneğin, verileri başka bir telefona aktarmak için bir yansıtma (klon) bağlantısı kullandıktan sonra ardından verileri Libreview\'e göndermek için bu yeni telefonu kullandıktan sonra kullanılabilir.</p>
+<p><a href="https://www.juggluco.nl/Jugglucohelp/de/changestart.html">de</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/nl/changestart.html">nl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pl/changestart.html">pl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ru/changestart.html">ru</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/sv/changestart.html">sv</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/tr/changestart.html">tr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/zh/changestart.html">zh</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/changestart.html?lang=en">en</a>&emsp;&emsp;</p><h1 class="western">
+Başlangıcı Değiştir</h1>
+<p>Verilerin Libreview\'e gönderileceği tarihi ve saati değiştirin.
+Bu, verilerin bir kısmı Libreview\'de zaten mevcut olduğunda
+yararlı olabilir. Örneğin, verileri başka bir telefona aktarmak
+için bir yansıtma (klon) bağlantısı kullanıp ardından verileri
+bu yeni telefonu (klonu) kullanarak Libreview\'e göndermek için
+kullanılabilir.</p>
 ]]>
 </string>
 <string name="exchangehelp" >
 <![CDATA[
-<p><a href="https://www.juggluco.nl/Jugglucohelp/de/exchangehelp.html">de</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/nl/exchangehelp.html">nl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pl/exchangehelp.html">pl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/tr/exchangehelp.html">tr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/exchangehelp.html?lang=en">en</a>&emsp;&emsp;</p><h1>Veri Değişimi</h1>
+<p><a href="https://www.juggluco.nl/Jugglucohelp/de/exchangehelp.html">de</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/nl/exchangehelp.html">nl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pl/exchangehelp.html">pl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/tr/exchangehelp.html">tr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/exchangehelp.html?lang=en">en</a>&emsp;&emsp;</p><h1 class="western">Veri Değişimi</h1>
 <h2 class="western">Health Connect</h2>
-<p>Dakikalık glikoz değerlerini <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.healthdata">Health Connect</a>\'e gönderin. Diğer uygulamalara bu glikoz değerlerine erişim verebilirsiniz, örneğin <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.fitness">Google Fit</a>. Diğer uygulamalar yine Google Fit\'ten veri alabilir.</p>
+<p>Dakikalık glikoz değerlerini <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.healthdata">Health
+Connect</a>\'e gönderin. Diğer uygulamalara bu glikoz değerlerine
+erişim verebilirsiniz, örneğin <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.fitness">Google
+Fit</a>. Diğer uygulamalar yine Google Fit\'ten veri alabilir.</p>
 <h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/tr/libreview.html">Libreview</a></h2>
-<p>Freestyle Libre 2 ve 3 glikoz değerlerini ve miktarlarını Libreview\'e göndermek ve Freestyle Libre 3 sensör aktivasyonu sırasında kullanılan hesap kimliğini almak için Libreview ile bağlantı kurun. Ayarları değiştirmek için dokunun.</p>
+<p>Freestyle Libre 2 ve 3 glikoz değerlerini ve miktarlarını
+Libreview\'e göndermek ve Freestyle Libre 3 sensör aktivasyonu
+sırasında kullanılan hesap kimliğini almak için Libreview ile
+bağlantı kurun. Ayarları değiştirmek için dokunun.</p>
 <h2 class="western">Yamalı Libre</h2>
-<p>Yamalı Libre yayınını (aslen yamalanmış
-Alman Librelink uygulaması 2.3.0 tarafından gönderilir) kullanarak Bluetooth glikoz veri akışını her dakika xDrip\'e gönderin. xDrip\'te Libre2\'yi (yamalanmış Uygulama) donanım veri kaynağı olarak ayarlamanız gerekir. xDrip\'te görüntülenen glikoz değerleri, aldınan değerlerden farklıdır. Bazı nedenlerden dolayı xDrip değerini yalnızca 5 dakikada bir günceller, muhtemelen bunun nedeni yalnızca 5 dakikada bir gönderen cihazlar için yapılmış olmasıdır. (xDrip\'e bağlı bir saat düzenli olarak 9 dakikadan eski değerleri görüntüler.) Ayrıca xDrip, alınan glikoz değerlerini kendi yorumlar. Ayna (klon) cihazlar da xDrip\'e veri gönderilebilir.</p>
-<p>Bakınız <a href="https://github.com/jakobheyman/xdripJH">https://github.com/jakobheyman/xdripJH</a>
-xDrip\'in glikoz değerini her dakika güncelleme girişimi için.</p>
-<p>Freestyle Libre 3 sensörleri, bağlantı kesilme süresinden sonra kaçırılan değerleri gönderir. Bu değerler bu yayınla birlikte gönderilmez. Juggluco\'daki Web sunucusunu açarsanız ve xDrip\'i Juggluco\'nun Nightscout takipçisi yaparsanız bunları alırsınız. Nightscout sunucusu:
-http://127.0.0.1:17580</p>
-<p>Juggluco ayrıca xDrip saat uygulamalarıyla doğrudan iletişim kurabilir, böylece saat uygulaması daha yeni glikoz değerlerini görüntüler. Bu özelliği kullanmak için sol menüde <b>Saat</b>\'in altındaki <i>&quot;Web Sunucusu&quot;</i>\'nu kontrol edin. Daha fazla bilgi için sol menüdeki Yardım\'a bakın-&gt;<a href="https://www.juggluco.nl/Jugglucohelp/tr/watchinfo.html">Saat</a>
-xDrip web sunucusu tarafından kullanılan ağ portunu yalnızca bir uygulama dinleyebilir, bu nedenle Juggluco\'dakini kullanmak istiyorsanız xDrip uygulamasında &quot;<i>xDrip
+<p>Yamalı Libre yayınını (aslen yamalanmış Alman Librelink
+uygulaması 2.3.0 tarafından gönderilir) kullanarak Bluetooth
+glikoz veri akışını her dakika xDrip\'e gönderin. xDrip\'te
+Libre2\'yi (yamalanmış Uygulama) donanım veri kaynağı olarak
+ayarlamanız gerekir. xDrip\'te görüntülenen glikoz değerleri,
+alınan değerlerden farklıdır. xDrip verileri yalnızca 5 dakikada
+bir günceller, muhtemelen bunun nedeni yalnızca 5 dakikada bir
+gönderen cihazlar için yapılmış olmasıdır. (xDrip\'e bağlı
+bir saat düzenli olarak 9 dakikadan eski değerleri görüntüler.)
+Ayrıca xDrip, alınan glikoz değerlerini kendi yorumlar. Ayna
+(klon) cihazlar da xDrip\'e veri gönderilebilir.</p>
+<p>xDrip\'in glikoz değerini her dakika güncelleme girişimi için
+bakınız: <a href="https://github.com/jakobheyman/xdripJH">https://github.com/jakobheyman/xdripJH</a>
+</p>
+<p>Freestyle Libre 3 sensörleri, bağlantı kesildikten sonra
+kaçırılan değerleri gönderir. Bu değerler bu yayınla birlikte
+gönderilmez. Juggluco\'daki Web sunucusunu açıp Nightscout’a veri
+gönderirseniz ve xDrip\'i Nightscout takipçisi yaparsanız bunları
+alırsınız. Nightscout sunucusu: http://127.0.0.1:17580</p>
+<p>Juggluco ayrıca xDrip saat uygulamalarıyla doğrudan iletişim
+kurabilir, böylece saat uygulaması daha yeni glikoz değerlerini
+görüntüler. Bu özelliği kullanmak için sol menüde <b>Saat</b>\'in
+altındaki <i>&quot;Web Sunucusu&quot;</i>\'nu kontrol edin. Daha
+fazla bilgi için: Sol Menü &gt; <a href="https://www.juggluco.nl/Jugglucohelp/tr/watchinfo.html">Saat</a>
+&gt; Yardım. xDrip web sunucusu tarafından kullanılan ağ portunu
+yalnızca bir uygulama dinleyebilir, bu nedenle Juggluco\'dakini
+kullanmak istiyorsanız xDrip uygulamasında &quot;<i>xDrip
 webservice</i>&quot;i kapatmanız gerekir.</p>
 <h2 class="western"><a name="eversense"></a>EverSense</h2>
-<p>Bir glikoz yayını daha. Her dakika xDrip\'e bir glikoz değeri göndermek için kullanılabilir. xDrip\'te <i>Donanım Veri Kaynağı</i> olarak “<i>460G/EverSense</i>” ayarlamanız gerekir.
+<p>Bir glikoz yayını daha. Her dakika xDrip\'e bir glikoz değeri
+göndermek için kullanılabilir. xDrip\'te <i>Donanım Veri Kaynağı</i>
+olarak “<i>460G/EverSense</i>” ayarlamanız gerekir. 
 </p>
-<p>xDrip, 5 dakikada bir değerde ısrar ettiği için bunların neredeyse hepsini yok sayacaktır. Bu kısıtlamayı xDrip\'in kaynak kodunu düzenleyerek kaldırabilirsiniz. Change <i>4 * 60 * 1000</i> to <i>55 * 1000</i> in
+<p>xDrip, 5 dakikada bir değerde ısrar ettiği için bunların
+neredeyse hepsini yok sayacaktır. Bu kısıtlamayı xDrip\'in kaynak
+kodunu düzenleyerek kaldırabilirsiniz. Change <i>4 * 60 * 1000</i>
+to <i>55 * 1000</i> in
 <a href="https://github.com/NightscoutFoundation/xDrip/blob/645e8b4cb8fa3ad7b280f598d6f2f6bdb84ce392/app/src/main/java/com/eveningoutpost/dexdrip/models/BgReading.java#L969">app/src/main/java/com/eveningoutpost/dexdrip/models/BgReading.java</a>,
 böylece olur:</p>
 <p>public static BgReading readingNearTimeStamp(long startTime)
@@ -1561,25 +1889,35 @@ margin = (55 * 1000);<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return
 readingNearTimeStamp(startTime, margin);<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</p>
-<p>Yamalı Libre yayınına göre avantajı, xDrip\'in glikoz değerlerini kendine göre dönüştürmemesidir.</p>
+<p>Yamalı Libre yayınına göre avantajı, xDrip\'in glikoz
+değerlerini kendine göre dönüştürmemesidir.</p>
 <h2 class="western">xDrip Yayını</h2>
-<p>xDrip\'te açık olan aynı yayını &quot;<i>Ayarlar-&gt;Uygulamalar arası ayarlar-&gt;Yerel olarak yayınla&quot;</i> seçeneğiyle gönderin.
-AndroidAPS gibi uygulamalar bunu dinler. Her 5 dakikada bir yayınlanan orijinal xDrip yayınının aksine, Juggluco bu yayını her
-dakikada yayınlar.</p>
+<p>xDrip\'te açık olan aynı yayını &quot;<i>Ayarlar &gt;
+Uygulamalar arası ayarlar &gt; Yerel olarak yayınla&quot;</i>
+seçeneğiyle gönderin. AndroidAPS gibi uygulamalar bunu dinler. Her
+5 dakikada bir yayınlanan orijinal xDrip yayınının aksine,
+Juggluco bu yayını her dakikada yayınlar.</p>
 <h2 class="western">Glucodata broadcast</h2>
-<p>xDrip yayınıyla aynı işlevi gören yeni bir yayın.
-Alınan glikoz değerlerini logcat\'e yazan basit bir örnek uygulama
+<p>xDrip yayınıyla aynı işlevi gören yeni bir yayın. Alınan
+glikoz değerlerini logcat\'e yazan basit bir örnek uygulamayı
 burada bulabilirsiniz: <a href="https://www.juggluco.nl/Juggluco/glucosebroadcast.html">Glucose
-broadcasts</a>. G-Watch\'ta veri kaynağı olarak Juggluco\'yu belirtirseniz, bu yayını açmanız gerekir.</p>
-<p>Bu yayını dinleyen uygulamalar gösterilir. Bu yayını göndermek istediğiniz uygulamaları kontrol edin.</p>
+broadcasts</a>. G-Watch\'ta veri kaynağı olarak Juggluco\'yu
+belirtirseniz, bu yayını açmanız gerekir.</p>
+<p>Bu yayını dinleyen uygulamalar gösterilir. Bu yayını
+göndermek istediğiniz uygulamaları kontrol edin.</p>
 <h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/tr/Nightscouthelp.html">Web
 server</a></h2>
-<p>xDrip saatleri ve bazı Nightscout uygulamalarıyla kullanılabilen web sunucusu. Daha önce xDrip web sunucusu olarak adlandırılıyordu.</p>
-<h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/tr/NightPost.html">Karşıya Yükleyici</a></h2>
+<p>xDrip saatleri ve bazı Nightscout uygulamalarıyla kullanılabilen
+web sunucusu. Daha önce xDrip web sunucusu olarak adlandırılıyordu.</p>
+<h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/tr/NightPost.html">Karşıya
+Yükleyici</a></h2>
 <p>Nightscout sunucusuna veri yükleyin.</p>
-<h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/tr/connectionoverview.html">Mirror/Clone</a></h2>
-<p lang="tr-TR" style="line-height: 100%; margin-bottom: 0in">Tüm verileri internet bağlantısı üzerinden başka cihazda klonu oluşturulan Juggluco’ya gönderin. Mevcut verilerin üzerine yazılacaktır.</p>
-<h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/tr/helpexport.html">Dışa Aktar</a></h2>
+<h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/tr/connectionoverview.html">Ayna/Klon</a></h2>
+<p style="line-height: 100%; margin-bottom: 0cm">Tüm verileri
+internet bağlantısı üzerinden başka cihazda klonu oluşturulan
+Juggluco’ya gönderin. Mevcut verilerin üzerine yazılacaktır.</p>
+<h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/tr/helpexport.html">Dışa
+Aktar</a></h2>
 <p>Verileri bir dosyaya kaydedin.</p>
 <p><br/>
 <br/>
@@ -1589,39 +1927,93 @@ server</a></h2>
 </string>
 <string name="displayhelp" >
 <![CDATA[
-<p><a href="https://www.juggluco.nl/Jugglucohelp/de/displayhelp.html">de</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/nl/displayhelp.html">nl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/tr/displayhelp.html">tr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/displayhelp.html?lang=en">en</a>&emsp;&emsp;</p><h1>Görüntü ayarları</h1>
+<p><a href="https://www.juggluco.nl/Jugglucohelp/de/displayhelp.html">de</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/nl/displayhelp.html">nl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/tr/displayhelp.html">tr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/displayhelp.html?lang=en">en</a>&emsp;&emsp;</p><h1 class="western">Görüntü Ayarları</h1>
 <h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/tr/colorhelp.html"><span lang="tr-TR">Renkler</span></a></h2>
-<p style="margin-bottom: 0in">Eğrilerin, taramaların ve
-sayıların renklerini değiştirin. <i>Koyu mod</i>\'a geçmek için, sağ orta menü-&gt;Koyu mod\'u kullanın.</p>
-<h2 class="western">Grafik aralığı: düşük-yüksek.</h2>
-<p style="margin-bottom: 0in">Düşük ve yüksek bir değer verin, böylece ekranın altı verdiğiniz düşük değere ve üstü verdiğiniz yüksek değere karşılık gelir. Bu değerler yalnızca ekranda görüntülenen tüm glikoz değerleri bu sınırlar içinde olduğunda kullanılır. Aksi takdirde, sınırlar genişletilir ve tüm değerler görünür olur. Glikoz değeriniz 3 mmol/L (54 mg/dL) ve 9 mmol/L (162 mg/dL) arasında olduğunda, ekran değerlerini 5 mmol/L ile 6 mmol/L arasına ayarlasanız bile grafik 3\'ten 9\'a kadar bir glikoz ekseni görüntüler. 
+<p style="margin-bottom: 0cm">Eğrilerin, taramaların ve sayıların
+renklerini değiştirin. <i>Koyu mod</i>\'a geçmek için, sağ orta
+menü &gt; Koyu Mod\'u kullanın.</p>
+<h2 class="western">Grafik aralığı: düşük-yüksek</h2>
+<p style="margin-bottom: 0cm">Düşük ve yüksek bir değer verin,
+böylece ekranın altı verdiğiniz düşük değere, üstü
+verdiğiniz yüksek değere karşılık gelir. Bu değerler yalnızca
+ekranda görüntülenen tüm glikoz değerleri bu sınırlar içinde
+olduğunda kullanılır. Aksi takdirde, sınırlar genişletilir ve
+tüm değerler görünür olur. Glikoz değeriniz 3 mmol/L (54 mg/dL)
+ve 9 mmol/L (162 mg/dL) arasında olduğunda, ekran değerlerini 5
+mmol/L ile 6 mmol/L arasına ayarlasanız bile grafik 3\'ten 9\'a kadar
+bir glikoz ekseni görüntüler. 
 </p>
-<p style="margin-bottom: 0in"><b>Glikozu Manuel Olarak Ölçekle</b> açıksa, bunu değiştirebilirsiniz: parmağınızı ekranın üstünde hareket ettirdiğinizde, grafiğin üst yarısı yukarı ve aşağı hareket eder; ekranın altında hareket ettirdiğinizde, grafiğin alt yarısı yukarı ve aşağı hareket eder.</p>
+<p style="margin-bottom: 0cm"><b>Glikozu Manuel Olarak Ölçekle</b>
+açıksa, bunu değiştirebilirsiniz: parmağınızı ekranın
+üstünde hareket ettirdiğinizde, grafiğin üst yarısı yukarı ve
+aşağı hareket eder; ekranın altında hareket ettirdiğinizde,
+grafiğin alt yarısı yukarı ve aşağı hareket eder.</p>
 <h2 class="western">Hedef aralığı: düşük-yüksek</h2>
-<p style="margin-bottom: 0in">Ekranın yüksek glikoz tarafı farklı şekilde renklendirilmiştir, böylece yüksek değerleri daha kolay görebilirsiniz. Aynısı düşük glikoz için de geçerlidir. Ekranın çok düşük glikoz değerini göstermek için kırmızı bir çizgi gösterilir.</p>
+<p style="margin-bottom: 0cm">Ekranın yüksek glikoz tarafı farklı
+şekilde renklendirilmiştir, böylece yüksek değerleri daha kolay
+görebilirsiniz. Aynısı düşük glikoz için de geçerlidir.
+Ekranda çok düşük glikoz değerini göstermek için kırmızı
+bir çizgi gösterilir.</p>
 <h2 class="western">Glikoz sayıları SOLDA</h2>
-<p>Ekranın solundaki grafiğe glikoz seviyesinin sayılarını yerleştirin. Mevcut glikozunuzu ekranın ortasına yerleştirmek istiyorsanız kullanışlıdır. Örneğin Wear OS\'de.</p>
+<p>Ekranın solundaki grafiğe glikoz seviyesinin sayılarını
+yerleştirin. Mevcut glikozunuzu ekranın ortasına yerleştirmek
+istiyorsanız kullanışlıdır. Örneğin Wear OS\'de.</p>
 <h2 class="western">Threshold</h2>
-<p>Glikoz değerlerinin değişim oranına bir eşik uygulayın. Sadece
-değişim oranı 0\'dan belirtilen miktarda saptığında değişim oranı oku yataydan farklıdır. 0 ile 0,8 arasında keyfi değerler kullanabilirsiniz. Eşik, küçük mutlak değişim oranı değerlerine fazla anlam verilmesini önlemek için kullanılır. Değişim oranının yavaşça yükselen bir glikoz değeri göstermesi çok olasıdır ama gerçekte düşmektedir. Eşik, daha temkinli bir ifade için kullanılır.</p>
+<p>Glikoz değerlerinin değişim oranına bir eşik uygulayın.
+Değişim oranı 0\'dan belirtilen miktarda saptığında değişim
+oranı oku yataydan farklıdır. 0 ile 0,8 arasında keyfi değerler
+kullanabilirsiniz. Eşik, küçük mutlak değişim oranı
+değerlerine fazla anlam verilmesini önlemek için kullanılır.
+Değişim oranının yavaşça yükselen bir glikoz değeri
+göstermesi çok olasıdır ama gerçekte düşmektedir. Eşik, daha
+temkinli bir ifade için kullanılır.</p>
 <h2 class="western">Tahmin (Dexcom)</h2>
-<p style="margin-bottom: 0in; background: transparent"><span lang="tr-TR">Dexcom sensörleri her gerçek değerle birlikte tahmini bir değer de gönderir. Bunu Google\'da aradım ama bununla ilgili bir referans bulamadım. Sadece Dexcom\'un 20 dakikaya kadar düşükleri önceden tahmin eden bir alarmı desteklediğini buldum, bakınız <a href="https://www.dexcom.com/g7/how-it-works#alerts">https://www.dexcom.com/g7/how-it-works#alerts</a></span></p>
-<p style="margin-bottom: 0in; background: transparent">Bu değerleri 20 dakika sonrasına yerleştirdiğimde pek uymadılar. 10 dakika sonrasına yerleştirdiğimde çok daha iyi performans gösterdiler.</p>
-<p style="margin-bottom: 0in; background: transparent">Bu seçeneği
-açtığınızda, bu tahmin edilen değerler Libre sensörlerinin geçmiş değerlerinin Juggluco\'da gösterildiği şekilde gösterilir. Ayrıca
-sağ orta menü→Geçmiş\'in işaretini kaldırarak bunları kapatabilirsiniz. Juggluco\'da bunlar alarmlar için kullanılmaz, sadece ne kadar iyi tahmin ettiklerini değerlendirmek için
+<p style="margin-bottom: 0cm; background: transparent"><span lang="tr-TR">Dexcom
+sensörleri her gerçek değerle birlikte tahmini bir değer de
+gönderir. Bunu Google\'da aradım ama bununla ilgili bir referans
+bulamadım. Sadece Dexcom\'un 20 dakikaya kadar düşükleri önceden
+tahmin eden bir alarmı desteklediğini buldum. </span><span lang="tr-TR">B</span><span lang="tr-TR">akınız
+<a href="https://www.dexcom.com/g7/how-it-works#alerts">https://www.dexcom.com/g7/how-it-works#alerts</a></span></p>
+<p style="margin-bottom: 0cm; background: transparent">Bu değerleri
+20 dakika sonrasına yerleştirdiğimde pek uymadılar. 10 dakika
+sonrasına yerleştirdiğimde çok daha iyi performans gösterdiler.</p>
+<p style="margin-bottom: 0cm; background: transparent">Bu seçeneği
+açtığınızda, tahmin edilen değerler Libre sensörlerinin geçmiş
+değerlerinin Juggluco\'da gösterildiği şekilde görüntülenir.
+Ayrıca sağ orta menü→Geçmiş\'in işaretini kaldırarak bunları
+kapatabilirsiniz. Juggluco\'da bunlar alarmlar için kullanılmaz,
+sadece ne kadar iyi tahmin ettiklerini değerlendirmek için
 görüntüleyebilirsiniz.</p>
 <h2 class="western">Ekranı Çevir</h2>
-<p style="margin-bottom: 0in">Ekranı ters çevirir. Varsayılan olarak açıktır, aksi takdirde sensörü tararken yanlışlıkla Tamam’a dokunabilirsiniz.</p>
-<p style="margin-bottom: 0in">Bazı kişiler portre (dikey) modu istiyor, ancak ben onu kapattım, çünkü glikoz grafiğinin görüntülenmesi için uygun değil.</p>
-<h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/tr/IOBhelp.html">Insulin onboard (IOB)</a></h2>
-<p><span lang="tr-TR">IOB, önceki dozlardan kanda ne kadar insülin kaldığını gösterir. Bunu kullanmak için, insülin dozlarını “</span><span lang="tr-TR"><i>HizliEtkili</i></span><span lang="tr-TR">” kategorisindeki bir etiketin altına girmelisiniz. Sol menü→Ayarlar→Veri Değişimi→Web Sunucusu→<a href="https://www.juggluco.nl/Jugglucohelp/tr/setlibrenumtype.html">Miktarları Gir</a> altından
-hangi etiketlerin “</span><span lang="tr-TR"><i>HizliEtkili</i></span><span lang="tr-TR">” olduğunu belirtebilirsiniz.</span></p>
+<p style="margin-bottom: 0cm">Ekranı ters çevirir. Varsayılan
+olarak açıktır, aksi takdirde sensörü tararken yanlışlıkla
+Tamam’a dokunabilirsiniz.</p>
+<p style="margin-bottom: 0cm">Bazı kişiler portre (dikey) modu
+istiyor, ancak ben onu kapattım, çünkü glikoz grafiğinin
+görüntülenmesi için uygun değil.</p>
+<h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/tr/IOBhelp.html">Insulin
+onboard (IOB)</a></h2>
+<p><span lang="tr-TR">IOB, önceki dozlardan kanda ne kadar insülin
+kaldığını gösterir. Bunu kullanmak için, insülin dozlarını
+“</span><span lang="tr-TR"><i>HizliEtkili</i></span>”
+<span lang="tr-TR">kategorisindeki bir etiketin altına girmelisiniz.
+Sol menü→Ayarlar→Veri Değişimi→Web Sunucusu→<a href="https://www.juggluco.nl/Jugglucohelp/tr/setlibrenumtype.html">Miktarları
+Gir</a> altından hangi etiketlerin “</span><span lang="tr-TR"><i>HizliEtkili</i></span>”
+<span lang="tr-TR">olduğunu belirtebilirsiniz.</span></p>
 <h2 class="western">Ekranı Kilitle</h2>
-<p>“<i>Ekranı Kilitle</i>” ayarlandığında, ekranda görüntülenen zaman aralığı sola kaydırılır, böylece mevcut zaman ekranın aynı noktasında olur. Bazı kullanıcılar Juggluco\'yu kendilerinden birkaç metre uzaklıktaki bir bilgisayarda bir Android emülatöründe çalıştırır. “<i>Ekranı Kilitle</i>” kapatıldığında, mevcut glikoz değerinin konumu zaman ilerledikçe sağa doğru hareket eder, böylece birkaç saat sonra artık görünmez olur. Bu, bilgisayar başına gitmeyi ve ekranı birkaç santimetre kaydırmayı gerekli kılar. “<i>Ekranı Kilitle</i>” açıldığında, bu dikkat dağıtma artık gerekli değildir.</p>
+<p>“<i>Ekranı Kilitle</i>” ayarlandığında, ekranda
+görüntülenen zaman aralığı sola kaydırılır, böylece mevcut
+zaman ekranın aynı noktasında olur. Bazı kullanıcılar
+Juggluco\'yu kendilerinden birkaç metre uzaklıktaki bir bilgisayarda
+bir Android emülatöründe çalıştırır. “<i>Ekranı Kilitle</i>”
+kapatıldığında, mevcut glikoz değerinin konumu zaman ilerledikçe
+sağa doğru hareket eder, böylece birkaç saat sonra artık
+görünmez olur. Bu, bilgisayar başına gitmeyi ve ekranı birkaç
+santimetre kaydırmayı gerekli kılar. “<i>Ekranı Kilitle</i>”
+açıldığında, bu dikkat dağıtma artık gerekli değildir.</p>
 <h2 class="western">Dil</h2>
-<p style="margin-bottom: 0in">Juggluco seçilen dilde görüntülenir. Hiçbir dil kodu seçilmediğinde, sistem dili kullanılır.</p>
-<h2 class="western"></h2>
+<p style="margin-bottom: 0cm">Juggluco seçilen dilde görüntülenir.
+Herhangi bir dil kodu seçilmediğinde, sistem dili kullanılır.</p>
 ]]>
 </string>
 <string name="loghelp" >

@@ -11,18 +11,30 @@ geçersiz kılınacaktır.</p>
 </string>
 <string name="locationpermission" >
 <![CDATA[
-<h1>Konum izni</h1>
-<p style="margin-bottom: 0in">Android 6 ila 11 çalıştıran cihazların Bluetooth cihazlarını bulmak için konum iznine ihtiyacı vardır. Bluetooth cihazları için bu tarama <b>Sibionics</b> ve <b>Dexcom</b> için gereklidir ve ayrıca Android 6, 7 ve 7.1\'de Juggluco tarafından kullanılır</p>
-<p style="margin-bottom: 0in"><br/>
+<h1 class="western">
+Konum İzni</h1>
+<p style="margin-bottom: 0cm">Android 6 ila 11 çalıştıran
+cihazların Bluetooth cihazlarını bulmak için konum iznine
+ihtiyacı vardır. Bu izin <b>Sibionics</b> ve <b>Dexcom</b> için
+gereklidir ve ayrıca Android 6, 7 ve 7.1\'de Juggluco tarafından
+kullanılır.</p>
+<p style="margin-bottom: 0cm"><br/>
 
 </p>
 ]]>
 </string>
 <string name="nearbypermission" >
 <![CDATA[
-<h1>YAKINDAKİ CİHAZLAR izni</h1>
-<p style="line-height: 100%; margin-bottom: 0in">Juggluco\'nun, Freestyle Libre 2 ve 3 sensörlerinden Bluetooth aracılığıyla glikoz değerlerini almak için YAKINDAKİ CİHAZLAR iznine ihtiyacı vardır. Juggluco bu glikoz değerlerini başka bir telefon veya saatte çalışan Juggluco\'dan alırsa, Juggluco\'nun bu izne ihtiyacı olmaz.</p>
-<p style="line-height: 100%; margin-bottom: 0in">Saatlerde, Juggluco saatin eşlik eden uygulaması üzerinden bağlanır, böylece Juggluco\'nun kendisi saatlere bağlanmak için bu izne ihtiyaç duymaz.</p>
+<h1 class="western">
+Yakındaki Cihazlar İzni</h1>
+<p style="line-height: 100%; margin-bottom: 0cm">Juggluco\'nun,
+Freestyle Libre 2 ve 3 sensörlerinden Bluetooth aracılığıyla
+glikoz değerlerini almak için <i>Y</i><i>akındaki Cihazlar İznine</i>
+ihtiyacı vardır. Juggluco bu glikoz değerlerini başka bir telefon
+veya saatte çalışan Juggluco\'dan alırsa bu izne ihtiyacı olmaz.</p>
+<p style="line-height: 100%; margin-bottom: 0cm">Juggluco saatlerde,
+saatin eşlik eden uygulaması üzerinden bağlanır, böylece
+saatlere bağlanmak için bu izne ihtiyaç duymaz.</p>
 ]]>
 </string>
 <string name="notificationpermission" >

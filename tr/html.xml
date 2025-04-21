@@ -778,460 +778,668 @@ değişimi</a> &gt; Web sunucusu)</p>
 </string>
 <string name="introhelp" >
 <![CDATA[
-<p><a href="https://www.juggluco.nl/Jugglucohelp/be/introhelp.html">be</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/de/introhelp.html">de</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/fr/introhelp.html">fr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/it/introhelp.html">it</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/nl/introhelp.html">nl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pl/introhelp.html">pl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pt/introhelp.html">pt</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ru/introhelp.html">ru</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/tr/introhelp.html">tr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/uk/introhelp.html">uk</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/zh/introhelp.html">zh</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/introhelp.html?lang=en">en</a>&emsp;&emsp;</p><p style="line-height: 115%; margin-bottom: 0in">
-<a href="https://www.juggluco.nl/"><font color="#ffffff"><font face="Cambria, serif"><font size="4" style="font-size: 14pt"><b>Juggluco</b></font></font></font></a><font color="#ffffff">
-diyabetli kişilerde kan şekerinin kontrolü için bir uygulamadır. Freestyle Libre (0 ve 2) sensörlerini tarayabilir (NFC aracılığıyla) ve </font><font color="#4f81bd"><i><b>Freestyle Libre 2</b></i></font><font color="#ffffff"> ve </font><font color="#4f81bd"><i><b>3</b></i></font><font color="#ffffff">, </font><font color="#4f81bd"><b><i>Sibionics GS1/GS1Sb</b></i></font><font color="#ffffff"> ve </font><b><i><font color="#4f81bd">Dexcom G7/ONE+</b></i></font><font color="#ffffff"> sensörlerinden glikoz değerlerini alabilir.</font><font color="#ffffff"></p>
-<p style="line-height: 115%; margin-bottom: 0in"><font color="#ffffff">Program ilk kez çalıştırıldığında, telefonunuzdaki NFC sensörüne tutarak bir Freestyle Libre </font><font color="#ffffff"><b>2</b></font><font color="#ffffff">
-sensörünü tarayabilirsiniz.
-Bundan sonra Juggluco, Freestyle Libre 2 sensörüyle bir Bluetooth bağlantısı kurmaya çalışacak ve taramadan her dakika bir glikoz değeri alacaktır. 
+<p><a href="https://www.juggluco.nl/Jugglucohelp/be/introhelp.html">be</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/de/introhelp.html">de</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/fr/introhelp.html">fr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/it/introhelp.html">it</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/nl/introhelp.html">nl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pl/introhelp.html">pl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pt/introhelp.html">pt</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ru/introhelp.html">ru</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/tr/introhelp.html">tr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/uk/introhelp.html">uk</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/zh/introhelp.html">zh</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/introhelp.html?lang=en">en</a>&emsp;&emsp;</p>
+<p style="line-height: 115%; margin-bottom: 0cm"><a href="https://www.juggluco.nl/"><font color="#ffffff"><font face="Cambria, serif"><font size="4" style="font-size: 14pt"><b>Juggluco</b></font></font></font></a><font color="#ffffff">
+diyabetli kişilerde kan şekerinin kontrolü için kullanılan bir
+uygulamadır. Freestyle Libre (0 ve 2) sensörlerini tarayabilir (NFC
+aracılığıyla) ve </font><font color="#4f81bd"><i><b>Freestyle
+Libre 2</b></i></font><font color="#ffffff"> ve </font><font color="#4f81bd"><i><b>3</b></i></font><font color="#ffffff">,
+</font><font color="#4f81bd"><i><b>Sibionics GS1Sb</b></i></font><font color="#ffffff">
+ve </font><font color="#4f81bd"><i><b>Dexcom G7/ONE+</b></i></font><font color="#ffffff">
+sensörlerinden glikoz değerlerini alabilir.</font></p>
+<p style="line-height: 115%; margin-bottom: 0cm"><font color="#ffffff">Program
+ilk kez çalıştırıldığında, telefonunuzdaki NFC sensörüne
+tutarak bir Freestyle Libre </font><font color="#ffffff"><b>2</b></font><font color="#ffffff">
+sensörünü tarayabilirsiniz. Bundan sonra Juggluco, Freestyle Libre
+2 sensörüyle bir Bluetooth bağlantısı kurmaya çalışacak ve
+sensörü taramadan her dakika bir glikoz değeri alacaktır.
 Etkinleştirilmiş bir FreeStyle Libre </font><font color="#ffffff"><b>3</b></font><font color="#ffffff">
-sensörünü devralmak için, sensörü etkinleştirmekte kullandığınız Libreview Hesap bilgilerini <a href="https://www.juggluco.nl/Jugglucohelp/tr/libreview.html">Ayarlar-&gt;Veri Değişimi-&gt;Libreview</a>\'de belirtmeniz, <a href="https://www.juggluco.nl/Jugglucohelp/tr/getaccountidhelp.html">&quot;Hesap Kimliği Al&quot;</a>\'a basmanız ve taramadan önce Hesap Kimliğinin gelmesini beklemeniz gerekir. </font></p><p><font color="#ffffff"></font><font color="#ffffff">
-</font><font color="#4f81bd"><i><b>Sibionics
-GS1/GS1Sb</b></i></font><font color="#ffffff"> ve </font><font color="#4f81bd"><b><i>Dexcom G7/ONE+</b></i></font><font color="#ffffff"> sensörlerine </font><font color="#ffffff"> bağlanmak için sol menü-&gt;Fotoğraf ile kutu üzerindeki veri matrisini taramanız gerekir.</font> Dexcom G7/ONE+ sensörleri, çoğu telefonda kabul etmeniz gereken Bluetooth üzerinden eşleştirilir. Kabul etmeyi çok hızlı yapmalısınız, aksi takdirde 5 dakika daha beklemeniz gerekir. Bu nedenle ekranın kapanmasını önleyin. Samsung Galaxy Watch 4 ve 7\'de eşleştirmeyi kabul etmeniz gerekmez. Kullanılmış Dexcom G7/ONE+ sensörleri, glikoz değerlerini kaydetmeyi bıraktıktan sonra uzun süre Bluetooth üzerinde etkin kalır. Juggluco\'nun yanlış sensörle eşleşmeye çalışmasını önlemek için, eski sensörleri Bluetooth erişiminden uzak tutun (örneğin mikrodalgadan 15 metre uzakta), özellikle de eski bir sensörün pin kodu yeni sensörle aynı olduğunda. Daha önce sensöre bağlanan uygulamaları ve cihazları kapatın (zorla durdurun veya kaldırın).</p
-<p style="line-height: 115%; margin-bottom: 0in"><font color="#ffffff"><span lang="tr-TR">The
-program contains four</span> <font color="#4f81bd"><font face="Cambria, serif"><font size="3" style="font-size: 13pt"><span lang="tr-TR"><b>menüler</b></span></font></font></font><span lang="tr-TR">;
-Ekranın boş bir kısmına dokunarak bir</span>
-<span lang="tr-TR">menü açabilirsiniz. Ekranın sol dörtte birine dokunun</span> <span lang="tr-TR">sol menüyü açar,
-orta kısmın sol tarafı ikinci</span> <span lang="tr-TR">menüyü açar ve orta kısmın sağ tarafı üçüncü</span> <span lang="tr-TR">menüyü</span> <span lang="tr-TR">ve ekranın sağ dörtte birine dokununca</span> <span lang="tr-TR">dördüncü menüyü açar.</span> </font>
+sensörünü devralmak için, sensörü etkinleştirmekte
+kullandığınız Libreview Hesap bilgilerini </font><a href="https://www.juggluco.nl/Jugglucohelp/tr/libreview.html"><font color="#ffffff"><i>Ayarlar
+&gt; Veri Değişimi &gt; Libreview</i></font></a><font color="#ffffff">\'de
+belirtmeniz, <a href="https://www.juggluco.nl/Jugglucohelp/tr/getaccountidhelp.html">&quot;Hesap
+Kimliği Al&quot;</a>\'a basmanız ve taramadan önce Hesap Kimliğinin
+gelmesini beklemeniz gerekir. </font>
 </p>
-<p style="line-height: 100%; orphans: 0; widows: 0; margin-top: 0.08in; margin-bottom: 0.08in; background: transparent; page-break-after: avoid">
-<font color="#ffffff"><font size="3" style="font-size: 12pt"><i>Menu
-4: Movement (right)</i></font></font></p>
+<p><font color="#ffffff"><font color="#4f81bd"><i><b>Sibionics GS1Sb</b></i></font>
+ve <font color="#4f81bd"><i><b>Dexcom G7/ONE+</b></i></font>
+sensörlerine bağlanmak için <i>Sol Menü &gt; Fotoğraf</i> ile
+kutu üzerindeki veri matrisini taramanız gerekir. Dexcom G7/ONE+
+sensörleri, çoğu telefonda kabul etmeniz gereken Bluetooth
+üzerinden eşleştirilir. Kabul etmeyi çok hızlı yapmalısınız,
+aksi takdirde 5 dakika daha beklemeniz gerekir. Bu nedenle ekranın
+kapanmasını önleyin. Samsung Galaxy Watch 4 ve 7\'de eşleştirmeyi
+kabul etmeniz gerekmez. Kullanılmış Dexcom G7/ONE+ sensörleri,
+glikoz değerlerini kaydetmeyi bıraktıktan sonra uzun süre
+Bluetooth üzerinde etkin kalır. Juggluco\'nun yanlış sensörle
+eşleşmeye çalışmasını önlemek için, eski sensörleri
+Bluetooth erişiminden uzak tutun (örneğin mikrodalgadan 15 metre
+uzakta), özellikle de eski bir sensörün pin kodu yeni sensörle
+aynı olduğunda. Daha önce sensöre bağlanan uygulamaları ve
+cihazları kapatın (zorla durdurun veya kaldırın).</font></p>
+<p><font color="#ffffff"><span lang="tr-TR">Program dört</span>
+<font color="#4f81bd"><font face="Cambria, serif"><font size="3" style="font-size: 13pt"><span lang="tr-TR"><b>menü</b></span></font></font></font><span lang="tr-TR">‘</span><span lang="tr-TR">den
+o</span><span lang="tr-TR">luşur. Ekranın boş bir kısmına
+dokunarak bir</span> <span lang="tr-TR">menü açabilirsiniz. Ekranın
+sol dörtte birine dokunarak</span> <b>S</b><span lang="tr-TR"><b>ol
+Menü</b></span><span lang="tr-TR">yü, orta kısmın sol tarafına
+dokunarak</span> <span lang="tr-TR"><b>Orta Sol Menü</b></span><span lang="tr-TR">yü</span>
+<span lang="tr-TR">ve orta kısmın sağ tarafına dokunarak</span>
+<span lang="tr-TR"><b>Orta Sağ Menü</b></span><span lang="tr-TR">yü</span>
+<span lang="tr-TR">ve ekranın sağ dörtte birine dokunarak</span>
+<b>Sağ Menü</b>yü <span lang="tr-TR">açabilirsiniz.</span> </font>
+</p>
+<p style="line-height: 100%; orphans: 0; widows: 0; margin-top: 0.2cm; margin-bottom: 0.2cm; background: transparent; page-break-after: avoid">
+<font color="#ffffff"><font size="3" style="font-size: 12pt"><i>Menü
+4: Sağ Menü</i></font></font></p>
 <table width="96" cellpadding="0" cellspacing="0">
-<col width="96"/>
-<tr>
-<td width="96" valign="top" style="border: none; padding: 0in"><p><font color="#ffff6d">15:10&nbsp;&nbsp;&nbsp;↗&nbsp;93</font></p>
-</td>
-</tr>
-<tr>
-<td width="96" valign="top" style="border: none; padding: 0in"><p><a href="https://www.juggluco.nl/Jugglucohelp/tr/searchhelp.html"><font color="#ffff6d">Ara</font></a></p>
-</td>
-</tr>
-<tr>
-<td width="96" valign="top" style="border: none; padding: 0in"><p><font color="#ffff6d">Tarih</font></p>
-</td>
-</tr>
-<tr>
-<td width="96" valign="top" style="border: none; padding: 0in"><p><font color="#ffff6d">Önceki Gün</font></p>
-</td>
-</tr>
-<tr style="background: transparent">
-<td width="96" valign="top" style="border: none; padding: 0in"><p><font color="#ffff6d">Sonraki Gün</font></p>
-</td>
-</tr>
-<tr>
-<td width="96" valign="top" style="border: none; padding: 0in"><p><font color="#ffff6d">Önceki Hafta</font></p>
-</td>
-</tr>
-<tr>
-<td width="96" valign="top" style="border: none; padding: 0in"><p><font color="#ffff6d">Sonraki Hafta</font></p>
-</td>
-</tr>
+	<col width="96"/>
+
+	<tr>
+		<td width="96" valign="top" style="border: none; padding: 0cm"><p><font color="#ffff6d">15:10&nbsp;&nbsp;&nbsp;↗&nbsp;93</font></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="96" valign="top" style="border: none; padding: 0cm"><p><a href="https://www.juggluco.nl/Jugglucohelp/tr/searchhelp.html"><font color="#ffff6d">Ara</font></a></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="96" valign="top" style="border: none; padding: 0cm"><p><font color="#ffff6d">Tarih</font></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="96" valign="top" style="border: none; padding: 0cm"><p><font color="#ffff6d">Önceki
+			Gün</font></p>
+		</td>
+	</tr>
+	<tr style="background: transparent">
+		<td width="96" valign="top" style="border: none; padding: 0cm"><p><font color="#ffff6d">Sonraki
+			Gün</font></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="96" valign="top" style="border: none; padding: 0cm"><p><font color="#ffff6d">Önceki
+			Hafta</font></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="96" valign="top" style="border: none; padding: 0cm"><p><font color="#ffff6d">Sonraki
+			Hafta</font></p>
+		</td>
+	</tr>
 </table>
-<p style="line-height: 115%; margin-bottom: 0in"><font color="#ffffff"><span lang="tr-TR">Ekranda sola ve sağa hareket ederek eğriyi sola ve sağa hareket ettirebilirsiniz. Ayrıca sağdaki </span><font color="#4f81bd"><font face="Cambria, serif"><span lang="tr-TR"><b>hareket
-menüsü</b></span></font></font> <span lang="tr-TR">\'nü kullanarak da hareket ettirebilirsiniz. Kullanın </span><font color="#4f81bd"><font face="Cambria, serif"><span lang="tr-TR"><i><b>Tarih</b></i></span></font></font>
-<span lang="tr-TR">bir tarih seçmek için, </span><font color="#4f81bd"><font face="Cambria, serif"><span lang="tr-TR"><i><b>Ara</b></i></span></font></font>
-<span lang="tr-TR">glikoz değerlerini ve girilen sayıları aramak için.</span>
-<span lang="tr-TR">Sağ menünün ilk öğesi geçerli
-zamandır ve bunu seçerek grafiğin sağına (şimdi) atlarsınız.</span></font></p>
-<p style="line-height: 115%; margin-bottom: 0in"><font color="#ffffff">Ayarlarda <i>Glikozu manuel olarak ölçeklendir</i> ayarlanmışsa, ekranın üst kısmında yukarı ve aşağı hareket etmek
-grafiğin maksimumunu değiştirir, ekranın alt kısmında ise
-minimumunu değiştirir. Ayarlarda <i>Zamanı Manuel
-ölçeklendir</i> ayarlanmışsa, iki parmak arasındaki mesafeyi değiştirerek ekranda görüntülenen zaman miktarını artırabilir veya azaltabilirsiniz.</font></p>
-<p style="line-height: 100%; orphans: 0; widows: 0; margin-top: 0.08in; margin-bottom: 0.08in; background: transparent; page-break-after: avoid">
-<font color="#ffffff"><font size="3" style="font-size: 12pt"><i>Menü Ekranı</i></font></font></p>
+<p style="line-height: 115%; margin-bottom: 0cm"><font color="#ffffff"><span lang="tr-TR">Ekranda
+sola ve sağa hareket ederek eğriyi sola ve sağa hareket
+ettirebilirsiniz. Ayrıca sağdaki </span><font color="#4f81bd"><font face="Cambria, serif"><span lang="tr-TR"><b>hareket
+menüsü</b></span></font></font> <span lang="tr-TR">\'nü kullanarak
+da hareket ettirebilirsiniz. </span><font color="#4f81bd"><font face="Cambria, serif"><span lang="tr-TR"><i><b>Tarih
+</b></i></span></font></font>‘i <span lang="tr-TR">bir tarih seçmek
+için kullanın, </span><font color="#4f81bd"><font face="Cambria, serif"><span lang="tr-TR"><i><b>Ara</b></i></span></font></font>
+‘yı <span lang="tr-TR">glikoz değerlerini ve girilen sayıları
+aramak için kullanın.</span> <span lang="tr-TR">Sağ menünün ilk
+öğesi geçerli zamandır ve bunu seçerek grafiğin sağına
+(şimdiki zamana) atlarsınız.</span></font></p>
+<p style="line-height: 115%; margin-bottom: 0cm"><font color="#ffffff">Ayarlarda
+<i>Glikozu manuel ölçeklendir</i> ayarlanmışsa, ekranın üst
+kısmında yukarı ve aşağı hareket etmek grafiğin maksimumunu
+değiştirir, ekranın alt kısmında ise minimumunu değiştirir.
+Ayarlarda <i>Zamanı Manuel ölçeklendir</i> ayarlanmışsa, iki
+parmak arasındaki mesafeyi değiştirerek ekranda görüntülenen
+zaman miktarını artırabilir veya azaltabilirsiniz.</font></p>
+<p style="line-height: 100%; orphans: 0; widows: 0; margin-top: 0.2cm; margin-bottom: 0.2cm; background: transparent; page-break-after: avoid">
+<font color="#ffffff"><font size="3" style="font-size: 12pt"><i>Menü
+3: Orta Sağ Menü</i></font></font></p>
+<table width="138" cellpadding="0" cellspacing="0">
+	<col width="138"/>
 
-   <table width="138" cellpadding="0" cellspacing="0">
-
-   <col width="138"/>
-
-   <tr>
-
-   <td width="138" valign="top" style="border: none; padding:
-   0in"><p><font color="#ffff6d">Son tarama</font></p>
-
-   </td>
-
-   </tr>
-
-   <tr>
-
-   <td width="138" valign="top" style="border: none; padding:
-   0in"><p><font
-   color="#ffff6d">Taramalar&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[x]</font></p>
-
-   </td>
-
-   </tr>
-
-   <tr>
-
-   <td width="138" valign="top" style="border: none; padding:
-   0in"><p><font
-   color="#ffff6d">Akış&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[x]</font></p>
-
-   </td>
-
-   </tr>
-
-   <tr>
-
-   <td width="138" valign="top" style="border: none; padding:
-   0in"><p><font
-   color="#ffff6d">Geçmis&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[x]</font></p>
-
-   </td>
-
-   </tr>
-
-   <tr>
-
-   <td width="138" valign="top" style="border: none; padding:
-   0in"><p><font
-   color="#ffff6d">Miktarlar&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[x]</font>
-   </p>
-
-   </td>
-
-   </tr>
-
-   <tr>
-
-   <td width="138" valign="top" style="border: none; padding:
-   0in"><p><font color="#ffff6d"><a
-   href="https://www.juggluco.nl/Jugglucohelp/tr/mealhelp.html">Yemekler</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [&nbsp;&nbsp;]</font></p>
-
-   </td>
-
-   </tr>
-
-   <tr>
-
-   <td width="138" height="43" valign="top" style="border: none; padding:
-   0in"><p>
-
-   <font color="#ffff6d">Koyu Mod&nbsp;&nbsp;&nbsp;&nbsp;[x]</font></p>
-
-   </td>
-
-   </tr>
-   </table>
-<p style="line-height: 115%; margin-bottom: 0in"><font color="#ffffff"><span lang="tr-TR">The
-</span><font color="#4f81bd"><font face="Cambria, serif"><span lang="tr-TR"><b><span lang="tr-TR">Orta menünün sağında</b></span></font></font> <span lang="tr-TR">görüntüleme seçenekleri bulunur. Son taramayı görüntülemek için ilk</span> <span lang="tr-TR">öğeye dokunun.
-</span><i>Taramalar</i>\'dan sonraki çarpı, taramaların grafikte
-görüntülendiği anlamına gelir. Tarama, bir Libre 0 veya 2 sensörünü taradığınızda elde ettiğiniz mevcut glikoz değeridir. Tarama ayrıca son 8 saatin 15 dakikalık ölçümlerini sensörden akıllı telefona aktarır. Bu değerlerin görüntülenmesi <i>Geçmiş</i>\'e dokunarak kontrol edilebilir. Libre 3
-sensörleri geçmiş değerlerini Bluetooth ile gönderir ve bunlar her 5
-dakikada birdir. <i>Akış</i>, Freestyle Libre 2 ve 3 sensöründen bu uygulamaya Bluetooth ile her dakika gönderilen glikoz değerleri anlamına gelir.</font></p>
-<p style="line-height: 115%; margin-bottom: 0in"><font color="#ffffff">İnsülininizi, karbonhidratınızı ve aktivitelerinizi belgelemek için her türlü sayıyı (istediğiniz etiketle) girebilirsiniz. Bunlar, belirtilen
+	<tr>
+		<td width="138" valign="top" style="border: none; padding: 0cm"><p><font color="#ffff6d">Son
+			tarama</font></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="138" valign="top" style="border: none; padding: 0cm"><p><font color="#ffff6d">Taramalar&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[x]</font></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="138" valign="top" style="border: none; padding: 0cm"><p><font color="#ffff6d">Akış&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[x]</font></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="138" valign="top" style="border: none; padding: 0cm"><p><font color="#ffff6d">Geçmis&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[x]</font></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="138" valign="top" style="border: none; padding: 0cm"><p><font color="#ffff6d">Miktarlar&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[x]</font>
+						</p>
+		</td>
+	</tr>
+	<tr>
+		<td width="138" valign="top" style="border: none; padding: 0cm"><p><font color="#ffff6d"><a href="https://www.juggluco.nl/Jugglucohelp/tr/mealhelp.html">Yemekler</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			[&nbsp;&nbsp;]</font></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="138" height="45" valign="top" style="border: none; padding: 0cm"><p>
+			<font color="#ffff6d">Koyu Mod&nbsp;&nbsp;&nbsp;&nbsp;[x]</font></p>
+		</td>
+	</tr>
+</table>
+<p style="line-height: 115%; margin-bottom: 0cm"><font color="#ffffff"><font color="#4f81bd"><font face="Cambria, serif"><span lang="tr-TR"><b>Orta
+Sağ</b></span></font></font><font color="#4f81bd"> </font><font color="#4f81bd"><font face="Cambria, serif"><span lang="tr-TR"><b>Menüde</b></span></font></font>
+<span lang="tr-TR">görüntüleme seçenekleri bulunur. Son taramayı
+görüntülemek için ilk öğeye dokunun. </span><span lang="tr-TR"><i>Taramalar</i></span><span lang="tr-TR">\'dan
+sonraki çarpı, taramaların grafikte görüntülendiği anlamına
+gelir. Tarama, bir Libre 0 veya 2 sensörünü taradığınızda elde
+ettiğiniz mevcut glikoz değeridir. Tarama ayrıca son 8 saatin 15
+dakikalık ölçümlerini sensörden akıllı telefona aktarır. Bu
+değerlerin görüntülenmesi </span><span lang="tr-TR"><i>Geçmiş</i></span><span lang="tr-TR">\'e
+dokunarak kontrol edilebilir. Libre 3 sensörleri geçmiş
+değerlerini Bluetooth ile gönderir ve bunlar her 5 dakikada birdir.
+</span><span lang="tr-TR"><i>Akış</i></span><span lang="tr-TR">,
+Freestyle Libre 2 ve 3 sensöründen bu uygulamaya Bluetooth ile her
+dakika gönderilen glikoz değerleri anlamına gelir.</span></font></p>
+<p style="line-height: 115%; margin-bottom: 0cm"><font color="#ffffff"><span lang="tr-TR">İnsülininizi,
+karbonhidratınızı ve aktivitelerinizi belgelemek için her türlü
+sayıyı (istediğiniz etiketle) girebilirsiniz. Bunlar, belirtilen
 saat ve tarihte glikoz grafiğinde sabit yükseklikte görüntülenir.
-</font><font color="#ffffff"><span lang="tr-TR">Grafikteki noktalara</span></font><font color="#ffffff">
-</font><font color="#ffffff"><span lang="tr-TR">dokunmak veya bir sayı girmek, o öğe hakkında bilgi verir. Girilen bir sayıyı uzun süre dokunarak düzenleyebilirsiniz. Düzenleme ayrıca sol orta menüdeki numara listesi aracılığıyla </span></font><font color="#ffffff">
-</font><font color="#ffffff"><span lang="tr-TR">veya karşılık gelen veri öğesine dokunarak da mümkündür.</span></font><font color="#ffffff">
-</font><font color="#ffffff"><i>Miktarlar</i></font><font color="#ffffff"> girilen sayıların görüntülenmesini belirler. </font><font color="#ffffff"><i>Ayarlar</i></font><font color="#ffffff"> bölümünde,bu sayılar için hangi <a href="https://www.juggluco.nl/Jugglucohelp/tr/labelhelp.html">etiketleri</a>
-kullanmak istediğinizi belirtebilirsiniz. Sayılardan birinin üstünde karşılık gelen etiket gösterilir.</font></p>
-<p style="line-height: 100%; orphans: 0; widows: 0; margin-top: 0.08in; margin-bottom: 0.08in; background: transparent; page-break-after: avoid">
-<font color="#ffffff"><font size="3" style="font-size: 12pt"><i>Menü 2: Ortanın solu</i></font></font></p>
+Grafikteki noktalara dokunmak veya bir sayı girmek, o öğe hakkında
+bilgi verir. Girilen bir sayıyı uzun süre dokunarak
+düzenleyebilirsiniz. Düzenleme ayrıca orta sol</span></font><font color="#ffffff">
+</font><font color="#ffffff"><span lang="tr-TR">menüdeki </span></font><font color="#ffffff"><span lang="tr-TR"><i>Liste
+</i></span></font><font color="#ffffff"><span lang="tr-TR">aracılığıyla
+veya karşılık gelen veri öğesine dokunarak da mümkündür.
+</span></font><font color="#ffffff"><span lang="tr-TR"><i>Miktarlar</i></span></font><font color="#ffffff">
+</font><font color="#ffffff"><span lang="tr-TR">girilen sayıların
+görüntülenmesini belirler. </span></font><font color="#ffffff"><span lang="tr-TR"><i>Ayarlar</i></span></font><font color="#ffffff">
+</font><font color="#ffffff"><span lang="tr-TR">bölümünde, bu
+sayılar için hangi <a href="https://www.juggluco.nl/Jugglucohelp/tr/labelhelp.html">etiketleri</a>
+kullanmak istediğinizi belirtebilirsiniz. Sayılardan birinin
+üstünde karşılık gelen etiket gösterilir.</span></font></p>
+<p style="line-height: 100%; orphans: 0; widows: 0; margin-top: 0.2cm; margin-bottom: 0.2cm; background: transparent; page-break-after: avoid">
+<font color="#ffffff"><font size="3" style="font-size: 12pt"><i>Menü
+2: Orta Sol Menü</i></font></font></p>
+<table width="138" cellpadding="0" cellspacing="0">
+	<col width="138"/>
 
-   <table width="138" cellpadding="0" cellspacing="0">
-
-   <col width="138"/>
-<tr> <td width="96" valign="top" style="border: none; padding: 0in"><p><a href="https://www.juggluco.nl/Jugglucohelp/tr/helpexport.html"><font color="#ffff6d">Dışa Aktar</font></a></p> </td> </tr> <tr>
-<td width="96" valign="top" style="border: none; padding: 0in"><p><a href="https://www.juggluco.nl/Jugglucohelp/tr/connectionoverview.html"><font color="#ffff6d">Klon</font></a></p>
-</td>
-</tr>
-<tr>
-<td width="96" valign="top" style="border: none; padding: 0in"><p><a href="https://www.juggluco.nl/Jugglucohelp/tr/newamount.html" onclick="location.href=this.href+\'?unit=\'+unitstr;return false;"><font color="#ffff6d">Yeni Miktar</font></a></p>
-</td>
-</tr>
-<tr>
-<td width="96" valign="top" style="border: none; padding: 0in"><p><font color="#ffff6d">List</font></p>
-</td>
-</tr>
-<tr>
-<td width="96" valign="top" style="border: none; padding: 0in"><p><a href="https://www.juggluco.nl/Jugglucohelp/tr/stathelp.html" onclick="location.href=this.href+\'?unit=\'+unitstr;return false;"><font color="#ffff6d">İstatistikler</font></a></p>
-</td>
-</tr>
-<tr>
-<td width="96" valign="top" style="border: none; padding: 0in"><p><a href="https://www.juggluco.nl/Jugglucohelp/tr/talkhelp.html"><font color="#ffff6d">Seslendir</font></a></p>
-</td>
-</tr>
-<tr>
-<td width="96" valign="top" style="border: none; padding: 0in"><p align="left">
-<font color="#ffff6d">Yüzen Glikoz&nbsp;&nbsp;[&nbsp;]</font></p>
-</td>
-</tr>
+	<tr>
+		<td width="96" valign="top" style="border: none; padding: 0cm"><p><a href="https://www.juggluco.nl/Jugglucohelp/tr/helpexport.html"><font color="#ffff6d">Dışa
+			Aktar</font></a></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="96" valign="top" style="border: none; padding: 0cm"><p><a href="https://www.juggluco.nl/Jugglucohelp/tr/connectionoverview.html"><font color="#ffff6d">Klon</font></a></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="96" valign="top" style="border: none; padding: 0cm"><p><a href="https://www.juggluco.nl/Jugglucohelp/tr/newamount.html" onclick="location.href=this.href+\'?unit=\'+unitstr;return false;"><font color="#ffff6d">Yeni
+			Miktar</font></a></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="96" valign="top" style="border: none; padding: 0cm"><p><font color="#ffff6d">Liste</font></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="96" valign="top" style="border: none; padding: 0cm"><p><a href="https://www.juggluco.nl/Jugglucohelp/tr/stathelp.html" onclick="location.href=this.href+\'?unit=\'+unitstr;return false;"><font color="#ffff6d">İstatistikler</font></a></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="96" valign="top" style="border: none; padding: 0cm"><p><a href="https://www.juggluco.nl/Jugglucohelp/tr/talkhelp.html"><font color="#ffff6d">Seslendir</font></a></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="96" valign="top" style="border: none; padding: 0cm"><p align="left">
+			<font color="#ffff6d">Yüzen Glikoz&nbsp;&nbsp;[&nbsp;]</font></p>
+		</td>
+	</tr>
 </table>
-<p style="line-height: 115%; margin-bottom: 0in"><font color="#ffffff">Bu sayıları dokunarak girebilirsiniz </font><font color="#4f81bd"><font face="Cambria, serif"><font size="3" style="font-size: 13pt"><span lang="tr-TR"><b>Yeni Miktar</b></span></font></font></font><font color="#ffffff"> in </font><font color="#4f81bd"><font face="Cambria, serif"><span lang="tr-TR"><b>orta menünün solunda</b></span></font></font><font color="#ffffff">.
-</font><font color="#4f81bd"><font face="Cambria, serif"><span lang="tr-TR"><b>Dışa Aktar</b></span></font></font><font color="#ffffff">
-</font><font color="#ffffff"><span lang="tr-TR">verileri .tsv
-(sekmeyle ayrılmış değerler) biçiminde bir dosyaya kaydeder. </span></font><font color="#4f81bd"><font face="Cambria, serif"><span lang="tr-TR"><b>Mirror</b></span></font></font><font color="#ffffff">
-</font><font color="#ffffff"><span lang="tr-TR">farklı bir cihazda çalışan bu uygulamaya IP/TCP üzerinden veri gönderilmesini ve aynı bilgilerin görüntülenmesini mümkün kılar. </span></font><font color="#4f81bd"><font face="Cambria, serif"><span lang="tr-TR"><b>List</b></span></font></font><font color="#ffffff">
-</font><font color="#ffffff"><span lang="tr-TR">girilen sayıların bir listesini verir. Juggluco Bluetooth üzerinden yeterli glikoz değeri aldıysa, dokunarak bazı istatistikleri görebilirsiniz. </span></font><font color="#4f81bd"><font face="Cambria, serif"><span lang="tr-TR"><b>İstatistikler</b></span></font></font><font color="#ffffff"><span lang="tr-TR">.
-Belirli glikoz aralıklarındaki ölçümlerin yüzdesini, Glikoz Yönetim Göstergesini (HbA1c\'nin bir öngörücüsü), glikoz değişkenliğini ve günün her anında değerlerin %100, %95, %75, %50, %25 ve %0\'ının altında kaldığı glikoz değerini gösteren bir özet grafiği gösterir.</span></font><font color="#ffffff"> </font><font color="#ffffff"><span lang="tr-TR">In
+<p style="line-height: 115%; margin-bottom: 0cm"><font color="#4f81bd"><font face="Cambria, serif"><span lang="tr-TR"><b>Sol
+Orta Menüde,</b></span></font></font><font color="#ffffff"> </font><font color="#4f81bd"><font face="Cambria, serif"><font size="3" style="font-size: 13pt"><span lang="tr-TR"><b>Yeni
+Miktar</b></span></font></font></font><font color="#ffffff"> </font><font color="#ffffff"><span lang="tr-TR">a
+dokunarak bu sayıları girebilirsiniz.</span></font><font color="#ffffff">
+</font><font color="#4f81bd"><font face="Cambria, serif"><span lang="tr-TR"><b>Dışa
+Aktar</b></span></font></font><font color="#ffffff"> </font><font color="#ffffff"><span lang="tr-TR">verileri
+.tsv (sekmeyle ayrılmış değerler) biçiminde bir dosyaya
+kaydeder. </span></font><font color="#4f81bd"><font face="Cambria, serif"><span lang="tr-TR"><b>Klon</b></span></font></font><font color="#ffffff">
+</font><font color="#ffffff"><span lang="tr-TR">farklı bir cihazda
+çalışan bu uygulamaya IP/TCP üzerinden veri gönderilmesini ve
+aynı bilgilerin görüntülenmesini mümkün kılar. </span></font><font color="#4f81bd"><font face="Cambria, serif"><span lang="tr-TR"><b>Liste</b></span></font></font><font color="#ffffff">
+</font><font color="#ffffff"><span lang="tr-TR">girilen sayıların
+bir listesini verir. Juggluco Bluetooth üzerinden yeterli glikoz
+değeri aldıysa, </span></font><font color="#4f81bd"><font face="Cambria, serif"><span lang="tr-TR"><b>İstatistiklere</b></span></font></font><font color="#4f81bd">
+</font><font color="#ffffff"><span lang="tr-TR">dokunarak bazı
+bilgileri</span></font><font color="#ffffff"> </font><font color="#ffffff"><span lang="tr-TR">görebilirsiniz.
+Belirli glikoz aralıklarındaki ölçümlerin yüzdesini, Glikoz
+Yönetim Göstergesini (HbA1c\'nin bir öngörücüsü), glikoz
+değişkenliğini ve günün her anında değerlerin %100, %95, %75,
+%50, %25 ve %0\'ının altında kaldığı glikoz değerini gösteren
+bir özet grafiği de</span></font><font color="#ffffff"> </font><font color="#ffffff"><span lang="tr-TR">gösterilir.
 </span></font><font color="#4f81bd"><font face="Cambria, serif"><span lang="tr-TR"><b>Seslendir</b></span></font></font><font color="#ffffff">
-</font><font color="#ffffff"><span lang="tr-TR">Juggluco\'nun, glikoz değerlerini, grafiğin dokunulan öğelerini veya mesajları seslendirmesini sağlayabilirsiniz. Yüzen açar </span></font><font color="#4f81bd"><font face="Cambria, serif"><span lang="tr-TR"><b>Yüzen Glikoz</b></span></font></font><font color="#ffffff"><span lang="tr-TR">.
-Ekranda diğer uygulamaların üzerinde gösterilen glikoz değeri. <a href="https://www.juggluco.nl/Jugglucohelp/tr/floatingconfig.html" onclick="location.href=this.href+\'?unit=\'+unitstr;return false;">Ayarlar\'da renk ve boyutunu değiştirebilirsiniz.</a></span></font></p>
-<p style="line-height: 100%; orphans: 0; widows: 0; margin-top: 0.08in; margin-bottom: 0.08in; background: transparent; page-break-after: avoid">
-<font color="#ffffff"><font size="3" style="font-size: 12pt"><i>Menü 1: Sol</i></font></font></p>
-   <table width="140" cellpadding="0" cellspacing="0">
+</font><font color="#ffffff"><span lang="tr-TR">ile</span></font><font color="#ffffff">
+</font><font color="#ffffff"><span lang="tr-TR">Juggluco\'nun glikoz
+değerlerini, grafiğin dokunulan öğelerini veya mesajları
+seslendirmesini sağlayabilirsiniz. </span></font><font color="#4f81bd"><font face="Cambria, serif"><span lang="tr-TR"><b>Yüzen
+Glikoz</b></span></font></font><font color="#ffffff"> </font><font color="#ffffff"><span lang="tr-TR">uygulamalar
+üzerinde sürekli glikoz değerini gösteren küçük ekran açar.</span></font><font color="#ffffff">
+</font><a href="https://www.juggluco.nl/Jugglucohelp/tr/floatingconfig.html" onclick="location.href=this.href+\'?unit=\'+unitstr;return false;"><font color="#ffffff"><span lang="tr-TR">Ayarlar\'da
+renk ve boyutunu değiştirebilirsiniz.</span></font></a></p>
+<p style="line-height: 100%; orphans: 0; widows: 0; margin-top: 0.2cm; margin-bottom: 0.2cm; background: transparent; page-break-after: avoid">
+<font color="#ffffff"><font size="3" style="font-size: 12pt"><i>Menü
+1: Sol Menü</i></font></font></p>
+<table width="140" cellpadding="0" cellspacing="0">
+	<col width="140"/>
 
-   <col width="140"/>
-
-   <tr>
-
-   <td width="120" valign="top" style="border: none; padding:
-   0in"><p><font color="#ffff6d">Sistem Arayüzü&nbsp;&nbsp;[&nbsp;]</font></p>
-
-   </td>
-
-   </tr>
-
-   <tr>
-
-   <td width="120" valign="top" style="border: none; padding:
-   0in"><p><font
-   color="#ffff6d">Menüler&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[&nbsp;]</font></p>
-
-   </td>
-
-   </tr>
-
-   <tr>
-
-   <td width="120" valign="top" style="border: none; padding: 0in"><p><a
-   href="https://www.juggluco.nl/Jugglucohelp/tr/watchinfo.html"><font
-   color="#ffff6d">Saat</font></a></p>
-
-   </td>
-
-   </tr>
-
-   <tr>
-
-   <td width="120" valign="top" style="border: none; padding: 0in"><p><a
-   href="https://www.juggluco.nl/Jugglucohelp/tr/sensorhelp.html"><font
-   color="#ffff6d">Sensör</font></a></p>
-
-   </td>
-
-   </tr>
-
-   <tr>
-
-   <td width="120" height="26" valign="top" style="border: none; padding:
-   0in"><p>
-
-   <a href="https://www.juggluco.nl/Jugglucohelp/tr/settinghelp.html"
-   onclick="location.href=this.href+\'?unit=\'+unitstr;return false;"><font
-   color="#ffff6d">Ayarlar</font></a></p>
-
-   </td>
-
-   </tr>
-
-   <tr>
-
-   <td width="120" height="26" valign="top" style="border: none; padding:
-   0in"><p>
-
-   <font color="#ffff6d">Fotoğraf</font></p>
-
-   </td>
-
-   </tr>
-
-   <tr>
-
-   <td width="120" valign="top" style="border: none; padding:
-   0in"><p><font color="#ffff6d">Kapat</font></p>
-
-   </td>
-
-   </tr>
-
-   </table>
-
-
-<p style="line-height: 115%; margin-bottom: 0in"><font color="#ffffff"><span lang="tr-TR"></span></font><font color="#4f81bd"><font face="Cambria, serif"><span lang="tr-TR"><b>sol menüde</b></span></font></font><font color="#ffffff"><span lang="tr-TR">,
-şunu bulabilirsiniz: </span></font><font color="#4f81bd"><font face="Cambria, serif"><span lang="tr-TR"><b>Ayarlar</b></span></font></font><font color="#ffffff"><span lang="tr-TR">,
-glikoz birimini mmol/L veya mg/dL olarak ayarlamak için to</span></font><font color="#ffffff">
-</font><font color="#ffffff"><span lang="tr-TR">specify</span></font><font color="#ffffff">
-</font><font color="#ffffff"><span lang="tr-TR"><a href="https://www.juggluco.nl/Jugglucohelp/tr/labelhelp.html">Etiketler</a>,
-set <a href="https://www.juggluco.nl/Jugglucohelp/tr/alarmhelp.html">glikoz alarmları</a> and <a href="https://www.juggluco.nl/Jugglucohelp/tr/reminders.html">ilaç
-hatırlatıcıları</a></span></font><font color="#ffffff"> </font><font color="#ffffff"><span lang="tr-TR">ve görüntüleme aralıkları. Sistem kullanıcı arayüzü, Android kontrollerinin ve durum çubuğunun gösterilip gösterilmeyeceğini belirler. In </span></font><font color="#4f81bd"><font face="Cambria, serif"><span lang="tr-TR"><b>Watch</b></span></font></font><font color="#ffffff">
-</font><font color="#ffffff"><span lang="tr-TR">Juggluco\'yu her türlü akıllı saate veri gönderecek şekilde ayarlayabilirsiniz. In </span></font><font color="#4f81bd"><font face="Cambria, serif"><span lang="tr-TR"><b>Sensör</b></span></font></font><font color="#ffffff"><span lang="tr-TR">,
-Sensörle bağlantının nasıl gittiğini görebilirsiniz. Dokun </span></font><font color="#4f81bd"><font face="Cambria, serif"><span lang="tr-TR"><b>Menüler</b></span></font></font><font color="#ffffff">
-</font><font color="#ffffff"><span lang="tr-TR">tüm belirtilen menüleri aynı anda seslendirmek için dokunun. Çıkmak için Kapat kullanılabilir</span></font><font color="#ffffff">
-</font><font color="#ffffff"><span lang="tr-TR">Juggluco.</span></font></p>
-<p style="line-height: 115%; margin-bottom: 0in"><br/>
-
-</p>
-<p style="line-height: 115%; margin-bottom: 0in"><br/>
-
-</p>
-<p style="line-height: 115%; margin-bottom: 0in"><br/>
-
-</p>
+	<tr>
+		<td width="120" valign="top" style="border: none; padding: 0cm"><p><font color="#ffff6d">Sistem
+			Arayüzü&nbsp;&nbsp;[&nbsp;]</font></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="120" valign="top" style="border: none; padding: 0cm"><p><font color="#ffff6d">Menüler&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[&nbsp;]</font></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="120" valign="top" style="border: none; padding: 0cm"><p><a href="https://www.juggluco.nl/Jugglucohelp/tr/watchinfo.html"><font color="#ffff6d">Saat</font></a></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="120" valign="top" style="border: none; padding: 0cm"><p><a href="https://www.juggluco.nl/Jugglucohelp/tr/sensorhelp.html"><font color="#ffff6d">Sensör</font></a></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="120" height="26" valign="top" style="border: none; padding: 0cm"><p>
+			<a href="https://www.juggluco.nl/Jugglucohelp/tr/settinghelp.html" onclick="location.href=this.href+\'?unit=\'+unitstr;return false;"><font color="#ffff6d">Ayarlar</font></a></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="120" height="26" valign="top" style="border: none; padding: 0cm"><p>
+			<font color="#ffff6d">Fotoğraf</font></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="120" valign="top" style="border: none; padding: 0cm"><p><font color="#ffff6d">Kapat</font></p>
+		</td>
+	</tr>
+</table>
+<p style="line-height: 115%; margin-bottom: 0cm"><font color="#4f81bd"><font face="Cambria, serif"><span lang="tr-TR"><b>Sol
+Menüde</b></span></font></font><font color="#ffffff"><span lang="tr-TR">
+şunları</span></font><font color="#ffffff"> </font><font color="#ffffff"><span lang="tr-TR">bulabilirsiniz:
+</span></font><font color="#4f81bd"><font face="Cambria, serif"><span lang="tr-TR"><b>Ayarlar
+</b></span></font></font><font color="#ffffff"><span lang="tr-TR">\'da
+glikoz birimini mmol/L veya mg/dL olarak ayarlayabilir, glikoz
+alarmlarını, ilaç hatırlatıcılarını ve görüntüleme
+aralıklarını belirleyebilirsiniz.</span></font></p>
+<p style="line-height: 115%; margin-bottom: 0cm"><font color="#4f81bd"><font face="Cambria, serif"><span lang="tr-TR"><b>Sistem
+Arayüzünde,</b></span></font></font><font color="#ffffff"><span lang="tr-TR"><b>
+</b></span></font><font color="#ffffff"><span lang="tr-TR">Android
+kontrollerinin ve durum çubuğunun gösterilip gösterilmeyeceğini
+</span></font><font color="#ffffff"><span lang="tr-TR">seçebilirsiniz</span></font><font color="#ffffff"><span lang="tr-TR">.
+</span></font><font color="#4f81bd"><font face="Cambria, serif"><span lang="tr-TR"><b>S</b></span></font></font><font color="#4f81bd"><font face="Cambria, serif"><span lang="tr-TR"><b>a</b></span></font></font><font color="#4f81bd"><font face="Cambria, serif"><span lang="tr-TR"><b>a</b></span></font></font><font color="#4f81bd"><font face="Cambria, serif"><span lang="tr-TR"><b>t</b></span></font></font><font color="#4f81bd"><font face="Cambria, serif"><span lang="tr-TR"><b>te,</b></span></font></font><font color="#ffffff">
+</font><font color="#ffffff"><span lang="tr-TR">Juggluco\'yu her türlü
+akıllı saate veri gönderecek şekilde ayarlayabilirsiniz. </span></font><font color="#4f81bd"><font face="Cambria, serif"><span lang="tr-TR"><b>Sensör
+</b></span></font></font><font color="#ffffff"><span lang="tr-TR">sekmesinde,</span></font><font color="#ffffff"><span lang="tr-TR">
+</span></font><font color="#ffffff"><span lang="tr-TR">s</span></font><font color="#ffffff"><span lang="tr-TR">ensörle
+bağlantının nasıl gittiğini görebilirsiniz. </span></font><font color="#ffffff"><span lang="tr-TR">B</span></font><font color="#ffffff"><span lang="tr-TR">elirtilen
+menüleri aynı anda seslendirmek için </span></font><font color="#4f81bd"><font face="Cambria, serif"><span lang="tr-TR"><b>Menüler</b></span></font></font><font color="#ffffff"><span lang="tr-TR">’</span></font><font color="#ffffff"><span lang="tr-TR">e</span></font><font color="#ffffff"><span lang="tr-TR">
+dokun</span></font><font color="#ffffff"><span lang="tr-TR">un.</span></font><font color="#ffffff"><span lang="tr-TR">
+Juggluco’</span></font><font color="#ffffff"><span lang="tr-TR">dan</span></font><font color="#ffffff"><span lang="tr-TR">
+</span></font><font color="#ffffff"><span lang="tr-TR">ç</span></font><font color="#ffffff"><span lang="tr-TR">ıkmak
+için </span></font><font color="#4f81bd"><font face="Cambria, serif"><span lang="tr-TR"><b>Kapat</b></span></font></font><font color="#4f81bd"><font face="Cambria, serif"><span lang="tr-TR"><b>
+</b></span></font></font><font color="#ffffff"><span lang="tr-TR">kullanıl</span></font><font color="#ffffff"><span lang="tr-TR">ır</span></font><font color="#ffffff"><span lang="tr-TR">.</span></font></p>
 ]]>
 </string>
 <string name="kerfstok" >
 <![CDATA[
 <p><a href="https://www.juggluco.nl/Jugglucohelp/be/kerfstok.html">be</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/de/kerfstok.html">de</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/fr/kerfstok.html">fr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/it/kerfstok.html">it</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/nl/kerfstok.html">nl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pl/kerfstok.html">pl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pt/kerfstok.html">pt</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ru/kerfstok.html">ru</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/tr/kerfstok.html">tr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/uk/kerfstok.html">uk</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/zh/kerfstok.html">zh</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/kerfstok.html?lang=en">en</a>&emsp;&emsp;</p><h1 class="western">Kerfstok</h1>
-<p style="line-height: 100%; margin-bottom: 0in">Kerfstok
-(<a href="https://apps.garmin.com/en-US/apps/b6348ccc-86d8-4780-8013-d9e19fed5260">https://apps.garmin.com/en-US/apps/b6348ccc-86d8-4780-8013-d9e19fed5260</a>
-(ayrıca bakınız <a href="https://www.juggluco.nl/Kerfstok/index.html">https://www.juggluco.nl/Kerfstok/index.html</a>)
-Kerfstok, dokunmatik ekranlı programlanabilir Garmin akıllı saatler için bir saat uygulamasıdır. Kerfstok\'un aşağıdaki kullanımları vardır:</p>
+<p style="line-height: 100%; margin-bottom: 0cm">Kerfstok, dokunmatik
+ekranlı programlanabilir Garmin akıllı saatler için bir saat
+uygulamasıdır.
+<a href="https://apps.garmin.com/en-US/apps/b6348ccc-86d8-4780-8013-d9e19fed5260">https://apps.garmin.com/en-US/apps/b6348ccc-86d8-4780-8013-d9e19fed5260</a>
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">Ayrıca bakınız
+<a href="https://www.juggluco.nl/Kerfstok/index.html">https://www.juggluco.nl/Kerfstok/index.html</a>
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">Kerfstok\'un
+aşağıdaki kullanımları vardır:</p>
 <ul>
-<li><p style="line-height: 100%; margin-bottom: 0in">Sayıları girin ve bunları Juggluco ile değiştirin;</p></li>
-<li><p style="line-height: 100%; margin-bottom: 0in">Juggluco\'dan alınan akış glikoz değerini görüntüler;</p></li>
-<li><p style="line-height: 100%; margin-bottom: 0in">Spor sırasında bu glikoz değerini görüntülerken, aynı zamanda hız ve mesafeyi de gösterir. Aktivite kaydedilecek ve Garmin\'in
-connect uygulamasında görüntülenebilecektir.</p></li>
+	<li><p style="line-height: 100%; margin-bottom: 0cm">Sayıları
+	girin ve bunları Juggluco ile değiştirin,</p>
+	<li><p style="line-height: 100%; margin-bottom: 0cm">Juggluco\'dan
+	alınan akış glikoz değerini görüntüleyin,</p>
+	<li><p style="line-height: 100%; margin-bottom: 0cm">Spor sırasında
+	glikoz değerini görüntülerken, aynı zamanda hız ve mesafeyi de
+	görüntüleyin. Aktivite kaydedilecek ve Garmin\'in connect
+	uygulamasında görüntülenebilecektir.</p>
 </ul>
-<p style="line-height: 100%; margin-bottom: 0in">Bu saat uygulaması Bluetooth aracılığıyla Juggluco ile bağlantı kurarak miktarları değiştirebilir ve sürekli olarak güncel glikoz değerinizi görüntüleyebilir.
+<p style="line-height: 100%; margin-bottom: 0cm">Bu saat uygulaması
+Bluetooth aracılığıyla Juggluco ile bağlantı kurarak miktarları
+değiştirebilir ve sürekli olarak güncel glikoz değerinizi
+görüntüleyebilir. 
 </p>
-<p style="line-height: 100%; margin-bottom: 0in"><b>SORUN GİDERME</b>:</p>
-<p style="line-height: 100%; margin-bottom: 0in">İlk olarak, saatinizin adı &quot;<i>CONNECTED</i>&quot; olarak gösterilmelidir. Gösterilmiyorsa, Garmin\'in Connect uygulamasındaki sorunu çözün. İkinci olarak, saatinizde Kerfstok başlatılmalıdır.
+<p style="line-height: 100%; margin-bottom: 0cm"><b>SORUN GİDERME</b><b>:</b></p>
+<p style="line-height: 100%; margin-bottom: 0cm">İlk olarak,
+saatinizin adı &quot;<i>CONNECTED </i><i>(Bağlandı)</i>&quot;
+olarak gösterilmelidir. Gösterilmiyorsa, Garmin\'in Connect
+uygulamasındaki sorunu çözün. İkinci olarak, saatinizde Kerfstok
+başlatılmalıdır. 
 </p>
-<p style="line-height: 100%; margin-bottom: 0in">Bazen saat ile telefon arasındaki bağlantı kesilebiliyor. 
+<p style="line-height: 100%; margin-bottom: 0cm">Bazen saat ile
+telefon arasındaki bağlantı kesilebiliyor. 
 </p>
-<p style="line-height: 100%; margin-bottom: 0in">Gönderme durumu
-FAILURE_DURING_TRANSFER ise, aşağıdakilerden birini veya hepsini yapabilirsiniz:</p>
-<p style="line-height: 100%; margin-bottom: 0in">-Bluetooth\'u kapatıp açın ve ardından <i>Yeniden Başlat</i>\'a basın;</p>
-<p style="line-height: 100%; margin-bottom: 0in">- Saati yeniden başlatın (neredeyse her zaman işe yarar, ancak bazen birkaç kez yapılması gerekir);</p>
-<p style="line-height: 100%; margin-bottom: 0in">- Telefonu yeniden başlatın (son seçenek).</p>
-<p style="line-height: 100%; margin-bottom: 0in">Diğer sorunlar için Garmin connect uygulamasını zorla durdurup, tekrar başlatarak
-“yeniden başlat” tuşuna basmak işe yarayabilir.</p>
-<p style="line-height: 100%; margin-bottom: 0in">Uygun bir bağlantı varsa ve herhangi bir nedenle saat ve telefondaki miktarlar senkronize değilse, <b>Senkronize Et</b> düğmesine basarak henüz göndermedikleri değerleri birbirlerine göndermelerini sağlayabilirsiniz.</p>
-<p style="line-height: 100%; margin-bottom: 0in">Bazen &quot;<b>Gönderme Kuyruğu &quot;</b> adlı bir düğme gösterilir; bu, henüz saate gönderilmemiş mesajlar olduğu anlamına gelir. Normalde bunlar zamanında otomatik olarak gönderilir, ancak bazen bu kesintiye uğrar ve <i>Gönderme kuyruğu</i>\'na basmak göndermeyi devam ettirir. Ancak, bağlantının kopması nedeniyle gönderilmemişse bunun çok az faydası olur. Devam eden bir işlem sırasında <i>Gönderme Kuyruğu</i>\'na basmak bağlantıyı kesebilir.</p>
-<p style="line-height: 100%; margin-bottom: 0in">Bazen “<i>Gönderme kuyruğu</i>” gösterildiğinde, mesajların yalnızca telefondan saate gönderilmesine ancak diğer yöne gönderilmemesine neden olan bir bağlantı sorunu vardır. Bu, “<i>Receive</i>”
-sonraki zamanın “<i>Send</i>” sonraki zamandan daha eski olduğu durumdur. Bunu düzeltmek için, aşağıdakilerin bir veya hepsini bir veya birden fazla kez tekrar yapmanız gerekir:</p>
+<p style="line-height: 100%; margin-bottom: 0cm">Gönderme durumu
+FAILURE_DURING_TRANSFER ise, aşağıdakilerden birini veya hepsini
+yapabilirsiniz:</p>
+<p style="line-height: 100%; margin-bottom: 0cm">-Bluetooth\'u kapatıp
+açın ve ardından <i>Yeniden Başlat</i>\'a basın,</p>
+<p style="line-height: 100%; margin-bottom: 0cm">- Saati yeniden
+başlatın (neredeyse her zaman işe yarar, ancak bazen birkaç kez
+yapılması gerekir),</p>
+<p style="line-height: 100%; margin-bottom: 0cm">- Telefonu yeniden
+başlatın (son seçenek).</p>
+<p style="line-height: 100%; margin-bottom: 0cm">Diğer sorunlar için
+Garmin connect uygulamasını zorla durdurup, tekrar başlatarak
+<i>“</i><i>Y</i><i>eniden </i><i>B</i><i>aşlat”</i> tuşuna
+basmak işe yarayabilir.</p>
+<p style="line-height: 100%; margin-bottom: 0cm">Uygun bir bağlantı
+varsa ve herhangi bir nedenle saat ve telefondaki miktarlar
+senkronize değilse, <b>Senkronize Et</b> düğmesine basarak henüz
+gönderilmeyen değerleri birbirlerine göndermelerini
+sağlayabilirsiniz.</p>
+<p style="line-height: 100%; margin-bottom: 0cm">Bazen <b>Gönderme
+Kuyruğu</b> düğmesi gösterilir. Bu, henüz saate gönderilmemiş
+mesajlar olduğu anlamına gelir. Normalde bunlar zamanında otomatik
+olarak gönderilir ancak bazen kesintiye uğrar ve <i>Gönderme
+</i><i>K</i><i>uyruğu</i>\'na basmak göndermeyi devam ettirir.
+Ancak, bağlantının kopması nedeniyle gönderilmemişse bunun çok
+az faydası olur. Devam eden bir işlem sırasında <i>Gönderme
+Kuyruğu</i>\'na basmak bağlantıyı kesebilir.</p>
+<p style="line-height: 100%; margin-bottom: 0cm">Bazen “<i>Gönderme
+</i><i>K</i><i>uyruğu</i>” gösterildiğinde, mesajların yalnızca
+telefondan saate gönderilmesine ancak diğer yöne gönderilmemesine
+neden olan bir bağlantı sorunu vardır. Bu, “<i>Gelen</i>”
+zamanın “<i>Gönderilen</i>” zamandan daha eski olduğu
+durumdur. Bunu düzeltmek için, aşağıdakileri bir veya birden
+fazla kez yapmanız gerekir:</p>
 <ul>
-<li><p style="line-height: 100%; margin-bottom: 0in">Yeniden Başlat\'a basın;</p></li>
-<li><p style="line-height: 100%; margin-bottom: 0in">Zorla durdurun, Garmin Connect uygulamasını tekrar başlatın ve ardından Yeniden Başlat\'a basın;</p></li>
-<li><p style="line-height: 100%; margin-bottom: 0in">Bluetooth\'u kapatıp açın;</p></li>
-<li><p style="line-height: 100%; margin-bottom: 0in">Saati yeniden başlat;</p></li>
-<li><p style="line-height: 100%; margin-bottom: 0in">Telefonu yeniden başlatın.</p>
+	<li><p style="line-height: 100%; margin-bottom: 0cm"><i>Yeniden
+	Başlat</i>\'a basın,</p>
+	<li><p style="line-height: 100%; margin-bottom: 0cm">Zorla durdurun,
+	Garmin Connect uygulamasını tekrar başlatın ve ardından <i>Yeniden
+	Başlat</i>\'a basın,</p>
+	<li><p style="line-height: 100%; margin-bottom: 0cm">Bluetooth\'u
+	kapatıp açın,</p>
+	<li><p style="line-height: 100%; margin-bottom: 0cm">Saati yeniden
+	başlat,</p>
+	<li><p style="line-height: 100%; margin-bottom: 0cm">Telefonu
+	yeniden başlatın.</p>
 </ul>
-<p style="line-height: 100%; margin-bottom: 0in"><b>Yenile</b>
-bu diyaloğu yeni bilgilerle yeniden yazar (örneğin Yeniden Başlat veya Sync\'ten sonra).</p>
-<p style="line-height: 100%; margin-bottom: 0in">&quot;<b>Glikoz&quot;</b>\'u kontrol etmek, glikoz değerlerinin saate gönderilip gönderilmeyeceğini belirler.</p></li>
-<p style="line-height: 100%; margin-bottom: 0in"><a href="https://www.juggluco.nl/Jugglucohelp/tr/garminconfig.html"><b>Config</b></a>:
+<p style="line-height: 100%; margin-bottom: 0cm"><b>Yenile</b> bu
+diyaloğu yeni bilgilerle yeniden yazar (örneğin Yeniden Başlat
+veya Sync\'ten sonra).</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><b>Glik</b><b>oz</b>\'u
+işaretlemek, glikoz değerlerinin saate gönderilip
+gönderilmeyeceğini belirler.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><a href="https://www.juggluco.nl/Jugglucohelp/tr/garminconfig.html"><span style="text-decoration: none"><b>Yapılandırma</b></span></a><span style="text-decoration: none"><b>:</b></span>
 Karanlık modu, Kısayolları ve Kimliği ayarlayın.</p>
-<p style="line-height: 100%; margin-bottom: 0in"><b>UYARI: Juggluco sadece bir Kerfstok ile kullanılabilir. Juggluco\'yu
-Kerfstok\'a birden fazla saate veya hem saate hem bilgisayara aynı anda bağlayamazsınız. </b>
+<p style="line-height: 100%; margin-bottom: 0cm"><b>UYARI: Juggluco
+sadece bir Kerfstok ile kullanılabilir. Juggluco\'yu birden fazla
+Kerfstok\'a veya hem saate hem bilgisayara aynı anda bağlayamazsınız.
+</b>
 </p>
-<p style="line-height: 100%; margin-bottom: 0in"><br/>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
 
 </p>
 ]]>
 </string>
 <string name="labelhelp" >
 <![CDATA[
-<p><a href="https://www.juggluco.nl/Jugglucohelp/be/labelhelp.html">be</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/de/labelhelp.html">de</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/fr/labelhelp.html">fr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/it/labelhelp.html">it</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/nl/labelhelp.html">nl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pl/labelhelp.html">pl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pt/labelhelp.html">pt</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ru/labelhelp.html">ru</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/tr/labelhelp.html">tr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/uk/labelhelp.html">uk</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/zh/labelhelp.html">zh</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/labelhelp.html?lang=en">en</a>&emsp;&emsp;</p><h1>Miktar etiketleri</h1>
-<p style="margin-bottom: 0in; line-height: 115%">Buradan <a href="https://www.juggluco.nl/Jugglucohelp/tr/newlabelhelp.html">oluşturabilirsiniz</a>,
-İnsülin, karbonhidrat veya fiziksel aktiviteyi belirtmek için grafiğe eklenen miktarlar için etiketleri silin ve değiştirin. Zaten bazı miktarları kaydettiyseniz, konumlarına karşılık gelen etiketi alacaklardır. Yani ikinci konuma başka bir ad verirseniz, ikinci konumda daha önce bir adla belirtilen önceden kaydedilmiş miktarlar o adı alacaktır.</p>
-<p style="margin-bottom: 0in; line-height: 115%">Bir etiketi değiştirmek için dokunun.</p>
-<p style="margin-bottom: 0in; line-height: 115%"></p>
-<p style="margin-bottom: 0in; line-height: 115%">Sonra <b>Yemek, </b>
-Hangi etiketin öğünlerin karbonhidrat içeriğini temsil ettiğini seçebilirsiniz.
-Sol orta menüdeki &quot;<i>Yeni miktar</i>&quot;daki bu etiket için, içeriklerinden bir öğün belirleyebileceğiniz bir <b>Yemek</b> düğmesi eklenir. Karbonhidrat toplamı daha sonra bu
-etiket altında kaydedilir ve daha sonra kaydedilmiş bir değerin öğününü seçerek bu öğünü görüntüleyebilirsiniz.</p>
-<p style="margin-bottom: 0in; line-height: 115%"><br/>
+<p><a href="https://www.juggluco.nl/Jugglucohelp/be/labelhelp.html">be</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/de/labelhelp.html">de</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/fr/labelhelp.html">fr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/it/labelhelp.html">it</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/nl/labelhelp.html">nl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pl/labelhelp.html">pl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pt/labelhelp.html">pt</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ru/labelhelp.html">ru</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/tr/labelhelp.html">tr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/uk/labelhelp.html">uk</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/zh/labelhelp.html">zh</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/labelhelp.html?lang=en">en</a>&emsp;&emsp;</p><h1 class="western">Miktar Etiketleri</h1>
+<p style="line-height: 115%; margin-bottom: 0cm">Buradan
+<a class="western" href="https://www.juggluco.nl/Jugglucohelp/tr/newlabelhelp.html">oluşturabilirsiniz</a>,
+İnsülin, karbonhidrat veya fiziksel aktiviteyi belirtirken grafiğe
+eklenen miktarlar için etiketleri silip değiştirebilirsiniz. Zaten
+bazı miktarları kaydettiyseniz, konumlarına karşılık gelen
+etiketi alacaklardır. Yani ikinci konuma başka bir ad verirseniz,
+ikinci konumda daha önce bir adla belirtilen kaydedilmiş miktarlar
+o adı alacaktır.</p>
+<p style="line-height: 115%; margin-bottom: 0cm">Bir etiketi
+değiştirmek için o etikete dokunun.</p>
+<p style="line-height: 115%; margin-bottom: 0cm"><b>Yemek</b>ten
+sonra öğünlerin karbonhidrat içeriğini ifade eden etiketi
+seçebilirsiniz. Orta Sol Menü &gt; <i>Yeni miktar </i>daki etiket
+için, içeriklerinden bir öğün belirleyebileceğiniz bir <b>Yemek</b>
+düğmesi eklenir. Karbonhidrat toplamı daha sonra bu etiket altında
+kaydedilir ve kaydedilmiş bir değerin öğününü seçerek bu
+öğünü görüntüleyebilirsiniz.</p>
+<p style="line-height: 115%; margin-bottom: 0cm"><br/>
 
 </p>
 ]]>
 </string>
 <string name="librenumhelp" >
 <![CDATA[
-<p><a href="https://www.juggluco.nl/Jugglucohelp/be/librenumhelp.html">be</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/de/librenumhelp.html">de</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/fr/librenumhelp.html">fr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/nl/librenumhelp.html">nl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pl/librenumhelp.html">pl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pt/librenumhelp.html">pt</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ru/librenumhelp.html">ru</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/tr/librenumhelp.html">tr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/uk/librenumhelp.html">uk</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/zh/librenumhelp.html">zh</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/librenumhelp.html?lang=en">en</a>&emsp;&emsp;</p><p>Ayarla &quot;<i>Miktarları gönder</i>&quot;,
-Miktarları Libreview\'e göndermek için. &quot;<i>Miktarları Gönder</i>&quot;i açmadan önce, <a href="https://www.juggluco.nl/Jugglucohelp/tr/setlibrenumtype.html">her etiket için belirtmeniz gerekir</a> o etiket altında girilen
-miktarların Libreview\'e nasıl gönderileceği. Etiketler kendileri Sol menü-&gt;Ayarlar-&gt;&quot\'da oluşturulabilir, değiştirilebilir ve silinebilir;<a href="https://www.juggluco.nl/Jugglucohelp/tr/labelhelp.html">Sayı Etiketleri</a>&quot;. 
+<p><a href="https://www.juggluco.nl/Jugglucohelp/be/librenumhelp.html">be</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/de/librenumhelp.html">de</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/fr/librenumhelp.html">fr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/nl/librenumhelp.html">nl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pl/librenumhelp.html">pl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pt/librenumhelp.html">pt</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ru/librenumhelp.html">ru</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/tr/librenumhelp.html">tr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/uk/librenumhelp.html">uk</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/zh/librenumhelp.html">zh</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/librenumhelp.html?lang=en">en</a>&emsp;&emsp;</p><p>Miktarları Libreview\'e göndermek için &quot;<i>Miktarları
+</i><i>G</i><i>önder</i>&quot;i seçin. &quot;<i>Miktarları
+Gönder</i>&quot;i açmadan önce, <a href="https://www.juggluco.nl/Jugglucohelp/tr/setlibrenumtype.html">her
+etiket için</a> o etiket altında girilen miktarların Libreview\'e
+nasıl gönderileceğini <a href="https://www.juggluco.nl/Jugglucohelp/tr/setlibrenumtype.html"><font color="#000000"><span style="font-style: normal"><span style="text-decoration: none">belirtmeniz
+gerekir</span></span></font></a><font color="#000000"><span style="font-style: normal"><span style="text-decoration: none">.</span></span></font>
+Etiketler, Sol menü &gt; Ayarlar &gt; <a href="https://www.juggluco.nl/Jugglucohelp/tr/labelhelp.html">Sayı
+Etiketleri</a> sekmesinden oluşturulabilir, değiştirilebilir ve
+silinebilir. 
 </p>
-<p>Etiketler Libreview\'e yorum olarak gönderildiğinde şu kısıtlama geçerlidir: Bir etiketi değiştirdikten sonra, önceki bir etiket altında girilen miktarların silinmesi ve değiştirilmesi Libreview\'de değişikliklere yol açmayacaktır. Örneğin, daha önce Bisiklet etiketiniz varsa ve 20 girdiyseniz ve ardından Bisikleti Cycling olarak değiştirdiyseniz ve 25\'ten 20\'ye değiştirdiyseniz, bu değişiklik Libreview\'de bir değişikliğe yol açmayacak, ancak hem Bisiklet 20 hem de Cycling 25 Libreview\'de mevcut olacaktır. Yapabileceğiniz tek şey, Libreview\'deki mevcut cihazları silmek ve Juggluco\'da <i>Verileri Yeniden Gönder</i>\'e basmaktır.</p>
-<p>
-<br>
+<p>Etiketler Libreview\'e yorum olarak gönderildiğinde şu kısıtlama
+geçerlidir. Bir etiketi değiştirdikten sonra, önceki etiket
+altında girilen miktarların silinmesi ve değiştirilmesi
+Libreview\'de değişikliklere yol açmayacaktır. Örneğin, daha
+önce Bisiklet etiketiniz varsa ve 20 girdiyseniz, ardından
+Bisikleti Cycling olarak değiştirdiyseniz ve 25\'ten 20\'ye
+değiştirdiyseniz, bu değişiklik Libreview\'de bir değişikliğe
+yol açmayacak, ancak hem Bisiklet 20 hem de Cycling 25 Libreview\'de
+mevcut olacaktır. Yapabileceğiniz tek şey, Libreview\'deki mevcut
+cihazları silmek ve Juggluco\'da <i>Verileri Yeniden Gönder</i>\'e
+basmaktır.</p>
+<p><br/>
+<br/>
+
 </p>
 ]]>
 </string>
 <string name="libreview" >
 <![CDATA[
-<p><a href="https://www.juggluco.nl/Jugglucohelp/be/libreview.html">be</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/de/libreview.html">de</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/fr/libreview.html">fr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/nl/libreview.html">nl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pl/libreview.html">pl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pt/libreview.html">pt</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ru/libreview.html">ru</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/tr/libreview.html">tr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/uk/libreview.html">uk</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/zh/libreview.html">zh</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/libreview.html?lang=en">en</a>&emsp;&emsp;</p><h1>Libreview</h1>
-<p style="line-height: 100%; margin-bottom: 0in">Juggluco, glikoz verilerini ve miktarlarını Libreview\'e gönderebilir. 
+<p><a href="https://www.juggluco.nl/Jugglucohelp/be/libreview.html">be</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/de/libreview.html">de</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/fr/libreview.html">fr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/nl/libreview.html">nl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pl/libreview.html">pl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pt/libreview.html">pt</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ru/libreview.html">ru</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/tr/libreview.html">tr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/uk/libreview.html">uk</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/zh/libreview.html">zh</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/libreview.html?lang=en">en</a>&emsp;&emsp;</p><h1 class="western">Libreview</h1>
+<p style="line-height: 100%; margin-bottom: 0cm">Juggluco, glikoz
+verilerini ve miktarlarını Libreview\'e gönderebilir. 
 </p>
-<p style="line-height: 100%; margin-bottom: 0in">Librelink
-uygulaması gibi, son 89 güne ait verileri Libreview\'e gönderir. 
+<p style="line-height: 100%; margin-bottom: 0cm">Librelink uygulaması
+gibi, son 89 güne ait verileri Libreview\'e gönderir. 
 </p>
-<p style="line-height: 100%; margin-bottom: 0in"><span lang="tr-TR">Bu hizmeti kullanmak için, <a class="western" href="https://libreview.com/">https://libreview.com</a> adresinde bir Libreview hesabı oluşturmanız ve burada E-posta adresinizi ve şifrenizi belirtmeniz gerekir.</span> <span lang="tr-TR">Aynı dönemden gelen verileri aynı Libreview hesabına birden fazla kez göndermeyin (örneğin Librelink uygulamasından ve Juggluco\'dan).
-Libreview\'deki mevcut cihazları Hesap Ayarları-&gt;Cihazlarım\'dan silebilir veya yeni bir Libreview hesabı alabilirsiniz.</span></p>
-<p style="line-height: 100%; margin-bottom: 0in"><span lang="tr-TR">Açmak için ayrıca &quot;</span><span lang="tr-TR"><i><b>Libreview\'e Gönder</b></i></span><span lang="tr-TR"><i>&quot;</i></span><span lang="tr-TR"> seçeneğini işaretlemeniz gerekir.
-</span>
+<p style="line-height: 100%; margin-bottom: 0cm"><span lang="tr-TR">Bu
+hizmeti kullanmak için, <a class="western" href="https://libreview.com/">https://libreview.com</a>
+adresinde bir Libreview hesabı oluşturmanız ve burada E-posta
+adresinizi ve şifrenizi belirtmeniz gerekir.</span> <span lang="tr-TR">Aynı
+dönemden gelen verileri aynı Libreview hesabına birden fazla kez
+göndermeyin (örneğin Librelink uygulamasından ve Juggluco\'dan).
+Libreview\'deki mevcut cihazları Hesap Ayarları &gt; Cihazlarım\'dan
+silebilir veya yeni bir Libreview hesabı alabilirsiniz.</span></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><span lang="tr-TR">Açmak
+için &quot;</span><span lang="tr-TR"><i><b>Libreview\'e Gönder</b></i></span><span lang="tr-TR"><i>&quot;</i></span>
+<span lang="tr-TR">seçeneğini işaretlemeniz gerekir. </span>
 </p>
-<p style="line-height: 100%; margin-bottom: 0in">Juggluco, önceki 20 dakika içinde yapılmamışsa Juggluco\'dan her ayrıldığınızda Libreview\'e yeni veriler gönderecektir. Ayrıca <i>&quot;</i><i><b>Şimdi gönder</b></i><i>&quot;</i> tuşuna basarak manuel olarak da Libreview\'e gönderebilirsiniz.</p>
-<p style="line-height: 100%; margin-bottom: 0in">Glikoz değerlerinin yanı sıra, miktarlar da Libreview\'e gönderilebilir. Bunun için &quot;<a class="western" href="https://www.juggluco.nl/Jugglucohelp/tr/librenumhelp.html"><i><b>Miktarları gönder</b></i></a>&quot; öğesine dokunmanız ve her etiketin ne anlama geldiğini belirtmeniz gerekir.</p>
-<p style="line-height: 100%; margin-bottom: 0in"><b>RU</b>: Eğer kullanıyorsanız bunu ayarlamanız gerekir<a class="western" href="https://libreview.ru/">https://libreview.<span style="text-decoration: none"><b>ru</b></span></a>
-yerine <a class="western" href="https://libreview.com/">https://libreview.com</a>.
-Bu yalnızca Libre 2 sensörleri için geçerlidir. Libre 3 sensörleri yalnızca libreview.com ile kullanılabilir, çünkü Rusça Abbott Libre 3 uygulaması mevcut değildir.</p>
-<p style="line-height: 100%; margin-bottom: 0in"><b>Hemen</b>:
-Glikoz değerlerini Libre 2 veya 3 sensörlerinden geldiklerinde hemen Libreview\'e gönderin. Bu yalnızca LibreLinkUp ile birlikte kullanıldığında faydalıdır. Bunu kullanmak için Abbott\'un Libre uygulamalarından birinde bu Libreview hesabına bir LibrelinkUp bağlantısı eklemeniz gerekir. (Ülkenizde Abbott Libre uygulaması yoksa, <a class="western" href="https://www.juggluco.nl/Juggluco/libre3/patched.html">yamalı Libre 3 uygulamasını</a> kullanabilirsiniz.) Bazen değer hemen görünmez, çünkü <span style="font-weight: normal">LibreLinkUp</span>\'ın
-görüntülenmesi otomatik olarak yeniden çizilmez. Yakından bakmazsanız LibreLinkup\'ı kullanmak oldukça tehlikelidir, çünkü grafiğe dokunduğunuzda, mevcut glikoz değeri yerine eski bir değer gösterir.</p>
-<p style="line-height: 100%; margin-bottom: 0in"><b>Spy Views</b>:
-Bu seçenek ayarlandığında, Juggluco bir değerin görüntülenip
-görüntülenmediğini Libreview\'e gönderecektir. Bu seçenek kapatıldığında, Juggluco her zaman görüntülenmediğini söyleyecektir. Bu seçenek yalnızca <i>Hemen</i> seçeneği de açık olduğunda bu bilgiyi Libreview\'e güvenilir bir şekilde gönderecektir. Juggluco, Libre 3\'ten tüm görüntülemeleri yakalamak için sürekli olarak internete bağlı olmalıdır, Libre 2 öldürülmediği sürece hepsini hatırlar.</p>
-<p style="line-height: 100%; margin-bottom: 0in"><b>Başlangıcı değiştir</b>:
-Yeniden başla; belirtilen tarih ve saatten itibaren verileri yeniden gönder. Yeni bir Libreview hesabına geçerken buna basmanız gerekir.</p>
-<p style="line-height: 100%; margin-bottom: 0in">Libreview\'e göndermeye çalıştığınız son seferin sonucu &quot;Hesap Kimliğini Al&quot; düğmesinin altında görüntülenir.</p>
-<p style="line-height: 100%; margin-bottom: 0in">Libreview analizinde
-geçmiş değerlerini kullanır ve Juggluco istatistik ekranında akış değerlerini kullanır (<a class="western" href="https://www.juggluco.nl/Jugglucohelp/tr/stathelp.html">sol
-orta menü-&gt;İstatistikler</a>). Bu fark, Libreview ile Juggluco istatistikleri arasında küçük farklara neden olur. Akış değerleri daha uç olduğundan, Juggluco biraz daha negatiftir: aralıkta daha düşük zaman, daha büyük değişkenlik. Ayrıca <i>zaman
-sensörü aktif</i> Juggluco\'ya göre daha küçüktür; her eksik akış değerini sayar.</p>
-<p style="line-height: 100%; margin-bottom: 0in">Juggluco aynı anda birden fazla sensörle bağlanabilirken, Librelink aynı anda yalnızca bir sensörü işler. Juggluco ayrıca Libreview\'e aynı anda yalnızca bir sensörden veri gönderir. Bunu önce bir sensörden veri göndererek ve yalnızca o sensörden veri alınamadığında sonraki sensörden veri gönderir. Juggluco sonraki sensöre geçtiğinde, Juggluco Librelink\'in tek sensör politikasını taklit etmek için öncekine geri dönmez. Bu, aynı anda birden fazla sensör çalıştırdığınızda ve daha sonra eklenen bir sensör daha önceki eklenen sensörden daha erken sona erdiğinde, bu önceki sensörün artık Libreview\'e veri göndermeyeceği anlamına gelir.</p>
-<p><a class="western" href="https://www.juggluco.nl/Jugglucohelp/tr/getaccountidhelp.html"><b>Hesap Kimliğini Al</b></a>: Yalnızca LibreView hesap kimliğini almak istiyorsanız, ancak Libreview\'e veri göndermek istemiyorsanız, E-posta adresinizi ve Parolanızı girebilir ve &quot;<a class="western" href="https://www.juggluco.nl/Jugglucohelp/tr/getaccountidhelp.html"><i>Hesap Kimliğini Al</i></a>&quot; düğmesine basabilirsiniz. Bu düğmeden önceki aynı satırda, Hesap Kimliği gösterilecektir (bu biraz zaman alabilir ve ekran otomatik olarak yenilenmez). Hesap Kimliğini LibreView sunucusundan almak, Abbotts Libre 3 uygulamasıyla daha önce kullanılmış bir FreeStyle Libre 3 sensörünü bu LibreView hesabıyla kullanmayı mümkün kılar. 
+<p style="line-height: 100%; margin-bottom: 0cm">Juggluco, önceki 20
+dakika içinde yapılmamışsa Juggluco\'dan her ayrıldığınızda
+Libreview\'e yeni veriler gönderecektir. Ayrıca <i>&quot;</i><i><b>Şimdi
+gönder</b></i><i>&quot;</i> tuşuna basarak manuel olarak da
+Libreview\'e gönderebilirsiniz.</p>
+<p style="line-height: 100%; margin-bottom: 0cm">Glikoz değerlerinin
+yanı sıra, Miktarlar da Libreview\'e gönderilebilir. Bunun için
+&quot;<a class="western" href="https://www.juggluco.nl/Jugglucohelp/tr/librenumhelp.html"><i><b>Miktarları
+gönder</b></i></a>&quot; öğesine dokunmanız ve her etiketin ne
+anlama geldiğini belirtmeniz gerekir.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><b>RU</b>: Eğer
+<a class="western" href="https://libreview.com/">https://libreview.com</a>
+yerine <a class="western" href="https://libreview.ru/">https://libreview.ru</a><span style="text-decoration: none"><b>
+</b></span>kullanıyorsanız bunu ayarlamanız gerekir. Bu yalnızca
+Libre 2 sensörleri için geçerlidir. Libre 3 sensörleri yalnızca
+libreview.com ile kullanılabilir, çünkü Rusça Abbott Libre 3
+uygulaması mevcut değildir.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><b>Hemen</b>: Glikoz
+değerlerini Libre 2 veya 3 sensörlerinden geldiklerinde hemen
+Libreview\'e gönderir. Bu yalnızca LibreLinkUp ile birlikte
+kullanıldığında faydalıdır. Bunu kullanmak için Abbott\'un
+Libre uygulamalarından birinde bu Libreview hesabına bir
+LibrelinkUp bağlantısı eklemeniz gerekir. (Ülkenizde Abbott Libre
+uygulaması yoksa, <a class="western" href="https://www.juggluco.nl/Juggluco/libre3/patched.html">yamalı
+Libre 3 uygulamasını</a> kullanabilirsiniz.) Bazen değer hemen
+görünmez, çünkü <span style="font-weight: normal">LibreLinkUp</span>\'ın
+görüntülenmesi otomatik olarak yeniden çizilmez. Yakından
+bakmazsanız LibreLinkup\'ı kullanmak oldukça tehlikelidir, çünkü
+grafiğe dokunduğunuzda, mevcut glikoz değeri yerine eski bir değer
+gösterir.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><b>Spy Views</b>: Bu
+seçenek ayarlandığında, Juggluco bir değerin görüntülenip
+görüntülenmediğini Libreview\'e gönderecektir. Bu seçenek
+kapatıldığında, Juggluco her zaman görüntülenmediğini
+söyleyecektir. Bu seçenek yalnızca <i>Hemen</i> seçeneği de açık
+olduğunda bu bilgiyi Libreview\'e güvenilir bir şekilde
+gönderecektir. Juggluco, Libre 3\'ten tüm görüntülemeleri
+yakalamak için sürekli olarak internete bağlı olmalıdır, Libre
+2 durdurulmadığı sürece hepsini hatırlar.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><b>Başlangıcı
+değiştir</b>: Yeniden başla, belirtilen tarih ve saatten itibaren
+verileri yeniden gönderir. Yeni bir Libreview hesabına geçerken
+buna basmanız gerekir.</p>
+<p style="line-height: 100%; margin-bottom: 0cm">Libreview\'e
+göndermeye çalıştığınız son verinin sonucu &quot;Hesap
+Kimliğini Al&quot; düğmesinin altında görüntülenir.</p>
+<p style="line-height: 100%; margin-bottom: 0cm">Libreview
+analizinde, geçmiş değerleri kullanır. Juggluco ise istatistik
+ekranı için akış değerlerini kullanır (<a class="western" href="https://www.juggluco.nl/Jugglucohelp/tr/stathelp.html">Orta
+Sol Menü &gt; İstatistikler</a>). Bu işleyiş, Libreview ile
+Juggluco istatistikleri arasında küçük farklara neden olur. Akış
+değerleri daha uç olduğundan, Juggluco biraz daha negatiftir:
+aralıkta geçen süre daha az, değişkenlik daha büyük olabilir.
+Ayrıca “Z<i>aman </i><i>S</i><i>ensörü </i><i>Etkin”</i>
+Juggluco\'ya göre daha küçüktür; her eksik akış değerini
+sayar.</p>
+<p style="line-height: 100%; margin-bottom: 0cm">Juggluco aynı anda
+birden fazla sensörle bağlanabilirken, Librelink aynı anda
+yalnızca bir sensörü işler. Juggluco ayrıca Libreview\'e aynı
+anda yalnızca bir sensörden veri gönderir. Bunu, önce bir
+sensörden veri göndererek ancak o sensörden veri alınamayınca,
+sonraki sensörden veri göndererek yapar. Juggluco sonraki sensöre
+geçtiğinde, Librelink\'in tek sensör politikasını taklit etmek
+için öncekine geri dönmez. Aynı anda birden fazla sensör
+çalıştırdığınızda ve sonra eklenen sensör daha erken sona
+erdiğinde, önceki sensörün artık Libreview\'e veri göndermeyeceği
+anlamına gelir.</p>
+<p><a class="western" href="https://www.juggluco.nl/Jugglucohelp/tr/getaccountidhelp.html"><b>Hesap
+Kimliği Al</b></a>: LibreView hesap kimliğini almak istiyor ancak
+Libreview\'e veri göndermek istemiyorsanız, E-posta adresinizi ve
+Parolanızı girebilir ve &quot;<a class="western" href="https://www.juggluco.nl/Jugglucohelp/tr/getaccountidhelp.html"><i>Hesap
+Kimliği Al</i></a>&quot; düğmesine basabilirsiniz. Bu düğmeden
+önceki satırda, Hesap Kimliği gösterilecektir (bu biraz zaman
+alabilir ve ekran otomatik olarak yenilenmez). Hesap Kimliğini
+LibreView sunucusundan almak, Abbotts Libre 3 uygulamasıyla daha
+önce kullanılmış bir FreeStyle Libre 3 sensörünü bu LibreView
+hesabıyla kullanmayı mümkün kılar. 
 </p>
-<p>Libreview hesap kimlik numarası ayrıca Libreview raporlarının adres çubuğunda görüntülenen UUID\'den <a class="western" href="https://www.juggluco.nl/Juggluco/libre3/convertUUID.html">dönüştürülebilir</a>
+<p>Libreview hesap kimlik numarası ayrıca Libreview raporlarının
+adres çubuğunda görüntülenen UUID\'den <a class="western" href="https://www.juggluco.nl/Juggluco/libre3/convertUUID.html">dönüştürülebilir</a>
 ve Juggluco\'ya manuel olarak girilebilir.</p>
-<p>Sibionics ve Dexcom sensörlerinden gelen veriler Libreview\'e gönderilmez.</p>
+<p>Sibionics ve Dexcom sensörlerinden gelen veriler Libreview\'e
+gönderilmez.</p>
 ]]>
 </string>
 <string name="locationpermission" >
 <![CDATA[
-<p><a href="https://www.juggluco.nl/Jugglucohelp/be/locationpermission.html">be</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/de/locationpermission.html">de</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/fr/locationpermission.html">fr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/it/locationpermission.html">it</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/nl/locationpermission.html">nl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pl/locationpermission.html">pl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pt/locationpermission.html">pt</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ru/locationpermission.html">ru</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/tr/locationpermission.html">tr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/uk/locationpermission.html">uk</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/zh/locationpermission.html">zh</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/locationpermission.html?lang=en">en</a>&emsp;&emsp;</p><h1>Konum izni</h1>
-<p style="margin-bottom: 0in">Android 6 ila 11 çalıştıran cihazların Bluetooth cihazlarını bulmak için konum iznine ihtiyacı vardır. Bluetooth cihazları için bu tarama <b>Sibionics</b> ve <b>Dexcom</b> için gereklidir ve ayrıca Android 6, 7 ve 7.1\'de Juggluco tarafından kullanılır</p>
-<p style="margin-bottom: 0in"><br/>
+<p><a href="https://www.juggluco.nl/Jugglucohelp/be/locationpermission.html">be</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/de/locationpermission.html">de</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/fr/locationpermission.html">fr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/it/locationpermission.html">it</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/nl/locationpermission.html">nl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pl/locationpermission.html">pl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pt/locationpermission.html">pt</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ru/locationpermission.html">ru</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/tr/locationpermission.html">tr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/uk/locationpermission.html">uk</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/zh/locationpermission.html">zh</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/locationpermission.html?lang=en">en</a>&emsp;&emsp;</p><h1 class="western">
+Konum İzni</h1>
+<p style="margin-bottom: 0cm">Android 6 ila 11 çalıştıran
+cihazların Bluetooth cihazlarını bulmak için konum iznine
+ihtiyacı vardır. Bu izin <b>Sibionics</b> ve <b>Dexcom</b> için
+gereklidir ve ayrıca Android 6, 7 ve 7.1\'de Juggluco tarafından
+kullanılır.</p>
+<p style="margin-bottom: 0cm"><br/>
 
 </p>
 ]]>
 </string>
 <string name="mealhelp" >
 <![CDATA[
-<p><a href="https://www.juggluco.nl/Jugglucohelp/be/mealhelp.html">be</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/de/mealhelp.html">de</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/fr/mealhelp.html">fr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/it/mealhelp.html">it</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/nl/mealhelp.html">nl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pl/mealhelp.html">pl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pt/mealhelp.html">pt</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ru/mealhelp.html">ru</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/tr/mealhelp.html">tr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/uk/mealhelp.html">uk</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/zh/mealhelp.html">zh</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/mealhelp.html?lang=en">en</a>&emsp;&emsp;</p><h1>Yemekler</h1>
-<p>SBir öğünün içerik miktarını belirtin. Toplam karbonhidrat içeriği daha sonra hesaplanır. Ayrıca, tüm öğün veya içerik için karbonhidrat miktarını belirtmek mümkündür ve program daha sonra
-ihtiyacınız olan içerik miktarını belirler. Bir öğeyi yemeğe eklemek için &quot;<i>Öğe ekle</i>&quot; düğmesine basın. Çağrılan iletişim kutusunda bir içerik seçebilir ve miktarını (veya öğünün veya bu öğenin toplam karbonhidratını) belirtebilirsiniz. <i>Seç</i>\'e veya önceden belirtilen içeriklere basarak, önceden tanımlanmış içeriklerin listesine gelirsiniz. Orada <i>Tanımla</i>\'ya basarak yeni bir içerik tanımlayabilirsiniz. Burada daha sonra o içeriğin adını ve karbonhidrat içeriğini istenilen birimde belirleyebilirsiniz. Ayrıca, <i><a href="https://www.juggluco.nl/Jugglucohelp/tr/nutrients.html">Veritabanı</a></i>\'na basarak bir gıda bileşimi veritabanına girebilir, burada içerikleri arayabilir ve bir gıdanın bileşimini görebilir ve <i>Seç</i>\'e basarak bu gıdanın adını ve karbonhidrat içeriğini bir içerik tanımına ekleyebilirsiniz.</p>
-<p><br></p>
-<p><br></p>
-<p><br></p>
+<p><a href="https://www.juggluco.nl/Jugglucohelp/be/mealhelp.html">be</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/de/mealhelp.html">de</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/fr/mealhelp.html">fr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/it/mealhelp.html">it</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/nl/mealhelp.html">nl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pl/mealhelp.html">pl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pt/mealhelp.html">pt</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ru/mealhelp.html">ru</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/tr/mealhelp.html">tr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/uk/mealhelp.html">uk</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/zh/mealhelp.html">zh</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/mealhelp.html?lang=en">en</a>&emsp;&emsp;</p><h1 class="western">Yemekler</h1>
+<p>Bir öğünün içerik miktarını belirtin. Toplam karbonhidrat
+içeriği daha sonra hesaplanır. Ayrıca, tüm öğün veya içerik
+için karbonhidrat miktarını belirtmek mümkündür. Program daha
+sonra ihtiyacınız olan içerik miktarını belirler. Bir öğeyi
+yemeğe eklemek için &quot;<i>Öğe ekle</i>&quot; düğmesine
+basın. Çağrılan iletişim kutusunda bir içerik seçebilir ve
+miktarını (veya toplam karbonhidratını) belirtebilirsiniz. <i>Seç</i>\'e
+veya önceden belirtilen içeriklere basarak, önceden tanımlanmış
+içeriklerin listesine gelirsiniz. <i>Tanımla</i>\'ya basarak yeni
+bir içerik tanımlayabilirsiniz. Daha sonra o içeriğin adını ve
+karbonhidrat içeriğini istenilen birimde belirleyebilirsiniz.
+Ayrıca, <a href="https://www.juggluco.nl/Jugglucohelp/tr/nutrients.html"><i>Veritabanı</i></a>\'na
+basarak bir gıda bileşim veritabanına girebilir, içerikleri
+arayabilir, gıdanın bileşimini görebilir ve <i>Seç</i>\'e basarak
+bu gıdanın adını ve karbonhidrat içeriğini bir içerik tanımına
+ekleyebilirsiniz.</p>
+<p><br/>
+<br/>
+
+</p>
+<p><br/>
+<br/>
+
+</p>
+<p><br/>
+<br/>
+
+</p>
 ]]>
 </string>
 <string name="nearbypermission" >
 <![CDATA[
-<p><a href="https://www.juggluco.nl/Jugglucohelp/be/nearbypermission.html">be</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/de/nearbypermission.html">de</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/fr/nearbypermission.html">fr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/it/nearbypermission.html">it</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/nl/nearbypermission.html">nl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pl/nearbypermission.html">pl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pt/nearbypermission.html">pt</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ru/nearbypermission.html">ru</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/tr/nearbypermission.html">tr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/uk/nearbypermission.html">uk</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/zh/nearbypermission.html">zh</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/nearbypermission.html?lang=en">en</a>&emsp;&emsp;</p><h1>YAKINDAKİ CİHAZLAR izni</h1>
-<p style="line-height: 100%; margin-bottom: 0in">Juggluco\'nun, Freestyle Libre 2 ve 3 sensörlerinden Bluetooth aracılığıyla glikoz değerlerini almak için YAKINDAKİ CİHAZLAR iznine ihtiyacı vardır. Juggluco bu glikoz değerlerini başka bir telefon veya saatte çalışan Juggluco\'dan alırsa, Juggluco\'nun bu izne ihtiyacı olmaz.</p>
-<p style="line-height: 100%; margin-bottom: 0in">Saatlerde, Juggluco saatin eşlik eden uygulaması üzerinden bağlanır, böylece Juggluco\'nun kendisi saatlere bağlanmak için bu izne ihtiyaç duymaz.</p>
+<p><a href="https://www.juggluco.nl/Jugglucohelp/be/nearbypermission.html">be</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/de/nearbypermission.html">de</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/fr/nearbypermission.html">fr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/it/nearbypermission.html">it</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/nl/nearbypermission.html">nl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pl/nearbypermission.html">pl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pt/nearbypermission.html">pt</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ru/nearbypermission.html">ru</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/tr/nearbypermission.html">tr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/uk/nearbypermission.html">uk</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/zh/nearbypermission.html">zh</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/nearbypermission.html?lang=en">en</a>&emsp;&emsp;</p><h1 class="western">
+Yakındaki Cihazlar İzni</h1>
+<p style="line-height: 100%; margin-bottom: 0cm">Juggluco\'nun,
+Freestyle Libre 2 ve 3 sensörlerinden Bluetooth aracılığıyla
+glikoz değerlerini almak için <i>Y</i><i>akındaki Cihazlar İznine</i>
+ihtiyacı vardır. Juggluco bu glikoz değerlerini başka bir telefon
+veya saatte çalışan Juggluco\'dan alırsa bu izne ihtiyacı olmaz.</p>
+<p style="line-height: 100%; margin-bottom: 0cm">Juggluco saatlerde,
+saatin eşlik eden uygulaması üzerinden bağlanır, böylece
+saatlere bağlanmak için bu izne ihtiyaç duymaz.</p>
 ]]>
 </string>
 <string name="newamount" >
 <![CDATA[
-<p><a href="https://www.juggluco.nl/Jugglucohelp/de/newamount.html">de</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/nl/newamount.html">nl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pl/newamount.html">pl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ru/newamount.html">ru</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/tr/newamount.html">tr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/zh/newamount.html">zh</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/newamount.html?lang=en">en</a>&emsp;&emsp;</p><h1>Yeni Miktar</h1>
-<p><b>Yeni miktar</b> sayesinde bir etiket ile ilişkili sayıları girebilirsiniz. Etiketleri sol menü→Ayarlar→<a href="https://www.juggluco.nl/Jugglucohelp/tr/labelhelp.html">Sayı
-Etiketleri</a> altında ayarlayabilirsiniz. Etiketle girilen <i>Miktarlar</i>, grafikte belirlenen yükseklikte gösterilecektir.</p>
-<p>Daha sonra uzun basarak miktarı değiştirebilirsiniz. Ayrıca Sol orta menü→Liste altında girilen miktarlar listesinden de seçebilirsiniz.</p>
-<p>Ayrıca, NFC kalemini tarayarak 
-a href="https://www.juggluco.nl/Juggluco/index.html#novopens" onclick="location.href=\'https://www.juggluco.nl/Juggluco/index.html?unit=\'+unitstr+\'#novopens\';return false;">NovoPen®
-6 veya NovoPen Echo® Plus</a>\'tan <b>İnsülin</b> doz verilerini almak da mümkündür. Taramadan sonra Juggluco\'da hangi etiket altında dozların kaydedileceğini değiştirebilir ve dozları belirli bir tarih ve saatten <b>sonraki</b> dozlarla sınırlayabilirsiniz.
-Kalemin hafızasında yüzlerce doz olduğunda, bunların hepsinin NFC aracılığıyla Juggluco tarafından alınması 30 saniyeden fazla sürebilir.</p>
-<p>Sol menü-&gt;Ayarlar-&gt;<a href="https://www.juggluco.nl/Jugglucohelp/tr/labelhelp.html">Sayı
-Etiketleri</a> altında bir öğünün karbonhidratlarını hangi etikete girdiğiniz de belirtilir. <i>Yeni miktar</i>\'da, bu etiket için bir <b>Yemek</b> düğmesi görüntülenir. Bu <a href="https://www.juggluco.nl/Jugglucohelp/tr/mealhelp.html"><i>Yemek</i></a>
+<p><a href="https://www.juggluco.nl/Jugglucohelp/de/newamount.html">de</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/nl/newamount.html">nl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pl/newamount.html">pl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ru/newamount.html">ru</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/tr/newamount.html">tr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/zh/newamount.html">zh</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/newamount.html?lang=en">en</a>&emsp;&emsp;</p><h1 class="western">Yeni Miktar</h1>
+<p><b>Yeni miktar</b> sayesinde bir etiket ile ilişkili sayıları
+girebilirsiniz. Etiketleri, <i>S</i><i>ol </i><i>M</i><i>enü→Ayarlar→</i><i><span style="text-decoration: none"><a href="https://www.juggluco.nl/Jugglucohelp/tr/labelhelp.html">Sayı
+Etiketleri</a> </span></i>altında ayarlayabilirsiniz. Etiketle
+girilen <i>Miktarlar</i>, grafikte belirlenen yükseklikte
+gösterilecektir.</p>
+<p>Uzun basarak miktarı değiştirebilirsiniz. Ayrıca <i>O</i><i>rta
+</i><i>Sol</i><i> </i><i>M</i><i>enü→Liste</i> altında girilen
+miktarlar listesinden de seçebilirsiniz.</p>
+<p><a href="https://www.juggluco.nl/Juggluco/index.html#novopens">NovoPen®
+6 veya NovoPen Echo® Plus</a>\'tan NFC kalemini tarayarak insülin
+dozu verilerini almak mümkündür. Taramadan sonra Juggluco\'da hangi
+etiket altında dozların kaydedileceğini değiştirebilir ve
+dozları belirli bir tarih ve saatten <b>sonraki</b> dozlarla
+sınırlayabilirsiniz. Kalemin hafızasında yüzlerce doz olduğunda,
+bunların hepsinin NFC aracılığıyla Juggluco tarafından alınması
+30 saniyeden fazla sürebilir.</p>
+<p>Sol menü &gt; Ayarlar &gt; <a href="https://www.juggluco.nl/Jugglucohelp/tr/labelhelp.html">Sayı
+Etiketleri</a> altında bir öğünün karbonhidratlarını hangi
+etikete girdiğiniz de belirtilir. <i>Yeni miktar</i>\'da, bu etiket
+için bir <b>Yemek</b> düğmesi görüntülenir. Bu <a href="https://www.juggluco.nl/Jugglucohelp/tr/mealhelp.html"><i>Yemek</i></a>
 düğmesine dokunduğunuzda, bir öğünü bileşenlerine göre
-belirleyebileceğiniz bir ekrana gelirsiniz. Burada karbonhidrat içeriğini belirtebilir ve ardından bir bileşenin ihtiyaç duyulan miktarını hesaplayabilirsiniz.</p>
+belirleyebileceğiniz bir ekrana gelirsiniz. Burada karbonhidrat
+içeriğini belirtebilir ve ardından bir bileşenin ihtiyaç duyulan
+miktarını hesaplayabilirsiniz.</p>
 <p><br/>
 <br/>
 
@@ -2018,35 +2226,48 @@ Herhangi bir dil kodu seçilmediğinde, sistem dili kullanılır.</p>
 </string>
 <string name="loghelp" >
 <![CDATA[
-<p><a href="https://www.juggluco.nl/Jugglucohelp/de/loghelp.html">de</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/nl/loghelp.html">nl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/tr/loghelp.html">tr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/loghelp.html?lang=en">en</a>&emsp;&emsp;</p><h1>Log</h1>
-<p style="line-height: 100%; margin-bottom: 0in">Bu, Juggluco\'nun bir günlük versiyonudur. Günlük dosyaları şu şekilde oluşturulabilir:
+<p><a href="https://www.juggluco.nl/Jugglucohelp/de/loghelp.html">de</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/nl/loghelp.html">nl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/tr/loghelp.html">tr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/loghelp.html?lang=en">en</a>&emsp;&emsp;</p><h1 class="western">Log</h1>
+<p style="line-height: 100%; margin-bottom: 0cm">Juggluco\'nun günlük
+versiyonudur. Günlük dosyaları şu şekilde oluşturulabilir:
 /data/data/tk.glucodata/files/logs</p>
-<p style="line-height: 100%; margin-bottom: 0in">trace.log, Juggluco\'nun kendisinin oluşturduğu günlük mesajlarını içerir. logcat.txt, Android\'in Juggluco ile ilgili olarak oluşturduğu
-günlük mesajlarını içerir. Bunları silebilir ve ayrı ayrı kaydedebilirsiniz.</p>
-<p style="line-height: 100%; margin-bottom: 0in">Eğer sorun
-yaşarsanız bu günlük dosyalarının oluşturulduğu süre boyunca yaşadığınız sorunların açıklamasına ek olarak trace.log ve logcat.txt\'yi
-<a href="mailto:jaapkorthalsaltes@gmail.com?subject=Log%20files">jaapkorthalsaltes@gmail.com adresine gönderebilirsiniz</a>
+<p style="line-height: 100%; margin-bottom: 0cm">trace.log,
+Juggluco\'nun kendisinin oluşturduğu günlük mesajlarını içerir.
 </p>
-<p style="line-height: 100%; margin-bottom: 0in"><b>File size</b>:
-günlük dosyasının boyutu</p>
-<p style="line-height: 100%; margin-bottom: 0in"><b>Logging</b>: Trace.log veya logcat\'te oturum açın</p>
-<p style="line-height: 100%; margin-bottom: 0in"><b>Delete</b>:
-günlük dosyasını sil</p>
-<p style="line-height: 100%; margin-bottom: 0in"><b>Save</b>: günlük dosyasını diğer uygulamalar tarafından görülebilecek şekilde kaydedin</p>
-<p style="line-height: 100%; margin-bottom: 0in"><b>Close</b>: bu görünümü kapat</p>
-<p style="line-height: 100%; margin-bottom: 0in"><br/>
+<p style="line-height: 100%; margin-bottom: 0cm">logcat.txt,
+Android\'in Juggluco ile ilgili olarak oluşturduğu günlük
+mesajlarını içerir. 
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">Bunları silebilir
+ve ayrı ayrı kaydedebilirsiniz.</p>
+<p style="line-height: 100%; margin-bottom: 0cm">Eğer sorun
+yaşarsanız bu günlük dosyalarının oluşturulduğu süre boyunca
+yaşadığınız sorunların açıklamasına ek olarak trace.log ve
+logcat.txt\'yi <a href="mailto:jaapkorthalsaltes@gmail.coma">jaapkorthalsaltes@gmail.com</a>
+adresine gönderebilirsiniz.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><b>File size</b>:
+Günlük dosyasının boyutu</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><b>Logging</b>:
+Trace.log veya logcat\'te oturum açın.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><b>Delete</b>:
+Günlük dosyasını siler.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><b>Save</b>: Günlük
+dosyasını diğer uygulamalar tarafından görülebilecek şekilde
+kaydeder.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><b>Close</b>:
+Görünümü kapatın.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
 
 </p>
-<p style="line-height: 100%; margin-bottom: 0in"><br/>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
 
 </p>
-<p style="line-height: 100%; margin-bottom: 0in"><br/>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
 
 </p>
-<p style="line-height: 100%; margin-bottom: 0in"><br/>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
 
 </p>
-<p style="line-height: 100%; margin-bottom: 0in"><br/>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
 
 </p>
 ]]>

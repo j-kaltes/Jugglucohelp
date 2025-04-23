@@ -1,64 +1,139 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-<title>Settings</title>
-<base target="_blank">
-<meta name="generator" content="LibreOffice 7.6.5.2 (Linux)"/>
-<meta name="created" content="00:00:00"/>
-<meta name="changed" content="2024-05-08T21:50:52.625275614"/>
-<meta name="created" content="00:00:00">
-<style type="text/css">
-@page { size: 8.27in 11.69in; margin: 0.79in }
-h1 { margin-bottom: 0.08in; background: transparent }
-h1.western { font-family: "Liberation Serif", serif }
-h1.cjk { font-family: "Noto Serif CJK SC" }
-h1.ctl { font-family: "Mangal" }
-p { margin-bottom: 0.1in; background: transparent }
-h2 { margin-top: 0.14in; margin-bottom: 0.08in; background: transparent }
-h2.western { font-family: "Liberation Sans", sans-serif; font-size: 16pt }
-h2.cjk { font-family: "Noto Sans CJK SC"; font-size: 16pt }
-h2.ctl { font-family: "Mangal"; font-size: 16pt }
-</style> 
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title>Settings</title>
+	<base target="_blank">
+	<meta name="generator" content="LibreOffice 7.4.7.2 (Linux)"/>
+	<meta name="created" content="00:00:00"/>
+	<meta name="changed" content="2025-04-22T22:46:59.971198590"/>
+	<meta name="created" content="00:00:00">
+	<meta name="created" content="00:00:00">
+	<style type="text/css">
+		@page { size: 21.01cm 29.69cm; margin: 2.01cm }
+		p { line-height: 115%; margin-bottom: 0.25cm; background: transparent; background: transparent }
+		h1 { margin-bottom: 0.2cm; background: transparent; background: transparent; page-break-after: avoid }
+		h1.western { font-family: "Liberation Serif", serif; font-size: 24pt; font-weight: bold }
+		h1.cjk { font-family: "Noto Serif CJK SC"; font-size: 24pt; font-weight: bold }
+		h1.ctl { font-family: "Mangal"; font-size: 24pt; font-weight: bold }
+		h2 { margin-top: 0.36cm; margin-bottom: 0.2cm; background: transparent; background: transparent; page-break-after: avoid }
+		h2.western { font-family: "Liberation Sans", sans-serif; font-size: 16pt; font-weight: bold }
+		h2.cjk { font-family: "Noto Sans CJK SC"; font-size: 16pt; font-weight: bold }
+		h2.ctl { font-family: "Mangal"; font-size: 16pt; font-weight: bold }
+		a:link { color: #000080; text-decoration: underline }
+	</style>
 </head>
 <img src="settings.png" alt="Ayarlar" style="object-fit:contain; width:15cm; height:auto;">
-<body lang="tr-TR" dir="ltr"><h1 class="western">Ayarlar</h1>
+<body lang="tr-TR" link="#000080" vlink="#800000" dir="ltr"><h1 class="western">Ayarlar</h1>
 <h2 class="western">Birim</h2>
-<p style="margin-bottom: 0in">Glikoz değerlerinin mmol/L veya dm/dL cinsinden verilmesini seçin.</p>
+<p style="margin-bottom: 0cm">Glikoz değerlerinin mmol/L veya dm/dL
+cinsinden verilmesini seçin.</p>
 <h2 class="western">NFC Sesi</h2>
 <p>Tarama sırasında titreşime ek olarak ses seçin.</p>
 <h2 class="western">Tarama uygulamayı başlatır</h2>
-<p>İşaretlenirse, uygulama açık olmasa bile NFC üzerinden bir sensörü taradığınızda uygulama başlatılır. Birden fazla uygulamada bu ayar varsa, Android kullanmak istediğiniz uygulamayı seçebileceğiniz bir seçici görüntüler. Birini seçmek işe yaramıyorsa bir daha ki sefere de işe yaramayabilir. Bu durumda ön planda bir uygulama olmadan tarama yapamazsınız. Bu uygulamada bunu kapatmak, en azından bir uygulamanın bu şekilde etkinleştirilmesini mümkün kılacaktır.</p>
-<p>Eğer root erişiminiz varsa, Abbott'un Librelink uygulamasının NFC aktivasyonunu da devre dışı bırakabilirsiniz (Libre3 ile çalışmaz):</p>
+<p>İşaretlenirse, uygulama açık olmasa bile NFC üzerinden bir
+sensörü taradığınızda uygulama başlatılır. Birden fazla
+uygulamada bu ayar varsa Android, kullanmak istediğiniz uygulamayı
+seçebileceğiniz bir seçici görüntüler. Birini seçmek işe
+yaramamışsa daha sonra da işe yaramayabilir. Bu durumda ön planda
+bir uygulama olmadan tarama yapamazsınız. Juggluco’da bu seçeneği
+kapatmak en azından başka bir uygulamanın bu şekilde
+etkinleştirilmesini mümkün kılacaktır.</p>
+<p>Eğer root erişiminiz varsa, Abbott'un Librelink uygulamasının
+NFC aktivasyonunu da devre dışı bırakabilirsiniz (Libre3 ile
+çalışmaz):</p>
 <p>Adb shell veya termux'ta root olun ve şunu yazın:</p>
-<p>pm disable com.freestylelibre.app.nl/com.librelink.app.ui.common.NFCScanActivity</p>
-<p>Librelink 2.7.1 ve altı sürümlerde basınız:</p>
-<p>pm disable com.freestylelibre.app.nl/com.librelink.app.ui.common.ScanSensorActivity</p>
-<p>com.freestylelibre.app.nl Librelink'in Hollanda versiyonudur,
-bu kullandığınız versiyonla değiştirilmelisiniz. Adını yazarak bulabilirsiniz (root olmadan bile):</p>
+<p>pm disable
+com.freestylelibre.app.nl/com.librelink.app.ui.common.NFCScanActivity</p>
+<p>Librelink 2.7.1 ve altı sürümlerde şunu yazınız:</p>
+<p>pm disable
+com.freestylelibre.app.nl/com.librelink.app.ui.common.ScanSensorActivity</p>
+<p><i>com.freestylelibre.app.nl</i> Librelink'in Hollanda
+versiyonudur, bunu kullandığınız versiyonla değiştirilmelisiniz.
+Adını yazarak bulabilirsiniz (root olmadan bile):</p>
 <p>pm list package freestylelibre</p>
-<p>Sonrasında, Librelink ön planda olduğunda tarama için kullanmaya devam edebilirsiniz,aksi takdirde başlatılmayacaktır. Librelink 2.5.2 ve üzeri, root algılarsa kendi kendine çöker. Ancak Magisk'te Magisk'i yeniden adlandırarak ve tek tek uygulamaları reddetme listesine (Magisk 24.3) veya Magiskhide'a (Magisk 23.0) ekleyerek root'u kolayca gizleyebilirsiniz. Ayrıca Juggluco'yu reddetme listesine eklemelisiniz. US Freestyle Libre 2 sensörlerini kullandığınız durumlar haricinde, root kontrolü olmadan Librelink'in eski bir sürümünü de kullanabilirsiniz.</p>
-<p>Root olmadan, adb shell altında tüm uygulamayı devre dışı bırakabilirsiniz:</p>
+<p>Sonrasında, Librelink ön planda olduğunda tarama için
+kullanmaya devam edebilirsiniz, aksi takdirde başlatılmayacaktır.
+Librelink 2.5.2 ve üzeri, root algılarsa kendi kendine çöker.
+Ancak Magisk'te Magisk'i yeniden adlandırarak ve tek tek
+uygulamaları reddetme listesine (Magisk 24.3) veya Magiskhide'a
+(Magisk 23.0) ekleyerek root'u kolayca gizleyebilirsiniz. Ayrıca
+Juggluco'yu da reddetme listesine eklemelisiniz. US Freestyle Libre 2
+sensörlerini kullandığınız durumlar haricinde, root kontrolü
+olmadan Librelink'in eski bir sürümünü de kullanabilirsiniz.</p>
+<p>Root olmadan, adb shell altında tüm uygulamayı devre dışı
+bırakabilirsiniz:</p>
 <p>pm disable-user --user 0 com.freestylelibre.app.nl</p>
-<p>Abbott müşteri hizmetlerini aramadan önce, aşağıdakileri yaparak yeniden etkinleştirebilirsiniz:</p>
+<p>Abbott müşteri hizmetlerini aramadan önce, aşağıdakileri
+yaparak yeniden etkinleştirebilirsiniz:</p>
 <p>pm enable com.freestylelibre.app.nl</p>
-<h2 class="western">Glikoz bildirimi</h2>
-<p style="margin-bottom: 0in">(Daha önce &quot;<i>Android durum çubuğundaki Glikoz</i>&quot; olarak adlandırılıyordu). Ayarlanırsa, Bluetooth üzerinden akan glikoz değerleri bir bildirimde ve Android durum çubuğunda sessizce görüntülenir. Kapatırsanız, bir sayı yerine bir nokta gösterilir ve bildirim &quot;<i>Sensöre bağlanmak için</i>&quot; veya &quot;<i>Veri alışverişi yapmak için</i>&quot;den başka bir şey söylemez. Arka planda çalışmaya devam eden bir uygulama, Android tarafından böyle bir bildirime sahip olmak zorunda bırakılır (aksi takdirde Android tarafından kolayca durdurulur).
-Juggluco bildirimi yalnızca &quot;<i>Sensör Bluetooth üzerinden</i>&quot; kapalı olduğunda ve hiçbir ayna bağlantısı olmadığında kapatır.</p>
-<p style="margin-bottom: 0in">Bazı telefonlarda, glikoz değeri yalnızca bildirim ayarlarını değiştirdikten sonra durum çubuğunda gösterilir. Örneğin Realme GT 5G'de, applist-&gt;Juggluco-&gt;bildirimleri yönet'e gitmeniz, glucoseNotification'a tıklamanız ve &quot;Sessiz'e Ayarla&quot;yı kapatmanız gerekir. &quot;Durum çubuğunda görüntüle&quot; artık açık olarak gösterilecektir.</p>
-<p style="margin-bottom: 0in">Ayrıca sol orta menüde <i>Bildir</i>'i seçerek bir android bildirimi alabilirsiniz. Bu durumda bildirim, bu şekilde yapılandırılmışsa bazı akıllı saatlere gönderilecektir. Bu Garmin saatleriyle çalışır, başka bir şeyle çalışıp çalışmadığını bilmiyorum. Alarmlar da bildirim üretir.</p>
-<h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/tr/floatingconfig.html" onclick="location.href=this.href+'?unit='+unitstr;return false;">Yüzen glikoz</a></h2>
-<p>Bunu açtığınızda, ön planda hangi uygulama olursa olsun, ekranda sürekli olarak mevcut glikoz değerine sahip küçük bir görüntü bulunur. İlk kez açtığınızda, Juggluco'ya <b>diğer uygulamaların üzerinde görüntüleme</b> izni vermeniz gereken bir uygulama listesine yönlendirileceksiniz.</p>
+<h2 class="western">Glikoz Bildirimi</h2>
+<p style="margin-bottom: 0cm">Daha önce &quot;<i>Android durum
+çubuğundaki Glikoz</i>&quot; olarak adlandırılıyordu.
+Ayarlanırsa, Bluetooth üzerinden akan glikoz değerleri bir
+bildirimde ve Android durum çubuğunda sessizce görüntülenir.
+Kapatırsanız, bir sayı yerine bir nokta gösterilir ve bildirim
+&quot;<i>Sensöre bağlanmak için</i>&quot; veya &quot;<i>Veri
+alışverişi yapmak için</i>&quot;den başka bir şey söylemez.
+Arka planda çalışmaya devam eden bir uygulama, Android tarafından
+böyle bir bildirime sahip olmak zorunda bırakılır (aksi takdirde
+Android tarafından kolayca durdurulur). Juggluco bildirimi yalnızca
+&quot;<i>Sensör Bluetooth üzerinden</i>&quot; kapalı olduğunda ve
+hiçbir ayna bağlantısı olmadığında kapatır.</p>
+<p style="margin-bottom: 0cm">Bazı telefonlarda, glikoz değeri
+yalnızca bildirim ayarlarını değiştirdikten sonra durum
+çubuğunda gösterilir. Örneğin Realme GT 5G'de, <i>Uygulama
+Listesi</i><i> &gt; Juggluco &gt; </i><i>B</i><i>ildirimleri </i><i>Y</i><i>önet</i>'e
+gitmeniz, <i>Glikoz Bildirimi</i>'ne tıklamanız ve &quot;<i>Sessiz'e
+Ayarla&quot;</i>yı kapatmanız gerekir. <i>&quot;Durum çubuğunda
+görüntüle&quot;</i> artık açık olarak gösterilecektir.</p>
+<p style="margin-bottom: 0cm">Ayrıca orta sol menüde <i>Bildir</i>'i
+seçerek bir android bildirimi alabilirsiniz. Bu durumda bildirim, bu
+şekilde yapılandırılmışsa bazı akıllı saatlere
+gönderilecektir. Bu Garmin saatleriyle çalışır, başka bir şeyle
+çalışıp çalışmadığını bilmiyorum. Alarmlar da bildirim
+üretir.</p>
+<h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/tr/floatingconfig.html" onclick="location.href=this.href+'?unit='+unitstr;return false;">Yüzen
+Glikoz</a></h2>
+<p>Bunu açtığınızda, ön planda hangi uygulama olursa olsun,
+ekranda sürekli olarak mevcut glikoz değerine sahip küçük bir
+ekran bulunur. İlk kez açtığınızda, Juggluco'ya <b>diğer
+uygulamaların üzerinde görüntüleme</b> izni vermeniz gereken bir
+uygulama listesine yönlendirileceksiniz.</p>
 <h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/tr/alarmhelp.html">Alarmlar</a></h2>
-<p>Yüksek ve düşük glikoz alarmları, sinyal kaybı alarmı ve değer
-mevcut bildirimini ayarlayın.</p>
-<h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/tr/labelhelp.html">Sayı Etiketleri</a></h2>
-<p style="margin-bottom: 0in">Miktarlar için kullanılan etiketleri belirtin. İnsülin dozları, karbonhidrat tüketimi ve futbol oynamaya harcanan saatler gibi miktarları ayarlamak için hangi etiketlerin kullanılacağını belirlemek üzere bu ekrana gidin. Ayrıca Garmin saat uygulaması Kerfstok'u da kullanıyorsanız, bu etiketler saat uygulamasına gönderilir.</p>
-<h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/tr/exchangehelp.html">Veri Değişimi</a></h2>
-<p>Juggluco'dan diğer uygulamalara veya sunuculara veri göndermenin farklı yolları. (Verileri saatlere göndermek için sol menüye gidin-&gt;Saat.)</p>
+<p>Yüksek ve Düşük Glikoz Alarmları, Sinyal Kaybı Alarmı ve
+Mevcut Veri Bildirimi’ni ayarlayın.</p>
+<h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/tr/labelhelp.html">Sayı
+Etiketleri</a></h2>
+<p style="margin-bottom: 0cm">Miktarlar için kullanılan etiketleri
+belirtin. İnsülin dozları, karbonhidrat tüketimi ve futbol
+oynamaya harcanan saatler gibi miktarları ayarlamak için hangi
+etiketlerin kullanılacağını belirlemek üzere bu ekrana gidin.
+Ayrıca Garmin saat uygulaması Kerfstok'u da kullanıyorsanız, bu
+etiketler saat uygulamasına gönderilir.</p>
+<h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/tr/exchangehelp.html">Veri
+Değişimi</a></h2>
+<p>Juggluco'dan diğer uygulamalara veya sunuculara veri göndermenin
+farklı yolları. (Verileri saatlere göndermek için sol menüye
+gidin &gt; Saat)</p>
 <h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/tr/reminders.html">Hatırlatıcılar</a></h2>
-<p style="margin-bottom: 0in">Belirli bir zaman dilimi içerisinde belirli miktarda yiyecek veya ilaç girmediğinizde alarmın çalmasını ayarlayın.</p>
+<p style="margin-bottom: 0cm">Belirli bir zaman dilimi içerisinde
+belirli miktarda yiyecek veya ilaç girmediğinizde alarmın
+çalmasını ayarlayın.</p>
+<p style="margin-bottom: 0cm"><br/>
+
+</p>
+<p style="margin-bottom: 0cm"><font color="#000080"><font face="Liberation Sans, sans-serif"><font size="4" style="font-size: 16pt"><u><b>Google
+Taraması</b></u></font></font></font></p>
+<p style="margin-bottom: 0cm">Sibionics sensör paketlerindeki ve
+Dexcom G7/ONE+ aplikatörlerindeki veri matrisini ve orta sol
+menüdeki QR kodunu tarayın→Google kod tarayıcısıyla yansıtın.
+İşaretli değilse, zXing kullanılır. Çoğu cihazda, Google
+taraması daha iyi çalışır, ancak bazen çalışmaz. Bir hatayla
+başarısız olduğunda, zXing her zaman kullanılır, ancak bazen
+Google taraması bir hata döndürmeden de çalışmayabilir.</p>
 <h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/tr/displayhelp.html">Görüntü</a></h2>
-<p>Hedef aralığından dile kadar verilerin nasıl görüntüleneceğiyle ilgili her türlü ayara ulaşın.</p>
+<p>Hedef aralığından dile kadar verilerin nasıl
+görüntüleneceğiyle ilgili her türlü ayara ulaşın.</p>
 </body>
 </html>

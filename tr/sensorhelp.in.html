@@ -1,51 +1,131 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-<title></title>
-<meta name="generator" content="LibreOffice 24.2.7.2 (Linux)"/>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 7.4.7.2 (Linux)"/>
+	<meta name="created" content="00:00:00"/>
+	<meta name="changed" content="2025-04-22T22:10:56.728239567"/>
+	<style type="text/css">
+		@page { size: 21cm 29.7cm; margin-left: 2cm; margin-right: 1cm; margin-top: 1cm; margin-bottom: 1cm }
+		p { line-height: 115%; margin-bottom: 0.25cm; background: transparent }
+		h1 { margin-bottom: 0.21cm; background: transparent; page-break-after: avoid }
+		h1.western { font-family: "Liberation Serif", serif; font-size: 24pt; font-weight: bold }
+		h1.cjk { font-family: "DejaVu Sans"; font-size: 24pt; font-weight: bold }
+		h1.ctl { font-family: "FreeSans"; font-size: 24pt; font-weight: bold }
+		a:link { color: #000080; text-decoration: underline }
+	</style>
 </head>
 <img src="sensor.png" style="object-fit:contain; width:15cm; height:auto;">
-<body lang="tr-TR" dir="ltr">
-<h1>Sensör</h1>
-<p style="border: none; padding: 0in">Spinner, sensörün adını içerir. Juggluco aynı anda birden fazla sensör kullanıyorsa,
-bilginin gösterileceği sensörü seçebilirsiniz.</p>
-<p style="border: none; padding: 0in"><a href="https://www.juggluco.nl/Jugglucohelp/tr/battery.html"><i><b>Uyku Modu</b></i></a> Juggluco'nun çalışmasını engelleyebilecek Juggluco için pil optimizasyonlarının nasıl devre dışı bırakılacağına dair bilgilerin bulunduğu bir ekrana yönlendirir.</p>
-<p style="border: none; padding: 0in"><i><b>Bluetooth Geçmişi</b></i>:
-Libre 2'de geçmiş, 15 dakikalık aralıklarla geçmişin değerleridir.
-Daha önce yalnızca tarayarak alınıyordu. Bu seçeneği açtığınızda, Geçmiş değerleri de Bluetooth aracılığıyla alınır. Ayrıca,
-diğer şeyler farklı şekilde çalışacaktır. Libreview'e akış değerlerinin ortalamaları yerine geçmiş değerleri gönderilecektir.
-Dezavantajı ise daha yavaş olmasıdır. Bu, WearOS saatlerinde bir sorun olabilir. Bu seçeneğin Libre 3 ve US Libre 2 sensörleri üzerinde hiçbir etkisi yoktur; geçmiş değerlerini her zaman Bluetooth aracılığıyla alırlar.</p>
-<p>⏰: Juggluco'nun Dexcom G7 ve ONE+ sensörlerine bağlanmanın doğru zamanlamasını sağlamak için bir çalar saat işlevi kullanmasına izin verin. Bu olmadan, cihaz kullanılmadığında derin uykudayken bazen sensöre yeniden bağlanmak için uyanmaz ve hemen bir glikoz değeri almaz. WearOS saatimde bu sorun gecenin bir yarısı, muhtemelen çok az hareket ettiğim için oldu. Sonrasındaki
-geri doldurma ve yavaş uyanma nedeniyle, bunu saatte ve telefonda görmedim, yalnızca günlük dosyalarında gördüm. Telefonumun bu ayara ihtiyacı yok ve açıldığında daha kötü performans gösteriyor gibi görünüyor.</p>
-<p style="border: none; padding: 0in"><i><b>İzin</b></i>:
-Juggluco'nun önceki sürümleri, sensörün cihaz adresini bulmak için konum izni gerektiriyordu. Bu, kullandığım sensörler için artık gerekli değil. Belki de hala bunun gerekli olduğu sensörler vardır; bu durumda bunu açabilirsiniz. İlk temastan sonra Juggluco cihaz adresini kaydeder ve konum izni her zaman işe yaramaz. Cihaz adresi biliniyorsa, sensör tanımlayıcısından sonra görüntülenir. Kırmızı, ABD benzeri bir sensör anlamına gelir. Android 12'de yeni bir <i>Yakındaki cihazlar</i> izni vardır ve bu, bir Bluetooth cihaz adresini aramak için konum izni yerine kullanılabilir, ancak Bluetooth cihazlarıyla daha sonraki temaslar için de gereklidir.</p>
-<p style="border: none; padding: 0in"><i><b>Unut</b></i><i>:</i>
-Juggluco'nun cihaz adresini unutmasına ve cihaz adresini taramasına izin verin. Bazı sensörler için bu, bir bağlantı elde etmek için gereklidir ve daha sonra Juggluco tarafından otomatik olarak yapılır. Bu düğmeyle Juggluco'nun bunu yapması gerektiğini manuel olarak söyleyebilirsiniz, çünkü belki de başka durumlarda da buna ihtiyaç duyulabilir.</p>
-<p style="border: none; padding: 0in"><i><b>Sonlandır</b></i>:
-Bu sensöre Bluetooth üzerinden bağlanmayı durdurun. Daha sonra bu sensörden tekrar akış glikoz değerleri almak isterseniz, tek yapmanız gereken
-tekrar taramaktır. Sensör doğrudan saate bağlıysa,
-önce bunu kapatmanız ve ardından telefonda <i>Sonlandır</i>'a ve ardından saatte <i>Senkronize Et</i>'e basmanız gerekir.</p>
-<p style="border: none; padding: 0in"><i><b>Turbo</b></i>:
-Daha az bağlantı hatası umuduyla sensörle temas çabasını artırır, ancak daha fazla pil gücü kullanabilir. Freestyle Libre 2 sensörlü Watch4'te gerekli gibi görünüyor, ancak Freestyle Libre 3 sensörlü ve denediğim akıllı telefonların hiçbirinde gerekli değil.</p>
-<p style="border: none; padding: 0in"><b>Android</b>:
-Juggluco yerine Android'in sensörle bağlantı kurmasına izin verin.
-Kullanmayın! Çoğu durumda bir bağlantı kurulması daha uzun sürecektir. Bu seçenek, daha sonra onarılan bozuk bir Android 13 sürümü nedeniyle tanıtıldı. Bunu yalnızca bu sensör ekranında son zamanlar görüntülenmediğinde açmalısınız.
-Bu, hiçbir bağlantı hatası veya sensör hatasının gösterilmediği, ancak değerlerin de alınmadığı ve Bluetooth'u kapatıp açarak tekrar çalıştırabileceğiniz anlamına gelir. Avrupa Libre
-2 sensörünü aynı anda aynı telefonda iki uygulamayla bağlamaya çalıştığınızda (bu ancak o zaman mümkündür), siz de bu duruma girebilirsiniz.</p>
-<p style="border: none; padding: 0in"><i><b>Bilgi</b></i>:
-Sensörün başlangıç-bitiş zamanlarını ve son tarama-akış zamanlarını verir.</p>
-<p style="border: none; padding: 0in">Freestyle Libre 2 sensörüne Düşük Enerjili Bluetooth üzerinden bağlanmak için, Bluetooth açık olmalıdır. Sensör bu uygulama tarafından başarıyla taranmadan önce hiçbir şey olmayacaktır. Sensör, akıllı telefonlardaki FreeStyle okuyucusuna veya diğer uygulamalara bağlanmamalıdır. Abbotts Librelink uygulamasının alarmları kapatılmalı veya uygulama durdurulmalıdır. Bazı Librelink uygulamaları, alarmlar kapalıyken sensörle temas ediyor gibi görünüyor ve bağlantı sorunlarına neden olabilir, bu nedenle emin olmak için '<i>zorla
-durdur</i>' seçeneğini kullanın. Sensörü Freestyle Okuyucusu ile başlattıysanız ve kapatamıyorsanız, okuyucuyu bir <a href="https://www.offgridweb.com/preparation/faraday-bags-testing-commercial-and-diy-wireless-signal-blockers/amp"><u>Faraday
+<body lang="tr-TR" link="#000080" vlink="#800000" dir="ltr"><h1 class="western">Sensör</h1>
+<p style="border: none; padding: 0cm">Seçici sensörün adını
+gösterir. Juggluco aynı anda birden fazla sensör kullanıyorsa,
+bilgisi gösterilecek sensörü seçebilirsiniz.</p>
+<p style="border: none; padding: 0cm"><a href="https://www.juggluco.nl/Jugglucohelp/tr/battery.html"><i><b>Uyku
+Modu</b></i></a> Juggluco'nun çalışmasını engelleyebilecek pil
+optimizasyonlarının nasıl devre dışı bırakılacağına dair
+bilgilerin bulunduğu bir ekrana yönlendirir.</p>
+<p style="border: none; padding: 0cm"><i><b>Bluetooth Geçmişi</b></i>:
+Libre 2'de, 15'er dakikalık aralıklarla geçmişe ait değerlerdir.
+Daha önce yalnızca tarayarak alınıyordu. Bu seçeneği
+açtığınızda, Geçmiş değerleri de Bluetooth aracılığıyla
+alır. Ancak diğer şeyler farklı şekilde çalışacaktır.
+Libreview'e akış değerlerinin ortalamaları yerine geçmiş
+değerler gönderilecektir. Dezavantajı ise daha yavaş olmasıdır.
+Bu, WearOS saatlerinde bir sorun olabilir. Bu seçeneğin Libre 3 ve
+US Libre 2 sensörleri üzerinde hiçbir etkisi yoktur; geçmiş
+değerlerini her zaman Bluetooth aracılığıyla alırlar.</p>
+<p>⏰: Juggluco'nun Dexcom G7 ve ONE+ sensörlerine bağlanmanın
+doğru zamanlamasını sağlamak için bir çalar saat işlevi
+kullanmasına izin verin. Bu olmadan, cihaz kullanılmayıp derin
+uykudayken bazen sensöre yeniden bağlanmak için uyanmaz ve hemen
+bir glikoz değeri almaz. WearOS saatimde bu sorun gecenin bir
+yarısı, muhtemelen çok az hareket ettiğim için oldu.
+Sonrasındaki yavaş uyanma nedeniyle bunu saatte ve telefonda
+görmedim, yalnızca günlük dosyalarında gördüm. Telefonumun bu
+ayara ihtiyacı yok ve bu işlev açıldığında daha kötü
+performans gösteriyor gibi görünüyor.</p>
+<p style="border: none; padding: 0cm"><i><b>İzin</b></i>:
+Juggluco'nun önceki sürümleri, sensörün cihaz adresini bulmak
+için konum izni gerektiriyordu. Bu, kullandığım sensörler için
+artık gerekli değil. Belki de hala bunun gerekli olduğu sensörler
+vardır, bu durumda bunu açabilirsiniz. İlk temastan sonra Juggluco
+cihaz adresini kaydeder ve konum iznine gerek kalmaz. Sensör
+tanımlayıcısından sonra cihaz adresi biliniyorsa görüntülenir.
+Kırmızı, ABD benzeri bir sensör anlamına gelir. Android 12'de
+yeni bir <i>Yakındaki </i><i>C</i><i>ihazlar</i> izni vardır ve bu,
+bir Bluetooth cihaz adresini aramak için konum izni yerine
+kullanılabilir ancak Bluetooth cihazlarıyla daha sonraki temaslar
+için de gereklidir.</p>
+<p style="border: none; padding: 0cm"><i><b>Unut</b></i><i>:</i>
+Juggluco'nun cihaz adresini unutmasına ve cihaz adresini taramasını
+sağlar. Bazı sensörlerde bağlantı elde etmek için gereklidir ve
+daha sonra Juggluco tarafından otomatik olarak yapılır. Bu
+düğmeyle Juggluco'nun bunu yapması gerektiğini manuel olarak
+hatırlatırsınız belki başka durumlarda da buna ihtiyaç
+duyulabilir.</p>
+<p style="border: none; padding: 0cm"><i><b>Sonlandır</b></i>:
+Sensöre Bluetooth üzerinden bağlanmayı durdurur. Daha sonra
+sensörden tekrar akış değerleri almak isterseniz, tek yapmanız
+gereken tekrar taramaktır. Sensör doğrudan saate bağlıysa, önce
+bunu kapatmanız ve ardından telefonda <i>Sonlandır</i>'a ve
+ardından saatte <i>Senkronize Et</i>'e basmanız gerekir.</p>
+<p style="border: none; padding: 0cm"><i><b>Turbo</b></i>: Daha az
+bağlantı hatası umuduyla sensörle temas çabasını artırır,
+ancak daha fazla pil gücü kullanabilir. Freestyle Libre 2 sensörlü
+Watch4'te gerekli gibi görünüyor, ancak Freestyle Libre 3 sensörlü
+ve denediğim akıllı telefonların hiçbirinde gerekli değildi.</p>
+<p style="border: none; padding: 0cm"><b>Android</b>: Juggluco yerine
+Android'in sensörle bağlantı kurmasına izin verir. Kullanmayın!
+Çoğu durumda bir bağlantı kurulması daha uzun sürecektir. Bu
+seçenek, daha sonra onarılan bozuk bir Android 13 sürümü
+nedeniyle tanıtıldı. Bunu yalnızca sensör ekranında son
+zamanlar görüntülenmediğinde açmalısınız. Bu, hiçbir hatanın
+gösterilmediği, ancak değerlerin de alınmadığı ve Bluetooth'u
+kapatıp açarak tekrar çalıştırabileceğiniz anlamına gelir.
+Avrupa Libre 2 sensörünü aynı anda aynı telefonda iki
+uygulamayla bağlamaya çalıştığınızda (bu ancak o zaman
+mümkündür) siz de bu çözüme ihtiyaç duyabilirsiniz.</p>
+<p style="border: none; padding: 0cm"><i><b>Bilgi</b></i>: Sensörün
+başlangıç-bitiş zamanlarını ve son tarama-akış zamanlarını
+verir.</p>
+<p style="border: none; padding: 0cm">Freestyle Libre 2 sensörüne
+Düşük Enerjili Bluetooth üzerinden bağlanmak için, Bluetooth
+açık olmalıdır. Sensör bu uygulama tarafından başarıyla
+taranmadan önce hiçbir şey olmayacaktır. Sensör, akıllı
+telefonlardaki FreeStyle okuyucusuna veya diğer uygulamalara
+bağlanmamalıdır. Abbotts Librelink uygulamasının alarmları
+kapatılmalı veya uygulama durdurulmalıdır. Bazı Librelink
+uygulamaları, alarmlar kapalıyken sensörle temas ediyor gibi
+görünüyor ve bağlantı sorunlarına neden olabiliyor, bu nedenle
+emin olmak için '<i>zorla durdur</i>' seçeneğini kullanın.
+Sensörü Freestyle Okuyucusu ile başlattıysanız ve
+kapatamıyorsanız, okuyucuyu bir <a href="https://www.offgridweb.com/preparation/faraday-bags-testing-commercial-and-diy-wireless-signal-blockers/amp"><u>Faraday
 kafesine</u></a> koyarak sensörle temas etmesini önleyebilirsiniz.</p>
-<p style="border: none; padding: 0in"><b>Sensör
-Bluetooth üzerinden/Bluetooth Kullan</b>
-açık olmalıdır.</p>
-<p style="border: none; padding: 0in">Yukarıdaki koşullar karşılansa bile uygulamanın sensörden glikoz değerlerini alması uzun zaman alabilir. Genellikle bir dakika sürer, ancak diğer durumlarda çok daha uzun sürer. <i>Bağlantı aşaması</i> en fazla zorluğa neden olur. En sık karşılaşılanlar, status=133 ve status argümanı olan başarısızlıklardır. <a href="https://developer.android.com/reference/android/bluetooth/BluetoothGattCallback#onConnectionStateChange(android.bluetooth.BluetoothGatt,%20int,%20int)"><u>onConnectionStateChange(BluetoothGatt
-bluetoothGatt, int status, int newState)</u></a>.
-<i>Bluetooth cihazı bulunamadı</i> anlamına gelir.
-Çoğu zaman cihazın bulunması biraz zaman alır. Sensörün başka bir cihaza bağlı olması, geçici olarak iyi çalışmaması, diğer cihazların karışması veya Android'in Bluetooth'unun çalışmaması da mümkündür. Bazen Bluetooth'u kapatıp açmak veya telefonu yeniden başlatmak veya diğer cihazların Bluetooth bağlantısını kapatmak işe yarıyor gibi görünüyor. Diğer sorunlar bazen sensörü tarayarak çözülür. Araya giren su (vücut suyu dahil) bir sorun olabilir, bu nedenle WearOS saatini sensörden farklı bir kolda takmak, kollar vücudun saat ve sensör arasında konumlandırıldığı şekilde tutulduğunda bağlantı sorunlarına yol açabilir.</p>
-<p style="border: none; padding: 0in">Sensörün başka bir telefonda Juggluco ile taranması (Bluetooth üzerinden Sensör etkinleştirilmiş haldeyken) bağlantıyı bu telefondan çalacaktır ve
-arada tarama yaparak tekrar geri almak biraz zaman alabilir.</p>
+<p style="border: none; padding: 0cm"><b>Sensör Bluetooth
+üzerinden/Bluetooth Kullan</b> seçeneği açık olmalıdır.</p>
+<p style="border: none; padding: 0cm">Yukarıdaki koşullar
+karşılansa bile uygulamanın sensörden glikoz değerlerini alması
+uzun zaman alabilir. Genellikle bir dakika sürer, bazı durumlarda
+çok daha uzun sürebilir. <i>Bağlantı aşaması</i> en fazla
+zorluğa neden olan aşamadır. En sık karşılaşılan hatalar:
+<a href="https://developer.android.com/reference/android/bluetooth/BluetoothGattCallback#onConnectionStateChange(android.bluetooth.BluetoothGatt,%20int,%20int)"><u>onConnectionStateChange(BluetoothGatt
+bluetoothGatt, int status, int newState)</u></a> fonksiyonunun durum
+argümanı olan status=133 ile oluşan hatalardır. <i>Bluetooth
+cihazı bulunamadı</i> anlamına gelir. Çoğu zaman cihazın
+bulunması biraz zaman alır. Sensörün başka bir cihaza bağlı
+olması, geçici olarak iyi çalışmaması, diğer cihazların
+karışması veya Android'in Bluetooth'unun çalışmaması da olası
+nedenlerdir. Bazen Bluetooth'u kapatıp açmak, telefonu yeniden
+başlatmak veya diğer cihazların Bluetooth bağlantısını
+kapatmak işe yarayabilir. Diğer sorunlar bazen sensörü tarayarak
+çözülür. Araya giren su (vücut suyu dahil) bir sorun olabilir.
+WearOS saatini sensörden farklı bir kolda takmak, saat ve sensör
+arasında vücudun konumu nedeniyle bağlantı sorunlarına yol
+açabilir.</p>
+<p style="border: none; padding: 0cm">Sensörün başka bir telefonda
+Juggluco ile taranması (Bluetooth üzerinden Sensör
+etkinleştirilmiş haldeyken) bağlantıyı bu telefondan çalacaktır
+ve arada tarama yaparak tekrar geri almak biraz zaman alabilir.</p>
 </body>
 </html>

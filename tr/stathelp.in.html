@@ -1,51 +1,94 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-<title>Statistics</title>
-<meta name="generator" content="LibreOffice 7.5.8.2 (Linux)"/>
-<meta name="created" content="00:00:00"/>
-<meta name="changed" content="2023-12-25T10:32:53.684602023"/>
-<style type="text/css">
-@page { size: 8.27in 11.69in; margin-left: 0.79in; margin-right: 0.39in; margin-top: 0.39in; margin-bottom: 0.39in }
-h1 { margin-bottom: 0.08in; background: transparent }
-h1.western { font-family: "Liberation Serif", serif }
-h1.cjk { font-family: "Noto Serif CJK SC"; font-size: 24pt }
-h1.ctl { font-family: "Mangal"; font-size: 24pt }
-p { line-height: 115%; margin-bottom: 0.1in; background: transparent }
-h3 { margin-top: 0.1in; margin-bottom: 0.08in; background: transparent }
-h3.western { font-family: "Liberation Serif", serif }
-h3.cjk { font-family: "Noto Serif CJK SC" }
-h3.ctl { font-family: "Mangal" }
-</style>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title>Statistics</title>
+	<meta name="generator" content="LibreOffice 7.4.7.2 (Linux)"/>
+	<meta name="created" content="00:00:00"/>
+	<meta name="changed" content="2025-04-22T23:01:16.735137017"/>
+	<meta name="created" content="00:00:00">
+	<style type="text/css">
+		@page { size: 21.01cm 29.69cm; margin-left: 2.01cm; margin-right: 0.99cm; margin-top: 0.99cm; margin-bottom: 0.99cm }
+		p { line-height: 115%; margin-bottom: 0.25cm; background: transparent; background: transparent }
+		h1 { margin-bottom: 0.2cm; background: transparent; background: transparent; page-break-after: avoid }
+		h1.western { font-family: "Liberation Serif", serif; font-size: 24pt; font-weight: bold }
+		h1.cjk { font-family: "Noto Serif CJK SC"; font-size: 24pt; font-weight: bold }
+		h1.ctl { font-family: "Mangal"; font-size: 24pt; font-weight: bold }
+		h3 { margin-top: 0.25cm; margin-bottom: 0.2cm; background: transparent; background: transparent; page-break-after: avoid }
+		h3.western { font-family: "Liberation Serif", serif; font-size: 14pt; font-weight: bold }
+		h3.cjk { font-family: "Noto Serif CJK SC"; font-size: 14pt; font-weight: bold }
+		h3.ctl { font-family: "Mangal"; font-size: 14pt; font-weight: bold }
+		a:link { color: #000080; text-decoration: underline }
+	</style>
 </head>
-
 <img src="stats.png" style="object-fit:contain; width:15cm; height:auto;">
 <img src="summarygraph.png" style="object-fit:contain; width:15cm; height:auto;">
-<body lang="tr-TR" dir="ltr"><h1 class="western">İstatistikler</h1>
-<p>Bazı istatistikler küçük değişikliklerle <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8991298">AGP</a>'den alınmıştır.</p>
-<p>Analiz edilen gün sayısı <b>Günler</b> düğmesine basılarak değiştirilebilir. Süre, ekran konumunun bittiği noktada sona erer ve belirtilen gün sayısını geriye doğru kapsar. Tüm veriler yalnızca sensörden (Juggluco'da <i>akış</i> olarak adlandırılır) Bluetooth aracılığıyla her dakika alınan glikoz değerlerine dayanmaktadır.</p>
-<p>Ekranın solunda, belirli glikoz aralıklarına düşen ölçümlerin yüzdesi bulunur. Standart aralıklar her zaman gösterilir. <a href="https://www.juggluco.nl/Jugglucohelp/tr/displayhelp.html">sol
-menü-&gt;Ayarlar-&gt;Görüntü</a>'de standart olmayan bir hedef aralığı belirlenirse hedefte geçen süre, standart aralıkların altında gösterilir.</p>
-<h3 class="western">% aktif zaman</h3>
-<p>Juggluco'nun sensörden glikoz değerlerini aldığı zaman yüzdesi.</p>
+<body lang="tr-TR" link="#000080" vlink="#800000" dir="ltr"><h1 class="western">İstatistikler</h1>
+<p>Bazı istatistikler küçük değişikliklerle <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8991298">AGP</a>'den
+alınmıştır.</p>
+<p>Analiz edilen gün sayısı <b>Günler</b> düğmesine basılarak
+değiştirilebilir. Süre, ekran konumunun bittiği noktada sona erer
+ve belirtilen gün sayısını geriye doğru kapsar. Tüm veriler
+yalnızca sensörden (Juggluco'da <i>akış</i> olarak adlandırılır)
+Bluetooth aracılığıyla her dakika alınan glikoz değerlerine
+dayanmaktadır.</p>
+<p>Ekranın solunda, belirli glikoz aralıklarına düşen ölçümlerin
+yüzdesi bulunur. Standart aralıklar her zaman gösterilir. <a href="https://www.juggluco.nl/Jugglucohelp/tr/displayhelp.html">Sol
+Menü &gt; Ayarlar &gt; Görüntü</a> 'de standart olmayan bir hedef
+aralığı belirlenirse belirlenen hedefte geçen süre, standart
+aralıkların altında gösterilir.</p>
+<h3 class="western">% Etkin Zaman</h3>
+<p>Juggluco'nun sensörden glikoz değerlerini aldığı zaman
+yüzdesidir.</p>
 <h3 class="western">Tahmini A1C</h3>
-<p>Tahminler H<span lang="tr-TR">Ortalama glikozdan eski bir formülle A1c (Nathan</span> <span lang="tr-TR">et al (2008)). Bakınız
-<a href="https://professional.diabetes.org/diapro/glucose_calc">https://professional.diabetes.org/diapro/glucose_calc</a></span>
-<span lang="tr-TR">hesaplamak için.</span></p>
-<p><span lang="tr-TR">Burada gösterilmektedir</span> <span lang="tr-TR">insanlar Abbott's Libre'de gösterilen değeri arıyor</span> <span lang="tr-TR">2 uygulaması. GMI bu göstergenin 2018'deki bir yedeğidir.</span>
-</p>
-<h3 class="western">Glucose Management Indicator (GMI)</h3>
-<p><span lang="tr-TR">Genel olarak kullanılan belirli bir formülle ortalama glikozdan hesaplanır (bakınız <a href="https://www.jaeb.org/gmi/">https://www.jaeb.org/gmi/</a>).
-HbA1c'nin (ayrıca A1c olarak da bilinir) yüzde ve mmol/mol olarak verilen deneysel olarak belirlenmiş bir tahminidir.</span> <span lang="tr-TR">Benim için kişisel olarak Tahmini A1C, GMI'dan daha iyi bir tahmin edicidir, ancak Abbott'un Libre 3 uygulamasında kullanılır.</span></p>
+<p>Tahminler o<span lang="tr-TR">rtalama glikozdan eski bir formülle
+</span><span lang="tr-TR">yapılır,</span><span lang="tr-TR"> </span><span lang="tr-TR">H</span><span lang="tr-TR">A1c
+(Nathan</span> <span lang="tr-TR">et al (2008)). </span><span lang="tr-TR">Hesaplama
+için b</span><span lang="tr-TR">akınız:
+<a href="https://professional.diabetes.org/diapro/glucose_calc">https://professional.diabetes.org/diapro/glucose_calc</a></span></p>
+<p>Abbott'un Libre 2 uygulamasında gösterilen değeri arayanlar
+için burada gösterilmektedir. GMI, bu göstergenin 2018'deki yerine
+geçmiştir.</p>
+<h3 class="western">Glikoz Yönetim Göstergesi (GMI)</h3>
+<p><span lang="tr-TR">Genel olarak kullanılan belirli bir formülle
+ortalama glikozdan hesaplan</span><span lang="tr-TR">an göstergedir</span><span lang="tr-TR">.
+</span><span lang="tr-TR">B</span><span lang="tr-TR">akınız:
+<a href="https://www.jaeb.org/gmi/">https://www.jaeb.org/gmi/</a>)</span></p>
+<p><span lang="tr-TR">HA1c'nin (ayrıca A1c olarak da bilinir) yüzde
+ve mmol/mol olarak verilen deneysel olarak belirlenmiş bir
+tahminidir.</span> <span lang="tr-TR">Benim için Tahmini A1C,
+GMI'dan daha iyi bir tahmin edicidir, ancak Abbott'un Libre 3
+uygulamasında </span><span lang="tr-TR">GMI </span><span lang="tr-TR">kullanılır.</span></p>
 <h3 class="western">Glikoz Değişkenliği:</h3>
-<p>Varyasyon katsayısı, %CV=(SD/ortalama)*100%, glikoz değişkenliğinin bir ölçüsü. Daha yüksek bir varyasyon katsayısı, glikoz değerlerinin ortalamadan daha uzak olduğu anlamına gelir.</p>
-<h3 class="western">Özet grafik</h3>
-<p>(Yalnızca en az 9 günlük akış glikoz değeri mevcut olduğunda kullanılır).</p>
-<p>Bu dönemdeki tüm akış glikoz değerleri, günün her dakikası için glikoz değerlerinin nasıl dağıldığını gösteren bir bileşik grafik çizmek için alınır. Siyah veya beyaz medyan çizgisi, günün her dakikasında glikoz değerlerinin %50'sinin altında bulunduğu glikoz değerini gösterir. En açık mavi, tüm değerlerin bulunduğu alandır. Biraz daha koyu mavi, değerlerin %90'ının bulunduğu medyanın etrafındaki alandır. En koyu mavi, değerlerin %50'sinin medyanının etrafındaki alandır. Alanların sınırlarını çizgiler olarak görüyorsanız, aşağıdaki gibi de tasvir edebilirsiniz: En düşük çizginin altında değerlerin %0'ı, ikinci en düşük çizginin altında (en açık mavi ile orta koyu mavi arasında) değerlerin %5'i, üçüncü çizginin altında (en koyu mavi ile orta koyu mavi arasında) değerlerin %25'i, siyah çizginin altında değerlerin %50'si. Bunu %75, %95 ve %100 takip eder.
+<p>Varyasyon katsayısı, %CV=(SD/ortalama)*100%, glikoz
+değişkenliğinin bir ölçüsü. Daha yüksek bir varyasyon
+katsayısı, glikoz değerlerinin ortalamadan daha uzak olduğu
+anlamına gelir.</p>
+<h3 class="western">Özet Grafiği</h3>
+<p>(Yalnızca en az 9 günlük akış değeri mevcut olduğunda
+kullanılır).</p>
+<p>Bu dönemdeki tüm akış değerleri, günün her dakikası için
+glikoz değerlerinin nasıl dağıldığını gösteren bir bileşik
+grafik çizmek için alınır. Siyah veya beyaz medyan çizgisi,
+günün her dakikasında glikoz değerlerinin %50'sinin altında
+bulunduğu glikoz değerini gösterir. En açık mavi, tüm
+değerlerin bulunduğu alandır. Biraz daha koyu mavi, değerlerin
+%90'ının bulunduğu medyanın etrafındaki alandır. En koyu mavi,
+değerlerin %50'sinin medyanının etrafındaki alandır. Alanların
+sınırlarını çizgiler olarak görüyorsanız, aşağıdaki gibi
+de tasvir edebilirsiniz: En düşük çizginin altında değerlerin
+%0'ı, ikinci en düşük çizginin altında (en açık mavi ile orta
+koyu mavi arasında) değerlerin %5'i, üçüncü çizginin altında
+(en koyu mavi ile orta koyu mavi arasında) değerlerin %25'i, siyah
+çizginin altında değerlerin %50'si. Bunu %75, %95 ve %100 takip
+eder. 
 </p>
 <p>Estetik sebeplerden dolayı eğri binom filtresiyle yumuşatılır.</p>
-<p>Özet grafiğini kapatmak için ekrana dokunun, ancak
-sol veya sağ sınıra dokunulduğunda grafik gün içinde geriye veya ileriye doğru hareket eder. Eğri ayrıca kaydırılarak ileri geri hareket ettirilebilir. Zaman ölçeği iki parmağı birbirine doğru veya birbirinden uzağa hareket ettirerek değiştirilebilir.</p>
+<p>Özet grafiğini kapatmak için ekrana dokunun, ancak sol veya sağ
+sınıra dokunulduğunda grafik gün içinde geriye veya ileriye
+doğru hareket eder. Eğri kaydırılarak ileri geri hareket
+ettirilebilir. Zaman ölçeği iki parmağı birbirine doğru veya
+birbirinden uzağa (çimdik hareketi ile) hareket ettirerek
+değiştirilebilir.</p>
 </body>
 </html>

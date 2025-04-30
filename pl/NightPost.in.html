@@ -11,10 +11,26 @@
 <p>Wszystkie wartości strumienia są przesyłane na serwer Nightscout w momencie ich nadejścia. W przypadku korzystania z wielu sensor&oacute;w przesyłane są wszystkie wartości ze wszystkich sensor&oacute;w. Niekt&oacute;re aplikacje/tarcze/widgety zegark&oacute;w Garmin zakładają, że wartości są oddalone od siebie o 5 minut. Gdy otrzymają wartości glukozy w odstępie jednej minuty, pokażą tylko co piątą wartość z krzywej. Z tego powodu serwer sieciowy wbudowany w Juggluco oddziela wartości od siebie o 5 minut, z wyjątkiem sytuacji, gdy opcja &quot;interval=secs&quot; jest ustawiona na niższą wartość.</p>
 <p><b>URL</b>: adres URL powinien mieć postać https://nazwahosta:port, na przykład https://myname.herokuapp.com:6789</p>
 <p><b>Aktywny</b>: Włącz uploader</p>
-<p><b>test V3</b>: Pozw&oacute;l Juggluco na używanie api/v3 do przesyłania do Nightscout. Nie używaj tej opcji do przesyłania danych na serwer Nightscout, kt&oacute;ry wcześniej odbierał dane V1 i nie wysyłaj danych V1 na serwer Nightscout, kt&oacute;ry wcześniej odbierał dane V3. W miejscu api_secret należy podać <i>Access Token</i> &ndash; token dostępu &ndash; z uprawnieniami do przesyłania zabieg&oacute;w i wpis&oacute;w. Można go utworzyć w interfejsie internetowym Nightscout w sekcji &bdquo;Admin Tools&rdquo; &ndash; narzędzia administracyjne.</p>
+<p><b>test V3</b>: Pozw&oacute;l Juggluco na używanie api/v3 do przesyłania do Nightscout. Nie używaj tej opcji do przesyłania danych na serwer Nightscout, kt&oacute;ry wcześniej odbierał dane V1 i nie wysyłaj danych V1 na serwer Nightscout, kt&oacute;ry wcześniej odbierał dane V3. W miejscu api_secret należy podać <i>Access Token</i> &ndash; token dostępu &ndash; z uprawnieniami do przesyłania zabieg&oacute;w i wpis&oacute;w. Można go utworzyć w interfejsie internetowym Nightscout w sekcji &bdquo;Admin Tools&rdquo; &ndash; narzędzia administracyjne. (Nazywa się <i>&quot;test&quot;</i>, ponieważ nie istnieje żaden inny uploader V3. Normalnie używany jest V1).</p>
 <p><b>Wysyłaj wartości</b>: Wyślij r&oacute;wnież wartości jako zabiegi do Nightscout. Dotknięcie pola wyboru powoduje wyświetlenie okna dialogowego, w kt&oacute;rym dla każdej etykiety można określić jej znaczenie w Nightscout. Specyfikacje te są wsp&oacute;łdzielone z serwerem WWW w Juggluco (<a href="https://www.juggluco.nl/Jugglucohelp/pl/Nightscouthelp.html">Lewe menu→Ustawienia→Serwer WWW</a>). Opcję &quot;<i>Wysyłaj wartości</i>&rdquo; można zaznaczyć dopiero, gdy wszystkie etykiety zostaną określone. Jeśli p&oacute;źniej dodasz nową etykietę, musisz pamiętać, aby określić, co z nią zrobić. <span lang="pl-PL">Z powodu błędu w <a href="https://github.com/nightscout/cgm-remote-monitor">Nightscout</a>, dodawane wartości w starszych okresach lub usunięcia są wyświetlane dopiero po dodaniu element&oacute;w z nowym czasem. Oznacza to, że lepiej jest rzadziej wysyłać wiadomości do Nightscout. Teraz odbywa się to za każdym razem, gdy użytkownik wychodzi z Juggluco, wyłączając ekran lub przechodząc do innej aplikacji.</span></p>
 <p><b>Prześlij dane ponownie</b>: Prześlij wszystkie dane ponownie na serwer Nightscout</p>
 <p><b>Wyślij teraz</b>: Zwykle dane są wysyłane natychmiast po ich nadejściu z sensora lub połączenia w ramach klonowania. Naciśnij ten przycisk, jeśli z jakiegoś powodu poprzednia pr&oacute;ba nie powiodła się.</p>
 <p>Wersja Juggluco na WearOS 4.15.0 lub nowsza może r&oacute;wnież przesyłać wartości glukozy do Nightscout. W prawie wszystkich przypadkach można je lepiej wysyłać za pośrednictwem wersji Juggluco na telefonie lub tablecie lub za pośrednictwem serwera Juggluco na komputerze. Bardzo szybko rozładowuje ona baterię, zwłaszcza gdy nie jest w stanie skontaktować się z serwerem Nightscout, więc lepiej wyłączyć opcję <i>Aktywny</i>, gdy połączenie szwankuje.</p>
-</body>
+<h2 class="western">Błędy</h2>
+<p style="line-height: 100%; margin-bottom: 0in">Dwa komunikaty o błędach często powodują zamieszanie.</p>
+<p style="line-height: 100%; margin-bottom: 0in">Gdy komunikat o błędzie brzmi &quot;<b>upload failure:</b>&quot;, po kt&oacute;rym nic nie następuje, możliwe przyczyny to:</p>
+<ul>
+	<li><p style="line-height: 100%; margin-bottom: 0in">Połączenie sieciowe jest wyłączone;</p></li>
+	<li><p style="line-height: 100%; margin-bottom: 0in">Nazwa hosta jest błędnie wpisana.</p>
+	<p style="line-height: 100%; margin-bottom: 0in"></p></li>
+</ul>
+<p style="line-height: 100%; margin-bottom: 0in"><b>upload failure: java.io.FileNotFoundException</b>: NIGHTSCOUTURL/api/v1/entries</p>
+<p style="line-height: 100%; margin-bottom: 0in">Tutaj NIGHTSCOUTURL oznacza adres URL serwera wprowadzony po &quot;Nightscout URL&quot;.</p>
+<p style="line-height: 100%; margin-bottom: 0in">Jest to spowodowane jedną z poniższych przyczyn:</p>
+<ul>
+	<li><p style="line-height: 100%; margin-bottom: 0in">Adres URL wskazuje na niewłaściwą stronę. Na przykład brakuje portu po nazwie hosta i z tego powodu Juggluco łączy się z normalnym serwerem WWW;</p></li>
+	<li><p style="line-height: 100%; margin-bottom: 0in">Wartość api_secret jest nieprawidłowa;</p></li>
+	<li><p style="line-height: 100%; margin-bottom: 0in"><span lang="en-US">NIGHTSCOUTURL zawiera ścieżkę, kt&oacute;rej nie powinno tam być. Na przykład adres URL </span><span lang="en-US">Nightscout </span><span lang="en-US">to <a href="https://ahost.org:8887/">https://ahost.org:8887</a> , a </span><span lang="en-US">wpisano </span><span lang="en-US"><a href="https://ahost.org:8887/extra">https://ahost.org:8887/extra</a>.</span>.</p></li>
+</ul>
+<p style="line-height: 100%; margin-bottom: 0in"><br/></body>
 </html>

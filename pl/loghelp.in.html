@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title>Log</title>
+	<meta name="generator" content="LibreOffice 24.2.7.2 (Linux)"/>
+	<meta name="created" content="2025-01-25T11:29:43.685909734"/>
+	<meta name="changed" content="2025-01-26T21:07:11.710308617"/>
+	<style type="text/css">
+		@page { size: 8.27in 11.69in; margin: 0.79in }
+		p { line-height: 115%; margin-bottom: 0.1in; background: transparent }
+	</style> <base href="https://www.juggluco.nl/Jugglucohelp/mgdL/" id="baseurl"
+      target="_blank">
+    <script type="text/javascript"> 
+var unitstr='mg/dL';
+function getunitarg(){ 
+	const params = new URLSearchParams(document.location.search);
+	const unit = params.get("unit");
+	if(unit===null)	 {
+		return 0;
+		}
+	if(unit == "mg/dL") { 
+		return 2;
+		} 
+	else { 
+		if(unit=="mmol/L") {
+		   return 1;
+		   }
+	 	}
+
+	return 0;
+    } 
+let mmol=[
+"AM",
+"AU",
+"BA",
+"BG",
+"BW",
+"BY",
+"CA",
+"CH",
+"CN",
+"CZ",
+"DK",
+"EE",
+"FI",
+"GB",
+"HK",
+"HR",
+"HU",
+"IE",
+"IS",
+"KW",
+"KZ",
+"LT",
+"LV",
+"MT",
+"MY",
+"NA",
+"NL",
+"NO",
+"NZ",
+"RS",
+"RU",
+"SE",
+"SI",
+"SK",
+"UA",
+"ZA"];
+
+
+
+
+
+
+function getunit() {
+	var unit=getunitarg();
+	if(unit!=0) {
+		return unit;
+		}
+
+	var userLang = navigator.language || navigator.userLanguage;
+	var  co=userLang.toUpperCase();
+
+	for(const element of mmol) {
+	  if(co.includes(element)) {
+		return 1;
+		}
+	   }
+
+	return 2;
+	 }
+
+
+
+function setbaseurl(){ 
+	if(getunit()!=1) {
+		document.getElementById("baseurl").href = "https://www.juggluco.nl/Jugglucohelp/mgdL/"; 
+		unitstr='mg/dL';
+		} 
+	else { 
+	       document.getElementById("baseurl").href = "https://www.juggluco.nl/Jugglucohelp/";  
+		unitstr='mmol/L';
+		}
+   	} 
+   setbaseurl();
+   </script>
+  </head><img src="loghelp.png"  style="object-fit:contain; width:15cm;                   height:auto;"><body lang="pl-PL" dir="ltr"><p><a href="https://www.juggluco.nl/Jugglucohelp/de/loghelp.html">de</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/nl/loghelp.html">nl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/tr/loghelp.html">tr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/loghelp.html?lang=en">en</a>&emsp;&emsp;</p><h1>Log - dziennik błęd&oacute;w</h1>
+<p style="line-height: 100%; margin-bottom: 0in">Jest to wersja Juggluco do logowania. Pliki log&oacute;w mogą być tworzone w /data/data/tk.glucodata/files/logs.</p>
+<p style="line-height: 100%; margin-bottom: 0in">Plik trace.log zawiera komunikaty dziennika tworzone przez Juggluco. logcat.txt zawiera komunikaty dziennika tworzone przez system Android w odniesieniu do Juggluco. Można je usuwać i zapisywać osobno.</p>
+<p style="line-height: 100%; margin-bottom: 0in">W przypadku wystąpienia problem&oacute;w można wysłać pliki trace.log i logcat.txt na adres <a href="mailto:jaapkorthalsaltes@gmail.com?subject=Log%20files">jaapkorthalsaltes@gmail.com</a> wraz z opisem problem&oacute;w, kt&oacute;re wystąpiły w okresie, w kt&oacute;rym te pliki log zostały utworzone.</p>
+<p style="line-height: 100%; margin-bottom: 0in"><b>Rozmiar pliku</b>: rozmiar pliku log.</p>
+<p style="line-height: 100%; margin-bottom: 0in"><b>Rejestrowanie log&oacute;w</b>: Włącz rejestrowanie w trace.log lub logcat</p>
+<p style="line-height: 100%; margin-bottom: 0in"><b>Usuń</b>: usunięcie pliku log.</p>
+<p style="line-height: 100%; margin-bottom: 0in"><b>Zapisz</b>: zapisuje plik log w miejscu widocznym dla innych aplikacji.</p>
+<p style="line-height: 100%; margin-bottom: 0in"><b>Zamknij</b>: zamknięcie tego widoku</p>
+<p style="line-height: 100%; margin-bottom: 0in"><br/></p>
+<p style="line-height: 100%; margin-bottom: 0in"><br/></p>
+<p style="line-height: 100%; margin-bottom: 0in"><br/></p>
+<p style="line-height: 100%; margin-bottom: 0in"><br/></p>
+<p style="line-height: 100%; margin-bottom: 0in"><br/></p>
+</body>
+</html>

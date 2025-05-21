@@ -12,22 +12,6 @@
   </head><img src="settings.png" alt="Ustawienia" style="object-fit:contain; width:15cm;                   height:auto;"><body lang="pl-PL" dir="ltr"><h1 class="western">Ustawienia</h1>
 <h2 class="western">Jednostka</h2>
 <p style="margin-bottom: 0in">Wybierz, czy wartości glukozy mają być podawane w mmol/L czy dm/dL.</p>
-<h2 class="western">Zakres wykresu: wartość najniższa-najwyższa.</h2>
-<p style="margin-bottom: 0in">Podaj wartość najniższą i najwyższą, tak aby d&oacute;ł ekranu odpowiadał najniższej, a g&oacute;ra najwyższej wartości. Wartości te są wykorzystywane tylko wtedy, gdy wszystkie wartości glukozy wyświetlane na ekranie mieszczą się w tych granicach. W przeciwnym razie granice są poszerzane, aby wszystkie wartości były widoczne. W przypadku ustawienia 54 mg/dl (3 mmol/L) i 162 mg/dl (9 mmol/L), a wszystkie wartości na widocznym ekranie mieszczą się w przedziale od 90 mg/dl (5 mmol/L) do 108 mg/dl (6 mmol/L), na wykresie pojawia się oś glukozy od 54 do 162.</p>
-<p style="margin-bottom: 0in">Jeśli włączona jest opcja <b>Skalowanie ręczne Osi stęż. glukozy</b>, można zmieniać: przesunięcie palcem po g&oacute;rnej części ekranu powoduje przesunięcie g&oacute;rnej połowy wykresu w g&oacute;rę i w d&oacute;ł; przesunięcie po dolnej części ekranu powoduje przesunięcie dolnej połowy wykresu w g&oacute;rę i w d&oacute;ł.</p>
-<h2 class="western">Zakres docelowy: wartość najniższa&ndash; najwyższa.</h2>
-<p style="margin-bottom: 0in">Wyższa strona ekranu ma inny kolor, dzięki czemu łatwiej dostrzec wysokie wartości. Podobnie jest w przypadku niskich wartości. Czerwona linia wskazuje na ekranie granicę zbyt niskich wartości.</p>
-<h2 class="western">Liczby osi glukozy po LEWEJ</h2>
-<p>Umieść liczby poziomu stęż. glukozy na wykresie po lewej stronie ekranu. Przydatne, jeśli chcesz umieścić aktualną glukozę na środku ekranu, na przykład w Wear OS.</p>
-<h2 class="western">Pr&oacute;g</h2>
-<p>Zastosowanie progu do trendu zmian wartości glukozy. Strzałka trendu zmian będzie inna niż pozioma, tylko wtedy gdy trend zmian odbiegnie od 0 o określoną wartość. Można użyć dowolnych wartości od 0 do 0,8. Pr&oacute;g jest używany, aby zapobiec nadawaniu zbyt dużego znaczenia małym bezwzględnym wartościom trendu zmian. Jest bardzo możliwe, że trend zmian pokazuje powoli rosnącą wartość glukozy, ale w rzeczywistości wartość ta spada. Pr&oacute;g używany jest do wskazywania ostrożniejszego obrazu sytuacji.</p>
-<h2 class="western">Przewidywanie (Dexcom)</h2>
-<p style="margin-bottom: 0in; background: transparent">Sensory Dexcom wysyłają wraz z każdą wartością rzeczywistą r&oacute;wnież wartość przewidywaną. Szukałem tego w Google, ale nie mogłem znaleźć żadnego odniesienia do tej funkcji. Znalazłem tylko, że Dexcom obsługuje alarm, kt&oacute;ry przewiduje niskie wartości z wyprzedzeniem do 20 minut, patrz <a href="https://www.dexcom.com/g7/how-it-works#alerts">https://www.dexcom.com/g7/how-it-works#alerts</a>.</p>
-<p style="margin-bottom: 0in; background: transparent">Kiedy umieściłem te wartości 20 minut w przyszłości, nie pasowały one zbyt dobrze. Znacznie lepiej wyglądały, gdy umieszczałem ich 10 minut w przyszłości.</p>
-<p style="margin-bottom: 0in; background: transparent">Po włączeniu tej opcji te przewidywane wartości są wyświetlane w taki sam spos&oacute;b, w jaki wyświetlane są wartości historii sensor&oacute;w Libre w Juggluco. Można je r&oacute;wnież wyłączyć, odznaczając opcję Prawe środkowe menu→Historia. W Juggluco nie są one używane do alarm&oacute;w, można je po prostu wyświetlić, aby ocenić, jak dobrze przewidują.</p>
-<h2 class="western">Odwr&oacute;ć ekran</h2>
-<p style="margin-bottom: 0in">Odwr&oacute;ć widok na ekranie spodem do g&oacute;ry. Jest ona domyślnie włączona, ponieważ w przeciwnym razie zdarzało mi się nieraz przypadkowo dotknąć OK podczas skanowania sensora.</p>
-<p style="margin-bottom: 0in">Niekt&oacute;rzy proszą o tryb pionowy, ale wyłączyłem go, bo jest zupełnie nieodpowiedni do wyświetlania wykresu stężenia glukozy.</p>
 <h2 class="western">Dźwięk NFC</h2>
 <p>Podczas skanowania opr&oacute;cz wibracji wydawany jest r&oacute;wnież dźwięk.</p>
 <h2 class="western">Skanowanie uruchamia aplikację</h2>
@@ -44,27 +28,23 @@
 <p>pm disable-user --user 0 com.freestylelibre.app.nl</p>
 <p>Zanim zadzwonisz do obsługi klienta Abbott, możesz ponownie włączyć ją za pomocą polecenia:</p>
 <p>pm enable com.freestylelibre.app.nl</p>
-<h2 class="western">IOB &ndash; Insulin on Board &ndash; Wartość aktywnej insuliny</h2>
-<p>IOB jest miarą ilości insuliny pozostałej z poprzednich dawek insuliny. W tym celu należy wprowadzić dawki insuliny pod etykietą w kategorii &quot;<i>Insulina szybkodziałająca</i>&quot;. Kt&oacute;re etykiety mają być przekazywane jako &quot;<i>Insulina szybkodziałająca</i>&quot; określić można w menu po lewej stronie→Ustawienia→Serwer WWW→<a href="https://www.juggluco.nl/Jugglucohelp/pl/setlibrenumtype.html">Przekaż wartości</a>.</p>
-<h2 class="western">Zawsze teraz</h2>
-<p>Gdy ustawiona jest opcja &quot;<i>Zawsze teraz</i>&quot;, okres wyświetlany na ekranie jest przewijany w lewo, tak aby wartość bieżąca (z teraz) zawsze znajdowała się w tym samym punkcie ekranu. Niekt&oacute;rzy użytkownicy uruchamiają Juggluco na emulatorze Androida na komputerze znajdującym się w odległości kilku metr&oacute;w od nich. Gdy opcja &quot;<i>Zawsze teraz</i>&quot; jest wyłączona, lokalizacja bieżącej wartości glukozy przesuwałaby się w prawo wraz z upływem czasu, tak że po kilku godzinach nie byłaby już widoczna. Powoduje to konieczność podchodzenia do komputera i przewijania ekranu o kilka centymetr&oacute;w. Po włączeniu opcji &quot;<i>Zawsze teraz</i>&quot; ta niedogodność nie jest już wymagana.</p>
 <h2 class="western">Wartość glikemii w pasku stanu</h2>
 <p style="margin-bottom: 0in"><i>(Wcześniej nazywana &quot;Stęż. glukozy w pasku stanu</i>). Jeśli opcja będzie włączona, wartości stężenia glukozy przesyłane strumieniowo przez Bluetooth są cicho wyświetlane w powiadomieniu i na pasku stanu systemu Android. Jeśli wyłączysz tę opcję, zamiast liczby pojawi się kropka, a w powiadomieniu widoczna będzie jedynie treść <i>&quot;Naciśnij, by połączyć się z sensorem</i>&quot; lub <i>&quot;Naciśnij, by zacząć przesył danych</i>&quot;. Aplikacja, kt&oacute;ra pozostaje uruchomiona w tle, jest zobowiązana przez Androida do posiadania takiego widocznego powiadomienia (w przeciwnym razie jest łatwo zatrzymywana przez Androida). Juggluco wyłącza powiadomienie tylko wtedy, gdy opcja <i>&quot;Sensor przez Bluetooth</i>&quot; jest wyłączona i nie ma żadnych połączeń w ramach klonowania.</p>
 <p style="margin-bottom: 0in">Na niekt&oacute;rych smartfonach wartość stężenia glukozy jest wyświetlana na pasku stanu Androida dopiero po zmianie ustawień powiadomień Androida. Na przykład na Realme GT 5G trzeba wejść w listę aplikacji -&gt;Juggluco-&gt;zarządzaj powiadomieniami, nacisnąć na glucoseNotification i wyłączyć &bdquo;Ustaw na tryb cichy&rdquo;. &quot;Wyświetlanie w pasku stanu&quot; będzie teraz widoczne jako włączone.</p>
 <p style="margin-bottom: 0in">Możesz r&oacute;wnież uzyskać powiadomienie w systemie Androida, wybierając opcję <i>Powiadom.</i> w lewym środkowym menu. W takim przypadku powiadomienie zostanie wysłane do niekt&oacute;rych smartwatch&oacute;w, jeśli są tak skonfigurowane. To działa z zegarkami Garmin, nie wiem czy działa z czymkolwiek innym. Alarmy r&oacute;wnież generują powiadomienia.</p>
-<h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/pl/floatingconfig.html" onclick="location.href=this.href+'?unit='+unitstr;return false;">Pływ. gluk.</a></h2>
+<h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/floatingconfig.html" onclick="location.href=this.href+'?unit='+unitstr;return false;">Pływ. gluk.</a></h2>
 <p>Po włączeniu tej opcji na ekranie stale obecny jest mały obrazek z aktualną wartością stężenia glukozy, niezależnie od tego, kt&oacute;ra aplikacja jest na pierwszym planie. Jeśli włączysz ją po raz pierwszy, zostaniesz przekierowany do listy aplikacji, w kt&oacute;rej musisz udzielić Juggluco uprawnienia do <b>wyświetlania na wierzchu innych aplikacji</b>.</p>
-<h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/pl/alarmhelp.html">Alarmy</a></h2>
+<h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/alarmhelp.html">Alarmy</a></h2>
 <p>Ustaw alarmy dla wysokiego i niskiego poziomu stężenia glukozy, alarm utraty sygnału i dla powiadomienia o ponownie dostępnej wartości glukozy.</p>
-<h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/pl/labelhelp.html">Etykiety wart. liczb.</a></h2>
+<h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/labelhelp.html">Etykiety wart. liczb.</a></h2>
 <p style="margin-bottom: 0in">Określ etykiety używane dla wartości liczbowych. Przejdź do ekranu, aby określić, kt&oacute;re etykiety użyć do ustalenia wartości takich jak dawki insuliny, spożycie węglowodan&oacute;w i godziny spędzone na grze w piłkę nożną. Jeśli korzystasz r&oacute;wnież z aplikacji Kerfstok na zegarek Garmin, etykiety te są wysyłane do aplikacji na zegarek.</p>
-<h2><a href="https://www.juggluco.nl/Jugglucohelp/pl/exchangehelp.html">Przesył danych</a></h2><p>R&oacute;żne sposoby przesyłania danych z Juggluco do innych aplikacji lub serwer&oacute;w. (Aby wysyłać dane do zegark&oacute;w, przejdź do Lewe menu -&gt;Zegarek).</p>
-<h2 class="western">Język</h2>
-<p style="margin-bottom: 0in">Aplikacja Juggluco jest wyświetlana w wybranym języku. Jeśli nie wybrano żadnego kodu języka, używany jest język systemowy.</p>
-<h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/pl/reminders.html">Przypomnienia</a></h2>
+<h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/exchangehelp.html">Przesył danych</a></h2>
+<p>R&oacute;żne sposoby przesyłania danych z Juggluco do innych aplikacji lub serwer&oacute;w. (Aby wysyłać dane do zegark&oacute;w, przejdź do Lewe menu -&gt;Zegarek).</p>
+<h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/reminders.html">Przypomnienia</a></h2>
 <p style="margin-bottom: 0in">Określ, że alarm powinien się włączyć, jeśli nie wprowadziłeś określonej ilości jedzenia lub lek&oacute;w w określonym czasie.</p>
-<h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/pl/colorhelp.html">Kolory</a></h2>
-<p style="margin-bottom: 0in">Zmień kolory krzywych, skan&oacute;w i liczb. Aby włączyć <i>Tryb ciemny</i>, użyj prawego środkowego menu-&gt;Tryb ciemny.</p>
-<h2 class="western"><br/> <br/></h2>
+<h2 class="western">Skanowanie Google</h2>
+<p style="line-height: 100%; margin-bottom: 0in">Zeskanuj matrycę danych na opakowaniach sensor&oacute;w Sibionics i aplikatorach Dexcom G7/ONE+ oraz kod QR, kt&oacute;ry znajduje się w: Lewe środkowe menu→Klonowanie za pomocą <a href="https://developers.google.com/ml-kit/vision/barcode-scanning/code-scanner">skanera kod&oacute;w Google</a>. Jeśli opcja nie jest zaznaczona, używany jest <a href="https://github.com/zxing/zxing">zXing</a> . Na większości urządzeń skanowanie Google działa lepiej, ale czasami nie działa. Jeśli nie powiedzie się z błędem, zXing jest zawsze używany, ale czasami skanowanie Google po prostu nie działa bez zwracania błędu.</p>
+<h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/displayhelp.html">Ekran</a></h2>
+<p>Wszelkiego rodzaju ustawienia dotyczące sposobu wyświetlania danych, od zakresu docelowego po język.</p>
 </body>
 </html>

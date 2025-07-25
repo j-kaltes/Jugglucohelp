@@ -8,7 +8,7 @@ translinks: translinks.cpp
 	 g++ -I${JUGGLUCOPATH}/Common/src/main/cpp -I${JUGGLUCOPATH}/Common/src/main/cpp/share -g -std=gnu++26 $^ -o $@
 
 
-FILES=ringtone.html reminders.html connectionoverview.html addconnection.html locationpermission.html introhelp.html searchhelp.html shortcuthelp.html labelhelp.html settinghelp.html sensorhelp.html kerfstok.html   getlib.html newlabelhelp.html battery.html nutrients.html mealhelp.html colorhelp.html stathelp.html alarmhelp.html flashpermission.html nearbypermission.html watchinfo.html wearosinfo.html about.html disturbhelp.html libreview.html garminconfig.html librenumhelp.html setlibrenumtype.html  floatingconfig.html getaccountidhelp.html Nightscouthelp.html NightPost.html notificationpermission.html staticnum.html talkhelp.html nightnumhelp.html helpexport.html newamount.html healthpermission.html IOBhelp.html  changestart.html camerapermission.html exchangehelp.html displayhelp.html loghelp.html sensormirror.html QRmirror.html advancedAlarmshelp.html schedulehelp.html
+FILES=ringtone.html reminders.html connectionoverview.html addconnection.html locationpermission.html introhelp.html searchhelp.html shortcuthelp.html labelhelp.html settinghelp.html sensorhelp.html kerfstok.html   getlib.html newlabelhelp.html battery.html nutrients.html mealhelp.html colorhelp.html stathelp.html alarmhelp.html flashpermission.html nearbypermission.html watchinfo.html wearosinfo.html about.html disturbhelp.html libreview.html garminconfig.html librenumhelp.html setlibrenumtype.html  floatingconfig.html getaccountidhelp.html Nightscouthelp.html NightPost.html notificationpermission.html staticnum.html talkhelp.html nightnumhelp.html helpexport.html newamount.html healthpermission.html IOBhelp.html  changestart.html camerapermission.html exchangehelp.html displayhelp.html loghelp.html sensormirror.html QRmirror.html advancedAlarmshelp.html schedulehelp.html calibrationslist.html calibrationhelp.html
 #html.xml:ringtone.html reminders.html connectionoverview.html addconnection.html locationpermission.html introhelp.html searchhelp.html shortcuthelp.html labelhelp.html settinghelp.html sensorhelp.html kerfstok.html   getlib.html newlabelhelp.html battery.html nutrients.html mealhelp.html colorhelp.html stathelp.html alarmhelp.html flashpermission.html nearbypermission.html watchinfo.html wearosinfo.html about.html disturbhelp.html libreview.html garminconfig.html librenumhelp.html setlibrenumtype.html 
 
 
@@ -16,8 +16,8 @@ html.xml: Makefile html2xml ${FILES}
 	 ./html2xml ${FILES} > $@
 
 WEARFILES=staticnum.in.html locationpermission.in.html nearbypermission.in.html notificationpermission.in.html 
-wearhtml.xml:${WEARFILES} 
-	 ./html2xml -i -fwearnull.xml $^ > $@
+wearhtml.xml:${WEARFILES}  wearnull.xml
+	 ./html2xml -i -fwearnull.xml ${WEARFILES} > $@
 
 install: html.xml wearhtml.xml
 	mkdir -p ${JUGGLUCOPATH}/Common/src/mobile/res/values

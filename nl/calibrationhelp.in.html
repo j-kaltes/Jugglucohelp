@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title>Kalibratie</title>
+	<meta name="generator" content="LibreOffice 24.2.7.2 (Linux)"/>
+	<meta name="created" content="2025-07-25T10:30:51.021840728"/>
+	<meta name="changed" content="2025-07-25T13:39:05.123779496"/>
+</head>
+<body lang="nl-NL" dir="ltr"><h1>Kalibratie</h1>
+<p>Juggluco 10.0.0 en hoger hebben de mogelijkheid om sensoren te
+kalibreren.</p>
+<p><i><b>Bloedglucose</b></i> : Geef aan welk label staat voor de
+bloedglucosemetingen via vingerprik. Hierna worden alle
+bloedglucosewaarden die onder dat label worden ingevoerd, gebruikt
+voor de kalibratie, behalve wanneer je &quot;Sluit uit&quot;
+selecteert in linker midden menu → Hoeveelheid. Wanneer de
+verandering te groot is (absoluut), wordt deze automatisch
+uitgesloten.</p>
+<p>Sluit alleen glucosewaarden uit die niet geschikt zijn voor
+kalibratie omdat de glucosespiegel niet stabiel is. Sluit alle andere
+waarden niet uit, zelfs niet als je denkt dat de sensor niet
+gekalibreerd hoeft te worden. Wil je niet kalibreren, schakel dan
+&quot;Actief&quot; uit en en vink rechter midden menu →
+Gekalibreerd uit. Op deze manier worden alle relevante glucosewaarden
+gebruikt voor kalibratie, niet alleen de waarden die niet
+overeenkomen.</p>
+<p>Elke nieuwe vingerprik, die niet wordt uitgesloten, levert een
+nieuwe kalibratie op. Je kan de gemaakte kalibraties bekijken door in
+het sensorinformatiescherm op &quot;<i>Kalibraties</i>&quot; te
+drukken. Je kan de sensorinformatie openen door lang op de
+glucosecurve te drukken of via het linkermenu → Sensor.
+(Kalibraties zijn specifiek voor een specifieke sensor.)</p>
+<p>Als &quot;<i><b>Toepassen op verleden</b></i>&quot; niet is
+aangevinkt, worden de glucosewaarden gekalibreerd met de laatste
+kalibratie vóór de glucosewaarde. Als &quot;<i>Toepassen op
+verleden</i>&quot; is aangevinkt, wordt de laatste kalibratie
+toegepast op alle glucosewaarden van deze sensor. 
+</p>
+<p><i><b>Helling wijzigen:</b></i></p>
+<p style="font-variant: normal; font-style: normal; font-weight: normal">
+Als &quot;Helling<i> wijzigen</i>&quot; niet is aangevinkt, wordt
+slechts een bepaalde waarde toegevoegd aan of afgetrokken van elke
+sensorglucosewaarde om de gekalibreerde glucosewaarde te verkrijgen.
+De relatie tussen de gekalibreerde waarde en de sensorwaarde is:</p>
+<p style="font-variant: normal; font-style: normal"><b>Gekalibreerde
+glucose = SensorGlucose + b</b></p>
+<p style="font-variant: normal; font-style: normal; font-weight: normal">
+De waarde van b wordt bepaald door kalibratie.</p>
+<p style="font-variant: normal; font-style: normal; font-weight: normal">
+Als “<i>Helling </i><i>wijzigen</i>” is aangevinkt, wordt de
+relatie:</p>
+<p style="font-variant: normal; font-style: normal"><b>Gekalibreerde
+glucose = a * SensorGlucose + b</b></p>
+<p>Waarbij <b>a</b> kan verschillen van 1. Dit type kalibratie is
+alleen mogelijk wanneer er voldoende bloedglucosemetingen worden
+gedaan met waarden die alle sensorglucosewaarden vertegenwoordigen.
+Wanneer bijvoorbeeld alle glucosemetingen werden gedaan toen de
+glucosewaarde rond de 5 mmol/L lag en de sensorwaarden variëren van
+3 mmol/L tot 10 mmol/L, zijn deze waarden niet divers genoeg om de
+waarde van <b>a</b> af te leiden. Juggluco controleert zelf of er
+voldoende waarden zijn (aantal &gt;=3) en of er voldoende variantie
+is (standaarddeviatie bloedglucose &gt; 0,62 * standaarddeviatie
+CGM-glucose).</p>
+<p>Juggluco weegt glucosemetingen afhankelijk van hun ouderdom. De
+huidige glucosewaarde heeft een gewicht van 1, oudere glucosewaarden
+hebben een lager gewicht. De kalibratie wordt ook gewogen, zodat een
+oudere kalibratie minder invloed heeft, zodat a na verloop van tijd
+naar 1 gaat en b na verloop van tijd naar nul.</p>
+<p>Het totale gewicht van de gebruikte bloedglucosemetingen bepaalt
+hoeveel gewicht aan de kalibratie wordt toegekend. Bij meer (recente)
+bloedglucosemetingen worden de gekalibreerde glucosewaarden meer
+gekanteld naar de beste fit die uit deze metingen wordt afgeleid
+tussen bloedglucose en CGM-glucose.</p>
+<p><i><b>Actief</b></i> :</p>
+<p>Wanneer <i>actief</i> is aangevinkt, worden de gekalibreerde
+glucosewaarden gebruikt voor alarmen, Broadcasts, Health Connect, de
+Nightscout/xDrip-webserver in Juggluco, glucosewaarden die naar
+horloges worden verzonden en zwevende glucose. Aan de rechterkant van
+Juggluco wordt de gekalibreerde waarde in grote letters weergegeven,
+met de ongekalibreerde waarde erna in kleine letters. Deze waarde
+wordt nooit gebruikt voor verzending naar Libreview of toegepast op
+scans of historische waarden.</p>
+<p>Je kunt de gekalibreerde glucosewaarden altijd bekijken via recher
+midden menu→Gekalibreerd.</p>
+<p><br/>
+<br/>
+
+</p>
+<p><br/>
+<br/>
+
+</p>
+</body>
+</html>

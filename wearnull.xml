@@ -1,4 +1,3 @@
-<string name="IOBhelp" ></string>
 <string name="healthpermission" ></string>
 <string name="displayhelp" ></string>
 <string name="ringtone" ></string>
@@ -33,3 +32,6 @@
 <string name="exchangehelp" ></string>
 <string name="advancedAlarmshelp" ></string>
 <string name="schedulehelp" ></string>
+<string name="calibrationhelp" ></string>
+<string name="calibrationslist" ></string>
+<string name="IOBhelp" >First specify the rapid acting insulin label in left menu→Settings→Display→IOB on your phone</string>

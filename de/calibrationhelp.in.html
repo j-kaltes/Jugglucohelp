@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 24.2.7.2 (Linux)"/>
+	<meta name="created" content="2025-07-25T10:30:51.021840728"/>
+	<meta name="changed" content="2025-07-25T13:55:57.123930620"/>
+</head>
+<body lang="de-DE" dir="ltr"><h1>Kalibrierung</h1>
+<p>Juggluco 10.0.0 und höher bieten die Möglichkeit, Sensoren zu
+kalibrieren.</p>
+<p><i><b>Blutzucker</b></i>: Geben Sie an, welche Bezeichnung für
+die Blutzuckermessung per Fingerstich steht. Alle unter dieser
+Bezeichnung eingegebenen Blutzuckerwerte werden anschließend zur
+Kalibrierung verwendet, außer wenn Sie im linken mittleren Menü
+unter „Neuer Wert“ die Option „<i>Ausschließen</i>“
+auswählen. Ist die Änderungsrate (absolut) zu groß, wird sie
+automatisch ausgeschlossen.</p>
+<p>Sie sollten nur Glukosewerte ausschließen, die für die
+Kalibrierung nicht geeignet sind, da der Glukosespiegel instabil ist.
+Alle anderen Werte sollten nicht ausgeschlossen werden, auch wenn Sie
+der Meinung sind, dass der Sensor nicht kalibriert werden muss. Wenn
+Sie keine Kalibrierung wünschen, deaktivieren Sie „Aktiv“ und
+„Kalibriert“ im rechten mittleren Menü. So werden alle
+geeigneten Glukosewerte für die Kalibrierung verwendet, nicht nur
+die, die nicht übereinstimmen.</p>
+<p>Jeder neue Fingerstich, der nicht ausgeschlossen wird, führt zu
+einer neuen Kalibrierung. Sie können die durchgeführten
+Kalibrierungen einsehen, indem Sie im Sensorinformationsbildschirm
+auf „Kalibrierungen“ drücken. Sie gelangen zu den
+Sensorinformationen, indem Sie lange auf die Glukosekurve drücken
+oder im linken Menü auf „Sensor“ klicken. (Kalibrierungen sind
+sensorspezifisch.)</p>
+<p>Wenn „<i><b>Auf Vergangenheit anwenden</b></i>“ nicht
+aktiviert ist, werden die Glukosewerte mit der letzten Kalibrierung
+vor dem Glukosewert kalibriert. Wenn „<i><b>Auf Vergangenheit
+anwenden</b></i>“ aktiviert ist, wird die letzte Kalibrierung auf
+alle Glukosewerte dieses Sensors angewendet. 
+</p>
+<p><i><b>Steigung ändern:</b></i></p>
+<p style="font-variant: normal; font-style: normal; font-weight: normal">
+Wenn „<i>Steigung ändern</i>“ nicht aktiviert ist, wird zu jedem
+Sensorglukosewert nur ein bestimmter Wert addiert oder subtrahiert,
+um den kalibrierten Glukosewert zu erhalten. Das Verhältnis zwischen
+kalibriertem Wert und Sensorwert lautet:</p>
+<p style="font-variant: normal; font-style: normal"><b>Kalibrierter
+Glukosewert = SensorGlucose + b</b></p>
+<p style="font-variant: normal; font-style: normal; font-weight: normal">
+Der Wert von b wird durch Kalibrierung bestimmt.</p>
+<p style="font-variant: normal; font-style: normal; font-weight: normal">
+Wenn „ <i>Steigung ändern</i> “ eingestellt ist, wird die
+Beziehung:</p>
+<p style="font-variant: normal; font-style: normal"><b>Kalibrierter
+Glukosewert = a * SensorGlucose + b</b></p>
+<p>Wobei <b>a</b> von 1 verschieden sein kann. Diese Art der
+Kalibrierung ist nur möglich, wenn genügend Blutzuckermessungen mit
+Werten durchgeführt werden, die alle Sensorglukosewerte
+repräsentieren. Wenn beispielsweise alle Glukosemessungen bei einem
+Glukosewert von etwa 90 mg/dL (5 mmol/L) durchgeführt wurden und die
+Sensorwerte zwischen 54 mg/dL und 180 mg/dL (3 mmol/L bis 10 mmol/L)
+streuen, sind diese Werte nicht unterschiedlich genug, um auf den
+Wert <b>a</b> zu schließen. Juggluco prüft selbst, ob genügend
+Werte (Anzahl &gt;=3) und genügend Varianz vorhanden sind
+(Standardabweichung Blutzucker &gt; 0,62 * Standardabweichung
+CGM-Glukose).</p>
+<p>Juggluco gewichtet Glukosemessungen abhängig von ihrem Alter. Der
+aktuelle Glukosewert hat das Gewicht 1, ältere Glukosewerte haben
+ein geringeres Gewicht. Die Kalibrierung wird ebenfalls gewichtet,
+sodass eine ältere Kalibrierung weniger Einfluss hat, sodass a mit
+der Zeit gegen 1 und b gegen 0 geht.</p>
+<p>Die Gesamtgewichtung der verwendeten Blutzuckermessungen bestimmt,
+wie viel Gewicht der Kalibrierung beigemessen wird. Bei mehr
+(neueren) Blutzuckermessungen tendieren die kalibrierten Glukosewerte
+stärker zur besten Übereinstimmung zwischen Blutzucker und
+CGM-Glukose, die aus diesen Messungen abgeleitet wird.</p>
+<p><i><b>Aktiv</b></i>: Wenn „Aktiv“ eingestellt ist, werden die kalibrierten
+Glukosewerte für Alarme, Broadcast, Health Connect, den
+Nightscout/xDrip-Webserver in Juggluco, an Uhren gesendete
+Glukosewerte und Schwebende Glukose verwendet. Auf der rechten Seite
+von Juggluco wird der kalibrierte Wert in großer Schrift angezeigt,
+der unkalibrierte Wert dahinter in kleiner Schrift. Er wird nicht zum
+Senden an Libreview verwendet oder auf Scans oder History werte
+angewendet.</p>
+<p>Die kalibrierten Glukosewerte können jederzeit angezeigt werden,
+indem Sie im rechten mittleren Menü auf „Kalibriert“ klicken.</p>
+<p><br/>
+<br/>
+
+</p>
+<p><br/>
+<br/>
+
+</p>
+</body>
+</html>

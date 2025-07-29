@@ -5,16 +5,20 @@
 	<title>WearOS</title>
 	<meta name="generator" content="LibreOffice 24.2.7.2 (Linux)"/>
 	<meta name="created" content="00:00:00"/>
-	<meta name="changed" content="2025-01-02T10:00:20.838493851"/>
+	<meta name="changed" content="2025-07-29T12:08:50.094801500"/>
+	<meta name="created" content="00:00:00">
 	<style type="text/css">
 		h2.cjk { font-family: "Droid Sans Fallback" }
 		h2.ctl { font-family: "Droid Sans Devanagari" }
-		h5.cjk { font-family: "Droid Sans Fallback" }
-		h5.ctl { font-family: "Droid Sans Devanagari" }
 	</style>
 </head>
  <img src="wearosconfig.png"  style="object-fit:contain; width:15cm;                   height:auto;">
 <body lang="en-US" dir="ltr"><h1>Wear OS</h1>
+<p><strong>Enter numbers (amounts) on watch:</strong>
+Enter amounts for Insulin, carbohydrate and activity on the watch
+(second menu→ “<a href="https://www.juggluco.nl/Jugglucohelp/newamount.html">Amount</a>”)
+instead of the phone. If you want to scan <a href="https://www.juggluco.nl/Juggluco/index.html#novopens">Novopens</a>
+with the phone, you should not set this.</p>
 <p><strong>Direct sensor-watch connection</strong>: This determines
 whether the watch should be directly connected with the sensor. This
 can only be changed when watch and phone are in sync. Use
@@ -87,20 +91,11 @@ there are two possibilities:</p>
 	carry your phone, you can connect the watch version of Juggluco
 	directly with the sensor. After all values are sent to the watch,
 	you can check <strong>&quot;Direct sensor-watch connection&quot;</strong>.
-	By this, <i>&quot;Use Bluetooth&quot;</i> is turned off in
-	the phone and turned on in the watch. The stream values are now sent
-	from watch to phone as you can check in the Mirror dialog. You can't
+	By this, <i>&quot;Use Bluetooth&quot;</i> is turned off in the phone
+	and turned on in the watch. The stream values are now sent from
+	watch to phone as you can check in the Mirror dialog. You can't
 	change &quot;Direct sensor-watch connection&quot; when watch and
 	phone are not in sync.</p></li>
-	<li><p>If you want to sent amounts from the watch to the phone, you
-	should reverse the send-direction yourself in the mirror-dialog by
-	unchecking it on the phone and checking it on the watch. On the
-	phone &quot;<i>Receive from</i>&quot; should also be set. If
-	everything isn't set exactly right, it doesn't work. &quot;Don't
-	change amounts&quot; should be changed. The labels of <i>amounts </i>are
-	always sent with the amounts. If you change the direction of the
-	transmission of amounts from watch to phone, you can't change the
-	labels;</p></li>
 </ul>
 <p>If the sensor has a direct Bluetooth connection with the watch and
 it's values are sent to a smartphone, scanned values should also be
@@ -172,25 +167,6 @@ Juggluco on the phone and watch you can check the following:</p>
 	Somehow you first have to create a functioning mirror connection to
 	receive the data on the phone.</p></li>
 </ul>
-<h2 class="western"><a name="enteronwatch"></a>Enter on watch</h2>
-<p>If you enter amounts of insulin, carbohydrate and activities on
-the watch, you can’t do that anymore on the phone. Also scanning of
-insulin pens is no longer possible.</p>
-<p>There is currently no single button for this. On both sides of the
-mirror connection between the watch and the companion phone, you have
-to make changes in the mirror settings. First make sure that phone
-and watch are in sync, then do the following:</p>
-<h5 class="western">PHONE:</h5>
-<p>Go to Left middle menu→Mirror. Press on the watch connection and
-then on <i>Modify</i>. Unset <i>Amounts</i> and see that <i>Receive
-from</i> is checked. Hereafter press “<i>Save</i>” and then
-“<i>Close</i>”. Set “<i>Mirror sends amounts</i>”.</p>
-<h5 class="western">WATCH:</h5>
-<p>Go to Left menu→Mirror. Press on the watch connection and then
-on Modify. Set “<i>Amounts</i>”. Set “<i>Now</i>” as the time
-point until which all data is already present on the phone. Hereafter
-press “<i>Save</i>” and then “<i>Close</i>”. Unset “<i>Mirror
-sends amounts</i>”.</p>
 <h2 class="western"><strong>Watch face</strong></h2>
 <p style="margin-bottom: 0in">Juggluco for Wear OS includes a watch
 face that displays your current glucose level alongside the time and

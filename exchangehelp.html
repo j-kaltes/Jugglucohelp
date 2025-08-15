@@ -37,7 +37,8 @@ Fit</a>. Other apps again can get assess to data from Google Fit.</p>
 values and amounts to Libreview and to get the account id used during
 Freestyle Libre 3 sensor activation. Touch to change settings.</p>
 <h2 class="western">Patched Libre</h2>
-<p>The Patched Libre broadcast was used by the patched Librelink to send glucose values to xDrip. Something like the EverSense broadcast does.
+<p>There is nothing wrong with the Patched Libre broadcast itself, but xDrip modifies the values when it receives them from the Patched Libre broadcast. Because users only use this broadcast this way, I planned to remove the broadcast.</p>
+<p>xDrip doesn’t modify values when it receives glucose values from the EverSense broadcast or if the web server in Juggluco is used as a Nightscout data source.</p>
 <h2 class="western"><a name="eversense"></a>EverSense</h2>
 <p>Yet another glucose broadcast. It can be used to send every minute
 a glucose value to xDrip. In xDrip you need to set “<i>460G/EverSense</i>”

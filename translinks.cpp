@@ -38,8 +38,7 @@ setlang(translations,"%s");
 </script>)",filename);
       }
 void mklinks(FILE *fp,char **names,int len,const char *filename,const char *inname) {
-   if(inname)
-        addcomments(fp,inname);
+//   if(inname) addcomments(fp,inname);
     fprintf(fp,R"(<p>)");
     for(int i=0;i<len;i++) { 
         fprintf(fp,R"(<a href="https://www.juggluco.nl/Jugglucohelp/%.02s/%s">%.02s</a>&emsp;&emsp;)",names[i],filename,names[i]);
@@ -47,20 +46,20 @@ void mklinks(FILE *fp,char **names,int len,const char *filename,const char *inna
     fprintf(fp,R"(<a href="https://www.juggluco.nl/Jugglucohelp/%s?lang=en">en</a>&emsp;&emsp;</p>)",filename);
      }
 
-template <class T, std::size_t N> int includingstring(const T (&findstr)[N], const char *input, int len) {
+template <class T, std::size_t N> std::pair<int,int> includingstring(const T (&findstr)[N], const char *input, int len) {
     auto comp=[](const char one,const char two)->bool {return tolower(one)==tolower(two);};
     const char *endinput=input+len;
     const char *found=std::search(input,endinput,findstr,findstr+N-1,comp);
     if(found==endinput)  {
         fprintf(stderr,"%s not found\n",findstr);
-        return -1;
+        return {-1,-1};
         }
     const char *start=std::find(found,endinput,'>');
     if(start==endinput) {
       fprintf(stderr,"> not found\n");
-        return -2;
+        return {-2,-2};
         }
-    return start-input+1;
+    return {found-input,start-input+1};
     }
 strconcat  getendname(std::string_view inname) {
     return {"",inname.substr(0,inname.size()-7),inname.substr(inname.size()-4)};
@@ -81,7 +80,7 @@ int patchfile(const char *inname,const char *filename,char **names,int nr,bool a
     destruct _([outfile]{fclose(outfile);});
     int htmlpos;
     if(addscript) {
-        htmlpos=includingstring(R"(<html)",input,file.size());
+        const auto [_,htmlpos]=includingstring(R"(<html)",input,file.size());
         if(fwrite(input,htmlpos,1,outfile)!=1) {
             perror("fwrite 2");
             return -4;
@@ -91,15 +90,22 @@ int patchfile(const char *inname,const char *filename,char **names,int nr,bool a
     else {
         htmlpos=0;
         }
-    int bodypos=includingstring(R"(<body)",input+htmlpos,file.size()-htmlpos);
+    auto [startbody,bodypos]=includingstring(R"(<body)",input+htmlpos,file.size()-htmlpos);
     if(bodypos<0) {
         return -3;
         }
-    if(fwrite(input+htmlpos,bodypos,1,outfile)!=1) {
+    if(fwrite(input+htmlpos,startbody,1,outfile)!=1) {
         perror("fwrite 3");
         return -5;
         }
-    mklinks(outfile,names,nr,filename,!addscript?inname:nullptr);
+    auto useinname=!addscript?inname:nullptr;
+      if(useinname)
+            addcomments(outfile,inname);
+    if(fwrite(input+htmlpos+startbody,bodypos-startbody,1,outfile)!=1) {
+        perror("fwrite 3");
+        return -5;
+        }
+    mklinks(outfile,names,nr,filename,useinname);
     int endlen=file.size()-bodypos-htmlpos;
     if(fwrite(input+bodypos+htmlpos,endlen,1,outfile)!=1) {
         perror("fwrite 4");

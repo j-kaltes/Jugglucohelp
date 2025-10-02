@@ -2728,7 +2728,7 @@ webservice</i>&quot;i kapatmanız gerekir.</p>
 <h2 class="western"><a name="eversense"></a>EverSense</h2>
 <p>Bir glikoz yayını daha. Her dakika xDrip\'e bir glikoz değeri
 göndermek için kullanılabilir. xDrip\'te <i>Donanım Veri Kaynağı</i>
-olarak “<i>460G/EverSense</i>” ayarlamanız gerekir. 
+olarak “<i>640G/EverSense</i>” ayarlamanız gerekir. 
 </p>
 <p>xDrip, 5 dakikada bir değerde ısrar ettiği için bunların
 neredeyse hepsini yok sayacaktır. Bu kısıtlamayı xDrip\'in kaynak

@@ -36,6 +36,7 @@ history values, instead of averages of the stream values. The
 disadvantage is that it is slower. This can be an issue on WearOS
 watches. This option has no effect on Libre 3 and US/CA/AU/KR Libre 2
 sensors; they always receive history values via Bluetooth.</p>
+<p><b>Bug</b>: only present on WearOS for Libre 2 and Libre 3. This needs to be set on Samsung Galaxy Watch 5 and higher, until Samsung fixes this bug. Without this option, glucose values will be received 2 instead of 1 minute apart.</p>
 <p>⏰: Let Juggluco use an alarm clock function to ensure the
 correct timing of connecting to Dexcom G7 and ONE+ sensors. Without
 it, when the device is in deep sleep when not used, it will sometimes
@@ -125,6 +126,7 @@ are sometimes resolved by scanning the sensor. Intervening water
 watch on a different arm than the sensor can give connection problems
 when the arms are held in a way that the body is positioned between
 watch and sensor.</p>
+<p>One user of AccuChek SmartGuide reported that when a Bluetooth search couldn’t find the sensor, it was solved by to going to connected Bluetooth devices in Android settings, select the sensor and press <i>“Forget”</i>.</p>
 <p style="border: none; padding: 0in">Scanning the sensor with
 Juggluco (with <i>Use Bluetooth</i> enabled) on another phone, will
 steal the connection away from this phone and it can take some time,

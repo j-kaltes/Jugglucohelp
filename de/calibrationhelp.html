@@ -5,7 +5,7 @@
 	<title>Kalibrierung</title>
 	<meta name="generator" content="LibreOffice 24.2.7.2 (Linux)"/>
 	<meta name="created" content="2025-07-25T10:30:51.021840728"/>
-	<meta name="changed" content="2025-07-25T13:55:57.123930620"/>
+	<meta name="changed" content="2026-01-05T15:48:51.722699673"/>
 </head>
  <img src="CalibrationSettings.png" alt="Kalibrierung Einstellungen" style="object-fit:contain; width:15cm;                   height:auto;">
 
@@ -21,9 +21,10 @@ kalibrieren.</p>
 die Blutzuckermessung per Fingerstich steht. Alle unter dieser
 Bezeichnung eingegebenen Blutzuckerwerte werden anschließend zur
 Kalibrierung verwendet, außer wenn Sie im linken mittleren Menü
-unter <a href="https://www.juggluco.nl/Jugglucohelp/de/newamount.html">„Neue Menge“</a> die Option „<i>Ausschließen</i>“
-auswählen. Ist die Änderungsrate (absolut) zu groß, wird sie
-automatisch ausgeschlossen.</p>
+unter <a href="https://www.juggluco.nl/Jugglucohelp/de/newamount.html">„Neue
+Menge“</a> die Option „<i>Ausschließen</i>“ auswählen. Ist
+die Änderungsrate (absolut) zu groß, wird sie automatisch
+ausgeschlossen.</p>
 <p>Sie sollten nur Glukosewerte ausschließen, die für die
 Kalibrierung nicht geeignet sind, da der Glukosespiegel instabil ist.
 Alle anderen Werte sollten nicht ausgeschlossen werden, auch wenn Sie
@@ -35,10 +36,10 @@ die, die nicht übereinstimmen.</p>
 <p>Jeder neue Fingerstich, der nicht ausgeschlossen wird, führt zu
 einer neuen Kalibrierung. Sie können die durchgeführten
 Kalibrierungen einsehen, indem Sie im Sensorinformationsbildschirm
-auf <a href="https://www.juggluco.nl/Jugglucohelp/de/calibrationslist.html">„Kalibrierungen“</a> drücken. Sie gelangen zu den
-Sensorinformationen, indem Sie lange auf die Glukosekurve drücken
-oder im linken Menü auf „Sensor“ klicken. (Kalibrierungen sind
-sensorspezifisch.)</p>
+auf <a href="https://www.juggluco.nl/Jugglucohelp/de/calibrationslist.html">„Kalibrierungen“</a>
+drücken. Sie gelangen zu den Sensorinformationen, indem Sie lange
+auf die Glukosekurve drücken oder im linken Menü auf „Sensor“
+klicken. (Kalibrierungen sind sensorspezifisch.)</p>
 <p>Wenn „<i><b>Auf Vergangenheit anwenden</b></i>“ nicht
 aktiviert ist, werden die Glukosewerte mit der letzten Kalibrierung
 vor dem Glukosewert kalibriert. Wenn „<i><b>Auf Vergangenheit
@@ -56,21 +57,12 @@ Glukosewert = SensorGlucose + b</b></p>
 <p style="font-variant: normal; font-style: normal; font-weight: normal">
 Der Wert von b wird durch Kalibrierung bestimmt.</p>
 <p style="font-variant: normal; font-style: normal; font-weight: normal">
-Wenn „ <i>Steigung ändern</i> “ eingestellt ist, wird die
+Wenn „<i>Steigung ändern</i>“ eingestellt ist, wird die
 Beziehung:</p>
 <p style="font-variant: normal; font-style: normal"><b>Kalibrierter
 Glukosewert = a * SensorGlucose + b</b></p>
-<p>Wobei <b>a</b> von 1 verschieden sein kann. Diese Art der
-Kalibrierung ist nur möglich, wenn genügend Blutzuckermessungen mit
-Werten durchgeführt werden, die alle Sensorglukosewerte
-repräsentieren. Wenn beispielsweise alle Glukosemessungen bei einem
-Glukosewert von etwa 90 mg/dL (5 mmol/L) durchgeführt wurden und die
-Sensorwerte zwischen 54 mg/dL und 180 mg/dL (3 mmol/L bis 10 mmol/L)
-streuen, sind diese Werte nicht unterschiedlich genug, um auf den
-Wert <b>a</b> zu schließen. Juggluco prüft selbst, ob genügend
-Werte (Anzahl &gt;=3) und genügend Varianz vorhanden sind
-(Standardabweichung Blutzucker &gt; 0,62 * Standardabweichung
-CGM-Glukose).</p>
+<p>Wobei <b>a</b> von 1 verschieden sein kann. 
+</p>
 <p>Juggluco gewichtet Glukosemessungen abhängig von ihrem Alter. Der
 aktuelle Glukosewert hat das Gewicht 1, ältere Glukosewerte haben
 ein geringeres Gewicht. Die Kalibrierung wird ebenfalls gewichtet,
@@ -81,25 +73,29 @@ wie viel Gewicht der Kalibrierung beigemessen wird. Bei mehr
 (neueren) Blutzuckermessungen tendieren die kalibrierten Glukosewerte
 stärker zur besten Übereinstimmung zwischen Blutzucker und
 CGM-Glukose, die aus diesen Messungen abgeleitet wird.</p>
-<p><i><b>Aktiv</b></i>: Wenn „Aktiv“ eingestellt ist, werden die kalibrierten
-Glukosewerte für Alarme, Broadcast, Health Connect, den
+<p>History Werte können nicht sofort kalibriert werden. Die
+Kalibrierung ist für Libre-Sensoren 21 Minuten und für CareSense
+Air-Sensoren 31 Minuten später programmiert, erfolgt aber häufig
+später. Die Stream-kalibrierung wird zu einem späteren Zeitpunkt
+wiederholt, damit das nächste CGM-System verwendet werden kann.</p>
+<p><i><b>Aktiv</b></i>: Wenn „Aktiv“ eingestellt ist, werden die
+kalibrierten Glukosewerte für Alarme, Broadcast, Health Connect, den
 Nightscout/xDrip-Webserver in Juggluco, an Uhren gesendete
 Glukosewerte und Schwebende Glukose verwendet. Auf der rechten Seite
 von Juggluco wird der kalibrierte Wert in großer Schrift angezeigt,
 der unkalibrierte Wert dahinter in kleiner Schrift. Er wird nicht zum
-Senden an Libreview verwendet oder auf Scans oder History werte
-angewendet.</p>
-<p>Die kalibrierten Glukosewerte können jederzeit angezeigt werden,
-indem Sie im rechten mittleren Menü auf „Kalibriert“ klicken.</p>
-<p><b><i>Alle Werte</i>:</b> Für bestimmte
-Werte gibt es keinen kalibrierten Wert. Die Kurve der kalibrierten
-Werte (aktiviert über das rechte mittlere Menü → Kalibriert)
-zeigt nichts an, wenn „<i>Alle Werte</i>“ nicht aktiviert ist.
-Ist „<i>Alle Werte</i>“ aktiviert, wird der unkalibrierte Wert
-angezeigt. Sie können das rechte mittlere Menü → Stream
-deaktivieren und trotzdem alle Werte sehen.</p>
-
-
+Senden an Libreview verwendet.</p>
+<p>Die Anzeige der Kurve kalibrierter Glukosewerte wird im mittleren
+rechten Menü vor „Stream“ und „History“ aktiviert. Die
+Rohwerte werden über die Kontrollkästchen nach „Stream“ und
+„History“ ein- und ausgeschaltet.</p>
+<p><i><b>Alle Werte</b></i><b>:</b> Für bestimmte Werte gibt es
+keinen kalibrierten Wert. Die Kurve der kalibrierten Werte (aktiviert
+über das rechte mittlere Menü → Kalibriert) zeigt nichts an, wenn
+„<i>Alle Werte</i>“ nicht aktiviert ist. Ist „<i>Alle Werte</i>“
+aktiviert, wird der unkalibrierte Wert angezeigt. Sie können das
+rechte mittlere Menü → Stream deaktivieren und trotzdem alle Werte
+sehen.</p>
 <p><br/>
 <br/>
 

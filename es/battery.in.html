@@ -1,0 +1,29 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+      <title></title>
+      <style>
+        body { font-family: sans-serif; line-height: 1.35; margin: 1.2em; }
+        img { object-fit: contain; width: 15cm; height: auto; max-width: 100%; display:block; margin: 0.8em 0; }
+        h1, h2, h3 { margin-top: 1em; }
+      </style>
+    </head>
+    <body lang="es" dir="ltr">
+
+<h1>Seguir funcionando</h1>
+<p>Cuando un dispositivo Android no se usa, entra en <i>modo Doze</i> para ahorrar energía. En ese modo las aplicaciones no pueden usar conexiones TCP para intercambiar datos, por lo que dos dispositivos Android solo pueden comunicarse cuando la pantalla de ambos está encendida. Una app puede quedar excluida de esta limitación seleccionando <i>No optimizar</i> en la optimización de batería de Android. <i>Actualizar en modo Doze</i> muestra este ajuste y, al tocarlo, abre la parte de los ajustes de Android donde puede cambiarse. En algunos teléfonos solo se muestran las apps que ya tienen esta excepción, y para añadir una app hay que cambiar antes otra opción en Ajustes → Batería. La conexión Bluetooth con el sensor que usa Juggluco no está estrictamente prohibida por Android y normalmente seguirá funcionando incluso sin esa excepción. Dependiendo del dispositivo, de la frecuencia con la que Juggluco se use en primer plano, del tiempo que lleve en segundo plano y de la carga que generen otras apps, esta excepción puede marcar la diferencia.</p>
+<p>Algunos fabricantes añaden restricciones extra a la actividad en segundo plano y al inicio automático de las apps. Estas opciones suelen estar en Ajustes de Android → <i>Batería</i>. Suelen ser ajustes específicos de la app como <i>Inicio automático</i>, <i>Inicio secundario</i>, <i>Activa en segundo plano</i> u <i>Optimizar uso de batería</i>.</p>
+<p>En un dispositivo fue necesario desactivar <i>Standby optimizado</i> para todo el sistema. Cuando estaba activado, la red se apagaba a mitad de la noche y dejaban de enviarse o recibirse valores de glucosa por IP/TCP.</p>
+<p>Consulta <a href="https://dontkillmyapp.com/">https://dontkillmyapp.com</a> para información específica por marca de smartphone.</p>
+<p>Una app que se usa a menudo en primer plano es menos propensa a que Android la cierre que una app que solo permanece en segundo plano. Un usuario con un teléfono Samsung, que había ocultado todas las notificaciones de Juggluco y el valor de glucosa en la barra de estado y solo usaba Juggluco para enviar valores a xDrip, tuvo problemas de conexión con el sensor que, según él, se resolvieron al volver a activar esas funciones en primer plano.</p>
+<p>Si usas un Galaxy Watch 4 o 5, debes activar <i>permitir actividad en segundo plano</i> en la app Galaxy Wearable, en <i>Ajustes del reloj → Apps → Juggluco</i>. En relojes que no tienen ese ajuste, puedes usar desde tu equipo el siguiente comando:</p>
+<p><code>adb shell cmd appops set tk.glucodata RUN_IN_BACKGROUND allow</code></p>
+<p><a href="https://www.juggluco.nl/JugglucoWearOS/install/adb.html">Información sobre adb</a>.</p>
+
+    
+<div class="link-fallbacks" style="display:none">
+<a href="https://dontkillmyapp.com/">https://dontkillmyapp.com</a>
+</div>
+</body>
+    </html>

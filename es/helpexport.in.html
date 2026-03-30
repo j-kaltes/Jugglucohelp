@@ -1,0 +1,25 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+      <title>TSV</title>
+      <style>
+        body { font-family: sans-serif; line-height: 1.35; margin: 1.2em; }
+        img { object-fit: contain; width: 15cm; height: auto; max-width: 100%; display:block; margin: 0.8em 0; }
+        h1, h2, h3 { margin-top: 1em; }
+      </style>
+    </head>
+ <img src="export.png"  style="object-fit:contain; width:15cm;                   height:auto;">
+    <body lang="es" dir="ltr">
+
+<h1>Exportar</h1>
+<p>Exporta datos de Juggluco a un archivo.</p>
+<p>Las comidas se guardan en HTML. Todos los demás datos se guardan en <code>.tsv</code> (<i><a href="https://en.wikipedia.org/wiki/Tab-separated_values">tab-separated values</a></i>). Este formato puede cargarse en programas como LibreOffice Calc, Microsoft Excel, Mathematica o R. Es parecido a un <code>.csv</code>, pero usa tabuladores en lugar de comas para separar los campos. Los caracteres están codificados en UTF-8.</p>
+<p>El significado de las columnas puede consultarse en <a href="https://www.juggluco.nl/Juggluco/webserver.html">https://www.juggluco.nl/Juggluco/webserver.html</a> .</p>
+<p><b>Días:</b> desde Juggluco 7.1.0 puedes seleccionar cuántos días quieres guardar. La fecha final es el borde derecho de la pantalla. Si estás viendo datos antiguos en Juggluco, solo se exportarán esos datos antiguos, igual que en menú central izquierdo → <i>Estadísticas</i>.</p>
+<p><b>Calibrado:</b> guarda también los valores calibrados. Con esta opción, <i>Scans</i>, <i>Stream</i> e <i>History</i> guardan para cada elemento tanto el valor calibrado como el bruto. En formato Libreview solo se guarda el valor calibrado cuando existe; en caso contrario, el no calibrado.</p>
+<p>Desde Juggluco 7.1.0 también es posible recibir estos datos a través del servidor web de Juggluco (menú izquierdo → <i>Ajustes</i> → <i>Intercambiar datos</i> → <i>Servidor web</i>), consulta <a href="https://www.juggluco.nl/Juggluco/webserver.html">https://www.juggluco.nl/Juggluco/webserver.html</a></p>
+<p><b>Libreview:</b> guarda los datos en formato Libreview. Esto permite importar datos de sensores que no son FreeStyle Libre en programas o servicios web que necesitan ese formato. Para sensores Dexcom se guardan los valores de cada 5 minutos, y para sensores Sibionics un valor de <i>Stream</i> cada 5 minutos. También guarda los valores de <i>History</i> de sensores Libre 0, 2 y 3. Solo guarda dosis de insulina, carbohidratos y comentarios cuando has asignado <a href="https://www.juggluco.nl/Jugglucohelp/es/setlibrenumtype.html">etiquetas</a> a esas categorías en menú izquierdo → <i>Ajustes</i> → <i>Intercambiar datos</i> → <i>Libreview</i> → <i><a href="https://www.juggluco.nl/Jugglucohelp/es/librenumhelp.html">Enviar cantidades</a></i>.</p>
+
+    </body>
+    </html>

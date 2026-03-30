@@ -1,0 +1,49 @@
+ <!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+<title>Servidor web</title>
+<style>
+        body { font-family: sans-serif; line-height: 1.35; margin: 1.2em; }
+        img { object-fit: contain; width: 15cm; height: auto; max-width: 100%; display:block; margin: 0.8em 0; }
+        h1, h2, h3 { margin-top: 1em; }
+      </style>
+</head>
+ <img src="webserver.png" alt="Webserver" style="object-fit:contain; width:15cm;                   height:auto;">
+<body dir="ltr" lang="es">
+<h1>Servidor web</h1>
+<p>Juggluco incluye un servidor web con el que otras apps pueden recibir valores de glucosa desde Juggluco. Puede usarse con relojes xDrip y con algunas apps Nightscout.</p>
+<p>Las apps diseñadas para usar el servidor web de xDrip suelen ser fáciles de configurar: basta con activar <i>Activo</i>. Después pueden recibir glucosa desde <code>localhost</code> en el puerto <code>17580</code>. URL de servidor Nightscout: <code><a href="http://127.0.0.1:17580">http://127.0.0.1:17580</a></code>.</p>
+<p>Algunos seguidores de Nightscout también pueden usarlo. xDrip, Diabox, una app de <a href="https://github.com/dabear/FloatingGlucose/releases">glucosa flotante para Windows</a> y el widget <a href="https://github.com/kashamalasha/nightscout-widget-electron">Owlet</a> para Windows, Linux y macOS pueden funcionar por HTTP si <i>Solo local</i> no está activado. En macOS también ocurre con Nightscout Menu Bar, Gluco Status y Gluco Tracker. <a href="https://github.com/someoneAnyone/Nightscouter">Nightscouter</a> y <a href="https://github.com/jonfawcett/LoopFollow">LoopFollow</a> para iOS, y <a href="https://github.com/nightscout/nightguard">Nightguard</a> para iOS y WatchOS, también pueden usarlo por HTTP.</p>
+<p>Si quieres acceder a Juggluco desde Internet, debes reenviar un puerto en tu módem o router. Consulta, por ejemplo, estas referencias o la ayuda de <i>Clon → Añadir conexión</i>.</p>
+<p>Otros seguidores de Nightscout solo funcionan con HTTPS. Para ellos Juggluco necesita una clave SSL verificada para el nombre de dominio con el que se accede al servidor. Si tu IP externa tiene un nombre de host asociado, puedes obtener gratis un certificado con <a href="https://certbot.eff.org/instructions">Certbot</a>. Tras instalar Certbot y redirigir el puerto 80 hacia tu equipo, podrás generar el certificado y luego indicar a Juggluco la <i>Private Key</i> y la <i>Full Chain</i>.</p>
+<p>Si lo único que quieres es enviar valores de glucosa de un Android a otro, normalmente es mejor usar la función <i>Clon</i> de Juggluco.</p>
+<h2>AAPS</h2>
+<p>AAPS puede usarse con Juggluco 7.3.0 y posteriores. En AAPS debes seleccionar <i>NSClientV3</i> y usar el <code>api_secret</code> configurado aquí como token de acceso de Nightscout. Desactiva <i>Connect to websockets</i>. En <i>Synchronization</i> desactiva todas las subidas y deja activadas solo las opciones para recibir o recuperar datos CGM, recibir insulina, recibir carbohidratos y aceptar tratamientos. Desactiva también todos los ajustes avanzados.</p>
+<p>Si insertas cantidades con hora anterior a tratamientos ya existentes, AAPS puede recibir tratamientos duplicados. Esto también puede ocurrir cuando se usa la interfaz v3 con un servidor Nightscout que ya recibe cargas v3 desde Juggluco.</p>
+<p>Las apps Android Diabetes:M, <a href="https://play.google.com/store/apps/details?id=se.cornixit.nightwatch">Nightwatch</a> y <a href="https://slingithub.github.io/CheckmateWeb">Checkmate</a>, así como Sugarmate para macOS/iOS y <a href="https://github.com/JohanDegraeve/xdripswift">Xdrip4ios</a>, Shuggah y Cockpit para iOS, necesitan SSL. En ellas debes indicar una URL del tipo <code><a href="https://hostname:puerto">https://hostname:puerto</a></code>, donde <code>hostname</code> es el nombre del host para el que tienes la clave verificada y <code>puerto</code> es el puerto que has redirigido al puerto configurado en Juggluco (por defecto, 17581).</p>
+<p>El servidor web también puede ejecutarse en un equipo Linux y recibir sus datos mediante una <a href="https://www.juggluco.nl/Juggluco/index.html#mirror">conexión clon</a> desde un Juggluco que tenga Bluetooth con el sensor: <a href="https://www.juggluco.nl/Juggluco/cmdline/index.html">https://www.juggluco.nl/Juggluco/cmdline</a> .</p>
+<h2>Opciones</h2>
+<p><b>api_secret:</b> indica a los seguidores que usen este valor en el encabezado <code>api-secret</code>. También funciona cuando lo usan como token Nightscout o como secreto codificado en SHA1. Desde Juggluco 7.1.15, además, el <code>api_secret</code> puede ser el primer elemento de la ruta de la URL del servidor Nightscout. Por ejemplo, si el secreto es <code>xyz</code> y la URL es <code><a href="http://host:puerto">http://host:puerto</a></code>, también puede usarse <code><a href="http://host:puerto/xyz">http://host:puerto/xyz</a></code>. En Owlet esta es la única manera de usarlo.</p>
+<p><b>Mostrar:</b> hace visible el <code>api_secret</code>.</p>
+<p><b>Puerto:</b> puerto de red usado para acceder a este servidor. El valor predeterminado es 17581.</p>
+<p><b>Guardar:</b> guarda los cambios en <code>api_secret</code> o en el puerto.</p>
+<p><b>Usar SSL:</b> usa HTTPS. Para ello debes proporcionar a Juggluco una <i>Private Key</i> y una <i>Full Chain</i> válidas para el nombre de host usado.</p>
+<p><b>Intervalo:</b> intervalo mínimo predeterminado, en segundos, entre valores de glucosa. Normalmente es 270 segundos. Una petición de red también puede modificarlo con la opción <code>interval=</code>.</p>
+<p><b>Activo:</b> activa el servidor web.</p>
+<p><b>Solo local:</b> el servidor HTTP solo es accesible desde <code>localhost</code>. Esto no afecta a HTTPS.</p>
+<p><b>Enviar cantidades:</b> permite recibir las cantidades introducidas por HTTP, por ejemplo en <code><a href="http://localhost:17580/api/v1/treatments?count=3">http://localhost:17580/api/v1/treatments?count=3</a></code>. Debes indicar para cada etiqueta qué debe hacerse con ella. Esto también se usa para enviar cantidades a Libreview. xDrip puede recibir tratamientos de Juggluco por esta interfaz, ya sea como <i>Nightscout Follower</i> o mediante <i>Nightscout Sync (REST-API)</i>, aunque Juggluco no admite subidas desde xDrip.</p>
+<p>Si <i>Solo local</i> no está activado, también puedes usar la IP doméstica del teléfono donde se ejecuta Juggluco. Si además has configurado el módem para redirigir el tráfico hacia ese puerto y has activado SSL con un certificado válido para un nombre de host accesible, podrás usar también ese nombre de host desde fuera de tu red.</p>
+<p>Si quieres subir tratamientos a <i>Diabetes:M</i>, puedes enviar los datos de Juggluco a Libreview, guardarlos allí con <i>Descargar datos de glucosa</i> e importarlos en Diabetes:M mediante <i>Data → Import from other sources → Freestyle</i>. Otra posibilidad es obtener una clave verificada para el nombre de host externo de tu teléfono y añadir en <i>Link external sources</i> una fuente <i>Nightscout</i> con la URL <code><a href="https://tuhost:puerto">https://tuhost:puerto</a></code>, donde <code>tuhost</code> es el nombre de host del teléfono con Juggluco para el que has recibido una clave verificada y <code>puerto</code> es el puerto indicado aquí. Parece que no se sincroniza automáticamente, así que en Diabetes:M tendrás que pulsar <i>Sync</i> manualmente.</p><p><b>Activo</b>: el servidor web está en ejecución.</p><p>Para más información sobre los comandos del servidor web Nightscout/xDrip implementados en Juggluco, consulta <a href="https://www.juggluco.nl/Juggluco/webserver.html">https://www.juggluco.nl/Juggluco/webserver.html</a>.</p><div class="link-fallbacks" style="display:none">
+<a href="https://www.makeuseof.com/tag/what-is-port-forwarding-and-how-can-it-help-me">https://www.makeuseof.com/tag/what-is-port-forwarding-and-how-can-it-help-me</a>
+<a href="https://www.juggluco.nl/Juggluco/phones/index.html">https://www.juggluco.nl/Juggluco/phones/index.html</a>
+<a href="https://www.freenom.com/">https://www.freenom.com</a>
+<a href="https://www.strato.nl/domeinnaam">https://www.strato.nl/domeinnaam</a>
+<a href="https://devpress.csdn.net/linux/62e7999e907d7d59d1c8cfd0.html">https://devpress.csdn.net/linux/62e7999e907d7d59d1c8cfd0.html</a>
+<a href="https://www.juggluco.nl/Juggluco/cmdline/index.html">https://www.juggluco.nl/Juggluco/cmdline</a>
+<a href="https://www.juggluco.nl/Juggluco/webserver.html#token">Nightscout-token</a>
+<a href="https://www.juggluco.nl/Juggluco/webserver.html">https://www.juggluco.nl/Juggluco/webserver.html</a>
+</div>
+</body>
+</html>

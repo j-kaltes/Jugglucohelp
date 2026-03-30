@@ -7,7 +7,7 @@
 <!--***********************************************************************************-->
 <script type="module" >
 import { setlang } from "https://www.juggluco.nl/Jugglucohelp/code/settrans.js";
-let translations=["be", "de", "fr", "it", "nl", "pl", "pt", "ru", "tr", "uk", "zh", ];
+let translations=["be", "de", "es", "fr", "it", "nl", "pl", "pt", "ru", "tr", "uk", "zh", ];
 setlang(translations,"sensorhelp.html");
 </script><!DOCTYPE html>
 <html>
@@ -19,7 +19,7 @@ setlang(translations,"sensorhelp.html");
 	<meta name="changed" content="2025-07-28T19:34:21.942586683"/>
 </head>
  <img src="sensor.jpg"  style="object-fit:contain; width:15cm;                   height:auto;">
-<body lang="en-US" dir="ltr"><p><a href="https://www.juggluco.nl/Jugglucohelp/be/sensorhelp.html">be</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/de/sensorhelp.html">de</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/fr/sensorhelp.html">fr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/it/sensorhelp.html">it</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/nl/sensorhelp.html">nl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pl/sensorhelp.html">pl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pt/sensorhelp.html">pt</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ru/sensorhelp.html">ru</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/tr/sensorhelp.html">tr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/uk/sensorhelp.html">uk</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/zh/sensorhelp.html">zh</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/sensorhelp.html?lang=en">en</a>&emsp;&emsp;</p><h1>Sensor</h1>
+<body lang="en-US" dir="ltr"><p><a href="https://www.juggluco.nl/Jugglucohelp/be/sensorhelp.html">be</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/de/sensorhelp.html">de</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/es/sensorhelp.html">es</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/fr/sensorhelp.html">fr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/it/sensorhelp.html">it</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/nl/sensorhelp.html">nl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pl/sensorhelp.html">pl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pt/sensorhelp.html">pt</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ru/sensorhelp.html">ru</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/tr/sensorhelp.html">tr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/uk/sensorhelp.html">uk</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/zh/sensorhelp.html">zh</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/sensorhelp.html?lang=en">en</a>&emsp;&emsp;</p><h1>Sensor</h1>
 <p style="border: none; padding: 0in">The spinner contains the name
 of the sensor. If Juggluco is using more than one sensor at the same
 time, you can select the sensor for which to show information.</p>
@@ -70,6 +70,7 @@ receive stream glucose values from this sensor, you only have to scan
 it again. If the sensor is directly connected with the watch, you
 need first to turn that off and then press on <i>Terminate</i> on the
 phone and then on <i>Sync</i> on the watch.</p>
+<p><b>Unpair</b>: Aidex X sensors remember the phone or watch they are paired with and refuse to bond to other devices. By pressing “Unpair” a command is sent to the sensor and if successful, it is again possibly for other phones or watches to connect to the sensor. When you use left menu→Watch→WearOS config → “Direct sensor …” to transfer the sensor from and to the watch, the unpairing will also be done, and you shouldn’t use “Unpair”.</p>
 <p><b>Reset</b>: Sibionics 2 only. When switching sensor in a
 transmitter this button should be pressed. Either when Juggluco is
 connected to the old sensor and/or when Juggluco is connect to the
@@ -98,10 +99,7 @@ and end times and last scan and stream times of sensor.</p>
 2 sensor via Low Energy Bluetooth, Bluetooth should be turned on.
 Before the sensor is scanned successfully by this app, nothing will
 happen. The sensor shouldn't be connected with FreeStyle reader or
-other applets on smartphones. Abbotts Librelink app's alarms should
-be turned off or the app stopped. Some Librelink apps seem to contact
-the sensor while alarms are turned off and can cause connection
-problems, so use '<i>force stop</i>' to be certain. If you have
+other applets on smartphones. Abbotts Libre app should uninstalled, disabled or force stopped. If you have
 started the sensor with Freestyle Reader and you can’t turn it off,
 you can prevent it from getting into contact with the sensor by
 putting the reader in a <a href="https://www.offgridweb.com/preparation/faraday-bags-testing-commercial-and-diy-wireless-signal-blockers/amp"><u>Faraday

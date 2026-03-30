@@ -1,0 +1,71 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+      <title></title>
+      <style>
+        body { font-family: sans-serif; line-height: 1.35; margin: 1.2em; }
+        img { object-fit: contain; width: 15cm; height: auto; max-width: 100%; display:block; margin: 0.8em 0; }
+        h1, h2, h3 { margin-top: 1em; }
+      </style>
+    </head>
+ <img src="wearosconfig.png"  style="object-fit:contain; width:15cm;                   height:auto;">
+    <body lang="es" dir="ltr">
+
+<h1>Wear OS</h1>
+<p><b>Introducir números (<a href="https://www.juggluco.nl/Jugglucohelp/es/newamount.html">Cantidad</a>) en el reloj:</b> permite introducir en el reloj cantidades de insulina, carbohidratos y actividad, en lugar de hacerlo en el teléfono. Si quieres escanear <a href="https://www.juggluco.nl/Juggluco/index.html#novopens">NovoPens</a> con el teléfono, no actives esta opción.</p>
+<p>Si has olvidado el teléfono, puedes hacer lo mismo desde el reloj mediante menú izquierdo → <i>Sensor</i> → <i>Cambiar</i>.</p>
+<p><b>Conexión directa sensor‑reloj:</b> determina si el reloj debe conectarse directamente al sensor. Solo puede cambiarse cuando teléfono y reloj están sincronizados. Usa <i>Clon → Sync</i> y <i>Reinit</i> en ambos dispositivos para sincronizarlos.</p>
+<p>Si olvidaste activar esta opción antes de salir solo con el reloj, puedes pulsar menú izquierdo → <i>Sensor</i> → <i>Cambiar</i> en el reloj para conectar el sensor directamente al reloj. Cuando el teléfono y el reloj vuelvan a quedar dentro del alcance Bluetooth, se enviará un mensaje al teléfono para que rompa su conexión con el sensor e invierta la dirección de la conexión clon.</p>
+<p><b>Inicializar app del reloj:</b> ya no hace falta pulsar este botón; ahora ocurre automáticamente.</p>
+<p><b>Valores predeterminados:</b> restablece los ajustes de conexión a sus valores por defecto. Incluye los ajustes que pueden modificarse en el menú izquierdo → <i>Clon</i> del reloj y en el menú central izquierdo → <i>Clon</i> del teléfono, por ejemplo <i>Solo activo</i> y <i>Scans</i>. Puede ser útil si esos valores se han cambiado por accidente. Si además reinstalas la versión del reloj o borras sus datos, también debes eliminar en el teléfono la conexión clon correspondiente.</p>
+<p>Existe una versión especial de Juggluco para relojes Wear OS. Cada sensor debe inicializarse escaneándolo primero con Juggluco en el smartphone Android conectado. La información del sensor se envía luego al reloj mediante una conexión TCP.</p>
+<p>Después hay dos posibilidades:</p>
+<ol>
+  <li>el sensor sigue conectado al smartphone y este reenvía al reloj cada valor de glucosa que recibe por Bluetooth;</li>
+  <li>Juggluco en el reloj Wear OS establece una conexión directa con el sensor. Por desgracia, esto no siempre funciona bien en todos los relojes, especialmente en algunos Samsung Galaxy Watch4.</li>
+</ol>
+<p>Se necesita un reloj Wear OS con Android 8 o superior. Para algunas imágenes, consulta <a href="https://www.juggluco.nl/JugglucoWearOS/index.html">https://www.juggluco.nl/JugglucoWearOS</a> .</p>
+<p>Para poner en marcha Juggluco en Wear OS:</p>
+<ol>
+  <li>asegúrate de que Bluetooth y Wi‑Fi estén activados y funcionen tanto en reloj como en smartphone;</li>
+  <li>comprueba que en el reloj haya suficiente almacenamiento y RAM libres;</li>
+  <li>asegúrate de que Juggluco en el smartphone funciona con el sensor y de que has escaneado el sensor varias veces, con <i>Sensor por Bluetooth</i> activado;</li>
+  <li>abre Juggluco para Wear OS en el reloj;</li>
+  <li>ve a menú izquierdo → <i>Relojes</i> → <i>Config. WearOS</i>. El reloj debe aparecer en la parte superior de la pantalla;</li>
+  <li>si todo va bien, se creará automáticamente una conexión TCP entre ambos Juggluco y se enviarán todos los datos del teléfono al reloj. Si la conexión no aparece en la pantalla <i>Clon</i>, vuelve a inicializar la app del reloj y revisa la conexión Bluetooth y la app complementaria del reloj;</li>
+  <li>cuando todo funciona, en la versión Wear OS de Juggluco se muestran los mismos datos que en el smartphone. Algunas opciones, como la unidad, los niveles de alarma y los recordatorios, también se copian al reloj, aunque los cambios posteriores tendrás que hacerlos en el propio reloj;</li>
+  <li>si el reloj puede mantener una conexión BLE directa con el sensor, puedes activar <i>Conexión directa sensor‑reloj</i>. Entonces se desactiva <i>Sensor por Bluetooth</i> en el teléfono y se activa en el reloj. Los valores de <i>Stream</i> se enviarán del reloj al teléfono.</li>
+</ol>
+<p>Si el reloj tiene una conexión Bluetooth directa con el sensor y envía los valores al smartphone, también deben enviarse al reloj los valores escaneados. Esto se configura automáticamente si has seguido las instrucciones anteriores. Los valores de <i>Stream</i> deben haberse enviado al smartphone antes de escanear; de lo contrario podría devolverse información antigua al reloj o no enviarse la información de autenticación cambiada.</p>
+<p>Los cambios en una conexión que ya funciona solo deberían hacerse cuando se hayan transferido todos los datos.</p>
+<h2>Conexión reloj‑teléfono</h2>
+<p>La conexión reloj‑teléfono es una adaptación de la conexión clon usada entre teléfonos o entre un teléfono y <a href="https://www.juggluco.nl/Juggluco/cmdline">Juggluco-server</a>. Tiene algunas particularidades:</p>
+<ul>
+  <li>la IP del otro extremo se determina automáticamente, así que normalmente no hace falta tocar directamente la conexión clon. Lo normal es usar menú izquierdo → <i>Relojes</i> → <i>Config. WearOS</i>. La excepción es cuando quieres introducir cantidades directamente en el reloj;</li>
+  <li>si la conexión Wi‑Fi entre teléfono y reloj no funciona, Juggluco cambia automáticamente a TCP sobre Bluetooth. Salvo durante la primera transferencia grande de datos, normalmente puedes dejar el Wi‑Fi del reloj desactivado.</li>
+</ul>
+<p>Si no se intercambian datos entre el Juggluco del teléfono y el del reloj, comprueba lo siguiente:</p>
+<ul>
+  <li>Bluetooth debe estar activado en ambos dispositivos;</li>
+  <li>la app complementaria del reloj debe indicar que el reloj está conectado al teléfono;</li>
+  <li>en el menú <i>Clon</i> del reloj y del teléfono debe haberse creado automáticamente una conexión con el identificador del reloj;</li>
+  <li>puede ayudar pulsar <i>Reinit</i> y/o <i>Sync</i> en el reloj, y a veces también en el teléfono;</li>
+  <li>apagar y encender Bluetooth, Wi‑Fi o los datos móviles puede ayudar;</li>
+  <li>a veces hace falta reiniciar el reloj o el teléfono;</li>
+  <li>si los ajustes de la conexión clon se han modificado por error, puedes restaurarlos desde menú izquierdo → <i>Relojes</i> → <i>Config. WearOS</i> → <i>Predeterminados</i> en el teléfono. Esto también hará que el sensor vuelva a conectarse al teléfono en lugar de al reloj y sobrescribirá los datos que solo estén en el reloj;</li>
+  <li>si nada más funciona, reinstala la versión del reloj y elimina la conexión del reloj en menú central izquierdo → <i>Clon</i>.</li>
+</ul>
+<p><b>Esfera:</b> Juggluco para Wear OS incluye una esfera que muestra el valor actual de glucosa junto a la hora y hasta cuatro complicaciones. Normalmente verás los valores más recientes cuando se despierte la pantalla. En modo <i>always on</i>, la pantalla solo se actualiza una vez por minuto. Las esferas programadas de este tipo no pueden usarse en WearOS 5.</p>
+<p><b>Complicaciones:</b> desde Juggluco 8.2.0 hay complicaciones de valor de glucosa, flecha y valor+flecha que también pueden usarse en WearOS 5 con esferas que acepten complicaciones de imagen pequeñas o grandes.</p>
+<p><b>Glucosa flotante:</b> la mayor flexibilidad la ofrece la opción <i>Glucosa flotante</i> en el teléfono. Muestra el valor de glucosa por encima de cualquier esfera u otra pantalla sin ocupar una ranura de complicación.</p>
+<p>Para más información, en la versión de Juggluco para el teléfono, ve a menú izquierdo → Ajustes → <a href="https://www.juggluco.nl/Jugglucohelp/es/floatingconfig.html">Glucosa flotante</a> → Ayuda.</p>
+<h2>Seguidores</h2>
+<p>Desde la app complementaria puedes volver a enviar los datos a otros dispositivos por internet, como se describe en menú central izquierdo→<a href="https://www.juggluco.nl/Jugglucohelp/es/connectionoverview.html">Clon</a>. También es posible conectar el reloj directamente a un servidor en internet y desde ahí a un teléfono seguidor, como se describe en: <a href="https://www.juggluco.nl/Juggluco/cmdline/watch">https://www.juggluco.nl/Juggluco/cmdline/watch</a></p>
+
+    
+<div class="link-fallbacks" style="display:none">
+<a href="https://www.juggluco.nl/JugglucoWearOS/index.html">https://www.juggluco.nl/JugglucoWearOS</a>
+</div>
+</body>
+    </html>

@@ -1,0 +1,38 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+      <title>Calibración</title>
+      <style>
+        body { font-family: sans-serif; line-height: 1.35; margin: 1.2em; }
+        img { object-fit: contain; width: 15cm; height: auto; max-width: 100%; display:block; margin: 0.8em 0; }
+        h1, h2, h3 { margin-top: 1em; }
+      </style>
+    </head>
+ <img src="calibration.png"  style="object-fit:contain; width:15cm;                   height:auto;">
+ 
+    <body lang="es" dir="ltr">
+
+<h1>Calibración</h1>
+<p>Juggluco 10.0.0 y versiones posteriores permiten calibrar sensores.</p>
+<p><b>Glucosa en sangre:</b> indica qué etiqueta corresponde a las mediciones capilares por punción. A partir de entonces, todos los valores de glucosa en sangre introducidos con esa etiqueta se usarán para la calibración, salvo cuando selecciones <i>Excluir</i> en menú central izquierdo → <i>Cantidad</i>. Cuando el cambio es demasiado grande en valor absoluto, se excluye automáticamente.</p>
+<p>Excluye solo los valores de glucosa que no sean adecuados para calibrar porque la glucosa no está estable. No excluyas los demás valores, aunque pienses que el sensor no necesita calibración. Si no quieres calibrar, desactiva <i>Activo</i> y desmarca menú central derecho → <i>Calibrado</i>. Así se usarán para la calibración todos los valores relevantes y no solo los que no coinciden.</p>
+<p>Cada nueva punción capilar que no se excluya genera una nueva calibración. Puedes ver las calibraciones creadas pulsando <i>Calibraciones</i> en la pantalla de información del sensor. Puedes abrir la información del sensor manteniendo pulsada la curva de glucosa o desde el menú izquierdo → <i>Sensor</i>. Las calibraciones son específicas de cada sensor.</p>
+<p>Si <i>Aplicar al pasado</i> no está activado, los valores de glucosa se calibran usando la última calibración anterior a cada valor. Si está activado, la última calibración se aplica a todos los valores de ese sensor.</p>
+<p><b>Cambiar pendiente:</b></p>
+<p>Si <i>Cambiar pendiente</i> no está activado, solo se suma o resta una cantidad fija a cada valor de glucosa del sensor para obtener el valor calibrado. La relación es:</p>
+<p><code>Glucosa calibrada = SensorGlucose + b</code></p>
+<p>El valor de <code>b</code> se determina mediante la calibración.</p>
+<p>Si <i>Cambiar pendiente</i> está activado, la relación pasa a ser:</p>
+<p><code>Glucosa calibrada = a * SensorGlucose + b</code></p>
+<p>donde <code>a</code> puede ser distinta de 1.</p>
+<p>Juggluco pondera las mediciones de glucosa según su antigüedad. El valor actual tiene peso 1 y los valores más antiguos tienen menos peso. La propia calibración también se pondera, de modo que una calibración antigua influye menos: con el tiempo, <code>a</code> tiende a 1 y <code>b</code> tiende a 0.</p>
+<p>El peso total de las mediciones capilares utilizadas determina cuánto peso recibe la calibración. Cuantas más mediciones recientes de glucosa en sangre haya, más se inclinan los valores calibrados hacia el mejor ajuste derivado de esas mediciones entre glucosa en sangre y glucosa CGM.</p>
+<p>Los valores de <i>History</i> no pueden calibrarse inmediatamente en el momento de la medición. Su calibración está programada para realizarse 21 minutos después en sensores Libre y 31 minutos después en sensores CareSens Air, aunque a menudo ocurre más tarde. La calibración de <i>Stream</i> también se repite más adelante para que pueda usarse el siguiente valor CGM.</p>
+<p><b>Activo:</b></p>
+<p>Cuando <i>Activo</i> está marcado, los valores de glucosa calibrados se usan para alarmas, broadcasts, Health Connect, el servidor web Nightscout/xDrip de Juggluco, los valores enviados a relojes y la glucosa flotante. A la derecha de Juggluco se muestra en grande el valor calibrado y, detrás, en pequeño, el valor no calibrado. Este valor nunca se usa para el envío a Libreview ni se aplica a escaneos o a valores históricos.</p>
+<p>La visualización de la curva de glucosa calibrada se activa en el menú central derecho, antes de <i>Stream</i> e <i>History</i>. Los valores brutos pueden activarse o desactivarse con la casilla situada después de <i>Stream</i> e <i>History</i>.</p>
+<p><b>Todos los valores:</b> en algunos valores no existe un valor calibrado. La curva de valores calibrados, activada con menú central derecho → <i>Calibrado</i>, no muestra nada si <i>Todos los valores</i> no está activado. Si sí está activado, se muestra el valor no calibrado. De esta forma puedes desactivar menú central derecho → <i>Stream</i> y seguir viendo todos los valores.</p>
+
+    </body>
+    </html>

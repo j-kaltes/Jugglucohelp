@@ -1,0 +1,42 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+      <title></title>
+      <style>
+        body { font-family: sans-serif; line-height: 1.35; margin: 1.2em; }
+        img { object-fit: contain; width: 15cm; height: auto; max-width: 100%; display:block; margin: 0.8em 0; }
+        h1, h2, h3 { margin-top: 1em; }
+      </style>
+    </head>
+    
+
+<img src="dataexchange.png" alt="Intercambio de datos"/>
+<body lang="es" dir="ltr"><h1>Intercambiar datos</h1>
+<h2><a href="https://play.google.com/store/apps/details?id=com.google.android.apps.healthdata">Health Connect</a></h2>
+<p>Envía valores de glucosa minuto a minuto a Health Connect. Después puedes dar a otras apps acceso a esos valores, por ejemplo a <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.fitness">Google Fit</a>. A su vez, otras apps pueden recibir datos desde Google Fit.</p>
+<h2>Libreview</h2>
+<p>Indica si los valores de glucosa <i>Stream</i> de FreeStyle Libre 2 se envían a Libreview. En los sensores FreeStyle Libre 3 puedes recuperar desde Libreview tu ID de cuenta. Toca esta opción para cambiar los ajustes.</p>
+<h2>Patched Libre</h2>
+<p>No hay nada malo en la difusión Patched Libre en sí misma, pero xDrip modifica los valores cuando los recibe por esa vía. Como los usuarios solo usan esta difusión de esa manera, pensé en eliminarla.</p>
+<p>xDrip no modifica los valores cuando recibe glucosa desde la difusión EverSense o cuando se usa el servidor web de Juggluco como fuente de datos Nightscout.</p>
+<h2>Difusión EverSense</h2>
+<p>Otra difusión de glucosa. Permite enviar a xDrip un valor de glucosa cada minuto. xDrip ignora casi todos porque se aferra a un único valor cada 5 minutos. Puedes eliminar esa limitación editando el código fuente de xDrip: cambia <code>4 * 60 * 1000</code> por <code>55 * 1000</code> en <code><a href="https://github.com/NightscoutFoundation/xDrip/blob/645e8b4cb8fa3ad7b280f598d6f2f6bdb84ce392/app/src/main/java/com/eveningoutpost/dexdrip/models/BgReading.java#L969">app/src/main/java/com/eveningoutpost/dexdrip/models/BgReading.java</a></code>, de forma que quede así:</p>
+<p><code>public static BgReading readingNearTimeStamp(long startTime) { long margin = (55 * 1000); return readingNearTimeStamp(startTime, margin); }</code></p>
+<p>La ventaja frente a Patched Libre es que xDrip no transforma los valores de glucosa de una forma difícil de seguir.</p>
+<h2>Difusión xDrip</h2>
+<p>Envía la misma difusión que xDrip activa con <i>Settings → Inter-app-settings → Broadcast locally</i>. Apps como AndroidAPS escuchan esta difusión. A diferencia de la difusión original de xDrip, que se emitía cada 5 minutos, Juggluco la emite cada minuto.</p>
+<h2>Difusión glucodata</h2>
+<p>Juggluco tiene su propia difusión de glucosa, <code>glucodata.Minute</code>. Consulta <a href="https://www.juggluco.nl/Juggluco/glucosebroadcast.html">https://www.juggluco.nl/Juggluco/glucosebroadcast.html</a> para más información.</p>
+<p>Marca las apps que deben recibir esa difusión.</p>
+<h2>Servidor web</h2>
+<p>Servidor web que puede usarse con relojes xDrip y algunas apps Nightscout. Antes se llamaba servidor web xDrip.</p>
+<h2>Cargador</h2>
+<p>Sube datos a un servidor Nightscout.</p>
+<h2><a href="https://www.juggluco.nl/Jugglucohelp/es/connectionoverview.html">Clon</a></h2>
+<p>Envía todos los datos por Internet a otra instancia de Juggluco y crea así un clon de Juggluco en otro dispositivo. Los datos existentes se sobrescriben.</p>
+<h2><a href="https://www.juggluco.nl/Jugglucohelp/es/helpexport.html">Exportar</a></h2>
+<p>Guarda los datos en un archivo.</p>
+
+    </body>
+    </html>

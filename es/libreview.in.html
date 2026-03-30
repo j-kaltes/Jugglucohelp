@@ -1,0 +1,40 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+      <title></title>
+      <style>
+        body { font-family: sans-serif; line-height: 1.35; margin: 1.2em; }
+        img { object-fit: contain; width: 15cm; height: auto; max-width: 100%; display:block; margin: 0.8em 0; }
+        h1, h2, h3 { margin-top: 1em; }
+      </style>
+    </head>
+<img src="libreview.png"  style="object-fit:contain; width:15cm;                   height:auto;margin: 1cm 1cm 1cm 1cm;">
+    <body lang="es" dir="ltr">
+
+<h1>Libreview</h1>
+<p>Juggluco puede enviar datos de glucosa y cantidades a Libreview. No necesita estar conectado continuamente a Internet para poder enviar todos los datos. Igual que la app LibreLink, envía a Libreview los datos de los últimos 89 días. Para sensores FreeStyle Libre 3 se usan los datos de <i>History</i> cada 5 minutos, de modo que también se envían los valores anteriores.</p>
+<p>Para usar este servicio debes crear una cuenta en <a href="https://libreview.com/">https://libreview.com</a> e introducir aquí el correo electrónico y la contraseña usados allí. No envíes varias veces al mismo tiempo datos del mismo periodo al mismo cuenta de Libreview, por ejemplo desde LibreLink y desde Juggluco, porque puede hacer que los datos se muestren mal o que se sumen cantidades. En Libreview puedes eliminar todos los datos de una fuente en <i>Ajustes de cuenta → Mis dispositivos</i>.</p>
+<p>Cada vez que sales de Juggluco, la app envía datos nuevos a Libreview si no lo ha hecho ya en los últimos 20 minutos. También puedes enviarlos manualmente pulsando <i>Enviar ahora</i>.</p>
+<p><b>RU:</b> debes marcar esta opción si usas <a href="https://libreview.ru/">https://libreview.ru</a> en lugar de <a href="https://libreview.com">https://libreview.com</a>. Esto solo es válido para sensores Libre 2. Los sensores Libre 3 solo pueden usarse con libreview.com, porque no existe una app Libre 3 rusa.</p>
+<p><b>Enviar cantidades:</b> también envía cantidades a Libreview.</p>
+<p><b>Directo:</b> envía valores de glucosa a Libreview inmediatamente cuando llegan de sensores Libre 2 y 3. Solo tiene sentido junto con LibreLinkUp. Para usarlo, debes añadir una conexión de LibreLinkUp a esta cuenta de Libreview desde una de las apps Libre de Abbott. A veces el valor no se ve enseguida porque LibreLinkUp no redibuja la pantalla de inmediato. Usar LibreLinkUp puede ser arriesgado si no miras con atención, porque al tocar el gráfico puede mostrar un valor antiguo en vez del actual.</p>
+<p><b>Spy Views:</b> cuando <i>Directo</i> también está activado, Juggluco comunica a Libreview si un valor fue visto o no, con algunas limitaciones para evitar mostrar demasiados círculos. Si esta opción está desactivada, Juggluco siempre dirá que no fue visto.</p>
+<p><b>Cambiar inicio:</b> reenvía datos desde una fecha y hora determinadas. Debes pulsarlo si quieres usar una cuenta de Libreview nueva.</p>
+<p>Encima de los botones inferiores se indica si el último envío a Libreview fue correcto o qué salió mal.</p>
+<p>Como los valores enviados a Libreview primero se promedian y después se analizan, aparecen pequeñas diferencias entre los valores mostrados en la pantalla de estadísticas de Juggluco y los de Libreview. Por ejemplo, Libreview puede indicar 100 % del tiempo activo mientras que Juggluco muestra 96,0 %. Algunos picos y valles también se suavizan, por lo que Libreview puede dar un tiempo en rango ligeramente mayor. Como los valores de <i>History</i> son menos extremos que la media de los valores vecinos, esta diferencia será mayor si Libreview se basa en valores escaneados.</p>
+<p>Juggluco puede estar conectado a varios sensores al mismo tiempo, mientras que LibreLink solo puede estar conectado a uno. Al enviar datos a Libreview, Juggluco intenta imitar ese comportamiento enviando primero los datos de un sensor y solo cuando ya no hay más datos de ese sensor empieza a enviar los del siguiente.</p>
+<p><b>Obtener ID de cuenta:</b></p>
+<p>Si quieres obtener el ID de tu cuenta de Libreview pero no deseas enviar valores de glucosa a Libreview, puedes introducir tu correo y contraseña y pulsar <i>Obtener ID de cuenta</i>. Si vuelves a esta pantalla al cabo de un tiempo, se mostrará ese ID de cuenta en lugar del 0. Obtener el ID de cuenta permite tomar el control de un sensor FreeStyle Libre 3 iniciado con la app Libre 3. Eso solo es posible si esa app Libre 3 ya había iniciado sesión en Libreview con ese correo electrónico. Si más tarde intentas asociar un ID de cuenta a la app Libre 3, ya no podrás escanear el sensor FreeStyle Libre 3.</p>
+<p>El número de ID de cuenta de Libreview también puede derivarse del UUID que aparece en la barra de direcciones de los informes de Libreview e introducirse manualmente en Juggluco.</p>
+<p>Los datos de sensores Sibionics y Dexcom no se envían a Libreview.</p>
+<p>Si quieres guardar datos en formato Libreview, también puedes hacerlo desde menú central izquierdo → <i><a href="https://www.juggluco.nl/Jugglucohelp/es/helpexport.html">Exportar</a></i> o mediante el <a href="https://www.juggluco.nl/Juggluco/webserver.html#libreview">servidor web</a> de Juggluco. Los valores de glucosa de sensores Dexcom y Sibionics también se incluyen allí.</p>
+
+    
+<div class="link-fallbacks" style="display:none">
+<a href="https://libreview.com/">https://libreview.com</a>
+<a href="https://libreview.ru/">https://libreview.ru</a>
+<a href="https://www.juggluco.nl/Juggluco/libre3/convertUUID.html">omgezet</a>
+</div>
+</body>
+    </html>

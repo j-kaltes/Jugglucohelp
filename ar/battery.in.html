@@ -1,9 +1,26 @@
-<!DOCTYPE html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><style>
-body{font-family:sans-serif;max-width:900px;margin:2rem auto;line-height:1.7;padding:0 1rem;direction:rtl;text-align:right;background:#fff;color:#111}
-h1,h2{line-height:1.3} ul{padding-right:1.2rem} code{background:#f5f5f5;padding:.1rem .3rem;border-radius:.25rem}
-a{color:#0645ad}
-</style><title>الحفاظ على عمل Juggluco</title></head><body><h1>الحفاظ على عمل Juggluco</h1>
-<p>قد تمنع تحسينات البطارية وقيود العمل في الخلفية Juggluco من استقبال القراءات أو الحفاظ على الاتصال بالمستشعر.</p>
-<p>إذا واجهت انقطاعات أو فقدان اتصال، عطّل تحسين البطارية لـ Juggluco واسمح له بالعمل في الخلفية باستمرار. يختلف مكان هذا الإعداد حسب الشركة المصنّعة للجهاز.</p>
-<p>عادةً ستحتاج إلى البحث عن إعدادات مثل: <b>البطارية</b>، <b>عدم التحسين</b>، <b>السماح بالنشاط في الخلفية</b>، أو <b>عدم تقييد التطبيق</b>.</p>
-</body></html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 24.2.7.2 (Linux)"/>
+	<meta name="created" content="2021-09-22T21:56:37.376793780"/>
+	<meta name="changed" content="2026-04-04T00:00:00"/>
+	<style type="text/css">
+		@page { size: 8.27in 11.69in; margin: 0.79in }
+		h1 { margin-bottom: 0.08in; background: transparent }
+		h1.western { font-family: "Liberation Serif", serif }
+		h1.cjk { font-family: "Noto Serif CJK SC" }
+		h1.ctl { font-family: "Mangal" }
+		p { margin-bottom: 0.1in; background: transparent }
+	</style>
+</head>
+<body lang="ar" dir="rtl"><h1 class="western">إبقاء Juggluco يعمل</h1>
+<p style="line-height: 100%; margin-bottom: 0in">عادةً، عندما لا يكون جهاز Android قيد الاستخدام، يدخل في وضع السكون لتقليل استهلاك الطاقة. إذا كنت تحتاج إلى استقبال قيم الغلوكوز بشكل موثوق عبر Bluetooth أو TCP/IP، فعليك إيقاف تحسينات البطارية الخاصة بـ Juggluco، وأحيانًا أيضًا إيقاف بعض تحسينات البطارية الخاصة بالجهاز كله، حتى لا يقوم Android بإيقاف Juggluco. تحتوي أجهزة كثيرة أيضًا على إعدادات إضافية لتحسين البطارية، والسماح بالنشاط في الخلفية، والتشغيل عند الإقلاع، ويجب تغييرها. يمكنك العثور عليها ضمن إعدادات Android ثم البطارية. انظر <a href="https://dontkillmyapp.com/">https://dontkillmyapp.com</a>.</p>
+<p style="line-height: 100%; margin-bottom: 0in">عند استخدام Watch 4 أو 5 أو 6 أو 7، يجب تفعيل <i>Allow background activity</i> في تطبيق Galaxy Wearable المرافق، من Watch settings-&gt;Apps-&gt;Juggluco. بالنسبة للساعات التي لا تحتوي على هذا الإعداد، يمكنك استخدام الأمر التالي من جهاز الكمبيوتر:</p>
+<p style="line-height: 100%; margin-bottom: 0in"><b>adb shell cmd appops set tk.glucodata RUN_IN_BACKGROUND allow</b></p>
+<p style="font-weight: normal; line-height: 100%; margin-bottom: 0in">لإيقاف وضع السكون:</p>
+<p style="line-height: 100%; margin-bottom: 0in"><b>adb shell dumpsys deviceidle disable</b></p>
+<p style="line-height: 100%; margin-bottom: 0in"><a href="https://www.juggluco.nl/JugglucoWearOS/install/adb.html">معلومات عن adb</a></p>
+</body>
+</html>

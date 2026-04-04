@@ -1,18 +1,127 @@
-<!DOCTYPE html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><style>
-body{font-family:sans-serif;max-width:900px;margin:2rem auto;line-height:1.7;padding:0 1rem;direction:rtl;text-align:right;background:#fff;color:#111}
-h1,h2{line-height:1.3} ul{padding-right:1.2rem} code{background:#f5f5f5;padding:.1rem .3rem;border-radius:.25rem}
-a{color:#0645ad}
-</style><title>الغلوكوز العائم</title></head><body><h1>الغلوكوز العائم</h1>
-<p>من هنا يمكنك ضبط حجم الخط وألوان المقدمة والخلفية لعنصر <b>الغلوكوز العائم</b>.</p>
-<ul>
-<li><b>قابل للمس</b>: عند تفعيله يمكنك تحريك العنصر بإصبعك أو تصغيره بالضغط المطوّل. وعند تعطيله تمر اللمسات إلى التطبيق الموجود أسفله.</li>
-<li><b>شفاف</b>: يجعل الخلفية غير مرئية.</li>
-<li><b>أعلى</b>: يعرض الغلوكوز العائم فوق Juggluco نفسه أيضًا.</li>
-<li><b>الوقت</b>: يعرض وقت قراءة الغلوكوز.</li>
-<li><b>مفعّل</b>: لتشغيل العنصر أو إيقافه.</li>
-</ul>
-<p>يمكن تشغيل الغلوكوز العائم أو إيقافه من <b>القائمة الوسطى اليسرى ← عائم</b>.</p>
-<p>للانتقال إلى Juggluco اضغط جهة السهم من العنصر. والضغط المزدوج على جهة القيمة يجعله غير قابل للمس. والضغط المطوّل على القيمة يصغّره، والضغط على النسخة الصغيرة يعيده إلى الحجم الأكبر.</p>
-<p>للعرض فوق التطبيقات الأخرى يحتاج Juggluco إلى إذن خاص. في Wear OS وبعض الأجهزة يمكن منحه عبر:</p>
-<p><code>adb shell pm grant tk.glucodata android.permission.SYSTEM_ALERT_WINDOW</code></p>
-</body></html>
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+<title>Floating Glucose</title>
+<base target="_blank"/>
+<meta content="LibreOffice 7.6.4.1 (Linux)" name="generator"/>
+<meta content="00:00:00" name="created"/>
+<meta content="2024-02-29T12:19:09.186429930" name="changed"/>
+<meta content="00:00:00" name="created"/>
+<style type="text/css">
+		@page { size: 8.27in 11.69in; margin-left: 0.79in; margin-right: 0.39in; margin-top: 0.39in; margin-bottom: 0.39in }
+		h1 { margin-bottom: 0.08in; background: transparent }
+		h1.western { font-family: "Liberation Serif", serif }
+		h1.cjk { font-family: "Droid Sans Fallback" }
+		h1.ctl { font-family: "Droid Sans Devanagari" }
+		p { margin-bottom: 0.1in; background: transparent }
+	</style>
+<base href="https://www.juggluco.nl/Jugglucohelp/mgdL/" id="baseurl" target="_blank"/>
+<script type="text/javascript"> 
+function getunitarg(){ 
+	const params = new URLSearchParams(document.location.search);
+	const unit = params.get("unit");
+	if(unit===null)	 {
+		return 0;
+		}
+	if(unit == "mg/dL") { 
+		return 2;
+		} 
+	else { 
+		if(unit=="mmol/L") {
+		   return 1;
+		   }
+	 	}
+
+	return 0;
+    } 
+let mmol=[
+"AM",
+"AU",
+"BA",
+"BG",
+"BW",
+"BY",
+"CA",
+"CH",
+"CN",
+"CZ",
+"DK",
+"EE",
+"FI",
+"GB",
+"HK",
+"HR",
+"HU",
+"IE",
+"IS",
+"KW",
+"KZ",
+"LT",
+"LV",
+"MT",
+"MY",
+"NA",
+"NL",
+"NO",
+"NZ",
+"RS",
+"RU",
+"SE",
+"SI",
+"SK",
+"UA",
+"ZA"];
+
+
+
+
+
+
+function getunit() {
+	var unit=getunitarg();
+	if(unit!=0) {
+		return unit;
+		}
+
+	var userLang = navigator.language || navigator.userLanguage;
+	var  co=userLang.toUpperCase();
+
+	for(const element of mmol) {
+	  if(co.includes(element)) {
+		return 1;
+		}
+	   }
+
+	return 2;
+	 }
+
+
+
+function setbaseurl(){ 
+	if(getunit()!=1) {
+		document.getElementById("baseurl").href = "https://www.juggluco.nl/Jugglucohelp/mgdL/"; 
+		} 
+	else { 
+	       document.getElementById("baseurl").href = "https://www.juggluco.nl/Jugglucohelp/";  
+		}
+   	} 
+   setbaseurl();
+   </script>
+</head>
+<img src="floatingglucoseconfig.png" style="object-fit:contain; width:15cm;                   height:auto;"/>
+<body dir="rtl" lang="ar"><h1 class="western">الغلوكوز العائم</h1>
+<p>هنا يمكنك ضبط حجم الخط ولوني المقدمة والخلفية للغلوكوز العائم.</p>
+<p>قابل للمس : عند تفعيله يمكنك تحريك الغلوكوز العائم بإصبعك وتصغيره بالضغط المطوّل عليه من دون تحريك. وعند إلغاء هذا الخيار تذهب اللمسات إلى النافذة الموجودة أسفل الغلوكوز العائم، بحيث يمكنك استخدام التطبيق الموجود تحته. ويمكنك أيضاً جعل الغلوكوز العائم غير قابل للمس بالنقر المزدوج عليه.</p>
+<p>شفاف : يجعل الخلفية غير مرئية.</p>
+<p>Above : يظهر الغلوكوز العائم أيضاً فوق Juggluco.</p>
+<p>الوقت : الطابع الزمني لقيمة الغلوكوز.</p>
+<p>نشط : لتشغيله.</p>
+<p>يمكنك تشغيل الغلوكوز العائم وإيقافه من القائمة الوسطى اليسرى ← Float.</p>
+<p>يمكنك الانتقال إلى Juggluco بالنقر على جانب السهم من الغلوكوز العائم. يؤدي النقر المزدوج على جانب قيمة الغلوكوز إلى جعل الغلوكوز العائم غير قابل للمس. ويؤدي الضغط المطوّل على جانب قيمة الغلوكوز إلى عرض قيمة صغيرة فقط حتى تتمكن من التفاعل مع ما تحته، ويعيد النقر على العرض الصغير تكبيره. أما السحب أثناء لمس جانب قيمة الغلوكوز فيحرّك الغلوكوز العائم.</p>
+<p>لكي يُعرض فوق التطبيقات الأخرى، يحتاج Juggluco إلى إذن خاص. في WearOS وكذلك Android Automotive تحتاج إلى استخدام adb لمنح هذا الإذن:</p>
+<p style="margin-bottom: 0in">adb shell pm grant tk.glucodata android.permission.SYSTEM_ALERT_WINDOW</p>
+<p style="background: transparent">في بعض الساعات (مثل TicWatch Pro) يمكنك أيضاً السماح بذلك من خلال: إعدادات Android/WearOS → التطبيقات والإشعارات → معلومات التطبيق → Juggluco → متقدم → العرض فوق التطبيقات الأخرى.</p>
+</body>
+</html>

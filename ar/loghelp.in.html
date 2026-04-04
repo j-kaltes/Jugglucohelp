@@ -1,13 +1,130 @@
-<!DOCTYPE html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><style>
-body{font-family:sans-serif;max-width:900px;margin:2rem auto;line-height:1.7;padding:0 1rem;direction:rtl;text-align:right;background:#fff;color:#111}
-h1,h2{line-height:1.3} ul{padding-right:1.2rem} code{background:#f5f5f5;padding:.1rem .3rem;border-radius:.25rem}
-a{color:#0645ad}
-</style><title>السجل</title></head><body><h1>السجل</h1>
-<p>هذا إصدار تسجيل من Juggluco. يمكن إنشاء ملفات سجل في:</p>
-<p><code>/data/data/tk.glucodata/files/logs</code></p>
-<ul>
-<li><b>trace.log</b>: رسائل السجل التي ينشئها Juggluco نفسه.</li>
-<li><b>logcat.txt</b>: رسائل Android المتعلقة بـ Juggluco.</li>
-</ul>
-<p>يمكنك حفظ الملفات أو حذفها بشكل منفصل. وإذا واجهت مشكلة، فيمكنك إرسال الملفين مع وصف المشكلة إلى: <a href="mailto:jaapkorthalsaltes@gmail.com">jaapkorthalsaltes@gmail.com</a>.</p>
-</body></html>
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+<title>Log</title>
+<meta content="LibreOffice 24.2.7.2 (Linux)" name="generator"/>
+<meta content="2025-01-25T11:29:43.685909734" name="created"/>
+<meta content="2025-01-26T21:07:11.710308617" name="changed"/>
+<style type="text/css">
+		@page { size: 8.27in 11.69in; margin: 0.79in }
+		p { line-height: 115%; margin-bottom: 0.1in; background: transparent }
+	</style> <base href="https://www.juggluco.nl/Jugglucohelp/mgdL/" id="baseurl" target="_blank"/>
+<script type="text/javascript"> 
+var unitstr='mg/dL';
+function getunitarg(){ 
+	const params = new URLSearchParams(document.location.search);
+	const unit = params.get("unit");
+	if(unit===null)	 {
+		return 0;
+		}
+	if(unit == "mg/dL") { 
+		return 2;
+		} 
+	else { 
+		if(unit=="mmol/L") {
+		   return 1;
+		   }
+	 	}
+
+	return 0;
+    } 
+let mmol=[
+"AM",
+"AU",
+"BA",
+"BG",
+"BW",
+"BY",
+"CA",
+"CH",
+"CN",
+"CZ",
+"DK",
+"EE",
+"FI",
+"GB",
+"HK",
+"HR",
+"HU",
+"IE",
+"IS",
+"KW",
+"KZ",
+"LT",
+"LV",
+"MT",
+"MY",
+"NA",
+"NL",
+"NO",
+"NZ",
+"RS",
+"RU",
+"SE",
+"SI",
+"SK",
+"UA",
+"ZA"];
+
+
+
+
+
+
+function getunit() {
+	var unit=getunitarg();
+	if(unit!=0) {
+		return unit;
+		}
+
+	var userLang = navigator.language || navigator.userLanguage;
+	var  co=userLang.toUpperCase();
+
+	for(const element of mmol) {
+	  if(co.includes(element)) {
+		return 1;
+		}
+	   }
+
+	return 2;
+	 }
+
+
+
+function setbaseurl(){ 
+	if(getunit()!=1) {
+		document.getElementById("baseurl").href = "https://www.juggluco.nl/Jugglucohelp/mgdL/"; 
+		unitstr='mg/dL';
+		} 
+	else { 
+	       document.getElementById("baseurl").href = "https://www.juggluco.nl/Jugglucohelp/";  
+		unitstr='mmol/L';
+		}
+   	} 
+   setbaseurl();
+   </script>
+</head>
+<img src="loghelp.png" style="object-fit:contain; width:15cm;                   height:auto;"/>
+<body dir="rtl" lang="ar"><h1>السجل</h1>
+<p style="line-height: 100%; margin-bottom: 0in">هذه نسخة من Juggluco مخصّصة للتسجيل. يمكن إنشاء ملفات السجل في /data/data/tk.glucodata/files/logs</p>
+<p style="line-height: 100%; margin-bottom: 0in">يحتوي trace.log على رسائل السجل التي ينشئها Juggluco نفسه. ويحتوي logcat.txt على رسائل السجل التي ينشئها Android فيما يتعلق بـ Juggluco. ويمكنك حذفهما أو حفظهما كلٌّ على حدة.</p>
+<p style="line-height: 100%; margin-bottom: 0in">إذا واجهت مشكلات، فيمكنك إرسال trace.log وlogcat.txt إلى jaapkorthalsaltes@gmail.com بالإضافة إلى وصف للمشكلات التي واجهتها خلال الفترة التي أُنشئت فيها هذه الملفات.</p>
+<p style="line-height: 100%; margin-bottom: 0in">حجم الملف : حجم ملف السجل.</p>
+<p style="line-height: 100%; margin-bottom: 0in">Logging : تشغيل التسجيل في trace.log أو logcat.</p>
+<p style="line-height: 100%; margin-bottom: 0in">Delete : حذف ملف السجل.</p>
+<p style="line-height: 100%; margin-bottom: 0in">Save : حفظ ملف السجل في مكان يمكن للتطبيقات الأخرى الوصول إليه.</p>
+<p style="line-height: 100%; margin-bottom: 0in">Close : إغلاق هذا العرض.</p>
+<p style="line-height: 100%; margin-bottom: 0in"><br/>
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><br/>
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><br/>
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><br/>
+</p>
+<p style="line-height: 100%; margin-bottom: 0in"><br/>
+</p>
+</body>
+</html>

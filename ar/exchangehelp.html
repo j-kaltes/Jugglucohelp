@@ -25,8 +25,8 @@
 <p>أرسل قيم الغلوكوز الدقيقة كل دقيقة إلى <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.healthdata">Health Connect</a>. ويمكنك منح التطبيقات الأخرى حق الوصول إلى قيم الغلوكوز هذه، مثل <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.fitness">Google Fit</a>. ويمكن لتطبيقات أخرى بعد ذلك الوصول إلى البيانات الموجودة في Google Fit.</p>
 <h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/libreview.html">Libreview</a></h2>
 <p>اتصل بـ Libreview لإرسال قيم الغلوكوز والكميات الخاصة بـ Freestyle Libre 2 و3 إلى Libreview، وكذلك للحصول على معرّف الحساب المستخدم أثناء تفعيل مستشعر Freestyle Libre 3. المس هذا الخيار لتغيير الإعدادات.</p>
-<h2 class="western">Patched Libre</h2>
-<p>لا توجد مشكلة في بث Patched Libre نفسه، لكن xDrip يغيّر القيم عندما يستقبلها من هذا البث. ولأن المستخدمين يستعملون هذا البث بهذه الطريقة فقط، فقد كنت أنوي إزالة هذا البث.</p>
+<h2 class="western">Libre المعدّل</h2>
+<p>لا توجد مشكلة في بث Libre المعدّل نفسه، لكن xDrip يغيّر القيم عندما يستقبلها من هذا البث. ولأن المستخدمين يستعملون هذا البث بهذه الطريقة فقط، فقد كنت أنوي إزالة هذا البث.</p>
 <p>لا يغيّر xDrip القيم عندما يستقبل قيم الغلوكوز من بث EverSense أو عندما يُستخدم خادم الويب في Juggluco كمصدر بيانات Nightscout.</p>
 <h2 class="western"><a name="eversense"></a>EverSense</h2>
 <p>بث آخر للغلوكوز. ويمكن استخدامه لإرسال قيمة غلوكوز كل دقيقة إلى xDrip. وفي xDrip يجب تعيين “<i>640G/EverSense</i>” كمصدر بيانات العتاد <i>Hardware Data Source</i>.</p>
@@ -38,19 +38,19 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;long margin = (55 * 1000);<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return readingNearTimeStamp(startTime, margin);<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</p>
-<p>الميزة مقارنة ببث Patched Libre هي أن xDrip لا يعالج قيم الغلوكوز بطريقة غير محددة.</p>
-<h2 class="western">xDrip broadcast</h2>
+<p>الميزة مقارنة ببث Libre المعدّل هي أن xDrip لا يعالج قيم الغلوكوز بطريقة غير محددة.</p>
+<h2 class="western">بث xDrip</h2>
 <p>يرسل البث نفسه الذي يمكن تشغيله في xDrip عبر
 &quot;<i>Settings-&gt;Inter-app settings-&gt;Broadcast locally</i>&quot;.
 تستمع إليه تطبيقات مثل AndroidAPS. وعلى خلاف بث xDrip الأصلي الذي كان يُرسل كل 5 دقائق، فإن Juggluco يرسل هذا البث كل دقيقة.</p>
-<h2 class="western">Glucodata broadcast</h2>
-<p>بث جديد له الوظيفة نفسها التي يؤديها xDrip broadcast. ويمكنك العثور هنا على تطبيق مثال بسيط يكتب قيم الغلوكوز المستقبلة في logcat: <a href="https://www.juggluco.nl/Juggluco/glucosebroadcast.html">Glucose broadcasts</a>. وإذا اخترت Juggluco كمصدر بيانات في G-Watch، فيجب تشغيل هذا البث.</p>
+<h2 class="western">بث Glucodata</h2>
+<p>بث جديد له الوظيفة نفسها التي يؤديها بث xDrip. ويمكنك العثور هنا على تطبيق مثال بسيط يكتب قيم الغلوكوز المستقبلة في logcat: <a href="https://www.juggluco.nl/Juggluco/glucosebroadcast.html">Glucose broadcasts</a>. وإذا اخترت Juggluco كمصدر بيانات في G-Watch، فيجب تشغيل هذا البث.</p>
 <p>ستُعرض التطبيقات التي تستمع إلى هذا البث. حدّد التطبيقات التي تريد إرسال هذا البث إليها.</p>
 <h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/Nightscouthelp.html">خادم الويب</a></h2>
 <p>خادم ويب يمكن استخدامه مع ساعات xDrip وبعض تطبيقات Nightscout. وكان يُسمى سابقًا xDrip webserver.</p>
 <h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/NightPost.html">الرافِع</a></h2>
 <p>يرفع البيانات إلى خادم Nightscout.</p>
-<h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/connectionoverview.html">Mirror/Clone</a></h2>
+<h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/connectionoverview.html">استنساخ</a></h2>
 <p lang="ar" style="line-height: 100%; margin-bottom: 0in">يرسل جميع البيانات عبر اتصال بالإنترنت إلى نسخة أخرى من Juggluco، وبذلك ينشئ نسخة مطابقة من Juggluco على جهاز آخر. وسيُستبدل ما كان موجودًا من بيانات.</p>
 <h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/helpexport.html">تصدير</a></h2>
 <p>يحفظ البيانات في ملف.</p>

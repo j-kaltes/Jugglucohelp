@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="uz"><head><meta charset="utf-8"/><title>Kalibrlash</title></head>
+<img alt="Calibration Settings" src="CalibrationSettings.png" style="object-fit:contain; width:15cm;                   height:auto;"/>
+<body><h1>Kalibrlash</h1>
+<p>Juggluco 10.0.0 va undan yuqori versiyalar sensorlarni kalibrlash imkonini beradi.</p>
+<p><b>Qon glyukozasi</b>: qaysi yorliq barmoqdan o‘lchangan qon glyukozasi o‘lchovlari uchun ishlatilishini ko‘rsating. Shundan keyin shu yorliq ostida kiritilgan barcha qon glyukozasi qiymatlari kalibrlash uchun ishlatiladi. Faqat chap o‘rta menyu→<b><a href="https://www.juggluco.nl/Jugglucohelp/newamount.html">Yangi miqdor</a></b> bo‘limida <b>Chiqarib tashlash</b> belgilanganlari bundan mustasno. Agar o‘zgarish tezligi juda katta bo‘lsa, qiymat avtomatik chiqarib tashlanadi.</p>
+<p>Faqat glyukoza darajasi barqaror bo‘lmagani uchun kalibrlashga yaramaydigan qiymatlarnigina chiqarib tashlash kerak. Boshqa barcha qiymatlar chiqarib tashlanmasligi kerak, hatto siz sensorni kalibrlash shart emas deb o‘ylasangiz ham. Agar kalibrlashni xohlamasangiz, <b>Faol</b> ni o‘chirib qo‘ying va o‘ng o‘rta menyuda Oqim, Skanlar va Tarix oldidagi ✓ belgilari olib tashlanib, ularning orqasidagi [x] belgilarini yoqing. Shunda faqat mos kelmaydiganlar emas, balki kalibrlash uchun mos barcha glyukoza qiymatlari ishlatiladi.</p>
+<p>Chiqarib tashlanmagan har bir yangi barmoq o‘lchovi yangi kalibrlashni beradi. Bajarilgan <a href="https://www.juggluco.nl/Jugglucohelp/calibrationslist.html">kalibrlashlar</a>ni sensor ma’lumoti ekranidagi <b>Kalibrlashlar</b> tugmasi orqali ko‘rish mumkin. Sensor ma’lumoti ekraniga glyukoza egri chizig‘ini uzoq bosib yoki chap menyu→Sensor orqali o‘tasiz. Kalibrlashlar ma’lum bir sensorga tegishli bo‘ladi.</p>
+<p>Agar <b>O‘tmishga qo‘llash</b> yoqilmagan bo‘lsa, glyukoza qiymatlari shu qiymatdan oldingi oxirgi kalibrlash bilan tuzatiladi. Agar bu yoqilgan bo‘lsa, oxirgi kalibrlash shu sensorning barcha glyukoza qiymatlariga qo‘llanadi.</p>
+<h2>Qiyalikni o‘zgartirish</h2>
+<p>Agar <b>Qiyalikni o‘zgartirish</b> yoqilmagan bo‘lsa, kalibrlangan glyukozani olish uchun har bir sensor qiymatiga faqat ma’lum miqdor qo‘shiladi yoki ayiriladi:</p>
+<p><b>Kalibrlangan glyukoza = Sensor glyukozasi + b</b></p>
+<p><b>b</b> qiymati kalibrlash orqali aniqlanadi. Bu rejimda juda yuqori glyukoza qiymatlari bilan kalibrlash tavsiya etilmaydi, chunki hisoblangan <b>b</b> past qiymatlar uchun haddan tashqari katta bo‘lishi mumkin.</p>
+<p>Agar <b>Qiyalikni o‘zgartirish</b> yoqilgan bo‘lsa, munosabat quyidagicha bo‘ladi:</p>
+<p><b>Kalibrlangan glyukoza = a × Sensor glyukozasi + b</b></p>
+<p>Bu holatda <b>a</b> 1 dan farq qilishi mumkin. Turli diapazondagi kalibrlashlar muhim. Masalan, barcha qon glyukozasi o‘lchovlari 90 mg/dL (5 mmol/L) atrofida olingan bo‘lsa, lekin sensor qiymatlari 54 dan 180 mg/dL gacha (3 dan 10 mmol/L gacha) yoyilgan bo‘lsa, <b>a</b> ni ishonchli aniqlash uchun bu yetarli darajada turli emas.</p>
+<p>Juggluco glyukoza o‘lchovlarini ularning yangiligiga qarab tortadi: joriy qiymatning og‘irligi 1 ga teng, eski qiymatlarning og‘irligi esa kichikroq bo‘ladi. Kalibrlashning o‘zi ham shunday tortiladi, shuning uchun vaqt o‘tishi bilan eski kalibrlashning ta’siri kamayadi: <b>a</b> 1 ga, <b>b</b> esa 0 ga yaqinlashadi.</p>
+<p>Ishlatilgan qon glyukozasi o‘lchovlarining umumiy og‘irligi kalibrlashga qanchalik katta ta’sir berilishini belgilaydi. Ko‘proq va yangiroq qon glyukozasi qiymatlari bo‘lsa, kalibrlangan glyukoza qiymatlari qon glyukozasi bilan CGM glyukozasi o‘rtasidagi eng mos keluvchi chiziqqa ko‘proq yaqinlashadi.</p>
+<p>Tarix qiymatlarini o‘sha zahoti kalibrlab bo‘lmaydi. Libre sensorlari uchun qiymatlarni kalibrlash 21 daqiqa, CareSense Air uchun 31 daqiqadan keyin bajarilishi rejalashtirilgan, lekin ko‘pincha undan keyinroq bo‘ladi. Oqim kalibrlashi keyinroq yana takrorlanadi, shunda keyingi CGM ham ishlatilishi mumkin bo‘ladi.</p>
+<p><b>Faol</b>: bu yoqilgan bo‘lsa, kalibrlangan qiymatlar signallar, broadcast’lar, Health Connect, Juggluco ichidagi Nightscout/xDrip veb serveri, soatlarga yuboriladigan glyukoza va suzuvchi glyukoza uchun ishlatiladi. Juggluco ning o‘ng tomonida kalibrlangan qiymat katta shrift bilan, kalibrlanmagan qiymat esa undan keyin kichik shrift bilan ko‘rsatiladi. U hech qachon Libreview’ga yuborishda ishlatilmaydi.</p>
+<p>Kalibrlangan glyukoza egri chizig‘i o‘ng o‘rta menyuda <b>Oqim</b> va <b>Tarix</b> oldidagi belgilar orqali yoqiladi. Xom qiymatlar esa <b>Oqim</b> va <b>Tarix</b> dan keyingi belgilash qutilari bilan yoqiladi yoki o‘chiriladi.</p>
+<p><b>Barcha qiymatlar</b>: ayrim nuqtalar uchun kalibrlangan qiymat bo‘lmaydi. Agar bu belgi qo‘yilmagan bo‘lsa, kalibrlangan egri chiziq bunday joylarda hech narsa ko‘rsatmaydi. Agar belgilansa, u joylarda kalibrlanmagan qiymat ko‘rsatiladi. Shu yo‘l bilan o‘ng o‘rta menyuda xom qiymatlarni o‘chirib ham barcha qiymatlarni ko‘rish mumkin.</p>
+
+
+</body></html>

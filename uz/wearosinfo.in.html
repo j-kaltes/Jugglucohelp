@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="uz"><head><meta charset="utf-8"/><title>Wear OS</title></head><img src="wearosconfig.png" style="object-fit:contain; width:15cm;                   height:auto;"/>
+<body>
+<h1>Wear OS</h1>
+<h2>Soatda <a href="https://www.juggluco.nl/Jugglucohelp/newamount.html">miqdor</a> kiritish</h2>
+<p><b>Soatda miqdor kiritish</b> yoqilgan bo‘lsa, insulin, uglevod va faollik uchun miqdorlarni telefonda emas, soatdagi ikkinchi menyu→<b>Miqdorlar</b> orqali kiritasiz. Agar NovoPen’ni telefon bilan skan qilmoqchi bo‘lsangiz, bu parametrni yoqmaslik kerak. Telefon yoningizda bo‘lmasa, soatda chap menyu→Sensor→<b>Almashtirish</b> orqali ham shu ishni qilishingiz mumkin.</p>
+<h2>Sensor–soat to‘g‘ridan-to‘g‘ri ulanishi</h2>
+<p>Bu parametr soat sensor bilan to‘g‘ridan-to‘g‘ri ulanadimi-yo‘qmi, shuni belgilaydi. Uni faqat telefon va soat sinxron holatda bo‘lganda o‘zgartirish mumkin. Buning uchun telefon va soatda <a href="https://www.juggluco.nl/Jugglucohelp/connectionoverview.html">Mirror</a>→<b>Sinx</b> va <b>Qayta</b> dan foydalaning. Agar uydan faqat soat bilan chiqib ketishdan oldin bu parametrni yoqishni unutgan bo‘lsangiz, soatda chap menyu→Sensor→<b>Almashtirish</b> ni bosib sensorni to‘g‘ridan-to‘g‘ri soatga ulang. Telefon va soat yana Bluetooth diapazoniga qaytganda, telefon sensorga ulanmasligi va mirror yo‘nalishi teskari o‘girilishi haqida xabar yuboriladi.</p>
+<h2>Soat ilovasini ishga tushirish</h2>
+<p>Endi bu tugmani bosish shart emas. U avtomatik bajariladi.</p>
+<h2>Standartlar</h2>
+<p>Bu ulanish sozlamalarini standart holatga qaytaradi. Gap soatdagi chap menyu→Mirror va telefondagi chap o‘rta menyu→Mirror bo‘limlarida o‘zgartiriladigan parametrlar haqida ketmoqda, masalan <b>Faqat faol</b> yoki <b>Skanlar</b>. Agar parametrlar dushdagi suv tegishi yoki uyqu paytida tasodifan o‘zgarib ketgan bo‘lsa, shu tugmadan foydalanish mumkin. Agar soat versiyasini qayta o‘rnatgan yoki ma’lumotni tozalagan bo‘lsangiz, telefon tarafidagi mirror ulanishini ham olib tashlash kerak.</p>
+<h2>Wear OS’da Juggluco qanday ishlaydi</h2>
+<p>Juggluco’ning maxsus versiyasi Wear OS soatda to‘g‘ridan-to‘g‘ri ishlay oladi. Sensorni skan qilish uchun NFC’li Android telefon kerak bo‘ladi; keyin ma’lumot TCP orqali Wear OS soatga yuboriladi. Shundan keyin ikkita yo‘l bor:</p>
+<ul>
+<li>sensor telefon bilan ulanib qoladi va telefon Bluetooth orqali olgan har bir glyukoza qiymatini TCP orqali soatga yuboradi;</li>
+<li>yoki sensorni to‘g‘ridan-to‘g‘ri Wear OS soatga ulash mumkin. Buning uchun Bluetooth’i yaxshi ishlaydigan Wear OS soat kerak.</li>
+</ul>
+<p>Rasmlar: <a href="https://www.juggluco.nl/JugglucoWearOS">https://www.juggluco.nl/JugglucoWearOS</a></p>
+<h2>Ishga tushirish tartibi</h2>
+<ol>
+<li>Telefon va soatda Bluetooth ham, Wi‑Fi ham ishlayotganiga ishonch hosil qiling.</li>
+<li>Soatda yetarli bo‘sh joy va RAM borligini tekshiring. Muhim paytda xotira tugab qolsa, Juggluco’ni qayta <a href="https://www.juggluco.nl/JugglucoWearOS/install/adb.html">o‘rnatish</a> kerak bo‘lishi mumkin.</li>
+<li>Avval telefon versiyasidagi Juggluco’ni sensor bilan ishlaydigan holatga keltiring. <b>Bluetooth orqali sensor</b> yoqilgan holda sensorni bir necha marta skan qilish kerak bo‘lishi mumkin.</li>
+<li>Wear OS versiyasini soatga o‘rnating va ishga tushiring.</li>
+<li>Telefonda chap menyu→Soat→<b><a href="https://www.juggluco.nl/Jugglucohelp/wearosinfo.html">Wear OS sozlash</a></b> bo‘limiga o‘ting. Spinnerda soatingiz ko‘rinishi kerak. <b>Soat ilovasini ishga tushirish</b> ni bosing.</li>
+</ol>
+<p>Hammasi to‘g‘ri bo‘lsa, telefon va soatda TCP ulanish sozlanadi va telefondagi barcha ma’lumotlar soatga yuboriladi. Agar oldin ko‘p ma’lumot to‘plangan bo‘lsa, bu ancha vaqt olishi mumkin. Ulanish to‘g‘ri tuzilganini telefonning chap o‘rta menyu→Mirror va soatning chap menyu→Mirror oynalarida tekshirishingiz mumkin. Soat uchun spinnerda ko‘ringan identifikator bilan bir xil identifikatorli ulanish ko‘rinishi kerak; soat tarafida telefonning IP manzili ham bo‘lishi kerak.</p>
+<p>Agar ulanish ko‘rinmasa yoki soat tarafida IP bo‘lmasa, <b>Soat ilovasini ishga tushirish</b> ni yana bosing. Hali ham bo‘lmasa, Bluetooth ulanishini va soat bilan bog‘lanishga javobgar telefon ilovasini tekshiring. Agar soat allaqachon ma’lumot olgan bo‘lsa, bu tugma barcha ma’lumotni qayta yuboradi; shuning uchun ba’zan Wear OS versiyasini qayta o‘rnatish osonroq bo‘ladi.</p>
+<p>Hammasi to‘g‘ri bo‘lsa, telefonda ko‘rinayotgan ma’lumotning xuddi o‘zi soatda ham ko‘rinadi. Telefonga sensor orqali kelgan har bir yangi glyukoza qiymati TCP orqali soatga yuboriladi. Birlik, glyukoza signal darajalari va eslatmalar kabi ba’zi sozlamalar ham soatga uzatiladi. Keyingi o‘zgarishlarni odatda soatning o‘zida qilish kerak.</p>
+<p>Agar Bluetooth’i kuchli aqlli soatingiz bo‘lsa va telefonni olib yurmasdan glyukoza qiymatlarini bevosita soatda olishni istasangiz, soatdagi Juggluco’ni sensorga to‘g‘ridan-to‘g‘ri ulashingiz mumkin. Telefon ma’lumotni soatga to‘liq yuborgach, <b>Sensor–soat to‘g‘ridan-to‘g‘ri ulanishi</b> ni yoqing. Bu bilan telefondagi <b>Bluetoothni ishlatish</b> o‘chadi, soatda esa yoqiladi. Oqim qiymatlari endi soatdan telefonga yuboriladi. Telefon va soat sinxron bo‘lmasa, bu parametrni o‘zgartirib bo‘lmaydi.</p>
+<p>Agar sensor soatga to‘g‘ridan-to‘g‘ri ulangan bo‘lsa va uning qiymatlari smartfonga yuborilayotgan bo‘lsa, skan qilingan qiymatlar ham telefondan soatga yuborilishi va sensorni Juggluco bilan skan qilishdan oldin oqim qiymatlari sinxronlangan bo‘lishi kerak. Aks holda eski qiymatlar soatga qayta yuborilishi yoki o‘zgartirilgan autentifikatsiya ma’lumoti soatga yetib bormasligi mumkin; bu esa <b>handshake</b> xatolariga olib keladi.</p>
+<p>Ulanishdagi o‘zgarishlarni faqat ma’lumot sinxron holatda bo‘lganda qilish kerak. Telefon va soatdagi ma’lumotlar to‘liq nusxalar bo‘lishi kerak; faqat miqdor ma’lumotlarini qoldirmaslik mumkin.</p>
+<p>Birinchi marta ko‘p ma’lumot telefondan soatga yuborilayotganida, soatni zaryadga ulab qo‘yish foydali bo‘lishi mumkin — ayrim soatlar zaryadda turganda Wi‑Fi’ni yoqadi.</p>
+<h2>Soat–telefon ulanishi</h2>
+<p>Soat–telefon ulanishi telefonlar orasidagi Juggluco mirror ulanishining moslashtirilgan ko‘rinishidir. U avtomatik yaratilganda quyidagi qo‘shimchalar bo‘ladi:</p>
+<ul>
+<li>boshqa tomondagi IP manzil avtomatik aniqlanadi;</li>
+<li>odatda mirror ulanishini qo‘lda boshqarish shart emas, buning o‘rniga chap menyu→Soat→Wear OS sozlash orqali parametrlar o‘zgartiriladi;</li>
+<li>faqat soatda miqdor kiritmoqchi bo‘lsangiz, mirror sozlamalarini qo‘lda o‘zgartirish kerak bo‘lishi mumkin.</li>
+</ul>
+<p>Agar telefon va soat orasidagi Wi‑Fi ishlamasa, Juggluco Bluetooth orqali TCP’ga o‘tadi. Birinchi marta juda ko‘p ma’lumot yuborilmasa, soatda Wi‑Fi’ni o‘chirib qo‘yish mumkin.</p>
+<h2>Ma’lumot almashinuvi ishlamayotgan bo‘lsa</h2>
+<ul>
+<li>Soat va telefonda Bluetooth yoqilgan bo‘lsin (Wi‑Fi o‘chiq bo‘lishi mumkin).</li>
+<li>Soatning hamroh ilovasi soat telefon bilan ulanganini ko‘rsatishi kerak.</li>
+<li>Soatdagi chap menyu→Mirror va telefondagi chap o‘rta menyu→Mirror ichida, telefonning chap menyu→Soat→Wear OS sozlash bo‘limida ko‘ringan identifikator bilan bir xil identifikatorli avtomatik yaratilgan ulanish bo‘lishi kerak.</li>
+<li>Soatda <b>Qayta</b> va/yoki <b>Sinx</b> ni bosish yordam berishi mumkin.</li>
+<li>Ba’zan xuddi shu ishni telefonda ham qilish kerak, keyin yana soatda takrorlashga to‘g‘ri keladi.</li>
+<li>Telefon yoki soatda Bluetooth’ni o‘chirib-yoqish yordam beradi; keyin soatda yana <b>Qayta</b> va <b>Sinx</b> ni bosish kerak bo‘ladi.</li>
+<li>Ba’zan Wi‑Fi yoki mobil internetni o‘chirib-yoqish ham zarur bo‘ladi.</li>
+<li>Ba’zan telefon yoki soatni qayta yuklash kerak bo‘ladi.</li>
+<li>Mirror sozlamalari noto‘g‘ri o‘zgargan bo‘lishi mumkin; telefonda chap menyu→Soat→Wear OS sozlash→<b>Standart</b> yordamida ularni standart holatga qaytarish mumkin. Bu sensorni soat o‘rniga yana telefon bilan bog‘lashga ham olib keladi. Faqat soatda mavjud ma’lumot ustiga yoziladi.</li>
+<li>Hammasi muvaffaqiyatsiz bo‘lsa, Wear OS versiyasini qayta o‘rnatib, yangidan boshlash mumkin. Bunda telefondagi chap o‘rta menyu→Mirror ichidan mavjud soat ulanishini o‘chirib tashlash kerak bo‘ladi.</li>
+</ul>
+<p>Agar ma’lumot telefonda yo‘qolgan bo‘lsa-yu, soatda saqlanib qolgan bo‘lsa, vaziyat ancha qiyin. Avval telefon ma’lumotni qabul qila oladigan ishlaydigan mirror ulanishini tiklash kerak bo‘ladi.</p>
+<h2>Soat ekrani</h2>
+<p>Juggluco for Wear OS ichida vaqt va joriy glyukoza qiymatini, shuningdek to‘rttagacha komplikatsiyani ko‘rsatadigan soat yuzi mavjud. Uni hamroh ilovadagi, masalan <i>downloaded</i> bo‘limidan tanlaysiz. Odatda ekran uyg‘onganda oxirgi glyukoza qiymati ko‘rinadi. Ambient (<i>always on</i>) rejimida glyukoza qiymati faqat daqiqa indikatori ko‘tarilganda, tugma bosilganda yoki qo‘l ko‘tarilganda yangilanadi, shuning uchun ko‘rsatilayotgan qiymat 1 daqiqagacha kechikishi mumkin. Ayrim yangi soatlarda (masalan Samsung Galaxy Watch 7 va Watch Ultra) dasturlashtirilgan soat yuzlariga ruxsat berilmagani uchun bu soat yuzi ishlatilmasligi mumkin.</p>
+<h2>Komplikatsiyalar</h2>
+<p>Juggluco 8.2.0 va undan yuqori versiyalarda WearOS 5’da ham ishlaydigan glyukoza qiymati, glyukoza strelkasi va qiymat+strelka komplikatsiyalari bor. Ularni kichik yoki katta image complication slot’ini qabul qiladigan har qanday soat yuzi bilan ishlatish mumkin, masalan <a href="https://play.google.com/store/apps/details?id=au.gondwanasoftware.timeandtrack">Time and Track</a> yoki <a href="https://play.google.com/store/apps/details?id=tk.glucodata.watchfacepush.watchface2">Watchface for Juggluco</a>. O‘z soat yuzingizni <a href="https://developer.samsung.com/watch-face-studio/download.html">Watch Face Studio</a> bilan ham yaratishingiz mumkin.</p>
+<h2><a href="https://www.juggluco.nl/Jugglucohelp/floatingconfig.html">Suzuvchi glyukoza</a></h2>
+<p>Uchinchi yo‘l — soatdagi Juggluco sozlamalarida <b>Suzuvchi glyukoza</b> ni yoqish. Kerakli ruxsatlar bo‘lsa, glyukoza qiymati boshqa ilovalar ustida ko‘rsatiladi. Shunda istalgan soat yuzi yoki faollikni kuzatadigan ilovadan foydalanganda ham joriy glyukozani ko‘rish mumkin.</p>
+<h2>Kuzatuvchilar</h2>
+<p>Hamroh ilova orqali yana boshqa qurilmalarga internet orqali chap o‘rta menyu→Mirror bo‘limida tasvirlangan usul bilan ma’lumot yuborish mumkin. Soatni internetdagi serverga to‘g‘ridan-to‘g‘ri ulab, u yerdan kuzatuvchi telefonga ma’lumot uzatish ham mumkin: <a href="https://www.juggluco.nl/Juggluco/cmdline/watch">https://www.juggluco.nl/Juggluco/cmdline/watch</a>.</p>
+<h2>Qo‘shimcha havolalar</h2>
+<ul>
+<li><a href="https://www.juggluco.nl/Jugglucohelp/newamount.html">Amount</a></li>
+<li><a href="https://www.juggluco.nl/Juggluco/index.html#novopens">Novopens</a></li>
+<li><a href="https://www.juggluco.nl/JugglucoWearOS/switch.html">Switch</a></li>
+<li><a href="https://www.juggluco.nl/Jugglucohelp/connectionoverview.html">Mirror</a></li>
+<li><a href="https://www.juggluco.nl/JugglucoWearOS/index.html">https://www.juggluco.nl/JugglucoWearOS</a></li>
+<li><a href="https://www.juggluco.nl/JugglucoWearOS/install/adb.html">Install</a></li>
+<li><a href="https://www.juggluco.nl/Jugglucohelp/wearosinfo.html">Wear
+	OS Config</a></li>
+<li><a href="https://www.juggluco.nl/Juggluco/cmdline">Juggluco
+server</a></li>
+<li><a href="#enteronwatch">Enter on
+	watch</a></li>
+<li><a href="https://play.google.com/store/apps/details?id=au.gondwanasoftware.timeandtrack">Time
+and Track</a></li>
+<li><a href="https://play.google.com/store/apps/details?id=tk.glucodata.watchfacepush.watchface2">Watchface
+for Juggluco</a></li>
+<li><a href="https://developer.samsung.com/watch-face-studio/download.html">Watch
+Face Studio</a></li>
+<li><a href="https://www.juggluco.nl/Jugglucohelp/floatingconfig.html">Floating
+glucose</a></li>
+</ul>
+</body></html>

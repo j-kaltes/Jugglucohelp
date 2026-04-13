@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="uz"><head><meta charset="utf-8"/><title>Nightscout serveriga yuklash</title></head><img alt="Uploader" src="uploader.png" style="object-fit:contain; width:15cm;                   height:auto;"/>
+<body>
+<h1>Nightscout serveriga yuklash</h1>
+<p>Ko‘p hollarda Juggluco ichidagi <b><a href="https://www.juggluco.nl/Jugglucohelp/Nightscouthelp.html">Veb server</a></b> yoki <b>juggluco-server</b> dan ham foydalanish mumkin. Faqat Nightscout veb sahifasini ko‘rsatish bilangina cheklanadigan ayrim ilovalar uchun <b><a href="https://github.com/nightscout/cgm-remote-monitor">cgm-remote-monitor</a></b> kerak bo‘ladi.</p>
+<p>AAPS va AAPSClient’ni ham Juggluco 7.4.1 dagi veb server bilan ishlatish mumkin.</p>
+<p>Barcha oqim qiymatlari kelgan zahoti Nightscout serveriga yuklanadi. Agar bir vaqtning o‘zida bir nechta sensor ishlatilsa, barcha sensorlarning barcha qiymatlari yuboriladi. Ayrim Garmin soat ilovalari va widget’lari qiymatlar 5 daqiqalik oraliqda keladi deb hisoblaydi. Agar ularga 1 daqiqalik qiymatlar yuborilsa, ular egri chiziqning faqat oxirgi beshdan bir qismini ko‘rsatishi mumkin. Shu sababli Juggluco ichidagi veb server qiymatlarni odatda 5 daqiqalik oraliq bilan taqdim etadi, faqat <code>interval=secs</code> bundan kichik qiymatga qo‘yilgan bo‘lmasa.</p>
+<p><b>URL</b>: manzil <code>https://hostname:port</code> ko‘rinishida bo‘lishi kerak, masalan <code>https://myname.herokuapp.com:6789</code>.</p>
+<p><b>Faol</b>: yuklovchini yoqadi.</p>
+<p><b>test V3</b>: Juggluco Nightscout’ga yuklash uchun <code>api/v3</code> dan foydalanadi. Ilgari V1 yuklamalarini olgan Nightscout serveriga V3 yuklamalarini yubormang va aksincha. <code>api_secret</code> o‘rniga bu yerda treatments va entries yuklash huquqiga ega <b>Access Token</b> ko‘rsatilishi kerak. Uni Nightscout veb interfeysida <b>Admin Tools</b> bo‘limida yaratish mumkin. “test” deb atalishi sababi — boshqa V3 yuklovchilar deyarli yo‘q; odatda V1 ishlatiladi.</p>
+<p><b>Miqdorlarni yuborish</b>: Nightscout’ga miqdorlarni ham treatments sifatida yuboradi. Belgilash qutisini bosganda, har bir yorliq Nightscout’da nimani anglatishini ko‘rsatadigan dialog ochiladi. Bu sozlamalar Juggluco veb serveri bilan ham umumiy ishlatiladi (Chap menyu→Sozlamalar→Ma’lumot almashish→Veb server). Faqat barcha yorliqlar ko‘rib chiqilgandan keyin <b>Miqdorlarni yuborish</b> ni yoqish mumkin. Keyinchalik yangi yorliq qo‘shsangiz, unga nima qilish kerakligini o‘zingiz ko‘rsatishingiz kerak bo‘ladi.</p>
+<p>Nightscout’dagi bir xato sababli eski vaqt oralig‘iga qo‘shilgan yoki o‘chirilgan yozuvlar faqat yangi vaqtli element qo‘shilgandan keyin ko‘rinadi. Shu sababli Nightscout’ga juda tez-tez yubormaslik ma’qul. Hozir yuborish foydalanuvchi Juggluco’dan chiqib boshqa ilovaga o‘tganda yoki ekran o‘chirilganda amalga oshiriladi.</p>
+<p><b>Ma’lumotni qayta yuborish</b>: barcha ma’lumotni Nightscout serveriga qayta yuklaydi.</p>
+<p><b>Hozir yuborish</b>: odatda ma’lumot sensor yoki mirror ulanishidan kelishi bilan darhol yuboriladi. Agar biror sababga ko‘ra oldingi urinish muvaffaqiyatsiz bo‘lgan bo‘lsa, shu tugmani bosib qayta yuboring.</p>
+<p>Juggluco’ning Wear OS versiyasi 4.15.0 va undan yuqori versiyalarda glyukoza qiymatlarini Nightscout’ga yuklashi mumkin. Biroq deyarli barcha hollarda buni telefon yoki planshetdagi Juggluco orqali, yoki kompyuterdagi <a href="https://www.juggluco.nl/Juggluco/cmdline">Juggluco server</a> orqali qilish yaxshiroq. Bu ayniqsa server bilan aloqa bo‘lmasa batareyani tez sarflaydi, shuning uchun ishonchli ulanish bo‘lmasa <b>Faol</b> ni o‘chirib qo‘ygan ma’qul.</p>
+<h2>Xatolar</h2>
+<p>Ko‘p tushunmovchilik tug‘diradigan ikki xato xabari bor.</p>
+<p>Agar xabarda <code>upload failure:</code> dan keyin hech narsa bo‘lmasa, mumkin bo‘lgan sabablar:</p>
+<ul>
+<li>tarmoq ulanishi o‘chirilgan;</li>
+<li>host nomi xato yozilgan.</li>
+</ul>
+<p>Agar xabar quyidagicha bo‘lsa:</p>
+<pre>upload failure: java.io.FileNotFoundException:
+NIGHTSCOUTURL/api/v1/entries</pre>
+<p>Bu yerda <code>NIGHTSCOUTURL</code> — “Nightscout URL” maydoniga kiritilgan server manzili.</p>
+<p>Bunga odatda quyidagilardan biri sabab bo‘ladi:</p>
+<ul>
+<li>URL noto‘g‘ri saytga olib bormoqda. Masalan, host nomidan keyin port ko‘rsatilmagan va Juggluco oddiy veb serverga ulanmoqda;</li>
+<li><code>api_secret</code> noto‘g‘ri;</li>
+<li><code>NIGHTSCOUTURL</code> ichida bo‘lmasligi kerak bo‘lgan qo‘shimcha yo‘l bor. Masalan Nightscout URL <code><a href="https://ahost.org:8887/">https://ahost.org:8887</a></code> bo‘lsa, siz esa <code><a href="https://ahost.org:8887/extra">https://ahost.org:8887/extra</a></code> deb kiritgansiz.</li>
+</ul>
+
+
+</body></html>

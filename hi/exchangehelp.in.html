@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title>डेटा आदान-प्रदान</title>
+	<meta name="generator" content="LibreOffice 24.2.7.2 (Linux)"/>
+	<meta name="created" content="2024-11-21T21:25:03.749778838"/>
+	<meta name="changed" content="2024-12-23T22:39:48.715341909"/>
+	<style type="text/css">
+		@page { margin: 0.79in }
+		p { line-height: 115%; margin-bottom: 0.1in }
+		h2 { margin-top: 0.14in; margin-bottom: 0.08in; background: transparent }
+		h2.western { font-family: "Liberation Sans", sans-serif; font-size: 16pt }
+		h2.cjk { font-family: "Noto Sans CJK SC"; font-size: 16pt }
+		h2.ctl { font-family: "Mangal"; font-size: 16pt }
+	</style>
+</head>
+ <img src="dataexchange.png" alt="Exchange data" style="object-fit:contain; width:15cm;                   height:auto;">
+<body lang="nl-NL" dir="ltr"><h1>डेटा आदान-प्रदान</h1>
+<h2 class="western">Health Connect</h2>
+<p>प्रत्येक मिनट के ग्लूकोज मानों को
+<a href="https://play.google.com/store/apps/details?id=com.google.android.apps.healthdata">Health
+Connect</a> पर भेजें। आप इन ग्लूकोज मानों तक अन्य ऐप को पहुंच दे
+सकते हैं, उदाहरण के लिए
+<a href="https://play.google.com/store/apps/details?id=com.google.android.apps.fitness">Google
+Fit</a>। अन्य ऐप्स फिर से Google Fit के डेटा तक पहुंच सकते हैं।</p>
+<h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/libreview.html">Libreview</a></h2>
+<p>Freestyle Libre 2 और 3 ग्लूकोज मानों और मात्राओं को Libreview पर
+भेजने और Freestyle Libre 3 सेंसर सक्रियण के दौरान उपयोग की गई
+account id प्राप्त करने के लिए Libreview से कनेक्ट करें। सेटिंग्स
+बदलने के लिए छुएं।</p>
+<h2 class="western">पैच्ड Libre</h2>
+<p>पैच्ड Libre ब्रॉडकास्ट के साथ स्वयं कुछ गलत नहीं है, पर xDrip मानों
+को संशोधित करता है जब यह उन्हें पैच्ड Libre ब्रॉडकास्ट से प्राप्त
+करता है। क्योंकि उपयोगकर्ता इस ब्रॉडकास्ट का उपयोग केवल इसी तरह
+करते हैं, मैंने ब्रॉडकास्ट हटाने की योजना बनाई।</p>
+<p>xDrip मानों को संशोधित नहीं करता जब यह EverSense ब्रॉडकास्ट से
+ग्लूकोज मान प्राप्त करता है या यदि Juggluco में वेब सर्वर का उपयोग
+एक Nightscout डेटा स्रोत के रूप में किया जाता है।</p>
+<h2 class="western"><a name="eversense"></a>EverSense</h2>
+<p>एक और ग्लूकोज ब्रॉडकास्ट। इसका उपयोग xDrip को हर मिनट एक ग्लूकोज
+मान भेजने के लिए किया जा सकता है। xDrip में आपको
+<i>Hardware Data Source</i> के रूप में “<i>640G/EverSense</i>” सेट
+करने की आवश्यकता है।
+</p>
+<p>xDrip 5 मिनट में एक मान पर अपने आग्रह के कारण लगभग सभी को
+नज़रअंदाज़ कर देगा। आप xDrip के स्रोत कोड को संपादित करके इस
+प्रतिबंध को हटा सकते हैं।
+<a href="https://github.com/NightscoutFoundation/xDrip/blob/645e8b4cb8fa3ad7b280f598d6f2f6bdb84ce392/app/src/main/java/com/eveningoutpost/dexdrip/models/BgReading.java#L969">app/src/main/java/com/eveningoutpost/dexdrip/models/BgReading.java</a>
+में <i>4 * 60 * 1000</i> को <i>55 * 1000</i> में बदलें, ताकि यह बन जाए:</p>
+<p>public static BgReading readingNearTimeStamp(long startTime)
+{<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;long
+margin = (55 * 1000);<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return
+readingNearTimeStamp(startTime, margin);<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</p>
+<p>पैच्ड Libre ब्रॉडकास्ट पर लाभ यह है कि xDrip ग्लूकोज मानों को
+किसी अनिर्दिष्ट तरीके से परिवर्तित नहीं करता।</p>
+<h2 class="western">xDrip ब्रॉडकास्ट</h2>
+<p>वही ब्रॉडकास्ट भेजें जो xDrip में "<i>Settings-&gt;Inter-app
+settings-&gt;Broadcast locally"</i> के साथ चालू है। AndroidAPS जैसे ऐप्स
+इसे सुनते हैं। मूल xDrip ब्रॉडकास्ट के विपरीत जो हर 5 मिनट में
+ब्रॉडकास्ट होता था, Juggluco इस ब्रॉडकास्ट को हर मिनट ब्रॉडकास्ट
+करता है।</p>
+<h2 class="western">Glucodata ब्रॉडकास्ट</h2>
+<p>एक नया ब्रॉडकास्ट जिसका कार्य xDrip ब्रॉडकास्ट के समान है।
+एक सरल उदाहरण ऐप जो प्राप्त ग्लूकोज मानों को logcat में लिखता है
+आप यहाँ पा सकते हैं: <a href="https://www.juggluco.nl/Juggluco/glucosebroadcast.html">Glucose
+broadcasts</a>। यदि आप G-Watch में Juggluco को डेटा-स्रोत के रूप में
+निर्दिष्ट करते हैं, तो आपको यह ब्रॉडकास्ट चालू करना होगा।</p>
+<p>इस ब्रॉडकास्ट को सुनने वाले ऐप्लिकेशन दिखाए जाते हैं। उन ऐप्स को
+चेक करें जिन्हें आप यह ब्रॉडकास्ट भेजना चाहते हैं।</p>
+<h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/Nightscouthelp.html">वेब
+सर्वर</a></h2>
+<p>वेब सर्वर जिसका उपयोग xDrip घड़ियों और कुछ Nightscout ऐप्स के
+साथ किया जा सकता है। पहले xDrip वेबसर्वर कहा जाता था।</p>
+<h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/NightPost.html">अपलोडर</a></h2>
+<p>Nightscout सर्वर पर अपलोड करें।</p>
+<h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/connectionoverview.html">मिरर/क्लोन</a></h2>
+<p lang="hi-IN" style="line-height: 100%; margin-bottom: 0in">इंटरनेट
+कनेक्शन के माध्यम से Juggluco के दूसरे इंस्टेंस को सारा डेटा भेजें
+जिससे दूसरे डिवाइस पर Juggluco का एक क्लोन बनता है। मौजूदा डेटा
+ओवरराइट हो जाएगा।</p>
+<h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/helpexport.html">एक्सपोर्ट</a></h2>
+<p>डेटा को एक फ़ाइल में सहेजें।</p>
+<p><br/>
+<br/>
+
+</p>
+</body>
+</html>

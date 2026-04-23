@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title>फ्लोटिंग ग्लूकोज</title>
+	<base target="_blank">
+	<meta name="generator" content="LibreOffice 7.6.4.1 (Linux)"/>
+	<meta name="created" content="00:00:00"/>
+	<meta name="changed" content="2024-02-29T12:19:09.186429930"/>
+	<meta name="created" content="00:00:00">
+	<style type="text/css">
+		@page { size: 8.27in 11.69in; margin-left: 0.79in; margin-right: 0.39in; margin-top: 0.39in; margin-bottom: 0.39in }
+		h1 { margin-bottom: 0.08in; background: transparent }
+		h1.western { font-family: "Liberation Serif", serif }
+		h1.cjk { font-family: "Droid Sans Fallback" }
+		h1.ctl { font-family: "Droid Sans Devanagari" }
+		p { margin-bottom: 0.1in; background: transparent }
+	</style>
+ <base href="https://www.juggluco.nl/Jugglucohelp/mgdL/" id="baseurl" target="_blank">
+
+<script type="text/javascript"> 
+function getunitarg(){ 
+	const params = new URLSearchParams(document.location.search);
+	const unit = params.get("unit");
+	if(unit===null)	 {
+		return 0;
+		}
+	if(unit == "mg/dL") { 
+		return 2;
+		} 
+	else { 
+		if(unit=="mmol/L") {
+		   return 1;
+		   }
+	 	}
+
+	return 0;
+    } 
+let mmol=[
+"AM",
+"AU",
+"BA",
+"BG",
+"BW",
+"BY",
+"CA",
+"CH",
+"CN",
+"CZ",
+"DK",
+"EE",
+"FI",
+"GB",
+"HK",
+"HR",
+"HU",
+"IE",
+"IS",
+"KW",
+"KZ",
+"LT",
+"LV",
+"MT",
+"MY",
+"NA",
+"NL",
+"NO",
+"NZ",
+"RS",
+"RU",
+"SE",
+"SI",
+"SK",
+"UA",
+"ZA"];
+
+
+
+
+
+
+function getunit() {
+	var unit=getunitarg();
+	if(unit!=0) {
+		return unit;
+		}
+
+	var userLang = navigator.language || navigator.userLanguage;
+	var  co=userLang.toUpperCase();
+
+	for(const element of mmol) {
+	  if(co.includes(element)) {
+		return 1;
+		}
+	   }
+
+	return 2;
+	 }
+
+
+
+function setbaseurl(){ 
+	if(getunit()!=1) {
+		document.getElementById("baseurl").href = "https://www.juggluco.nl/Jugglucohelp/mgdL/"; 
+		} 
+	else { 
+	       document.getElementById("baseurl").href = "https://www.juggluco.nl/Jugglucohelp/";  
+		}
+   	} 
+   setbaseurl();
+   </script> 
+</head>
+ <img src="floatingglucoseconfig.png"  style="object-fit:contain; width:15cm;                   height:auto;">
+<body lang="hi-IN" dir="ltr"><h1 class="western">फ्लोटिंग ग्लूकोज</h1>
+<p>यहाँ आप फ्लोटिंग ग्लूकोज का फ़ॉन्ट आकार और अग्रभूमि तथा पृष्ठभूमि
+रंग सेट कर सकते हैं।
+</p>
+<p><b>स्पर्शनीय</b>: सेट होने पर आप फ्लोटिंग ग्लूकोज को अपनी उंगली से
+हिला सकते हैं और इसे लंबा दबाकर (बिना हिलाए) छोटा कर सकते हैं।
+जब स्पर्शनीय अनसेट होता है, तो टच इनपुट फ्लोटिंग ग्लूकोज के नीचे की
+विंडो पर जाता है, इसलिए आप फ्लोटिंग ग्लूकोज के नीचे के ऐप का उपयोग
+कर सकते हैं। आप फ्लोटिंग ग्लूकोज को <b>डबल टैप</b> करके भी
+अस्पर्शनीय बना सकते हैं।</p>
+<p><b>पारदर्शी:</b> पृष्ठभूमि अदृश्य।</p>
+<p><b>ऊपर</b>: फ्लोटिंग ग्लूकोज Juggluco के ऊपर भी मौजूद।</p>
+<p><b>समय</b>: ग्लूकोज मान का टाइमस्टैम्प।</p>
+<p><b>सक्रिय</b>: इसे चालू करें।</p>
+<p>आप फ्लोटिंग ग्लूकोज को बायां मध्य मेन्यू-&gt;फ्लोट से चालू और
+बंद कर सकते हैं।
+</p>
+<p>आप फ्लोटिंग ग्लूकोज के <b>तीर की ओर</b> टैप करके Juggluco पर स्विच
+कर सकते हैं। ग्लूकोज मान की ओर डबल टैप करने से फ्लोटिंग ग्लूकोज
+अस्पर्शनीय हो जाता है। ग्लूकोज मान को <b>लंबा दबाने</b> से केवल एक
+छोटा ग्लूकोज मान प्रदर्शित होता है ताकि आप नीचे जो है उसके साथ
+बातचीत कर सकें, छोटे डिस्प्ले को टैप करना इसे फिर से बड़ा करता है।
+ग्लूकोज मान की ओर छूते हुए हिलाना फ्लोटिंग ग्लूकोज को <b>हिलाता</b>
+है।</p>
+<p>अन्य ऐप्स के ऊपर प्रदर्शित होने के लिए Juggluco को एक विशेष अनुमति
+चाहिए। WearOS और Android Automotive पर भी आपको यह अनुमति देने के लिए
+adb का उपयोग करना होगा:</p>
+<p style="margin-bottom: 0in"><b>adb shell pm grant tk.glucodata android.permission.SYSTEM_ALERT_WINDOW</b></p>
+<p style="background: transparent">कुछ घड़ियों (उदाहरण के लिए
+TicWatch Pro) पर, आप इसे इससे भी अनुमति दे सकते हैं: Android/WearOS
+settings-&gt;Apps &amp; notifications-&gt; App
+info-&gt;Juggluco-&gt;Advanced-&gt;Display over other apps।</p>
+</body>
+</html>

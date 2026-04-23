@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<base target="_blank">
+	<meta name="generator" content="LibreOffice 7.5.8.2 (Linux)"/>
+	<meta name="changed" content="2023-12-27T20:18:01.744399555"/>
+ <base href="https://www.juggluco.nl/Jugglucohelp/mgdL/" id="baseurl" target="_blank">
+<script type="text/javascript"> 
+function getunitarg(){ 
+	const params = new URLSearchParams(document.location.search);
+	const unit = params.get("unit");
+	if(unit == "mg/dL") { 
+		return 2;
+		} 
+	else { 
+		if(unit=="mmol/L") {
+		   return 1;
+		   }
+	 	}
+	return 0;
+    } 
+let mmol=[
+"AM",
+"AU",
+"BA",
+"BG",
+"BW",
+"BY",
+"CA",
+"CH",
+"CN",
+"CZ",
+"DK",
+"EE",
+"FI",
+"GB",
+"HK",
+"HR",
+"HU",
+"IE",
+"IS",
+"KW",
+"KZ",
+"LT",
+"LV",
+"MT",
+"MY",
+"NA",
+"NL",
+"NO",
+"NZ",
+"RS",
+"RU",
+"SE",
+"SI",
+"SK",
+"UA",
+"ZA"];
+
+
+
+
+
+
+
+function getunit() {
+	var unit=getunitarg();
+	if(unit!=0) {
+		return unit;
+		}
+
+	var userLang = navigator.language || navigator.userLanguage;
+	var  co=userLang.toUpperCase();
+	for(const element of mmol) {
+	  if(co.includes(element)) {
+		return 1;
+		}
+	   }
+
+	  return 2;
+	 }
+
+
+
+function setbaseurl(){ 
+	if(getunit()!=1) {
+		document.getElementById("baseurl").href = "https://www.juggluco.nl/Jugglucohelp/mgdL/"; 
+		} 
+	else { 
+	   document.getElementById("baseurl").href = "https://www.juggluco.nl/Jugglucohelp/"; 
+	   } 
+      } 
+   setbaseurl();
+   </script> 
+</head>
+<img src="newamount.png"  style="object-fit:contain; width:15cm;                   height:auto;margin: 1cm 1cm 1cm 1cm;">
+<body lang="hi-IN" dir="ltr"><h1>नई मात्रा</h1>
+<p><b>नई मात्रा</b> से आप किसी मनमाने लेबल से जुड़ी संख्याएं दर्ज कर
+सकते हैं। आप लेबल बायां मेन्यू→सेटिंग्स→<a href="https://www.juggluco.nl/Jugglucohelp/labelhelp.html">संख्या
+लेबल</a> के तहत सेट कर सकते हैं। एक विशेष लेबल के साथ दर्ज की गई
+<i>मात्राएं</i> लेबल द्वारा निर्धारित निश्चित ऊंचाई पर ग्राफ़ में
+दिखाई जाएंगी।</p>
+<p>आप बाद में मात्रा को लंबा दबाकर बदल सकते हैं। आप इसे बायां मध्य
+मेन्यू→सूची के तहत दर्ज की गई मात्राओं की सूची से भी चुन सकते हैं।</p>
+<p>NFC पेन स्कैन करके
+<a href="https://www.juggluco.nl/Juggluco/index.html#novopens" onclick="location.href='https://www.juggluco.nl/Juggluco/index.html?unit='+unitstr+'#novopens';return false;">NovoPen®
+6 या NovoPen Echo® Plus</a> से <b>इंसुलिन</b> खुराक डेटा प्राप्त करना
+भी संभव है। स्कैन करने के बाद आप बदल सकते हैं कि Juggluco में खुराकें
+किस लेबल के तहत सहेजी जाती हैं और खुराकों को एक निश्चित तारीख और समय
+के <b>बाद</b> की खुराकों तक सीमित कर सकते हैं। जब पेन की मेमोरी में
+सैकड़ों खुराकें मौजूद होती हैं, तो Juggluco द्वारा उन सभी को NFC के
+माध्यम से प्राप्त करने में 30 सेकंड से अधिक समय लग सकता है।</p>
+<p>कुछ रक्त ग्लूकोज मीटर ब्लूटूथ के माध्यम से Juggluco को फिंगर
+प्रिक रक्त ग्लूकोज मापन भेज सकते हैं। देखें बायां
+मेन्यू→सेटिंग्स→डेटा आदान-प्रदान→
+<b><a href="https://www.juggluco.nl/Jugglucohelp/GlucoseMeterList.html">ग्लूकोज
+मीटर</a></b>।</p>
+<p>बायां मेन्यू-&gt;सेटिंग्स-&gt;<a href="https://www.juggluco.nl/Jugglucohelp/labelhelp.html">संख्या
+लेबल</a> के तहत यह भी निर्दिष्ट किया जाता है कि आप किस लेबल के तहत
+भोजन के कार्बोहाइड्रेट दर्ज करते हैं। <i>नई मात्रा</i> में,
+इस लेबल के लिए एक <b>भोजन</b> बटन प्रदर्शित होता है। इस
+<a href="https://www.juggluco.nl/Jugglucohelp/mealhelp.html"><i>भोजन</i></a>
+बटन को टैप करने से आप एक ऐसे डिस्प्ले पर जाते हैं जिसमें आप एक भोजन
+को उसकी सामग्री से निर्दिष्ट कर सकते हैं। कार्बोहाइड्रेट सामग्री
+की फिर गणना की जाती है या आप कार्बोहाइड्रेट सामग्री निर्दिष्ट कर
+सकते हैं और फिर एक सामग्री की आवश्यक मात्रा की गणना की जाती है।</p>
+<p><b>बाहर रखें</b>: एक रक्त ग्लूकोज मापन को
+<a href="https://www.juggluco.nl/Jugglucohelp/calibrationhelp.html">कैलिब्रेशन</a>
+से बाहर रखें, क्योंकि ग्लूकोज स्तर बढ़ या गिर रहा है या सेंसर अभी भी
+गर्म हो रहा है।
+
+</p>
+<p><br/>
+<br/>
+
+</p>
+</body>
+</html>

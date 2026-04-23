@@ -1,10 +1,286 @@
 <!DOCTYPE html>
-<html>
+<html lang="nl" dir="ltr">
 <head>
-   <meta http-equiv="refresh" 
-   content="0; url=https://www.juggluco.nl/Jugglucohelp/nl/introhelp.html"/>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Juggluco</title>
+  <style>:root { color-scheme: light dark; }
+body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans",
+                 "Noto Sans Arabic", "Noto Sans Devanagari",
+                 "Noto Sans CJK SC", sans-serif;
+    max-width: 52rem;
+    margin: 2rem auto;
+    padding: 0 1rem 3rem;
+    line-height: 1.5;
+}
+header { margin-bottom: 2rem; }
+h1 { margin: 0 0 .3rem; font-size: 1.8rem; }
+header p { margin: .25rem 0; }
+header a { word-break: break-all; }
+ul.toc { list-style: none; padding: 0; margin: 0; }
+ul.toc li { padding: .55rem 0; border-top: 1px solid rgba(128,128,128,.25); }
+ul.toc li:first-child { border-top: none; }
+ul.toc a { font-weight: 600; text-decoration: none; }
+ul.toc a:hover { text-decoration: underline; }
+.desc { display: block; margin-top: .15rem; font-weight: 400;
+        color: rgba(0,0,0,.78); }
+@media (prefers-color-scheme: dark) {
+    .desc { color: rgba(255,255,255,.78); }
+}
+footer { margin-top: 2rem; font-size: .85rem; opacity: .7; }
+</style>
 </head>
-
-<body><p><a href="https://www.juggluco.nl/Jugglucohelp/de/index.html">de</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/nl/index.html">nl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pl/index.html">pl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ru/index.html">ru</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/zh/index.html">zh</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/index.html?lang=en">en</a>&emsp;&emsp;</p>
+<body>
+  <header>
+    <h1>Juggluco</h1>
+    <p><a href="https://www.juggluco.nl/Juggluco">https://www.juggluco.nl/Juggluco</a></p>
+  </header>
+  <ul class="toc">
+    <li>
+      <a href="root.html">Veranderd apparaat</a>
+      <span class="desc">Een van de libraries gebruikt door deze applicatie bevat een BUG die maakt dat het crashed wanneer het bepaalde bestanden ontdekt.</span>
+    </li>
+    <li>
+      <a href="downloadinfo.html">Download</a>
+      <span class="desc">Juggluco gebruikt een library uit FreeStyle Librelink. Het kan Librelink 2.4.0, 2.4.1, 2.4,2, 2.5. 2, 2.5.3 or 2.7.1 gebruiken. Versions na 2.4.2 zijn trager geworden en geven de zelfde resultaten.</span>
+    </li>
+    <li>
+      <a href="introhelp.html">Intro</a>
+      <span class="desc">Juggluco is een applet voor bloedglucosecontrole bij diabetespatiënten. De app scant Freestyle Libre (0 en 2) sensoren (via NFC) en ontvangt (via Bluetooth) glucosewaarden van Freestyle Libre 2 , 2+ , 3 , 3+ , Sibionics GS1Sb , Dexcom G7/ONE+ , Accu-Chek…</span>
+    </li>
+    <li>
+      <a href="about.html">About</a>
+      <span class="desc">Juggluco werd geschreven door Jaap Korthals Altes Afgezien van de standaard Android libraries, werd van het volgende gebruik gemaakt: NFC en Bluetooth commando’s specifiek voor Abbott’s Freestyle Libre sensoren en interpretatie algoritmen specifiek voor…</span>
+    </li>
+    <li>
+      <a href="battery.html">Blijven functioneren</a>
+      <span class="desc">Als een Android apparaat niet gebruikt wordt, gaat het in “ doze mode ” om minder energie te gebruiken.</span>
+    </li>
+    <li>
+      <a href="sensorhelp.html">Sensor</a>
+      <span class="desc">Dit schermpje geeft informatie over de Bluetooth connectie met sensoren en kan gebruikt worden om de oorzaak van connectie problemen op de sporen. Bluetooth moet aanstaan. Juggluco kan pas contact maken met een sensor nadat de sensor succesvol is gescand.</span>
+    </li>
+    <li>
+      <a href="sensorinfo.html">Sensorinfo</a>
+      <span class="desc">Toont de start, de laatste stream, de laatste scan en de verwachte en officiële eindtijden van de sensor. Opwarmen : Voor Sibionics- en Linx/Aidex X-sensoren kun je het aantal minuten van de opwarmperiode wijzigen.</span>
+    </li>
+    <li>
+      <a href="sensormirror.html">Sensorinformatie</a>
+      <span class="desc">Geeft informatie over de sensoren wanneer Juggluco fungeert als kloon van de streamwaarden: Gestart: tijdstip waarop de sensor is gestart. Bij Libre-sensoren is dit één uur vóór de eerste glucosewaarden. Laatst e scan: Laatste keer dat de sensor is gescand.</span>
+    </li>
+    <li>
+      <a href="calibrationhelp.html">Kalibratie</a>
+      <span class="desc">Juggluco 10.0.0 en hoger hebben de mogelijkheid om sensoren te kalibreren. Bloedglucose : Geef aan welk label staat voor de bloedglucosemetingen via vingerprik.</span>
+    </li>
+    <li>
+      <a href="calibrationslist.html">Kalibraties</a>
+      <span class="desc">Toont de kalibraties die voor deze sensor zijn uitgevoerd. Elke kalibratie bestaat uit het tijdstip waarop deze is uitgevoerd en de helling (a) en intercept b van de relatie tussen de bloedglucose en de sensorglucose: Bloedglucose = a * SensorGlucose + b…</span>
+    </li>
+    <li>
+      <a href="changestart.html">Begin wijzigen</a>
+      <span class="desc">Wijzig de datum en tijd vanaf welke gegevens naar Libreview worden verzonden. Dit kan handig zijn als sommige gegevens al aanwezig zijn in Libreview.</span>
+    </li>
+    <li>
+      <a href="DeviceList.html">Glucosemeters</a>
+      <span class="desc">Scant naar glucosemeters. Gevonden apparaten worden hier weergegeven. Verbonden apparaten worden niet gevonden.</span>
+    </li>
+    <li>
+      <a href="GlucoseMeter.html">Glucosemeter</a>
+      <span class="desc">Juggluco voegt alleen glucosewaarden toe met een tijdstempel later dan de opgegeven datum en tijd. Wijzig de datum en tijd naar een latere datum en tijd als er al eerdere glucosewaarden in Juggluco aanwezig zijn. Selecteer het label voor bloedglucose.</span>
+    </li>
+    <li>
+      <a href="GlucoseMeterList.html">Lijst met glucosemeters</a>
+      <span class="desc">Juggluco kan via Bluetooth bloedglucosetestmetingen ontvangen van sommige bloedglucosemeters. Als je een Contour Next ONE hebt, kun je deze toevoegen aan Juggluco door de datamatrix op de glucosemeter te scannen met het linkermenu → Foto.</span>
+    </li>
+    <li>
+      <a href="labelhelp.html">Labels voor hoeveelheden</a>
+      <span class="desc">Hier kun je labels voor hoeveelheden insuline, koolhydraat of lichaamsbeweging maken, verwijderen en veranderen. Als je al hoeveelheden ingevoerd hebt, krijgen ze het label naar hun positie.</span>
+    </li>
+    <li>
+      <a href="newlabelhelp.html">Label:</a>
+      <span class="desc">Label gebruikt om hoeveelheden in te voeren (Een hoeveelheid verbonden aan een bepaalde datum en tijd kan ingevoerd worden door op Hoeveelheid in het Linker midden menu te drukken).</span>
+    </li>
+    <li>
+      <a href="newamount.html">Hoeveelheid</a>
+      <span class="desc">Bij Hoeveelheid kun je getallen onder een willekeurig label invoeren. Je kunt labels instellen onder het linkermenu → Instellingen → Nummer Labels .</span>
+    </li>
+    <li>
+      <a href="mealhelp.html">Maaltijd</a>
+      <span class="desc">De totale hoeveelheid koolhydraten wordt door het programma berekend uit de omvang van de ingrediënten.</span>
+    </li>
+    <li>
+      <a href="nutrients.html">Voedsel samenstelling database</a>
+      <span class="desc">Hier kun je voedsel opzoeken in McCance and Widdowson’s The Composition of Foods Integrated Dataset 2021 https://www.gov.</span>
+    </li>
+    <li>
+      <a href="reminders.html">Herinneringen</a>
+      <span class="desc">Herinneringen herinneren je eraan als je een bepaalde hoeveelheid niet ingevoerd hebt binnen een bepaald tijdsinterval. Door op N i e u w te drukken kun je een nieuwe herinnering toevoegen.</span>
+    </li>
+    <li>
+      <a href="schedulehelp.html">Tijdrooster</a>
+      <span class="desc">Stel in dat een bepaald profiel actief wordt op een bepaalde tijd van de dag. Druk op " Nieuw " om een koppeling te maken tussen een bepaald tijdstip en een profiel. Juggluco schakelt elke dag op het opgegeven tijdstip over naar dat profiel.</span>
+    </li>
+    <li>
+      <a href="staticnum.html">Geblokkeerd</a>
+      <span class="desc">Menu links in het midden -&gt; Kloon -&gt; " Hoeveelheden komen van kloon " is ingesteld om te voorkomen dat hoeveelheden in deze app worden ingevoerd, omdat deze worden overschreven door hoeveelheden die worden ontvangen van de kloon verbinding.</span>
+    </li>
+    <li>
+      <a href="IOB.html">Insulin onboard (IOB)</a>
+      <span class="desc">IOB is een maat voor hoeveel insuline van eerdere insulinedoses nog aanwezig is. Hiervoor moet je insulinedoses invoeren onder een label in de categorie “ Snelwerkende insuline ”.</span>
+    </li>
+    <li>
+      <a href="IOBhelp.html">Insulin on board (IOB)</a>
+      <span class="desc">IOB is een maat voor hoeveel insuline er nog over is van eerdere insulinedoses. Vóór Juggluco 9.2.0 werd de bloedinsulineconcentratiecurve van insuline aspart gebruikt om IOB te schatten.</span>
+    </li>
+    <li>
+      <a href="alarmhelp.html">Alarmen</a>
+      <span class="desc">Glucose alarmen: De via Bluetooth ontvangen (stream) glucose waarde kan gebruikt worden om een alarm af te laten gaan. Laag glucose alarm Waarde waarbij en waaronder het alarm af moet gaan. Hoog glucose alarm Waarde waarbij waarboven het alarm af moet gaan.</span>
+    </li>
+    <li>
+      <a href="advancedAlarmshelp.html">Extra alarmen</a>
+      <span class="desc">Zeer lage glucose alarm Tweede alarm voor lage glucosewaarde, dat afgaat wanneer de glucosewaarde lager is dan het alarm voor lage glucosewaarde.</span>
+    </li>
+    <li>
+      <a href="ringtone.html">Beltoon</a>
+      <span class="desc">Geef aan welke beltoon gespeeld wordt voor een alarm of melding en voor hoeveel seconden. Minuten op non-actief : Bij laag en hoog glucose alarmen, kun je ook aangeven na hoelang het alarm weer af moet gaan als de toestand aanhoudt.</span>
+    </li>
+    <li>
+      <a href="disturbhelp.html">Toegang tot "Niet storen"</a>
+      <span class="desc">Op sommige apparaten werken de alarmen niet tijdens de modus "Niet storen" . Met "Storen" kun je aangeven of "Niet storen" moet worden uitgeschakeld voordat het alarm wordt afgespeeld.</span>
+    </li>
+    <li>
+      <a href="talkhelp.html">Praat</a>
+      <span class="desc">Spreek glucose uit Spreekt glucosewaarden uit als ze binnenkomen. Seconden er tussen : Geeft aan hoeveel seconden Juggluco moet wachten voordat de volgende glucosewaarde wordt uitgesproken. Glucosewaarden worden altijd direct uitgesproken als ze binnenkomen.</span>
+    </li>
+    <li>
+      <a href="displayhelp.html">Weergave</a>
+      <span class="desc">Kleuren Verander de kleuren van de grafiek, scans en hoeveelheden. Bereik Grafiek: Laag-Hoog In Librelink lopen de weergegeven glucose waarden van 0 tot 21 mmol/L (als geen waarde daarbovenuit gaat).</span>
+    </li>
+    <li>
+      <a href="colorhelp.html">Kleuren</a>
+      <span class="desc">Hier kun je de kleur veranderen van nummers, grafiek lijnen en scan punten. Raak een punt van de grafiek, scan of hoeveelheid aan (zodat informatie over dat punt of hoeveelheid getoond wordt). Raak hierna een kleur aan in dit kleur-schermpje.</span>
+    </li>
+    <li>
+      <a href="floatingconfig.html">Zwevende glucose</a>
+      <span class="desc">Hier kunt je de lettergrootte en de voor- en achtergrondkleur van de zwevende glucose instellen. Je kunt de achtergrond ook instellen op Doorzichtig , waardoor deze onzichtbaar wordt.</span>
+    </li>
+    <li>
+      <a href="settinghelp.html">Instellingen</a>
+      <span class="desc">Eenheid Geef aan of glucose waarden in mmol/L of mg/dL weergegeven moeten worden. NFC geluid Maak tijdens het scannen ook geluid, naast vibratie.</span>
+    </li>
+    <li>
+      <a href="searchhelp.html">Zoeken</a>
+      <span class="desc">Zoeken kan gebruikt worden om naar glucose waarden of ingevoerde hoeveelheden te zoeken. Je zoekt naar waarden tussen de twee aangegeven nummers. Om naar waarden groter of gelijk aan 10 te zoeken, geef je bijvoorbeeld 10-999 aan.</span>
+    </li>
+    <li>
+      <a href="stathelp.html">Statistiek</a>
+      <span class="desc">Enige statistieken ontnomen aan AGP met wat kleine wijzigingen. Het aantal geanalyseerde dagen kan veranderd worden met de Dagen knop.</span>
+    </li>
+    <li>
+      <a href="loghelp.html">Log</a>
+      <span class="desc">Dit is een logversie van Juggluco. Logbestanden kunnen worden gemaakt in /data/data/tk.glucodata/files/logs trace.log bevat logberichten die Juggluco zelf maakt. logcat.txt bevat logberichten die Android maakt met betrekking tot Juggluco.</span>
+    </li>
+    <li>
+      <a href="helpexport.html">Export</a>
+      <span class="desc">Exporteer gegevens uit Juggluco naar een bestand. Maaltijden worden opgeslagen in html. Alle andere gegevens worden opgeslagen in .tsv ( Tab-separated values ). Dit kan worden geladen in programma's als LibreOffice Calc, Microsoft Excel, Mathematica of R.</span>
+    </li>
+    <li>
+      <a href="connectionoverview.html">Kloon</a>
+      <span class="desc">Zendt data naar of ontvang data van een ander apparaat; Het is mogelijk een verbinding te vormen met Juggluco op een ander Android apparaat en daar de zelfde data weer te geven als hier.</span>
+    </li>
+    <li>
+      <a href="addconnection.html">Verbinding toevoegen</a>
+      <span class="desc">Specificeer een verbinding met een ander exemplaar van Juggluco; Juggluco op een apparaat zendt data via IP/TCP naar Juggluco op een ander apparaat.</span>
+    </li>
+    <li>
+      <a href="QRmirror.html">QR-kloon</a>
+      <span class="desc">Je kunt de andere kant van een kloon verbinding configureren door een QR-code te scannen met het linkermenu → Foto op de andere telefoon. Met linker midden menu → Kloon → Auto QR worden beide kanten van de verbinding automatisch gegenereerd.</span>
+    </li>
+    <li>
+      <a href="autoqrmessage.html">AutoQR</a>
+      <span class="desc">Genereert een verbinding op deze telefoon en geeft een QR-code weer die door een ander Android-apparaat kan worden gescand.</span>
+    </li>
+    <li>
+      <a href="turnservers.html">TURN-Server</a>
+      <span class="desc">Een ICE-verbinding wordt gebruikt na het genereren van een autoQR-verbinding via internet of bij het instellen van ICE bij het handmatig opgeven van een verbinding Wanneer Interactive Connectivity Establishment (ICE) er niet in slaagt een directe verbinding…</span>
+    </li>
+    <li>
+      <a href="Nightscouthelp.html">Webserver</a>
+      <span class="desc">Juggluco bevat een webserver waarmee andere apps glucosewaarden van Juggluco kunnen ontvangen. Het kan worden gebruikt door xDrip-horloges en sommige Nightscout-apps.</span>
+    </li>
+    <li>
+      <a href="new.html">Web Server</a>
+      <span class="desc">Juggluco bevat een webserver waarmee andere apps glucosewaarden van Juggluco kunnen ontvangen. Het kan worden gebruikt door xDrip-horloges en sommige Nightscout-apps.</span>
+    </li>
+    <li>
+      <a href="NightPost.html">Nightscout uploader</a>
+      <span class="desc">In de meeste gevallen kun je ook de webserver in Juggluco of juggluco-server gebruiken. Slechts een paar apps, die niets anders doen dan de Nightscout-webpagina weergeven, hebben cgm-remote-monitor nodig.</span>
+    </li>
+    <li>
+      <a href="libreview.html">Libreview</a>
+      <span class="desc">Juggluco kan glucosegegevens en hoeveelheden naar Libreview sturen. Juggluco hoeft niet voortdurend verbonden te zijn met internet om alle gegevens naar Libreview te kunnen verzenden.</span>
+    </li>
+    <li>
+      <a href="librenumhelp.html">Librenum</a>
+      <span class="desc">Vink " Zend hoeveelheden " aan om hoeveelheden naar Libreview te zenden. Om " Zend hoeveelheden " aan te kunnen vinken, moet je eerst voor elk label aangeven wat het is.</span>
+    </li>
+    <li>
+      <a href="setlibrenumtype.html">Setlibrenumtype</a>
+      <span class="desc">Op dezelfde manier als voor Libreview, kan wat er met hoeveelheden gedaan moet worden ook aangegeven worden voor de Nightscout-server in Juggluco. Selecteer hoe een hoeveelheid ingevoerd onder een bepaald label naar Libreview gezonden moeten worden.</span>
+    </li>
+    <li>
+      <a href="nightnumhelp.html">Nightnum</a>
+      <span class="desc">Stel " Geef hoeveelheden " in om hoeveelheden toegankelijk te maken via de Nightscout web server in Juggluco.</span>
+    </li>
+    <li>
+      <a href="getaccountidhelp.html">Account-ID ophalen</a>
+      <span class="desc">Hoe krijg je de Libreview-account-ID die nodig is voor het scannen van een Freestyle Libre 3-sensor via NFC? Als je " Handmatig " opgeeft, kun je de account-ID handmatig invoeren.</span>
+    </li>
+    <li>
+      <a href="exchangehelp.html">Deel gegevens</a>
+      <span class="desc">Health Connect Stuur minutieuze glucosewaarden naar Health Connect . Je kunt andere apps toegang geven tot deze glucosewaarden, bijvoorbeeld Google Fit . Andere apps kunnen weer gegevens van Google Fit krijgen.</span>
+    </li>
+    <li>
+      <a href="watchinfo.html">Horloges</a>
+      <span class="desc">Op verschillende manieren kunnen stream glucose waarden van Juggluco naar horloges verzonden en daarop weergegeven worden. Melding Als Melding is ingeschakeld, wordt er een Android-melding gemaakt telkens wanneer er een nieuwe glucosewaarde binnenkomt.</span>
+    </li>
+    <li>
+      <a href="kerfstok.html">Kerfstok</a>
+      <span class="desc">Kerfstok ( https://www.juggluco.nl/Kerfstok/index.html ) is een horloge app voor programmeerbare Garmin sporthorloges. Sinds Kerfstok 1.6.0 kan het ook gebruikt worden op horloges zonder touchscreen.</span>
+    </li>
+    <li>
+      <a href="garminconfig.html">Kerfstok configuratie</a>
+      <span class="desc">De broncode van Kerfstok kan gedownload worden van https://www.juggluco.nl/Kerfstok/Kerfstok-source.html . Iemand die de broncode verandert, kan een andere ID gebruiken. Juggluco moet die ID weten om met die veranderde Kerfstok te kunnen communiceren.</span>
+    </li>
+    <li>
+      <a href="shortcuthelp.html">Shortcut</a>
+      <span class="desc">Shortcuts worden gebruikt in de Garmin watch app Kerfstok. Vanuit het nummer invoer schermpje van Kerfstok, kun in het Shortcut schermpje komen (op mijn Vivoactive 3 door naar links te vegen), bestaande uit een lijst van namen voor shortcuts.</span>
+    </li>
+    <li>
+      <a href="wearosinfo.html">WearOS</a>
+      <span class="desc">Voer nummers (hoeveelheden) in op horloge: Voer hoeveelheden voor insuline, koolhydraten en activiteit in op het horloge (tweede menu → "Hoeveelheid" ) in plaats van op de telefoon. Als je Novopens met de telefoon wilt scannen, moet je dit niet instellen.</span>
+    </li>
+    <li>
+      <a href="notificationpermission.html">Meldingen</a>
+      <span class="desc">Tenzij Juggluco wordt gebruikt met Freestyle Libre 0 sensoren, moet Juggluco in de achtergrond actief blijven om elke minuut een glucosemeting te ontvangen, rechtstreeks van de sensor via Bluetooth of via een netwerkverbinding.</span>
+    </li>
+    <li>
+      <a href="locationpermission.html">Locatie toestemming</a>
+      <span class="desc">Apparaten met Android 6 tot en met 11 hebben locatietoestemming nodig om Sibionics en Dexcom -sensoren te vinden. Vroeger had Juggluco locatie toestemming nodig om het Bluetooth device adres van Freestyle Libre 2 sensoren te vinden.</span>
+    </li>
+    <li>
+      <a href="nearbypermission.html">APPARATEN IN DE BUURT toestemming</a>
+      <span class="desc">Juggluco heeft toestemming voor APPARATEN IN DE BUURT nodig om glucosewaarden via Bluetooth te ontvangen van Freestyle Libre 2- en 3-sensoren.</span>
+    </li>
+    <li>
+      <a href="flashpermission.html">Camera toestemming</a>
+      <span class="desc">Soms wordt beweert dat voor het gebruik van de Flits op sommige apparaten Camera toestemming nodig is. Op de smartphones die ik getest heb is deze toestemming niet nodig en Juggluco vraagt niet om deze toestemming.</span>
+    </li>
+    <li>
+      <a href="healthpermission.html">Toestemming om bloed suikergehalte te schrijven</a>
+      <span class="desc">Om glucosewaarden naar Health Connect te kunnen schrijven, moet de gebruiker Juggluco toestemming geven om bloed suikergehalte naar Health Connect te schrijven. Deze toestemming is voor niets anders nodig dan het ontvangen van glucosewaarden in Health Connect.</span>
+    </li>
+  </ul>
 </body>
 </html>

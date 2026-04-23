@@ -1,96 +1,242 @@
 <!DOCTYPE html>
-<html>
+<html lang="pl" dir="ltr">
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-       <link rel="icon" href="../arrow.png">
-	<title>Juggluco</title>
-	<style>h3{text-align: right;}</style>
-	<script>
-function getunitarg(){ 
-	const params = new URLSearchParams(document.location.search);
-	const unit = params.get("unit");
-	if(unit == "mg/dL") { 
-		return 2;
-		} 
-	else { 
-		if(unit=="mmol/L") {
-		   return 1;
-		   }
-	 	}
-	return 0;
-    } 
-let mmol=[
-"AM",
-"AU",
-"BA",
-"BG",
-"BW",
-"BY",
-"CA",
-"CH",
-"CN",
-"CZ",
-"DK",
-"EE",
-"FI",
-"GB",
-"HK",
-"HR",
-"HU",
-"IE",
-"IS",
-"KW",
-"KZ",
-"LT",
-"LV",
-"MT",
-"MY",
-"NA",
-"NL",
-"NO",
-"NZ",
-"RS",
-"RU",
-"SE",
-"SI",
-"SK",
-"UA",
-"ZA"];
-
-
-
-
-
-
-function getunit() {
-	var unit=getunitarg();
-	if(unit!=0) {
-		return unit;
-		}
-
-	var userLang = navigator.language || navigator.userLanguage;
-	var  co=userLang.toUpperCase();
-	var hit=false;
-	for(const element of mmol) {
-	  if(co.includes(element)) {
-		return 1;
-		}
-	   }
-	  return 2;
-	 }
-if(getunit()==1) {
-	 window.location = "https://www.juggluco.nl/Jugglucohelp/pl/introhelp.html?unit=mmol/L";
-	}
-else  {
-	 window.location = "https://www.juggluco.nl/Jugglucohelp/pl/introhelp.html?unit=mg/dL";
-	 }
-</script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Juggluco</title>
+  <style>:root { color-scheme: light dark; }
+body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans",
+                 "Noto Sans Arabic", "Noto Sans Devanagari",
+                 "Noto Sans CJK SC", sans-serif;
+    max-width: 52rem;
+    margin: 2rem auto;
+    padding: 0 1rem 3rem;
+    line-height: 1.5;
+}
+header { margin-bottom: 2rem; }
+h1 { margin: 0 0 .3rem; font-size: 1.8rem; }
+header p { margin: .25rem 0; }
+header a { word-break: break-all; }
+ul.toc { list-style: none; padding: 0; margin: 0; }
+ul.toc li { padding: .55rem 0; border-top: 1px solid rgba(128,128,128,.25); }
+ul.toc li:first-child { border-top: none; }
+ul.toc a { font-weight: 600; text-decoration: none; }
+ul.toc a:hover { text-decoration: underline; }
+.desc { display: block; margin-top: .15rem; font-weight: 400;
+        color: rgba(0,0,0,.78); }
+@media (prefers-color-scheme: dark) {
+    .desc { color: rgba(255,255,255,.78); }
+}
+footer { margin-top: 2rem; font-size: .85rem; opacity: .7; }
+</style>
 </head>
-<body lang="pl-PL" link="#000080" vlink="#800000" dir="ltr"><p><a href="https://www.juggluco.nl/Jugglucohelp/de/index.html">de</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/nl/index.html">nl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pl/index.html">pl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ru/index.html">ru</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/zh/index.html">zh</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/index.html?lang=en">en</a>&emsp;&emsp;</p><h2 class="western">
-<p><a href="https://www.juggluco.nl/Juggluco">https://www.juggluco.nl/Juggluco</a></p>
+<body>
+  <header>
+    <h1>Juggluco</h1>
+    <p><a href="https://www.juggluco.nl/Juggluco">https://www.juggluco.nl/Juggluco</a></p>
+  </header>
+  <ul class="toc">
+    <li>
+      <a href="introhelp.html">Intro</a>
+      <span class="desc">Juggluco To aplikacja służąca do kontroli stężenia glukozy we krwi przez osoby chore na cukrzycę.</span>
+    </li>
+    <li>
+      <a href="about.html">Informacje</a>
+      <span class="desc">Aplikację Juggluco stworzył Jaap Korthals Altes Poza standardowymi bibliotekami Androida wykorzystywane są m.in: Komendy NFC i Bluetooth specyficzne dla sensorów Abbott FreeStyle Libre oraz algorytmy interpretacji specyficzne dla sensorów FreeStyle Libre.</span>
+    </li>
+    <li>
+      <a href="battery.html">Utrzymanie funkcjonowania</a>
+      <span class="desc">Normalnie, gdy urządzenie android nie jest używane, wchodzi w tryb uśpienia, aby zużywać mniej energii.</span>
+    </li>
+    <li>
+      <a href="sensorhelp.html">Sensor</a>
+      <span class="desc">Menu rozwijane zawiera nazwę sensora. Jeśli w Juggluco zeskanowano więcej niż jeden sensor na raz, można wybrać, dla którego sensora mają być wyświetlane informacje.</span>
+    </li>
+    <li>
+      <a href="sensormirror.html">Informacje o sensorze</a>
+      <span class="desc">Podaje informacje o sensorach, gdy Juggluco działa w ramach klonowania wartości strumienia: Początek: czas uruchomienia sensora. W przypadku czujników Libre jest to jedna godzina przed uzyskaniem pierwszych wartości glukozy.</span>
+    </li>
+    <li>
+      <a href="changestart.html">Zmień początek</a>
+      <span class="desc">Zmień datę i godzinę, od której dane będą wysyłane do Libreview. Może to być przydatne, gdy niektóre dane widnieją już w Libreview.</span>
+    </li>
+    <li>
+      <a href="labelhelp.html">Etykiety dla wartości</a>
+      <span class="desc">Tutaj można tworzyć , usuwać i modyfikować etykiety dla ilości dodawanych do wykresu w celu określenia insuliny, węglowodanów lub aktywności fizycznej. Jeśli zapisałeś już jakieś ilości, otrzymają one etykietę odpowiadającą ich pozycji.</span>
+    </li>
+    <li>
+      <a href="newlabelhelp.html">Etykieta:</a>
+      <span class="desc">Nazwa etykiety używanej do wprowadzania liczb. Za pomocą "Nowa wartość" w środkowym menu po lewej stronie można dodać liczbę związaną z określoną datą i godziną. Te liczby można wyświetlić na wykresie glukozy w tej pozycji czasowej lub na liście.</span>
+    </li>
+    <li>
+      <a href="newamount.html">Nowa wartość</a>
+      <span class="desc">Za pomocą opcji Nowa wartość można wprowadzać liczby powiązane z dowolną etykietą. Etykiety można ustawić w lewym menu→Ustawienia→ Etykiety wart. liczb. .</span>
+    </li>
+    <li>
+      <a href="mealhelp.html">Posiłki</a>
+      <span class="desc">Określ ilość składników posiłku. Następnie obliczana jest całkowita zawartość węglowodanów. Można również podać ilość węglowodanów dla całego posiłku lub składnika i wtedy program określa potrzebną ilość składnika.</span>
+    </li>
+    <li>
+      <a href="nutrients.html">Baza danych o składzie żywności</a>
+      <span class="desc">Tutaj możesz wyszukać środki spożywcze w publikacji McCance’a i Widdowsona „The Composition of Foods Integrated Dataset” 2021 https://www.gov.</span>
+    </li>
+    <li>
+      <a href="reminders.html">Przypomnienia</a>
+      <span class="desc">Przypomnienia przypominają Ci, jeśli nie wprowadziłeś określonej wartości w określonym przedziale czasu. Naciskając Nowe możesz dodać nowe przypomnienie.</span>
+    </li>
+    <li>
+      <a href="staticnum.html">Blokada</a>
+      <span class="desc">Opcję w Lewe środkowe menu -&gt; Klonowanie -&gt; " Klon wysyła wartości " włącza się, aby zapobiec wprowadzaniu wartości w tej aplikacji, ponieważ zostaną one zastąpione wartościami otrzymanymi z urządzenia „klonu”.</span>
+    </li>
+    <li>
+      <a href="IOB.html">IOB – Insulin on Board – Wartość aktywnej insuliny</a>
+      <span class="desc">IOB jest miarą ilości insuliny pozostałej z poprzednich dawek insuliny. Przed wersją Juggluco 9.2.0 do oszacowania wartości aktywnej insuliny IOB używano krzywej stężenia insuliny we krwi dla insuliny Aspart.</span>
+    </li>
+    <li>
+      <a href="alarmhelp.html">Alarmy</a>
+      <span class="desc">Alarmy dotyczące stężenia glukozy: Wartości strumienia odbierane przez Bluetooth mogą być wykorzystane do ustawienia alarmów niskiego i wysokiego stężenia glukozy.</span>
+    </li>
+    <li>
+      <a href="ringtone.html">Dzwonek</a>
+      <span class="desc">Wybierz, który dzwonek ma być odtwarzany dla alarmu lub powiadomienia i przez ile sekund. Minut(y) wyłączenia : jeśli poziom stężenia glukozy będzie nadal niski lub wysoki, alarm nie wyłączy się natychmiast ponownie.</span>
+    </li>
+    <li>
+      <a href="disturbhelp.html">Dostęp w trybie " Nie przeszkadzać "</a>
+      <span class="desc">Na niektórych urządzeniach alarmy nie działają w trybie " Nie przeszkadzać ". Za pomocą opcji " Przeszkadzaj " można określić, czy funkcja " Nie przeszkadzać " powinna zostać wyłączona przed odtworzeniem alarmu.</span>
+    </li>
+    <li>
+      <a href="talkhelp.html">Na głos</a>
+      <span class="desc">Mów wartość glikemii na głos Wypowiada na głos wartości glukozy, gdy się pojawią. Sekund(y) pomiędzy : Określa, ile sekund Juggluco ma czekać przed wypowiedzeniem następnej wartości glukozy. Wartości glukozy są zawsze podawane natychmiast po ich otrzymaniu.</span>
+    </li>
+    <li>
+      <a href="displayhelp.html">Ustawienia ekranu</a>
+      <span class="desc">Kolory Zmień kolory krzywych, skanów i liczb. Aby włączyć Tryb ciemny , użyj prawego środkowego menu-&gt;Tryb ciemny. Zakres wykresu: wartość najniższa-najwyższa.</span>
+    </li>
+    <li>
+      <a href="colorhelp.html">Kolory</a>
+      <span class="desc">Tutaj można zmienić kolory liczb, krzywych i punktów skanowania. Dotknij punktu krzywej, skanu lub wartości (aby wyświetlić informacje o tym punkcie lub wartości). Następnie dotknij koloru w widoku kolorów.</span>
+    </li>
+    <li>
+      <a href="floatingconfig.html">Floating</a>
+      <span class="desc">Pływ. gluk. Tutaj możesz ustawić rozmiar czcionki oraz kolor pierwszego planu i tła pływającej wartości stęż. glukozy.</span>
+    </li>
+    <li>
+      <a href="settinghelp.html">Ustawienia</a>
+      <span class="desc">Jednostka Wybierz, czy wartości glukozy mają być podawane w mmol/L czy mg/dL. Dźwięk NFC Podczas skanowania oprócz wibracji wydawany jest również dźwięk.</span>
+    </li>
+    <li>
+      <a href="searchhelp.html">Szukaj</a>
+      <span class="desc">Za pomocą wyszukiwania można znaleźć wartości glukozy i wprowadzone liczby. Szukasz wartości pomiędzy podanymi liczbami . Na przykład: 10 – 999, aby wyszukać wartości pomiędzy 10 a 999. Wartości glukozy są podzielone na Skan, Historia i Strumień.</span>
+    </li>
+    <li>
+      <a href="stathelp.html">Statystyka</a>
+      <span class="desc">Niektóre statystyki zaczerpnięte z AGP niewielkimi modyfikacjami. Liczbę analizowanych dni można zmienić, naciskając przycisk Dni . Okres kończy się w momencie zakończenia pozycji ekranu i obejmuje określoną liczbę dni wstecz.</span>
+    </li>
+    <li>
+      <a href="loghelp.html">Log - dziennik błędów</a>
+      <span class="desc">Jest to wersja Juggluco do logowania. Pliki logów mogą być tworzone w /data/data/tk.glucodata/files/logs. Plik trace.log zawiera komunikaty dziennika tworzone przez Juggluco. logcat.</span>
+    </li>
+    <li>
+      <a href="helpexport.html">Eksport</a>
+      <span class="desc">Eksport danych z Juggluco do pliku. Posiłki są zapisywane w html. Wszystkie inne dane są zapisywane w formacie .tsv ( wartości oddzielone tabulatorami ). Taki plik można załadować do programów takich jak LibreOffice Calc, Microsoft Excel, Mathematica lub R.</span>
+    </li>
+    <li>
+      <a href="connectionoverview.html">Klonowanie</a>
+      <span class="desc">Wysyłanie danych do lub odbieranie danych z innego urządzenia. Możesz podłączyć się do urządzenia z systemem android z zainstalowaną aplikacją Juggluco, aby wyświetlić dane w taki sam sposób jak tutaj.</span>
+    </li>
+    <li>
+      <a href="addconnection.html">Dodaj połączenie</a>
+      <span class="desc">Określenie połączenia z aplikacją Juggluco działającą na innym urządzeniu. Juggluco na jednym urządzeniu wysyła poprzez protokół IP/TCP dane do Juggluco na innym urządzeniu.</span>
+    </li>
+    <li>
+      <a href="QRmirror.html">Klon QR</a>
+      <span class="desc">Drugą stronę połączenia w ramach klonowania można skonfigurować, skanując kod QR za pomocą menu po lewej stronie → Zdjęcie na drugim telefonie. W lewym środkowym menu→Klonowanie→Auto QR, obie strony połączenia są generowane automatycznie.</span>
+    </li>
+    <li>
+      <a href="autoqrmessage.html">Autoqr</a>
+      <span class="desc">Prześlij dane z tego telefonu do innego telefonu w sieci domowej. Naciśnięcie przycisku OK spowoduje wygenerowanie połączenia na tym telefonie i wyświetlenie kodu QR, który można zeskanować za pomocą innego urządzenia z systemem Android.</span>
+    </li>
+    <li>
+      <a href="Nightscouthelp.html">Serwer sieciowy</a>
+      <span class="desc">Juggluco zawiera serwer WWW, za pomocą którego inne aplikacje mogą odbierać wartości glukozy z Juggluco. Może być używany przez zegarki xDrip i niektóre aplikacje Nightscout.</span>
+    </li>
+    <li>
+      <a href="NightPost.html">Prześlij na serwer Nightscout</a>
+      <span class="desc">W większości przypadków można również użyć Serwera WWW w Juggluco lub Serwera-juggluco . Tylko kilka aplikacji, które nie robią nic więcej niż wyświetlanie strony Nightscout, potrzebuje cgm-remote-monitor .</span>
+    </li>
+    <li>
+      <a href="libreview.html">Libreview</a>
+      <span class="desc">Juggluco może wysyłać dane dotyczące stężenia glukozy i jej wartości do Libreview. Podobnie jak aplikacja Librelnk, do Libreview wysyła dane z ostatnich 89 dni. Aby skorzystać z tej usługi, należy założyć konto Libreview na stronie https://libreview.</span>
+    </li>
+    <li>
+      <a href="librenumhelp.html">Librenum</a>
+      <span class="desc">Ustaw "Wyślij wartości ", aby wysłać wartości do Libreview. Przed włączeniem opcji "Wyślij wartości " należy dla każdej etykiety określić, w jaki sposób wartości wpisane pod daną etykietą mają być wysyłane do Libreview.</span>
+    </li>
+    <li>
+      <a href="setlibrenumtype.html">Setlibrenumtype</a>
+      <span class="desc">Podobnie jak w przypadku Libreview, można również określić sposób reprezentowania wartości za pośrednictwem serwera Nightscout w Juggluco. Wybierz, w jaki sposób Wartości w Juggluco wprowadzone pod daną etykietą mają być wysyłane do Libreview.</span>
+    </li>
+    <li>
+      <a href="nightnumhelp.html">Nightnum</a>
+      <span class="desc">Ustaw „ Przekaż wartości ", aby wartości były dostępne za pośrednictwem serwera Nightscout w Juggluco. Przed włączeniem opcji "Przekaż wartości " należy dla każdej etykiety określić, w jaki sposób wartości wpisane pod daną etykietą mają być przekazywane.</span>
+    </li>
+    <li>
+      <a href="getaccountidhelp.html">Uzyskaj identyfikator konta Libreview</a>
+      <span class="desc">Jak uzyskać identyfikator konta Libreview potrzebny do zeskanowania sensora Freestyle Libre 3 przez NFC? Jeśli wybierzesz opcję " Ręcznie " , możesz wprowadzić identyfikator konta ręcznie.</span>
+    </li>
+    <li>
+      <a href="exchangehelp.html">Przesył danych</a>
+      <span class="desc">Health Connect Wysyłaj co minutę wartości glukozy do Health Connect . Dostępu do tych wartości glukozy można udzielić innym aplikacjom, na przykład Google Fit . Inne aplikacje również mogą uzyskać dostęp do danych z Google Fit.</span>
+    </li>
+    <li>
+      <a href="watchinfo.html">Zegarek</a>
+      <span class="desc">Obecnie Juggluco ma sześć sposobów na uzyskanie wartości glukozy na zegarku. Powiadom. Kiedy włączona jest opcja Powiadomienia, po każdym nadejściu nowej wartości glukozy tworzone jest powiadomienie dla systemu Android.</span>
+    </li>
+    <li>
+      <a href="kerfstok.html">Kerfstok</a>
+      <span class="desc">Kerfstok ( https://apps.garmin.com/pl-PL/apps/b6348ccc-86d8-4780-8013-d9e19fed5260 (zobacz również https://www.juggluco.nl/Kerfstok/index.html ) to aplikacja do zegarków przeznaczona do programowanych smartwatchy Garmin z ekranem dotykowym.</span>
+    </li>
+    <li>
+      <a href="garminconfig.html">Konfiguracja Kerfstok</a>
+      <span class="desc">Kod źródłowy Kerfstok można pobrać ze strony https://www.juggluco.nl/Kerfstok/Kerfstok-source.html) . Użytkownicy mogą go dowolnie modyfikować. Każda aplikacja na zegarek ma unikalny identyfikator.</span>
+    </li>
+    <li>
+      <a href="shortcuthelp.html">Skróty można wykorzystywać w Kerfstok.</a>
+      <span class="desc">Na ekranie wprowadzania liczb na zegarku można przejść do ekranu skrótów (na moim zegarku Vivoactive 3 poprzez przesunięcie w lewo). Tutaj widać listę etykiet; naciśnięcie jednej z nich wstawia odpowiednią wartość na ekranie liczbowym.</span>
+    </li>
+    <li>
+      <a href="wearosinfo.html">Wear OS</a>
+      <span class="desc">Bezpośrednie połączenie sensor-zegarek : Opcja ta określa, czy zegarek powinien być bezpośrednio połączony z sensorem. Można ją zmienić tylko wtedy, gdy zegarek i telefon są zsynchronizowane. Użyj Klonowanie -&gt;Synchronizacja i Wznów poł.</span>
+    </li>
+    <li>
+      <a href="notificationpermission.html">Powiadomienia</a>
+      <span class="desc">O ile aplikacja Juggluco nie jest używana z sensorami Freestyle Libre 0, Juggluco musi pozostać aktywna w tle, aby co minutę otrzymywać odczyt poziomu glukozy bezpośrednio z sensora przez Bluetooth lub przez połączenie sieciowe.</span>
+    </li>
+    <li>
+      <a href="locationpermission.html">Uprawnienie do danych lokalizacji</a>
+      <span class="desc">Urządzenia z systemem Android od 6 do 11 potrzebują uprawnień do danych lokalizacji, aby odnaleźć urządzenia Bluetooth.</span>
+    </li>
+    <li>
+      <a href="nearbypermission.html">Uprawnienie SKANOWANIE URZĄDZEŃ W POBLIŻU</a>
+      <span class="desc">Juggluco potrzebuje uprawnień do SKANOWNIA URZĄDZEŃ W POBLIŻU do odbierania wartości glukozy przez Bluetooth z czujników Freestyle Libre 2 i 3.</span>
+    </li>
+    <li>
+      <a href="camerapermission.html">Uprawnienie do korzystania z aparatu</a>
+      <span class="desc">Aby użyć sensora Sibionics, należy zeskanować matrycę danych na opakowaniu, korzystając z aparatu telefonu.</span>
+    </li>
+    <li>
+      <a href="flashpermission.html">Flash</a>
+      <span class="desc">Niekiedy twierdzi si�, �e korzystanie z lampy b�yskowej wymaga w niektórych smartfonach uprawnienia do dost�pu do Aparatu. Z tego powodu aplikacja Juggluco w poprzednich wersjach prosi�a o to uprawnienie.</span>
+    </li>
+    <li>
+      <a href="healthpermission.html">Zgoda na zapisywanie stężenia glukozy we krwi</a>
+      <span class="desc">Aby móc zapisywać wartości glukozy do Health Connect, użytkownik musi nadać Juggluco uprawnienia do zapisu wartości Stężenia glukozy we krwi do Health Connect.</span>
+    </li>
+    <li>
+      <a href="sensorpermission.html">Sensor</a>
+      <span class="desc">Tarcza zegarka Juggluco potrzebuje uprawnienia do dostępu do czujników na wyświetlanie tętna.</span>
+    </li>
+  </ul>
 </body>
 </html>
-
-
-
-

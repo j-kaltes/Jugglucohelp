@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="tr" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Juggluco</title>
+  <style>:root { color-scheme: light dark; }
+body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans",
+                 "Noto Sans Arabic", "Noto Sans Devanagari",
+                 "Noto Sans CJK SC", sans-serif;
+    max-width: 52rem;
+    margin: 2rem auto;
+    padding: 0 1rem 3rem;
+    line-height: 1.5;
+}
+header { margin-bottom: 2rem; }
+h1 { margin: 0 0 .3rem; font-size: 1.8rem; }
+header p { margin: .25rem 0; }
+header a { word-break: break-all; }
+ul.toc { list-style: none; padding: 0; margin: 0; }
+ul.toc li { padding: .55rem 0; border-top: 1px solid rgba(128,128,128,.25); }
+ul.toc li:first-child { border-top: none; }
+ul.toc a { font-weight: 600; text-decoration: none; }
+ul.toc a:hover { text-decoration: underline; }
+.desc { display: block; margin-top: .15rem; font-weight: 400;
+        color: rgba(0,0,0,.78); }
+@media (prefers-color-scheme: dark) {
+    .desc { color: rgba(255,255,255,.78); }
+}
+footer { margin-top: 2rem; font-size: .85rem; opacity: .7; }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Juggluco</h1>
+    <p><a href="https://www.juggluco.nl/Juggluco">https://www.juggluco.nl/Juggluco</a></p>
+  </header>
+  <ul class="toc">
+    <li>
+      <a href="introhelp.html">Intro</a>
+      <span class="desc">Juggluco diyabetli kişilerde kan şekerinin kontrolü için kullanılan bir uygulamadır. Freestyle Libre (0 ve 2) sensörlerini tarayabilir (NFC aracılığıyla) ve Freestyle Libre 2 ve 3 , Sibionics GS1Sb ve Dexcom G7/ONE+ sensörlerinden glikoz değerlerini alabilir.</span>
+    </li>
+    <li>
+      <a href="about.html">Hakkında</a>
+      <span class="desc">Juggluco, Jaap Korthals Altes tarafından yazıldı. Standart Android kütüphanelerinin yanı sıra, aşağıdakiler kullanılır: Abbott FreeStyle Libre sensörlerine özgü NFC ve Bluetooth komutları ile FreeStyle Libre sensörlerine özgü yorumlama algoritmaları.</span>
+    </li>
+    <li>
+      <a href="battery.html">Çalışmaya devam et</a>
+      <span class="desc">Normalde bir android cihaz kullanılmadığında, daha az enerji kullanmak için uyku moduna geçer. Bluetooth veya TCP/IP üzerinden glikoz değerlerini güvenilir bir şekilde almanız gerekiyorsa, Juggluco için pil optimizasyonlarını kapatmanız gerekir.</span>
+    </li>
+    <li>
+      <a href="sensorhelp.html">Sensör</a>
+      <span class="desc">Seçici sensörün adını gösterir. Juggluco aynı anda birden fazla sensör kullanıyorsa, bilgisi gösterilecek sensörü seçebilirsiniz.</span>
+    </li>
+    <li>
+      <a href="sensormirror.html">Sensör Bilgisi</a>
+      <span class="desc">Juggluco akış değerlerinin klonu olarak işlev gördüğünde sensörler hakkında bilgi verir. Başladı: Sensörün başlatıldığı zaman. Libre sensörlerinde bu ilk glikoz değerlerinden bir saat öncedir. Son Tarama: Sensörün tarandığı son zaman.</span>
+    </li>
+    <li>
+      <a href="changestart.html">Başlangıcı Değiştir</a>
+      <span class="desc">Verilerin Libreview'e gönderileceği tarihi ve saati değiştirin. Bu, verilerin bir kısmı Libreview'de zaten mevcut olduğunda yararlı olabilir.</span>
+    </li>
+    <li>
+      <a href="labelhelp.html">Miktar Etiketleri</a>
+      <span class="desc">Buradan oluşturabilirsiniz , İnsülin, karbonhidrat veya fiziksel aktiviteyi belirtirken grafiğe eklenen miktarlar için etiketleri silip değiştirebilirsiniz. Zaten bazı miktarları kaydettiyseniz, konumlarına karşılık gelen etiketi alacaklardır.</span>
+    </li>
+    <li>
+      <a href="newlabelhelp.html">Etiket:</a>
+      <span class="desc">Sayıları girmek için kullanılacak etikettir. Orta Sol Menüdeki "Yeni Miktar" ı kullanarak belirli bir tarih ve saate bağlı bir sayı ekleyebilirsiniz. Bu sayılar glikoz grafiğinde veya bir listede görüntülenebilir.</span>
+    </li>
+    <li>
+      <a href="newamount.html">Yeni Miktar</a>
+      <span class="desc">Yeni miktar sayesinde bir etiket ile ilişkili sayıları girebilirsiniz. Etiketleri, S ol M enü→Ayarlar→ Sayı Etiketleri altında ayarlayabilirsiniz. Etiketle girilen Miktarlar , grafikte belirlenen yükseklikte gösterilecektir.</span>
+    </li>
+    <li>
+      <a href="mealhelp.html">Yemekler</a>
+      <span class="desc">Bir öğünün içerik miktarını belirtin. Toplam karbonhidrat içeriği daha sonra hesaplanır. Ayrıca, tüm öğün veya içerik için karbonhidrat miktarını belirtmek mümkündür. Program daha sonra ihtiyacınız olan içerik miktarını belirler.</span>
+    </li>
+    <li>
+      <a href="nutrients.html">Gıda Bileşim Veritabanı</a>
+      <span class="desc">Burada McCance ve Widdowson’ın The Composition of Foods Integrated Dataset 2021 kitabındaki yiyecekleri arayabilirsiniz. https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid Düzenli ifadeleri kullanarak arama yapabilirsiniz.</span>
+    </li>
+    <li>
+      <a href="reminders.html">Hatırlatıcılar</a>
+      <span class="desc">Hatırlatıcılar, belirli bir zaman aralığında belirli bir miktarı girmediyseniz size hatırlatır. Y eni 'ye basarak yeni bir hatırlatıcı ekleyebilirsiniz.</span>
+    </li>
+    <li>
+      <a href="staticnum.html">Engellendi</a>
+      <span class="desc">O rta Sol M enü → Klon → Klon miktarları gönderir bu uygulamada miktarların girilmesini engellemek için ayarlanmıştır, çünkü bunlar klon bağlantısından alınan miktarlar tarafından geçersiz kılınacaktır.</span>
+    </li>
+    <li>
+      <a href="IOBhelp.html">Insulin onboard (IOB)</a>
+      <span class="desc">IOB, önceki insülin dozlarından ne kadar insülin kaldığını gösteren bir ölçüdür. Juggluco 9.2.0'dan önce, IOB'yi tahmin etmek için İnsülin Aspart'ın Kan İnsülin Konsantrasyonu eğrisi kullanılıyordu.</span>
+    </li>
+    <li>
+      <a href="alarmhelp.html">Alarmlar</a>
+      <span class="desc">Glikoz Alarmları: Bluetooth üzerinden alınan akış değerleri, düşük ve yüksek glikoz alarmlarını ayarlamak için kullanılabilir. Düşük Glikoz Alarmı: Alarmın çalması gereken düşük değer. Yüksek Glikoz Alarmı: Alarmın çalması gereken yüksek değer.</span>
+    </li>
+    <li>
+      <a href="ringtone.html">Zil Sesi</a>
+      <span class="desc">Bir alarm veya bildirim için hangi zil sesinin kaç saniye boyunca çalınacağını seçin. Dakika D evre D ışı : Düşük veya yüksek glikoz seviyesi devam ederse, alarm hemen tekrar çalmaz.</span>
+    </li>
+    <li>
+      <a href="disturbhelp.html">" Rahatsız E tmeyin " Modu</a>
+      <span class="desc">Bazı cihazlarda, alarmlar " Rahatsız Etmeyin " modu sırasında çalışmaz. " Rahatsız Etmeyin " ile alarm çalmadan önce " Rahatsız Etmeyin " modunun kapatılıp kapatılmayacağını belirleyebilirsiniz.</span>
+    </li>
+    <li>
+      <a href="talkhelp.html">Seslendirme</a>
+      <span class="desc">Glikozu Oku Glikoz değerleri geldiğinde okur. Ses arası boşluk : Juggluco'nun bir sonraki glikoz değerini söylemeden önce kaç saniye beklemesi gerektiğini belirtir. Glikoz değerleri geldiklerinde hemen söylenir.</span>
+    </li>
+    <li>
+      <a href="displayhelp.html">Görüntü Ayarları</a>
+      <span class="desc">Renkler Eğrilerin, taramaların ve sayıların renklerini değiştirin. Koyu mod 'a geçmek için, sağ orta menü &gt; Koyu Mod'u kullanın.</span>
+    </li>
+    <li>
+      <a href="colorhelp.html">Renkler</a>
+      <span class="desc">Burada sayıların, eğrilerin ve tarama noktalarının renklerini değiştirebilirsiniz. Bir eğrinin, taramanın veya miktarın bir noktasına dokunun (böylece o nokta veya miktar hakkında bilgi gösterilir). Bundan sonra renk görünümünde bir renge dokunun.</span>
+    </li>
+    <li>
+      <a href="floatingconfig.html">Yüzen Glikoz</a>
+      <span class="desc">Burada yüzen glikozun yazı tipi boyutunu,ön plan ve arka plan rengini ayarlayabilirsiniz. Dokunulabilir : Ayarlandığında, yüzen glikozu parmağınızla hareket ettirebilir ve uzun süre basarak (hareket ettirmeden) küçültebilirsiniz.</span>
+    </li>
+    <li>
+      <a href="settinghelp.html">Ayarlar</a>
+      <span class="desc">Birim Glikoz değerlerinin mmol/L veya mg/dL cinsinden verilmesini seçin. NFC Sesi Tarama sırasında titreşime ek olarak ses seçin. Tarama uygulamayı başlatır İşaretlenirse, uygulama açık olmasa bile NFC üzerinden bir sensörü taradığınızda uygulama başlatılır.</span>
+    </li>
+    <li>
+      <a href="searchhelp.html">Ara</a>
+      <span class="desc">Glikoz değerlerini ve girilen sayıları bulmak için arama kullanılabilir. V erilen sayılar arasında ki değerleri ararsınız. Örne ğin : 10 ile 999 arasındaki değerleri aramak için 10 – 999. Glikoz değerleri Tarama , Geçmiş ve Akış olarak ayrılır.</span>
+    </li>
+    <li>
+      <a href="stathelp.html">İstatistikler</a>
+      <span class="desc">Bazı istatistikler küçük değişikliklerle AGP 'den alınmıştır. Analiz edilen gün sayısı Günler düğmesine basılarak değiştirilebilir. Süre, ekran konumunun bittiği noktada sona erer ve belirtilen gün sayısını geriye doğru kapsar.</span>
+    </li>
+    <li>
+      <a href="loghelp.html">Log</a>
+      <span class="desc">Juggluco'nun günlük versiyonudur. Günlük dosyaları şu şekilde oluşturulabilir: /data/data/tk.glucodata/files/logs trace.log, Juggluco'nun kendisinin oluşturduğu günlük mesajlarını içerir. logcat.</span>
+    </li>
+    <li>
+      <a href="helpexport.html">Dışa Aktar</a>
+      <span class="desc">Verileri Juggluco'dan bir dosyaya aktarın. Yemekler html'de kaydedilir. Diğer tüm veriler .tsv ( Tab-separated values )'de kaydedilir. Bu, LibreOffice Calc, Microsoft Excel, Mathematica veya R gibi programlara yüklenebilir.</span>
+    </li>
+    <li>
+      <a href="connectionoverview.html">Klon (Yansıtma)</a>
+      <span class="desc">Başka bir cihaza veri gönderin veya başka bir cihazdan veri alın. Juggluco çalıştıran bir android cihaza bağlanarak verileri burada olduğu gibi görüntüleyebilirsiniz.</span>
+    </li>
+    <li>
+      <a href="addconnection.html">Bağlantı Ekle</a>
+      <span class="desc">Başka bir Juggluco örneğiyle bir bağlantı belirtin. Bir cihazdaki Juggluco, IP/TCP aracılığıyla başka bir cihazdaki Juggluco'ya veri gönderir. Bir bağlantı kurmak için, Juggluco'lardan birinin portu dinlemesi ve diğerinin o portla iletişim kurması gerekir.</span>
+    </li>
+    <li>
+      <a href="QRmirror.html">QR Klon</a>
+      <span class="desc">Diğer telefonda S ol M enü → Fotoğraf ile QR kodunu tarayarak klon bağlantısının diğer tarafını yapılandırabilirsiniz. O rta Sol M enü→ Klon →Otomatik QR ile bağlantının her iki tarafı otomatik olarak oluşturulur.</span>
+    </li>
+    <li>
+      <a href="autoqrmessage.html">Autoqr</a>
+      <span class="desc">Bu telefondan ev ağınızdaki başka bir telefona veri gönderebilirsiniz. Tamam\'a basmak bağlantı için QR kod görüntüleyecektir. QR kodu diğer telefonda Sol Menü → Fotoğraf ile taradığınızda bağlantı kurulacak ve bu telefondan tüm verileri alacaktır.</span>
+    </li>
+    <li>
+      <a href="Nightscouthelp.html">Web server</a>
+      <span class="desc">Juggluco diğer uygulamaların Juggluco'dan glikoz değerlerini alabileceği bir web sunucusu içerir. xDrip saatleri ve bazı Nightscout uygulamaları tarafından kullanılabilir. xDrip web sunucusunu kullanmak için yapılmış uygulamaları kullanmak nispeten kolaydır.</span>
+    </li>
+    <li>
+      <a href="NightPost.html">Nightscout Sunucusuna Yükleme</a>
+      <span class="desc">Çoğu durumda şuraya da bakabilirsiniz: web server in Juggluco ya da juggluco-server Nightscout sayfasını görüntülemeye yarayan birkaç uygulama var. Bunun için: cgm-remote-monitor . Juggluco 7.4.</span>
+    </li>
+    <li>
+      <a href="libreview.html">Libreview</a>
+      <span class="desc">Juggluco, glikoz verilerini ve miktarlarını Libreview'e gönderebilir. Librelink uygulaması gibi, son 89 güne ait verileri Libreview'e gönderir. Bu hizmeti kullanmak için, https://libreview.</span>
+    </li>
+    <li>
+      <a href="librenumhelp.html">Librenum</a>
+      <span class="desc">Miktarları Libreview'e göndermek için " Miktarları G önder "i seçin. " Miktarları Gönder "i açmadan önce, her etiket için o etiket altında girilen miktarların Libreview'e nasıl gönderileceğini belirtmeniz gerekir .</span>
+    </li>
+    <li>
+      <a href="setlibrenumtype.html">Setlibrenumtype</a>
+      <span class="desc">Libreview'da olduğu gibi, Juggluco'da da Nightscout sunucusu üzerinden miktarların nasıl temsil edileceğini belirleyebilirsiniz. Belirli bir etiket altında girilen Juggluco'daki miktarların Libreview'e nasıl gönderileceğini seçin.</span>
+    </li>
+    <li>
+      <a href="nightnumhelp.html">Nightnum</a>
+      <span class="desc">Juggluco'daki Nightscout web sunucusu üzerinden miktarları erişilebilir hale getirmek için " Miktarları Gir " i seçin. " Miktarları Gir "i açmadan önce, her etiket için o etiketin altına girilen miktarların nasıl verileceğini belirtmeniz gerekir.</span>
+    </li>
+    <li>
+      <a href="getaccountidhelp.html">Hesap Kimliği Al</a>
+      <span class="desc">Freestyle Libre 3 sensörünü NFC aracılığıyla taramak için gereken Libreview Hesap Kimliği nasıl alınır? " Manuel olarak" seçeneğini belirlerseniz, Hesap Kimliğini manuel olarak girebilirsiniz.</span>
+    </li>
+    <li>
+      <a href="exchangehelp.html">Veri Değişimi</a>
+      <span class="desc">Health Connect Dakikalık glikoz değerlerini Health Connect 'e gönderin. Diğer uygulamalara bu glikoz değerlerine erişim verebilirsiniz, örneğin Google Fit . Diğer uygulamalar yine Google Fit'ten veri alabilir.</span>
+    </li>
+    <li>
+      <a href="watchinfo.html">Saat</a>
+      <span class="desc">Juggluco, saatinizde glikoz değerlerini almanın altı yolunu sunuyor. Bildir Bildir açık olduğunda, her yeni glikoz değeri geldiğinde bir Android bildirimi oluşturulur.</span>
+    </li>
+    <li>
+      <a href="kerfstok.html">Kerfstok</a>
+      <span class="desc">Kerfstok, dokunmatik ekranlı programlanabilir Garmin akıllı saatler için bir saat uygulamasıdır. https://apps.garmin.com/en-US/apps/b6348ccc-86d8-4780-8013-d9e19fed5260 Ayrıca bakınız https://www.juggluco.nl/Kerfstok/index.</span>
+    </li>
+    <li>
+      <a href="garminconfig.html">Kerfstok yapılandırma</a>
+      <span class="desc">Kerfstok'un kaynağı şu adresten indirilebilir: https://www.juggluco.nl/Kerfstok/Kerfstok-source.html ) Kullanıcılar bunu değiştirmekte özgürdür. Her saat uygulamasının benzersiz bir tanımlayıcısı vardır.</span>
+    </li>
+    <li>
+      <a href="shortcuthelp.html">Kısayollar Kerfstok’ta kullanılabilir.</a>
+      <span class="desc">Saatteki sayı girişi ekranından kısayollar ekranına ulaşabilirsiniz (benim Vivoactive 3 saatimde sola kaydırarak). Burada bir etiket listesi görürsünüz, bunlardan birine basmak sayı ekranına karşılık gelen bir değer ekler.</span>
+    </li>
+    <li>
+      <a href="wearosinfo.html">Wear OS</a>
+      <span class="desc">Doğrudan sensör-saat bağlantısı : Bu, saatin sensöre doğrudan bağlanıp bağlanmaması gerektiğini belirler. Bu yalnızca saat ve telefon senkronize olduğunda değiştirilebilir.</span>
+    </li>
+    <li>
+      <a href="notificationpermission.html">Bildirimler</a>
+      <span class="desc">Juggluco, Freestyle Libre 0 sensörleriyle kullanılmadığı sürece, Juggluco her dakika doğrudan sensörden Bluetooth veya bir ağ bağlantısı aracılığıyla glikoz ölçümü almak için arka planda aktif kalmalıdır.</span>
+    </li>
+    <li>
+      <a href="locationpermission.html">Konum İzni</a>
+      <span class="desc">Android 6 ila 11 çalıştıran cihazların Bluetooth cihazlarını bulmak için konum iznine ihtiyacı vardır. Bu izin Sibionics ve Dexcom için gereklidir ve ayrıca Android 6, 7 ve 7.1'de Juggluco tarafından kullanılır.</span>
+    </li>
+    <li>
+      <a href="nearbypermission.html">Yakındaki Cihazlar İzni</a>
+      <span class="desc">Juggluco'nun, Freestyle Libre 2 ve 3 sensörlerinden Bluetooth aracılığıyla glikoz değerlerini almak için Y akındaki Cihazlar İznine ihtiyacı vardır.</span>
+    </li>
+    <li>
+      <a href="camerapermission.html">Kamera İzni</a>
+      <span class="desc">Sibionics sensörünü kullanmak için, telefonun kamerasını kullanarak paket üzerindeki bir veri matrisini taramanız gerekir.</span>
+    </li>
+    <li>
+      <a href="flashpermission.html">Flaş Kullanımı</a>
+      <span class="desc">Flaş kullanımının bazı akıllı telefonlarda kamera izni gerektirdiği iddia ediliyor. Bu nedenle Juggluco önceki sürümlerde bu izni istemişti. Test edilen telefonlarda bu izin gerekli değildir ve Juggluco artık bunu istememektedir.</span>
+    </li>
+    <li>
+      <a href="healthpermission.html">Yazma İzni</a>
+      <span class="desc">Glikoz değerlerini Health Connect 'e yazabilmek için, Juggluco'ya yazma izni verilmesi gerekir. Bu izin, Health Connect'te glikoz değerlerini almak dışında hiçbir şey için gerekli değildir. Diğer tüm durumlarda Juggluco bu izin olmadan çalışabilir.</span>
+    </li>
+  </ul>
+</body>
+</html>

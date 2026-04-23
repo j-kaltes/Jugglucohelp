@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Juggluco</title>
+  <style>:root { color-scheme: light dark; }
+body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans",
+                 "Noto Sans Arabic", "Noto Sans Devanagari",
+                 "Noto Sans CJK SC", sans-serif;
+    max-width: 52rem;
+    margin: 2rem auto;
+    padding: 0 1rem 3rem;
+    line-height: 1.5;
+}
+header { margin-bottom: 2rem; }
+h1 { margin: 0 0 .3rem; font-size: 1.8rem; }
+header p { margin: .25rem 0; }
+header a { word-break: break-all; }
+ul.toc { list-style: none; padding: 0; margin: 0; }
+ul.toc li { padding: .55rem 0; border-top: 1px solid rgba(128,128,128,.25); }
+ul.toc li:first-child { border-top: none; }
+ul.toc a { font-weight: 600; text-decoration: none; }
+ul.toc a:hover { text-decoration: underline; }
+.desc { display: block; margin-top: .15rem; font-weight: 400;
+        color: rgba(0,0,0,.78); }
+@media (prefers-color-scheme: dark) {
+    .desc { color: rgba(255,255,255,.78); }
+}
+footer { margin-top: 2rem; font-size: .85rem; opacity: .7; }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Juggluco</h1>
+    <p><a href="https://www.juggluco.nl/Juggluco">https://www.juggluco.nl/Juggluco</a></p>
+  </header>
+  <ul class="toc">
+    <li>
+      <a href="introhelp.html">Intro</a>
+      <span class="desc">Juggluco est une appli pour le contrôle de la glycémie chez les personnes atteintes de diabète. Il peut scanner les capteurs Freestyle Libre (1 et 2) (via NFC) et recevoir (via Bluetooth) les valeurs de glucose des capteurs Freestyle Libre 2 .</span>
+    </li>
+    <li>
+      <a href="about.html">À propos</a>
+      <span class="desc">Juggluco est écrit par Jaap Korthals Altes Outre les bibliothèques Android standard, il est fait usage des éléments suivants : Commandes NFC et Bluetooth spécifiques aux capteurs Abbott FreeStyle Libre et algorithmes d'interprétation spécifiques aux capteurs…</span>
+    </li>
+    <li>
+      <a href="battery.html">Continuer à fonctionner</a>
+      <span class="desc">Normalement, lorsqu'un appareil Android n'est pas utilisé, il passe en mode “sommeil” (doze mode) pour utiliser moins d'énergie.</span>
+    </li>
+    <li>
+      <a href="sensorhelp.html">Capteur</a>
+      <span class="desc">Le menu déroulant contient le nom du capteur. Si Juggluco utilise plusieurs capteurs en même temps, vous pouvez sélectionner pour quel capteur afficher les informations. M ode sommeil?</span>
+    </li>
+    <li>
+      <a href="labelhelp.html">Étiquettes pour les quantités</a>
+      <span class="desc">Ici, vous pouvez créer, supprimer et modifier des étiquettes pour les quantités ajoutées au graphique pour spécifier l'insuline, les glucides ou l'activité physique.</span>
+    </li>
+    <li>
+      <a href="newlabelhelp.html">E tiquette:</a>
+      <span class="desc">Nom de l'étiquette à utiliser pour saisir des quantités. Vous pouvez ajouter une quantité liée à une certaine date et heure en utilisant "Nouvelle quantité" dans le menu du milieu à gauche.</span>
+    </li>
+    <li>
+      <a href="mealhelp.html">Repas</a>
+      <span class="desc">Précisez la quantité d'ingrédients d'un repas. La teneur totale en glucides est ensuite calculée.</span>
+    </li>
+    <li>
+      <a href="nutrients.html">Base de données sur la composition des aliments</a>
+      <span class="desc">Ici, vous pouvez rechercher des aliments dans le “McCance and Widdowson's The Composition of Foods Integrated Dataset 2021” https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid (en anglais uniquement).</span>
+    </li>
+    <li>
+      <a href="reminders.html">Rappels</a>
+      <span class="desc">Des rappels vous rappellent si vous n'avez pas saisi une certaine quantité dans un certain intervalle de temps. En appuyant sur NOUVEAU, vous pouvez ajouter un nouveau rappel.</span>
+    </li>
+    <li>
+      <a href="staticnum.html">Bloqué</a>
+      <span class="desc">Le menu central gauche -&gt; Miroir -&gt; " Qtés. reçu e s du miroir " est configuré pour empêcher la saisie de quantités dans cette application, car ils seront remplacés par les quantités reçues de la connexion miroir.</span>
+    </li>
+    <li>
+      <a href="alarmhelp.html">Alarmes</a>
+      <span class="desc">Alarmes de glucose : Les valeurs de flux reçues via Bluetooth peuvent être utilisées pour définir des alarmes de glucose bas et haut. Alarme de glucose bas : Valeur en dessous de laquelle une alarme doit se déclencher.</span>
+    </li>
+    <li>
+      <a href="ringtone.html">Sonnerie</a>
+      <span class="desc">Sélectionnez la sonnerie à jouer pour une alarme ou une notification et pendant combien de secondes. Inhiber durant x minutes : si un taux de glucose bas ou élevé persiste, l'alarme ne se déclenchera pas immédiatement.</span>
+    </li>
+    <li>
+      <a href="disturbhelp.html">Accès " Ne pas déranger "</a>
+      <span class="desc">Dans Juggluco, vous pouvez spécifier pour chaque type d'alarme si elle doit être jouée pendant " Ne pas déranger " (sous Sonnerie de l'alarme spécifique).</span>
+    </li>
+    <li>
+      <a href="talkhelp.html">Parler</a>
+      <span class="desc">Juggluco peut énoncer les valeurs de glucose via le haut parleur de l’appareil lorsqu’elles arrivent. Intervalle (sec) : spécifie combien de secondes Juggluco doit attendre avant d’énoncer la valeur de glucose suivante.</span>
+    </li>
+    <li>
+      <a href="colorhelp.html">Couleurs</a>
+      <span class="desc">Ici, vous pouvez modifier les couleurs des quantités, des courbes et des points de numérisation. Touchez un point d'une courbe, un balayage ou une quantité (afin que les informations sur ce point ou cette quantité soient affichées).</span>
+    </li>
+    <li>
+      <a href="floatingconfig.html">Glucose flottant</a>
+      <span class="desc">Ici, vous pouvez définir la taille de la police et la couleur de premier plan et d'arrière-plan du glucose flottant. Vous pouvez également définir l'arrière-plan sur Transparent , ce qui le rend invisible.</span>
+    </li>
+    <li>
+      <a href="settinghelp.html">Paramètres</a>
+      <span class="desc">Unité Sélectionnez si les valeurs de glucose doivent être données en mmol/L ou en mg/dL. Plage graphique : Entrez une valeur basse et haute, de sorte que le bas de l'écran corresponde au plus bas et le haut au plus haut.</span>
+    </li>
+    <li>
+      <a href="searchhelp.html">Recherche</a>
+      <span class="desc">La recherche peut être utilisée pour trouver des valeurs de glucose et des quantités saisies. Vous recherchez des valeurs entre les nombres donnés . Par exemple : 10 – 999 pour rechercher des valeurs entre 10 et 999.</span>
+    </li>
+    <li>
+      <a href="stathelp.html">Statistiques</a>
+      <span class="desc">Quelques statistiques tirées d' AGP licence libre, avec quelques modifications mineures. Le nombre de jours analysés peut être modifié en appuyant sur le bouton Jours .</span>
+    </li>
+    <li>
+      <a href="connectionoverview.html">Miroir</a>
+      <span class="desc">Envoyer des données vers ou recevoir des données d'un autre appareil. Vous pouvez vous connecter à un appareil Android exécutant Juggluco pour afficher les données de la même manière qu'ici.</span>
+    </li>
+    <li>
+      <a href="addconnection.html">Ajouter une connexion</a>
+      <span class="desc">Spécifiez une connexion avec une autre instance de Juggluco. Juggluco sur un appareil envoie via TCP/IP des données à un Juggluco sur un autre appareil.</span>
+    </li>
+    <li>
+      <a href="Nightscouthelp.html">Serveur Web</a>
+      <span class="desc">Juggluco intègre un serveur Web via lequel d'autres applications peuvent recevoir des valeurs de glucose. Il peut être utilisé par les montres xDrip et certaines applications Nightscout.</span>
+    </li>
+    <li>
+      <a href="NightPost.html">Téléchargez sur un serveur Nightscout.</a>
+      <span class="desc">Dans la plupart des cas, vous pouvez également utiliser le serveur Web dans Juggluco ou juggluco-server , seuls AAPS et NSclient refusent de fonctionner lorsqu'ils ne sont pas connectés à cgm-remote-monitor .</span>
+    </li>
+    <li>
+      <a href="libreview.html">Libreview</a>
+      <span class="desc">Juggluco peut envoyer des données et des montants de glucose à Libreview. Si vous utilisez l'application Abbott Libre pour les capteurs Freestyle Libre 2, Libreview est basé sur les données d'historique de la mémoire du capteur.</span>
+    </li>
+    <li>
+      <a href="librenumhelp.html">Librenum</a>
+      <span class="desc">Activez " Envoyer les montants ", pour envoyer les montants à Libreview. Avant cela, vous devez spécifier pour chaque étiquette comment les montants saisis sous cette étiquette doivent être envoyés à Libreview.</span>
+    </li>
+    <li>
+      <a href="setlibrenumtype.html">Setlibrenumtype</a>
+      <span class="desc">Sélectionnez comment les quantités saisies dans Juggluco sous une étiquette particulière doivent être envoyées à Libreview. Il est possible d'envoyer plus d'un type de montant avec la même étiquette Libreview.</span>
+    </li>
+    <li>
+      <a href="getaccountidhelp.html">Obtenir l'ID de compte</a>
+      <span class="desc">Comment obtenir l'ID de compte Libreview nécessaire pour scanner un capteur Freestyle Libre 3 via NFC ? Si vous spécifiez « Manuellement » , vous pouvez entrer l'ID de compte manuellement .</span>
+    </li>
+    <li>
+      <a href="watchinfo.html">Montre</a>
+      <span class="desc">Actuellement, Juggluco a six moyens d’envoyer les valeurs de glucose sur votre montre. Notifier Lorsque Notifier est activé, une notification Android est créée chaque fois qu'une nouvelle valeur de glucose arrive.</span>
+    </li>
+    <li>
+      <a href="kerfstok.html">Kerfstok</a>
+      <span class="desc">Cette vue est utilisée pour résoudre les problèmes de connexion avec Kerfstok ( https://apps.garmin.com/en-US/apps/b6348ccc-86d8-4780-8013-d9e19fed5260 (voir aussi https://www.juggluco.nl/Kerfstok /index.html ).</span>
+    </li>
+    <li>
+      <a href="garminconfig.html">Configuration de Kerfstock</a>
+      <span class="desc">La source de Kerfstok peut être téléchargée à partir de https://www.juggluco.nl/Kerfstok/Kerfstok-source.html ). Les utilisateurs sont libres de le modifier. Chaque application de montre a un identifiant unique.</span>
+    </li>
+    <li>
+      <a href="shortcuthelp.html">Des raccourcis peuvent être utilisés dans Kerfstok.</a>
+      <span class="desc">Dans l'écran de saisie du numéro de la montre, vous pouvez accéder à l'écran des raccourcis (sur ma montre Vivoactive 3 en glissant vers la gauche).</span>
+    </li>
+    <li>
+      <a href="wearosinfo.html">Wear OS</a>
+      <span class="desc">Connexion directe capteur-montre : Ceci détermine si la montre doit être directement connectée au capteur. Cela ne peut être modifié que lorsque la montre et le téléphone sont synchronisés.</span>
+    </li>
+    <li>
+      <a href="notificationpermission.html">Notification</a>
+      <span class="desc">Android 13 exige qu'avant même de savoir quel type de notifications sont envoyées, vous donniez des autorisations pour ces notifications.</span>
+    </li>
+    <li>
+      <a href="locationpermission.html">Location</a>
+      <span class="desc">Auparavant, Juggluco avait besoin d'une autorisation de localisation pour trouver l'adresse de l'appareil Bluetooth des capteurs FreeStyle Libre 2.</span>
+    </li>
+    <li>
+      <a href="nearbypermission.html">Nearby</a>
+      <span class="desc">Android 12 dispose de nouvelles autorisations Bluetooth qui vous obligent à donner un consentement explicite pour l'utilisation de Bluetooth.</span>
+    </li>
+    <li>
+      <a href="flashpermission.html">Flash</a>
+      <span class="desc">On prétend parfois que l'utilisation du flash nécessite l'autorisation de l'appareil photo sur certains smartphones. À cause de cela, Juggluco a demandé cette autorisation dans les versions précédentes.</span>
+    </li>
+  </ul>
+</body>
+</html>

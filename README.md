@@ -34,6 +34,6 @@ labels and shortinit are just examples of what users can do and don't need to be
 
 The abbreviations for days and month don't have an absolute byte number restriction, but should be three characters long, so they don't use too much space.
 
-The easiest way to make a translation is to ask me to translate the above files with Google Translate. A native speaker of the language can thereafter read this translation and remove the mistakes.
+The easiest way to make a translation is to give Claude and/or ChatGPT strings.xml, jugglucotext.cpp and the *.in.html files. A native speaker of the language can thereafter read this translation and remove the mistakes.
 
 You can send an E-Mail to jaapkorthalsaltes@gmail.com.

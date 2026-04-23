@@ -7,7 +7,7 @@
 #include "inout.hpp"
 #include "destruct.hpp"
 #define LOGGER(...) fprintf(stderr,__VA_ARGS__)
-#include "strconcat.hpp"
+#include "strsepconcat.hpp"
 /*
 <script type="module" >
 import { setlang } from "https://www.juggluco.nl/Jugglucohelp/code/settrans.js";
@@ -38,7 +38,6 @@ setlang(translations,"%s");
 </script>)",filename);
       }
 void mklinks(FILE *fp,char **names,int len,const char *filename,const char *inname) {
-//   if(inname) addcomments(fp,inname);
     fprintf(fp,R"(<p>)");
     for(int i=0;i<len;i++) { 
         fprintf(fp,R"(<a href="https://www.juggluco.nl/Jugglucohelp/%.02s/%s">%.02s</a>&emsp;&emsp;)",names[i],filename,names[i]);
@@ -61,7 +60,7 @@ template <class T, std::size_t N> std::pair<int,int> includingstring(const T (&f
         }
     return {found-input,start-input+1};
     }
-strconcat  getendname(std::string_view inname) {
+strsepconcat  getendname(std::string_view inname) {
     return {"",inname.substr(0,inname.size()-7),inname.substr(inname.size()-4)};
     }
 int patchfile(const char *inname,const char *filename,char **names,int nr,bool addscript) {
@@ -105,6 +104,10 @@ int patchfile(const char *inname,const char *filename,char **names,int nr,bool a
         perror("fwrite 3");
         return -5;
         }
+    if(addscript)
+       fprintf(outfile,R"(<p><a href="https://www.juggluco.nl/Jugglucohelp/index.html">index</a></p>)");
+    else
+       fprintf(outfile,R"(<p><a href="https://www.juggluco.nl/Jugglucohelp/%.02s/index.html">index</a></p>)",inname);
     mklinks(outfile,names,nr,filename,useinname);
     int endlen=file.size()-bodypos-htmlpos;
     if(fwrite(input+bodypos+htmlpos,endlen,1,outfile)!=1) {
@@ -121,7 +124,6 @@ int main(int argc,char **argv) {
         const char *filename=newname.data();
         for(int i=0;i<nr;++i) {
             const char *fullname=names[i];
-         //   const char *filename=fullname+3;
             patchfile(fullname,filename,names,nr,false);
             }
 

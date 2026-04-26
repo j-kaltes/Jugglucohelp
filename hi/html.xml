@@ -912,7 +912,7 @@ Libreview→<a href="https://www.juggluco.nl/Jugglucohelp/librenumhelp.html">म
 एप्लेट है। यह Freestyle Libre (0 और 2) सेंसर (NFC के माध्यम से) स्कैन कर
 सकता है और </font><font color="#4f81bd"><i><b>Freestyle
 Libre 2</i></b></font><font color="#ffffff">,</font> <font color="#4f81bd"><i><b>2+</b></i></font><font color="#ffffff">,</font> <font color="#4f81bd"><i><b>3</b></i></font><font color="#ffffff">,</font> <font color="#4f81bd"><i><b>3+</b></i></font><font color="#ffffff">,</font> <font color="#4f81bd"><i><b>Sibionics GS1Sb</b></i></font><font color="#ffffff">,
-</font><font color="#4f81bd"><i><b>Dexcom G7/ONE+</b></i></font><font color="#ffffff">, </font><font color="#4f81bd"><i><b>Accu-Chek SmartGuide</b></i></font><font color="#ffffff">, </font><font color="#4f81bd"><i><b>CareSens Air</b></i></font> <font color="#ffffff">और</font> <font color="#4f81bd"><i><b>Linx/Aidex X</b></i></font> <font color="#ffffff">सेंसर से (ब्लूटूथ के माध्यम से) ग्लूकोज मान प्राप्त कर सकता है।</font></p>
+</font><font color="#4f81bd"><i><b>Dexcom G7/ONE+</b></i></font><font color="#ffffff">, </font><font color="#4f81bd"><i><b>Accu-Chek SmartGuide</b></i></font><font color="#ffffff">, </font><font color="#4f81bd"><i><b>CareSens Air</b></i></font> <font color="#ffffff">और</font> <font color="#4f81bd"><i><b>Linx/Lumiflex/Aidex X</b></i></font> <font color="#ffffff">सेंसर से (ब्लूटूथ के माध्यम से) ग्लूकोज मान प्राप्त कर सकता है।</font></p>
 <p style="line-height: 115%; margin-bottom: 0cm"><font color="#ffffff">जब
 प्रोग्राम पहली बार चलाया जाता है, तो आप एक Freestyle Libre
 </font><font color="#ffffff"><b>2</b></font><font color="#ffffff">
@@ -931,7 +931,7 @@ ID प्राप्त करें"</a> दबाएं और स्कै�
 के लिए FreeStyle Libre 3 रीडर या USA Libre ऐप से शुरू किए गए Libre 3
 सेंसर को अपने पास लेना संभव नहीं है। उल्लिखित सभी सेंसर Juggluco के साथ
 उपयोग किए जा सकते हैं जब वे किसी अन्य ऐप से सक्रिय नहीं किए गए हों।</font></p>
-<p><font color="#ffffff"><font color="#4f81bd"><i><b>Sibionics GS1Sb</b></i></font>, <font color="#4f81bd"><i><b>Dexcom G7/ONE+</b></i></font>, <font color="#4f81bd"><i><b>Accu-Chek SmartGuide</b></i></font>, <font color="#4f81bd"><i><b>CareSens Air</b></i></font> या <font color="#4f81bd"><i><b>Linx/Aidex X</b></i></font> सेंसर से कनेक्ट होने के लिए आपको उनके डेटा मैट्रिक्स को बाएं मेन्यू->फोटो से स्कैन करना होगा।
+<p><font color="#ffffff"><font color="#4f81bd"><i><b>Sibionics GS1Sb</b></i></font>, <font color="#4f81bd"><i><b>Dexcom G7/ONE+</b></i></font>, <font color="#4f81bd"><i><b>Accu-Chek SmartGuide</b></i></font>, <font color="#4f81bd"><i><b>CareSens Air</b></i></font> या <font color="#4f81bd"><i><b>Linx/Lumiflex/Aidex X</b></i></font> सेंसर से कनेक्ट होने के लिए आपको उनके डेटा मैट्रिक्स को बाएं मेन्यू->फोटो से स्कैन करना होगा।
 Dexcom G7/ONE+ सेंसर ब्लूटूथ के माध्यम से पेयर किए जाते हैं, जिसे आपको
 अधिकांश फोन पर स्वीकार करना होता है। सहमति आपको बहुत तेज़ी से देनी होती है
 अन्यथा आपको फिर से 5 मिनट प्रतीक्षा करनी होगी। तो स्क्रीन को बंद होने से
@@ -1860,14 +1860,14 @@ Juggluco को डिवाइस पता भूलने और डिवा
 तो आपको केवल इसे फिर से स्कैन करना होगा। यदि सेंसर सीधे घड़ी से जुड़ा
 है, तो आपको पहले इसे बंद करना होगा और फिर फोन पर <i>समाप्त करें</i>
 दबाना होगा और फिर घड़ी पर <i>सिंक</i> दबाना होगा।</p>
-<p><b>अनपेयर</b>: Linx/Aidex X सेंसर उस फोन या घड़ी को याद रखते हैं
+<p><b>अनपेयर</b>: Linx/Lumiflex/Aidex X सेंसर उस फोन या घड़ी को याद रखते हैं
 जिससे वे पेयर होते हैं और अन्य डिवाइसों से बॉन्ड करने से इनकार करते हैं।
 “अनपेयर” दबाने से सेंसर को एक कमांड भेजी जाती है और यदि सफल होती है,
 तो अन्य फोन या घड़ियों के लिए सेंसर से कनेक्ट होना फिर से संभव है।
 जब आप बायां मेन्यू→घड़ी→WearOS config → “सीधा सेंसर …” का उपयोग
 सेंसर को घड़ी से और घड़ी पर स्थानांतरित करने के लिए करते हैं, तो
 अनपेयरिंग भी हो जाएगी, और आपको “अनपेयर” का उपयोग नहीं करना चाहिए।</p>
-<p><b>साफ़ करें</b>: (बटन केवल Linx/Aidex X सेंसरों से कनेक्ट होने पर
+<p><b>साफ़ करें</b>: (बटन केवल Linx/Lumiflex/Aidex X सेंसरों से कनेक्ट होने पर
 मौजूद।) इस बटन को दबाने से सेंसर से सभी ग्लूकोज मान हट जाते हैं और
 सेंसर को नए सेंसर की तरह पुनः आरंभ किया जाता है। यह एक सेंसर को
 15 दिनों से अधिक समय तक उपयोग करना संभव बनाता है। जब मैंने इसे आज़माया,
@@ -2908,7 +2908,7 @@ trace.log या logcat में लॉगिंग चालू करें</
 दबा सकते हैं। देखें:
 <a href="https://www.juggluco.nl/Juggluco/index.html#calibration">https://www.juggluco.nl/Juggluco/index.html#calibration</a></p>
 <p style="line-height: 100%; margin-bottom: 0in"><b>वार्मअप</b>:
-Sibionics और Linx/Aidex X सेंसरों के लिए आप वार्मअप अवधि के मिनटों
+Sibionics और Linx/Lumiflex/Aidex X सेंसरों के लिए आप वार्मअप अवधि के मिनटों
 की संख्या बदल सकते हैं। सभी फंक्शन वार्मअप अवधि के दौरान डेटा को
 अनदेखा करेंगे: स्क्रीन पर वक्र, आंकड़े, एक्सपोर्ट किया गया डेटा और
 वेब सर्वर में दिखाई देने वाला डेटा। साथ ही, पिछले समय के लिए भी।</p>
@@ -3260,7 +3260,7 @@ Connectivity Establishment (ICE) Juggluco के दो इंस्टेंस
 स्ट्रीम, अंतिम स्कैन और अपेक्षित तथा आधिकारिक समाप्ति समय प्रदर्शित
 करता है।</p>
 <p style="line-height: 100%; margin-bottom: 0in"><b>वार्मअप</b>:
-Sibionics और Linx/Aidex X सेंसरों के लिए आप वार्मअप अवधि के मिनटों
+Sibionics और Linx/Lumiflex/Aidex X सेंसरों के लिए आप वार्मअप अवधि के मिनटों
 की संख्या बदल सकते हैं। सभी फंक्शन वार्मअप अवधि के दौरान डेटा को
 अनदेखा करेंगे: स्क्रीन पर वक्र, आंकड़े, एक्सपोर्ट किया गया डेटा और
 वेब सर्वर में दिखाई देने वाला डेटा। साथ ही, पिछले समय के लिए भी।</p>

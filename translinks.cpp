@@ -63,7 +63,7 @@ template <class T, std::size_t N> std::pair<int,int> includingstring(const T (&f
 strsepconcat  getendname(std::string_view inname) {
     return {"",inname.substr(0,inname.size()-7),inname.substr(inname.size()-4)};
     }
-int patchfile(const char *inname,const char *filename,char **names,int nr,bool addscript) {
+int patchfile(const char *inname,const char *filename,char **names,int nr,bool addscript,bool giveindex) {
     Readall file(inname);
     if(!file.data()) {
         perror(inname);
@@ -104,10 +104,12 @@ int patchfile(const char *inname,const char *filename,char **names,int nr,bool a
         perror("fwrite 3");
         return -5;
         }
-    if(addscript)
-       fprintf(outfile,R"(<p><a href="https://www.juggluco.nl/Jugglucohelp/index.html">index</a></p>)");
-    else
-       fprintf(outfile,R"(<p><a href="https://www.juggluco.nl/Jugglucohelp/%.02s/index.html">index</a></p>)",inname);
+    if(giveindex) {
+        if(addscript)
+           fprintf(outfile,R"(<p><a href="https://www.juggluco.nl/Jugglucohelp/index.html">index</a></p>)");
+        else
+           fprintf(outfile,R"(<p><a href="https://www.juggluco.nl/Jugglucohelp/%.02s/index.html">index</a></p>)",inname);
+        }
     mklinks(outfile,names,nr,filename,useinname);
     int endlen=file.size()-bodypos-htmlpos;
     if(fwrite(input+bodypos+htmlpos,endlen,1,outfile)!=1) {
@@ -117,16 +119,26 @@ int patchfile(const char *inname,const char *filename,char **names,int nr,bool a
      return 0;
     }
 int main(int argc,char **argv) {
-    char **names=argv+1;
-    int nr=argc-1;
+    bool giveindex;
+    int startindex;
+    if(argc>1&&strcmp(argv[0],"-noi")) {
+        giveindex=false;
+        startindex=2;
+        }
+    else {
+        giveindex=true;
+        startindex=1;
+        }
+    char **names=argv+startindex;
+    int nr=argc-startindex;
     if(nr) {
         auto newname=getendname(names[0]+3);
         const char *filename=newname.data();
         for(int i=0;i<nr;++i) {
             const char *fullname=names[i];
-            patchfile(fullname,filename,names,nr,false);
+            patchfile(fullname,filename,names,nr,false,giveindex);
             }
 
-        patchfile(names[0]+3,filename,names,nr,true);
+        patchfile(names[0]+3,filename,names,nr,true,giveindex);
         }
     }

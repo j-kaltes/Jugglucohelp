@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Juggluco</title>
+  <style>:root { color-scheme: light dark; }
+body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans",
+                 "Noto Sans Arabic", "Noto Sans Devanagari",
+                 "Noto Sans CJK SC", sans-serif;
+    max-width: 52rem;
+    margin: 2rem auto;
+    padding: 0 1rem 3rem;
+    line-height: 1.5;
+}
+header { margin-bottom: 2rem; }
+h1 { margin: 0 0 .3rem; font-size: 1.8rem; }
+header p { margin: .25rem 0; }
+header a { word-break: break-all; }
+ul.toc { list-style: none; padding: 0; margin: 0; }
+ul.toc li { padding: .55rem 0; border-top: 1px solid rgba(128,128,128,.25); }
+ul.toc li:first-child { border-top: none; }
+ul.toc a { font-weight: 600; text-decoration: none; }
+ul.toc a:hover { text-decoration: underline; }
+.desc { display: block; margin-top: .15rem; font-weight: 400;
+        color: rgba(0,0,0,.78); }
+@media (prefers-color-scheme: dark) {
+    .desc { color: rgba(255,255,255,.78); }
+}
+footer { margin-top: 2rem; font-size: .85rem; opacity: .7; }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Juggluco</h1>
+    <p><a href="https://www.juggluco.nl/Juggluco">https://www.juggluco.nl/Juggluco</a></p>
+  </header>
+  <ul class="toc">
+    <li>
+      <a href="introhelp.html">Intro</a>
+      <span class="desc">Juggluco é um applet para o controlo da glicemia por pessoas com diabetes. Ele pode digitalizar sensores Freestyle libre (1 e 2) (via NFC) e receber (via Bluetooth) valores de glicose de sensores Freestyle libre 2 .</span>
+    </li>
+    <li>
+      <a href="about.html">Sobre</a>
+      <span class="desc">Juggluco é escrito por Jaap Korthals Altes Além das bibliotecas padrão do Android, são utilizadas as seguintes: Comandos NFC e Bluetooth específicos para sensores Abbott FreeStyle Libre e algoritmos de interpretação específicos para sensores FreeStyle Libre.</span>
+    </li>
+    <li>
+      <a href="battery.html">Continue funcionando</a>
+      <span class="desc">Normalmente, quando um dispositivo Android não é usado, ele entra no modo suspensão para usar menos energia. Nesse modo, uma aplicação não pode usar conexões TCP para trocar dados.</span>
+    </li>
+    <li>
+      <a href="sensorhelp.html">Sensor</a>
+      <span class="desc">O controlo giratório contém o nome do sensor. Se Juggluco estiver usando mais de um sensor ao mesmo tempo, pode selecionar para qual sensor mostrar informações.</span>
+    </li>
+    <li>
+      <a href="labelhelp.html">Etiquetas para valores</a>
+      <span class="desc">Aqui pode criar, excluir e modificar etiquetas para quantidades adicionadas ao gráfico para especificar insulina, carboidrato ou atividade física. Se já guardou algumas quantidades, elas receberão a etiqueta correspondente à sua posição.</span>
+    </li>
+    <li>
+      <a href="newlabelhelp.html">Etiqueta:</a>
+      <span class="desc">Nome da etiqueta a ser usada para inserir números. Pode adicionar um número vinculado a uma determinada data e hora usando "Novo valor" no menu do meio à esquerda. Esses números podem ser exibidos no gráfico de glicose naquela posição de tempo ou em uma lista.</span>
+    </li>
+    <li>
+      <a href="mealhelp.html">Refeição</a>
+      <span class="desc">Especifique a quantidade de ingredientes de uma refeição. O conteúdo total de carboidratos é então calculado.</span>
+    </li>
+    <li>
+      <a href="nutrients.html">Banco de dados de composição de alimentos</a>
+      <span class="desc">Aqui pode pesquisar alimentos no conjunto de dados integrado de composição de alimentos 2021 de McCance e Widdowson https://www.gov.</span>
+    </li>
+    <li>
+      <a href="reminders.html">Lembretes</a>
+      <span class="desc">Os lembretes o recordam se não inseriu uma determinada quantia em um determinado intervalo de tempo. Ao pressionar NOVO , pode adicionar um novo lembrete.</span>
+    </li>
+    <li>
+      <a href="alarmhelp.html">Alarmes</a>
+      <span class="desc">Alarmes de glicose: Os valores de stream recebidos via Bluetooth podem ser usados ​​para definir alarmes de glicose baixa e alta. Alarme de glicose baixa: Valor abaixo do qual um alarme deve disparar.</span>
+    </li>
+    <li>
+      <a href="ringtone.html">Toque</a>
+      <span class="desc">Selecione qual toque tocar para um alarme ou notificação e por quantos segundos. Minutos desativados : Se um nível baixo ou alto de glicose continuar, o alarme não soará imediatamente.</span>
+    </li>
+    <li>
+      <a href="disturbhelp.html">Acesso " N ão incomodar "</a>
+      <span class="desc">No Juggluco, você pode especificar para cada tipo de alarme se ele deve ser tocado durante " Não incomodar " (em Toque do alarme específico.</span>
+    </li>
+    <li>
+      <a href="colorhelp.html">Cores</a>
+      <span class="desc">Aqui pode alterar as cores dos números, curvas e pontos de scan. Toque em um ponto de uma curva, stream ou quantidade (para que as informações sobre esse ponto ou quantidade sejam mostradas). A seguir, toque em uma cor na exibição de cores.</span>
+    </li>
+    <li>
+      <a href="settinghelp.html">Definições</a>
+      <span class="desc">Unidade Selecione se os valores de glicose devem ser dados em mmol/L ou mg/dL. Intervalo do gráfico: baixo-alto. Dê um valor baixo e alto, de modo que a parte inferior da tela corresponda ao mais baixo e o topo ao mais alto.</span>
+    </li>
+    <li>
+      <a href="searchhelp.html">Procurar</a>
+      <span class="desc">A pesquisa pode ser usada para encontrar valores de glicose e números inseridos. Procura valores entre os números fornecidos . Por exemplo: 10 – 999 para buscar valores entre 10 e 999. Os valores de glicose são separados em Scan, Histórico e Stream.</span>
+    </li>
+    <li>
+      <a href="stathelp.html">Estatísticas</a>
+      <span class="desc">Algumas estatísticas retiradas do AGP sem licença, com algumas pequenas modificações. O número de dias analisados ​​pode ser modificado pressionando o botão Dias .</span>
+    </li>
+    <li>
+      <a href="connectionoverview.html">Espelhar</a>
+      <span class="desc">Envie ou receba dados de outro dispositivo. Você pode se conectar a um dispositivo Android executando o Juggluco para exibir os dados da mesma forma que aqui.</span>
+    </li>
+    <li>
+      <a href="addconnection.html">Adicionar conexão</a>
+      <span class="desc">Especifique uma conexão com outra instância de Juggluco. Juggluco em um dispositivo envia via IP/TCP dados para um Juggluco em outro dispositivo.</span>
+    </li>
+    <li>
+      <a href="libreview.html">Libreview</a>
+      <span class="desc">Juggluco pode enviar dados e quantidades de glicose para o Libreview. Se usar o aplicativo Abbott Libre para sensores Freestyle Libre 2, o Libreview será baseado nos dados históricos da memória do sensor. Para isso, precisa escanear o sensor.</span>
+    </li>
+    <li>
+      <a href="librenumhelp.html">Librenum</a>
+      <span class="desc">Defina " Enviar valores " para enviar valores para o Libreview. Antes de ativar " Enviar valores ", precisa especificar para cada etiqueta como os valores inseridos sob essa etiqueta devem ser enviados para o Libreview.</span>
+    </li>
+    <li>
+      <a href="setlibrenumtype.html">Setlibrenumtype</a>
+      <span class="desc">Selecione como os valores em Juggluco inseridos em uma etiqueta específica devem ser enviados para o Libreview. É possível enviar mais de um tipo de valor com a mesma etiqueta Libreview .</span>
+    </li>
+    <li>
+      <a href="watchinfo.html">Relógio</a>
+      <span class="desc">Atualmente Juggluco tem quatro maneiras de obter valores de glicose em seu relógio. Notificar Se o Notificar estiver ativado no menu central esquerdo, uma notificação do Android será criada toda vez que um novo valor de glicose chegar.</span>
+    </li>
+    <li>
+      <a href="kerfstok.html">Kerfstok</a>
+      <span class="desc">Esta visualização é usada para resolver problemas de conexão com Kerfstok ( https://apps.garmin.com/en-US/apps/b6348ccc-86d8-4780-8013-d9e19fed5260 (consulte também https://www.juggluco.nl/Kerfstok /index.html ).</span>
+    </li>
+    <li>
+      <a href="garminconfig.html">Configuração de Kerfstok</a>
+      <span class="desc">A fonte de Kerfstok pode ser baixada em https://www.juggluco.nl/Kerfstok/Kerfstok-source.html ). Os utilizadores são livres para modificá-lo. Cada aplicativo de relógio tem um identificador exclusivo.</span>
+    </li>
+    <li>
+      <a href="shortcuthelp.html">Atalhos podem ser usados ​​em Kerfstok.</a>
+      <span class="desc">Na tela de entrada de número no relógio, pode aceder à tela de atalhos (no meu relógio Vivoactive 3, deslizando para a esquerda). Aqui vê uma lista de etiquetas; pressionando um deles insere um valor correspondente na tela do número.</span>
+    </li>
+    <li>
+      <a href="wearosinfo.html">Wear OS</a>
+      <span class="desc">Uma versão especial do Juggluco pode ser executada diretamente em um relógio Wear OS. Ele precisa de um smartphone Android com NFC para digitalizar o sensor e, por meio de uma conexão TCP, esses dados são enviados para o relógio Wear OS.</span>
+    </li>
+    <li>
+      <a href="locationpermission.html">Location</a>
+      <span class="desc">Anteriormente, Juggluco precisava de permissão de localização para encontrar o endereço do dispositivo Bluetooth dos sensores FreeStyle Libre 2.</span>
+    </li>
+    <li>
+      <a href="nearbypermission.html">Nearby</a>
+      <span class="desc">O Android 12 tem algumas novas permissões de Bluetooth que exigem que dê consentimento explícito para o uso do Bluetooth. Aplicativos antigos não param de funcionar imediatamente, mas agora pode usar essas novas permissões.</span>
+    </li>
+    <li>
+      <a href="flashpermission.html">Flash</a>
+      <span class="desc">Às vezes, afirma-se que o uso da luz do Flash requer permissão da câmera em alguns telemóveis. Por causa disso Juggluco pediu essa permissão em versões anteriores. Nos telemóveis testados, essa permissão não é necessária e Juggluco não a solicita mais.</span>
+    </li>
+  </ul>
+</body>
+</html>

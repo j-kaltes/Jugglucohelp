@@ -1,102 +1,210 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru" dir="ltr">
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-       <link rel="icon" href="../arrow.png">
-	<title>Juggluco</title>
-	<style>
-        h3{text-align: right;}
-
-
-	</style>
-	<script>
-function getunitarg(){ 
-	const params = new URLSearchParams(document.location.search);
-	const unit = params.get("unit");
-	if(unit == "mg/dL") { 
-		return 2;
-		} 
-	else { 
-		if(unit=="mmol/L") {
-		   return 1;
-		   }
-	 	}
-	return 0;
-    } 
-let mmol=[
-"AM",
-"AU",
-"BA",
-"BG",
-"BW",
-"BY",
-"CA",
-"CH",
-"CN",
-"CZ",
-"DK",
-"EE",
-"FI",
-"GB",
-"HK",
-"HR",
-"HU",
-"IE",
-"IS",
-"KW",
-"KZ",
-"LT",
-"LV",
-"MT",
-"MY",
-"NA",
-"NL",
-"NO",
-"NZ",
-"RS",
-"RU",
-"SE",
-"SI",
-"SK",
-"UA",
-"ZA"];
-
-
-
-
-
-
-function getunit() {
-	var unit=getunitarg();
-	if(unit!=0) {
-		return unit;
-		}
-
-	var userLang = navigator.language || navigator.userLanguage;
-	var  co=userLang.toUpperCase();
-	var hit=false;
-	for(const element of mmol) {
-	  if(co.includes(element)) {
-		return 1;
-		}
-	   }
-	  return 2;
-	 }
-if(getunit()==1) {
-	 window.location = "https://www.juggluco.nl/Jugglucohelp/ru/introhelp.html?unit=mmol/L";
-	}
-else  {
-	 window.location = "https://www.juggluco.nl/Jugglucohelp/ru/introhelp.html?unit=mg/dL";
-	 }
-</script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Juggluco</title>
+  <style>:root { color-scheme: light dark; }
+body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans",
+                 "Noto Sans Arabic", "Noto Sans Devanagari",
+                 "Noto Sans CJK SC", sans-serif;
+    max-width: 52rem;
+    margin: 2rem auto;
+    padding: 0 1rem 3rem;
+    line-height: 1.5;
+}
+header { margin-bottom: 2rem; }
+h1 { margin: 0 0 .3rem; font-size: 1.8rem; }
+header p { margin: .25rem 0; }
+header a { word-break: break-all; }
+ul.toc { list-style: none; padding: 0; margin: 0; }
+ul.toc li { padding: .55rem 0; border-top: 1px solid rgba(128,128,128,.25); }
+ul.toc li:first-child { border-top: none; }
+ul.toc a { font-weight: 600; text-decoration: none; }
+ul.toc a:hover { text-decoration: underline; }
+.desc { display: block; margin-top: .15rem; font-weight: 400;
+        color: rgba(0,0,0,.78); }
+@media (prefers-color-scheme: dark) {
+    .desc { color: rgba(255,255,255,.78); }
+}
+footer { margin-top: 2rem; font-size: .85rem; opacity: .7; }
+</style>
 </head>
-<body lang="en-US" link="#000080" vlink="#800000" dir="ltr"><h2 class="western">
-<p>
-<a href="https://www.juggluco.nl/Juggluco">https://www.juggluco.nl/Juggluco</a>
-</p>
+<body>
+  <header>
+    <h1>Juggluco</h1>
+    <p><a href="https://www.juggluco.nl/Juggluco">https://www.juggluco.nl/Juggluco</a></p>
+  </header>
+  <ul class="toc">
+    <li>
+      <a href="introhelp.html">Juggluco</a>
+      <span class="desc">- это приложение для контроля уровня глюкозы в крови у людей с сахарным диабетом. Он может сканировать датчики Freestyle libre 1, 2 через NFC и получать значения уровня глюкозы через Bluetooth от датчиков Freestyle libre 2, 3.</span>
+    </li>
+    <li>
+      <a href="about.html">О программе</a>
+      <span class="desc">Juggluco написа л Jaap Korthals Altes Помимо стандартных библиотек Android, используются следующие: Команды NFC и Bluetooth, специфичные для датчиков Abbott FreeStyle Libre, и алгоритмы интерпретации, специфичные для датчиков FreeStyle Libre.</span>
+    </li>
+    <li>
+      <a href="battery.html">Оптимизация батареи</a>
+      <span class="desc">Обычно, когда устройство Android не используется, оно переходит в спящий режим, чтобы потреблять меньше энергии.</span>
+    </li>
+    <li>
+      <a href="sensorhelp.html">Датчик</a>
+      <span class="desc">Выпадающее меню содержит серийный номер датчика. Если Juggluco использует несколько датчиков одновременно, вы можете выбрать, для какого датчика показывать информацию.</span>
+    </li>
+    <li>
+      <a href="changestart.html">Начало изменени й</a>
+      <span class="desc">Установите дату и время, с момента котор ых данные будут отправляться в Libreview. Это может быть полезно, если некоторые данные уже присутствуют в Libreview.</span>
+    </li>
+    <li>
+      <a href="labelhelp.html">Метки для сумм ( Быстрые ярлыки для вводимых значений )</a>
+      <span class="desc">В этом разделе вы можете создавать, удалять и изменять метки для чисел и количеств, добавленных в график, чтобы указать количества инсулин а , углевод ов или отметить физическую активность.</span>
+    </li>
+    <li>
+      <a href="newlabelhelp.html">Этикетка/ метка :</a>
+      <span class="desc">Название метки , используемой для ввода цифр. Вы можете добавить число, привязанное к определенной дате и времени, используя "Новое количество" в левом среднем меню. Эти цифры могут отображаться на графике глюкозы в указанное время или в виде списка.</span>
+    </li>
+    <li>
+      <a href="newamount.html">Новая сумма</a>
+      <span class="desc">С новой суммой вы можете ввести цифры, связанные с произвольной меткой. Вы можете установить метки в меню слева→ Настройки→ Цифровые метки . Суммы, введенные с определенной меткой, будут отображаться на конкретной высоте на графике, которую определяет метка.</span>
+    </li>
+    <li>
+      <a href="mealhelp.html">Питание</a>
+      <span class="desc">Укажите количество ингредиентов для блюда. Общее содержание углеводов больше, чем рассчит ывается . Также можно указать количество углеводов для всего блюда или ингредиента, и программа затем определит необходимое количество ингредиента.</span>
+    </li>
+    <li>
+      <a href="nutrients.html">База данных о составе пищевых продуктов</a>
+      <span class="desc">Здесь вы можете найти продукты в интегрированном наборе данных McCance и Widdowson "Состав пищевых продуктов" за 2021 год https://www.gov.</span>
+    </li>
+    <li>
+      <a href="reminders.html">Напоминания</a>
+      <span class="desc">Напоминания напомнят вам, если вы не ввели определенную сумму в течение определенного интервала времени. Нажав НОВЫЙ, вы можете добавить новое напоминание.</span>
+    </li>
+    <li>
+      <a href="staticnum.html">Блокировка</a>
+      <span class="desc">Левое среднее меню-&gt; Зеркало -&gt;"Суммы, полученные от зеркала" настроено таким образом, чтобы запретить ввод сумм в этом приложении, поскольку они будут переопределены суммами, полученными от зеркального соединения.</span>
+    </li>
+    <li>
+      <a href="IOB.html">Инсулин на борту (IOB)</a>
+      <span class="desc">IOB — это показатель того, сколько инсулина осталось от предыдущих доз инсулина. Для этого необходимо ввести дозы инсулина с по меткой в к атегорию «Инсулин быстрого действия».</span>
+    </li>
+    <li>
+      <a href="alarmhelp.html">Сигналы тревоги</a>
+      <span class="desc">Сигналы тревоги по глюкозе: Значения потока, полученные через Bluetooth, можно использовать для установки сигналов тревоги о низком и высоком уровне глюкозы.</span>
+    </li>
+    <li>
+      <a href="ringtone.html">Рингтон</a>
+      <span class="desc">Выберите, какой рингтон будет воспроизводиться для будильника или уведомления и сколько секунд. Минуты деактивированы: если низкий или высокий уровень глюкозы сохраняется, сигнал тревоги не сработает снова немедленно.</span>
+    </li>
+    <li>
+      <a href="disturbhelp.html">Доступ к «Не беспокоить»</a>
+      <span class="desc">На некоторых устройствах будильники не работают в режиме «Не беспокоить». С помощью параметра «Беспокоить» вы можете указать, следует ли выключать режим «Не беспокоить» перед воспроизведением будильника.</span>
+    </li>
+    <li>
+      <a href="talkhelp.html">Озвучивание</a>
+      <span class="desc">Говори глюкозу Говорит значения глюкозы, когда они прибывают. Секунды между: определяет, сколько секунд Juggluco должен подождать, прежде чем произнести следующее значение уровня глюкозы. Значения глюкозы всегда озвучиваются сразу по прибыти ю .</span>
+    </li>
+    <li>
+      <a href="colorhelp.html">Цвета</a>
+      <span class="desc">Здесь вы можете изменить цвета цифр, кривых и точек сканирования. Коснитесь точки, кривой, данных сканирования или величины (чтобы отобразилась информация об установленном цвете для этой точк и или величин ы ).</span>
+    </li>
+    <li>
+      <a href="floatingconfig.html">Плавающее окно значений глюкозы</a>
+      <span class="desc">Окно с текущими показаниями будет постоянно находиться в области рабочего стола (не в панели уведомлений).) Здесь вы можете установить размер шрифта, а также цвет переднего плана и фона плавающего окна.</span>
+    </li>
+    <li>
+      <a href="settinghelp.html">Настройки</a>
+      <span class="desc">Единица измерения Выберите, следует ли указывать значения глюкозы в ммоль/л или дмоль/дл. Диапазон графика: низкий-высокий. Укажите низкое и высокое значение, чтобы нижняя часть экрана соответствовала самому низкому, а верхняя - самому высокому.</span>
+    </li>
+    <li>
+      <a href="searchhelp.html">Поиск</a>
+      <span class="desc">Поиск можно использовать для поиска значений уровня глюкозы и введенных чисел. Выполняется поиск значений между заданными числами . Например: 10 – 999 для поиска значений между 10 и 999. Значения глюкозы разделены в Сканирование , История и Передача .</span>
+    </li>
+    <li>
+      <a href="stathelp.html">Статистика</a>
+      <span class="desc">Некоторые статистические данные, взятые из AGP с некоторыми незначительными изменениями. Количество проанализированных дней может быть изменено нажатием кнопки "Дни".</span>
+    </li>
+    <li>
+      <a href="helpexport.html">Экспорт</a>
+      <span class="desc">Экспортируйте данные из Juggluco в файл. Приемы пищи сохраняются в формате html. Все остальные данные сохраняются в формате .tsv ( значения, разделенные табуляцией ).</span>
+    </li>
+    <li>
+      <a href="connectionoverview.html">Зеркало, зеркальное соединение</a>
+      <span class="desc">Отправляйте данные на другое устройство или получайте данные от него. Вы можете подключиться к устройству Android под управлением Juggluco для отображения данных с него у себя.</span>
+    </li>
+    <li>
+      <a href="addconnection.html">Добавить соединение</a>
+      <span class="desc">Укажите соединение с другим экземпляром Juggluco. Juggluco на одном устройстве будет отправлять данные через IP/TCP на Juggluco на другом устройстве.</span>
+    </li>
+    <li>
+      <a href="Nightscouthelp.html">В еб сервер</a>
+      <span class="desc">Jug g luco включает в себя веб-сервер, с помощью которого другие приложения могут получать значения уровня глюкозы от Juggluco. Его можно использовать с часами xDrip и некоторыми приложениями Nightscout.</span>
+    </li>
+    <li>
+      <a href="NightPost.html">Загрузить на сервер Nightscout</a>
+      <span class="desc">В большинстве случаев вы также можете использовать веб-сервер в Juggluco или juggluco-server . Некоторым приложениям, которые не делают ничего, кроме отображения веб-страницы Nightscout, нужен cgm-remote-monitor.</span>
+    </li>
+    <li>
+      <a href="libreview.html">Libreview</a>
+      <span class="desc">Juggluco может отправлять данные уровня глюкозы и суммы в Libreview. При использовании датчиков Libre 0,1 или 3, датчиков Libre 2 для США/Канады/Австралии или других датчиков Libre 2 с установленной историей Bluetooth, Juggluco отправляет значения истории в…</span>
+    </li>
+    <li>
+      <a href="librenumhelp.html">Librenum</a>
+      <span class="desc">Установите "Отправлять суммы", чтобы отправлять суммы в Libreview. Прежде чем вы сможете включить "Отправлять суммы", вам необходимо указать для каждой метки , как суммы, введенные под этой меткой, должны отправляться в Libreview.</span>
+    </li>
+    <li>
+      <a href="setlibrenumtype.html">Setlibrenumtype</a>
+      <span class="desc">Как и в случае с Libreview, вы также можете указать, как представлять суммы через сервер Nightscout в Juggluco. Выберите, как суммы в Juggluco, введенные под определенной меткой, должны отправляться в Libreview.</span>
+    </li>
+    <li>
+      <a href="nightnumhelp.html">Nightnum</a>
+      <span class="desc">Установите флажок «Выдавать суммы», чтобы сделать суммы доступными через веб-сервер Nightscout в Juggluco. Прежде чем вы сможете включить «Выдавать суммы», вам необходимо для каждой метки указать, как должны выдаваться суммы, введенные под этой меткой.</span>
+    </li>
+    <li>
+      <a href="getaccountidhelp.html">Получить ID учетной записи</a>
+      <span class="desc">Как получить ID учетной записи Libreview, необходимый для сканирования датчика Freestyle Libre 3 с помощью NFC? Если вы указали "Вручную", вы можете ввести ID учетной записи вручную.</span>
+    </li>
+    <li>
+      <a href="watchinfo.html">Часы</a>
+      <span class="desc">В настоящее время у Juggluco есть шесть способов узнать уровень глюкозы на ваших часах. Уведомлять Если функция Notify включена, уведомление Android создается каждый раз, когда поступает новое значение глюкозы.</span>
+    </li>
+    <li>
+      <a href="kerfstok.html">Kerfstok</a>
+      <span class="desc">Это представление используется для решения проблем с подключением к Kerfstok ( https://apps.garmin.com/en-US/apps/b6348ccc-86d8-4780-8013-d9e19fed5260 (см. также https://www.juggluco.nl/Kerfstok) /index.html ).</span>
+    </li>
+    <li>
+      <a href="garminconfig.html">Конфигурация Kerfstok</a>
+      <span class="desc">Исходный код Kerfstok можно загрузить по адресу https://www.juggluco.nl/Kerfstok/Kerfstok-source.html . Пользователи могут изменять его. Каждое приложение для часов имеет уникальный идентификатор.</span>
+    </li>
+    <li>
+      <a href="shortcuthelp.html">В Kerfstok можно использовать короткие пути.</a>
+      <span class="desc">На экране ввода номера на часах вы можете перейти к экрану быстрого доступа (на моих часах Vivoactive 3, проведя пальцем влево). Здесь вы видите список меток; при нажатии на одну из них на экране с номером отображается соответствующее значение.</span>
+    </li>
+    <li>
+      <a href="wearosinfo.html">Wear Os</a>
+      <span class="desc">Прямое подключение датчика к часам : это определяет, следует ли напрямую подключать часы к датчику. Это можно изменить, только если часы и телефон синхронизированы.</span>
+    </li>
+    <li>
+      <a href="notificationpermission.html">Разрешение постоянного уведомления</a>
+      <span class="desc">Если Juggluco не используется с датчиками Freestyle Libre 0, Juggluco должен оставаться активным в фоновом режиме, чтобы каждую минуту получать показания уровня глюкозы либо непосредственно от датчика через Bluetooth, либо через сетевое соединение.</span>
+    </li>
+    <li>
+      <a href="locationpermission.html">Location</a>
+      <span class="desc">Раньше Juggluco требовалось разрешение на определение местоположения, чтобы найти адрес устройства Bluetooth датчиков FreeStyle Libre 2.</span>
+    </li>
+    <li>
+      <a href="nearbypermission.html">Разрешение для доступа к «устройствам поблизости»</a>
+      <span class="desc">Для получения значений уровня глюкозы через Bluetooth от датчиков Freestyle Libre 2 и 3 Jug g luco требуется разрешение “ Устройства поблизости ”.</span>
+    </li>
+    <li>
+      <a href="flashpermission.html">Flash</a>
+      <span class="desc">Иногда утверждается, что для использования вспышки на некоторых смартфонах требуется разрешение камеры. По этой причине Juggluco запрашивал это разрешение в предыдущих версиях.</span>
+    </li>
+    <li>
+      <a href="healthpermission.html">Разрешение на запись уровня глюкозы в крови</a>
+      <span class="desc">Чтобы иметь возможность записывать значения глюкозы в Health Connect, пользователю необходимо предоставить Jugfluco разрешение на запись значений глюкозы в крови в Health Connect.</span>
+    </li>
+  </ul>
 </body>
 </html>
-
-
-
-

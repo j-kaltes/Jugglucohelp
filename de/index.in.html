@@ -1,10 +1,278 @@
 <!DOCTYPE html>
-<html>
+<html lang="de" dir="ltr">
 <head>
-   <meta http-equiv="refresh" 
-   content="0; url=https://www.juggluco.nl/Jugglucohelp/de/introhelp.html"/>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Juggluco</title>
+  <style>:root { color-scheme: light dark; }
+body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans",
+                 "Noto Sans Arabic", "Noto Sans Devanagari",
+                 "Noto Sans CJK SC", sans-serif;
+    max-width: 52rem;
+    margin: 2rem auto;
+    padding: 0 1rem 3rem;
+    line-height: 1.5;
+}
+header { margin-bottom: 2rem; }
+h1 { margin: 0 0 .3rem; font-size: 1.8rem; }
+header p { margin: .25rem 0; }
+header a { word-break: break-all; }
+ul.toc { list-style: none; padding: 0; margin: 0; }
+ul.toc li { padding: .55rem 0; border-top: 1px solid rgba(128,128,128,.25); }
+ul.toc li:first-child { border-top: none; }
+ul.toc a { font-weight: 600; text-decoration: none; }
+ul.toc a:hover { text-decoration: underline; }
+.desc { display: block; margin-top: .15rem; font-weight: 400;
+        color: rgba(0,0,0,.78); }
+@media (prefers-color-scheme: dark) {
+    .desc { color: rgba(255,255,255,.78); }
+}
+footer { margin-top: 2rem; font-size: .85rem; opacity: .7; }
+</style>
 </head>
-
 <body>
+  <header>
+    <h1>Juggluco</h1>
+    <p><a href="https://www.juggluco.nl/Juggluco">https://www.juggluco.nl/Juggluco</a></p>
+  </header>
+  <ul class="toc">
+    <li>
+      <a href="introhelp.html">Intro</a>
+      <span class="desc">Juggluco ist ein Applet zur Blutzuckerkontrolle bei Diabetikern. Es kann Freestyle Libre (0 und 2) Sensoren (über NFC) scannen und (über Bluetooth) Glukosewerte von Freestyle Libre 2 , 2+ , 3 , 3+ , Sibionics GS1Sb , Dexcom G7/ONE+ , Accu-Chek SmartGuide und…</span>
+    </li>
+    <li>
+      <a href="about.html">About</a>
+      <span class="desc">Juggluco wurde von Jaap Korthals Altes geschrieben. Neben den Standard-Android-Bibliotheken wird Folgendes verwendet: NFC- und Bluetooth-Befehle speziell für Abbott FreeStyle Libre-Sensoren und Interpretationsalgorithmen speziell für FreeStyle Libre-Sensoren.</span>
+    </li>
+    <li>
+      <a href="battery.html">Doze-modus</a>
+      <span class="desc">Wenn ein Android-Gerät nicht verwendet wird, wechselt es normalerweise in den Schlafmodus, um weniger Energie zu verbrauchen. In diesem Modus kann eine Anwendung keine TCP-Verbindungen zum Datenaustausch verwenden.</span>
+    </li>
+    <li>
+      <a href="sensorhelp.html">Sensor</a>
+      <span class="desc">Der Spinner enthält den Namen des Sensors. Wenn Juggluco gleichzeitig mehr als einen Sensor verwendet, können Sie auswählen, für welchen Sensor Informationen angezeigt werden sollen.</span>
+    </li>
+    <li>
+      <a href="sensorinfo.html">Sensorinformationen</a>
+      <span class="desc">Zeigt Start, letzten Stream, letzten Scan sowie erwartete und offizielle Endzeiten des Sensors an. Aufwärmen : Bei Sibionics- und Linx/Lumiflex/Aidex-X-Sensoren können Sie die Anzahl der Minuten der Aufwärmphase ändern.</span>
+    </li>
+    <li>
+      <a href="sensormirror.html">Sensorinformationen</a>
+      <span class="desc">Gibt Auskunft über die Sensoren, wenn Juggluco als Klon der Streamwerte fungiert: Gestartet: Zeitpunkt, zu dem der Sensor gestartet wurde. Bei Libre-Sensoren ist dies eine Stunde vor den ersten Glukosewerten.</span>
+    </li>
+    <li>
+      <a href="calibrationhelp.html">Kalibrierung</a>
+      <span class="desc">Juggluco 10.0.0 und höher bieten die Möglichkeit, Sensoren zu kalibrieren. Blutzucker : Geben Sie an, welche Bezeichnung für die Blutzuckermessung per Fingerstich steht.</span>
+    </li>
+    <li>
+      <a href="calibrationslist.html">Kalibrierungen</a>
+      <span class="desc">Zeigt die für diesen Sensor durchgeführten Kalibrierungen an. Jede Kalibrierung besteht aus dem Zeitpunkt ihrer Durchführung sowie der Steigung (a) und dem Achsenabschnitt (b) der Beziehung zwischen Blutzucker und Sensorglukose: Blutzucker = a * SensorGlucose…</span>
+    </li>
+    <li>
+      <a href="changestart.html">Anfang ändern</a>
+      <span class="desc">Ändern Sie das Datum und die Uhrzeit, ab der Daten an Libreview gesendet werden. Dies kann nützlich sein, wenn einige der Daten bereits in Libreview vorhanden sind.</span>
+    </li>
+    <li>
+      <a href="DeviceList.html">Blutzuckermessgeräte</a>
+      <span class="desc">Sucht nach Blutzuckermessgeräten. Gefundene Geräte werden hier angezeigt. Verbundene Geräte werden nicht gefunden.</span>
+    </li>
+    <li>
+      <a href="GlucoseMeter.html">Blutzuckermessgerät</a>
+      <span class="desc">Juggluco fügt nur Glukosewerte hinzu, deren Zeitstempel nach dem angegebenen Datum und der angegebenen Uhrzeit liegt. Ändern Sie das Datum und die Uhrzeit, wenn bereits frühere Glukosewerte in Juggluco vorhanden sind. Wählen Sie die Etikette für Blutzucker.</span>
+    </li>
+    <li>
+      <a href="GlucoseMeterList.html">Liste der Blutzuckermessgeräte</a>
+      <span class="desc">Juggluco kann Blutzuckermesswerte von einigen Blutzuckermessgeräten per Bluetooth empfangen. Wenn Sie ein Contour Next ONE haben, können Sie es zu Juggluco hinzufügen, indem Sie die Datenmatrix auf dem Blutzuckermessgerät mit dem linken Menü → Foto scannen.</span>
+    </li>
+    <li>
+      <a href="labelhelp.html">Etiketten für Mengen</a>
+      <span class="desc">Hier können Sie Beschriftungen für Mengen erstellen, löschen und ändern, die dem Diagramm hinzugefügt wurden, um Insulin, Kohlenhydrate oder körperliche Aktivität anzugeben.</span>
+    </li>
+    <li>
+      <a href="newlabelhelp.html">Etikett:</a>
+      <span class="desc">Name des Etiketts, das zum Eingeben von Zahlen verwendet werden soll. Sie können eine Zahl hinzufügen, die mit einem bestimmten Datum und einer bestimmten Uhrzeit verknüpft ist, indem Sie im linken mittleren Menü auf „Neue Menge“ klicken.</span>
+    </li>
+    <li>
+      <a href="newamount.html">Neue Menge</a>
+      <span class="desc">Mit „ Neue Menge “ können Sie mit einem Etikett verknüpfte Zahlen eingeben. Sie können Etiketten im linken Menü→Einstellungen→ Zahlenetiketten festlegen .</span>
+    </li>
+    <li>
+      <a href="mealhelp.html">Mahlzeiten</a>
+      <span class="desc">Geben Sie die Menge der Zutaten einer Mahlzeit an. Der Gesamtkohlenhydratgehalt wird dann berechnet. Es ist auch möglich, die Kohlenhydratmenge für die ganze Mahlzeit oder die Zutat anzugeben und das Programm ermittelt dann die benötigte Menge der Zutat.</span>
+    </li>
+    <li>
+      <a href="nutrients.html">Datenbank der Lebensmittelzusammensetzung</a>
+      <span class="desc">Hier können Sie Lebensmittel im The Composition of Foods Integrated Dataset 2021 von McCance und Widdowson nachschlagen https://www.gov.</span>
+    </li>
+    <li>
+      <a href="reminders.html">Erinnerungen</a>
+      <span class="desc">Erinnerungen erinnern Sie daran, wenn Sie innerhalb eines bestimmten Zeitintervalls einen bestimmte Menge nicht eingegeben haben. Durch Drücken von NEU können Sie eine neue Erinnerung hinzufügen.</span>
+    </li>
+    <li>
+      <a href="schedulehelp.html">Zeitpläne</a>
+      <span class="desc">Hier können Sie ein Profil zu einem bestimmten Zeitpunkt aktiv werden lassen. Drücken Sie „ Neu “, um eine Zuordnung zwischen einer bestimmten Zeit und einem Profil zu erstellen. Juggluco wechselt täglich zur angegebenen Zeit zu diesem Profil.</span>
+    </li>
+    <li>
+      <a href="staticnum.html">Blocked</a>
+      <span class="desc">Das Menü links in der Mitte -&gt; Klon -&gt; „ Mengen erhalten vom Klon “ ist eingestellt, so dass die Eingabe von Mengen in dieser App verhindert wird, da diese durch von der Klon verbindung empfangene Mengen überschrieben werden.</span>
+    </li>
+    <li>
+      <a href="IOB.html">Insulin onboard (IOB)</a>
+      <span class="desc">IOB ist ein Maß dafür, wie viel Insulin von früheren Insulindosen noch vorhanden ist. Hierzu müssen Sie Insulindosen unter einem Etikett in der Kategorie „ Schnell wirkendes Insulin “ eintragen.</span>
+    </li>
+    <li>
+      <a href="IOBhelp.html">Insulin on Board (IOB)</a>
+      <span class="desc">Der IOB gibt an, wie viel Insulin von vorherigen Insulingaben übrig bleibt. Vor Juggluco 9.2.0 wurde die Blutinsulinkonzentrationskurve von Insulin Aspart zur Schätzung des IOB verwendet.</span>
+    </li>
+    <li>
+      <a href="alarmhelp.html">Alarm</a>
+      <span class="desc">Glukosealarme: Die über Bluetooth empfangenen Stream-Werte können verwendet werden, um Alarme für niedrige und hohe Glukose einzustellen. Niedriger Glukosewert: Wert, bei und unter dem ein Alarm ausgelöst werden soll.</span>
+    </li>
+    <li>
+      <a href="advancedAlarmshelp.html">Erweiterte Alarme</a>
+      <span class="desc">Alarm für sehr niedrigen Blutzucker Ein zweiter Alarm wird ausgelöst, wenn der Glukosewert niedriger ist als der Alarm für niedrigen Glukosewert.</span>
+    </li>
+    <li>
+      <a href="ringtone.html">Klingelton</a>
+      <span class="desc">Wählen Sie aus, welcher Klingelton für einen Alarm oder eine Benachrichtigung abgespielt werden soll und für wie viele Sekunden. Minuten deaktiviert : Wenn ein niedriger oder hoher Glukosespiegel anhält, ertönt der Alarm nicht sofort wieder.</span>
+    </li>
+    <li>
+      <a href="disturbhelp.html">„Nicht stören“-Zugang</a>
+      <span class="desc">Bei einigen Geräten funktionieren die Alarme im „ Nicht stören“ -Modus nicht. Mit „Stören“ können Sie festlegen, ob „ Nicht stören“ vor dem Abspielen des Alarms ausgeschaltet werden soll.</span>
+    </li>
+    <li>
+      <a href="talkhelp.html">Sprechen</a>
+      <span class="desc">Glukose sprechen Sagt Glukosewerte, wenn sie eintreffen. Sekunden zwischen : Gibt an, wie viele Sekunden Juggluco warten soll, bevor der nächste Glukosewert angezeigt wird. Glukosewerte werden immer sofort angesagt, wenn sie eintreffen.</span>
+    </li>
+    <li>
+      <a href="displayhelp.html">Anzeige</a>
+      <span class="desc">Farben Ändern Sie die Farben von Kurven, Scans und Zahlen. Kurvenbereich: niedrig-hoch. Geben Sie einen niedrigen und einen hohen Wert an, so dass der untere Teil des Bildschirms dem niedrigsten und der obere Teil dem höchsten Wert entspricht.</span>
+    </li>
+    <li>
+      <a href="colorhelp.html">Farben</a>
+      <span class="desc">Hier können Sie die Farben von Zahlen, Kurven und Scanpunkten ändern. Berühren Sie einen Punkt einer Kurve, einen Scan oder eine Menge (damit Informationen zu diesem Punkt oder Menge angezeigt werden). Berühren Sie danach eine Farbe in der Farbansicht.</span>
+    </li>
+    <li>
+      <a href="floatingconfig.html">Schwebende Glukose</a>
+      <span class="desc">Hier können Sie die Schriftgröße und die Vorder- und Hintergrundfarbe der schwebenden Glukose einstellen. Sie können den Hintergrund auch auf Transparent setzen, wodurch er unsichtbar wird.</span>
+    </li>
+    <li>
+      <a href="settinghelp.html">Einstellungen</a>
+      <span class="desc">Einheit Wählen Sie, ob die Glukosewerte in mmol/L oder mg/dL angegeben werden sollen. Nfc-Ton Erzeugen Sie beim Scannen zusätzlich zur Vibration einen Ton.</span>
+    </li>
+    <li>
+      <a href="searchhelp.html">Suche</a>
+      <span class="desc">Die Suche kann verwendet werden, um Glukosewerte und eingegebene Mengen zu finden. Sie suchen nach Werten zwischen den angegebenen Zahlen . Beispiel: 10 – 999, um nach Werten zwischen 10 und 999 zu suchen.</span>
+    </li>
+    <li>
+      <a href="stathelp.html">Statistiken</a>
+      <span class="desc">Einige Statistiken stammen von AGP mit einigen geringfügigen Änderungen. Die Anzahl der analysierten Tage kann durch Drücken der Taste Tage geändert werden.</span>
+    </li>
+    <li>
+      <a href="loghelp.html">Protokoll</a>
+      <span class="desc">Dies ist eine Protokollierungsversion von Juggluco. Protokolldateien können in /data/data/tk.glucodata/files/logs erstellt werden. trace.log enthält Protokollnachrichten, die Juggluco selbst erstellt. logcat.</span>
+    </li>
+    <li>
+      <a href="helpexport.html">Export</a>
+      <span class="desc">Exportieren Sie Daten aus Juggluco in eine Datei. Mahlzeiten werden im HTML gespeichert. Alle anderen Daten werden im .tsv-Format ( Tab-Separated Values ) gespeichert.</span>
+    </li>
+    <li>
+      <a href="connectionoverview.html">Klon</a>
+      <span class="desc">Senden Sie Daten an ein anderes Gerät oder empfangen Sie Daten von einem anderen Gerät. Sie können eine Verbindung zu einem Android-Gerät herstellen, auf dem Juggluco läuft, um Daten auf die gleiche Weise wie hier anzuzeigen.</span>
+    </li>
+    <li>
+      <a href="addconnection.html">Verbindung hinzufügen</a>
+      <span class="desc">Geben Sie eine Verbindung mit einer anderen Instanz von Juggluco an. Ein Juggluco auf einem Gerät sendet über IP/TCP Daten an einen Juggluco auf einem anderen Gerät.</span>
+    </li>
+    <li>
+      <a href="QRmirror.html">QR-Klon</a>
+      <span class="desc">Sie können die andere Seite einer Klonverbindung konfigurieren, indem Sie auf dem anderen Telefon einen QR-Code mit dem linken Menü → Foto scannen. Mit dem linken mittleren Menü → Klon → Auto-QR werden beide Seiten der Verbindung automatisch hergestellt.</span>
+    </li>
+    <li>
+      <a href="autoqrmessage.html">AutoQR</a>
+      <span class="desc">Stellt eine Verbindung auf diesem Telefon her und zeigt einen QR-Code an, der von einem anderen Android-Gerät gescannt werden kann.</span>
+    </li>
+    <li>
+      <a href="turnservers.html">TURN-Server</a>
+      <span class="desc">Eine ICE-Verbindung wird verwendet, wenn eine AutoQR-Verbindung über das Internet generiert wird oder wenn ICE bei der manuellen Angabe einer Verbindung konfiguriert wird.</span>
+    </li>
+    <li>
+      <a href="Nightscouthelp.html">Webserver</a>
+      <span class="desc">Juggluco enthält einen Webserver, über den andere Apps Glukosewerte von Juggluco erhalten können. Es kann von xDrip-Uhren und einigen Nightscout-Apps verwendet werden.</span>
+    </li>
+    <li>
+      <a href="NightPost.html">Hochladen</a>
+      <span class="desc">In den meisten Fällen können Sie auch den Webserver in Juggluco oder juggluco-server verwenden. Nur wenige Apps, die lediglich die Nightscout-Webseite anzeigen, benötigen cgm-remote-monitor Sie können AAPS und AAPSClient sogar mit dem Webserver in Juggluco 7.</span>
+    </li>
+    <li>
+      <a href="libreview.html">Libreview</a>
+      <span class="desc">Juggluco kann Glukosedaten und -mengen an Libreview senden. Bei Verwendung von Libre 0- oder 3-Sensoren, US/CA/AU Libre 2-Sensoren oder anderen Libre 2-Sensoren mit eingestelltem Bluetooth History, sendet Juggluco die Historywerte an Libreview.</span>
+    </li>
+    <li>
+      <a href="librenumhelp.html">Librenum</a>
+      <span class="desc">Stellen Sie „ Mengen senden“ ein, um Mengen an Libreview zu senden. Bevor Sie "Mengen senden " einschalten können , müssen Sie für jedes Label festlegen, wie die unter diesem Label eingegebenen Mengen an Libreview gesendet werden sollen.</span>
+    </li>
+    <li>
+      <a href="setlibrenumtype.html">Setlibrenumtype</a>
+      <span class="desc">Ebenso wie bei Libreview können Sie auch in Juggluco festlegen, wie Mengen über den Nightscout-Server dargestellt werden sollen Wählen Sie aus, wie die unter einem bestimmten Etikett eingegebenen Mengen in Juggluco an Libreview gesendet werden sollen.</span>
+    </li>
+    <li>
+      <a href="nightnumhelp.html">Nightnum</a>
+      <span class="desc">Stellen Sie „ Mengen geben “ ein, um Mengen über den Nightscout-Webserver in Juggluco zugänglich zu mach en.</span>
+    </li>
+    <li>
+      <a href="getaccountidhelp.html">Konto-ID erhalten</a>
+      <span class="desc">Wie erhalte ich die Libreview-Konto-ID, die zum Scannen eines Freestyle Libre 3-Sensors über NFC erforderlich ist? Wenn Sie „ Manuell “ angeben, können Sie die Konto-ID manuell eingeben.</span>
+    </li>
+    <li>
+      <a href="exchangehelp.html">Daten austauschen</a>
+      <span class="desc">Health Connect Senden Sie minutengenaue Glukosewerte an Health Connect . Sie können anderen Apps Zugriff auf diese Glukosewerte gewähren, beispielsweise Google Fit . Andere Apps können wiederum auf Daten von Google Fit zugreifen.</span>
+    </li>
+    <li>
+      <a href="watchinfo.html">Uhren</a>
+      <span class="desc">Derzeit bietet Juggluco 6 Möglichkeiten, um Glukosewerte auf Ihrer Uhr anzuzeigen. Benachrichtigen Wenn Benachrichtigen aktiviert ist, wird jedes Mal eine Android-Benachrichtigung erstellt, wenn ein neuer Glukosewert eintrifft.</span>
+    </li>
+    <li>
+      <a href="switch.html">Switch</a>
+      <span class="desc">Sollten Sie Ihr Telefon vergessen haben, können Sie dies auch auf Ihrer Uhr tun, über linkes Menü → Sensor → Wechseln .</span>
+    </li>
+    <li>
+      <a href="kerfstok.html">Kerfstok</a>
+      <span class="desc">Diese Ansicht wird verwendet, um Verbindungsprobleme mit Kerfstok zu lösen ( https://apps.garmin.com/de-DE/apps/b6348ccc-86d8-4780-8013-d9e19fed5260 , siehe auch https://www.juggluco.nl/Kerfstok ).</span>
+    </li>
+    <li>
+      <a href="garminconfig.html">Kerfstok-Konfiguration</a>
+      <span class="desc">Die Quelle von Kerfstok kann von https://www.juggluco.nl/Kerfstok/Kerfstok-source.html heruntergeladen werden. Benutzer können es frei ändern. Jede Uhren-App hat eine eindeutige Kennung.</span>
+    </li>
+    <li>
+      <a href="shortcuthelp.html">Shortcuts können in Kerfstok verwendet werden.</a>
+      <span class="desc">In der Zahleneingabemaske auf der Uhr gelangt man zum Shortcuts-Screen (auf meiner Vivoactive 3 Uhr durch Wischen nach links).</span>
+    </li>
+    <li>
+      <a href="wearosinfo.html">Wear OS</a>
+      <span class="desc">Zahlen (Mengen) auf der Uhr eingeben : Geben Sie Mengen für Insulin, Kohlenhydrate und Aktivität auf der Uhr (zweites Menü → „Menge“) statt auf dem Telefon ein. Wenn Sie Novopens mit Ihrem Telefon scannen möchten, sollten Sie diese Option nicht aktivieren.</span>
+    </li>
+    <li>
+      <a href="notificationpermission.html">Benachrichtigungen</a>
+      <span class="desc">Sofern Juggluco nicht mit Freestyle Libre 0-Sensoren verwendet wird, muss Juggluco im Hintergrund aktiv bleiben, um jede Minute einen Glukosewert, entweder direkt vom Sensor über Bluetooth oder über eine Netzwerkverbindung, zu empfangen.</span>
+    </li>
+    <li>
+      <a href="locationpermission.html">Standortberechtigung</a>
+      <span class="desc">Geräte mit Android 6 bis 11 benötigen eine Standortberechtigung, um Sibionics und Dexcom Sensoren zu finden. Zuvor benötigte Juggluco eine Standortberechtigung, um die Bluetooth-Geräteadresse von FreeStyle Libre 2-Sensoren zu finden.</span>
+    </li>
+    <li>
+      <a href="nearbypermission.html">Berechtigung für Geräte in der Nähe</a>
+      <span class="desc">Juggluco benötigt die Erlaubnis von GERÄTEN IN DER NÄHE, um Glukosewerte über Bluetooth von den Sensoren Freestyle Libre 2 und 3 zu empfangen.</span>
+    </li>
+    <li>
+      <a href="flashpermission.html">Flash</a>
+      <span class="desc">Es wird manchmal behauptet, dass die Verwendung des Blitzlichts auf einigen Smartphones eine Kameraerlaubnis erfordert. Aus diesem Grund hat Juggluco in früheren Versionen um diese Erlaubnis gebeten.</span>
+    </li>
+    <li>
+      <a href="healthpermission.html">Schreiben von Blutzucker zulassen</a>
+      <span class="desc">Um Glukosewerte in Health Connect schreiben zu können, muss der Benutzer Juggluco die Berechtigung erteilen, Blutzucker in Health Connect zu schreiben. Diese Berechtigung ist für nichts anderes als den Empfang von Glukosewerten in Health Connect erforderlich.</span>
+    </li>
+  </ul>
 </body>
 </html>

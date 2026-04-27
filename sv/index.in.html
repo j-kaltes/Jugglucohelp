@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="sv" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Juggluco</title>
+  <style>:root { color-scheme: light dark; }
+body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans",
+                 "Noto Sans Arabic", "Noto Sans Devanagari",
+                 "Noto Sans CJK SC", sans-serif;
+    max-width: 52rem;
+    margin: 2rem auto;
+    padding: 0 1rem 3rem;
+    line-height: 1.5;
+}
+header { margin-bottom: 2rem; }
+h1 { margin: 0 0 .3rem; font-size: 1.8rem; }
+header p { margin: .25rem 0; }
+header a { word-break: break-all; }
+ul.toc { list-style: none; padding: 0; margin: 0; }
+ul.toc li { padding: .55rem 0; border-top: 1px solid rgba(128,128,128,.25); }
+ul.toc li:first-child { border-top: none; }
+ul.toc a { font-weight: 600; text-decoration: none; }
+ul.toc a:hover { text-decoration: underline; }
+.desc { display: block; margin-top: .15rem; font-weight: 400;
+        color: rgba(0,0,0,.78); }
+@media (prefers-color-scheme: dark) {
+    .desc { color: rgba(255,255,255,.78); }
+}
+footer { margin-top: 2rem; font-size: .85rem; opacity: .7; }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Juggluco</h1>
+    <p><a href="https://www.juggluco.nl/Juggluco">https://www.juggluco.nl/Juggluco</a></p>
+  </header>
+  <ul class="toc">
+    <li>
+      <a href="about.html">Om</a>
+      <span class="desc">Juggluco är gjort av Jaap Korthals Altes Förutom de vanliga Android-biblioteken används följande: NFC- och Bluetooth-kommandon specifika för Abbott FreeStyle Libre-sensorer och tolkningsalgoritmer specifika för FreeStyle Libre-sensorer. Alla är odokumenterade.</span>
+    </li>
+    <li>
+      <a href="battery.html">Slumra inte</a>
+      <span class="desc">Vanligtvis går en Android-enhet in i slumra-läge (för att spara batteri) när den inte används. Om du vill vara säker på att glukosvärden tas emot via Bluetooth eller TCP/IP utan avbrott, måste du stänga av batterioptimeringen för Juggluco.</span>
+    </li>
+    <li>
+      <a href="changestart.html">Ändra start</a>
+      <span class="desc">Ändra datum och tid från vilken data kommer att skickas till Libreview. Detta kan vara användbart när en del av data redan finns på Libreview.</span>
+    </li>
+    <li>
+      <a href="IOB.html">Insulin ombord (IOB)</a>
+      <span class="desc">IOB är ett mått på hur mycket insulin som finns kvar från tidigare insulindoser. För att göra detta måste du ange insulindoser under en etikett i kategorin " Snabbverkande insulin ".</span>
+    </li>
+    <li>
+      <a href="alarmhelp.html">Larm</a>
+      <span class="desc">Glukoslarm Värden som tas emot via Bluetooth kan användas för att ställa in larm för låga och höga glukosnivåer. Låg glukosnivå: Vid vilken nivå (eller under) ett larm ska utlösas. Hög glukosnivå: Vid vilken nivå (eller över) ett larm ska utlösas.</span>
+    </li>
+    <li>
+      <a href="colorhelp.html">Färger</a>
+      <span class="desc">Här kan du ändra färgerna på siffror, kurvor och skanningspunkter. Tryck på en punkt på kurvan, en skanningspunkt eller ett värde (så att information om den visas). Därefter trycker du på en färg i färgmenyn.</span>
+    </li>
+    <li>
+      <a href="connectionoverview.html">Spegling</a>
+      <span class="desc">Skicka data till eller ta emot data från en annan enhet. Du kan ansluta till en Android-enhet som kör Juggluco för att visa data på samma sätt som här. Efter att ha tagit emot skanningsdata kan spegelenheten även kontakta sensorn via Bluetooth.</span>
+    </li>
+    <li>
+      <a href="addconnection.html">Lägg till anslutning</a>
+      <span class="desc">Ange en anslutning till en annan instans av Juggluco. Juggluco på en enhet skickar data via IP/TCP till Juggluco på en annan enhet. För att upprätta en anslutning måste en instans lyssna på en port, medan den andra instansen måste kontakta den porten.</span>
+    </li>
+    <li>
+      <a href="Nightscouthelp.html">Webbserver</a>
+      <span class="desc">Juggluco har en webbserver genom vilken andra appar kan hämta glukosvärden från Juggluco. Den kan användas av xDrip-klockor och vissa Nightscout-appar. Att använda appar som är gjorda för att använda webbservern xDrip är relativt enkelt.</span>
+    </li>
+    <li>
+      <a href="NightPost.html">Ladda upp till Nightscout-server</a>
+      <span class="desc">I de flesta fall kan du även använda webbservern i Juggluco eller juggluco-server . Endast ett fåtal appar, som inte gör något mer än att visa Nightscout-webbsidan, behöver cgm-remote-monitor .</span>
+    </li>
+    <li>
+      <a href="camerapermission.html">Kamerabehörighet</a>
+      <span class="desc">För att använda en Sibionics-sensor måste du skanna en datamatris på förpackningen genom att använda telefonens kamera.</span>
+    </li>
+  </ul>
+</body>
+</html>

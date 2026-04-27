@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="uz" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Juggluco</title>
+  <style>:root { color-scheme: light dark; }
+body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans",
+                 "Noto Sans Arabic", "Noto Sans Devanagari",
+                 "Noto Sans CJK SC", sans-serif;
+    max-width: 52rem;
+    margin: 2rem auto;
+    padding: 0 1rem 3rem;
+    line-height: 1.5;
+}
+header { margin-bottom: 2rem; }
+h1 { margin: 0 0 .3rem; font-size: 1.8rem; }
+header p { margin: .25rem 0; }
+header a { word-break: break-all; }
+ul.toc { list-style: none; padding: 0; margin: 0; }
+ul.toc li { padding: .55rem 0; border-top: 1px solid rgba(128,128,128,.25); }
+ul.toc li:first-child { border-top: none; }
+ul.toc a { font-weight: 600; text-decoration: none; }
+ul.toc a:hover { text-decoration: underline; }
+.desc { display: block; margin-top: .15rem; font-weight: 400;
+        color: rgba(0,0,0,.78); }
+@media (prefers-color-scheme: dark) {
+    .desc { color: rgba(255,255,255,.78); }
+}
+footer { margin-top: 2rem; font-size: .85rem; opacity: .7; }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Juggluco</h1>
+    <p><a href="https://www.juggluco.nl/Juggluco">https://www.juggluco.nl/Juggluco</a></p>
+  </header>
+  <ul class="toc">
+    <li>
+      <a href="introhelp.html">Juggluco</a>
+      <span class="desc">Juggluco — diabet bilan yashovchi odamlar uchun glyukozani kuzatish ilovasi. U FreeStyle Libre 0 va 2 sensorlarini NFC orqali skan qila oladi va Bluetooth orqali quyidagi sensorlardan glyukoza qiymatlarini oladi: FreeStyle Libre 2, 2+, 3, 3+, Sibionics GS1Sb,…</span>
+    </li>
+    <li>
+      <a href="about.html">Haqida</a>
+      <span class="desc">Juggluco dasturini Jaap Korthals Altes yozgan. Standart Android kutubxonalaridan tashqari quyidagilardan foydalaniladi: Abbott FreeStyle Libre sensorlariga xos NFC va Bluetooth buyruqlari hamda shu sensorlarga xos talqin algoritmlari.</span>
+    </li>
+    <li>
+      <a href="battery.html">Ishlashda davom etish</a>
+      <span class="desc">Odatda Android qurilmasi ishlatilmayotganda kamroq quvvat sarflash uchun doze rejimiga o'tadi.</span>
+    </li>
+    <li>
+      <a href="sensorhelp.html">Sensor</a>
+      <span class="desc">Ro‘yxatdagi tanlagichda sensor nomi ko‘rinadi. Agar Juggluco bir vaqtning o‘zida bir nechta sensordan foydalansa, qaysi sensor bo‘yicha ma’lumot ko‘rish shu yerda tanlanadi.</span>
+    </li>
+    <li>
+      <a href="sensorinfo.html">Sensor ma’lumoti</a>
+      <span class="desc">Sensorning boshlanish vaqti, oxirgi oqim, oxirgi skan hamda kutilgan va rasmiy tugash vaqtlarini ko‘rsatadi. Qizish : Sibionics va Aidex X sensorlari uchun qizish davri necha daqiqa bo‘lishini o‘zgartirishingiz mumkin.</span>
+    </li>
+    <li>
+      <a href="sensormirror.html">Sensor ma’lumoti</a>
+      <span class="desc">Bu sahifa Juggluco oqim qiymatlari uchun mirror vazifasini bajarayotganda sensorlar haqida ma’lumot ko‘rsatadi. Boshlangan: sensor ishga tushirilgan vaqt. Libre sensorlarida bu odatda birinchi glyukoza qiymatlaridan bir soat oldingi vaqt bo‘ladi.</span>
+    </li>
+    <li>
+      <a href="calibrationhelp.html">Kalibrlash</a>
+      <span class="desc">Juggluco 10.0.0 va undan yuqori versiyalar sensorlarni kalibrlash imkonini beradi. Qon glyukozasi : qaysi yorliq barmoqdan o‘lchangan qon glyukozasi o‘lchovlari uchun ishlatilishini ko‘rsating.</span>
+    </li>
+    <li>
+      <a href="calibrationslist.html">Kalibrlash lar</a>
+      <span class="desc">Bu sensor uchun bajarilgan kalibrlashlarni ko‘rsatadi. Har bir kalibrlashda u qachon bajarilgani, qon glyukozasi va sensor glyukozasi o‘rtasidagi bog‘lanishning qiyaligi (a) va erkin hadi (b) saqlanadi: Qon glyukozasi = a × SensorGlyukozasi + b Agar chap…</span>
+    </li>
+    <li>
+      <a href="changestart.html">Boshlanishni o'zgartirish</a>
+      <span class="desc">Ma'lumotlar Libreview’ga qaysi sana va vaqtdan boshlab yuborilishini o'zgartiring. Ma'lumotning bir qismi Libreview da allaqachon mavjud bo'lsa, bu foydali bo'lishi mumkin.</span>
+    </li>
+    <li>
+      <a href="DeviceList.html">Glyukoza o'lchagich qurilmalari</a>
+      <span class="desc">Glyukoza o'lchagich qurilmalarini qidiradi. Topilgan qurilmalar shu yerda ko'rsatiladi. Ulangan qurilmalar topilmaydi.</span>
+    </li>
+    <li>
+      <a href="GlucoseMeter.html">Glyukoza o'lchagichi</a>
+      <span class="desc">Juggluco faqat ko'rsatilgan sana va vaqtdan keyingi vaqt belgisi bilan glyukoza qiymatlarini qo'shadi. Agar oldingi glyukoza qiymatlari Juggluco da allaqachon mavjud bo'lsa, keyinroq sana va vaqtni tanlang. Qon glyukozasi uchun yorliqni tanlang.</span>
+    </li>
+    <li>
+      <a href="GlucoseMeterList.html">Glyukoza o'lchagichlari ro'yxati</a>
+      <span class="desc">Juggluco ayrim qon glyukozasi o'lchagichlaridan Bluetooth orqali qon glyukozasi test o'lchovlarini qabul qila oladi.</span>
+    </li>
+    <li>
+      <a href="labelhelp.html">Miqdor yorliqlari</a>
+      <span class="desc">Bu yerda insulin, uglevod yoki jismoniy faollikni ko‘rsatish uchun grafikga qo‘shiladigan miqdorlar yorliqlarini yaratish , o‘chirish va o‘zgartirish mumkin.</span>
+    </li>
+    <li>
+      <a href="newlabelhelp.html">Yorliq:</a>
+      <span class="desc">Miqdor kiritishda ishlatiladigan yorliq nomi. Chap o‘rta menyudagi Yangi miqdor orqali ma’lum sana va vaqtga bog‘langan miqdorni qo‘shishingiz mumkin. Bu miqdorlar glyukoza grafikida o‘sha vaqt nuqtasida yoki ro‘yxatda ko‘rsatiladi.</span>
+    </li>
+    <li>
+      <a href="newamount.html">Yangi miqdor</a>
+      <span class="desc">Yangi miqdor oynasi yordamida istalgan yorliq bilan bog‘langan miqdorlarni kiritish mumkin. Yorliqlar chap menyu→Sozlamalar→ Miqdor yorliqlari bo‘limida belgilanadi.</span>
+    </li>
+    <li>
+      <a href="mealhelp.html">Ovqatlar</a>
+      <span class="desc">Ovqat tarkibidagi mahsulotlar miqdorini kiriting. Shundan so‘ng umumiy uglevod miqdori hisoblanadi. Shuningdek butun ovqat yoki alohida ingredient uchun uglevod miqdorini ko‘rsatish mumkin, bunda dastur kerakli ingredient miqdorini hisoblab beradi.</span>
+    </li>
+    <li>
+      <a href="nutrients.html">Oziq-ovqat tarkibi bazasi</a>
+      <span class="desc">Bu yerda McCance and Widdowson’s The Composition of Foods Integrated Dataset 2021 ma’lumotlar bazasidan mahsulotlarni qidirishingiz mumkin: https://www.gov.</span>
+    </li>
+    <li>
+      <a href="reminders.html">Eslatmalar</a>
+      <span class="desc">Eslatmalar ma’lum vaqt oralig‘ida ma’lum miqdor kiritilmagan bo‘lsa, sizni eslatib turadi. Yangi tugmasini bosib yangi eslatma qo‘shishingiz mumkin. Boshlanish va tugash vaqtini belgilang.</span>
+    </li>
+    <li>
+      <a href="schedulehelp.html">Jadvallar</a>
+      <span class="desc">Profil ma’lum vaqtda faol bo‘lishi uchun jadval tuzing. Muayyan vaqt bilan profil o‘rtasida bog‘lanish yaratish uchun Yangi tugmasini bosing. Juggluco har kuni ko‘rsatilgan vaqtda shu profilga o‘tadi.</span>
+    </li>
+    <li>
+      <a href="staticnum.html">Bloklangan</a>
+      <span class="desc">Chap o'rta menyu→Mirror→” Mirror miqdorlarni yuboradi” ushbu ilovada miqdor kiritishni oldini olish uchun yoqilgan, chunki ular mirror ulanishidan qabul qilingan miqdorlar bilan almashtiriladi.</span>
+    </li>
+    <li>
+      <a href="IOBhelp.html">Faol qolgan insulin (IOB)</a>
+      <span class="desc">IOB - bu oldingi insulin dozalari ta'siridan qancha insulin qolganini bildiruvchi ko'rsatkich. Juggluco 9.2.0 dan oldin IOB ni taxmin qilish uchun Insulin Aspartning qondagi insulin konsentratsiyasi egri chizig'idan foydalanilgan.</span>
+    </li>
+    <li>
+      <a href="alarmhelp.html">Signallar</a>
+      <span class="desc">Glyukoza signallari Bluetooth orqali olingan oqim qiymatlaridan past va yuqori glyukoza signallarini sozlash uchun foydalanish mumkin. Past glyukoza signali Signal shu qiymatda yoki undan past bo‘lganda ishga tushadi.</span>
+    </li>
+    <li>
+      <a href="advancedAlarmshelp.html">Kengaytirilgan signallar</a>
+      <span class="desc">Juda past glyukoza signali Glyukoza qiymati past glyukoza signalidan ham past bo'lganda chalinadigan ikkinchi past signal. Juda yuqori glyukoza signali Glyukoza qiymati yuqori glyukoza signalidan ham yuqori bo'lganda chalinadigan ikkinchi yuqori signal.</span>
+    </li>
+    <li>
+      <a href="ringtone.html">Qo‘ng‘iroq ohangi</a>
+      <span class="desc">Signal yoki bildirishnoma uchun qaysi qo‘ng‘iroq ohangi chalinishini va necha soniya davom etishini tanlang. O‘chirilgan daqiqalar : past yoki yuqori glyukoza davom etsa, signal darhol qayta chalinmaydi.</span>
+    </li>
+    <li>
+      <a href="disturbhelp.html">“Bezovta qilmang” ruxsati</a>
+      <span class="desc">Ba’zi qurilmalarda signallar “Bezovta qilmang” rejimida ishlamaydi. Bezovta yordamida signal chalinishidan oldin “Bezovta qilmang” o‘chirilsinmi-yo‘qmi, shuni belgilashingiz mumkin.</span>
+    </li>
+    <li>
+      <a href="talkhelp.html">Gapirish</a>
+      <span class="desc">Glyukozani aytish Glyukoza qiymatlari kelganda ularni ovoz chiqarib aytadi. Oradagi soniyalar : Juggluco keyingi glyukoza qiymatini aytishdan oldin necha soniya kutishini belgilaydi. Yangi qiymat kelganda u darhol aytiladi.</span>
+    </li>
+    <li>
+      <a href="displayhelp.html">Ko‘rsatish sozlamalari</a>
+      <span class="desc">Ranglar Egri chiziqlar, skanlar va raqamlarning ranglarini o‘zgartiradi. Qorong‘i rejim ni yoqish uchun o‘ng o‘rta menyu→Qorong‘i rejimdan foydalaning.</span>
+    </li>
+    <li>
+      <a href="colorhelp.html">Ranglar</a>
+      <span class="desc">Bu yerda raqamlar, egri chiziqlar va skan nuqtalarining ranglarini o'zgartirishingiz mumkin. Egri chiziq, skan yoki miqdorning bir nuqtasiga teging (shu nuqta yoki miqdor haqidagi ma'lumot ko'rsatilishi uchun). Shundan so'ng ranglar oynasidagi rangga teging.</span>
+    </li>
+    <li>
+      <a href="floatingconfig.html">Suzuvchi glyukoza</a>
+      <span class="desc">Bu yerda suzuvchi glyukozaning shrift o‘lchami, old fon va orqa fon ranglarini sozlashingiz mumkin. Tegiladigan : yoqilgan bo‘lsa, suzuvchi glyukozani barmoq bilan ko‘chirish va uzoq bosib kichraytirish mumkin.</span>
+    </li>
+    <li>
+      <a href="settinghelp.html">Sozlamalar</a>
+      <span class="desc">Birlik Glyukoza qiymatlari mmol/L yoki mg/dL ko‘rinishida berilishini tanlaydi. NFC tovushi Skan vaqtida vibratsiyadan tashqari tovush ham chiqaradi.</span>
+    </li>
+    <li>
+      <a href="searchhelp.html">Qidirish</a>
+      <span class="desc">Qidirish yordamida glyukoza qiymatlari va kiritilgan miqdorlarni topish mumkin. Qiymatlar berilgan ikki son oralig‘ida qidiriladi. Masalan, 10–999 oraliği 10 dan 999 gacha bo‘lgan qiymatlarni topadi.</span>
+    </li>
+    <li>
+      <a href="stathelp.html">Statistika</a>
+      <span class="desc">Bu bo‘lim AGP asosidagi ayrim statistikani kichik o‘zgartirishlar bilan ko‘rsatadi. Tahlil qilinadigan kunlar sonini Kunlar tugmasi bilan o‘zgartirish mumkin. Davr ekrandagi o‘ng chekka vaqt bilan tugaydi va ko‘rsatilgan kunlar sonicha orqaga qarab olinadi.</span>
+    </li>
+    <li>
+      <a href="loghelp.html">Jurnal</a>
+      <span class="desc">Jurnal oynasida Juggluco ning ichki hodisalari, ulanishlari, qayta ulanishlari va xatolari ko‘rinadi. U ayniqsa sensorga ulanish, Mirror, Nightscout, veb server va boshqa ma’lumot almashish muammolarini topishda foydali.</span>
+    </li>
+    <li>
+      <a href="helpexport.html">Eksport</a>
+      <span class="desc">Juggluco ma’lumotlarini faylga eksport qiladi. Ovqatlar HTML ko‘rinishida saqlanadi. Qolgan barcha ma’lumotlar .tsv ( tab bilan ajratilgan qiymatlar ) formatida saqlanadi.</span>
+    </li>
+    <li>
+      <a href="connectionoverview.html">Mirror</a>
+      <span class="desc">Bu sahifa boshqa qurilmaga ma’lumot yuborish yoki undan ma’lumot qabul qilish uchun xizmat qiladi. Juggluco ishlayotgan boshqa Android qurilmaga ulanib, shu yerdagi ma’lumotni o‘sha qurilmada ham ko‘rsatish mumkin.</span>
+    </li>
+    <li>
+      <a href="addconnection.html">Ulanish qo‘shish</a>
+      <span class="desc">Bu sahifada boshqa Juggluco nusxasi bilan ulanishingiz belgilanadi. Bir qurilmadagi Juggluco IP/TCP orqali boshqa qurilmadagi Juggluco ga ma’lumot yuboradi.</span>
+    </li>
+    <li>
+      <a href="QRmirror.html">QR mirror</a>
+      <span class="desc">Boshqa telefonda chap menyu → Foto orqali QR kodni skan qilib, mirror ulanishining ikkinchi tomonini sozlashingiz mumkin. Chap o'rta menyu→Mirror→Avto QR orqali ulanishning ikkala tomoni ham avtomatik yaratiladi.</span>
+    </li>
+    <li>
+      <a href="autoqrmessage.html">AutoQR</a>
+      <span class="desc">Bu telefonda ulanish yaratadi va boshqa Android qurilma skaner qilishi mumkin bo‘lgan QR kodni ko‘rsatadi.</span>
+    </li>
+    <li>
+      <a href="turnservers.html">Turn server</a>
+      <span class="desc">Internet orqali autoQR ulanishi yaratilganda yoki ulanishni qo'lda ko'rsatishda ICE o'rnatilganda ICE ulanishidan foydalaniladi Interactive Connectivity Establishment (ICE) Juggluco ning ikki nusxasi o'rtasida to'g'ridan-to'g'ri ulanish hosil qila olmasa,…</span>
+    </li>
+    <li>
+      <a href="Nightscouthelp.html">Veb server</a>
+      <span class="desc">Juggluco ichida boshqa ilovalar glyukoza qiymatlarini qabul qila oladigan veb server mavjud. Undan xDrip soatlari va ayrim Nightscout ilovalari bilan foydalanish mumkin.</span>
+    </li>
+    <li>
+      <a href="NightPost.html">Nightscout serveriga yuklash</a>
+      <span class="desc">Ko‘p hollarda Juggluco ichidagi Veb server yoki juggluco-server dan ham foydalanish mumkin. Faqat Nightscout veb sahifasini ko‘rsatish bilangina cheklanadigan ayrim ilovalar uchun cgm-remote-monitor kerak bo‘ladi. AAPS va AAPSClient’ni ham Juggluco 7.4.</span>
+    </li>
+    <li>
+      <a href="libreview.html">Libreview</a>
+      <span class="desc">Juggluco glyukoza ma’lumotlari va miqdorlarni Libreview’ga yubora oladi. LibreLink ilovasi kabi, Juggluco ham Libreview’ga oxirgi 89 kunlik ma’lumotni yuboradi. Bu xizmatdan foydalanish uchun https://libreview.</span>
+    </li>
+    <li>
+      <a href="librenumhelp.html">Librenum</a>
+      <span class="desc">" Miqdorlarni yuborish " ni yoqing, shunda Miqdorlar Libreview’ga yuboriladi. " Miqdorlarni yuborish " ni yoqishdan oldin, har bir yorliq uchun ushbu yorliq ostida kiritilgan miqdorlar Libreview’ga qanday yuborilishini ko'rsatishingiz kerak.</span>
+    </li>
+    <li>
+      <a href="setlibrenumtype.html">Miqdor turlarini yuborish</a>
+      <span class="desc">Libreview dagidek, Juggluco ichidagi Nightscout yoki veb server interfeysi orqali miqdorlar qanday ko‘rinishda berilishini ham shu yerda belgilash mumkin.</span>
+    </li>
+    <li>
+      <a href="nightnumhelp.html">Nightnum</a>
+      <span class="desc">"Berish miqdorlar " ni yoqing, shunda miqdorlar Juggluco dagi Nightscout veb-serveri orqali kirish mumkin bo'ladi. "Berish miqdorlar " ni yoqishdan oldin, har bir yorliq uchun shu yorliq ostida kiritilgan miqdorlar qanday berilishini ko'rsatishingiz kerak.</span>
+    </li>
+    <li>
+      <a href="getaccountidhelp.html">Account ID olish</a>
+      <span class="desc">FreeStyle Libre 3 sensorini NFC orqali skan qilish uchun kerak bo‘ladigan Libreview Account ID’ni qanday olish mumkin? Agar Qo‘lda tanlansa, Account ID’ni o‘zingiz kiritishingiz mumkin.</span>
+    </li>
+    <li>
+      <a href="exchangehelp.html">Ma’lumot almashish</a>
+      <span class="desc">Health Connect : har daqiqalik glyukoza qiymatlarini Health Connect’ga yuboradi. Shu orqali boshqa ilovalarga, masalan Google Fit ’ga, glyukoza ma’lumotlariga ruxsat berish mumkin. Boshqa ilovalar esa Google Fit’dan ham ma’lumot olishi mumkin.</span>
+    </li>
+    <li>
+      <a href="watchinfo.html">Soat</a>
+      <span class="desc">Hozir Juggluco glyukoza qiymatlarini soatga yetkazishning olti xil usulini taklif qiladi. Bildirishnoma Bildirish yoqilgan bo‘lsa, har safar yangi glyukoza qiymati kelganda Android bildirishnomasi yaratiladi.</span>
+    </li>
+    <li>
+      <a href="kerfstok.html">Kerfstok</a>
+      <span class="desc">Kerfstok — Garmin uchinchi tomon ilovalarini qo‘llab-quvvatlaydigan sport soatlari uchun mo‘ljallangan ilova: Garmin Connect IQ Kerfstok haqida 1.6.0 versiyadan boshlab sensorli ekran bo‘lmagan soatlarda ham ishlaydi.</span>
+    </li>
+    <li>
+      <a href="garminconfig.html">Kerfstok sozlamasi</a>
+      <span class="desc">Kerfstok ning manba kodi ni quyidagi manzildan yuklab olish mumkin https://www.juggluco.nl/Kerfstok/Kerfstok-source.html ). Foydalanuvchilar uni erkin o'zgartirishlari mumkin. Har bir soat ilovasining o'ziga xos identifikatori bor.</span>
+    </li>
+    <li>
+      <a href="shortcuthelp.html">Qisqa yo‘llar</a>
+      <span class="desc">Qisqa yo‘llar Kerfstok ichida ishlatilishi mumkin. Soatdagi miqdor kiritish ekranidan qisqa yo‘llar ekraniga o‘tish mumkin, masalan Vivoactive 3 da chapga surish orqali. Bu ekranda yorliqlar ro‘yxati ko‘rinadi.</span>
+    </li>
+    <li>
+      <a href="wearosinfo.html">Wear OS</a>
+      <span class="desc">Soatda miqdor kiritish Soatda miqdor kiritish yoqilgan bo‘lsa, insulin, uglevod va faollik uchun miqdorlarni telefonda emas, soatdagi ikkinchi menyu→ Miqdorlar orqali kiritasiz.</span>
+    </li>
+    <li>
+      <a href="notificationpermission.html">Bildirishnomalar</a>
+      <span class="desc">Agar Juggluco Freestyle Libre 0 sensorlari bilan ishlatilmasa, u har daqiqada glyukoza o'qishini olish uchun Bluetooth orqali to'g'ridan-to'g'ri sensordan yoki tarmoq ulanishi orqali fon rejimida faol bo'lib turishi kerak.</span>
+    </li>
+    <li>
+      <a href="locationpermission.html">Joylashuv ruxsati</a>
+      <span class="desc">Android 6 dan 11 gacha ishlaydigan qurilmalarga Bluetooth qurilmalarini topish uchun joylashuv ruxsati kerak. Bluetooth qurilmalarini bunday skan qilish Sibionics va Dexcom uchun kerak va Android 6, 7 hamda 7.1 da Juggluco tomonidan ham ishlatiladi</span>
+    </li>
+    <li>
+      <a href="nearbypermission.html">YAQINDAGI QURILMALAR ruxsati</a>
+      <span class="desc">Juggluco ga Freestyle Libre 2 va 3 sensorlaridan Bluetooth orqali glyukoza qiymatlarini qabul qilish uchun YAQINDAGI QURILMALAR ruxsati kerak.</span>
+    </li>
+    <li>
+      <a href="camerapermission.html">KAMERA ruxsati</a>
+      <span class="desc">Sibionics sensoridan foydalanish uchun qadoqdagi Data Matrix kodini telefon kamerasi yordamida skan qilishingiz kerak.</span>
+    </li>
+    <li>
+      <a href="flashpermission.html">Flash</a>
+      <span class="desc">Ba'zan ayrim smartfonlarda chiroqdan foydalanish Kamera ruxsatini talab qilishi aytiladi. Shu sababli Juggluco oldingi versiyalarda bu ruxsatni so'ragan. Sinovdan o'tgan telefonlarda bu ruxsat kerak emas va Juggluco endi uni so'ramaydi.</span>
+    </li>
+    <li>
+      <a href="healthpermission.html">Yozish ruxsati qon glyukozasi</a>
+      <span class="desc">Glyukoza qiymatlarini Health Connect ga yozish uchun foydalanuvchi Juggluco ga Qon glyukozasi ni Health Connect ga yozish ruxsatini berishi kerak. Bu ruxsat Health Connect da glyukoza qiymatlarini qabul qilishdan boshqa hech narsa uchun kerak emas.</span>
+    </li>
+  </ul>
+</body>
+</html>

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="hi" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Juggluco</title>
+  <style>:root { color-scheme: light dark; }
+body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans",
+                 "Noto Sans Arabic", "Noto Sans Devanagari",
+                 "Noto Sans CJK SC", sans-serif;
+    max-width: 52rem;
+    margin: 2rem auto;
+    padding: 0 1rem 3rem;
+    line-height: 1.5;
+}
+header { margin-bottom: 2rem; }
+h1 { margin: 0 0 .3rem; font-size: 1.8rem; }
+header p { margin: .25rem 0; }
+header a { word-break: break-all; }
+ul.toc { list-style: none; padding: 0; margin: 0; }
+ul.toc li { padding: .55rem 0; border-top: 1px solid rgba(128,128,128,.25); }
+ul.toc li:first-child { border-top: none; }
+ul.toc a { font-weight: 600; text-decoration: none; }
+ul.toc a:hover { text-decoration: underline; }
+.desc { display: block; margin-top: .15rem; font-weight: 400;
+        color: rgba(0,0,0,.78); }
+@media (prefers-color-scheme: dark) {
+    .desc { color: rgba(255,255,255,.78); }
+}
+footer { margin-top: 2rem; font-size: .85rem; opacity: .7; }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Juggluco</h1>
+    <p><a href="https://www.juggluco.nl/Juggluco">https://www.juggluco.nl/Juggluco</a></p>
+  </header>
+  <ul class="toc">
+    <li>
+      <a href="introhelp.html">Intro</a>
+      <span class="desc">Juggluco मधुमेह वाले लोगों द्वारा रक्त ग्लूकोज के नियंत्रण के लिए एक एप्लेट है। यह Freestyle Libre (0 और 2) सेंसर (NFC के माध्यम से) स्कैन कर सकता है और Freestyle Libre 2 , 2+ , 3 , 3+ , Sibionics GS1Sb , Dexcom G7/ONE+ , Accu-Chek SmartGuide , CareSens Air…</span>
+    </li>
+    <li>
+      <a href="about.html">बारे में</a>
+      <span class="desc">Juggluco Jaap Korthals Altes द्वारा लिखा गया है मानक Android लाइब्रेरी के अलावा, निम्नलिखित का उपयोग किया गया है: Abbott FreeStyle Libre सेंसर के लिए विशिष्ट NFC और ब्लूटूथ कमांड और FreeStyle Libre सेंसर के लिए विशिष्ट व्याख्या एल्गोरिदम।</span>
+    </li>
+    <li>
+      <a href="battery.html">काम करते रहना</a>
+      <span class="desc">सामान्यतः जब एक Android डिवाइस का उपयोग नहीं होता, तो यह कम ऊर्जा उपयोग करने के लिए डोज़ मोड में प्रवेश करता है।</span>
+    </li>
+    <li>
+      <a href="sensorhelp.html">सेंसर</a>
+      <span class="desc">स्पिनर में सेंसर का नाम होता है। यदि Juggluco एक साथ एक से अधिक सेंसर का उपयोग कर रहा है, तो आप वह सेंसर चुन सकते हैं जिसके लिए जानकारी दिखानी है।</span>
+    </li>
+    <li>
+      <a href="sensorinfo.html">सेंसर जानकारी</a>
+      <span class="desc">सेंसर का आरंभ, अंतिम स्ट्रीम, अंतिम स्कैन और अपेक्षित तथा आधिकारिक समाप्ति समय प्रदर्शित करता है। वार्मअप : Sibionics और Linx/Lumiflex/Aidex X सेंसरों के लिए आप वार्मअप अवधि के मिनटों की संख्या बदल सकते हैं।</span>
+    </li>
+    <li>
+      <a href="sensormirror.html">सेंसर जानकारी</a>
+      <span class="desc">जब Juggluco स्ट्रीम मानों के मिरर के रूप में कार्य करता है तो सेंसरों के बारे में जानकारी देता है: शुरू किया: सेंसर कब शुरू किया गया था। Libre सेंसरों पर यह पहले ग्लूकोज मानों से एक घंटा पहले होता है। अंतिम स्कैन: सेंसर को अंतिम बार कब स्कैन किया गया था।</span>
+    </li>
+    <li>
+      <a href="calibrationhelp.html">कैलिब्रेशन</a>
+      <span class="desc">Juggluco 10.0.0 और उच्चतर में सेंसर को कैलिब्रेट करने की संभावना है। रक्त ग्लूकोज : निर्दिष्ट करें कि कौन सा लेबल रक्त ग्लूकोज फिंगर प्रिक मापन के लिए है।</span>
+    </li>
+    <li>
+      <a href="calibrationslist.html">कैलिब्रेशन</a>
+      <span class="desc">इस सेंसर के लिए बनाए गए कैलिब्रेशन दिखाता है। प्रत्येक कैलिब्रेशन में वह समय होता है जब यह बनाया गया था और रक्त ग्लूकोज और सेंसर ग्लूकोज के बीच संबंध की ढलान (a) और इंटरसेप्ट b होता है: रक्त ग्लूकोज=a*SensorGlucose+b जब बायां मेन्यू→सेटिंग्स→ कैलिब्रेशन में…</span>
+    </li>
+    <li>
+      <a href="changestart.html">शुरुआत बदलें</a>
+      <span class="desc">वह तारीख और समय बदलें जिससे डेटा Libreview को भेजा जाएगा। यह तब उपयोगी हो सकता है जब कुछ डेटा पहले से ही Libreview पर मौजूद हो।</span>
+    </li>
+    <li>
+      <a href="DeviceList.html">ग्लूकोज मीटर डिवाइस</a>
+      <span class="desc">ग्लूकोज मीटर डिवाइस के लिए स्कैन करता है। मिले हुए डिवाइस यहाँ प्रदर्शित किए जाते हैं। कनेक्टेड डिवाइस नहीं मिलेंगे। पहली बार, डिवाइस को पेयरिंग मोड में लाना आवश्यक है, उदाहरण के लिए बटन को तब तक लंबा दबाकर जब तक एक नीली लाइट न चमके।</span>
+    </li>
+    <li>
+      <a href="GlucoseMeter.html">ग्लूकोज मीटर</a>
+      <span class="desc">Juggluco केवल उन ग्लूकोज मानों को जोड़ेगा जिनका टाइमस्टैम्प निर्दिष्ट तारीख और समय से बाद का है। यदि पहले के ग्लूकोज मान पहले से ही Juggluco में मौजूद हैं तो बाद की तारीख और समय पर बदलें। रक्त ग्लूकोज के लिए लेबल चुनें।</span>
+    </li>
+    <li>
+      <a href="GlucoseMeterList.html">ग्लूकोज मीटर सूची</a>
+      <span class="desc">Juggluco कुछ रक्त ग्लूकोज मीटरों से ब्लूटूथ के माध्यम से रक्त ग्लूकोज परीक्षण मापन प्राप्त कर सकता है। यदि आपके पास Contour Next ONE है, तो आप ग्लूकोज मीटर पर डेटा मैट्रिक्स को बाएं मेन्यू→फोटो से स्कैन करके इसे Juggluco में जोड़ सकते हैं।</span>
+    </li>
+    <li>
+      <a href="labelhelp.html">मात्राओं के लिए लेबल</a>
+      <span class="desc">यहाँ आप इंसुलिन, कार्बोहाइड्रेट या शारीरिक गतिविधि को निर्दिष्ट करने के लिए ग्राफ़ में जोड़ी गई मात्राओं के लिए लेबल बना , हटा और संशोधित कर सकते हैं। यदि आपने पहले से कुछ मात्राएं सहेजी हैं, तो उन्हें उनकी स्थिति के अनुरूप लेबल मिलेगा।</span>
+    </li>
+    <li>
+      <a href="newlabelhelp.html">लेबल:</a>
+      <span class="desc">संख्याएं दर्ज करने के लिए उपयोग किए जाने वाले लेबल का नाम। आप बाएं मध्य मेन्यू में "नई मात्रा" का उपयोग करके एक निश्चित तारीख और समय से जुड़ी संख्या जोड़ सकते हैं। इन संख्याओं को ग्लूकोज ग्राफ़ में उस समय स्थिति पर या एक सूची में प्रदर्शित किया जा सकता है।</span>
+    </li>
+    <li>
+      <a href="newamount.html">नई मात्रा</a>
+      <span class="desc">नई मात्रा से आप किसी मनमाने लेबल से जुड़ी संख्याएं दर्ज कर सकते हैं। आप लेबल बायां मेन्यू→सेटिंग्स→ संख्या लेबल के तहत सेट कर सकते हैं। एक विशेष लेबल के साथ दर्ज की गई मात्राएं लेबल द्वारा निर्धारित निश्चित ऊंचाई पर ग्राफ़ में दिखाई जाएंगी।</span>
+    </li>
+    <li>
+      <a href="mealhelp.html">भोजन</a>
+      <span class="desc">भोजन की सामग्री की मात्रा निर्दिष्ट करें। कुल कार्बोहाइड्रेट सामग्री की फिर गणना की जाती है। पूरे भोजन या सामग्री के लिए कार्बोहाइड्रेट की मात्रा निर्दिष्ट करना भी संभव है और फिर प्रोग्राम सामग्री की आवश्यक मात्रा निर्धारित करता है।</span>
+    </li>
+    <li>
+      <a href="nutrients.html">भोजन संरचना डेटाबेस</a>
+      <span class="desc">यहाँ आप McCance and Widdowson’s The Composition of Foods Integrated Dataset 2021 में भोजन देख सकते हैं https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid आप regular expressions ( https://www.regular-expressions.</span>
+    </li>
+    <li>
+      <a href="reminders.html">अनुस्मारक</a>
+      <span class="desc">अनुस्मारक आपको याद दिलाते हैं यदि आपने एक निश्चित समय अंतराल के भीतर एक निश्चित मात्रा दर्ज नहीं की है। नया दबाकर आप एक नया अनुस्मारक जोड़ सकते हैं।</span>
+    </li>
+    <li>
+      <a href="schedulehelp.html">अनुसूची</a>
+      <span class="desc">प्रोफ़ाइल को एक निश्चित समय पर सक्रिय करने के लिए अनुसूचित करें। एक निश्चित समय और एक प्रोफ़ाइल के बीच संबंध बनाने के लिए “ नया ” दबाएं। Juggluco निर्दिष्ट समय पर हर दिन उस प्रोफ़ाइल पर स्विच करेगा। आप एक समय प्रोफ़ाइल संबंध को छूकर संपादित कर सकते हैं।</span>
+    </li>
+    <li>
+      <a href="staticnum.html">अवरुद्ध</a>
+      <span class="desc">बायां मध्य मेन्यू→मिरर→” मिरर मात्राएं भेजता है” इस ऐप में मात्राएं दर्ज करने से रोकने के लिए सेट किया गया है, क्योंकि वे मिरर कनेक्शन से प्राप्त मात्राओं द्वारा ओवरराइड की जाएंगी।</span>
+    </li>
+    <li>
+      <a href="IOBhelp.html">Insulin onboard (IOB)</a>
+      <span class="desc">IOB इस बात का माप है कि पिछली इंसुलिन खुराकों से कितनी इंसुलिन शेष है। Juggluco 9.2.0 से पहले IOB का अनुमान लगाने के लिए Insulin Aspart का Blood Insulin Concentration वक्र उपयोग किया जाता था।</span>
+    </li>
+    <li>
+      <a href="alarmhelp.html">अलार्म</a>
+      <span class="desc">ग्लूकोज अलार्म: ब्लूटूथ के माध्यम से प्राप्त स्ट्रीम मानों का उपयोग कम और अधिक ग्लूकोज अलार्म सेट करने के लिए किया जा सकता है। कम ग्लूकोज अलार्म: वह मान जिस पर और उससे नीचे एक अलार्म बजना चाहिए।</span>
+    </li>
+    <li>
+      <a href="advancedAlarmshelp.html">उन्नत अलार्म</a>
+      <span class="desc">बहुत कम ग्लूकोज अलार्म ग्लूकोज मान कम ग्लूकोज अलार्म से भी कम होने पर बजने वाला दूसरा कम अलार्म। बहुत अधिक ग्लूकोज अलार्म ग्लूकोज मान अधिक ग्लूकोज अलार्म से भी अधिक होने पर बजने वाला दूसरा अधिक अलार्म।</span>
+    </li>
+    <li>
+      <a href="ringtone.html">रिंगटोन</a>
+      <span class="desc">एक अलार्म या सूचना के लिए कौन सी रिंगटोन बजानी है और कितने सेकंड के लिए चुनें। निष्क्रिय किए गए मिनट : यदि कम या अधिक ग्लूकोज स्तर जारी रहता है, तो अलार्म तुरंत फिर से नहीं बजेगा।</span>
+    </li>
+    <li>
+      <a href="disturbhelp.html">" Do not disturb " एक्सेस</a>
+      <span class="desc">कुछ डिवाइसों पर, " Do not disturb " मोड के दौरान अलार्म काम नहीं करते। " बाधा " से आप निर्दिष्ट कर सकते हैं कि अलार्म बजाने से पहले " Do not disturb " बंद किया जाना चाहिए या नहीं।</span>
+    </li>
+    <li>
+      <a href="talkhelp.html">बोलें</a>
+      <span class="desc">ग्लूकोज बोलें ग्लूकोज मान आते ही उन्हें बोलता है। बीच के सेकंड : निर्दिष्ट करता है कि Juggluco को अगला ग्लूकोज मान बोलने से पहले कितने सेकंड प्रतीक्षा करनी चाहिए। ग्लूकोज मान आते ही हमेशा तुरंत बोले जाते हैं।</span>
+    </li>
+    <li>
+      <a href="displayhelp.html">डिस्प्ले सेटिंग्स</a>
+      <span class="desc">रंग वक्रों, स्कैन और संख्याओं के रंग बदलें। डार्क मोड स्विच करने के लिए, दायां मध्य मेन्यू-&gt;डार्क मोड का उपयोग करें। ग्राफ़ सीमा: कम-अधिक। एक कम और अधिक मान दें, ताकि स्क्रीन के नीचे का हिस्सा सबसे कम और ऊपर का हिस्सा सबसे अधिक के अनुरूप हो।</span>
+    </li>
+    <li>
+      <a href="colorhelp.html">रंग</a>
+      <span class="desc">यहाँ आप संख्याओं, वक्रों और स्कैन बिंदुओं के रंग बदल सकते हैं। वक्र के एक बिंदु, स्कैन या मात्रा को छुएं (ताकि उस बिंदु या मात्रा के बारे में जानकारी दिखाई जाए)। इसके बाद कलर व्यू में एक रंग छुएं। वक्र, स्कैन बिंदु या मात्रा अब उस रंग में दिखाई जाएगी।</span>
+    </li>
+    <li>
+      <a href="floatingconfig.html">फ्लोटिंग ग्लूकोज</a>
+      <span class="desc">यहाँ आप फ्लोटिंग ग्लूकोज का फ़ॉन्ट आकार और अग्रभूमि तथा पृष्ठभूमि रंग सेट कर सकते हैं। स्पर्शनीय : सेट होने पर आप फ्लोटिंग ग्लूकोज को अपनी उंगली से हिला सकते हैं और इसे लंबा दबाकर (बिना हिलाए) छोटा कर सकते हैं।</span>
+    </li>
+    <li>
+      <a href="settinghelp.html">सेटिंग्स</a>
+      <span class="desc">इकाई चुनें कि ग्लूकोज मान mmol/L में दिए जाएं या mg/dL में। NFC ध्वनि कंपन के अलावा स्कैनिंग के दौरान ध्वनि बनाएं।</span>
+    </li>
+    <li>
+      <a href="searchhelp.html">खोज</a>
+      <span class="desc">खोज का उपयोग ग्लूकोज मान और दर्ज की गई संख्याएं खोजने के लिए किया जा सकता है। आप दी गई संख्याओं के बीच मान खोजते हैं। उदाहरण के लिए: 10 और 999 के बीच के मान खोजने के लिए 10 – 999। ग्लूकोज मान स्कैन, इतिहास और स्ट्रीम में अलग किए गए हैं।</span>
+    </li>
+    <li>
+      <a href="stathelp.html">आंकड़े</a>
+      <span class="desc">कुछ आंकड़े AGP से कुछ छोटे संशोधनों के साथ लिए गए हैं। विश्लेषण किए गए दिनों की संख्या को दिन बटन दबाकर संशोधित किया जा सकता है। अवधि स्क्रीन के अंत स्थिति के समय पर समाप्त होती है और निर्दिष्ट दिनों की संख्या पीछे के समय तक फैलती है।</span>
+    </li>
+    <li>
+      <a href="loghelp.html">लॉग</a>
+      <span class="desc">यह Juggluco का एक लॉगिंग संस्करण है। लॉगफ़ाइलें /data/data/tk.glucodata/files/logs में बनाई जा सकती हैं trace.log में Juggluco द्वारा स्वयं बनाए गए लॉग संदेश हैं। logcat.txt में Juggluco के संबंध में Android द्वारा बनाए गए लॉग संदेश हैं।</span>
+    </li>
+    <li>
+      <a href="helpexport.html">एक्सपोर्ट</a>
+      <span class="desc">Juggluco से डेटा को एक फ़ाइल में एक्सपोर्ट करें। भोजन html में सहेजा जाता है। अन्य सभी डेटा .tsv ( Tab-separated values ) में सहेजा जाता है। इसे LibreOffice Calc, Microsoft Excel, Mathematica या R जैसे प्रोग्रामों में लोड किया जा सकता है। यह एक प्रकार का .</span>
+    </li>
+    <li>
+      <a href="connectionoverview.html">मिरर</a>
+      <span class="desc">किसी अन्य डिवाइस को डेटा भेजें या प्राप्त करें। आप Juggluco चलाने वाले एक Android डिवाइस से कनेक्ट कर सकते हैं ताकि यहाँ की तरह डेटा प्रदर्शित किया जा सके। स्कैन डेटा प्राप्त करने के बाद, मिरर डिवाइस भी ब्लूटूथ के माध्यम से सेंसर से संपर्क कर सकता है।</span>
+    </li>
+    <li>
+      <a href="addconnection.html">कनेक्शन जोड़ें</a>
+      <span class="desc">Juggluco के किसी अन्य इंस्टेंस के साथ एक कनेक्शन निर्दिष्ट करें। एक डिवाइस पर Juggluco IP/TCP के माध्यम से किसी अन्य डिवाइस पर Juggluco को डेटा भेजता है।</span>
+    </li>
+    <li>
+      <a href="QRmirror.html">QR मिरर</a>
+      <span class="desc">आप दूसरे फोन पर बाएं मेन्यू → फोटो से QR कोड स्कैन करके मिरर कनेक्शन के दूसरे किनारे को कॉन्फ़िगर कर सकते हैं। बाएं मध्य मेन्यू→मिरर→ऑटो QR से, कनेक्शन के दोनों किनारे स्वचालित रूप से उत्पन्न होते हैं।</span>
+    </li>
+    <li>
+      <a href="autoqrmessage.html">AutoQR</a>
+      <span class="desc">इस फोन पर एक कनेक्शन उत्पन्न करता है और एक QR कोड प्रदर्शित करता है जिसे किसी अन्य Android डिवाइस द्वारा स्कैन किया जा सकता है।</span>
+    </li>
+    <li>
+      <a href="turnservers.html">Turn सर्वर</a>
+      <span class="desc">एक ICE कनेक्शन का उपयोग तब किया जाएगा जब इंटरनेट पर एक autoQR कनेक्शन उत्पन्न किया जाता है या जब एक कनेक्शन को मैन्युअल रूप से निर्दिष्ट करते समय ICE सेट किया जाता है जब Interactive Connectivity Establishment (ICE) Juggluco के दो इंस्टेंस के बीच एक सीधा…</span>
+    </li>
+    <li>
+      <a href="Nightscouthelp.html">वेब सर्वर</a>
+      <span class="desc">Juggluco में एक वेब सर्वर शामिल है जिसके माध्यम से अन्य ऐप्स Juggluco से ग्लूकोज मान प्राप्त कर सकते हैं। इसका उपयोग xDrip घड़ियाँ और कुछ Nightscout ऐप्स कर सकते हैं। xDrip वेब सर्वर का उपयोग करने के लिए बनाए गए ऐप्स का उपयोग करना अपेक्षाकृत आसान है।</span>
+    </li>
+    <li>
+      <a href="NightPost.html">Nightscout सर्वर पर अपलोड करें</a>
+      <span class="desc">अधिकांश मामलों में आप Juggluco में वेब सर्वर या juggluco-server का उपयोग भी कर सकते हैं। केवल कुछ ऐप्स जो Nightscout वेब पृष्ठ प्रदर्शित करने के अलावा कुछ नहीं करते, उन्हें cgm-remote-monitor की आवश्यकता होती है। आप Juggluco 7.4.</span>
+    </li>
+    <li>
+      <a href="libreview.html">Libreview</a>
+      <span class="desc">Juggluco Libreview को ग्लूकोज डेटा और मात्राएं भेज सकता है। Librelink ऐप की तरह, यह पिछले 89 दिनों का डेटा Libreview को भेजता है। इस सेवा का उपयोग करने के लिए, आपको https://libreview.</span>
+    </li>
+    <li>
+      <a href="librenumhelp.html">Librenum</a>
+      <span class="desc">Libreview को मात्राएं भेजने के लिए " मात्राएं भेजें " सेट करें। " मात्राएं भेजें " चालू करने से पहले, आपको प्रत्येक लेबल के लिए निर्दिष्ट करना होगा कि उस लेबल के तहत दर्ज की गई मात्राएं Libreview को कैसे भेजी जानी चाहिए।</span>
+    </li>
+    <li>
+      <a href="setlibrenumtype.html">Setlibrenumtype</a>
+      <span class="desc">Libreview के लिए उसी तरह, आप यह भी निर्दिष्ट कर सकते हैं कि Juggluco में Nightscout सर्वर के माध्यम से मात्राओं का प्रतिनिधित्व कैसे करें। चुनें कि Juggluco में एक विशेष लेबल के तहत दर्ज की गई मात्राएं Libreview को कैसे भेजी जानी चाहिए।</span>
+    </li>
+    <li>
+      <a href="nightnumhelp.html">Nightnum</a>
+      <span class="desc">Juggluco में Nightscout वेबसर्वर के माध्यम से मात्राओं को उपलब्ध कराने के लिए " मात्राएं दें" सेट करें। " मात्राएं दें" चालू करने से पहले, आपको प्रत्येक लेबल के लिए निर्दिष्ट करना होगा कि उस लेबल के तहत दर्ज की गई मात्राएं कैसे दी जानी चाहिए।</span>
+    </li>
+    <li>
+      <a href="getaccountidhelp.html">Account ID प्राप्त करें</a>
+      <span class="desc">NFC के माध्यम से Freestyle Libre 3 सेंसर स्कैन करने के लिए आवश्यक Libreview Account ID कैसे प्राप्त करें? यदि आप " मैन्युअल रूप से " निर्दिष्ट करते हैं, तो आप मैन्युअल रूप से Account ID दर्ज कर सकते हैं।</span>
+    </li>
+    <li>
+      <a href="exchangehelp.html">डेटा आदान-प्रदान</a>
+      <span class="desc">Health Connect प्रत्येक मिनट के ग्लूकोज मानों को Health Connect पर भेजें। आप इन ग्लूकोज मानों तक अन्य ऐप को पहुंच दे सकते हैं, उदाहरण के लिए Google Fit । अन्य ऐप्स फिर से Google Fit के डेटा तक पहुंच सकते हैं।</span>
+    </li>
+    <li>
+      <a href="watchinfo.html">घड़ी</a>
+      <span class="desc">वर्तमान में, Juggluco के पास आपकी घड़ी पर ग्लूकोज मान पाने के छह तरीके हैं। सूचित करें जब सूचित करें चालू होता है, तो हर बार एक नया ग्लूकोज मान आने पर एक Android सूचना बनाई जाती है।</span>
+    </li>
+    <li>
+      <a href="kerfstok.html">Kerfstok</a>
+      <span class="desc">Kerfstok ( https://apps.garmin.com/hi-IN/apps/b6348ccc-86d8-4780-8013-d9e19fed5260 ( https://www.juggluco.nl/Kerfstok/index.html भी देखें) उन Garmin स्पोर्ट घड़ियों के लिए एक वॉच ऐप है जो तृतीय-पक्ष ऐप्स की अनुमति देती हैं। 1.6.</span>
+    </li>
+    <li>
+      <a href="garminconfig.html">Kerfstok कॉन्फ़िगरेशन</a>
+      <span class="desc">Kerfstok का स्रोत https://www.juggluco.nl/Kerfstok/Kerfstok-source.html से डाउनलोड किया जा सकता है। उपयोगकर्ता इसे संशोधित करने के लिए स्वतंत्र हैं। प्रत्येक वॉच ऐप की एक अद्वितीय पहचान होती है।</span>
+    </li>
+    <li>
+      <a href="shortcuthelp.html">शॉर्टकट का उपयोग Kerfstok में किया जा सकता है।</a>
+      <span class="desc">घड़ी पर संख्या इनपुट स्क्रीन में आप शॉर्टकट स्क्रीन पर जा सकते हैं (मेरी Vivoactive 3 घड़ी पर बाईं ओर स्वाइप करके)। यहाँ आप लेबल की एक सूची देखते हैं; उनमें से किसी एक को दबाने से संख्या स्क्रीन में एक संबंधित मान डाला जाता है।</span>
+    </li>
+    <li>
+      <a href="wearosinfo.html">Wear OS</a>
+      <span class="desc">घड़ी पर संख्याएं (मात्राएं) दर्ज करें: फोन के बजाय घड़ी पर इंसुलिन, कार्बोहाइड्रेट और गतिविधि के लिए मात्राएं दर्ज करें (दूसरा मेन्यू→ “ मात्रा ”)। यदि आप फोन से Novopens स्कैन करना चाहते हैं, तो आपको इसे सेट नहीं करना चाहिए।</span>
+    </li>
+    <li>
+      <a href="notificationpermission.html">सूचनाएं</a>
+      <span class="desc">जब तक Juggluco का उपयोग Freestyle Libre 0 सेंसर के साथ नहीं किया जाता, Juggluco को ब्लूटूथ के माध्यम से सीधे सेंसर से या नेटवर्क कनेक्शन के माध्यम से हर मिनट एक ग्लूकोज रीडिंग प्राप्त करने के लिए पृष्ठभूमि में सक्रिय रहना चाहिए।</span>
+    </li>
+    <li>
+      <a href="locationpermission.html">स्थान अनुमति</a>
+      <span class="desc">Android 6 से 11 चलाने वाले डिवाइसों को ब्लूटूथ डिवाइस खोजने के लिए स्थान अनुमति की आवश्यकता होती है। ब्लूटूथ डिवाइसों के लिए यह स्कैन Sibionics और Dexcom के लिए आवश्यक है और Juggluco द्वारा Android 6, 7 और 7.1 पर भी उपयोग किया जाता है।</span>
+    </li>
+    <li>
+      <a href="nearbypermission.html">पास के डिवाइस अनुमति</a>
+      <span class="desc">Juggluco को Freestyle Libre 2 और 3 सेंसरों से ब्लूटूथ के माध्यम से ग्लूकोज मान प्राप्त करने के लिए पास के डिवाइस अनुमति की आवश्यकता है।</span>
+    </li>
+    <li>
+      <a href="camerapermission.html">कैमरा अनुमति</a>
+      <span class="desc">Sibionics सेंसर का उपयोग करने के लिए, आपको फोन के कैमरे का उपयोग करते हुए पैकेज पर एक डेटा मैट्रिक्स स्कैन करना होगा।</span>
+    </li>
+    <li>
+      <a href="flashpermission.html">Flash</a>
+      <span class="desc">कभी-कभी दावा किया जाता है कि कुछ स्मार्टफ़ोन पर फ्लैश लाइट के उपयोग के लिए कैमरा अनुमति की आवश्यकता होती है। इसी कारण से Juggluco ने पिछले संस्करणों में उस अनुमति के लिए पूछा था।</span>
+    </li>
+    <li>
+      <a href="healthpermission.html">रक्त ग्लूकोज लिखने की अनुमति</a>
+      <span class="desc">Health Connect में ग्लूकोज मान लिखने में सक्षम होने के लिए, उपयोगकर्ता को Juggluco को Health Connect में रक्त ग्लूकोज लिखने की अनुमति देनी होगी। Health Connect में ग्लूकोज मान प्राप्त करने के अलावा किसी और चीज़ के लिए इस अनुमति की आवश्यकता नहीं है।</span>
+    </li>
+  </ul>
+</body>
+</html>

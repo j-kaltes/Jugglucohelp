@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title>設定</title>
+	<base target="_blank">
+	<meta name="generator" content="LibreOffice 7.6.5.2 (Linux)"/>
+	<meta name="created" content="00:00:00"/>
+	<meta name="changed" content="2024-05-08T21:50:52.625275614"/>
+	<meta name="created" content="00:00:00">
+	<style type="text/css">
+		@page { size: 8.27in 11.69in; margin: 0.79in }
+		h1 { margin-bottom: 0.08in; background: transparent }
+		h1.western { font-family: "Liberation Serif", serif }
+		h1.cjk { font-family: "Noto Serif CJK SC" }
+		h1.ctl { font-family: "Mangal" }
+		p { margin-bottom: 0.1in; background: transparent }
+		h2 { margin-top: 0.14in; margin-bottom: 0.08in; background: transparent }
+		h2.western { font-family: "Liberation Sans", sans-serif; font-size: 16pt }
+		h2.cjk { font-family: "Noto Sans CJK SC"; font-size: 16pt }
+		h2.ctl { font-family: "Mangal"; font-size: 16pt }
+	</style> 
+  </head>
+ <img src="settings.png" alt="Setttings" style="object-fit:contain; width:15cm;                   height:auto;">
+<body lang="ja" dir="ltr"><h1 class="western">設定</h1>
+<h2 class="western">単位</h2>
+<p style="margin-bottom: 0in">血糖値を mmol/L で表示するか mg/dL で表示するかを選択します。</p>
+<h2 class="western">NFC サウンド</h2>
+<p>スキャン中にバイブレーションに加えて音を鳴らします。</p>
+<h2 class="western">スキャンでアプリを起動</h2>
+<p>チェックすると、このアプリが表示されていなくても、NFC でセンサーをスキャンしたときにこのアプリが起動されます。複数のアプリにこの設定がある場合、Android はどのアプリを使用するかを選択する選択画面を表示します。なぜか 1 つを選んでも動作せず、次回も選ばれるよう選択することもできません。そのため、この場合はフォアグラウンドにアプリがない状態ではスキャンできません。このアプリでこれをオフにすると、少なくとも 1 つのアプリがこの方法で有効化できるようになります。</p>
+<p>root アクセスがある場合は、Abbott の Librelink アプリの NFC 起動を無効にすることもできます(Libre 3 では動作しません):</p>
+<p>adb shell または termux で root になり、次のように入力します:</p>
+<p>pm disable com.freestylelibre.app.nl/com.librelink.app.ui.common.NFCScanActivity</p>
+<p>Librelink 2.7.1 以前では次のように入力する必要がありました:</p>
+<p>pm disable com.freestylelibre.app.nl/com.librelink.app.ui.common.ScanSensorActivity</p>
+<p>com.freestylelibre.app.nl はオランダ版の Librelink で、お使いのバージョンに置き換える必要があります。次のように入力すると(root がなくても)その名前を確認できます:</p>
+<p>pm list package freestylelibre</p>
+<p>その後、Librelink がフォアグラウンドにある場合はスキャンに使えますが、それ以外では起動されません。Librelink 2.5.2 以降は root を検出すると自分自身をクラッシュさせます。ただし Magisk では、Magisk の名前を変更し、個別のアプリを denylist (Magisk 24.3) または Magiskhide (Magisk 23.0) に追加することで簡単に root を隠せます。Juggluco も denylist に追加する必要があります。米国版の FreeStyle Libre 2 センサーを使用しない場合は、root チェックのない古いバージョンの Librelink を使うこともできます。</p>
+<p>root なしでも、adb shell でアプリ全体を無効にすることもできます:</p>
+<p>pm disable-user --user 0 com.freestylelibre.app.nl</p>
+<p>Abbott カスタマーサービスに電話する前に、次のコマンドで再有効化できます:</p>
+<p>pm enable com.freestylelibre.app.nl</p>
+<h2 class="western">血糖値通知</h2>
+<p style="margin-bottom: 0in">(以前は「<i>Android ステータスバーの血糖値</i>」と呼ばれていました)。設定すると、Bluetooth 経由でストリーミングされる血糖値が通知と Android ステータスバーに静かに表示されます。オフにすると、数値の代わりに点が表示され、通知は「<i>センサーに接続するには</i>」または「<i>データを交換するには</i>」というだけの内容になります。バックグラウンドで動作し続けるアプリは Android によりこのような可視通知を持つことが義務付けられています(そうでないと Android に簡単に停止されます)。「<i>Bluetooth 経由のセンサー</i>」がオフでミラー接続もない場合のみ、Juggluco は通知をオフにします。</p>
+<p style="margin-bottom: 0in">一部のスマートフォンでは、Android の通知設定を変更した後にのみ Android ステータスバーに血糖値が表示されます。例えば Realme GT 5G では、アプリリスト → Juggluco → 通知の管理 に移動し、glucoseNotification をタブして「サイレントに設定」をオフにする必要があります。「ステータスバーに表示」がオンになります。</p>
+<p style="margin-bottom: 0in">左中メニューで <i>通知</i> を選択することで Android 通知を取得することもできます。その場合、設定されていれば通知は一部のスマートウォッチに送信されます。Garmin ウォッチでは動作しますが、それ以外で動作するかは分かりません。アラームも通知を生成します。</p>
+<h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/floatingconfig.html" onclick="location.href=this.href+'?unit='+unitstr;return false;">フローティング血糖</a></h2>
+<p>これをオンにすると、現在の血糖値の小さな画像がどのアプリがフォアグラウンドにあるかに関係なく常に画面に表示されます。初めてオンにすると、Juggluco に <b>他のアプリの上に表示</b>する権限を付与する必要があるアプリ一覧に誘導されます。</p>
+<h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/alarmhelp.html">アラーム</a></h2>
+<p>低血糖アラームと高血糖アラーム、信号喪失アラーム、値が利用可能になった通知を設定します。</p>
+<h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/labelhelp.html">記録のラベル</a></h2>
+<p style="margin-bottom: 0in">記録に使うラベルを指定します。インスリン用量、炭水化物摂取、フットボールをした時間など、記録設定に使用するラベルを決定する画面に移動します。Garmin ウォッチアプリ Kerfstok も使用している場合、これらのラベルはウォッチアプリにも送信されます。</p>
+<h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/exchangehelp.html">データ交換</a></h2>
+<p>Juggluco から他のアプリやサーバーへデータを送信するさまざまな方法。(ウォッチへのデータ送信は左メニュー → ウォッチへ。)</p>
+<h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/reminders.html">リマインダー</a></h2>
+<p style="margin-bottom: 0in">指定された時間内に一定量の食事や薬を入力しなかった場合にアラームを発生させるよう指定します。</p>
+<h2 class="western">Google スキャン</h2>
+<p style="line-height: 100%; margin-bottom: 0in">Sibionics センサーパッケージや Dexcom G7/ONE+ アプリケーター上のデータマトリクス、左中メニュー → ミラーの QR コードを <a href="https://developers.google.com/ml-kit/vision/barcode-scanning/code-scanner">Google コードスキャナー</a>でスキャンします。チェックされていない場合、<a href="https://github.com/zxing/zxing">zXing</a> が使用されます。ほとんどの端末で Google スキャンの方が良く動作しますが、動作しないこともあります。エラーで失敗した場合は常に zXing が使われますが、エラーを返さずに Google スキャンが動作しないこともあります。</p>
+<h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/displayhelp.html">表示</a></h2>
+<p>目標範囲から言語まで、データの表示方法に関するあらゆる設定。</p>
+</body>
+</html>

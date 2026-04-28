@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 24.2.6.2 (Linux)"/>
+	<meta name="created" content="2024-12-01T21:17:42.017312604"/>
+	<meta name="changed" content="2024-12-01T21:24:27.145941649"/>
+	<style type="text/css">
+		h2 { margin-top: 0.14in; margin-bottom: 0.08in; background: transparent }
+		h2.western { font-family: "Liberation Sans", sans-serif; font-size: 16pt }
+		h2.cjk { font-family: "Noto Sans CJK SC"; font-size: 16pt }
+		h2.ctl { font-family: "Mangal"; font-size: 16pt }
+	</style>
+</head>
+ <img src="display.png" alt="Display" style="object-fit:contain; width:15cm;                   height:auto;">
+<body lang="ja" dir="ltr"><h1>表示設定</h1>
+<h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/colorhelp.html"><span lang="ja">色</span></a></h2>
+<p style="margin-bottom: 0in">曲線、スキャン、数値の色を変更します。<i>ダークモード</i> を切り替えるには、右中メニュー → ダークモードを使用します。</p>
+<h2 class="western">グラフ範囲: 低値-高値</h2>
+<p style="margin-bottom: 0in">画面の下端が最低値、上端が最高値に対応するように低値と高値を指定します。これらの値は、画面に表示されるすべての血糖値がこれらの境界内にある場合のみ使用されます。それ以外の場合、すべての値が見えるよう境界が広げられます。3 mmol/L (54 mg/dL) と 9 mmol/L (162 mg/dL) を指定し、表示画面上のすべての値が 5 mmol/L から 6 mmol/L の間であれば、グラフは 3 から 9 までの血糖軸を表示します。
+</p>
+<p style="margin-bottom: 0in"><b>血糖値を手動でスケール</b>がオンの場合、これを変更できます: 画面の上半分を指で動かすとグラフの上半分が上下に動き、下半分を動かすと下半分が上下に動きます。</p>
+<h2 class="western">目標範囲: 低値-高値</h2>
+<p style="margin-bottom: 0in">表示の高値側は別の色になり、高値が見やすくなります。低値側も同様です。表示の低すぎる側を示すために赤い線が表示されます。</p>
+<h2 class="western">血糖軸の数値を左に</h2>
+<p>グラフの血糖値の数値を画面の左に配置します。例えば WearOS で現在の血糖値を画面中央に配置したい場合に便利です。</p>
+<h2 class="western">しきい値</h2>
+<p>血糖値の変化率にしきい値を適用します。変化率が 0 から指定された量だけ離れている場合のみ、変化率の矢印が水平から異なるものになります。0 から 0.8 までの任意の値を使用できます。しきい値は、小さな絶対変化率の値に過度の意味を与えないようにするために使われます。変化率が緩やかに上昇する血糖値を示しているように見えても、実際には低下していることが十分にあり得ます。しきい値は、より慎重な判断を行うために使われます。</p>
+<h2 class="western">予測 (Dexcom)</h2>
+<p style="margin-bottom: 0in; background: transparent"><span lang="ja">Dexcom センサーは実際の値とともに予測値も送信します。私はこれを Google で検索しましたが、参考資料が見つかりませんでした。Dexcom が最大 20 分先までの低血糖を予測するアラームをサポートしていることだけ見つけました。<a href="https://www.dexcom.com/g7/how-it-works#alerts">https://www.dexcom.com/g7/how-it-works#alerts</a> 参照。</span></p>
+<p style="margin-bottom: 0in; background: transparent">これらの値を 20 分先に配置するとあまり一致しませんでした。10 分先に配置するとはるかに良く一致しました。</p>
+<p style="margin-bottom: 0in; background: transparent">このオプションをオンにすると、これらの予測値は Juggluco で Libre センサーの履歴値と同じように表示されます。右中メニュー → 履歴のチェックを外すことでオフにすることもできます。Juggluco ではアラームには使用されず、予測の精度を判断するために単に表示できます。</p>
+<h2 class="western">画面を反転</h2>
+<p style="margin-bottom: 0in">表示を上下逆さまにします。デフォルトでオンになっています。これは、そうしないとセンサーをスキャン中に誤って OK を押してしまうことがあるためです。</p>
+<p style="margin-bottom: 0in">縦向きモードを求める方もいますが、血糖グラフの表示にまったく適さないため無効にしています。</p>
+<h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/IOBhelp.html">体内残存インスリン (IOB)</a></h2>
+<p><span lang="ja">IOB は、過去のインスリン投与量からどれだけのインスリンが残っているかの指標です。これを行うには、「</span><span lang="ja"><i>速効型インスリン</i></span><span lang="ja">」カテゴリのラベルでインスリン用量を入力する必要があります。どのラベルが「</span><span lang="ja"><i>速効型インスリン</i></span><span lang="ja">」かは、左メニュー → 設定 → データ交換 → Web サーバー → <a href="https://www.juggluco.nl/Jugglucohelp/setlibrenumtype.html">記録を送信</a>で指定できます。</span></p>
+<h2 class="western">現在を固定</h2>
+<p>「<i>現在を固定</i>」を設定すると、画面に表示される時間範囲が左にスクロールされ、現在は常に画面の同じ位置にあります。一部のユーザーは、自分から数メートル離れたコンピューター上の Android エミュレーターで Juggluco を実行しています。「<i>現在を固定</i>」がオフの場合、現在の血糖値の位置は時間の経過とともに右に移動し、数時間後には見えなくなります。これではコンピューターまで歩いて画面を数センチスクロールする必要があります。「<i>現在を固定</i>」をオンにすると、この邪魔がなくなります。</p>
+<h2 class="western">言語</h2>
+<p style="margin-bottom: 0in">Juggluco は選択された言語で表示されます。言語コードが選択されていない場合、システム言語が使われます。</p>
+<h2 class="western"></h2>
+</body>
+</html>

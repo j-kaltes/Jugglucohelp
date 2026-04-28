@@ -7,34 +7,35 @@
 <!--***********************************************************************************-->
 <script type="module" >
 import { setlang } from "https://www.juggluco.nl/Jugglucohelp/code/settrans.js";
-let translations=["ar", "de", "es", "hi", "nl", "uz", ];
+let translations=["ar", "de", "es", "hi", "ja", "nl", "uz", ];
 setlang(translations,"calibrationhelp.html");
 </script><!DOCTYPE html>
 <html>
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 	<title></title>
-	<meta name="generator" content="LibreOffice 24.2.7.2 (Linux)"/>
+	<meta name="generator" content="LibreOffice 25.8.5.2 (Linux)"/>
 	<meta name="created" content="2025-07-25T10:30:51.021840728"/>
-	<meta name="changed" content="2026-01-05T15:24:45.157863963"/>
+	<meta name="changed" content="2026-04-28T09:53:46.130851409"/>
 </head>
- <img src="https://www.juggluco.nl/Juggluco/mgdL/CalibrationSettings.png" alt="Calibration Settings" style="object-fit:contain; width:15cm;                   height:auto;">
-<body lang="en-US" dir="ltr"><p><a href="https://www.juggluco.nl/Jugglucohelp/index.html">index</a></p><p><a href="https://www.juggluco.nl/Jugglucohelp/ar/calibrationhelp.html">ar</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/de/calibrationhelp.html">de</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/es/calibrationhelp.html">es</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/hi/calibrationhelp.html">hi</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/nl/calibrationhelp.html">nl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/uz/calibrationhelp.html">uz</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/calibrationhelp.html?lang=en">en</a>&emsp;&emsp;</p><h1>Calibration</h1>
+<body lang="en-US" dir="ltr"><p><a href="https://www.juggluco.nl/Jugglucohelp/index.html">index</a></p><p><a href="https://www.juggluco.nl/Jugglucohelp/ar/calibrationhelp.html">ar</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/de/calibrationhelp.html">de</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/es/calibrationhelp.html">es</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/hi/calibrationhelp.html">hi</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ja/calibrationhelp.html">ja</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/nl/calibrationhelp.html">nl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/uz/calibrationhelp.html">uz</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/calibrationhelp.html?lang=en">en</a>&emsp;&emsp;</p><h1>Calibration</h1>
 <p>Juggluco 10.0.0 and higher have the possibility to calibrate
 sensors.</p>
 <p><i><b>Blood glucose</b></i>: Specify which label stands for the
 blood glucose finger prick measurements. Hereafter, all blood glucose
 values entered under that label will be used for calibration, except
-when you specify “<i>Exclude</i>” under left middle menu→<a href="https://www.juggluco.nl/Jugglucohelp/newamount.html">New
-amount</a>. When the rate of change is too large (absolutely) it will
-be automatically excluded.</p>
+for glucose values entered with “<i>Exclude</i>” checked (in left
+middle menu→<a href="https://www.juggluco.nl/Jugglucohelp/newamount.html">New
+amount</a>). When the rate of change is too large (absolutely) it
+will be automatically excluded.</p>
 <p>You should only exclude glucose values that are not appropriate
 for calibration because the glucose level is not steady. All other
 values should not be excluded, even when you think that the sensor
 don’t need to be calibrated. When you don’t want to calibrate,
-unset “Active” and in right middle menu unset the ✓'s before Stream, Scans and History and set the [x] after them. This
-way, all appropriate glucose values are used for calibration, not
-only those that don’t agree.</p>
+unset “Active” and in right middle menu unset the ✓'s before
+Stream, Scans and History and set the [x] after them. This way, all
+appropriate glucose values are used for calibration, not only those
+that don’t agree.</p>
 <p>Every new finger prick that is not excluded gives a new
 calibration. You can view the calibrations made by pressing
 <a href="https://www.juggluco.nl/Jugglucohelp/calibrationslist.html">“Calibrations”</a>
@@ -47,20 +48,20 @@ are calibrated with the last calibration before the glucose value. If
 all glucose values of this sensor. 
 </p>
 <p><i><b>Change slope:</b></i></p>
-<p style="font-variant: normal; font-style: normal; font-weight: normal">
+<p style="font-weight: normal; font-variant: normal; font-style: normal">
 If “<i>Change slope</i>” is not set, only a certain value is
 added or subtracted from every sensor glucose value to get the
 calibrated glucose value. The relation between calibrated value and
 sensor value is:</p>
 <p style="font-variant: normal; font-style: normal"><b>Calibrated
 glucose=SensorGlucose + b</b></p>
-<p style="font-variant: normal; font-style: normal; font-weight: normal">
+<p style="font-weight: normal; font-variant: normal; font-style: normal">
 The value of b is determined by calibration. If you use this setting,
 you shouldn’t calibrate using high glucose values because the
 deduced value of b will be too large for small glucose values.
 Calibrating high values also doesn’t make much sense, because the
 difference between high and very high isn’t that important.</p>
-<p style="font-variant: normal; font-style: normal; font-weight: normal">
+<p style="font-weight: normal; font-variant: normal; font-style: normal">
 If “<i>Change slope</i>” is set the relation becomes:</p>
 <p style="font-variant: normal; font-style: normal"><b>Calibrated
 glucose=a * SensorGlucose + b</b></p>

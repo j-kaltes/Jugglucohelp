@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title>アップローダー</title>
+	<meta name="generator" content="LibreOffice 7.5.9.2 (Linux)"/>
+	<meta name="created" content="2023-03-10T12:04:13.361070488"/>
+	<meta name="changed" content="2024-02-25T16:39:46.214217271"/>
+</head>
+ <img src="uploader.png" alt="Uploader" style="object-fit:contain; width:15cm;                   height:auto;">
+<body lang="ja" dir="ltr"><h1>Nightscout サーバーへアップロード</h1>
+<p>ほとんどの場合、<a href="https://www.juggluco.nl/Jugglucohelp/Nightscouthelp.html">Juggluco の Web サーバー</a>または <a href="https://www.juggluco.nl/Juggluco/cmdline">juggluco-server</a> も使用できます。Nightscout の Web ページを表示するだけのいくつかのアプリのみが <a href="https://github.com/nightscout/cgm-remote-monitor">cgm-remote-monitor</a> を必要とします。Juggluco 7.4.1 の Web サーバーで AAPS や AAPSClient さえ使用できます。</p>
+<p>すべてのストリーム値は、到着した時点で Nightscout サーバーにアップロードされます。複数のセンサーを使用している場合、すべてのセンサーのすべての値がアップロードされます。一部の Garmin ウォッチアプリ/フェイス/ウィジェットは、値が 5 分間隔であると想定しています。1 分間隔の血糖値を受信すると、曲線の最後の 5 分の 1 のみが表示されます。そのため、Juggluco に組み込まれた Web サーバーは、「interval=secs」がより低い値に設定されている場合を除き、値を 5 分間隔にスペースします。</p>
+<p><b>URL</b>: URL は https://hostname:port の形式である必要があります。例: https://myname.herokuapp.com:6789</p>
+<p><b>有効</b>: アップローダーをオン</p>
+<p><b>test V3</b>: Juggluco に api/v3 を使って Nightscout にアップロードさせます。以前 V1 アップロードを受信した Nightscout サーバーへのアップロードには使わないでください。また、以前 V3 アップロードを受信した Nightscout サーバーには V1 アップロードを送信しないでください。api_secret の代わりに、treatment と entries のアップロード権限を持つ <i>アクセストークン</i> を指定する必要があります。Nightscout の Web インターフェースの管理者ツールで作成できます。(他に V3 アップローダーが存在しないため「<i>テスト</i>」と呼ばれています。通常は V1 が使用されます。)</p>
+<p><b>記録を送信</b>: 記録も treatment として Nightscout に送信します。チェックボックスをタッチすると、各ラベルが Nightscout で何を意味するかを指定できるダイアログが表示されます。これらの仕様は Juggluco の Web サーバー(<a href="https://www.juggluco.nl/Jugglucohelp/Nightscouthelp.html">左メニュー → 設定 → データ交換 → Web サーバー</a>)と共有されます。すべてのラベルが扱われている場合のみ、「<i>記録を送信</i>」をチェックできます。後で新しいラベルを追加する場合、それで何をするかを指定することを忘れないでください。<span lang="ja"><a href="https://github.com/nightscout/cgm-remote-monitor">Nightscout</a> のバグにより、古い時刻の挿入や削除は、新しい時刻の項目が追加された後にのみ表示されます。これは、Nightscout への送信頻度を下げる方が良いことを意味します。現在は、ユーザーがディスプレイをオフにしたり別のアプリに移ったりして Juggluco から離れるたびに行われます。</span></p>
+<p><b>データを再送信</b>: すべてのデータを Nightscout サーバーに再度アップロード</p>
+<p><b>今すぐ送信</b>: 通常、データはセンサーまたはミラー接続から到着した時点ですぐに送信されます。何らかの理由で前回の試行が失敗した場合、このボタンを押します。</p>
+<p>WearOS 版の Juggluco 4.15.0 以降も Nightscout に血糖値をアップロードできます。ほぼすべての場合、スマートフォンやタブレットの Juggluco 経由、またはコンピューター上の Juggluco サーバー経由で送信する方が良いです。Nightscout サーバーに接続できない場合は特にバッテリーを消耗するため、信頼できる接続がない場合は <i>有効</i> をオフにする方が良いです。</p>
+<h2 class="western">エラー</h2>
+<p style="line-height: 100%; margin-bottom: 0in">2 つのエラーメッセージがしばしば混乱を引き起こします。</p>
+<p style="line-height: 100%; margin-bottom: 0in">エラーメッセージが「<b>upload failure:</b>」の後に何もない場合、考えられる原因は次のとおりです:</p>
+<ul>
+	<li><p style="line-height: 100%; margin-bottom: 0in">ネットワーク接続がオフ;</p></li>
+	<li><p style="line-height: 100%; margin-bottom: 0in">ホスト名のスペルが間違っている。</p>
+	<p style="line-height: 100%; margin-bottom: 0in"></p></li>
+</ul>
+<p style="line-height: 100%; margin-bottom: 0in"><b>upload failure: java.io.FileNotFoundException</b>: NIGHTSCOUTURL/api/v1/entries</p>
+<p style="line-height: 100%; margin-bottom: 0in">ここで NIGHTSCOUTURL は「Nightscout URL」の後に入力されたサーバー URL を表します。</p>
+<p style="line-height: 100%; margin-bottom: 0in">これは次のいずれかが原因です:</p>
+<ul>
+	<li><p style="line-height: 100%; margin-bottom: 0in">URL が間違ったサイトを指している。例えばホスト名の後のポートが欠けているため、Juggluco が通常の Web サーバーに接続している;</p></li>
+	<li><p style="line-height: 100%; margin-bottom: 0in">api_secret が間違っている;</p></li>
+	<li><p style="line-height: 100%; margin-bottom: 0in"><span lang="ja">NIGHTSCOUTURL に不要なパスが含まれている。例えば </span><span lang="ja">Nightscout </span><span lang="ja">URL が <a href="https://ahost.org:8887/">https://ahost.org:8887</a> なのに、</span><span lang="ja"><a href="https://ahost.org:8887/extra">https://ahost.org:8887/extra</a> と入力した場合。</span></p></li>
+</ul>
+<p style="line-height: 100%; margin-bottom: 0in"><br/>
+
+</body>
+</html>

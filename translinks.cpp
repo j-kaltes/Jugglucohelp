@@ -121,7 +121,7 @@ int patchfile(const char *inname,const char *filename,char **names,int nr,bool a
 int main(int argc,char **argv) {
     bool giveindex;
     int startindex;
-    if(argc>1&&strcmp(argv[0],"-noi")) {
+    if(argc>1&&!strcmp(argv[1],"-noi")) {
         giveindex=false;
         startindex=2;
         }

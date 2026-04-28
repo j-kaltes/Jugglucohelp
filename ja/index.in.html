@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Juggluco</title>
+  <style>:root { color-scheme: light dark; }
+body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans",
+                 "Noto Sans Arabic", "Noto Sans Devanagari",
+                 "Noto Sans CJK SC", "Noto Sans CJK JP", sans-serif;
+    max-width: 52rem;
+    margin: 2rem auto;
+    padding: 0 1rem 3rem;
+    line-height: 1.5;
+}
+header { margin-bottom: 2rem; }
+h1 { margin: 0 0 .3rem; font-size: 1.8rem; }
+header p { margin: .25rem 0; }
+header a { word-break: break-all; }
+ul.toc { list-style: none; padding: 0; margin: 0; }
+ul.toc li { padding: .55rem 0; border-top: 1px solid rgba(128,128,128,.25); }
+ul.toc li:first-child { border-top: none; }
+ul.toc a { font-weight: 600; text-decoration: none; }
+ul.toc a:hover { text-decoration: underline; }
+.desc { display: block; margin-top: .15rem; font-weight: 400;
+        color: rgba(0,0,0,.78); }
+@media (prefers-color-scheme: dark) {
+    .desc { color: rgba(255,255,255,.78); }
+}
+footer { margin-top: 2rem; font-size: .85rem; opacity: .7; }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Juggluco</h1>
+    <p><a href="https://www.juggluco.nl/Juggluco">https://www.juggluco.nl/Juggluco</a></p>
+  </header>
+  <ul class="toc">
+    <li>
+      <a href="introhelp.html">概要</a>
+      <span class="desc">Juggluco は糖尿病の方の血糖管理のためのアプリです。FreeStyle Libre (0 と 2) センサーを NFC でスキャンでき、FreeStyle Libre 2/2+/3/3+、Sibionics GS1Sb、Dexcom G7/ONE+、Accu-Chek SmartGuide、CareSens Air、Linx/Lumiflex/Aidex X センサーから Bluetooth で血糖値を受信できます。</span>
+    </li>
+    <li>
+      <a href="about.html">このアプリについて</a>
+      <span class="desc">Juggluco は Jaap Korthals Altes によって作成されました。標準の Android ライブラリのほか、Abbott FreeStyle Libre センサー固有の NFC・Bluetooth コマンドおよび解読アルゴリズムが使用されています。</span>
+    </li>
+    <li>
+      <a href="battery.html">動作を継続させる</a>
+      <span class="desc">通常 Android 端末は使用されていないとき、消費電力を抑えるためドーズモードに入ります。バッテリー最適化を無効にして Juggluco がバックグラウンドで動作し続けるようにする方法を説明します。</span>
+    </li>
+    <li>
+      <a href="sensorhelp.html">センサー</a>
+      <span class="desc">スピナーにセンサー名が表示されます。Juggluco が複数のセンサーを同時に使用している場合、情報を表示するセンサーを選択できます。</span>
+    </li>
+    <li>
+      <a href="sensorinfo.html">センサー情報</a>
+      <span class="desc">センサーの開始時刻、最終ストリーム、最終スキャン、予想終了時刻、公式終了時刻を表示します。Sibionics と Linx/Lumiflex/Aidex X センサーではウォームアップ時間 (分) を変更できます。</span>
+    </li>
+    <li>
+      <a href="sensormirror.html">ミラー時のセンサー情報</a>
+      <span class="desc">Juggluco がストリーム値のミラーとして機能している場合のセンサー情報を表示します。開始時刻、最終スキャン、最終ストリーム時刻などを確認できます。</span>
+    </li>
+    <li>
+      <a href="calibrationhelp.html">校正</a>
+      <span class="desc">Juggluco 10.0.0 以降にはセンサーを校正する機能があります。「血糖値」項目で、指先穿刺による血糖測定を表すラベルを指定します。</span>
+    </li>
+    <li>
+      <a href="calibrationslist.html">校正一覧</a>
+      <span class="desc">このセンサーで行われた校正を表示します。各校正は校正時刻と、血糖値とセンサー血糖値の関係 (血糖値 = a × センサー血糖値 + b) における傾き a と切片 b で構成されます。</span>
+    </li>
+    <li>
+      <a href="changestart.html">開始日時を変更</a>
+      <span class="desc">Libreview に送信するデータの開始日時を変更します。一部のデータが既に Libreview に存在する場合に便利です。</span>
+    </li>
+    <li>
+      <a href="DeviceList.html">血糖測定器デバイス</a>
+      <span class="desc">血糖測定器デバイスをスキャンし、見つかったデバイスを表示します。接続済みのデバイスは見つかりません。初回はデバイスをペアリングモードにする必要があります。</span>
+    </li>
+    <li>
+      <a href="GlucoseMeter.html">血糖測定器</a>
+      <span class="desc">指定した日時より後のタイムスタンプを持つ血糖値のみを Juggluco に追加します。Juggluco に既に値がある場合は、より後の日時に変更してください。血糖値用のラベルを選択します。</span>
+    </li>
+    <li>
+      <a href="GlucoseMeterList.html">血糖測定器一覧</a>
+      <span class="desc">Juggluco は一部の血糖測定器から Bluetooth 経由で血糖測定値を受信できます。Contour Next ONE をお持ちの場合は、左メニュー → 写真でデータマトリクスをスキャンして追加できます。</span>
+    </li>
+    <li>
+      <a href="labelhelp.html">記録のラベル</a>
+      <span class="desc">インスリン、炭水化物、運動などの記録のためにグラフに追加するラベルを作成・削除・変更できます。既に保存された記録があれば、その位置に対応するラベルが付与されます。</span>
+    </li>
+    <li>
+      <a href="newlabelhelp.html">ラベル</a>
+      <span class="desc">記録の入力に使用するラベル名を指定します。左中メニュー → 新規記録で日時に紐付けた数値を追加でき、グラフ上の対応する位置や一覧で表示できます。</span>
+    </li>
+    <li>
+      <a href="newamount.html">新規記録</a>
+      <span class="desc">任意のラベルに紐付けた数値を入力できます。ラベルは左メニュー → 設定 → 数値ラベルで設定します。各ラベルで入力した記録は、ラベルで決まる高さでグラフに表示されます。</span>
+    </li>
+    <li>
+      <a href="mealhelp.html">食事</a>
+      <span class="desc">食事の構成要素 (食材) の量を指定すると、合計の炭水化物量が自動計算されます。</span>
+    </li>
+    <li>
+      <a href="nutrients.html">食品成分データベース</a>
+      <span class="desc">McCance and Widdowson’s The Composition of Foods Integrated Dataset 2021 で食品を検索できます。正規表現も使用できます。</span>
+    </li>
+    <li>
+      <a href="reminders.html">リマインダー</a>
+      <span class="desc">指定された時間内に一定量の食事や薬を入力しなかった場合にアラームを発生させます。「新規」を押して新しいリマインダーを追加できます。</span>
+    </li>
+    <li>
+      <a href="schedulehelp.html">スケジュール</a>
+      <span class="desc">特定の時刻に有効になるプロファイルをスケジュールします。「新規」を押すと時刻とプロファイルの関連付けを作成でき、Juggluco は毎日その時刻に該当プロファイルへ切り替えます。</span>
+    </li>
+    <li>
+      <a href="staticnum.html">ブロック中</a>
+      <span class="desc">左中メニュー → ミラー → 「ミラーが記録を送信」が設定されているため、このアプリでの記録入力がブロックされています。ミラー接続から記録を受信していない場合はオフにしてください。</span>
+    </li>
+    <li>
+      <a href="IOBhelp.html">体内残存インスリン (IOB)</a>
+      <span class="desc">IOB は過去のインスリン投与量からどれだけのインスリンが残っているかの指標です。Juggluco 9.2.0 より前は、インスリンアスパルトの血中インスリン濃度曲線で IOB を推定していました。</span>
+    </li>
+    <li>
+      <a href="alarmhelp.html">アラーム</a>
+      <span class="desc">血糖アラーム: Bluetooth 経由で受信したストリーム値で低血糖アラームと高血糖アラームを設定できます。それぞれのアラーム値も指定可能です。</span>
+    </li>
+    <li>
+      <a href="advancedAlarmshelp.html">詳細アラーム</a>
+      <span class="desc">重度の低血糖アラーム: 通常の低血糖アラームより低い値で発動する 2 番目のアラーム。重度の高血糖アラームも同様です。</span>
+    </li>
+    <li>
+      <a href="ringtone.html">着信音</a>
+      <span class="desc">アラームや通知に使用する着信音と再生秒数を選択します。低血糖や高血糖が継続している場合に、すぐに再アラームしないための「無効化分数」も指定できます。</span>
+    </li>
+    <li>
+      <a href="disturbhelp.html">「サイレント」へのアクセス</a>
+      <span class="desc">一部の端末では「サイレント」モード中にアラームが動作しません。「サイレント解除」で、アラーム再生前に「サイレント」をオフにするかどうかを指定できます。</span>
+    </li>
+    <li>
+      <a href="talkhelp.html">音声</a>
+      <span class="desc">血糖値を読み上げ: 血糖値が到着すると音声で読み上げます。次の値を読み上げるまでの待機秒数も指定できます (新しい血糖値の到着時には常に即時に読み上げられます)。</span>
+    </li>
+    <li>
+      <a href="displayhelp.html">表示設定</a>
+      <span class="desc">色: 曲線、スキャン、数値の色を変更します。ダークモードへの切替は右中メニューから。グラフ範囲 (低値・高値) は画面の上下に対応する血糖値を指定します。</span>
+    </li>
+    <li>
+      <a href="colorhelp.html">色</a>
+      <span class="desc">数値、曲線、スキャン点の色を変更します。グラフ上の点・スキャン・記録をタッチして情報を表示させてから、色ビューで色を選択します。</span>
+    </li>
+    <li>
+      <a href="floatingconfig.html">フローティング血糖</a>
+      <span class="desc">フローティング血糖のフォントサイズ、文字色、背景色を設定します。「タッチ可能」を有効にすると指で動かしたり、長押しで小型化したりできます。</span>
+    </li>
+    <li>
+      <a href="settinghelp.html">設定</a>
+      <span class="desc">単位: mmol/L または mg/dL を選択。NFC サウンド: スキャン時にバイブレーションに加えて音を鳴らします。スキャンでアプリ起動: NFC スキャン時にこのアプリが起動されます。</span>
+    </li>
+    <li>
+      <a href="searchhelp.html">検索</a>
+      <span class="desc">血糖値や入力した数値を検索できます。指定した数値範囲内の値を検索します (例: 10–999 で 10 と 999 の間の値を検索)。スキャン、履歴、ストリームに分けて検索できます。</span>
+    </li>
+    <li>
+      <a href="stathelp.html">統計</a>
+      <span class="desc">AGP に若干の修正を加えた統計を表示します。「日数」ボタンで分析対象の日数を変更できます。期間は画面終了位置の時刻で終わり、指定された日数だけ過去にさかのぼります。</span>
+    </li>
+    <li>
+      <a href="loghelp.html">ログ</a>
+      <span class="desc">これは Juggluco のロギング版です。/data/data/tk.glucodata/files/logs にログファイルが作成されます。trace.log は Juggluco 自身、logcat.txt は Android が生成したログメッセージです。</span>
+    </li>
+    <li>
+      <a href="helpexport.html">エクスポート</a>
+      <span class="desc">Juggluco のデータをファイルにエクスポートします。食事は HTML、それ以外は .tsv (タブ区切り値) で保存され、LibreOffice Calc、Microsoft Excel、Mathematica、R などで読み込めます。</span>
+    </li>
+    <li>
+      <a href="connectionoverview.html">ミラー</a>
+      <span class="desc">他の端末にデータを送信したり、他の端末から受信したりします。Juggluco を実行している Android 端末に接続して、ここと同じ方法でデータを表示できます。</span>
+    </li>
+    <li>
+      <a href="addconnection.html">接続を追加</a>
+      <span class="desc">Juggluco の別のインスタンスとの接続を指定します。1 つの端末上の Juggluco は IP/TCP 経由で別の端末上の Juggluco にデータを送信します。一方が待ち受け、もう一方が接続します。</span>
+    </li>
+    <li>
+      <a href="QRmirror.html">QR ミラー</a>
+      <span class="desc">もう一方のスマートフォンで左メニュー → 写真から QR コードをスキャンしてミラー接続の相手側を設定できます。左中メニュー → ミラー → AutoQR で接続の両側を自動生成できます。</span>
+    </li>
+    <li>
+      <a href="autoqrmessage.html">AutoQR</a>
+      <span class="desc">このスマートフォンで接続を生成し、別の Android 端末でスキャンできる QR コードを表示します。もう一方で左メニュー → 写真でスキャンすると、両側のデータが交換される接続が作成されます。</span>
+    </li>
+    <li>
+      <a href="turnservers.html">TURN サーバー</a>
+      <span class="desc">インターネット越しに AutoQR 接続を生成する場合や、ICE を手動で指定する場合に ICE 接続が使用されます。ICE が 2 つの Juggluco 間の直接接続に失敗した場合に TURN サーバーが必要です。</span>
+    </li>
+    <li>
+      <a href="Nightscouthelp.html">Web サーバー</a>
+      <span class="desc">Juggluco は他のアプリが血糖値を受信できる Web サーバーを内蔵しています。xDrip ウォッチや一部の Nightscout アプリで使用できます。xDrip Web サーバー対応アプリは「有効」にチェックするだけです。</span>
+    </li>
+    <li>
+      <a href="NightPost.html">Nightscout サーバーへアップロード</a>
+      <span class="desc">ほとんどの場合、Juggluco の Web サーバーまたは juggluco-server で代用できます。Nightscout の Web ページを表示するだけの一部のアプリだけが cgm-remote-monitor を必要とします。</span>
+    </li>
+    <li>
+      <a href="libreview.html">Libreview</a>
+      <span class="desc">Juggluco は血糖データと記録を Libreview に送信できます。Librelink アプリと同様に、過去 89 日間のデータを送信します。利用するには Libreview アカウントの作成が必要です。</span>
+    </li>
+    <li>
+      <a href="librenumhelp.html">Libreview への記録送信</a>
+      <span class="desc">「記録を送信」をオンにすると Libreview に記録が送信されます。事前に各ラベルの記録をどう送信するかを指定する必要があります。</span>
+    </li>
+    <li>
+      <a href="setlibrenumtype.html">Libreview 記録タイプ設定</a>
+      <span class="desc">Libreview と同様に、Juggluco の Nightscout サーバー経由で記録をどう送信するかを指定できます。特定のラベルで入力した記録の Libreview 上の表現方法を選択します。</span>
+    </li>
+    <li>
+      <a href="nightnumhelp.html">Nightscout 経由での記録送信</a>
+      <span class="desc">「記録を入力」をオンにすると、Juggluco 内の Nightscout Web サーバー経由で記録にアクセスできます。事前に各ラベルでの送信方法を指定する必要があります。</span>
+    </li>
+    <li>
+      <a href="getaccountidhelp.html">アカウント ID の取得</a>
+      <span class="desc">FreeStyle Libre 3 センサーを NFC でスキャンするために必要な Libreview アカウント ID の取得方法を説明します。「手動」を指定すれば、アカウント ID を手動で入力できます。</span>
+    </li>
+    <li>
+      <a href="exchangehelp.html">データ交換</a>
+      <span class="desc">Health Connect: 1 分間隔の血糖値を Health Connect に送信します。他のアプリ (例: Google Fit) にこれらの血糖値へのアクセスを許可できます。</span>
+    </li>
+    <li>
+      <a href="watchinfo.html">ウォッチ</a>
+      <span class="desc">Juggluco がスマートウォッチに血糖値を表示する 6 つの方法を説明します。「通知」をオンにすると、新しい血糖値が到着するたびに Android 通知が作成されます。</span>
+    </li>
+    <li>
+      <a href="kerfstok.html">Kerfstok</a>
+      <span class="desc">Kerfstok は、サードパーティアプリを許可する Garmin スポーツウォッチ用のウォッチアプリです。1.6.0 以降はタッチスクリーン非搭載のウォッチにも対応しています。</span>
+    </li>
+    <li>
+      <a href="garminconfig.html">Kerfstok の設定</a>
+      <span class="desc">Kerfstok のソースコードはダウンロードでき、ユーザーは自由に変更できます。各ウォッチアプリには一意の識別子があります。</span>
+    </li>
+    <li>
+      <a href="shortcuthelp.html">ショートカット</a>
+      <span class="desc">Kerfstok で使用できるショートカット。ウォッチの数値入力画面からショートカット画面に移動できます (例えば Vivoactive 3 では左にスワイプ)。ラベルを押すと対応する値が数値画面に挿入されます。</span>
+    </li>
+    <li>
+      <a href="wearosinfo.html">Wear OS</a>
+      <span class="desc">ウォッチで記録を入力: スマートフォンではなくウォッチでインスリン、炭水化物、運動の記録を入力します。スマートフォンで Novopen をスキャンしたい場合は設定すべきではありません。</span>
+    </li>
+    <li>
+      <a href="notificationpermission.html">通知権限</a>
+      <span class="desc">FreeStyle Libre 0 センサーを使用していない限り、Juggluco は Bluetooth または ネットワーク接続経由で 1 分ごとに血糖値を受信するためにバックグラウンドで動作し続ける必要があります。</span>
+    </li>
+    <li>
+      <a href="locationpermission.html">位置情報権限</a>
+      <span class="desc">Android 6 から 11 までの端末では、Bluetooth デバイスを検索するために位置情報権限が必要です。Sibionics や Dexcom センサーで Bluetooth スキャンが必要となります。</span>
+    </li>
+    <li>
+      <a href="nearbypermission.html">「付近のデバイス」権限</a>
+      <span class="desc">Juggluco は FreeStyle Libre 2/3 センサーから Bluetooth 経由で血糖値を受信するために「付近のデバイス」権限を必要とします。別のスマートフォンやウォッチから受信する場合は不要です。</span>
+    </li>
+    <li>
+      <a href="camerapermission.html">カメラ権限</a>
+      <span class="desc">Sibionics センサーを使用するには、スマートフォンのカメラでパッケージ上のデータマトリクスをスキャンする必要があります。</span>
+    </li>
+    <li>
+      <a href="flashpermission.html">フラッシュ</a>
+      <span class="desc">一部のスマートフォンではフラッシュライトの使用にカメラ権限が必要だと言われることがあります。テストした端末では不要だったため、現在の Juggluco は要求しません。動作しない場合はオンにしてみてください。</span>
+    </li>
+    <li>
+      <a href="healthpermission.html">血糖値書き込み権限</a>
+      <span class="desc">Health Connect に血糖値を書き込むには、Juggluco に血糖値書き込み権限を付与する必要があります。Health Connect で血糖値を受信する以外の用途には不要です。</span>
+    </li>
+  </ul>
+</body>
+</html>

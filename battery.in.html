@@ -3,41 +3,41 @@
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 	<title></title>
-	<meta name="generator" content="LibreOffice 24.2.7.2 (Linux)"/>
+	<meta name="generator" content="LibreOffice 25.8.6.2 (Linux)"/>
 	<meta name="created" content="2021-09-22T21:56:37.376793780"/>
-	<meta name="changed" content="2025-04-16T17:14:40.957733782"/>
+	<meta name="changed" content="2026-05-07T11:18:02.475228721"/>
 	<style type="text/css">
-		@page { size: 8.27in 11.69in; margin: 0.79in }
-		h1 { margin-bottom: 0.08in; background: transparent }
+		@page { size: 21.01cm 29.69cm; margin: 2.01cm }
+		h1 { background: transparent; margin-bottom: 0.2cm }
 		h1.western { font-family: "Liberation Serif", serif }
 		h1.cjk { font-family: "Noto Serif CJK SC" }
 		h1.ctl { font-family: "Mangal" }
-		p { margin-bottom: 0.1in; background: transparent }
+		p { background: transparent; margin-bottom: 0.25cm }
 	</style>
 </head>
 <body lang="en-US" dir="ltr"><h1 class="western">Keep functioning</h1>
-<p style="line-height: 100%; margin-bottom: 0in">Normally when an
-android device is not used, it enters doze mode to use less energy.
-If you need to reliably receive glucose values via Bluetooth or
-TCP/IP you need to switch off battery optimizations for Juggluco, and
-sometimes also switch off some battery optimizations for the whole
-device, to prevent that Android switches off Juggluco. A lot of
-devices have additional battery optimization, activity in the
-background  and start at boot settings that have to be changed. You
-can find them under Android settings-&gt;Battery. See
-<a href="https://dontkillmyapp.com/">https://dontkillmyapp.com</a>.</p>
-<p style="line-height: 100%; margin-bottom: 0in">When using Watch 4,
+<p style="margin-bottom: 0cm; background: transparent"><span lang="en-US">Normally
+an Android device enters Doze mode to save energy when it isn't being
+used. </span>If you need to reliably receive glucose values via
+Bluetooth or TCP/IP you need to switch off battery optimizations for
+Juggluco, and sometimes also switch off some battery optimizations
+for the whole device, to prevent that Android switches off Juggluco.
+<span lang="en-US">Many devices have additional settings — battery
+optimisation, background activity and start-on-boot — that may need
+to be changed. </span>You can find them under Android
+settings-&gt;Battery. See <a href="https://dontkillmyapp.com/">https://dontkillmyapp.com</a>.</p>
+<p style="line-height: 100%; margin-bottom: 0cm">When using Watch 4,
 5, 6 or 7, you have to <i>Allow background activity</i> in the Galaxy
 Wearable companion app, Watch settings-&gt;Apps-&gt;Juggluco. For
 watches that don't have this setting, you can use the following
 command from your computer:</p>
-<p style="line-height: 100%; margin-bottom: 0in"><b>adb shell cmd
+<p style="line-height: 100%; margin-bottom: 0cm"><b>adb shell cmd
 appops set tk.glucodata RUN_IN_BACKGROUND allow</b></p>
-<p style="font-weight: normal; line-height: 100%; margin-bottom: 0in">
+<p style="line-height: 100%; margin-bottom: 0cm; font-weight: normal">
 To disable doze mode:</p>
-<p style="line-height: 100%; margin-bottom: 0in"><b>adb shell dumpsys
+<p style="line-height: 100%; margin-bottom: 0cm"><b>adb shell dumpsys
 deviceidle disable</b></p>
-<p style="line-height: 100%; margin-bottom: 0in"><a href="https://www.juggluco.nl/JugglucoWearOS/install/adb.html">Information
+<p style="line-height: 100%; margin-bottom: 0cm"><a href="https://www.juggluco.nl/JugglucoWearOS/install/adb.html">Information
 about adb</a></p>
 </body>
 </html>

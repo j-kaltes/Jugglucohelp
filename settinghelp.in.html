@@ -4,22 +4,24 @@
 	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 	<title>Settings</title>
 	<base target="_blank">
-	<meta name="generator" content="LibreOffice 7.6.5.2 (Linux)"/>
+	<meta name="generator" content="LibreOffice 25.8.6.2 (Linux)"/>
 	<meta name="created" content="00:00:00"/>
-	<meta name="changed" content="2024-05-08T21:50:52.625275614"/>
+	<meta name="changed" content="2026-05-07T13:52:29.785101835"/>
+	<meta name="created" content="00:00:00">
 	<meta name="created" content="00:00:00">
 	<style type="text/css">
-		@page { size: 8.27in 11.69in; margin: 0.79in }
-		h1 { margin-bottom: 0.08in; background: transparent }
+		@page { size: 21.01cm 29.69cm; margin: 2.01cm }
+		h1 { background: transparent; margin-bottom: 0.2cm }
 		h1.western { font-family: "Liberation Serif", serif }
 		h1.cjk { font-family: "Noto Serif CJK SC" }
 		h1.ctl { font-family: "Mangal" }
-		p { margin-bottom: 0.1in; background: transparent }
-		h2 { margin-top: 0.14in; margin-bottom: 0.08in; background: transparent }
-		h2.western { font-family: "Liberation Sans", sans-serif; font-size: 16pt }
-		h2.cjk { font-family: "Noto Sans CJK SC"; font-size: 16pt }
+		p { background: transparent; margin-bottom: 0.25cm }
+		h2 { margin-top: 0.36cm; margin-bottom: 0.2cm; background: transparent }
+		h2.western { font-size: 16pt; font-family: "Liberation Sans", sans-serif }
+		h2.cjk { font-size: 16pt; font-family: "Noto Sans CJK SC" }
 		h2.ctl { font-family: "Mangal"; font-size: 16pt }
-	</style> <base href="https://www.juggluco.nl/Jugglucohelp/mgdL/" id="baseurl"
+	</style>
+<base href="https://www.juggluco.nl/Jugglucohelp/mgdL/" id="baseurl"
       target="_blank">
 
 <script type="text/javascript" src="https://www.juggluco.nl/Jugglucohelp/code/unitscript.js"></script>
@@ -27,25 +29,26 @@
  <img src="settings.png" alt="Setttings" style="object-fit:contain; width:15cm;                   height:auto;">
 <body lang="en-US" dir="ltr"><h1 class="western">Settings</h1>
 <h2 class="western">Unit</h2>
-<p style="margin-bottom: 0in">Select whether glucose values should be
+<p style="margin-bottom: 0cm">Select whether glucose values should be
 given in mmol/L or mg/dL.</p>
 <h2 class="western">NFC sound</h2>
 <p>Make sound during scanning in addition to vibration.</p>
 <h2 class="western">Scanning starts app</h2>
 <p>If checked this app will be started when you scan a sensor via NFC
 even if this app is not displayed. If multiple apps have this
-setting, android will display a chooser from which to select which
-app you want to use. Somehow choosing one doesn't work and selecting
-one to be chosen the next time neither. So in this case you can't
-scan without an app in the foreground. Turning it off in this app,
-will make it possible that at least one app can be activated this
-way.</p>
+setting, Android shows a chooser asking which app to use. In
+practice, neither picking an app once nor setting one as the default
+works. So in this case you can't scan without an app in the
+foreground. Turning it off in this app, will make it possible that at
+least one app can be activated this way.</p>
 <p>If you have root access, you can also disable NFC activation of
 Abbott's Librelink app (doesn't work with Libre3):</p>
 <p>Become root in adb shell or termux, and type:</p>
-<p>pm disable com.freestylelibre.app.nl/com.librelink.app.ui.common.NFCScanActivity</p>
+<p>pm disable
+com.freestylelibre.app.nl/com.librelink.app.ui.common.NFCScanActivity</p>
 <p>On Librelink 2.7.1 and lower you had to press:</p>
-<p>pm disable com.freestylelibre.app.nl/com.librelink.app.ui.common.ScanSensorActivity</p>
+<p>pm disable
+com.freestylelibre.app.nl/com.librelink.app.ui.common.ScanSensorActivity</p>
 <p>com.freestylelibre.app.nl is here the Dutch version of Librelink,
 this should be replaced with the version you are using. You can find
 its name by typing (even without root):</p>
@@ -63,7 +66,7 @@ without root check.</p>
 <p>Before calling Abbott customer service, you can re-enable it with:</p>
 <p>pm enable com.freestylelibre.app.nl</p>
 <h2 class="western">Glucose notification</h2>
-<p style="margin-bottom: 0in">(Previously called &quot;<i>Glucose in
+<p style="margin-bottom: 0cm">(Previously called &quot;<i>Glucose in
 android status bar</i>&quot;). If set, glucose values streaming via
 Bluetooth are quietly displayed in a notification and the android
 status bar. If you turn it off, instead of a number, a dot is shown
@@ -74,13 +77,13 @@ visible notification (otherwise it is easily stopped by Android).
 Juggluco only turns off the notification, when &quot;<i>Sensor via
 Bluetooth</i>&quot; is turned off and there are no mirror
 connections.</p>
-<p style="margin-bottom: 0in">On some smartphones, the glucose value
+<p style="margin-bottom: 0cm">On some smartphones, the glucose value
 is only shown in the Android status bar after changing Androids
 notification settings. On Realme GT 5G for example, you have to go to
-applist-&gt;Juggluco-&gt;manage notifications, tab on
+applist-&gt;Juggluco-&gt;manage notifications, tab
 glucoseNotification and turn off &quot;Set to Silent&quot;. &quot;Display
 in status bar&quot; will now be shown turned on.</p>
-<p style="margin-bottom: 0in">You can also get an android
+<p style="margin-bottom: 0cm">You can also get an android
 notification by selecting <i>Notify</i> in the left middle menu. In
 that case the notification will be sent to some smartwatches, if it
 is configured that way. That works with Garmin watches, I don't know
@@ -97,9 +100,9 @@ permission to <b>display over other apps</b>.</p>
 available notification.</p>
 <h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/labelhelp.html">Number
 labels</a></h2>
-<p style="margin-bottom: 0in">Specify the labels used for amounts. Go
-to a screen to determine which labels to use to set amounts, like
-insulin doses, carbohydrate consumption and hours spend playing
+<p style="margin-bottom: 0cm">Specify the labels used for amounts.
+Opens a screen where you choose which labels to use, for things like
+insulin doses, carbohydrates consumed and hours spent playing
 football. If you also use the Garmin watch app Kerfstok, these labels
 are sent to the watch app.</p>
 <h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/exchangehelp.html">Exchange
@@ -107,20 +110,24 @@ data</a></h2>
 <p>Different ways to send data from Juggluco to other apps or
 servers. (For sending data to watches go to left menu-&gt;Watch.)</p>
 <h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/reminders.html">Reminders</a></h2>
-<p style="margin-bottom: 0in">Specify that an alarm should go of if
-you didn't enter a certain amount of food or medication within a
-certain time period.</p>
+<p style="margin-bottom: 0cm">Specify that an alarm should go off if
+you don't enter a certain amount of food or medication within a given
+time window.</p>
 <h2 class="western">Google scan</h2>
-<p style="line-height: 100%; margin-bottom: 0in">Scan
-the data matrix on Sibionics sensor packages and on Dexcom G7/ONE+
-applicators and the QR code of left middle menu→Mirror with the
-<a href="https://developers.google.com/ml-kit/vision/barcode-scanning/code-scanner">Google
+<p style="line-height: 100%; margin-bottom: 0cm">Scan the data matrix
+on Sibionics sensor packages and on Dexcom G7/ONE+ applicators and
+the QR code of left middle menu→Mirror with the <a href="https://developers.google.com/ml-kit/vision/barcode-scanning/code-scanner">Google
 code scanner</a>. If unchecked, <a href="https://github.com/zxing/zxing">zXing</a>
 is used. On most devices, Google scan works better, but sometimes it
 doesn’t work. When it fails with an error, zXing is always used,
-but sometimes Google scan just doesn’t work without returning an error.</p>
+but sometimes Google scan just doesn’t work without returning an
+error.</p>
 <h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/displayhelp.html">Display</a></h2>
-<p>All kind of settings having to do how data is displayed, from
+<p>All kinds of settings to do with how data is displayed, from
 target range to language.</p>
+<p><br/>
+<br/>
+
+</p>
 </body>
 </html>

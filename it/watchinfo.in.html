@@ -3,76 +3,129 @@
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 	<title></title>
-	<meta name="generator" content="LibreOffice 7.5.7.1 (Linux)"/>
-	<meta name="created" content="00:00:00"/>
-	<meta name="changedby" content="Matteo Gabriele"/>
-	<meta name="changed" content="2022-05-30T00:00:00.019284503"/>
+	<meta name="generator" content="LibreOffice 25.8.6.2 (Linux)"/>
+	<meta name="created" content="2022-03-03T14:07:37.938004739"/>
+	<meta name="changed" content="2026-05-07T20:09:12.762869643"/>
 	<style type="text/css">
-		@page { size: 8.27in 11.69in; margin: 0.79in }
-		p { line-height: 115%; margin-bottom: 0.1in; background: transparent }
-		a:link { so-language: zxx }
+		@page { size: 21.01cm 29.69cm; margin: 2.01cm }
+		p { background: transparent; margin-bottom: 0.25cm }
+		h2.cjk { font-family: "Droid Sans Fallback" }
+		h2.ctl { font-family: "Droid Sans Devanagari" }
 	</style>
 </head>
-<body lang="it-IT" dir="ltr"><p align="center" style="line-height: 100%; margin-top: 0.17in; margin-bottom: 0.08in; page-break-after: avoid">
-<font face="Liberation Sans, sans-serif"><font size="6" style="font-size: 28pt"><b>Orologio</b></font></font></p>
-<p style="line-height: 100%; margin-bottom: 0in">Al momento juggluco
-ha quattro modi per inviare I valori di glucosio al tuo orologio.</p>
-<p align="center" style="line-height: 100%; margin-top: 0.04in; margin-bottom: 0.08in; page-break-after: avoid">
-<font face="Liberation Sans, sans-serif"><font size="5" style="font-size: 18pt">Notify</font></font></p>
-<p style="line-height: 100%; margin-bottom: 0in">Se Notifica è
-attivo nel menu sinistra-centro, una notifica Android verrà creata
-ogni volta che arriverà un nuovo valore di glucosio. Molti
-smartwatch possono essere configurati per ricevere queste notifiche
-(perchè sono notifiche correnti, personalmente non sono riuscito con
-un Samsung Galaxy Watch4). Questo metodo ha lo svantaggio che il
-livello di glucosio è visibile solo per poco e l'orologio vibrerà
-ogni minuto ad ogni arrivo un valore, distraendo l'utente.</p>
-<p align="center" style="line-height: 100%; margin-top: 0.04in; margin-bottom: 0.08in; page-break-after: avoid">
-<font face="Liberation Sans, sans-serif"><font size="5" style="font-size: 18pt">Kerfstok</font></font></p>
-<p style="line-height: 100%; margin-bottom: 0in"><span lang="it-IT">Kerfstok
-è un'app per orologio in cui è possibile registrare valori (come
-dosi di insulina) ma anche mostrare il valore di glucosio corrente.
-Appena arriverà un nuovo valore, Juggluco lo invierà a Kerfstok. In
-questo modo Kerfstop mostrerà sempre il valore più recente di
-glucosio. Kerfstok inoltre può registrare tutte le attività
-supportate da Garmin e può mostrare anche velocità e distanza.
-Vedere Orologio-&gt;Kerfstok Status-&gt; Aiuto e
+ <img src="watches.png"  style="object-fit:contain; width:15cm;                   height:auto;">
+<body lang="it-IT" dir="ltr"><h1>Orologio</h1>
+<p style="line-height: 100%; margin-bottom: 0cm">Attualmente, Juggluco
+ha sette modi per ottenere i valori del glucosio sul tuo orologio.</p>
+<h2 class="western">Notifica</h2>
+<p style="line-height: 100%; margin-bottom: 0cm"><span lang="it-IT">Quando
+</span><span lang="it-IT"><i>Notifica</i></span> <span lang="it-IT">è
+attivata, viene creata una notifica Android ogni volta che arriva
+un nuovo valore del glucosio. Su alcuni orologi le notifiche vengono
+inviate all'orologio solo quando viene creata una nuova notifica,
+per essi devi attivare </span><span lang="it-IT"><i><b>Separato</b></i></span><span lang="it-IT">.
+Per questi orologi devi anche attivare </span><span lang="it-IT"><i>Separato</i></span>
+<span lang="it-IT">per ricevere notifiche di allarme sull'orologio.</span></p>
+<h2 class="western">Watchdrip</h2>
+<p style="line-height: 100%; margin-bottom: 0cm">Attivando questo,
+Juggluco invia i valori del glucosio a <a href="https://bigdigital.home.blog/2022/06/16/watchdrip-a-new-application-for-xdrip-watch-integration">Watchdrip+</a>.
+Watchdrip+ invia watchface, che mostrano i valori del glucosio, agli
+orologi MiBand/Amazfit.</p>
+<h2 class="western">GadgetBridge</h2>
+<p><a href="https://gadgetbridge.org/">GadgetBridge</a> rende possibile
+visualizzare informazioni meteorologiche sugli orologi MiBand/Amazfit.
+Con l'opzione Gadgetbridge attivata, Juggluco invierà i valori del
+glucosio a GadgetBridge fingendo che siano informazioni
+meteorologiche. Questo ha il vantaggio rispetto a Watchdrip di
+essere molto più veloce, ma ha lo svantaggio che vengono visualizzate
+meno informazioni. Juggluco mette il valore del glucosio e una freccia
+di direzione nella posizione del meteo. Questa posizione viene
+visualizzata sotto Meteo sull'orologio. Non ho trovato alcuna
+watchface che visualizzi questa posizione. Solo per <b>mmol/L</b>:
+il valore prima del punto è inserito nella temperatura massima e il
+valore dopo il punto nella temperatura minima. I valori di <b>mg/dL</b>
+sono troppo grandi per le temperature, per questo motivo l'ultima
+cifra è inserita nella temperatura minima e i numeri prima
+dell'ultima cifra nella temperatura massima. Quindi 106 mg/dL diventa:
+temperatura massima 10, temperatura minima 6.</p>
+<p>La direzione di variazione determina l'icona del meteo: la neve
+è glucosio in calo, la pioggia è glucosio in aumento. Viene anche
+inserita nella temperatura corrente. Maggiore di zero significa
+glucosio in aumento, minore di zero significa glucosio in calo.</p>
+<h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/kerfstok.html">Kerfstok</a></h2>
+<p style="line-height: 100%; margin-bottom: 0cm"><span lang="it-IT">Kerfstok
+è </span><span lang="it-IT">un'</span><span lang="it-IT">app per orologio </span><span lang="it-IT">su
+</span><span lang="it-IT">cui puoi inserire numeri (come dosi di
+insulina),</span> <span lang="it-IT">ma visualizza anche il valore
+corrente del glucosio. Immediatamente quando arriva un nuovo valore
+del glucosio, Juggluco lo invia a Kerfstok. Quindi Kerfstok
+visualizza sempre il valore del glucosio più recente. Kerfstok può
+anche registrare tutte le attività supportate da Garmin e può
+visualizzare velocità e distanza. Vedi Orologio-&gt;Stato Kerfstok-&gt;
+Aiuto e
 <a href="https://www.juggluco.nl/Kerfstok">https://www.juggluco.nl/Kerfstok</a></span></p>
-<p align="center" style="line-height: 100%; margin-top: 0.04in; margin-bottom: 0.08in; page-break-after: avoid">
-<font face="Liberation Sans, sans-serif"><font size="5" style="font-size: 18pt">xDrip
-watch app</font></font></p>
-<p style="line-height: 100%; margin-bottom: 0in">Juggluco incorpora
-un webserver xDrip. Questo rende possibile usare direttamente le app
-per smartwatche xDrip con Juggluco. Xdrip mostra un nuovo valore di
-glucosio solo ogni 5 minuti, mentre Juggluco ogni minuto. In ogni
-caso Juggluco invia a xDrip sempre l'ultimo valore aggiornato. Il
-valore di glucosio viene inviato solo se lo smartwatch lo richiede,
-quindi il valore mostrato dipende unicamente dall'app usata
-sull'orologio. Per esempio le watch face e I campi per I valori sul
-Garmin vengono richiesti ogni 5 minuti. Via xDrip questo spesso
-lascia un valore vecchio di 10 minuti. Quando invece l'orologio è
-direttamente connesso con Juggluco il valore è di massimo 6 minuti
-prima. Nel Garmin, non puoi usare Kerfstok, hai solo le seguenti
-opzioni per ricevere regolarmente il valore di glucosio.</p>
-<p style="line-height: 100%; margin-bottom: 0in"><span lang="it-IT">Un
-widget xDrip
+<h2 class="western"><a href="https://www.juggluco.nl/Juggluco/glucosebroadcast.html">Broadcast</a></h2>
+<p style="line-height: 100%; margin-bottom: 0cm">Le app possono
+ricevere i valori del glucosio da uno dei broadcast del glucosio
+inviati da Juggluco e inviare questi valori del glucosio a un
+orologio. Ad esempio G-Watch
+(<a href="https://play.google.com/store/apps/details?id=sk.trupici.g_watch">TizenOS</a>
+o <a href="https://play.google.com/store/apps/details?id=sk.trupici.gwatch.wear">WearOS</a>)
+può ricevere i valori del glucosio dal Broadcast Glucodata (vedi
+Menu sinistro-&gt;Impostazione-&gt;<a href="https://www.juggluco.nl/Jugglucohelp/exchangehelp.html">Scambio
+dati</a>).</p>
+<h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/Nightscouthelp.html">App
+per orologio xDrip</a></h2>
+<p style="line-height: 100%; margin-bottom: 0cm"><span lang="it-IT">Juggluco
+incorpora un webserver xDrip/Nightscout</span> <span lang="it-IT">.
+Questo rende possibile usare direttamente le app per orologio xDrip
+con Juggluco. xDrip mostra un nuovo valore del glucosio solo ogni 5
+minuti, mentre Juggluco mostra un nuovo valore del glucosio ogni
+minuto. Juggluco invia anche alle app per orologio xDrip il valore
+del glucosio più recente. I valori del glucosio sono inviati agli
+orologi solo se l'app per orologio li richiede, quindi quanto siano
+vecchi i valori visualizzati dipende da quando l'app per orologio
+li richiede. Ad esempio le watchface e i campi dati sugli orologi
+Garmin chiedono un valore del glucosio solo ogni 5 minuti. Tramite
+xDrip, questo spesso portava a valori del glucosio vecchi di 10
+minuti. Quando connesse direttamente a Juggluco, queste watchface
+mostrano valori del glucosio vecchi fino a 6 minuti. Sotto </span><span lang="it-IT"><b>Garmin</b></span><span lang="it-IT">,
+se non puoi usare Kerfstok, hai le seguenti opzioni per ricevere
+regolarmente un valore del glucosio recente. Un widget xDrip
 (<a href="https://apps.garmin.com/en-US/apps/73115e04-dc9f-4765-ad88-e7ae283ce995">https://apps.garmin.com/en-US/apps/73115e04-dc9f-4765-ad88-e7ae283ce995</a>)
-può essere usato durante la registrazione di una attività. Se sei
-in grado di fare uno swipe da sinistra a destra puoi switchare questo
-widget mentre stai registrando un'attività con l'app standard degli
-sport della Garmin. C'è anche un'app per lo sport di xDrip che
-include il valore di glucosio:
+può essere usato anche durante la registrazione di un'attività.
+Quindi se hai una mano libera, puoi passare a questo widget xDrip
+mentre registri un'attività con un'app sport Garmin standard. C'è
+anche un'app sport xDrip che aggiorna il suo valore del glucosio
+regolarmente:
 <a href="https://apps.garmin.com/en-US/apps/aaf6533b-bca1-4365-9131-9f882f6f148c">https://apps.garmin.com/en-US/apps/aaf6533b-bca1-4365-9131-9f882f6f148c</a>.
-I campi dei dati e le watch face possono essere la soluzione ideale
-ma le restrizioni imposte da Garmin ne diminuiscono il valore. Per
-altre informazioni sull'interfaccia webserver vedere
-<a href="https://www.juggluco.nl/Juggluco/addwatch.html">https://www.juggluco.nl/Juggluco/addwatch.html</a></span></p>
-<p align="center" style="line-height: 100%; margin-top: 0.04in; margin-bottom: 0.08in; page-break-after: avoid">
-<font face="Liberation Sans, sans-serif"><font size="5" style="font-size: 18pt">Juggluco
-Wear</font></font></p>
-<p>Esiste una versione di Juggluco per Wear OS. Il display è
-adattato allo schermo piccolo ed è stata aggiunta una watch face.
-Questa può essere installata tramite Wear OS e mostra il valore di
-glucosio ricevuto via Bluetooth.</p>
+Puoi provare a partire in un momento, in modo che richieda un
+valore del glucosio subito dopo che sia disponibile. I campi dati
+e le watchface sarebbero la soluzione ideale, ma le restrizioni
+imposte da Garmin le rendono di poco valore. </span>
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><span lang="it-IT">In
+precedenza potevi usare il webserver in Juggluco con una watchface</span>
+<span lang="it-IT">per </span><span lang="it-IT"><b>Fitbit</b></span><span lang="it-IT">:
+<a href="https://glancewatchface.com/">https://glancewatchface.com</a>
+. Da metà 2024, le app di terze parti non sono più consentite sugli
+orologi Fitbit:
+<a href="https://www.techradar.com/health-fitness/fitbit-watches-in-the-eu-will-lose-third-party-apps-and-watch-faces-heres-why">https://www.techradar.com/health-fitness/fitbit-watches-in-the-eu-will-lose-third-party-apps-and-watch-faces-heres-why</a>
+. La regolamentazione UE potrebbe aver provocato questa decisione.
+Forse il possibile requisito di consentire app store alternativi
+su Wear OS: I tracker fitness semplici, senza app di terze parti,
+sono anche consentiti e possiamo diventarlo. Alcune persone
+sostengono che dopo aver cambiato la posizione negli USA, con l'uso
+di una VPN, possono nuovamente installare app di terze parti.</span></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><span lang="it-IT">Per
+maggiori informazioni sull'interfaccia del webserver vedi
+<a href="https://www.juggluco.nl/Juggluco/webserver.html">https://www.juggluco.nl/Juggluco/webserver.html</a></span></p>
+<h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/wearosinfo.html">Juggluco
+WearOS</a></h2>
+<p>Esiste una versione di Juggluco portata su Wear OS. Il display è
+adattato allo schermo più piccolo ed è stata aggiunta una
+watchface. La watchface può essere installata come una solita
+watchface Wear OS e visualizza accanto all'ora anche il valore
+corrente del glucosio ricevuto tramite Bluetooth.</p>
 </body>
 </html>

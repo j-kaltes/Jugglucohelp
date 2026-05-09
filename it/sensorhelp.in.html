@@ -3,81 +3,170 @@
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 	<title></title>
-	<meta name="generator" content="LibreOffice 7.5.7.1 (Linux)"/>
-	<meta name="created" content="2021-09-11T17:23:06.572014143"/>
-	<meta name="changedby" content="Matteo Gabriele"/>
-	<meta name="changed" content="2022-05-02T14:27:07.201836581"/>
-	<style type="text/css">
-		@page { size: 8.27in 11.69in; margin: 0.79in }
-		p { margin-bottom: 0.1in; background: transparent }
-	</style>
+	<meta name="generator" content="LibreOffice 25.8.6.2 (Linux)"/>
+	<meta name="created" content="00:00:00"/>
+	<meta name="changed" content="2026-05-07T11:35:33.515301040"/>
+	<meta name="created" content="00:00:00">
+	<meta name="created" content="00:00:00">
 </head>
-<body lang="it-IT" dir="ltr"><p align="center" style="line-height: 100%; margin-top: 0.17in; margin-bottom: 0.08in; page-break-after: avoid">
-<font face="Liberation Sans, sans-serif"><font size="6" style="font-size: 28pt"><b>Sensore</b></font></font></p>
-<p style="line-height: 100%; margin-bottom: 0in">Per connettere il
-sensore il Freestyle Libre 2 tramite il Low Energy Bluetooth, il
-Bluetooth deve essere acceso.</p>
-<p style="line-height: 100%; margin-bottom: 0in">Dopo aver
-scansionato il sensore con questa app, non succederà più nulla. Il
-sensore non comunicherà più con il suo reader o con altre app sullo
-smartphone. Gli allarmi dell'app Abbott Librelink devono essere
-spenti e l'app chiusa. Alcune app Librelink sembrano comunicare col
-sensore anche con gli allarmi spenti e questo può creare problemi di
-connessione. Usare “<i>Termina forzatamente</i>” <span style="font-variant: normal"><span style="font-style: normal">per
-interromperla con certezza.</span></span></p>
-<p style="line-height: 100%; margin-bottom: 0in"><span style="font-variant: normal"><span style="font-style: normal"><b>Sensore
-via Bluetooth</b></span></span> <span style="font-variant: normal"><span style="font-style: normal"><span style="font-weight: normal">deve
-essere selezionato.</span></span></span></p>
-<p style="font-variant: normal; font-style: normal; font-weight: normal; line-height: 100%; margin-bottom: 0in">
-Se le suddette condizioni sono soddisfatte, può passare un lungo
-tempo prima che l'app riceva valori di glucosio dal sensore. Spesso
-ci impiega un minuto ma alcune volte ci può volere molto di più.</p>
-<p style="line-height: 100%; margin-bottom: 0in"><span style="font-variant: normal"><span lang="it-IT"><span style="font-style: normal"><span style="font-weight: normal">Il
-</span></span></span></span><span lang="it-IT"><i><span style="font-weight: normal">Stato
-di connessione</span></i></span> <span style="font-variant: normal"><span lang="it-IT"><span style="font-style: normal"><span style="font-weight: normal">mostra
-I problemi. (Il più delle volte l'errore più comune è status=133,
-che è l'argomento dello stato di
-</span></span></span></span><span lang="it-IT"><a href="https://developer.android.com/reference/android/bluetooth/BluetoothGattCallback#onConnectionStateChange(android.bluetooth.BluetoothGatt,%20int,%20int)">onConnectionStateChange(BluetoothGatt
-bluetoothGatt, int status, int newState)</a>). Qualche volta spegnere
-e riaccendere il Bluetooth, riavviare il telefono o spegnere il
-Bluetooth sugli altri dispositivi può risolvere. Altre volte il
-problema può essere risolto scansionando il sensore.</span></p>
-<p style="line-height: 100%; margin-bottom: 0in">Scansionare il
-sensore con Juggluco (con <i>Sensore via Bluetooth</i> <span style="font-variant: normal"><span style="font-style: normal">abilitato)
-su un altro telefono, ruberà la connessione al telefono di partenza.
-Scansionandolo con questo tornerà a lui. (uno dei sensori con
-connessione Bluletooth che ho migrato da un telefono ad uno
-smartwatch Wear Os per circa tre volte, ha dato errore di connessione
-133 per 2 giorni e mezzo, riprendendo a funzionare dopo 373 errori
-registrati).</span></span></p>
-<p style="line-height: 100%; margin-bottom: 0in"><i>Doze mode</i>
-<span style="font-variant: normal"><span style="font-style: normal">apre
-uno schermo in cui poter specificare che il risparmio energetico non
-deve essere applicato a Juggluco. Questo può esere necessario per
-permettere il funzionamento dell'app quando il telefono è in
-standby.</span></span></p>
-<p style="line-height: 100%; margin-bottom: 0in"><i>Permessi</i><span style="font-variant: normal"><span style="font-style: normal">:
-la precedente versione di Juggluco necessitava I permessi relativi
-alla posizione per cercare l'indirizzo del sensore. Questo non è più
-necessario. Può essere però che ci siano sensori che lo richiedano,
-in questo caso devi abilitarlo. Dopo il primo contatto Juggluco salva
-l'indirizzo del dispositivo e I permessi della posizione saranno
-inutili. L'indirizzo del dispositivo, se conosciuto, è mostrato
-vicino all'identificatore del sensore. Se rosso significa che è un
-sensore US.</span></span></p>
-<p style="font-variant: normal; font-style: normal; line-height: 100%; margin-bottom: 0in">
-Android 12 ha un nuovo sistema di permessi relativi ai dispositivi
-nelle vicinanze che può essere usato al posto dei permessi
-precedenti per abilitare la ricerca dell'indirizzo del dispositivo
+ <img src="sensor.png"  style="object-fit:contain; width:15cm;                   height:auto;">
+<body lang="it-IT" dir="ltr"><h1>Sensore</h1>
+<p style="border: none; padding: 0cm">Lo spinner contiene il nome
+del sensore. Se Juggluco sta usando più di un sensore
+contemporaneamente, puoi selezionare il sensore di cui mostrare le
+informazioni.</p>
+<p style="border: none; padding: 0cm"><a href="https://www.juggluco.nl/Jugglucohelp/battery.html"><i><b>Doze
+mode</b></i></a> ti porta a una schermata con informazioni su come
+disabilitare le ottimizzazioni della batteria per Juggluco, che
+possono impedire a Juggluco di funzionare.</p>
+<p style="border: none; padding: 0cm"><i><b>Cronologia Bluetooth</b></i>:
+Su Libre 2, i valori della cronologia sono letture passate distanziate
+di 15 minuti. In precedenza erano ricevute solo tramite scansione.
+Quando attivi questa opzione, i valori della cronologia sono ricevuti
+anche tramite Bluetooth. Inoltre, altre cose funzioneranno
+diversamente. Juggluco invia quindi a LibreView i valori della
+cronologia, invece delle medie dei valori del flusso. Lo svantaggio
+è che è più lento. Questo può essere un problema sugli orologi
+WearOS. Questa opzione non ha effetto su Libre 3 e sui sensori
+US/CA/AU/KR Libre 2; ricevono sempre i valori della cronologia
 tramite Bluetooth.</p>
-<p style="line-height: 100%; margin-bottom: 0in"><i>Dimentica</i><span style="font-variant: normal"><span style="font-style: normal">:
-dimentica l'indirizzo del dispositivo, che andrà riabilitato
-scansionando il sensore di nuovo. Per far questo serve il permesso
-alla posizione sugli </span></span>Android dal 6 al 11. Su Android 12
-serve invece il permesso Dispositivi Vicini.</p>
-<p style="line-height: 100%; margin-bottom: 0in"><i>Reinit</i>:
-Riabilita lo streaming dei valori: Una nuova autenticazione verrà
-creata per comunicare col sensore. Verrà impostato anche l'indirizzo
-del dispositivo.</p>
+<p><b>Bug</b>: presente solo su WearOS per Libre 3. Deve essere
+impostato su Samsung Galaxy Watch 5 e successivi, finché Samsung
+non corregge questo bug. Senza questa opzione, i valori del glucosio
+saranno ricevuti distanziati di 2 minuti invece di 1. I Samsung
+Galaxy Watch dal 5 all'Ultra ricevono sempre i valori Libre 2
+distanziati di due minuti.</p>
+<p>⏰: Fa usare a Juggluco una funzione di sveglia per garantire il
+corretto timing della connessione ai sensori Dexcom G7 e ONE+. Senza
+di esso, quando il dispositivo è in deep sleep mentre non è
+utilizzato, a volte non si sveglierà per riconnettersi al sensore e
+non riceverà immediatamente un valore del glucosio. (Il mio
+orologio WearOS aveva questo problema nel mezzo della notte,
+probabilmente perché mi muovevo molto poco. A causa del backfill
+successivo e del lento risveglio, non lo vedevo sull'orologio e sul
+telefono, solo nei file di log. Il mio telefono non ha bisogno di
+questa impostazione e sembra funzionare peggio quando è attivata.)</p>
+<p style="border: none; padding: 0cm"><i><b>Permesso</b></i>: Prima
+di Android 12 era necessario il permesso di posizione per cercare
+dispositivi Bluetooth. Android 12 e successivi hanno un permesso
+<i>Dispositivi vicini</i> necessario per ogni contatto con
+dispositivi Bluetooth.</p>
+<p style="border: none; padding: 0cm">L'<b>indirizzo del dispositivo</b>,
+se noto, viene mostrato dopo l'identificatore del sensore. Rosso
+indica un sensore di tipo statunitense.
+</p>
+<p style="border: none; padding: 0cm"><i><b>Dimentica</b></i><i>:</i>
+Fa dimenticare a Juggluco l'indirizzo del dispositivo e cerca
+l'indirizzo del dispositivo. Per alcuni sensori questo è necessario
+per ottenere una connessione e viene quindi fatto automaticamente
+da Juggluco. Con questo pulsante puoi dire manualmente che Juggluco
+deve farlo, perché potrebbero esserci altre occasioni in cui è
+anche necessario.</p>
+<p style="border: none; padding: 0cm"><i><b>Termina</b></i>: smetti
+di connetterti a questo sensore tramite Bluetooth. Se in seguito
+vuoi nuovamente ricevere i valori del glucosio del flusso da questo
+sensore, devi solo scansionarlo o toccare "<i>Attiva</i>" in info
+sensore.</p>
+<p><b>Disaccoppia</b>: I sensori Linx/Lumiflex/Aidex X ricordano il
+telefono o l'orologio con cui sono accoppiati e si rifiutano di
+accoppiarsi con altri dispositivi. Premendo "Disaccoppia" viene
+inviato un comando al sensore e se ha successo, è di nuovo
+possibile per altri telefoni o orologi connettersi al sensore.
+Quando usi menu sinistro→Orologio→Config WearOS → "Sensore
+diretto …" per trasferire il sensore da e verso l'orologio,
+verrà eseguito anche il disaccoppiamento, e non dovresti usare
+"Disaccoppia".</p>
+<p><b>Cancella</b>: (Pulsante presente solo quando ci si connette
+con sensori Linx/Lumiflex/Aidex X.) Premendo questo pulsante
+vengono rimossi tutti i valori del glucosio dal sensore e il
+sensore viene riavviato come se fosse un nuovo sensore. Questo
+rende possibile usare un sensore per più di 15 giorni. Quando l'ho
+provato, i valori ricevuti dopo la data di fine del sensore erano
+totalmente inutilizzabili, avendo circa la metà del valore del
+sensore Libre 3 che ho fatto correre in parallelo. Se dopo qualche
+settimana, cancelli una seconda volta, i valori del glucosio che
+fornisce diventano nuovamente molto peggiori di prima (nel mio
+caso molto bassi). Non sembra essere il maggior uso del sensore,
+ma la cancellazione il problema. <br/>
+La cancellazione comporta molte ricerche di dispositivi bluetooth.
+Il numero di volte che un'app è autorizzata da Android a cercare
+dispositivi entro un certo periodo di tempo è limitato. Se ne fa
+di più, Android scarta semplicemente la richiesta. L'unica cosa
+che puoi fare è disattivare e riattivare il Bluetooth, che
+ripristina questo conteggio.</p>
+<p><b>Reset</b>: Solo Sibionics 2. Quando si cambia sensore in un
+trasmettitore questo pulsante deve essere premuto. O quando
+Juggluco è connesso al vecchio sensore e/o quando Juggluco è
+connesso al nuovo sensore. Non dovresti premerlo quando il
+trasmettitore è già stato resettato da un'altra app.</p>
+<p style="border: none; padding: 0cm"><i><b>Turbo</b></i>: Aumenta
+lo sforzo speso per contattare il sensore, nella speranza di avere
+meno errori di connessione. Può consumare più batteria. Sembra
+necessario su Watch4 con sensori Freestyle Libre 2, ma non con
+sensori Freestyle Libre 3 e su nessuno degli smartphone su cui
+l'ho provato.</p>
+<p style="border: none; padding: 0cm"><b>Android</b>: Fa fare ad
+Android invece che a Juggluco la connessione con il sensore. Non
+usarlo! Nella maggior parte dei casi ci vorrà più tempo prima che
+venga stabilita una connessione. Questa opzione è stata aggiunta
+per aggirare un bug in una release di Android 13, che è stato da
+allora corretto. Dovresti attivarlo solo quando in questa schermata
+del sensore non vengono mostrati orari recenti. Ciò significa che
+non vengono mostrati errori di connessione o errori del sensore, ma
+anche che non vengono ricevuti valori e puoi farlo funzionare
+nuovamente disattivando e riattivando il Bluetooth. Connettere un
+sensore Libre 2 europeo a due app sullo stesso telefono
+simultaneamente (cosa possibile solo per quella variante) può
+anche produrre questo stato.</p>
+<p style="border: none; padding: 0cm"><i><b>Info</b></i>: Fornisce
+gli orari di inizio e fine e gli ultimi orari di scansione e flusso
+del sensore.</p>
+<p style="border: none; padding: 0cm">Per connettersi a un sensore
+FreeStyle Libre 2 tramite Bluetooth Low Energy, il Bluetooth deve
+essere attivato. Non succede nulla finché il sensore non è stato
+scansionato con successo da questa app. Il sensore non deve essere
+connesso a un lettore FreeStyle o ad altre app sugli smartphone.
+L'app LibreLink di Abbott deve essere disinstallata, disabilitata o
+forzata a fermarsi. Se hai avviato il sensore con Freestyle Reader
+e non puoi spegnerlo, puoi impedirgli di entrare in contatto con il
+sensore mettendo il reader in una <a href="https://www.offgridweb.com/preparation/faraday-bags-testing-commercial-and-diy-wireless-signal-blockers/amp"><u>gabbia
+di Faraday</u></a>.</p>
+<p style="border: none; padding: 0cm"><b>Usa Bluetooth</b> dovrebbe
+essere attivato.</p>
+<p style="border: none; padding: 0cm">Se le condizioni di cui sopra
+sono soddisfatte, può ancora volerci molto tempo prima che l'app
+riceva i valori del glucosio dal sensore. Spesso ci vuole un
+minuto, ma altre volte ci vuole molto più tempo. La fase di
+<i>Connessione</i> dà le maggiori difficoltà. I più frequenti
+sono i fallimenti con status=133, che è l'argomento status di
+<a href="https://developer.android.com/reference/android/bluetooth/BluetoothGattCallback#onConnectionStateChange(android.bluetooth.BluetoothGatt,%20int,%20int)"><u>onConnectionStateChange(BluetoothGatt
+bluetoothGatt, int status, int newState)</u></a>. Significa
+<i>Dispositivo Bluetooth non trovato</i>. Quasi sempre ci vuole
+solo un po' di tempo prima che il dispositivo venga trovato. È
+anche possibile che il sensore sia connesso a un altro dispositivo,
+temporaneamente non funzionante bene, altri dispositivi stiano
+interferendo o il Bluetooth di Android non funzioni. A volte
+disattivare e riattivare il Bluetooth sembra aiutare o riavviare il
+telefono o disattivare la connessione Bluetooth di altri
+dispositivi. Altri problemi a volte si risolvono scansionando il
+sensore. L'acqua di mezzo (compresa l'acqua corporea) può essere
+un problema, quindi indossare un orologio WearOS su un braccio
+diverso da quello del sensore può dare problemi di connessione
+quando le braccia sono tenute in modo che il corpo sia posizionato
+tra orologio e sensore.</p>
+<p style="border: none; padding: 0cm">Un utente Accu-Chek SmartGuide
+ha riferito che quando una ricerca Bluetooth non riusciva a trovare
+il sensore, la soluzione era andare in Dispositivi connessi nelle
+impostazioni Android, selezionare il sensore e toccare
+<i>Dimentica</i>.</p>
+<p style="border: none; padding: 0cm">Scansionare un sensore Libre
+con Juggluco (con <i>Usa Bluetooth</i> abilitato) su un altro
+telefono, ruberà la connessione da questo telefono, e ci può
+volere un po' di tempo, con scansioni nel mezzo, per riaverla
+indietro.</p>
+<p style="border: none; padding: 0cm"><br/>
+<br/>
+
+</p>
 </body>
 </html>

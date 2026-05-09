@@ -1,0 +1,8 @@
+In the English version "Floating glucose" is used in the settings, which is shortened to "Float" in the menu.
+In your Italian translation these are "Glucosia flottante" and  "Float". There is no relation between them.
+
+Is "talk" the right Italian word for a dialog to configure spoken output in Juggluco?
+
+
+ <string name="sync">Sincronizza</string> and <string name="reinit">Reinizializza</string> don't fit beside each other on the WearOS screen.
+

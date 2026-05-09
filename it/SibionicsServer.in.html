@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 25.8.6.2 (Linux)"/>
+	<meta name="created" content="2026-05-05T13:26:31.559388958"/>
+	<meta name="changed" content="2026-05-05T13:42:42.974369821"/>
+	<style type="text/css">
+		@page { size: 8.27in 11.69in; margin: 0.79in }
+		p { margin-bottom: 0.1in; line-height: 115%; background: transparent }
+		h1 { margin-bottom: 0.08in; background: transparent; page-break-after: avoid }
+		h1.western { font-weight: bold; font-size: 18pt; font-family: "Liberation Sans", sans-serif }
+		h1.cjk { font-weight: bold; font-size: 18pt; font-family: "Noto Sans CJK SC" }
+		h1.ctl { font-weight: bold; font-family: "Noto Sans Devanagari"; font-size: 18pt }
+	</style>
+</head>
+<body lang="it-IT" link="#000080" vlink="#800000" dir="ltr"><h1 class="western">
+Recupera ID dal server</h1>
+<p style="line-height: 100%; margin-bottom: 0in">Recupera l'account
+ID dal server Sibionics GS3.
+</p>
+<p style="line-height: 100%; margin-bottom: 0in">I sensori GS3 hanno
+un meccanismo integrato di vincolo all'account per rendere
+impossibile l'uso di un sensore con un account diverso da quello con
+cui è stato usato in precedenza. Per questo viene recuperato dal
+server un numero account ID associato all'account.</p>
+<p style="line-height: 100%; margin-bottom: 0in">Se vuoi usare un
+sensore precedentemente usato con l'app Sibionics GS3, devi recuperare
+questo ID dal loro server.</p>
+<p style="line-height: 100%; margin-bottom: 0in">Se hai accesso root
+sul tuo telefono, puoi trovarlo anche nella directory dei dati
+dell'app Sibionics GS3:
+</p>
+<p style="line-height: 100%; margin-bottom: 0in">/data/data/com.sisensing.gs3/shared_prefs/sp_user.xml
+contiene l'elemento user_id con quel valore, ad esempio: &lt;string
+name=&quot;user_id&quot;&gt;2019091906067780457&lt;/string&gt;, dove
+2019091906067780457 è lo user id.</p>
+<p style="line-height: 100%; margin-bottom: 0in">È contenuto anche
+in alcuni nomi di file, ad esempio:</p>
+<p style="line-height: 100%; margin-bottom: 0in">/data/data/com.sisensing.gs3/files/mmkv/sp_user2019091906067780457</p>
+<p style="line-height: 100%; margin-bottom: 0in">/data/data/com.sisensing.gs3/files/mmkv/sp_user2019091906067780457.crc</p>
+<p style="line-height: 100%; margin-bottom: 0in">/data/data/com.sisensing.gs3/shared_prefs/2019091906067780457.xml</p>
+</body>
+</html>

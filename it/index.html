@@ -45,107 +45,239 @@ footer { margin-top: 2rem; font-size: .85rem; opacity: .7; }
   <ul class="toc">
     <li>
       <a href="introhelp.html">Intro</a>
-      <span class="desc">Juggluco è un'app per il controllo del livello di glucosio nelle persone con il diabete. Può scansiore il sensore Freestyle libre (1 e 2) via NFC e ricevere via Bluetooth I valori di glucosio dai sensori Freestyle libre 2 .</span>
+      <span class="desc">Juggluco è un'app per il controllo della glicemia da parte di persone con diabete. Può scansionare sensori Freestyle Libre (0 e 2) (via NFC) e ricevere (via Bluetooth) valori di glucosio da Freestyle Libre 2 , 2+ , 3 , 3+ , Sibionics GS1Sb , Dexcom G7/ONE+ ,…</span>
     </li>
     <li>
-      <a href="about.html">Juggluco è stato scritto da Jaap Korthals Altes</a>
-      <span class="desc">Oltre alle librerie standard di Android, abbiamo I seguenti: comandi NFC e Bluetooth e l'algoritmo di interpretazione specifici della Abbott per il sensore FreeStyle Libre.</span>
+      <a href="about.html">About</a>
+      <span class="desc">Juggluco è scritto da Jaap Korthals Altes. Oltre alle librerie standard di Android, vengono usati: comandi NFC e Bluetooth specifici dei sensori Abbott FreeStyle Libre e algoritmi di interpretazione specifici dei sensori FreeStyle Libre.</span>
     </li>
     <li>
-      <a href="battery.html">Mantenere in attività</a>
-      <span class="desc">Normalmente quando un dispositivo android non viene utilizzato, questo in entra in modalità di riposo per usare meno energia. In questo modo l'applicazione non potrà usare le connessione TCP per scambiare dati.</span>
+      <a href="battery.html">Mantenere in funzione</a>
+      <span class="desc">Normalmente, quando un dispositivo Android non viene usato, entra in modalità doze per consumare meno energia.</span>
     </li>
     <li>
       <a href="sensorhelp.html">Sensore</a>
-      <span class="desc">Per connettere il sensore il Freestyle Libre 2 tramite il Low Energy Bluetooth, il Bluetooth deve essere acceso. Dopo aver scansionato il sensore con questa app, non succederà più nulla.</span>
+      <span class="desc">Lo spinner contiene il nome del sensore. Se Juggluco sta usando più di un sensore contemporaneamente, puoi selezionare il sensore di cui mostrare le informazioni.</span>
     </li>
     <li>
-      <a href="advancedhelp.html">Dispositivi modificati</a>
-      <span class="desc">Una delle librerie usate dall'applicazione Juggluco ha un BUG che la fa crashare se vengono rilevati determinati file. Il tuo dispositivo potrebbe contenerli nella sua memoria.</span>
+      <a href="sensorinfo.html">Info sensore</a>
+      <span class="desc">Mostra avvio, ultimo flusso, ultima scansione e gli orari di fine prevista e ufficiale del sensore. Riscaldamento : per i sensori Sibionics e Linx/Lumiflex/Aidex X puoi cambiare il numero di minuti del periodo di riscaldamento.</span>
     </li>
     <li>
-      <a href="labelhelp.html">Etichette per valori immessi</a>
-      <span class="desc">Qui è possibile creare, eliminare e modificare le etichette per le quantità aggiunte a mano nel grafico di unità di insulina, carboidrati oppure attività fisica. Se hai già inserito delle quantità, queste prenderanno l'etichetta corrispondente a quella scelta.</span>
+      <a href="sensormirror.html">Informazioni sensore</a>
+      <span class="desc">Fornisce informazioni sui sensori quando Juggluco funziona come mirror dei valori di flusso: Avviato: ora di avvio del sensore. Sui sensori Libre questa è un'ora prima dei primi valori di glucosio. Ultima scansione: ultima volta che il sensore è stato scansionato.</span>
     </li>
     <li>
-      <a href="newlabelhelp.html">Etichette:</a>
-      <span class="desc">Il nome delle etichette è usato per inserire Valori. Puoi inserire valori collegandoli ad una certa data e una certa ora usando “Nuovo valore” nel menu sinistra-centro. Questi numeri saranno visualizzati sul grafico al momento impostato, oppure in una tabella.</span>
+      <a href="calibrationhelp.html">Calibrazione</a>
+      <span class="desc">Juggluco 10.0.0 e successivi hanno la possibilità di calibrare i sensori. Glucosio capillare : Specifica quale etichetta corrisponde alle misurazioni di glucosio capillare ottenute dal pungidito.</span>
+    </li>
+    <li>
+      <a href="calibrationslist.html">Calibrazioni</a>
+      <span class="desc">Mostra le calibrazioni effettuate per questo sensore. Ogni calibrazione consiste nell'ora in cui è stata fatta, la pendenza (a) e l'intercetta b della relazione tra il glucosio capillare e il glucosio del sensore: Glucosio capillare=a*GlucosioSensore+b. Quando "cambia pendenza" non è impostato…</span>
+    </li>
+    <li>
+      <a href="changestart.html">Cambia inizio</a>
+      <span class="desc">Cambia la data e l'ora a partire dalle quali i dati saranno inviati a Libreview. Può essere utile quando alcuni dei dati sono già presenti su Libreview.</span>
+    </li>
+    <li>
+      <a href="DeviceList.html">Dispositivi glucometro</a>
+      <span class="desc">Cerca dispositivi glucometro. I dispositivi trovati vengono visualizzati qui. I dispositivi già connessi non saranno trovati. La prima volta i dispositivi devono essere portati in modalità di accoppiamento, ad esempio avviando il dispositivo con una pressione lunga del pulsante fino a quando una luce blu lampeggia.</span>
+    </li>
+    <li>
+      <a href="GlucoseMeter.html">Glucometro</a>
+      <span class="desc">Juggluco aggiungerà solo i valori di glucosio con un timestamp successivo alla data e ora specificate. Cambia in una data e ora successive se valori di glucosio precedenti sono già presenti in Juggluco. Seleziona l'etichetta per il glucosio capillare.</span>
+    </li>
+    <li>
+      <a href="GlucoseMeterList.html">Lista glucometri</a>
+      <span class="desc">Juggluco può ricevere via Bluetooth misurazioni di glucosio capillare da alcuni glucometri. Se hai un Contour Next ONE, puoi aggiungerlo a Juggluco scansionando la data matrix sul glucometro tramite menu sinistro→Foto.</span>
+    </li>
+    <li>
+      <a href="labelhelp.html">Etichette per i valori</a>
+      <span class="desc">Qui puoi creare , cancellare e modificare etichette per le quantità aggiunte al grafico per indicare insulina, carboidrati o attività fisica. Se hai già salvato delle quantità, queste prenderanno l'etichetta corrispondente alla loro posizione.</span>
+    </li>
+    <li>
+      <a href="newlabelhelp.html">Etichetta:</a>
+      <span class="desc">Nome dell'etichetta da usare per inserire numeri. Puoi aggiungere un numero collegato a una certa data e ora usando "Nuovo valore" nel menu centrale sinistro. Questi numeri possono essere visualizzati nel grafico del glucosio in quella posizione temporale o in una lista.</span>
+    </li>
+    <li>
+      <a href="newamount.html">Nuovo valore</a>
+      <span class="desc">Con Nuovo valore puoi inserire numeri associati a un'etichetta arbitraria. Puoi impostare le etichette in menu sinistro→Impostazione→Etichette numeriche. I valori inseriti con una particolare etichetta saranno mostrati a una certa altezza nel grafico determinata dall'etichetta.</span>
     </li>
     <li>
       <a href="mealhelp.html">Pasti</a>
-      <span class="desc">Specificare la quantità di ingredienti dei pasti. Il totale dei carboidrati contenuti sarà calcolato.</span>
+      <span class="desc">Specifica la quantità di ingredienti di un pasto. Verrà quindi calcolato il contenuto totale di carboidrati.</span>
     </li>
     <li>
-      <a href="nutrients.html">Database per I compositivi dei cibi</a>
-      <span class="desc">Puoi trovare informazioni in The Composition of Foods Integrated Dataset 2021 https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid (da McCance and Widdowson). Puoi anche cercare usando espressioni regolari ( https://dl.</span>
+      <a href="nutrients.html">Database composizione alimenti</a>
+      <span class="desc">Qui puoi cercare alimenti in McCance and Widdowson's The Composition of Foods Integrated Dataset 2021 https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid Puoi cercare usando espressioni regolari ( https://www.</span>
     </li>
     <li>
       <a href="reminders.html">Promemoria</a>
-      <span class="desc">I promemoria ti ricordano di registrare una certa quantità di qualcosa in un certo intervallo di tempo. Premendo Nuovo puoi inserire un nuovo promemoria.</span>
+      <span class="desc">I promemoria ti ricordano se non hai inserito una certa quantità entro un certo intervallo di tempo. Premendo NUOVO puoi aggiungere un nuovo promemoria.</span>
     </li>
     <li>
-      <a href="alarmhelp.html">Allarmi del Glucosio:</a>
-      <span class="desc">I sensori FreeStyle libre 2 possono inviare I valori del glucosio tramite la funzione Low energy del Bluetooth ad uno smartphone. Questo può essere usato per segnalare valori pericolosamente bassi oppure valori alti insalubri.</span>
+      <a href="schedulehelp.html">Pianificazioni</a>
+      <span class="desc">Pianifica i profili in modo che diventino attivi a una determinata ora. Premi "Nuovo" per creare un'associazione tra una certa ora e un profilo. Juggluco passerà ogni giorno a quel profilo all'ora specificata. Puoi modificare un'associazione ora-profilo toccandola.</span>
     </li>
     <li>
-      <a href="ringtone.html">Suonerie</a>
-      <span class="desc">Selezionare quale suoneria riprodurre per un allarme o una notifica e dopo quanti secondi si deve fermare o per quanto tempo si deve ripetere. Se un valore del glucosio si mantiene troppo alto o troppo basso, l'allarme non si attiverà una volta sola.</span>
+      <a href="staticnum.html">Bloccato</a>
+      <span class="desc">Menu centrale sinistro→Mirror→"Mirror invia i valori" è impostato per impedire l'inserimento di valori in questa app, perché verrebbero sovrascritti dai valori ricevuti dalla connessione mirror. Se questa app non riceve valori da una connessione mirror, disattiva questa opzione.</span>
+    </li>
+    <li>
+      <a href="IOB.html">IOB</a>
+      <span class="desc">→ https://www.juggluco.nl/Jugglucohelp/IOBhelp.html</span>
+    </li>
+    <li>
+      <a href="IOBhelp.html">Insulina a bordo (IOB)</a>
+      <span class="desc">L'IOB è una misura di quanta insulina rimane dalle dosi precedenti. Prima di Juggluco 9.2.0 si usava la curva di Concentrazione Plasmatica dell'Insulina Aspart per stimare l'IOB.</span>
+    </li>
+    <li>
+      <a href="alarmhelp.html">Allarmi</a>
+      <span class="desc">Allarmi del glucosio: I valori di flusso ricevuti via Bluetooth possono essere usati per impostare allarmi di glucosio basso e alto. Allarme di glucosio basso: Valore al di sotto del quale (compreso) deve scattare un allarme. Allarme di glucosio alto: Valore al di sopra del quale (compreso) deve scattare un allarme.</span>
+    </li>
+    <li>
+      <a href="advancedAlarmshelp.html">Allarmi avanzati</a>
+      <span class="desc">Allarme glucosio molto basso: Secondo allarme basso che scatta quando il glucosio è inferiore all'allarme glucosio basso. Allarme glucosio molto alto: Secondo allarme alto che scatta quando il glucosio è superiore all'allarme glucosio alto.</span>
+    </li>
+    <li>
+      <a href="ringtone.html">Suoneria</a>
+      <span class="desc">Seleziona quale suoneria riprodurre per un allarme o una notifica e per quanti secondi. Minuti di disattivazione : Se un livello di glucosio basso o alto continua, l'allarme non scatterà di nuovo immediatamente.</span>
+    </li>
+    <li>
+      <a href="disturbhelp.html">Accesso a "Non disturbare"</a>
+      <span class="desc">Su alcuni dispositivi gli allarmi non funzionano in modalità "Non disturbare". Con "Disturba" puoi specificare se "Non disturbare" debba essere disattivato prima di riprodurre l'allarme.</span>
+    </li>
+    <li>
+      <a href="talkhelp.html">Pronuncia</a>
+      <span class="desc">Pronuncia glucosio: pronuncia i valori di glucosio quando arrivano. Secondi tra : specifica quanti secondi Juggluco deve aspettare prima di pronunciare il valore di glucosio successivo. I valori di glucosio sono sempre pronunciati immediatamente quando arrivano.</span>
+    </li>
+    <li>
+      <a href="displayhelp.html">Impostazioni Display</a>
+      <span class="desc">Colori: cambia i colori delle curve, scansioni e numeri. Per attivare la Modalità scura, usa menu centrale destro→Modalità scura. Range del grafico: basso-alto. Inserisci un valore basso e uno alto, in modo che il fondo dello schermo corrisponda al più basso e la cima al più alto.</span>
     </li>
     <li>
       <a href="colorhelp.html">Colori</a>
-      <span class="desc">Qui puoi cambiare il colore dei numero, delle curve e dei punti che indicano una scansione. Toccando un punto sulla curva, una scansione o un valore immesso (quindi le informazioni di quel punto o I valori numerici dei valori immessi).</span>
+      <span class="desc">Qui puoi cambiare i colori di numeri, curve e punti di scansione. Tocca un punto di una curva, una scansione o un valore (in modo che vengano mostrate le informazioni su quel punto o valore). Successivamente tocca un colore nella vista colori.</span>
     </li>
     <li>
-      <a href="settinghelp.html">Impostazioni</a>
-      <span class="desc">Unità: Selezionare l'unità di misura del glucosio tra mmol/L e mg/dL. Range del grafico: basso-alto.</span>
+      <a href="floatingconfig.html">Glucosio flottante</a>
+      <span class="desc">Qui puoi impostare la dimensione del font e i colori di primo piano e di sfondo del glucosio flottante. Toccabile : se impostato, puoi spostare il glucosio flottante con il dito e renderlo piccolo con una pressione lunga (senza muoverlo).</span>
     </li>
     <li>
-      <a href="searchhelp.html">Ricerca</a>
-      <span class="desc">La ricerca può essere usata per trovare valore di glucosio e valori registrati. Puoi cercare valori compresi tra dei valori dati . Per esempio: 10 – 999 cercherà solo I valori compresi tra 10 e 999.</span>
+      <a href="settinghelp.html">Impostazione</a>
+      <span class="desc">Unità: seleziona se i valori di glucosio devono essere dati in mmol/L o mg/dL. Suono NFC: emette un suono durante la scansione oltre alla vibrazione. Una scansione avvia l'app: se selezionato, questa app verrà avviata quando scansioni un sensore via NFC anche se l'app non è visualizzata.</span>
     </li>
     <li>
-      <a href="searchhelp_draft.html">Search</a>
-      <span class="desc">Search can be used to find glucose values and entered numbers. You search for values between the given numbers . For example: 10 – 999 to search for values between 10 and 999. Glucose values are separated in Scan, History and Stream.</span>
+      <a href="searchhelp.html">Cerca</a>
+      <span class="desc">La ricerca può essere usata per trovare valori di glucosio e numeri inseriti. Si cercano valori compresi tra i numeri dati. Per esempio: 10 – 999 per cercare valori compresi tra 10 e 999. I valori di glucosio sono separati in Scansione, Cronologia e Flusso.</span>
     </li>
     <li>
       <a href="stathelp.html">Statistiche</a>
-      <span class="desc">Alcune statistiche sono prese da AGP senza licenza, con qualche piccola modifica. Il numero di giorni analizzato può essere modificato premendo il bottone Giorni . Il periodo terminerà con il valore di fine della posizione dello schermo.</span>
+      <span class="desc">Alcune statistiche prese da AGP con qualche piccola modifica. Il numero di giorni analizzati può essere modificato premendo il pulsante Giorni. Il periodo termina al momento della fine della posizione sullo schermo e copre il numero specificato di giorni nel passato.</span>
+    </li>
+    <li>
+      <a href="loghelp.html">Log</a>
+      <span class="desc">Questa è una versione di Juggluco con log. I file di log possono essere creati in /data/data/tk.glucodata/files/logs. trace.log contiene i messaggi di log che Juggluco stesso crea. logcat.txt contiene i messaggi di log che Android crea in relazione a Juggluco.</span>
+    </li>
+    <li>
+      <a href="helpexport.html">Esporta</a>
+      <span class="desc">Esporta dati da Juggluco in un file. I pasti sono salvati in html. Tutti gli altri dati sono salvati in .tsv ( Tab-separated values ). Possono essere caricati in programmi come LibreOffice Calc, Microsoft Excel, Mathematica o R. È un tipo di .</span>
     </li>
     <li>
       <a href="connectionoverview.html">Mirror</a>
-      <span class="desc">Inviare o ricevere dati da un altro dispositivo. Tu puoi connettere un dispositivo android con Juggluco per visualizzare gli stessi dati un altro dispositivo con Juggluco.</span>
+      <span class="desc">Invia o ricevi dati da un altro dispositivo. Puoi connetterti a un dispositivo Android con Juggluco in esecuzione per visualizzare i dati nello stesso modo. Dopo aver ricevuto i dati di scansione, il dispositivo mirror può anche contattare il sensore via Bluetooth.</span>
     </li>
     <li>
-      <a href="addconnection.html">Aggiungere una connessione</a>
-      <span class="desc">Stabilire una connessione con un'altra istanza di Juggluco. Juggluco installato su un dispositivo può inviare dati via IP/TCP ad un altro dispositivo.</span>
+      <a href="addconnection.html">Aggiungi connessione</a>
+      <span class="desc">Specifica una connessione con un'altra istanza di Juggluco. Juggluco su un dispositivo invia via IP/TCP dati a Juggluco su un altro dispositivo. Per stabilire una connessione, uno dei Juggluco deve ascoltare su una porta e l'altro deve contattare quella porta.</span>
+    </li>
+    <li>
+      <a href="QRmirror.html">QR mirror</a>
+      <span class="desc">Puoi configurare l'altro lato di una connessione mirror scansionando un QR code con menu sinistro → Foto sull'altro telefono. Con menu centrale sinistro→Mirror→QR automatico, entrambi i lati della connessione vengono generati automaticamente.</span>
+    </li>
+    <li>
+      <a href="autoqrmessage.html">AutoQR</a>
+      <span class="desc">Genera una connessione su questo telefono e mostra un QR code che può essere scansionato da un altro dispositivo Android. Scansionando il QR code con menu sinistro→Foto sull'altro telefono verrà generata una connessione che riceverà o invierà tutti i dati da o verso questo telefono.</span>
+    </li>
+    <li>
+      <a href="turnservers.html">Turn server</a>
+      <span class="desc">Una connessione ICE verrà usata quando si genera una connessione autoQR via Internet o quando si imposta ICE specificando manualmente una connessione. Quando Interactive Connectivity Establishment (ICE) non riesce a stabilire una connessione diretta tra due istanze di…</span>
+    </li>
+    <li>
+      <a href="Nightscouthelp.html">Web server</a>
+      <span class="desc">Juggluco incorpora un web server con cui altre app possono ricevere i valori di glucosio da Juggluco. Può essere usato dagli orologi xDrip e da alcune app Nightscout. Usare app fatte per usare il web server xDrip è relativamente facile. Basta selezionare attivo.</span>
+    </li>
+    <li>
+      <a href="NightPost.html">Carica su server Nightscout</a>
+      <span class="desc">Nella maggior parte dei casi puoi anche usare il web server in Juggluco o juggluco-server. Solo poche app, che non fanno altro che mostrare la pagina web Nightscout, hanno bisogno di cgm-remote-monitor. Puoi anche usare AAPS e AAPSClient con il web server in Juggluco 7.4.1.</span>
+    </li>
+    <li>
+      <a href="libreview.html">Libreview</a>
+      <span class="desc">Juggluco può inviare dati di glucosio e valori a Libreview. Come l'app Librelink, invia i dati degli ultimi 89 giorni a Libreview. Per usare questo servizio, devi creare un account Libreview su https://libreview.</span>
+    </li>
+    <li>
+      <a href="librenumhelp.html">Librenum</a>
+      <span class="desc">Imposta " Invia valori " per inviare i valori a Libreview. Prima di poter attivare " Invia valori ", devi specificare per ogni etichetta come i valori inseriti con quell'etichetta debbano essere inviati a Libreview.</span>
+    </li>
+    <li>
+      <a href="setlibrenumtype.html">Setlibrenumtype</a>
+      <span class="desc">Allo stesso modo che per Libreview, puoi anche specificare come rappresentare i valori tramite il server Nightscout in Juggluco. Seleziona come i Valori in Juggluco inseriti con una particolare etichetta debbano essere inviati a Libreview.</span>
+    </li>
+    <li>
+      <a href="nightnumhelp.html">Nightnum</a>
+      <span class="desc">Imposta "Inserisci valori" per rendere i valori accessibili tramite il web server Nightscout in Juggluco. Prima di poter attivare "Inserisci valori", devi specificare per ogni etichetta come i valori inseriti con quell'etichetta debbano essere forniti.</span>
+    </li>
+    <li>
+      <a href="getaccountidhelp.html">Ottieni Account ID</a>
+      <span class="desc">Come ottenere l'Account ID Libreview necessario per scansionare un sensore Freestyle Libre 3 via NFC? Se specifichi " Manualmente ", puoi inserire l'Account ID manualmente.</span>
+    </li>
+    <li>
+      <a href="exchangehelp.html">Scambio dati</a>
+      <span class="desc">Health Connect: invia i valori di glucosio minuto per minuto a Health Connect. Puoi dare ad altre app accesso a questi valori di glucosio, per esempio Google Fit. Altre app a loro volta possono accedere ai dati da Google Fit.</span>
     </li>
     <li>
       <a href="watchinfo.html">Orologio</a>
-      <span class="desc">Al momento juggluco ha quattro modi per inviare I valori di glucosio al tuo orologio. Notify Se Notifica è attivo nel menu sinistra-centro, una notifica Android verrà creata ogni volta che arriverà un nuovo valore di glucosio.</span>
+      <span class="desc">Attualmente, Juggluco ha sei modi per ottenere i valori di glucosio sul tuo orologio. Notifica: quando Notifica è attivo, viene creata una notifica Android ogni volta che arriva un nuovo valore di glucosio.</span>
     </li>
     <li>
       <a href="kerfstok.html">Kerfstok</a>
-      <span class="desc">Su tutti gli orologi che possono ricevere le notifiche da android, puoi ricevere una notifica per ogni nuovo valore di glucosio.</span>
+      <span class="desc">Kerfstok ( https://apps.garmin.com/en-US/apps/b6348ccc-86d8-4780-8013-d9e19fed5260 (vedi anche https://www.juggluco.nl/Kerfstok/index.html ) è un'app per orologi Garmin sportivi che permettono app di terze parti. Dalla 1.6.0 anche per orologi senza touchscreen.</span>
     </li>
     <li>
-      <a href="shortcuthelp.html">Shortcut</a>
-      <span class="desc">Scorciatoie che possono essere usate in Kerfstok su alcuni smartwatch Garmin. Nella schermata per inserire numeri dell'orologio puoi raggiungere la pagine delle scorciatoie (sul mio Vivoactive 3 bisogna strusciare verso sinistra).</span>
+      <a href="garminconfig.html">Configurazione Kerfstok</a>
+      <span class="desc">Il sorgente di Kerfstok può essere scaricato da https://www.juggluco.nl/Kerfstok/Kerfstok-source.html ). Gli utenti sono liberi di modificarlo. Ogni app per orologio ha un identificatore unico.</span>
     </li>
     <li>
-      <a href="wearosinfo.html">Wear Os</a>
-      <span class="desc">Una versione speciale di Juggluco può avviarsi direttamente sugli orologi Wear Os. Essa necessità di una smartphone Android con NFC per scansionare il sensore ed inviare I dati con una connessione TCP direttamente all'orologio.</span>
+      <a href="shortcuthelp.html">Le scorciatoie possono essere usate in Kerfstok.</a>
+      <span class="desc">Nella schermata di inserimento numeri sull'orologio puoi accedere alla schermata delle scorciatoie (sul mio orologio Vivoactive 3 strusciando verso sinistra). Qui vedi una lista di etichette; premendo su una di esse viene inserito un valore corrispondente nella schermata numeri.</span>
     </li>
     <li>
-      <a href="locationpermission.html">Location</a>
-      <span class="desc">Nel passato Juggluco aveva bisogno dei permessi relativi alla posizione per trovare l'indirizzo Bluetooh del sensore Freestyle libre 2.</span>
+      <a href="wearosinfo.html">Wear OS</a>
+      <span class="desc">Inserisci numeri (valori) sull'orologio: inserisci valori per insulina, carboidrati e attività sull'orologio (secondo menu→ "Valore") invece che sul telefono. Se vuoi scansionare le Novopen con il telefono, non dovresti impostarlo.</span>
     </li>
     <li>
-      <a href="nearbypermission.html">Nearby</a>
-      <span class="desc">Android 12 ha bisogno di nuovi permessi per il Bluetooth con uno specifico consenso all'uso. Le vecchie app non smettevano immediatamente di funzionare ma ora per andare hanno bisogno di questi nuovi permessi.</span>
+      <a href="notificationpermission.html">Notifiche</a>
+      <span class="desc">A meno che Juggluco non sia usato con sensori Freestyle Libre 0, Juggluco deve rimanere attivo in background per ricevere una lettura di glucosio ogni minuto, sia direttamente dal sensore via Bluetooth sia tramite una connessione di rete.</span>
+    </li>
+    <li>
+      <a href="locationpermission.html">Permesso di posizione</a>
+      <span class="desc">I dispositivi con Android da 6 a 11 hanno bisogno del permesso di posizione per trovare i dispositivi Bluetooth. Questa scansione di dispositivi Bluetooth è necessaria per Sibionics e Dexcom ed è anche usata da Juggluco su Android 6, 7 e 7.1</span>
+    </li>
+    <li>
+      <a href="nearbypermission.html">Permesso DISPOSITIVI VICINI</a>
+      <span class="desc">Juggluco ha bisogno del permesso DISPOSITIVI VICINI per ricevere via Bluetooth i valori di glucosio dai sensori Freestyle Libre 2 e 3. Se Juggluco riceve questi valori di glucosio da Juggluco in esecuzione su un altro telefono o orologio, Juggluco non ha bisogno di questo permesso.</span>
+    </li>
+    <li>
+      <a href="camerapermission.html">Permesso CAMERA</a>
+      <span class="desc">Per usare un sensore Sibionics, devi scansionare una data matrix sulla confezione usando la fotocamera del telefono.</span>
     </li>
     <li>
       <a href="flashpermission.html">Flash</a>
-      <span class="desc">Dipendentemente dal proprio smartphone il permesso per l'uso del flash della videocamera va impostato. Nella versione precedente di Juggluco questo permesso era richiesto.</span>
+      <span class="desc">Si afferma talvolta che l'uso del flash della fotocamera richieda il permesso Camera su alcuni smartphone. A causa di questo Juggluco richiedeva quel permesso nelle versioni precedenti.</span>
+    </li>
+    <li>
+      <a href="healthpermission.html">Permesso di scrivere il glucosio capillare</a>
+      <span class="desc">Per poter scrivere i valori di glucosio in Health Connect, l'utente deve dare a Juggluco il permesso di scrivere Glucosio capillare in Health Connect. Questo permesso non è necessario per altro che ricevere i valori di glucosio in Health Connect.</span>
     </li>
   </ul>
 </body>

@@ -2,86 +2,100 @@
 <html>
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-	<title>Statistics</title>
-	<meta name="generator" content="LibreOffice 7.5.7.1 (Linux)"/>
+	<title>Statistiche</title>
+	<meta name="generator" content="LibreOffice 7.5.8.2 (Linux)"/>
 	<meta name="created" content="00:00:00"/>
-	<meta name="changedby" content="Matteo Gabriele"/>
-	<meta name="changed" content="2022-02-11T16:50:40.959959082"/>
-	<meta name="created" content="00:00:00">
-	<meta name="created" content="00:00:00">
-	<meta name="created" content="00:00:00">
-	<meta name="created" content="00:00:00">
-	<meta name="created" content="00:00:00">
-	<meta name="created" content="00:00:00">
+	<meta name="changed" content="2023-12-25T10:32:53.684602023"/>
 	<style type="text/css">
 		@page { size: 8.27in 11.69in; margin-left: 0.79in; margin-right: 0.39in; margin-top: 0.39in; margin-bottom: 0.39in }
 		h1 { margin-bottom: 0.08in; background: transparent }
 		h1.western { font-family: "Liberation Serif", serif }
-		h1.cjk { font-family: "Noto Serif CJK SC" }
-		h1.ctl { font-family: "Mangal" }
+		h1.cjk { font-family: "Noto Serif CJK SC"; font-size: 24pt }
+		h1.ctl { font-family: "Mangal"; font-size: 24pt }
 		p { line-height: 115%; margin-bottom: 0.1in; background: transparent }
 		h3 { margin-top: 0.1in; margin-bottom: 0.08in; background: transparent }
 		h3.western { font-family: "Liberation Serif", serif }
 		h3.cjk { font-family: "Noto Serif CJK SC" }
 		h3.ctl { font-family: "Mangal" }
-		a:link { so-language: zxx }
 	</style>
-</head>
+ <img src="stats.png"  style="object-fit:contain; width:15cm;                   height:auto;">
+ <img src="summarygraph.png"  style="object-fit:contain; width:15cm;                   height:auto;">
 <body lang="it-IT" dir="ltr"><h1 class="western">Statistiche</h1>
-<p><span lang="it-IT">Alcune statistiche sono prese da <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8991298">AGP</a>
-senza licenza, con qualche piccola modifica.</span></p>
-<p>Il numero di giorni analizzato può essere modificato premendo il
-bottone <b>Giorni</b><span style="font-weight: normal">. Il periodo
-terminerà con il valore di fine della posizione dello schermo. Tutti
-I dati sono basati solo sul valore di glucosio ricevuto ogni minuto
-via Bluetooth dal sensore (chiamato </span><i><span style="font-weight: normal">Flusso</span></i>
-<span style="font-variant: normal"><span style="font-style: normal"><span style="font-weight: normal">in
-Juggluco).</span></span></span></p>
-<p style="font-variant: normal; font-style: normal; font-weight: normal">
-Sulla sinistra dello schermo c'è la percentuale di misure che
-ricadono in un determinato range.</p>
-<h3 class="western">% di tempo attivo</h3>
-<p>La percentuale di tempo in cui Juggluco ha ricevuto I valori dal
-sensore.</p>
+<p>Alcune statistiche prese da <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8991298">AGP</a>
+con alcune piccole modifiche.</p>
+<p>Il numero di giorni analizzati può essere modificato premendo il
+pulsante <b>Giorni</b>. Il periodo termina al momento della
+posizione di fine schermo e si estende per il numero di giorni
+specificato a ritroso nel tempo. Tutti i dati sono basati solo sui
+valori del glucosio ricevuti ogni minuto tramite Bluetooth dal
+sensore (chiamato <i>flusso</i> in Juggluco).</p>
+<p>Sulla sinistra dello schermo ci sono le percentuali di
+misurazioni che rientrano in determinati intervalli di glucosio.
+Gli intervalli standard sono sempre mostrati. Quando viene
+specificato un range target non standard in <a href="https://www.juggluco.nl/Jugglucohelp/displayhelp.html">menu
+sinistro-&gt;Impostazione-&gt;Display</a>, il tempo in quel range
+target è mostrato sotto gli intervalli standard.</p>
+<h3 class="western">% del tempo attivo</h3>
+<p>La percentuale di tempo in cui Juggluco ha ricevuto valori del
+glucosio dal sensore.</p>
 <h3 class="western">A1C stimata</h3>
-<p><span lang="it-IT">Stima l'HbA1c con una vecchia formula basata
-sulla media glicemica (Nathan et al (2008)). Vedi
-<a href="https://professional.diabetes.org/diapro/glucose_calc">https://professional.diabetes.org/diapro/glucose_calc</a>
-per il calcolatore.</span></p>
-<p>Questo valore viene mostrato perchè c'è chi è abituato ad esso
-nell'app ufficiale del Libre 2. Dal 2018 il GMI ha rimpiazzato questo
-indicatore.</p>
+<p>Stima l'HbA1c dal glucosio medio usando una formula più vecchia
+(Nathan et al., 2008). Vedi
+<a href="https://professional.diabetes.org/diapro/glucose_calc">https://professional.diabetes.org/diapro/glucose_calc</a></span>
+<span lang="it-IT">per una calcolatrice.</span></p>
+<p><span lang="it-IT">È mostrata qui</span> <span lang="it-IT">nel
+caso le persone stiano cercando il valore mostrato nell'app Libre</span>
+<span lang="it-IT">2 di Abbott. GMI è un sostituto del 2018 per
+questo indicatore. </span>
+</p>
 <h3 class="western">Glucose Management Indicator (GMI)</h3>
-<p><span lang="it-IT">E' calcolato dalla media glicemica con una
-certa formula particolare (see <a href="https://www.jaeb.org/gmi/">https://www.jaeb.org/gmi/</a>).
-E' una predizione empirica dell'HbA1c (anche chiamata A1c),
-restituita in percentuale e in mmol/mol. Personalmente credo che la
-A1C stimata sia un predittore migliore del GMI, ma tanto per dire nel
-Libre 3 verrà usato solo il GMI.</span></p>
-<h3 class="western">Variabilità del glucosio:</h3>
-<p>Il coefficiente di variazione (%CV), come misura della variabilità
-del glucosio. Alti valori significano che il livello del glucosio è
-poco costante.</p>
-<h3 class="western">Grafico di sommario</h3>
-<p>Tutti I valori di Flusso del glucosio sono presi e usati per
-comporre un grafico che mostra per ogni minuto del giorno come I
-valori sono distribuiti. La linea mediana nera mostra I valori sotto
-al 50 percento dei valori di tutto il giorno. L'area blu chiara è
-l'area in cui si trovano tutti I valori. Da qualche parte ci sarà
-un'area blu leggermente più scura che rappresenta la mediana in cui
-trovare il 90% percento di tutti I valori. L'area blu ancora più
-scura ne rappresenta il 50%. Se vedi I bordi delle area come linee:
-sotto la la linea più bassa ci sono lo 0% dei valori, sotto la
-seconda più bassa (tra l'area blu chiara e quella mediamente più
-scura) il 5% dei valori, sotto la terza linea (tra quella mediamente
-scura e quella più scura) il 25%, infine sotto alla nera il restante
-50%. A seguire 75%, 95% e 100%.</p>
-<p>Per questioni estetiche le curve sono smussate usando un filtro
+<p><span lang="it-IT">Calcolato dal glucosio medio con una certa
+formula generalmente utilizzata (vedi <a href="https://www.jaeb.org/gmi/">https://www.jaeb.org/gmi/</a>).
+È una predizione determinata empiricamente dell'HbA1c (chiamata
+anche A1c), data in percentuale e mmol/mol.</span> <span lang="it-IT">Per
+me personalmente l'A1C stimata è un predittore migliore del GMI,
+ma il GMI è usato nell'app Libre 3 di Abbott.</span></p>
+<h3 class="western">Variabilità glicemica:</h3>
+<p>Il coefficiente di variazione, %CV=(SD/media)*100%, come misura
+della variabilità glicemica. Un coefficiente di variazione più
+alto significa che i valori del glucosio sono più lontani dalla
+media.
+</p>
+<h3 class="western">Salva</h3>
+<p>Presenta un report dei tuoi valori del glucosio dei giorni
+specificati. Contiene statistiche, il grafico riassuntivo e
+un'immagine di giorni separati. Puoi stamparlo in PDF e inviarlo
+via e-mail al tuo professionista sanitario. Devi aver attivato menu
+sinistro→Impostazione→Scambio dati→Webserver. Apre l'url
+<a href="http://127.0.0.1:17580/x/report">http://127.0.0.1:17580/x/report</a>
+nel browser web.
+</p>
+<h3 class="western">Grafico riassuntivo</h3>
+<p>(Mostrato solo quando sono disponibili almeno 9 giorni di valori
+del glucosio del flusso.)</p>
+<p>Tutti i valori del glucosio del flusso in questo periodo
+vengono usati per disegnare un grafico composito che mostra per
+ogni minuto del giorno come erano distribuiti i valori del
+glucosio. La linea della mediana nera o bianca mostra il valore del
+glucosio al di sotto del quale si trovano il 50 percento dei valori
+del glucosio in ogni minuto del giorno. Il blu più chiaro è
+l'area in cui si trovano tutti i valori. Un blu un po' più scuro
+è l'area attorno alla mediana entro la quale si trova il 90% dei
+valori. Il blu più scuro è l'area attorno alla mediana del 50
+percento dei valori. Se vedi i bordi delle aree come linee, puoi
+anche descriverli come segue: Sotto la linea più bassa ci sono lo
+0% dei valori, sotto la seconda linea più bassa (tra il blu più
+chiaro e il blu medio scuro) il 5% dei valori, sotto la terza linea
+(tra il blu più scuro e il blu medio scuro) il 25% dei valori,
+sotto la linea nera il 50% dei valori. Seguito dal 75%, 95% e 100%.
+</p>
+<p>Per ragioni estetiche, la curva è smussata con un filtro
 binomiale.</p>
-<p>Premere sullo schermo per chiudere il grafico di sommario, eccetto
-la zona al bordo sinistro e a quello destro che permette di andare
-avanti e indietro nei giorni. La curva può anche muoversi
-scrollando. La scala del tempo può essere cambiata muovendo due dita
-una verso l'altra.</p>
+<p>Tocca un punto qualsiasi dello schermo per chiudere il Grafico
+riassuntivo — tranne il bordo sinistro o destro, che muove il
+grafico avanti o indietro nel giorno. La curva può essere
+spostata avanti e indietro anche scorrendo. La scala temporale
+può essere modificata muovendo due dita l'una verso o lontano
+dall'altra.</p>
 </body>
 </html>

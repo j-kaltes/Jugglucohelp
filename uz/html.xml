@@ -90,30 +90,6 @@ NIGHTSCOUTURL/api/v1/entries</pre>
 <p>Agar treatments’ni Diabetes:M ga yuklamoqchi bo‘lsangiz, ikki yo‘l bor: ma’lumotni Libreview’ga yuborib, u yerdan import qilish; yoki telefonning tashqi hostname’i uchun autentifikatsiyalangan kalit olib, external source sifatida Nightscout ni tanlash va URL ga <code>https://yourhostname:Port</code> ko‘rsatish. Bu avtomatik sinxronlashni doim qilmasligi mumkin, shuning uchun ba’zan Diabetes:M ichida qo‘lda <b>Sinx</b> bosish kerak bo‘ladi.</p>
 <p><b>Faol</b>: veb server ishlayapti.</p>
 <p>Juggluco amalga oshirgan Nightscout/xDrip veb server buyruqlari haqida batafsil: <a href="https://www.juggluco.nl/Juggluco/webserver.html">https://www.juggluco.nl/Juggluco/webserver.html</a>.</p>
-<h2>Qo‘shimcha havolalar</h2>
-<ul>
-<li><a href="https://github.com/dabear/FloatingGlucose/releases">Windows
-Floating Glucose</a></li>
-<li><a href="https://github.com/kashamalasha/nightscout-widget-electron">Owlet</a></li>
-<li><a href="https://github.com/someoneAnyone/Nightscouter">Nightscouter</a></li>
-<li><a href="https://github.com/jonfawcett/LoopFollow">LoopFollow</a></li>
-<li><a href="https://github.com/nightscout/nightguard">Nightguard</a></li>
-<li><a href="https://www.juggluco.nl/Jugglucohelp/addconnection.html">Add
-	Conection</a></li>
-<li><a href="https://certbot.eff.org/instructions">Certbot</a></li>
-<li><a href="https://www.freenom.com/">https://www.freenom.com</a></li>
-<li><a href="https://www.strato.nl/domeinnaam">https://www.strato.nl/domeinnaam</a></li>
-<li><a href="https://devpress.csdn.net/linux/62e7999e907d7d59d1c8cfd0.html">https://devpress.csdn.net/linux/62e7999e907d7d59d1c8cfd0.html</a></li>
-<li><a href="https://www.juggluco.nl/Juggluco/index.html#mirror">mirror</a></li>
-<li><a href="https://www.juggluco.nl/Jugglucohelp/connectionoverview.html">Mirror</a></li>
-<li><a href="https://play.google.com/store/apps/details?id=se.cornixit.nightwatch">Nightwatch</a></li>
-<li><a href="https://slingithub.github.io/CheckmateWeb">Checkmate</a></li>
-<li><a href="https://github.com/JohanDegraeve/xdripswift">Xdrip4ios</a></li>
-<li><a href="https://www.juggluco.nl/Juggluco/cmdline/index.html">https://www.juggluco.nl/Juggluco/cmdline</a></li>
-<li><a href="https://www.juggluco.nl/Juggluco/webserver.html#token">Nightscout
-token</a></li>
-<li><a href="http://127.0.0.1:17580/api/v1/treatments?count=3">http://127.0.0.1:17580/api/v1/treatments?count=3</a></li>
-</ul>
 ]]>
 </string>
 <string name="about" >
@@ -432,10 +408,6 @@ Ba\'zan ayrim smartfonlarda chiroqdan foydalanish Kamera ruxsatini talab qilishi
 <p><b>Glyukoza</b> ni belgilash glyukoza qiymatlari soatga yuborilishini belgilaydi.</p>
 <p><b>Sozlash</b>: qorong‘i rejim, qisqa yo‘llar va ID ni sozlaydi.</p>
 <p><b>Ogohlantirish:</b> Juggluco faqat bitta Kerfstok bilan ishlay oladi. Uni bir nechta soatdagi Kerfstok bilan yoki bir vaqtning o‘zida soat va velokompyuter bilan ulab bo‘lmaydi.</p>
-<h2>Qo‘shimcha havolalar</h2>
-<ul>
-<li><a href="https://www.juggluco.nl/Jugglucohelp/garminconfig.html">Config</a></li>
-</ul>
 ]]>
 </string>
 <string name="labelhelp" >
@@ -755,15 +727,6 @@ mumkin.</p>
 <p><b>Yig‘ma grafik</b> (kamida 9 kunlik oqim qiymatlari bo‘lganda ko‘rinadi): shu davrdagi barcha oqim qiymatlari kunning har bir daqiqasi uchun glyukozaning taqsimlanishini ko‘rsatadigan kompozit grafik chizish uchun ishlatiladi. Qora yoki oq median chiziq har daqiqada qiymatlarning 50 foizi undan past yotadigan glyukozani ko‘rsatadi. Eng och ko‘k rang barcha qiymatlar yotgan maydonni bildiradi. Sal to‘qroq ko‘k median atrofidagi 90% maydonni, eng to‘q ko‘k esa median atrofidagi 50% maydonni ko‘rsatadi. Agar bu maydon chegaralarini chiziq deb qarasangiz, ular mos ravishda 0%, 5%, 25%, 50%, 75%, 95% va 100% nuqtalarni bildiradi.</p>
 <p>Chiroyliroq ko‘rinish uchun egri chiziq binomial filtr bilan silliqlangan.</p>
 <p>Ekranga bosish Yig‘ma grafikni yopadi. Faqat chap yoki o‘ng chetga bosilsa, grafik kun bo‘yicha orqaga yoki oldinga siljiydi. Grafikni skroll qilish orqali ham surish mumkin. Vaqt masshtabini ikki barmoqni bir-biriga yaqinlashtirish yoki uzoqlashtirish bilan o‘zgartirish mumkin.</p>
-<h2>Qo‘shimcha havolalar</h2>
-<ul>
-<li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8991298">AGP</a></li>
-<li><a href="https://www.juggluco.nl/Jugglucohelp/displayhelp.html">left
-menu-&amp;gt;Settings-&amp;gt;Display</a></li>
-<li><a href="https://professional.diabetes.org/diapro/glucose_calc">https://professional.diabetes.org/diapro/glucose_calc</a></li>
-<li><a href="https://www.jaeb.org/gmi/">https://www.jaeb.org/gmi/</a></li>
-<li><a href="http://127.0.0.1:17580/x/report">http://127.0.0.1:17580/x/report</a></li>
-</ul>
 ]]>
 </string>
 <string name="staticnum" >
@@ -831,18 +794,10 @@ menu-&amp;gt;Settings-&amp;gt;Display</a></li>
 <h2><a href="https://www.juggluco.nl/Jugglucohelp/Nightscouthelp.html">xDrip soat ilovalari</a></h2>
 <p>Juggluco ichida xDrip/Nightscout veb serveri bor. Shu sababli xDrip soat ilovalarini Juggluco bilan bevosita ishlatish mumkin. xDrip odatda yangi glyukozani har 5 daqiqada ko‘rsatadi, Juggluco esa har daqiqada yangilaydi. Juggluco xDrip soat ilovalariga eng yangi mavjud qiymatni ham yuboradi. Biroq qiymatlar faqat soat ilovasi so‘raganda yuboriladi; demak ekranda ko‘rinayotgan qiymatning yoshi soat ilovasi qachon so‘rov yuborishiga bog‘liq bo‘ladi.</p>
 <p>Masalan, Garmin’dagi soat yuzlari va data field’lar odatda glyukozani har 5 daqiqada bir so‘raydi. xDrip orqali bu ko‘pincha 10 daqiqalik qiymat chiqishiga olib kelgan. Juggluco bilan to‘g‘ridan-to‘g‘ri bog‘langanda esa bu soat yuzlari odatda 6 daqiqagacha bo‘lgan yangi qiymatni ko‘rsatadi. Garmin’da Kerfstok’dan foydalana olmasangiz, yaqindagi glyukozani muntazam olish uchun xDrip widget’i, data field yoki sport ilovasidan foydalanish mumkin, lekin Garmin cheklovlari sabab bu usullar mukammal emas.</p>
-<p>Ilgari Juggluco veb serveridan Fitbit uchun Glance soat yuzi bilan ham foydalanish mumkin edi: <a href="https://glancewatchface.com/">https://glancewatchface.com</a>. 2024 yil o‘rtalaridan boshlab Fitbit soatlarida uchinchi tomon ilovalari va soat yuzlari qo‘llab-quvvatlanmaydi. Ayrim foydalanuvchilar joylashuvni AQShga o‘zgartirib va VPN’dan foydalanib uchinchi tomon ilovalarini yana o‘rnata olganini aytishadi.</p>
+<p>Ilgari Juggluco veb serveridan Fitbit uchun Glance soat yuzi bilan ham foydalanish mumkin edi: <a href="https://glancewatchface.com/">https://glancewatchface.com</a>. 2024 yil o‘rtalaridan boshlab Fitbit soatlarida uchinchi tomon ilovalari va soat yuzlari qo‘llab-quvvatlanmaydi. <a href="https://www.techradar.com/health-fitness/fitbit-watches-in-the-eu-will-lose-third-party-apps-and-watch-faces-heres-why">https://www.techradar.com/health-fitness/fitbit-watches-in-the-eu-will-lose-third-party-apps-and-watch-faces-heres-why</a>. Ayrim foydalanuvchilar joylashuvni AQShga o‘zgartirib va VPN’dan foydalanib uchinchi tomon ilovalarini yana o‘rnata olganini aytishadi.</p>
 <p>Veb server interfeysi haqida batafsil ma’lumot: <a href="https://www.juggluco.nl/Juggluco/webserver.html">https://www.juggluco.nl/Juggluco/webserver.html</a>.</p>
 <h2><a href="https://www.juggluco.nl/Jugglucohelp/wearosinfo.html">Wear OS Juggluco</a></h2>
 <p>Juggluco’ning Wear OS uchun moslashtirilgan alohida versiyasi ham bor. Unda kichik ekran uchun mos ko‘rinish va qo‘shimcha soat yuzi mavjud. U odatiy Wear OS soat yuzi sifatida o‘rnatiladi va vaqt bilan birga Bluetooth orqali olingan joriy glyukoza qiymatini ko‘rsatadi.</p>
-<h2>Qo‘shimcha havolalar</h2>
-<ul>
-<li><a href="https://play.google.com/store/apps/details?id=sk.trupici.g_watch">TizenOS</a></li>
-<li><a href="https://play.google.com/store/apps/details?id=sk.trupici.gwatch.wear">WearOS</a></li>
-<li><a href="https://apps.garmin.com/en-US/apps/73115e04-dc9f-4765-ad88-e7ae283ce995">https://apps.garmin.com/en-US/apps/73115e04-dc9f-4765-ad88-e7ae283ce995</a></li>
-<li><a href="https://apps.garmin.com/en-US/apps/aaf6533b-bca1-4365-9131-9f882f6f148c">https://apps.garmin.com/en-US/apps/aaf6533b-bca1-4365-9131-9f882f6f148c</a></li>
-<li><a href="https://www.techradar.com/health-fitness/fitbit-watches-in-the-eu-will-lose-third-party-apps-and-watch-faces-heres-why">https://www.techradar.com/health-fitness/fitbit-watches-in-the-eu-will-lose-third-party-apps-and-watch-faces-heres-why</a></li>
-</ul>
 ]]>
 </string>
 <string name="wearosinfo" >
@@ -909,29 +864,6 @@ menu-&amp;gt;Settings-&amp;gt;Display</a></li>
 <p>Uchinchi yo‘l — soatdagi Juggluco sozlamalarida <b>Suzuvchi glyukoza</b> ni yoqish. Kerakli ruxsatlar bo‘lsa, glyukoza qiymati boshqa ilovalar ustida ko‘rsatiladi. Shunda istalgan soat yuzi yoki faollikni kuzatadigan ilovadan foydalanganda ham joriy glyukozani ko‘rish mumkin.</p>
 <h2>Kuzatuvchilar</h2>
 <p>Hamroh ilova orqali yana boshqa qurilmalarga internet orqali chap o‘rta menyu→Mirror bo‘limida tasvirlangan usul bilan ma’lumot yuborish mumkin. Soatni internetdagi serverga to‘g‘ridan-to‘g‘ri ulab, u yerdan kuzatuvchi telefonga ma’lumot uzatish ham mumkin: <a href="https://www.juggluco.nl/Juggluco/cmdline/watch">https://www.juggluco.nl/Juggluco/cmdline/watch</a>.</p>
-<h2>Qo‘shimcha havolalar</h2>
-<ul>
-<li><a href="https://www.juggluco.nl/Jugglucohelp/newamount.html">Amount</a></li>
-<li><a href="https://www.juggluco.nl/Juggluco/index.html#novopens">Novopens</a></li>
-<li><a href="https://www.juggluco.nl/JugglucoWearOS/switch.html">Switch</a></li>
-<li><a href="https://www.juggluco.nl/Jugglucohelp/connectionoverview.html">Mirror</a></li>
-<li><a href="https://www.juggluco.nl/JugglucoWearOS/index.html">https://www.juggluco.nl/JugglucoWearOS</a></li>
-<li><a href="https://www.juggluco.nl/JugglucoWearOS/install/adb.html">Install</a></li>
-<li><a href="https://www.juggluco.nl/Jugglucohelp/wearosinfo.html">Wear
-	OS Config</a></li>
-<li><a href="https://www.juggluco.nl/Juggluco/cmdline">Juggluco
-server</a></li>
-<li><a href="#enteronwatch">Enter on
-	watch</a></li>
-<li><a href="https://play.google.com/store/apps/details?id=au.gondwanasoftware.timeandtrack">Time
-and Track</a></li>
-<li><a href="https://play.google.com/store/apps/details?id=tk.glucodata.watchfacepush.watchface2">Watchface
-for Juggluco</a></li>
-<li><a href="https://developer.samsung.com/watch-face-studio/download.html">Watch
-Face Studio</a></li>
-<li><a href="https://www.juggluco.nl/Jugglucohelp/floatingconfig.html">Floating
-glucose</a></li>
-</ul>
 ]]>
 </string>
 <string name="IOBhelp" >
@@ -1032,10 +964,10 @@ ni Health Connect ga yozish ruxsatini berishi kerak.
 <p>Jurnal oynasida Juggluco ning ichki hodisalari, ulanishlari, qayta ulanishlari va xatolari ko‘rinadi. U ayniqsa sensorga ulanish, Mirror, Nightscout, veb server va boshqa ma’lumot almashish muammolarini topishda foydali.</p>
 <p>Jurnalni o‘qiyotganda vaqt tartibiga e’tibor bering: qaysi amal bajarilgandan keyin qaysi xabar paydo bo‘lganini ko‘rish muhim. Shu usul bilan nosozlik aynan qaysi bosqichda yuz berayotganini topish osonlashadi.</p>
 <p>Agar muammo sensor bilan bog‘liq bo‘lsa, <a href="https://www.juggluco.nl/Jugglucohelp/sensorhelp.html">Sensor</a> yordam sahifasini ham ko‘ring. Tarmoq yoki qurilmalar o‘rtasidagi almashuv muammolari uchun <a href="https://www.juggluco.nl/Jugglucohelp/connectionoverview.html">Mirror</a> va <a href="https://www.juggluco.nl/Jugglucohelp/addconnection.html">Ulanish qo‘shish</a> foydali bo‘ladi. Veb xizmatlar bilan bog‘liq holatlarda <a href="https://www.juggluco.nl/Jugglucohelp/Nightscouthelp.html">Nightscout / veb server</a> sahifasiga qarang.</p>
-<h2>Qo‘shimcha havolalar</h2>
-<ul>
-<li><a href="mailto:&lt;a href=" mailto:jaapkorthalsaltes@gmail.com?subject=\'Log%20files"\'>jaapkorthalsaltes@gmail.com</a>?subject=Log%20files"&gt;jaapkorthalsaltes@gmail.com</li>
-</ul>
+<p>
+<a href="https://www.juggluco.nl/Juggluco/download.html#bugreport">Bug report</a></br>
+<a href="mailto:jaapkorthalsaltes@gmail.com?subject=Log%20files">jaapkorthalsaltes@gmail.com</a>
+</p>
 ]]>
 </string>
 <string name="sensormirror" >

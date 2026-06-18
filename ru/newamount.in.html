@@ -1,58 +1,20 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-	<title></title>
-	<base target="_blank">
-	<meta name="generator" content="LibreOffice 7.6.5.2 (Windows)"/>
-	<meta name="created" content="00:00:00"/>
-	<meta name="changed" content="2024-03-30T00:36:01.835000000"/>
-	<meta name="created" content="00:00:00">
-<base href="https://www.juggluco.nl/Jugglucohelp/" id="baseurl" target="_blank"></head>
-<img src="https://www.juggluco.nl/Jugglucohelp/newamount.png" name="Изображение1"  style="object-fit:contain; width:15cm;height:auto;"/> <body lang="en-US" dir="ltr">
-<h1><font face="Times New Roman, serif">Новая сумма</font></h1>
-<p><font face="Times New Roman, serif">С новой суммой вы
-можете ввести цифры, связанные с
-произвольной меткой. Вы можете установить
-метки в меню слева→ Настройки→ <a href="https://www.juggluco.nl/Jugglucohelp/ru/labelhelp.html">Цифровые
-метки</a>. Суммы, введенные с определенной
-меткой, будут отображаться на конкретной
-высоте на графике,</font> <font face="Times New Roman, serif">которую</font>
-<font face="Times New Roman, serif">определяет</font>
-<font face="Times New Roman, serif">метка.</font></p>
-<p><font face="Times New Roman, serif">Позже вы сможете
-изменить сумму, долго нажимая на нее.
-Вы также можете выбрать ее из списка
-введенных сумм в левом среднем меню→Список.</font></p>
-<p><font face="Times New Roman, serif">Также можно получить
-данные о дозах инсулина из <a href="https://www.juggluco.nl/Juggluco/index.html#novopens">NovoPen®
-6 или NovoPen Echo® Plus</a>, отсканировав NFC-ручку.
-После сканирования вы можете указать,
-под какой меткой</font> <font face="Times New Roman, serif">будут</font>
-<font face="Times New Roman, serif">сохраняться</font>
-<font face="Times New Roman, serif">дозы в Juggluco, и
-ограничить дозы дозами после определенной
-даты и времени. Когда в памяти ручки
-хранятся сотни доз, может пройти более
-30 секунд, прежде чем все они будут
-получены Juggluco с помощью NFC.</font></p>
-<p><font face="Times New Roman, serif">В меню слева-&gt;
-Настройки-&gt; <a href="https://www.juggluco.nl/Jugglucohelp/ru/labelhelp.html">Цифровые
-метки</a> также указывается, под какой
-меткой вы вводите углеводы для приема
-пищи. В новом количестве отображается
-кнопка Приема <a href="https://www.juggluco.nl/Jugglucohelp/ru/mealhelp.html">пищи</a>
-для этой метки. Нажатие на эту кнопку
-приема пищи приведет вас к окну, в котором
-вы можете указать</font> <font face="Times New Roman, serif">компоненты
-для</font> <font face="Times New Roman, serif">блюда. Затем
-рассчитывается содержание углеводов,
-или вы можете указать содержание
-углеводов, и затем рассчитывается
-необходимое количество одного ингредиента.</font></p>
-<p><br/>
-<br/>
-
-</p>
-</body>
-</html>
+<head><meta http-equiv="content-type" content="text/html; charset=utf-8"/><title>Новая запись</title>
+<style type="text/css">body { font-family: sans-serif; } p { line-height:115%; margin-bottom:0.25cm; } h2 { margin-top:0.35cm; } code { font-family:monospace; }</style>
+<script type="text/javascript">
+var unitstr='mg/dL';
+function getunitarg(){ const params=new URLSearchParams(document.location.search); const unit=params.get('unit'); if(unit==='mg/dL') return 2; if(unit==='mmol/L') return 1; return 0; }
+let mmol=["AM","AU","BA","BG","BW","BY","CA","CH","CN","CZ","DK","EE","FI","GB","HK","HR","HU","IE","IS","KW","KZ","LT","LV","MT","MY","NA","NL","NO","NZ","RS","RU","SE","SI","SK","UA","ZA"];
+function getunit(){ var unit=getunitarg(); if(unit!==0) return unit; var co=(navigator.language||navigator.userLanguage).toUpperCase(); for(const e of mmol) if(co.includes(e)) return 1; return 2; }
+unitstr=getunit()!==1?'mg/dL':'mmol/L';
+</script></head>
+<img src="newamount.png" alt="Новая запись" style="object-fit:contain; width:15cm; height:auto;">
+<body lang="ru-RU" dir="ltr"><h1>Новая запись</h1>
+<p>Через <b>Новая запись</b> можно вводить числа, связанные с любой меткой. Метки задаются в левое меню→Настройки→<a href="https://www.juggluco.nl/Jugglucohelp/labelhelp.html">Метки чисел</a>. <i>Записи</i>, введенные с определенной меткой, будут показаны на графике на высоте, заданной этой меткой.</p>
+<p>Позже запись можно изменить долгим нажатием. Ее также можно выбрать в списке введенных записей: левое среднее меню→<b>Список</b>.</p>
+<p>Данные о дозах инсулина можно также получать из <a href="https://www.juggluco.nl/Juggluco/index.html#novopens" onclick="location.href='https://www.juggluco.nl/Juggluco/index.html?unit='+unitstr+'#novopens';return false;">NovoPen® 6 или NovoPen Echo® Plus</a>, сканируя NFC-ручку. После сканирования можно изменить, под какой меткой дозы сохраняются в Juggluco, и ограничить дозы теми, что были сделаны после определенной даты и времени. Если в памяти ручки находятся сотни доз, получение всех данных через NFC в Juggluco может занять больше 30 секунд.</p>
+<p>Некоторые глюкометры могут отправлять измерения глюкозы крови из пальца в Juggluco по Bluetooth. См. левое меню→Настройки→Обмен данными→<a href="https://www.juggluco.nl/Jugglucohelp/GlucoseMeterList.html"><b>Глюкометры</b></a>.</p>
+<p>В левое меню→Настройки→Метки чисел также указывается, под какой меткой вводятся углеводы приема пищи. В <i>Новая запись</i> для этой метки показывается кнопка <b>Еда</b>. Нажатие этой <a href="https://www.juggluco.nl/Jugglucohelp/mealhelp.html"><i>Еда</i></a> открывает экран, где прием пищи составляется из ингредиентов. Затем общее содержание углеводов рассчитывается автоматически. Также можно указать желаемое количество углеводов, и Juggluco рассчитает, сколько одного ингредиента нужно.</p>
+<p><b>Исключить</b>: исключить измерение глюкозы крови из <a href="https://www.juggluco.nl/Jugglucohelp/calibrationhelp.html">калибровок</a>, потому что уровень глюкозы растет или падает либо датчик еще прогревается.</p>
+</body></html>

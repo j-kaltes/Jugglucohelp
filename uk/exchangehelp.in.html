@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="content-type">
+<title>Обмін даними</title>
+<meta content="LibreOffice 25.8.6.2 (Linux)" name="generator">
+<meta content="2024-11-21T21:25:03.749778838" name="created">
+<meta content="2026-05-07T14:31:37.387214690" name="changed">
+<style type="text/css">
+		@page { margin: 2.01cm }
+		p { margin-bottom: 0.25cm; line-height: 115% }
+		h2 { margin-top: 0.36cm; margin-bottom: 0.2cm; background: transparent }
+		h2.western { font-size: 16pt; font-family: "Liberation Sans", sans-serif }
+		h2.cjk { font-size: 16pt; font-family: "Noto Sans CJK SC" }
+		h2.ctl { font-family: "Mangal"; font-size: 16pt }
+	</style>
+</head>
+<body><img alt="Обмін даними" src="dataexchange.png" style="object-fit:contain; width:15cm;                   height:auto;">
+<h1>Обмін даними</h1>
+<h2 class="western">Health Connect</h2>
+<p>Надсилати щохвилинні значення глюкози до <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.healthdata">Health Connect</a>. Іншим програмам можна надати доступ до цих значень, наприклад <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.fitness">Google Fit</a>. Своєю чергою інші програми можуть отримувати ці дані з <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.fitness">Google Fit</a>.</p>
+<h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/libreview.html">LibreView</a></h2>
+<p>Підключіться до LibreView, щоб надсилати туди значення глюкози й записи FreeStyle Libre 2 і 3, а також отримувати ID облікового запису, використаний під час активації датчика FreeStyle Libre 3. Торкніться, щоб змінити налаштування.</p>
+<h2 class="western">Модифікований Libre</h2>
+<p>Із самою трансляцією Patched Libre усе гаразд, але xDrip змінює значення, коли отримує їх через цю трансляцію. Оскільки користувачі застосовують її лише в такий спосіб, я планував вилучити цю трансляцію.</p>
+<p>xDrip не змінює значення, отримані через трансляцію EverSense або коли вебсервер Juggluco використовується як джерело даних Nightscout.</p>
+<h2 class="western"><a name="eversense"></a>EverSense</h2>
+<p>Ще одна трансляція глюкози. Її можна використовувати для щохвилинного надсилання значення глюкози до xDrip. У xDrip потрібно вибрати «<i>640G/EverSense</i>» як <i>Апаратне джерело даних</i>. 
+</p>
+<p>xDrip проігнорує майже всі значення через жорстке обмеження — одне значення на 5 хвилин. Це обмеження можна вилучити, змінивши вихідний код xDrip. Замініть <i>4 * 60 * 1000</i> на <i>55 * 1000</i>
+у файлі
+<a href="https://github.com/NightscoutFoundation/xDrip/blob/645e8b4cb8fa3ad7b280f598d6f2f6bdb84ce392/app/src/main/java/com/eveningoutpost/dexdrip/models/BgReading.java#L969">app/src/main/java/com/eveningoutpost/dexdrip/models/BgReading.java</a>, щоб код мав вигляд:</p>
+<p>public static BgReading readingNearTimeStamp(long startTime) {<br>
+         long margin = (55 * 1000);<br>
+         return readingNearTimeStamp(startTime, margin);<br>
+         }</p>
+<p>Перевага над трансляцією Patched Libre полягає в тому, що xDrip не перетворює значення глюкози невизначеним способом.</p>
+<h2 class="western">Трансляція xDrip</h2>
+<p>Надсилає таку саму трансляцію, як параметр xDrip «Налаштування→Налаштування взаємодії програм→Локальна трансляція». Її приймають програми на кшталт AndroidAPS. На відміну від оригінальної трансляції xDrip, що надсилалася кожні 5 хвилин, Juggluco надсилає її щохвилини, якщо датчик теж передає значення щохвилини.</p>
+<h2 class="western">Трансляція Glucodata</h2>
+<p>Нова трансляція з тією самою функцією, що й трансляція xDrip. Просту демонстраційну програму, яка записує отримані значення глюкози в logcat, можна знайти тут: <a href="https://www.juggluco.nl/Juggluco/glucosebroadcast.html">Трансляції глюкози</a>. Якщо в G-Watch вибрано Juggluco як джерело даних, цю трансляцію потрібно ввімкнути.</p>
+<p>Показано програми, які слухають цю трансляцію. Позначте програми, яким потрібно її надсилати.</p>
+<h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/Nightscouthelp.html">Web server</a></h2>
+<p>Вебсервер, який можна використовувати з годинниками xDrip і деякими програмами Nightscout. Раніше називався вебсервером xDrip.</p>
+<h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/NightPost.html">Завантаж.</a></h2>
+<p>Завантажувати дані на сервер Nightscout.</p>
+<h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/connectionoverview.html">Дзеркало/клон</a></h2>
+<p style="line-height: 100%; margin-bottom: 0cm">Надсилає всі дані через інтернет-з’єднання до іншого екземпляра Juggluco, створюючи клон Juggluco на іншому пристрої. Наявні дані буде перезаписано.</p>
+<h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/helpexport.html">Експорт</a></h2>
+<p>Зберігати дані у файл.</p>
+<p><br>
+<br>
+</p>
+
+</body></html>

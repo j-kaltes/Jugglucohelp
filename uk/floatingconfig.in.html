@@ -1,59 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="uk">
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-	<title></title>
-	<meta name="generator" content="LibreOffice 7.5.3.2 (Windows)"/>
-	<meta name="created" content="2023-02-03T15:10:20.572719075"/>
-	<meta name="changed" content="2023-06-01T15:43:07.714000000"/>
-	<style type="text/css">
-		@page { size: 21.01cm 29.69cm; margin-left: 2.01cm; margin-right: 0.99cm; margin-top: 0.99cm; margin-bottom: 0.99cm }
-		h1 { margin-bottom: 0.2cm; background: transparent }
+<meta content="text/html; charset=utf-8" http-equiv="content-type">
+<title>Плав. глюкоза</title>
+<base target="_blank">
+<meta content="LibreOffice 7.6.4.1 (Linux)" name="generator">
+<meta content="00:00:00" name="created">
+<meta content="2024-02-29T12:19:09.186429930" name="changed">
+<meta content="00:00:00" name="created">
+<style type="text/css">
+		@page { size: 8.27in 11.69in; margin-left: 0.79in; margin-right: 0.39in; margin-top: 0.39in; margin-bottom: 0.39in }
+		h1 { margin-bottom: 0.08in; background: transparent }
 		h1.western { font-family: "Liberation Serif", serif }
-		h1.cjk { font-family: "Droid Sans Fallback"; font-size: 24pt }
-		h1.ctl { font-family: "Droid Sans Devanagari"; font-size: 24pt }
-		p { line-height: 115%; margin-bottom: 0.25cm; background: transparent }
+		h1.cjk { font-family: "Droid Sans Fallback" }
+		h1.ctl { font-family: "Droid Sans Devanagari" }
+		p { margin-bottom: 0.1in; background: transparent }
 	</style>
 </head>
-<body lang="uk-UA" dir="ltr"><h1 class="western">Налаштування
-віджету:</h1>
-<p>Тут ви можете встановити розмір шрифту
-та колір переднього плану та фону
-віджету. Ви також можете зробити фон
-П<b>розорим</b>, щоб зробити його невидимим.</p>
-<p><b>Можна доторкнутися</b>: коли встановлено,
-ви можете рухати плавучу глюкозу пальцем
-і видалити її, довго натискаючи. Якщо
-сенсорну функцію не налаштовано, сенсорне
-введення переходить у вікно під віджетом,
-щоб ви могли використовувати програму
-під віджетом. Ви також можете зробити
-віджет недоторканним, <b>двічі торкнувшись</b>
-його.</p>
-<p>Після введення <b>розміру шрифту</b>
-необхідно натиснути кнопку «Enter»,
-«Готово» або «✓» на програмній клавіатурі.</p>
-<p>Ви можете вмикати та вимикати віджет
-за допомогою прапорця «<i>Плавуча глюкоза</i>»
-в налаштуваннях. Ви також можете вимкнути
-«<i>Віджет</i>», <b>довго натискаючи</b> на
-плавуче значення глюкози. Наприклад,
-якщо ви встановили розмір шрифту
-настільки великий, що ви більше не можете
-вводити менший розмір шрифту на програмній
-клавіатурі.</p>
-<p>Для відображення поверх інших програм
-Juggluco потрібен спеціальний дозвіл. У
-WearOS і Android Automotive вам потрібно використовувати
-adb, щоб надати цей дозвіл:</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><b>adb shell pm
+<body><img src="floatingglucoseconfig.png" style="object-fit:contain; width:15cm;                   height:auto;">
+<h1 class="western">Плав. глюкоза</h1>
+<p>Тут можна налаштувати розмір шрифту, колір тексту й тла плаваючого значення глюкози. 
+</p>
+<p><b>Доторкається</b>: коли параметр увімкнено, плаваюче значення можна переміщати пальцем і зменшувати тривалим натисканням без руху. Коли його вимкнено, дотики передаються вікну під плаваючим значенням, тому програмою під ним можна користуватися. Зробити плаваюче значення недоступним для дотиків можна також <b>подвійним торканням</b> .</p>
+<p><b>Прозорий:</b> невидиме тло.</p>
+<p><b>Вище</b>: залишати плаваюче значення видимим, навіть коли Juggluco на передньому плані.</p>
+<p><b>Час</b>: часова позначка значення глюкози.</p>
+<p><b>Активний</b>: увімкнути.</p>
+<p>Параметр «Плав. глюкоза» можна вмикати й вимикати через ліве середнє меню→Плавати. 
+</p>
+<p>Перейти до Juggluco можна, торкнувшись <b>сторони зі стрілкою</b> плаваючого вікна. Подвійне торкання сторони зі значенням глюкози робить вікно недоступним для дотиків. <b>Тривале натискання</b> значення глюкози залишає лише маленьке число, щоб можна було взаємодіяти з елементами під ним. Торкніться маленького вікна, щоб знову його збільшити. Рух пальця по стороні зі значенням
+<b>переміщує</b> плаваюче вікно.</p>
+<p>Для відображення поверх інших програм Juggluco потрібен спеціальний дозвіл. На Wear OS і Android Automotive його слід надати через adb:</p>
+<p style="margin-bottom: 0in"><b>adb shell pm
 grant tk.glucodata android.permission.SYSTEM_ALERT_WINDOW</b></p>
-<p style="line-height: 100%; margin-bottom: 0cm; background: transparent">
-На деяких годинниках (наприклад, TicWatch
-Pro) ви також можете дозволити це за
-допомогою: Налаштування Android/WearOS-&gt;Програми
-та сповіщення-&gt; Інформація про
-додаток-&gt;Juggluco-&gt;Додатково-&gt;Відображати
-поверх інших програм.</p>
-</body>
-</html>
+<p style="background: transparent">На деяких годинниках, наприклад TicWatch Pro, дозвіл також можна надати в Android/Wear OS: Налаштування→Програми й сповіщення→Відомості про програму→Juggluco→Додатково→Показ поверх інших програм.</p>
+
+</body></html>

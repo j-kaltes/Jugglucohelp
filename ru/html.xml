@@ -1901,4 +1901,27 @@ Libreview.</font></p>
 <p>Изменения цветов и формы кнопок показываются на этом экране сразу, но для всего приложения вступают в силу только после нажатия <b>Применить</b>.</p>
 ]]>
 </string>
+<string name="webpageshelp" >
+<![CDATA[
+<p><a href="https://www.juggluco.nl/Jugglucohelp/ru/index.html">index</a></p><p><a href="https://www.juggluco.nl/Jugglucohelp/ar/webpageshelp.html">ar</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/be/webpageshelp.html">be</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/de/webpageshelp.html">de</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/es/webpageshelp.html">es</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/fr/webpageshelp.html">fr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/hi/webpageshelp.html">hi</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/it/webpageshelp.html">it</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ja/webpageshelp.html">ja</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/nl/webpageshelp.html">nl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pl/webpageshelp.html">pl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pt/webpageshelp.html">pt</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ru/webpageshelp.html">ru</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/sv/webpageshelp.html">sv</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/tr/webpageshelp.html">tr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/uk/webpageshelp.html">uk</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/uz/webpageshelp.html">uz</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/zh/webpageshelp.html">zh</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/webpageshelp.html?lang=en">en</a>&emsp;&emsp;</p><h1>Веб-страницы</h1>
+<p>Здесь можно загружать файлы и каталоги на веб-сервер Juggluco. Так можно использовать собственные или сторонние html и JavaScript, работающие с данными Juggluco.</p>
+<p>Загруженные здесь файлы и каталоги доступны в <b>additions</b>
+на веб-сервере Juggluco. Если загрузить файл с именем “<i>mypage.html</i>” его можно открыть по адресу
+<a href="http://127.0.0.1:17580/additions/mypage.html">http://127.0.0.1:17580/additions/mypage.html</a>
+в веб-браузере на этом телефоне.<br/>
+<br/>
+<b>Загрузить файлы</b>
+копирует один или несколько выбранных файлов в каталог, который сейчас открыт.
+</p>
+<p><b>Загрузить каталог</b> копирует всё дерево каталогов. Существующие файлы с тем же именем заменяются.<br/>
+<br/>
+Нажмите на каталог, чтобы открыть его.
+</p>
+<p><b>Вверх</b> или кнопка «Назад» Android возвращает в родительский каталог.
+</p>
+<p><b>Удалить</b> удаляет файл или каталог вместе со всем его содержимым.
+</p>
+<p>При использовании версии сервера Juggluco для командной строки вместо этого поместите файлы в каталог additions внутри jugglucodata.</p>
+]]>
+</string>
 </resources>

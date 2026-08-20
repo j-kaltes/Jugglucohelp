@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+<title></title>
+<meta content="LibreOffice 25.8.6.2 (Linux)" name="generator"/>
+<meta content="2021-09-22T21:56:37.376793780" name="created"/>
+<meta content="2026-05-07T11:18:02.475228721" name="changed"/>
+<style type="text/css">
+		@page { size: 21.01cm 29.69cm; margin: 2.01cm }
+		h1 { background: transparent; margin-bottom: 0.2cm }
+		h1.western { font-family: "Liberation Serif", serif }
+		h1.cjk { font-family: "Noto Serif CJK SC" }
+		h1.ctl { font-family: "Mangal" }
+		p { background: transparent; margin-bottom: 0.25cm }
+	</style>
+</head>
+<body dir="ltr" lang="ko-KR"><h1 class="western">계속 작동하게 하기</h1>
+<p style="margin-bottom: 0cm; background: transparent"><span lang="en-US">일반적으로 Android 기기는 사용하지 않을 때 에너지를 절약하기 위해 절전 모드(Doze)로 들어갑니다. </span>Bluetooth 또는 TCP/IP를 통해 혈당값을 안정적으로 받아야 한다면 Android가 Juggluco를 중지하지 않도록 Juggluco의 배터리 최적화를 꺼야 하며, 때로는 기기 전체의 일부 배터리 최적화도 꺼야 합니다.
+<span lang="en-US">많은 기기에는 배터리 최적화, 백그라운드 활동, 부팅 시 시작 같은 추가 설정이 있으며 이를 변경해야 할 수 있습니다. </span>Android 설정→배터리에서 찾을 수 있습니다. 다음도 참조하십시오: <a href="https://dontkillmyapp.com/">https://dontkillmyapp.com</a>.</p>
+<p style="line-height: 100%; margin-bottom: 0cm">Galaxy Watch 4, 5, 6 또는 7을 사용할 때는 Galaxy Wearable 컴패니언 앱의 워치 설정→앱→Juggluco에서 <i>백그라운드 활동 허용</i> 을 설정해야 합니다. 이 설정이 없는 워치에서는 컴퓨터에서 다음 명령을 사용할 수 있습니다:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><b>adb shell cmd appops set tk.glucodata RUN_IN_BACKGROUND allow</b></p>
+<p style="line-height: 100%; margin-bottom: 0cm; font-weight: normal">
+절전 모드를 비활성화하려면:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><b>adb shell dumpsys deviceidle disable</b></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><a href="https://www.juggluco.nl/JugglucoWearOS/install/adb.html">adb에 대한 정보</a></p>
+</body>
+</html>

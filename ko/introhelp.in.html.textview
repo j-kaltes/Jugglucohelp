@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <link rel="icon" href="https://www.juggluco.nl/Juggluco/arrow.png">
+    <title>소개 도움말</title>
+    <style>
+a:link {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: lightblue;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: green;
+  background-color: transparent;
+  text-decoration: underline;
+}
+</style>
+ <base href="https://www.juggluco.nl/Jugglucohelp/mgdL/" id="baseurl" target="_blank">
+
+<script type="text/javascript"> 
+var unitstr='mg/dL';
+function getunitarg(){ 
+	const params = new URLSearchParams(document.location.search);
+	const unit = params.get("unit");
+	if(unit===null)	 {
+		return 0;
+		}
+	if(unit == "mg/dL") { 
+		return 2;
+		} 
+	else { 
+		if(unit=="mmol/L") {
+		   return 1;
+		   }
+	 	}
+	 console.log("unit wrong");
+//	params.delete("unit");
+//	window.location.search = params;
+//	 console.log("search="+	window.location.search);
+
+	return 0;
+    } 
+let mmol=[
+"AM",
+"AU",
+"BA",
+"BG",
+"BW",
+"BY",
+"CA",
+"CH",
+"CN",
+"CZ",
+"DK",
+"EE",
+"FI",
+"GB",
+"HK",
+"HR",
+"HU",
+"IE",
+"IS",
+"KW",
+"KZ",
+"LT",
+"LV",
+"MT",
+"MY",
+"NA",
+"NL",
+"NO",
+"NZ",
+"RS",
+"RU",
+"SE",
+"SI",
+"SK",
+"UA",
+"ZA"];
+
+
+
+
+
+
+function getunit() {
+	var unit=getunitarg();
+	if(unit!=0) {
+		return unit;
+		}
+
+	var userLang = navigator.language || navigator.userLanguage;
+	var  co=userLang.toUpperCase();
+
+	for(const element of mmol) {
+	  if(co.includes(element)) {
+	 	console.log("LANG mmol/L");
+//		window.location.search += 'unit=mmol/L';
+//	 	console.log("getunit search="+	window.location.search);
+		return 1;
+		}
+	   }
+	 console.log("LANG mg/dL");
+//	window.location.search += 'unit=mg/dL';
+//	console.log("getunit search="+	window.location.search);
+
+	return 2;
+	 }
+
+
+
+function setbaseurl(){ 
+	if(getunit()!=1) {
+		document.getElementById("baseurl").href = "https://www.juggluco.nl/Jugglucohelp/mgdL/"; 
+		 console.log("unitstr=mg/dL");
+		unitstr='mg/dL';
+		} 
+	else { 
+	       document.getElementById("baseurl").href = "https://www.juggluco.nl/Jugglucohelp/";  
+		 console.log("unitstr=mmol/L");
+		unitstr='mmol/L';
+		}
+   	} 
+   setbaseurl();
+   </script>
+</head>
+  <img src="left.png" style="object-fit:contain; width:15cm;                   height:auto;margin: 1cm 1cm 1cm 1cm;">
+    <img src="leftmiddle.png" style="object-fit:contain; width:15cm;                   height:auto;margin: 1cm 1cm 1cm 1cm;">
+    <img src="rightmiddle.png" style="object-fit:contain; width:15cm;                   height:auto;margin: 1cm 1cm 1cm 1cm;">
+    <img src="right.png" style="object-fit:contain; width:15cm;                   height:auto;margin: 1cm 1cm 1cm 1cm;">
+<body lang="ko-KR" link="#ffc0cb" vlink="#add8e6" bgcolor="#000000" dir="ltr" style="color:#ffffff">
+<p><a href="https://www.juggluco.nl/"><b>Juggluco</b></a>는 당뇨병 환자가 혈당을 모니터링하고 관리하는 데 도움을 주는 앱입니다. FreeStyle Libre(0 및 2) 센서를 NFC로 스캔할 수 있으며, <b><i>FreeStyle Libre 2</i></b>, <b><i>2+</i></b>, <b><i>3</i></b>, <b><i>3+</i></b>, <b><i>Sibionics GS1Sb</i></b> 및 <b><i>GS3</i></b>, <b><i>Dexcom G7/ONE+</i></b>, <b><i>Accu-Chek SmartGuide</i></b>, <b><i>CareSens Air</i></b> 및 <b><i>Linx/Lumiflex/Aidex X</i></b> 센서에서 Bluetooth로 혈당값을 받을 수 있습니다.</p>
+<p>프로그램을 처음 실행했을 때 스마트폰의 NFC 안테나에 FreeStyle Libre <b>2</b> 센서를 가까이 대면 센서를 스캔할 수 있습니다. 그 뒤 Juggluco는 FreeStyle Libre 2 센서와 Bluetooth 연결을 만들려고 시도하며, 추가 스캔 없이 매분 혈당값을 받습니다. Abbott의 Libre 3 앱으로 활성화한 FreeStyle Libre <b>3</b> 또는 <b>3+</b> 센서를 넘겨받으려면 <a href="https://www.juggluco.nl/Jugglucohelp/libreview.html">설정→데이터 교환→LibreView</a>에서 센서를 활성화할 때 사용한 LibreView 계정 정보를 지정하고, <a href="https://www.juggluco.nl/Jugglucohelp/getaccountidhelp.html">“계정 ID 받기”</a>를 누른 뒤 계정 ID가 도착할 때까지 기다린 다음 센서를 스캔해야 합니다. FreeStyle Libre 3 리더 또는 Libre 2와 Libre 3를 모두 지원하는 미국용 Libre 앱으로 시작한 Libre 3 센서는 넘겨받을 수 없습니다. Juggluco는 Accu-Chek SmartGuide를 제외하면 앞에서 언급한 모든 센서를 직접 활성화할 수도 있습니다.</p>
+<p><b><i>Sibionics GS1Sb</i></b>, <b><i>Dexcom G7/ONE+</i></b>, <b><i>Accu-Chek SmartGuide</i></b>, <b><i>CareSens Air</i></b> 또는 <b><i>Linx/Lumiflex/Aidex X</i></b> 센서에 연결하려면 왼쪽 메뉴→사진으로 해당 데이터 매트릭스를 스캔해야 합니다. Dexcom G7/ONE+ 센서는 Bluetooth로 페어링됩니다. 대부분의 휴대전화에서는 페어링 요청을 확인해야 하며, 빠르게 확인해야 합니다. 늦으면 다시 5분을 기다려야 합니다. 기다리는 동안 화면을 켜 두십시오. Samsung Galaxy Watch 4와 7에서는 페어링에 동의할 필요가 없습니다. 사용이 끝난 Dexcom G7/ONE+ 센서는 혈당 기록을 중단한 뒤에도 오랫동안 Bluetooth로 검색될 수 있습니다. Juggluco가 잘못된 센서와 페어링하려고 하지 않도록 오래된 센서를 Bluetooth가 닿지 않는 곳(예: 약 15미터 떨어진 곳이나 전자레인지 같은 패러데이 케이지)에 두십시오. 특히 이전 센서와 새 센서의 PIN 코드가 같을 때 중요합니다. 이전에 센서와 연결했던 앱과 기기는 끄거나, 강제 종료하거나, 제거하십시오. <b><i>Accu-Chek SmartGuide</i></b> 센서를 페어링할 때는 PIN을 입력해야 합니다.</p>
+<p>Juggluco로 <b><i>Sibionics GS3</i></b> 센서를 시작하려면 포장에 있는 데이터 매트릭스를 스캔하거나 센서 자체를 NFC로 스캔하십시오. 그러면 ID를 입력하는 화면이 나타납니다. 센서를 이미 Sibionics GS3 앱에서 사용했거나 나중에 그 앱에서도 사용하고 싶다면 Sibionics GS3 앱에서 사용한 이메일 주소와 비밀번호를 입력하고 서버에서 계정 ID를 받아야 합니다. 새 센서이고 Juggluco에서만 사용할 예정이라면 임의의 번호를 입력할 수 있습니다.</p>
+<p>센서 연결에 대한 자세한 내용은 <a href="https://www.juggluco.nl/Juggluco/sensors">https://www.juggluco.nl/Juggluco/sensors</a>를 참조하십시오.</p>
+<p>프로그램에는 네 개의 <b>메뉴</b>가 있습니다. 화면의 빈 부분을 터치하면 메뉴를 열 수 있습니다. 화면의 왼쪽 1/4을 터치하면 왼쪽 메뉴, 가운데 영역의 왼쪽 절반을 터치하면 두 번째 메뉴, 가운데 영역의 오른쪽 절반을 터치하면 세 번째 메뉴, 오른쪽 1/4을 터치하면 네 번째 메뉴가 열립니다.</p>
+
+<p><i>메뉴 4: 이동(오른쪽)</i></p>
+<p style="line-height: 115%; margin-bottom: 0cm"><tt><font color="#ffff6d">15:10&nbsp;&nbsp;&nbsp;↗&nbsp;93</font></tt><br/><big>&#8203;</big><br/><tt><font color="#ffff6d"><a href="https://www.juggluco.nl/Jugglucohelp/searchhelp.html">검색</a></font></tt><br/><big>&#8203;</big><br/><tt><font color="#ffff6d">날짜</font></tt><br/><big>&#8203;</big><br/><tt><font color="#ffff6d">하루&nbsp;전</font></tt><br/><big>&#8203;</big><br/><tt><font color="#ffff6d">하루&nbsp;후</font></tt><br/><big>&#8203;</big><br/><tt><font color="#ffff6d">일주일&nbsp;전</font></tt><br/><big>&#8203;</big><br/><tt><font color="#ffff6d">일주일&nbsp;후</font></tt><br/><big>&#8203;</big><br/></p>
+<p>화면 위에서 좌우로 움직이면 곡선을 왼쪽과 오른쪽으로 이동할 수 있습니다. 오른쪽의 <b>이동 메뉴</b>를 사용할 수도 있습니다. <b><i>날짜</i></b>를 사용하면 날짜를 선택할 수 있고, <b><i>검색</i></b>을 사용하면 혈당값과 입력한 숫자를 검색할 수 있습니다. 오른쪽 메뉴의 첫 번째 항목은 현재 시간이며, 이를 선택하면 그래프의 오른쪽 끝, 즉 현재 시점으로 이동합니다.</p>
+<p>설정에서 <i>혈당 수동 배율 조정</i>을 켜면 화면의 위쪽 영역에서 위아래로 움직여 그래프의 최댓값을 바꾸고, 아래쪽 영역에서 위아래로 움직여 최솟값을 바꿀 수 있습니다. 설정에서 <i>시간 수동 배율 조정</i>을 켜면 두 손가락 사이의 거리를 바꾸어 화면에 표시되는 시간 범위를 늘리거나 줄일 수 있습니다.</p>
+
+<p><i>메뉴 3: 표시</i></p>
+<p style="line-height: 115%; margin-bottom: 0cm"><tt><font color="#ffff6d">마지막&nbsp;스캔</font></tt><br/><big>&#8203;</big><br/><tt><font color="#ffff6d">스캔</font><font color="#ffff6d">&#12288;&#12288;&#12288;&#12288;[x]</font></tt><br/><big>&#8203;</big><br/><tt><font color="#ffff6d">스트림</font><font color="#ffff6d">&#12288;&#12288;&#12288;[x]</font></tt><br/><big>&#8203;</big><br/><tt><font color="#ffff6d">기록</font><font color="#ffff6d">&#12288;&#12288;&#12288;&#12288;[x]</font></tt><br/><big>&#8203;</big><br/><tt><font color="#ffff6d">입력값</font><font color="#ffff6d">&#12288;&#12288;&#12288;[x]</font></tt><br/><big>&#8203;</big><br/><tt><font color="#ffff6d"><a href="https://www.juggluco.nl/Jugglucohelp/mealhelp.html">식사</a></font><font color="#ffff6d">&#12288;&#12288;&#12288;&#12288;[&nbsp;]</font></tt><br/><big>&#8203;</big><br/><tt><font color="#ffff6d">다크&#12288;모드</font><font color="#ffff6d">&#12288;[x]</font></tt><br/><big>&#8203;</big><br/></p>
+<p><b>가운데 오른쪽 메뉴</b>에는 표시 옵션이 있습니다. 마지막 스캔을 보려면 첫 번째 항목을 터치하십시오. <i>스캔</i> 뒤에 표시가 있으면 스캔 값이 그래프에 표시됩니다. 스캔 값은 Libre 0 또는 2 센서를 NFC로 스캔했을 때 얻는 현재 혈당값입니다. 스캔하면 센서의 최근 8시간 동안의 15분 간격 기록 값도 휴대전화로 전송됩니다. 이 값의 표시 여부는 <i>기록</i>을 터치하여 조절합니다. Libre 3 센서는 Bluetooth로 5분 간격의 기록 값을 보냅니다. <i>스트림</i>은 FreeStyle Libre 2 및 3 센서가 Bluetooth를 통해 매분 이 앱으로 보내는 혈당값을 뜻합니다.</p>
+<p>인슐린, 탄수화물 및 활동을 기록하기 위해 원하는 레이블과 함께 여러 종류의 숫자를 입력할 수 있습니다. 이 값들은 지정한 날짜와 시간에 혈당 그래프의 일정한 높이에 표시됩니다. 그래프의 점이나 입력한 숫자를 터치하면 해당 항목에 대한 정보가 표시됩니다. 입력한 숫자를 길게 누르면 수정할 수 있습니다. 왼쪽 가운데 메뉴의 숫자 목록에서 해당 데이터 항목을 터치해도 수정할 수 있습니다. <i>입력값</i>은 입력한 숫자를 표시할지 결정합니다. <i>설정</i>에서 이 숫자에 사용할 <a href="https://www.juggluco.nl/Jugglucohelp/labelhelp.html">레이블</a>을 지정할 수 있으며, 숫자 위에는 해당 레이블이 표시됩니다.</p>
+
+<p><i>메뉴 2: 가운데 왼쪽</i></p>
+<p style="line-height: 115%; margin-bottom: 0cm"><tt><font color="#ffff6d"><a href="https://www.juggluco.nl/Jugglucohelp/helpexport.html">내보내기</a></font></tt><br/><big>&#8203;</big><br/><tt><font color="#ffff6d"><a href="https://www.juggluco.nl/Jugglucohelp/connectionoverview.html">미러</a></font></tt><br/><big>&#8203;</big><br/><tt><font color="#ffff6d"><a href="https://www.juggluco.nl/Jugglucohelp/newamount.html" onclick="location.href=this.href+'?unit='+unitstr;return false;">새&nbsp;입력값</a></font></tt><br/><big>&#8203;</big><br/><tt><font color="#ffff6d">목록</font></tt><br/><big>&#8203;</big><br/><tt><font color="#ffff6d"><a href="https://www.juggluco.nl/Jugglucohelp/stathelp.html" onclick="location.href=this.href+'?unit='+unitstr;return false;">통계</a></font></tt><br/><big>&#8203;</big><br/><tt><font color="#ffff6d"><a href="https://www.juggluco.nl/Jugglucohelp/talkhelp.html">말하기</a></font></tt><br/><big>&#8203;</big><br/><tt><font color="#ffff6d">플로팅</font><font color="#ffff6d">&#12288;&#12288;&#12288;[&nbsp;]</font></tt><br/><big>&#8203;</big><br/></p>
+<p><b>가운데 왼쪽 메뉴</b>의 <b>새 입력값</b>을 터치하여 이러한 숫자를 입력할 수 있습니다. <b>내보내기</b>는 데이터를 .tsv(탭으로 구분된 값) 형식의 파일로 저장합니다. <b>미러</b>를 사용하면 IP/TCP를 통해 다른 기기에서 실행 중인 이 앱으로 데이터를 보내 같은 정보를 표시할 수 있습니다. <b>목록</b>은 입력한 숫자의 목록을 보여 줍니다. Juggluco가 Bluetooth를 통해 충분한 혈당값을 받았다면 <b>통계</b>에서 몇 가지 통계를 볼 수 있습니다. 특정 혈당 범위에 들어간 측정값의 비율, Glucose Management Indicator(HbA1c 예측 지표), 혈당 변동성, 그리고 하루의 각 분마다 값의 0%, 5%, 25%, 50%, 75%, 95%, 100%가 그 아래에 위치하는 혈당값을 보여 주는 요약 그래프가 표시됩니다. <b>말하기</b>에서는 Juggluco가 들어오는 혈당값, 그래프에서 터치한 요소 또는 메시지를 음성으로 읽도록 할 수 있습니다. 플로팅을 켜면 <b>플로팅 혈당</b>이 표시됩니다. 이는 다른 앱 위의 화면에 표시되는 혈당값입니다. <a href="https://www.juggluco.nl/Jugglucohelp/floatingconfig.html" onclick="location.href=this.href+'?unit='+unitstr;return false;">설정에서 색상과 크기를 변경할 수 있습니다.</a></p>
+
+<p><i>메뉴 1: 왼쪽</i></p>
+<p style="line-height: 115%; margin-bottom: 0cm"><tt><font color="#ffff6d">시스템&nbsp;UI</font><font color="#ffff6d">&#12288;&#12288;&#8201;[&nbsp;]</font></tt><br/><big>&#8203;</big><br/><tt><font color="#ffff6d">메뉴</font><font color="#ffff6d">&#12288;&#12288;&#12288;&#12288;&#12288;[&nbsp;]</font></tt><br/><big>&#8203;</big><br/><tt><font color="#ffff6d"><a href="https://www.juggluco.nl/Jugglucohelp/watchinfo.html">워치</a></font></tt><br/><big>&#8203;</big><br/><tt><font color="#ffff6d"><a href="https://www.juggluco.nl/Jugglucohelp/sensorhelp.html">센서</a></font></tt><br/><big>&#8203;</big><br/><tt><font color="#ffff6d"><a href="https://www.juggluco.nl/Jugglucohelp/settinghelp.html" onclick="location.href=this.href+'?unit='+unitstr;return false;">설정</a></font></tt><br/><big>&#8203;</big><br/><tt><font color="#ffff6d">사진</font></tt><br/><big>&#8203;</big><br/><tt><font color="#ffff6d">닫기</font></tt><br/><big>&#8203;</big><br/></p>
+<p><b>왼쪽 메뉴</b>에는 <b>설정</b>이 있습니다. 여기에서 혈당 단위를 mmol/L 또는 mg/dL로 설정하고, <a href="https://www.juggluco.nl/Jugglucohelp/labelhelp.html">레이블</a>을 지정하고, <a href="https://www.juggluco.nl/Jugglucohelp/alarmhelp.html">혈당 알람</a>과 <a href="https://www.juggluco.nl/Jugglucohelp/reminders.html">약 복용 알림</a>을 설정하고, 표시 범위를 지정할 수 있습니다. 시스템 UI는 Android의 조작 버튼과 상태 표시줄을 표시할지 결정합니다. <b>워치</b>에서는 Juggluco가 여러 종류의 스마트워치로 데이터를 보내도록 설정할 수 있습니다. <b>센서</b>에서는 센서와의 연결 상태를 확인할 수 있습니다. <b>메뉴</b>를 터치하면 네 개의 메뉴를 한 번에 표시하여 TalkBack이 읽을 수 있는 레이아웃으로 보여 줍니다. <b>닫기</b>를 사용하면 Juggluco를 종료할 수 있습니다.</p>
+<p><br/><br/></p>
+</body>
+</html>

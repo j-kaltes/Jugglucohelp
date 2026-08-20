@@ -7,16 +7,16 @@
 <!--***********************************************************************************-->
 <script type="module" >
 import { setlang } from "https://www.juggluco.nl/Jugglucohelp/code/settrans.js";
-let translations=["ar", "de", "es", "hi", "it", "ja", "nl", "ru", "tr", "uk", "uz", ];
+let translations=["ar", "de", "es", "hi", "it", "ja", "ko", "nl", "ru", "tr", "uk", "uz", ];
 setlang(translations,"displayhelp.html");
 </script><!DOCTYPE html>
 <html>
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 	<title></title>
-	<meta name="generator" content="LibreOffice 26.2.2.2 (Linux)"/>
+	<meta name="generator" content="LibreOffice 26.2.4.2 (Linux)"/>
 	<meta name="created" content="2024-12-01T21:17:42.017312604"/>
-	<meta name="changed" content="2026-06-03T21:00:27.477227305"/>
+	<meta name="changed" content="2026-08-20T09:20:33.480075388"/>
 	<style type="text/css">
 		h2 { margin-top: 0.36cm; margin-bottom: 0.2cm; background: transparent }
 		h2.western { font-size: 16pt; font-family: "Liberation Sans", sans-serif }
@@ -24,7 +24,7 @@ setlang(translations,"displayhelp.html");
 		h2.ctl { font-family: "Mangal"; font-size: 16pt }
 	</style>
 </head>
-<body lang="en-US" dir="ltr"><p><a href="https://www.juggluco.nl/Jugglucohelp/index.html">index</a></p><p><a href="https://www.juggluco.nl/Jugglucohelp/ar/displayhelp.html">ar</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/de/displayhelp.html">de</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/es/displayhelp.html">es</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/hi/displayhelp.html">hi</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/it/displayhelp.html">it</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ja/displayhelp.html">ja</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/nl/displayhelp.html">nl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ru/displayhelp.html">ru</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/tr/displayhelp.html">tr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/uk/displayhelp.html">uk</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/uz/displayhelp.html">uz</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/displayhelp.html?lang=en">en</a>&emsp;&emsp;</p><h1>Display settings</h1>
+<body lang="en-US" dir="ltr"><p><a href="https://www.juggluco.nl/Jugglucohelp/index.html">index</a></p><p><a href="https://www.juggluco.nl/Jugglucohelp/ar/displayhelp.html">ar</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/de/displayhelp.html">de</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/es/displayhelp.html">es</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/hi/displayhelp.html">hi</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/it/displayhelp.html">it</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ja/displayhelp.html">ja</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ko/displayhelp.html">ko</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/nl/displayhelp.html">nl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ru/displayhelp.html">ru</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/tr/displayhelp.html">tr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/uk/displayhelp.html">uk</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/uz/displayhelp.html">uz</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/displayhelp.html?lang=en">en</a>&emsp;&emsp;</p><h1>Display settings</h1>
 <h2 class="western">Graph range: low-high.</h2>
 <p style="margin-bottom: 0cm">Give a low and high value, so that the
 bottom of the screen correspondents to the lowest and the top to the
@@ -71,13 +71,23 @@ way as the history values of Libre sensors are shown in Juggluco. You
 can also turn them off by unchecking right middle menu→History. In
 Juggluco they are not used for alarms, you can just display them to
 judge how well they predict.</p>
-<h2 class="western">Invert screen</h2>
+<h2 class="western">Rotate 180°</h2>
 <p style="margin-bottom: 0cm">Turn the display upside down. It is
 switched on by default, because otherwise I'd sometimes accidentally
 touch OK while scanning a sensor.</p>
-<p style="margin-bottom: 0cm">Some people ask for portrait mode, but
-I have turned that off, because it is totally inappropriate for the
-display of the glucose graph.</p>
+<h2 class="western">Auto-rotate</h2>
+<p style="margin-bottom: 0cm">This settings is only effective when
+Androids auto-rotate is also turned on. Everything except the graph
+and menu rotate when the phone is rotated.</p>
+<h2 class="western">Rotate text</h2>
+<p style="margin-bottom: 0cm">This setting is only possible when
+auto-rotate is on. It applies only to the main display of the graph
+and menus. When “<i>Rotate text</i>” is checked, the text in the
+graph and menus rotates. As without auto-rotate, in landscape mode
+the first menu is opened by touching the left quarter of the screen.
+In portrait mode it opens by touching the lower quarter of the
+screen, etc. When not checked the graph and menus stay exactly the
+same as when auto-rotate is off.</p>
 <h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/IOBhelp.html">Insulin
 onboard (IOB)</a></h2>
 <p><span lang="en-US">IOB is a measure of how much insulin remains

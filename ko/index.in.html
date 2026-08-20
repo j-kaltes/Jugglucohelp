@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+
+<html dir="ltr" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Juggluco</title>
+<style>:root { color-scheme: light dark; }
+body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans",
+                 "Noto Sans Arabic", "Noto Sans Devanagari",
+                 "Noto Sans CJK SC", sans-serif;
+    max-width: 52rem;
+    margin: 2rem auto;
+    padding: 0 1rem 3rem;
+    line-height: 1.5;
+}
+header { margin-bottom: 2rem; }
+h1 { margin: 0 0 .3rem; font-size: 1.8rem; }
+header p { margin: .25rem 0; }
+header a { word-break: break-all; }
+ul.toc { list-style: none; padding: 0; margin: 0; }
+ul.toc li { padding: .55rem 0; border-top: 1px solid rgba(128,128,128,.25); }
+ul.toc li:first-child { border-top: none; }
+ul.toc a { font-weight: 600; text-decoration: none; }
+ul.toc a:hover { text-decoration: underline; }
+.desc { display: block; margin-top: .15rem; font-weight: 400;
+        color: rgba(0,0,0,.78); }
+@media (prefers-color-scheme: dark) {
+    .desc { color: rgba(255,255,255,.78); }
+}
+footer { margin-top: 2rem; font-size: .85rem; opacity: .7; }
+</style>
+</head>
+<body dir="ltr" lang="ko-KR">
+<header>
+<h1>Juggluco</h1>
+<p><a href="https://www.juggluco.nl/Juggluco">https://www.juggluco.nl/Juggluco</a></p>
+</header>
+<ul class="toc">
+<li>
+<a href="introhelp.html">소개</a>
+<span class="desc">Juggluco는 당뇨병 환자의 혈당 관리를 위한 앱입니다. FreeStyle Libre(0 및 2) 센서를 NFC로 스캔하고, FreeStyle Libre 2, 2+, 3, 3+, Sibionics GS1Sb, Dexcom G7/ONE+ 등의 혈당 값을 Bluetooth로 받을 수 있습니다.</span>
+</li>
+<li>
+<a href="about.html">정보</a>
+<span class="desc">Juggluco는 Jaap Korthals Altes가 작성했습니다. 표준 Android 라이브러리 외에도 Abbott FreeStyle Libre 센서 전용 NFC 및 Bluetooth 명령과 FreeStyle Libre 센서 전용 해석 알고리즘을 사용합니다.</span>
+</li>
+<li>
+<a href="battery.html">계속 작동하게 하기</a>
+<span class="desc">일반적으로 Android 기기를 사용하지 않으면 에너지를 절약하기 위해 Doze 모드로 들어갑니다.</span>
+</li>
+<li>
+<a href="sensorhelp.html">센서</a>
+<span class="desc">스피너에는 센서 이름이 표시됩니다. Juggluco가 동시에 둘 이상의 센서를 사용하는 경우 정보를 표시할 센서를 선택할 수 있습니다.</span>
+</li>
+<li>
+<a href="sensorinfo.html">센서 정보</a>
+<span class="desc">센서의 시작 시각, 마지막 스트림, 마지막 스캔, 예상 종료 및 공식 종료 시각을 표시합니다. 준비 시간: Sibionics 및 Linx/Lumiflex/Aidex X 센서에서는 준비 시간의 분 수를 변경할 수 있습니다.</span>
+</li>
+<li>
+<a href="sensormirror.html">센서 정보</a>
+<span class="desc">Juggluco가 스트림 값의 미러로 동작할 때 센서 정보를 제공합니다. 시작됨: 센서가 시작된 시각입니다. Libre 센서에서는 첫 혈당 값보다 한 시간 전입니다. 마지막 스캔: 센서를 마지막으로 스캔한 시각입니다.</span>
+</li>
+<li>
+<a href="calibrationhelp.html">보정</a>
+<span class="desc">Juggluco 10.0.0 이상에서는 센서를 보정할 수 있습니다. 혈당: 손끝 채혈 혈당 측정값에 사용하는 레이블을 지정합니다.</span>
+</li>
+<li>
+<a href="calibrationslist.html">보정 목록</a>
+<span class="desc">이 센서에 대해 만들어진 보정을 표시합니다. 각 보정은 만들어진 시각과 혈당과 센서 혈당의 관계인 기울기(a)와 절편 b로 이루어집니다: 혈당=a*센서혈당+b. "기울기 변경"이 설정되지 않은 경우…</span>
+</li>
+<li>
+<a href="changestart.html">시작 변경</a>
+<span class="desc">LibreView로 데이터를 보낼 시작 날짜와 시간을 변경합니다. 일부 데이터가 이미 LibreView에 있는 경우 유용할 수 있습니다.</span>
+</li>
+<li>
+<a href="DeviceList.html">혈당 측정기 기기</a>
+<span class="desc">혈당 측정기 기기를 검색합니다. 찾은 기기는 여기에 표시됩니다. 이미 연결된 기기는 검색되지 않습니다. 처음에는 기기를 페어링 모드로 전환해야 합니다. 예를 들어 파란 불이 깜박일 때까지 버튼을 길게 눌러 기기를 켭니다.</span>
+</li>
+<li>
+<a href="GlucoseMeter.html">혈당 측정기</a>
+<span class="desc">Juggluco는 지정한 날짜와 시간보다 이후 타임스탬프를 가진 혈당 값만 추가합니다. 이전 혈당 값이 이미 Juggluco에 있다면 더 늦은 날짜와 시간으로 바꾸십시오. 혈당에 사용할 레이블을 선택합니다.</span>
+</li>
+<li>
+<a href="GlucoseMeterList.html">혈당 측정기 목록</a>
+<span class="desc">Juggluco는 일부 혈당 측정기에서 Bluetooth를 통해 손끝 채혈 혈당 측정값을 받을 수 있습니다. Contour Next ONE이 있다면 왼쪽 메뉴→사진으로 측정기의 데이터 매트릭스를 스캔하여 Juggluco에 추가할 수 있습니다.</span>
+</li>
+<li>
+<a href="labelhelp.html">입력값 레이블</a>
+<span class="desc">여기에서 인슐린, 탄수화물 또는 신체 활동을 나타내기 위해 그래프에 추가되는 입력값의 레이블을 만들고 삭제하고 수정할 수 있습니다. 이미 입력값을 저장했다면 해당 위치에 대응하는 레이블이 적용됩니다.</span>
+</li>
+<li>
+<a href="newlabelhelp.html">레이블:</a>
+<span class="desc">숫자를 입력할 때 사용할 레이블의 이름입니다. 왼쪽 가운데 메뉴의 "새 입력값"을 사용하면 특정 날짜와 시간에 연결된 숫자를 추가할 수 있습니다. 이 숫자는 해당 시간 위치의 혈당 그래프 또는 목록에 표시할 수 있습니다.</span>
+</li>
+<li>
+<a href="newamount.html">새 입력값</a>
+<span class="desc">새 입력값에서는 임의의 레이블에 연결된 숫자를 입력할 수 있습니다. 레이블은 왼쪽 메뉴→설정→입력값 레이블에서 설정합니다. 특정 레이블로 입력한 입력값은 레이블에서 정한 그래프 높이에 표시됩니다.</span>
+</li>
+<li>
+<a href="mealhelp.html">식사</a>
+<span class="desc">식사의 재료 양을 지정합니다. 그러면 총 탄수화물 함량을 계산합니다.</span>
+</li>
+<li>
+<a href="nutrients.html">식품 성분 데이터베이스</a>
+<span class="desc">여기에서 McCance and Widdowson의 The Composition of Foods Integrated Dataset 2021에 있는 식품을 검색할 수 있습니다. https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid 정규 표현식을 사용하여 검색할 수 있습니다(https://www.</span>
+</li>
+<li>
+<a href="reminders.html">미리 알림</a>
+<span class="desc">지정한 시간 간격 안에 특정 입력값을 입력하지 않았을 때 알려 줍니다. 새로 만들기를 눌러 새 미리 알림을 추가할 수 있습니다.</span>
+</li>
+<li>
+<a href="schedulehelp.html">일정</a>
+<span class="desc">특정 시각에 프로필이 활성화되도록 예약합니다. "새로 만들기"를 눌러 시각과 프로필의 연결을 만듭니다. Juggluco는 매일 지정한 시각에 그 프로필로 전환합니다. 항목을 눌러 시각-프로필 연결을 편집할 수 있습니다.</span>
+</li>
+<li>
+<a href="staticnum.html">차단됨</a>
+<span class="desc">왼쪽 가운데 메뉴→미러→"미러가 입력값을 보냄"이 설정되어 있어 이 앱에서 입력값을 입력할 수 없습니다. 미러 연결에서 받은 입력값으로 덮어써지기 때문입니다. 이 앱이 미러 연결에서 입력값을 받지 않는다면 이 옵션을 해제하십시오.</span>
+</li>
+<li>
+<a href="IOB.html">IOB</a>
+<span class="desc">→ https://www.juggluco.nl/Jugglucohelp/IOBhelp.html</span>
+</li>
+<li>
+<a href="IOBhelp.html">체내 잔류 인슐린(IOB)</a>
+<span class="desc">IOB는 이전 인슐린 투여량 중 몸에 남아 있는 인슐린의 양을 나타냅니다. Juggluco 9.2.0 이전에는 Insulin Aspart의 혈중 인슐린 농도 곡선을 사용하여 IOB를 추정했습니다.</span>
+</li>
+<li>
+<a href="alarmhelp.html">알람</a>
+<span class="desc">혈당 알람: Bluetooth로 받은 스트림 값을 사용하여 저혈당 및 고혈당 알람을 설정할 수 있습니다. 저혈당 알람: 이 값 이하에서 알람이 울립니다. 고혈당 알람: 이 값 이상에서 알람이 울립니다.</span>
+</li>
+<li>
+<a href="advancedAlarmshelp.html">고급 알람</a>
+<span class="desc">매우 낮은 혈당 알람: 혈당 값이 저혈당 알람보다 더 낮을 때 울리는 두 번째 저혈당 알람입니다. 매우 높은 혈당 알람: 혈당 값이 고혈당 알람보다 더 높을 때 울리는 두 번째 고혈당 알람입니다.</span>
+</li>
+<li>
+<a href="ringtone.html">벨소리</a>
+<span class="desc">알람 또는 알림에 재생할 벨소리와 재생 시간을 선택합니다. 비활성화 시간(분): 저혈당 또는 고혈당 상태가 계속되더라도 알람이 즉시 다시 울리지 않도록 합니다.</span>
+</li>
+<li>
+<a href="disturbhelp.html">"방해 금지" 접근 권한</a>
+<span class="desc">일부 기기에서는 "방해 금지" 모드에서 알람이 작동하지 않습니다. "방해"를 사용하면 알람을 재생하기 전에 "방해 금지"를 끌지 지정할 수 있습니다.</span>
+</li>
+<li>
+<a href="talkhelp.html">말하기</a>
+<span class="desc">혈당 말하기: 혈당 값이 도착하면 읽어 줍니다. 간격(초): 다음 혈당 값을 말하기 전에 Juggluco가 기다릴 시간을 초 단위로 지정합니다. 혈당 값은 도착할 때 항상 즉시 읽습니다.</span>
+</li>
+<li>
+<a href="displayhelp.html">표시 설정</a>
+<span class="desc">색상: 곡선, 스캔 및 숫자의 색상을 변경합니다. 다크 모드는 오른쪽 가운데 메뉴→다크 모드에서 전환합니다. 그래프 범위: 낮음-높음. 화면 아래와 위에 대응할 낮은 값과 높은 값을 지정합니다.</span>
+</li>
+<li>
+<a href="colorhelp.html">색상</a>
+<span class="desc">여기에서 숫자, 곡선 및 스캔 지점의 색상을 변경할 수 있습니다. 곡선, 스캔 또는 입력값의 점을 눌러 해당 지점이나 입력값의 정보를 표시한 뒤 색상 보기에서 색상을 누르십시오.</span>
+</li>
+<li>
+<a href="floatingconfig.html">플로팅 혈당</a>
+<span class="desc">여기에서 플로팅 혈당의 글꼴 크기와 전경색 및 배경색을 설정할 수 있습니다. 터치 가능: 켜면 손가락으로 플로팅 혈당을 움직이고, 움직이지 않은 채 길게 눌러 작게 만들 수 있습니다.</span>
+</li>
+<li>
+<a href="settinghelp.html">설정</a>
+<span class="desc">단위: 혈당 값을 mmol/L 또는 mg/dL 중 어떤 단위로 표시할지 선택합니다. NFC 소리: 스캔 시 진동과 함께 소리를 냅니다. 스캔 시 앱 시작: 이 앱이 표시되지 않은 상태에서도 NFC로 센서를 스캔하면 앱을 시작합니다.</span>
+</li>
+<li>
+<a href="searchhelp.html">검색</a>
+<span class="desc">검색을 사용하여 혈당 값과 입력한 숫자를 찾을 수 있습니다. 지정한 두 숫자 사이의 값을 검색합니다. 예: 10–999는 10과 999 사이의 값을 찾습니다. 혈당 값은 스캔, 기록 및 스트림으로 구분됩니다.</span>
+</li>
+<li>
+<a href="stathelp.html">통계</a>
+<span class="desc">AGP에서 가져와 약간 수정한 통계를 표시합니다. 분석할 일수는 일수 버튼을 눌러 변경할 수 있습니다. 기간은 화면 끝 위치의 시각에서 끝나며 지정한 일수만큼 과거로 거슬러 올라갑니다.</span>
+</li>
+<li>
+<a href="loghelp.html">로그</a>
+<span class="desc">이 버전은 Juggluco의 로깅 버전입니다. 로그 파일은 /data/data/tk.glucodata/files/logs에 만들 수 있습니다. trace.log에는 Juggluco 자체 로그가, logcat.txt에는 Juggluco와 관련하여 Android가 생성한 로그가 들어 있습니다.</span>
+</li>
+<li>
+<a href="helpexport.html">내보내기</a>
+<span class="desc">Juggluco의 데이터를 파일로 내보냅니다. 식사는 HTML로 저장됩니다. 그 밖의 데이터는 .tsv(탭으로 구분된 값)로 저장됩니다. LibreOffice Calc, Microsoft Excel, Mathematica 또는 R 같은 프로그램에서 불러올 수 있습니다.</span>
+</li>
+<li>
+<a href="connectionoverview.html">미러</a>
+<span class="desc">다른 기기로 데이터를 보내거나 다른 기기에서 데이터를 받습니다. Juggluco가 실행 중인 Android 기기에 연결하여 여기와 같은 방식으로 데이터를 표시할 수 있습니다. 스캔 데이터를 받은 뒤에는 미러 기기도 Bluetooth로 센서에 연결할 수 있습니다.</span>
+</li>
+<li>
+<a href="addconnection.html">연결 추가</a>
+<span class="desc">다른 Juggluco 인스턴스와의 연결을 지정합니다. 한 기기의 Juggluco가 IP/TCP를 통해 다른 기기의 Juggluco로 데이터를 보냅니다. 연결하려면 한쪽 Juggluco가 포트에서 수신 대기하고 다른 쪽이 그 포트에 접속해야 합니다.</span>
+</li>
+<li>
+<a href="QRmirror.html">QR 미러</a>
+<span class="desc">다른 휴대폰에서 왼쪽 메뉴→사진으로 QR 코드를 스캔하여 미러 연결의 상대편을 구성할 수 있습니다. 왼쪽 가운데 메뉴→미러→자동 QR을 사용하면 연결 양쪽이 자동으로 생성됩니다.</span>
+</li>
+<li>
+<a href="autoqrmessage.html">자동 QR</a>
+<span class="desc">이 휴대폰에 연결을 생성하고 다른 Android 기기에서 스캔할 수 있는 QR 코드를 표시합니다. 다른 휴대폰에서 왼쪽 메뉴→사진으로 QR 코드를 스캔하면 이 휴대폰의 모든 데이터를 받거나 보내는 연결이 생성됩니다.</span>
+</li>
+<li>
+<a href="turnservers.html">TURN 서버</a>
+<span class="desc">인터넷을 통해 자동 QR 연결을 생성하거나 수동 연결 설정에서 ICE를 지정하면 ICE 연결을 사용합니다. Interactive Connectivity Establishment(ICE)가 두 Juggluco 인스턴스 사이의 직접 연결을 만들지 못하면…</span>
+</li>
+<li>
+<a href="Nightscouthelp.html">웹 서버</a>
+<span class="desc">Juggluco에는 다른 앱이 Juggluco에서 혈당 값을 받을 수 있는 웹 서버가 내장되어 있습니다. xDrip 워치와 일부 Nightscout 앱에서 사용할 수 있습니다. xDrip 웹 서버용 앱은 비교적 쉽게 사용할 수 있으며 활성만 선택하면 됩니다.</span>
+</li>
+<li>
+<a href="NightPost.html">Nightscout 서버로 업로드</a>
+<span class="desc">대부분의 경우 Juggluco의 웹 서버 또는 juggluco-server를 사용할 수도 있습니다. Nightscout 웹 페이지만 표시하는 일부 앱에만 cgm-remote-monitor가 필요합니다. Juggluco 7.4.1부터는 Juggluco 웹 서버를 AAPS 및 AAPSClient와 함께 사용할 수도 있습니다.</span>
+</li>
+<li>
+<a href="libreview.html">LibreView</a>
+<span class="desc">Juggluco는 혈당 데이터와 입력값을 LibreView로 보낼 수 있습니다. LibreLink 앱과 마찬가지로 최근 89일의 데이터를 LibreView로 보냅니다. 이 서비스를 사용하려면 https://libreview.</span>
+</li>
+<li>
+<a href="librenumhelp.html">LibreView 입력값</a>
+<span class="desc">"입력값 보내기"를 설정하여 입력값을 LibreView로 보냅니다. "입력값 보내기"를 켜기 전에 각 레이블로 입력한 입력값을 LibreView에 어떻게 보낼지 지정해야 합니다.</span>
+</li>
+<li>
+<a href="setlibrenumtype.html">LibreView 입력값 유형</a>
+<span class="desc">LibreView와 같은 방식으로 Juggluco의 Nightscout 서버를 통해 입력값을 어떻게 나타낼지도 지정할 수 있습니다. 특정 레이블로 Juggluco에 입력한 입력값을 어떻게 보낼지 선택합니다.</span>
+</li>
+<li>
+<a href="nightnumhelp.html">Nightscout 입력값</a>
+<span class="desc">"입력값 제공"을 설정하면 Juggluco의 Nightscout 웹 서버를 통해 입력값에 접근할 수 있습니다. 켜기 전에 각 레이블로 입력한 입력값을 어떻게 제공할지 지정해야 합니다.</span>
+</li>
+<li>
+<a href="getaccountidhelp.html">계정 ID 가져오기</a>
+<span class="desc">NFC로 FreeStyle Libre 3 센서를 스캔하는 데 필요한 LibreView 계정 ID를 가져오는 방법입니다. "수동"을 지정하면 계정 ID를 직접 입력할 수 있습니다.</span>
+</li>
+<li>
+<a href="exchangehelp.html">데이터 교환</a>
+<span class="desc">Health Connect: 매분 혈당 값을 Health Connect로 보냅니다. 다른 앱(예: Google Fit)에 이 혈당 값에 대한 접근 권한을 줄 수 있습니다. 다른 앱은 다시 Google Fit에서 이 데이터에 접근할 수 있습니다.</span>
+</li>
+<li>
+<a href="watchinfo.html">워치</a>
+<span class="desc">현재 Juggluco에는 워치에서 혈당 값을 확인하는 여러 방법이 있습니다. 알림을 켜면 새 혈당 값이 도착할 때마다 Android 알림이 생성됩니다.</span>
+</li>
+<li>
+<a href="kerfstok.html">Kerfstok</a>
+<span class="desc">Kerfstok(https://apps.garmin.com/en-US/apps/b6348ccc-86d8-4780-8013-d9e19fed5260, 참조 https://www.juggluco.nl/Kerfstok/index.html)은 타사 앱을 허용하는 Garmin 스포츠 워치용 앱입니다. 1.6.0부터는 터치스크린이 없는 워치도 지원합니다.</span>
+</li>
+<li>
+<a href="garminconfig.html">Kerfstok 구성</a>
+<span class="desc">Kerfstok 소스는 https://www.juggluco.nl/Kerfstok/Kerfstok-source.html 에서 다운로드할 수 있습니다. 사용자는 자유롭게 수정할 수 있습니다. 각 워치 앱에는 고유 식별자가 있습니다.</span>
+</li>
+<li>
+<a href="shortcuthelp.html">Kerfstok에서 바로가기를 사용할 수 있습니다.</a>
+<span class="desc">워치의 숫자 입력 화면에서 바로가기 화면으로 이동할 수 있습니다(제 Vivoactive 3에서는 왼쪽으로 스와이프). 레이블 목록이 표시되며 하나를 누르면 대응하는 값이 숫자 화면에 입력됩니다.</span>
+</li>
+<li>
+<a href="wearosinfo.html">Wear OS</a>
+<span class="desc">워치에서 숫자(입력값) 입력: 인슐린, 탄수화물 및 활동 입력값을 휴대폰 대신 워치의 두 번째 메뉴→"입력값"에서 입력합니다. 휴대폰으로 NovoPen을 스캔하려면 이 옵션을 설정하지 마십시오.</span>
+</li>
+<li>
+<a href="notificationpermission.html">알림</a>
+<span class="desc">FreeStyle Libre 0 센서와 함께 사용하는 경우를 제외하면 Juggluco는 센서에서 Bluetooth로 직접 또는 네트워크 연결을 통해 매분 혈당 값을 받기 위해 백그라운드에서 계속 활성 상태여야 합니다.</span>
+</li>
+<li>
+<a href="locationpermission.html">위치 권한</a>
+<span class="desc">Android 6~11 기기에서는 Bluetooth 기기를 찾으려면 위치 권한이 필요합니다. 이 Bluetooth 기기 검색은 Sibionics와 Dexcom에 필요하며 Android 6, 7 및 7.1의 Juggluco에서도 사용됩니다.</span>
+</li>
+<li>
+<a href="nearbypermission.html">근처 기기 권한</a>
+<span class="desc">Juggluco가 FreeStyle Libre 2 및 3 센서에서 Bluetooth로 혈당 값을 받으려면 근처 기기 권한이 필요합니다. 다른 휴대폰이나 워치에서 실행 중인 Juggluco로부터 이 혈당 값을 받는다면 이 권한은 필요하지 않습니다.</span>
+</li>
+<li>
+<a href="camerapermission.html">카메라 권한</a>
+<span class="desc">Sibionics 센서를 사용하려면 휴대폰 카메라를 이용하여 포장의 데이터 매트릭스를 스캔해야 합니다.</span>
+</li>
+<li>
+<a href="flashpermission.html">플래시</a>
+<span class="desc">일부 스마트폰에서는 플래시 사용에 카메라 권한이 필요하다고 알려져 있습니다. 그래서 이전 Juggluco 버전에서는 이 권한을 요청했습니다.</span>
+</li>
+<li>
+<a href="healthpermission.html">혈당 쓰기 권한</a>
+<span class="desc">Health Connect에 혈당 값을 쓰려면 사용자가 Juggluco에 Health Connect 혈당 쓰기 권한을 부여해야 합니다. 이 권한은 Health Connect에서 혈당 값을 받는 것 외의 다른 용도에는 필요하지 않습니다.</span>
+</li>
+</ul>
+</body>
+</html>

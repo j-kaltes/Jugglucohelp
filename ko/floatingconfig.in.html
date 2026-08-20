@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+<title>플로팅 혈당</title>
+<base target="_blank"/>
+<meta content="LibreOffice 7.6.4.1 (Linux)" name="generator"/>
+<meta content="00:00:00" name="created"/>
+<meta content="2024-02-29T12:19:09.186429930" name="changed"/>
+<meta content="00:00:00" name="created"/>
+<style type="text/css">
+		@page { size: 8.27in 11.69in; margin-left: 0.79in; margin-right: 0.39in; margin-top: 0.39in; margin-bottom: 0.39in }
+		h1 { margin-bottom: 0.08in; background: transparent }
+		h1.western { font-family: "Liberation Serif", serif }
+		h1.cjk { font-family: "Droid Sans Fallback" }
+		h1.ctl { font-family: "Droid Sans Devanagari" }
+		p { margin-bottom: 0.1in; background: transparent }
+	</style>
+</head>
+<img src="floatingglucoseconfig.png" style="object-fit:contain; width:15cm;                   height:auto;"/>
+<body dir="ltr" lang="ko-KR"><h1 class="western">플로팅 혈당</h1>
+<p>여기에서 플로팅 혈당의 글꼴 크기와 전경색 및 배경색을 설정할 수 있습니다. 
+</p>
+<p><b>터치 가능</b>: 설정하면 손가락으로 플로팅 혈당을 이동할 수 있고, 움직이지 않은 채 길게 눌러 작게 만들 수 있습니다. 터치 가능을 해제하면 터치 입력이 플로팅 혈당 아래의 창으로 전달되어 그 아래 앱을 사용할 수 있습니다. 플로팅 혈당을 <b>두 번 탭</b> 하여 터치할 수 없게 만들 수도 있습니다.</p>
+<p><b>투명:</b> 배경을 보이지 않게 합니다.</p>
+<p><b>위에 표시</b>: Juggluco가 전경에 있어도 플로팅 혈당을 계속 표시합니다.</p>
+<p><b>시간</b>: 혈당값의 타임스탬프.</p>
+<p><b>활성</b>: 켭니다.</p>
+<p>왼쪽 가운데 메뉴→플로팅에서 플로팅 혈당을 켜고 끌 수 있습니다. 
+</p>
+<p>플로팅 혈당의 <b>화살표 쪽</b> 을 탭하면 Juggluco로 전환합니다. 혈당값 쪽을 두 번 탭하면 플로팅 혈당을 터치할 수 없게 됩니다. <b>길게 누르면</b> 혈당값이 작은 값만 표시되도록 바뀌어 그 아래를 조작할 수 있습니다. 작은 표시를 탭하면 다시 커집니다. 혈당값 쪽을 누른 채 움직이면 플로팅 혈당이
+<b>이동</b> 합니다.</p>
+<p>다른 앱 위에 표시하려면 Juggluco에 특별한 권한이 필요합니다. Wear OS 및 Android Automotive에서는 adb로 이 권한을 부여해야 합니다:</p>
+<p style="margin-bottom: 0in"><b>adb shell pm grant tk.glucodata android.permission.SYSTEM_ALERT_WINDOW</b></p>
+<p style="background: transparent">일부 워치(예: TicWatch Pro)에서는 Android/Wear OS 설정→앱 및 알림→앱 정보→Juggluco→고급→다른 앱 위에 표시에서도 허용할 수 있습니다.</p>
+</body>
+</html>

@@ -3,111 +3,77 @@
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 	<title></title>
-	<meta name="generator" content="LibreOffice 24.2.7.2 (Linux)"/>
+	<meta name="generator" content="LibreOffice 26.2.5.2 (Linux)"/>
 	<meta name="created" content="2022-07-29T10:29:24.574044226"/>
-	<meta name="changed" content="2025-06-25T11:29:16.071726786"/>
+	<meta name="changed" content="2026-09-08T15:41:18.887667156"/>
 	<style type="text/css">
-		@page { margin: 0.79in }
-		p { margin-bottom: 0.1in }
+		@page { margin: 2.01cm }
+		p { margin-bottom: 0.25cm }
 	</style>
 </head>
 <body lang="nl-NL" dir="ltr"><h1>Kerfstok</h1>
-<p style="line-height: 100%; margin-bottom: 0in">Kerfstok
+<p style="line-height: 100%; margin-bottom: 0cm">Kerfstok
 (<a href="https://www.juggluco.nl/Kerfstok/index.html">https://www.juggluco.nl/Kerfstok/index.html</a>)
-is een horloge app voor programmeerbare Garmin sporthorloges. Sinds
-Kerfstok 1.6.0 kan het ook gebruikt worden op horloges zonder
-touchscreen. Kerfstok heeft de volgende functies:</p>
+is een horloge app voor programmeerbare Garmin sporthorloges.
+Kerfstok heeft de volgende functies:</p>
 <ul>
-	<li><p style="line-height: 100%; margin-bottom: 0in">Je kunt nummers
+	<li><p style="line-height: 100%; margin-bottom: 0cm">Je kunt nummers
 	invoeren die ook met Juggluco uitgewisseld kunnen worden;</p></li>
-	<li><p style="line-height: 100%; margin-bottom: 0in">Kerfstok kan
+	<li><p style="line-height: 100%; margin-bottom: 0cm">Kerfstok kan
 	stream glucose waarden ontvangen van Juggluco en continue weergeven;</p></li>
-	<li><p style="line-height: 100%; margin-bottom: 0in">Kerfstok kan
+	<li><p style="line-height: 100%; margin-bottom: 0cm">Kerfstok kan
 	tijdens het sporten, snelheid en afgelegde afstand weergeven naast
 	je huidige glucose niveau en de sport activiteit opnemen zodat ze in
 	Garmin’s connect app weergegeven kunnen worden.</p></li>
 </ul>
-<p style="line-height: 100%; margin-bottom: 0in"><b>Problemen
-oplossen:</b></p>
-<p style="line-height: 100%; margin-bottom: 0in">Allereerst moet het
-horloge in de linkerbovenhoek verbonden (CONNECTED) getoond worden.</p>
-<p style="line-height: 100%; margin-bottom: 0in">Ten tweede moet
-Kerfstok opgestart zijn op je horloge.</p>
-<p style="line-height: 100%; margin-bottom: 0in">Om glucose waarden
-te ontvangen moet Glucose aangevinkt zijn.</p>
-<p style="line-height: 100%; margin-bottom: 0in">Als alles goed gaat,
-staat er overal <b>Yes</b> en staan er recente datums bij <b>Send</b>
-en <b>Receive</b>. De status moet <b>SUCCESS</b> zijn.</p>
-<p style="line-height: 100%; margin-bottom: 0in">Soms is de
-verbinding tussen smartphone en horloge verstoort. Als achter status
-“<span lang="en-US"><i><b>no status information</b></i></span>”
-staat, helpt meestal het volgende:</p>
+<p>Deze smartwatch-app kan via Bluetooth verbinding maken met
+Juggluco om hoeveelheden uit te wisselen en continu uw huidige
+glucosewaarde weer te geven.</p>
+<p><b>Acti</b><b>ef</b>: Verbind dit horloge met Juggluco.</p>
+<p><b>Nummers</b>: Voer nummers in op dit horloge en wissel ze uit
+met Juggluco. Meerdere horloges met Kerfstok kunnen tegelijkertijd de
+actuele glucosewaarde ontvangen, maar slechts één van deze horloges
+kan worden gebruikt voor het bekijken en invoeren van nummers.</p>
+<p><b>Glucose:</b> bepaalt of glucosewaarden naar het horloge worden
+verzonden.</p>
+<p><b>Verbindingsmethode</b>: Bepaal hoe u met het horloge wilt
+communiceren:</p>
 <ul>
-	<li><p style="line-height: 100%; margin-bottom: 0in">Ga naar Android
-	<i>App-Info</i> van <i>Garmin Connect</i> en druk een aantal malen
-	op “<i>Stop forceren</i>”.</p></li>
-	<li><p style="line-height: 100%; margin-bottom: 0in">Start <i>Garmin
-	Connect</i>. 
-	</p></li>
-	<li><p style="line-height: 100%; margin-bottom: 0in">Ga terug naar
-	dit schermpje en druk op <i>Reinit</i>. 
-	</p></li>
-	<li><p style="line-height: 100%; margin-bottom: 0in">Wacht op de
-	volgende glucose waarde van de sensor.</p></li>
+	<li><p><b>Garmin Connect:</b> Maak verbinding met het horloge via de
+	Garmin Connect-app.</p></li>
+	<li><p><b>Directe</b><b> bluetooth</b>: Omzeil de Garmin Connect-app
+	en maak in plaats daarvan rechtstreeks verbinding met het horloge
+	via Bluetooth Low Energy. Dit kan worden gebruikt, zelfs als de
+	Garmin Connect-app niet is geïnstalleerd, maar ook terwijl de app
+	actief is. Het is zelfs mogelijk om de Garmin Connect-app helemaal
+	niet te gebruiken door het horloge te koppelen via de
+	Bluetooth-instellingen van Android.</p></li>
+	<li><p><b>Automatisch</b>: eerst wordt geprobeerd te verzenden via
+	Garmin Connect en als dat niet werkt, wordt directe bluetooth
+	geprobeerd. De daadwerkelijk gebruikte methode wordt weergegeven
+	boven '<i>Verbindingsmethode</i>'.</p></li>
 </ul>
-<p style="line-height: 100%; margin-bottom: 0in">Als
-<b>FAILURE_DURING_TRANSFER</b> als status weergegeven wordt, helpt
-het soms Bluetooth uit en aan te zetten en daarna op <i>Reinit</i> te
-drukken. Als dat niet help moet je meestal Kerfstok afsluiten en je
-horloge rebooten. Daarna moet je Kerfstok weer opstarten en er op
-toezien dat hier <i>Glucose</i> aangevinkt is. Soms werkte het pas na
-meerdere keren of ontstaan er ook “<i>no status information</i>”
-fouten die op de eerder beschreven manier afgehandeld moeten worden.
-In zeldzame gevallen moet je smartphone gereboot worden.</p>
-<p style="line-height: 100%; margin-bottom: 0in">Soms wordt een knop
-met de naam &quot;<b>Send Queue&quot;</b> weergegeven; dit betekent
-dat er berichten zijn die nog niet naar het horloge zijn verzonden.
-Normaal gesproken worden ze automatisch verzonden op het juiste
-moment, maar soms werd dit onderbroken en door op <i>Send queue</i>
-te drukken wordt het verzenden voortgezet. Maar als het niet is
-verzonden vanwege een verbroken verbinding, heeft dit weinig nut.
-Door op <i>Send Queue</i> te drukken tijdens een lopende transactie
-kan de verbinding worden verbroken.</p>
-<p style="line-height: 100%; margin-bottom: 0in">Soms wanneer &quot;<i>Send
-Queue</i>&quot; wordt weergegeven, is er een verbindingsprobleem
-waardoor berichten alleen van de telefoon naar het horloge worden
-verzonden, maar niet andersom. Dit is het geval wanneer de tijd na
-&quot;<i>Receive</i> &quot; ouder is dan de tijd na &quot;<i>Send</i>&quot;.
-Om dit te herstellen, moet je opnieuw een of alle van de volgende
-handelingen uitvoeren, een of meerdere keren:</p>
+<p><a href="https://www.juggluco.nl/Jugglucohelp/garminconfig.html"><b>Config</b></a>:
+stel de donkere modus, snelkoppelingen en ID in.</p>
+<p><b>Sync</b>: gegevens naar het horloge verzenden en gegevens van
+het horloge ontvangen.</p>
+<p><b>Reinit</b>: De verbinding opnieuw initialiseren.</p>
+<h1>Probleemoplossing</h1>
+<p>Probeer sommige of alle van het volgende als de verbinding met het
+horloge niet werkt:</p>
 <ul>
-	<li><p style="line-height: 100%; margin-bottom: 0in">Druk op <i>Reinit</i>
-	starten;</p></li>
-	<li><p style="line-height: 100%; margin-bottom: 0in">Druk op
-	“Gedwongen stoppen” van de Garmin Connect-app en start deze
-	opnieuw, gevolgd door <i>Reinit</i>;</p></li>
-	<li><p style="line-height: 100%; margin-bottom: 0in">Schakel
-	Bluetooth uit en weer in;</p></li>
-	<li><p style="line-height: 100%; margin-bottom: 0in">Reboot het
-	horloge;</p></li>
-	<li><p style="line-height: 100%; margin-bottom: 0in">Reboot the
-	telefoon.</p></li>
+	<li><p>Druk op <i>reinit</i>;</p></li>
+	<li><p>Schakel Bluetooth op je telefoon uit en weer in;</p></li>
+	<li><p>Schakel Bluetooth op het horloge uit en weer in;</p></li>
+	<li><p>Wijzig de verbindingsmethode en zet deze eventueel later weer
+	terug;</p></li>
+	<li><p>Herstart het horloge;</p></li>
+	<li><p>Telefoon opnieuw opstarten;</p></li>
+	<li><p>Voorheen was het soms nodig om Garmin Connect te starten,
+	geforceerd af te sluiten en opnieuw te starten, of zelfs gegevens in
+	Garmin Connect te wissen of Garmin Connect opnieuw te installeren.
+	Dit zou met Juggluco 11.0.0 en latere versies niet meer nodig moeten
+	zijn.</p></li>
 </ul>
-<p>Ik heb een aantal keer meegemaakt dat er verbindingsproblemen bleven bestaan, zelfs nadat ik de bovenstaande stappen had uitgevoerd. Het probleem werd opgelost door <b>Garmin Connect</b> opnieuw te installeren of, via de app-info van Garmin Connect, de opslag te wissen en de app opnieuw te openen. Omdat Garmin Connect gegevens op een internetserver opslaat, kun je de app opnieuw installeren zonder gegevens te verliezen. Na het wissen van de gegevens hoefde ik zelfs niet opnieuw in te loggen; ik hoefde alleen maar een aantal machtigingen te verlenen.</p>
-<p style="line-height: 100%; margin-bottom: 0in"><b>Sync</b>:
-Hoeveelheden die nog niet verzonden zijn worden hiermee tussen
-horloge en telefoon uitgewisseld. Normaal hoeft hiervan geen gebruik
-gemaakt te worden.</p>
-<p style="line-height: 100%; margin-bottom: 0in"><b>Refresh</b>:
-Ververst dit schermpje met nieuwe informatie (bijvoorbeeld na Reinit
-of Sync).</p>
-<p style="line-height: 100%; margin-bottom: 0in"><b>Glucose</b>: Het
-verzenden van glucosewaarden naar Kerfstok staat aan.</p>
-<p style="line-height: 100%; margin-bottom: 0in"><br/>
-
-</p>
-<p style="line-height: 100%; margin-bottom: 0in"><br/>
-
-</p>
 </body>
 </html>

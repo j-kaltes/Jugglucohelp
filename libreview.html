@@ -14,9 +14,10 @@ setlang(translations,"libreview.html");
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 	<title>Libreview</title>
-	<meta name="generator" content="LibreOffice 25.8.6.2 (Linux)"/>
+	<meta name="generator" content="LibreOffice 26.2.5.2 (Linux)"/>
 	<meta name="created" content="00:00:00"/>
-	<meta name="changed" content="2026-05-07T14:20:39.022709847"/>
+	<meta name="changed" content="2026-10-01T19:45:28.630988678"/>
+	<meta name="created" content="00:00:00">
 	<meta name="created" content="00:00:00">
 	<meta name="created" content="00:00:00">
 	<meta name="created" content="00:00:00">
@@ -35,16 +36,15 @@ glucose data and amounts to Libreview.
 <p style="line-height: 100%; margin-bottom: 0cm">Like the Librelink
 app, it sends data from the last 89 days to Libreview. 
 </p>
-<p style="margin-bottom: 0cm; line-height: 100%"><span lang="en-US">To
+<p style="line-height: 100%; margin-bottom: 0cm"><span lang="en-US">To
 make use of this service, you need to create a Libreview account at
 <a class="western" href="https://libreview.com/">https://libreview.com</a>
 and specify its E-Mail address and password here.</span> <span lang="en-US">Don't
 send data covering the same period to the same LibreView account from
-more than one source (for example from both the Libre</span><span lang="en-US">l</span><span lang="en-US">ink
-app and Juggluco). You can delete existing devices on Libre</span><span lang="en-US">v</span><span lang="en-US">iew
-under Account Settings → My devices. </span><span lang="en-US">Alternatively,
-you can </span><span lang="en-US">create a new Libre</span><span lang="en-US">v</span><span lang="en-US">iew
-account.</span></p>
+more than one source (for example from both the Librelink app and
+Juggluco). You can delete existing devices on Libreview under Account
+Settings → My devices. Alternatively, you can create a new
+Libreview account.</span></p>
 <p style="line-height: 100%; margin-bottom: 0cm"><span lang="en-US">To
 turn it on, you also need to check &quot;</span><span lang="en-US"><i><b>Send
 to libreview</b></i></span><span lang="en-US"><i>&quot;</i></span><span lang="en-US">.
@@ -65,7 +65,7 @@ instead of <a class="western" href="https://libreview.com/">https://libreview.co
 This only applies to Libre 2 sensors. Libre 3 sensors can only be
 used with libreview.com, because no Russian Abbott Libre 3 app
 exists.</p>
-<p style="margin-bottom: 0cm; line-height: 100%"><b>Immediate</b>:
+<p style="line-height: 100%; margin-bottom: 0cm"><b>Immediate</b>:
 Send glucose values to Libreview immediately when they arrive from
 Libre 2 or 3 sensors. This is only useful in combination with
 LibreLinkUp. To make use of it you need to add a LibrelinkUp
@@ -74,7 +74,7 @@ connection to this Libreview account in one of Abbott's Libre apps.
 <a class="western" href="https://www.juggluco.nl/Juggluco/libre3/patched.html">patched
 Libre 3 app</a>.) 
 </p>
-<p style="margin-bottom: 0cm; line-height: 100%">Sometimes the value
+<p style="line-height: 100%; margin-bottom: 0cm">Sometimes the value
 isn't immediately visible because LibreLinkUp doesn't refresh its
 display automatically. Be careful, LibreLinkUp can show stale values:
 if you tap the graph, it displays an older reading rather than the
@@ -102,7 +102,7 @@ the stream values are more extreme, Juggluco is somewhat more
 negative: lower time in range, larger variability. Also <i>time
 sensor active</i> is smaller according to Juggluco; it counts every
 missing stream value.</p>
-<p style="margin-bottom: 0cm; line-height: 100%">Juggluco can be
+<p style="line-height: 100%; margin-bottom: 0cm">Juggluco can be
 connected with multiple sensors at the same time, while Librelink
 only handles one sensor at a time. Juggluco also sends data from only
 one sensor at a time to Libreview. It does this by first sending the
@@ -127,6 +127,12 @@ account.
 <p>The Libreview account ID number can also be <a class="western" href="https://www.juggluco.nl/Juggluco/libre3/convertUUID.html">converted</a>
 from the UUID displayed in the address bar of Libreview reports and
 entered manually in Juggluco.</p>
+<p><b>New Libre app</b>: Sends the same number as the new Libre app
+to activate a Libre 3 sensor. This number is displayed right of this setting, if it is known, -1 otherwise. Abbotts new Libre app
+(<a class="western" href="https://play.google.com/store/apps/details?id=com.abbott.adc.freestyle.libre.us">https://play.google.com/store/apps/details?id=com.abbott.adc.freestyle.libre.us</a>)
+uses an other number than Abbotts Libre 3 app when activating sensors, previously Juggluco
+couldn’t take over sensors activated with that app, but now that
+should be possible.</p>
 <p>Data from Sibionics and Dexcom sensors is not sent to Libreview.</p>
 <p>If you want to save data in Libreview format, you can also do that
 in left middle menu→<a class="western" href="https://www.juggluco.nl/Jugglucohelp/helpexport.html">Export</a>

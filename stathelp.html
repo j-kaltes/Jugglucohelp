@@ -14,6 +14,33 @@ setlang(translations,"stathelp.html");
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 	<title>Statistics</title>
+	<base target="_blank">
+	<meta name="generator" content="LibreOffice 26.2.5.2 (Linux)"/>
+	<meta name="created" content="00:00:00"/>
+	<meta name="changed" content="2026-10-05T20:21:26.207133904"/>
+	<meta name="created" content="00:00:00">
+	<style type="text/css">
+		@page { size: 21.01cm 29.69cm; margin-left: 2.01cm; margin-right: 0.99cm; margin-top: 0.99cm; margin-bottom: 0.99cm }
+		p { background: transparent; margin-bottom: 0.25cm }
+		h1 { margin-bottom: 0.2cm; background: transparent }
+		h1.western { font-family: "Liberation Serif", serif }
+		h1.cjk { font-family: "Noto Serif CJK SC" }
+		h1.ctl { font-family: "Mangal" }
+		h3 { margin-top: 0.25cm; margin-bottom: 0.2cm; background: transparent }
+		h3.western { font-family: "Liberation Serif", serif }
+		h3.cjk { font-family: "Noto Serif CJK SC" }
+		h3.ctl { font-family: "Mangal" }
+	</style>
+</head>
+<script type="module" >
+import { setlang } from "https://www.juggluco.nl/Jugglucohelp/code/settrans.js";
+let translations=["ar", "be", "de", "es", "fr", "hi", "it", "ja", "ko", "nl", "pl", "pt", "ru", "tr", "uk", "uz", "zh", ];
+setlang(translations,"stathelp.html");
+</script><!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title>Statistics</title>
 	<meta name="generator" content="LibreOffice 7.5.8.2 (Linux)"/>
 	<meta name="created" content="00:00:00"/>
 	<meta name="changed" content="2023-12-25T10:32:53.684602023"/>
@@ -121,6 +148,7 @@ function setbaseurl(){
 
  <img src="stats.png"  style="object-fit:contain; width:15cm;                   height:auto;">
  <img src="summarygraph.jpg"  style="object-fit:contain; width:15cm;                   height:auto;">
+ <img src="gmi.jpg"  style="object-fit:contain; width:12cm;                   height:auto;">
 <body lang="en-US" dir="ltr"><p><a href="https://www.juggluco.nl/Jugglucohelp/index.html">index</a></p><p><a href="https://www.juggluco.nl/Jugglucohelp/ar/stathelp.html">ar</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/be/stathelp.html">be</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/de/stathelp.html">de</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/es/stathelp.html">es</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/fr/stathelp.html">fr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/hi/stathelp.html">hi</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/it/stathelp.html">it</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ja/stathelp.html">ja</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ko/stathelp.html">ko</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/nl/stathelp.html">nl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pl/stathelp.html">pl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pt/stathelp.html">pt</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ru/stathelp.html">ru</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/tr/stathelp.html">tr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/uk/stathelp.html">uk</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/uz/stathelp.html">uz</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/zh/stathelp.html">zh</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/stathelp.html?lang=en">en</a>&emsp;&emsp;</p><h1 class="western">Statistics</h1>
 <p>Some statistics taken from <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8991298">AGP</a>
 with some minor modifications.</p>
@@ -129,7 +157,8 @@ button. The period ends at the time of the end of screen position and
 spans the specified number of days back in time. All data are only
 based on glucose values received every minute via Bluetooth from the
 sensor (called <i>stream</i> in Juggluco).</p>
-<p>On the left of the screen are the percentages of measurements that fall within certain glucose ranges. The standard ranges are always
+<p>On the left of the screen are the percentages of measurements that
+fall within certain glucose ranges. The standard ranges are always
 shown. When a non-standard target range is specified in <a href="https://www.juggluco.nl/Jugglucohelp/displayhelp.html">left
 menu-&gt;Settings-&gt;Display</a>, the time in range of that target
 range is displayed below the standard ranges.</p>
@@ -137,34 +166,40 @@ range is displayed below the standard ranges.</p>
 <p>The percentage of time Juggluco received glucose values from the
 sensor.</p>
 <h3 class="western">Estimated A1C</h3>
-<p>Estimates HbA1c from the average glucose using an older formula (Nathan et al., 2008). See
-<a href="https://professional.diabetes.org/diapro/glucose_calc">https://professional.diabetes.org/diapro/glucose_calc</a></span>
+<p>Estimates HbA1c from the average glucose using an older formula
+(Nathan et al., 2008). See
+<a href="https://professional.diabetes.org/diapro/glucose_calc">https://professional.diabetes.org/diapro/glucose_calc</a>
 <span lang="en-US">for a calculator.</span></p>
-<p><span lang="en-US">It is shown here in</span> <span lang="en-US">case
-people are looking for the value shown in Abbott's Libre</span> <span lang="en-US">2
-app. GMI is a 2018 replacement for this indicator. </span>
+<p><span lang="en-US"><b>Glucose Management Indicator (GMI)</b></span><span lang="en-US">
+is a 2018 replacement for this indicator. </span>
 </p>
-<h3 class="western">Glucose Management Indicator (GMI)</h3>
-<p><span lang="en-US">Calculated from the average glucose with a
-certain generally used formula (see <a href="https://www.jaeb.org/gmi/">https://www.jaeb.org/gmi/</a>).
-It is an empirically determined prediction of HbA1c (also called
-A1c), given in percentage and mmol/mol.</span> <span lang="en-US">For
-me personally Estimated A1C is a better predictor than GMI, but GMI is
-used in Abbott's Libre 3 app.</span></p>
+<h3 class="western">uGMI</h3>
+<p><span lang="en-US">The updated GMI is a 2026 replacement of the 2018
+formula and is for the average glucose of diabetic patients
+practically identical to Estimated A1C (see curves in web version).
+The GMI calculator is updated to this formula:
+</span><span lang="en-US"><a href="https://www.jaeb.org/gmi/">https://www.jaeb.org/gmi/</a>.
+</span><span lang="en-US">See
+<a href="https://link.springer.com/article/10.1007/s00125-026-06739-w">https://link.springer.com/article/10.1007/s00125-026-06739-w</a>
+for more information.  Abbotts Libreview and Dexcom Clarity still
+show the old GMI.</span></p>
 <h3 class="western">Glucose Variability:</h3>
 <p>The coefficient of variation, %CV=(SD/mean)*100%, as a measure of
-glucose variability.  A higher coefficient of variation means that
-the glucose values are further from the mean. 
+glucose variability. A higher coefficient of variation means that the
+glucose values are further from the mean. 
 </p>
 <h3 class="western">Save</h3>
-<p>This presents a report of your glucose values of the specified days. It contains
-statistics, the overview graph and an image
-of separate days. You can print it to PDF and e-mail it to your healthcare professional. You need to have activated left menu→Settings→Exchange
-data→Web server. It opens url <a href="http://127.0.0.1:17580/x/report">http://127.0.0.1:17580/x/report</a>
-in the web browser.
+<p>This presents a report of your glucose values of the specified
+days. It contains statistics, the overview graph and an image of
+separate days. You can print it to PDF and e-mail it to your
+healthcare professional. You need to have activated left
+menu→Settings→Exchange data→Web server. It opens url
+<a href="http://127.0.0.1:17580/x/report">http://127.0.0.1:17580/x/report</a>
+in the web browser. 
 </p>
 <h3 class="western">Summary graph</h3>
-<p>(Only shown when at least 9 days of stream glucose values are available.)</p>
+<p>(Only shown when at least 9 days of stream glucose values are
+available.)</p>
 <p>All stream glucose values in this period are taken to draw a
 composite graph showing for every minute of the day how glucose
 values were distributed. The black or white median line shows the
@@ -179,8 +214,11 @@ blue and the middle dark blue) 5% of the values, below the third line
 (between the darkest blue and middle dark blue) 25 % of values, below
 the black line 50% of values. Followed by 75%, 95% and 100%. 
 </p>
-<p>For aesthetic reasons, the curve is smoothed with a binomial filter.</p>
-<p>Tap anywhere on the screen to close the Summary graph — except the left or right edge, which moves the graph backwards or forwards through the day. The curve can also be moved back and forwards by
+<p>For aesthetic reasons, the curve is smoothed with a binomial
+filter.</p>
+<p>Tap anywhere on the screen to close the Summary graph — except
+the left or right edge, which moves the graph backwards or forwards
+through the day. The curve can also be moved back and forwards by
 scrolling. The time scale can be changed by moving two fingers to or
 from each other.</p>
 </body>

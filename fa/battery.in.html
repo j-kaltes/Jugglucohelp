@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="fa">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+<title>راهنمای Juggluco — فارسی</title>
+<meta content="LibreOffice 25.8.6.2 (Linux)" name="generator"/>
+<meta content="2021-09-22T21:56:37.376793780" name="created"/>
+<meta content="2026-05-07T11:18:02.475228721" name="changed"/>
+<style type="text/css">
+		@page { size: 21.01cm 29.69cm; margin: 2.01cm }
+		h1 { background: transparent; margin-bottom: 0.2cm }
+		h1.western { font-family: "Liberation Serif", serif }
+		h1.cjk { font-family: "Noto Serif CJK SC" }
+		h1.ctl { font-family: "Mangal" }
+		p { background: transparent; margin-bottom: 0.25cm }
+	</style>
+<style>body{direction:rtl;text-align:right;line-height:1.8} p,td,th{direction:rtl;text-align:right} bdi,code,pre{unicode-bidi:isolate}</style></head>
+<body dir="rtl" lang="fa-IR"><h1 class="western">ادامهٔ کار در پس‌زمینه</h1>
+<p style="margin-bottom: 0cm; background: transparent">Android معمولاً هنگام استفاده‌نشدن از دستگاه برای صرفه‌جویی انرژی وارد حالت Doze می‌شود. برای دریافت قابل‌اعتماد گلوکز از طریق بلوتوث یا TCP/IP باید بهینه‌سازی باتری را برای Juggluco غیرفعال کنید و گاهی برخی محدودیت‌ها را برای کل دستگاه بردارید تا Android برنامه را متوقف نکند. در بسیاری از دستگاه‌ها تنظیم‌های دیگری برای باتری، فعالیت پس‌زمینه و راه‌اندازی هنگام روشن‌شدن دستگاه وجود دارند. آن‌ها را در «تنظیمات Android ← باتری» پیدا کنید. راهنمای <a href="https://dontkillmyapp.com">DontKillMyApp</a> نیز مفید است. (<a href="https://dontkillmyapp.com/">https://dontkillmyapp.com</a>)</p>
+<p style="line-height: 100%; margin-bottom: 0cm">در Galaxy Watch 4، 5، 6 و 7 باید در برنامهٔ همراه Galaxy Wearable به «تنظیمات ساعت ← برنامه‌ها ← Juggluco» بروید و اجرای پس‌زمینه را مجاز کنید. برای ساعت‌هایی که چنین گزینه‌ای ندارند، فرمان زیر را از رایانه اجرا کنید:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><code>adb shell cmd appops set tk.glucodata RUN_IN_BACKGROUND allow</code></p>
+<p style="line-height: 100%; margin-bottom: 0cm; font-weight: normal">برای غیرفعال‌کردن حالت Doze:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><code>adb shell dumpsys deviceidle disable</code></p>
+<p style="line-height: 100%; margin-bottom: 0cm">اطلاعات بیشتر دربارهٔ <a href="https://developer.android.com/tools/adb">adb</a>. (<a href="https://www.juggluco.nl/JugglucoWearOS/install/adb.html">Information
+about adb</a>)</p>
+</body>
+</html>

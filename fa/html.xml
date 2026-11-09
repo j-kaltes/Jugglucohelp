@@ -118,7 +118,8 @@ server</a>) (<a href="https://www.juggluco.nl/Jugglucohelp/autoqrmessage.html">A
 </string>
 <string name="introhelp" >
 <![CDATA[
-<p><a href="https://www.juggluco.nl/Jugglucohelp/fa/index.html">index</a></p><p><a href="https://www.juggluco.nl/Jugglucohelp/ar/introhelp.html">ar</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/be/introhelp.html">be</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/de/introhelp.html">de</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/es/introhelp.html">es</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/fa/introhelp.html">fa</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/fr/introhelp.html">fr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/hi/introhelp.html">hi</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/it/introhelp.html">it</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ja/introhelp.html">ja</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ko/introhelp.html">ko</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/nl/introhelp.html">nl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pl/introhelp.html">pl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pt/introhelp.html">pt</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ru/introhelp.html">ru</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/tr/introhelp.html">tr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/uk/introhelp.html">uk</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/uz/introhelp.html">uz</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/zh/introhelp.html">zh</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/introhelp.html?lang=en">en</a>&emsp;&emsp;</p><p style="line-height: 115%; margin-bottom: 0in">Juggluco برنامه‌ای برای کمک به افراد مبتلا به دیابت در پایش و مدیریت گلوکز خون است. این برنامه می‌تواند حسگرهای <bdi>FreeStyle Libre 0 و 2</bdi> را از طریق NFC اسکن کند و مقدارهای گلوکز را از طریق بلوتوث از حسگرهای <bdi>FreeStyle Libre 2، 2+، 3 و 3+</bdi>، <bdi>Sibionics GS1Sb و GS3</bdi>، <bdi>Dexcom G7/ONE+</bdi>، <bdi>Accu-Chek SmartGuide</bdi>، <bdi>CareSens Air</bdi> و <bdi>Linx/Lumiflex/Aidex X</bdi> دریافت کند. (<a href="https://www.juggluco.nl/">Juggluco</a>)</p>
+<p><a href="https://www.juggluco.nl/Jugglucohelp/fa/index.html">index</a></p><p><a href="https://www.juggluco.nl/Jugglucohelp/ar/introhelp.html">ar</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/be/introhelp.html">be</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/de/introhelp.html">de</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/es/introhelp.html">es</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/fa/introhelp.html">fa</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/fr/introhelp.html">fr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/hi/introhelp.html">hi</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/it/introhelp.html">it</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ja/introhelp.html">ja</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ko/introhelp.html">ko</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/nl/introhelp.html">nl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pl/introhelp.html">pl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pt/introhelp.html">pt</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ru/introhelp.html">ru</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/tr/introhelp.html">tr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/uk/introhelp.html">uk</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/uz/introhelp.html">uz</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/zh/introhelp.html">zh</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/introhelp.html?lang=en">en</a>&emsp;&emsp;</p>
+<p style="line-height: 115%; margin-bottom: 0in">Juggluco برنامه‌ای برای کمک به افراد مبتلا به دیابت در پایش و مدیریت گلوکز خون است. این برنامه می‌تواند حسگرهای <bdi>FreeStyle Libre 0 و 2</bdi> را از طریق NFC اسکن کند و مقدارهای گلوکز را از طریق بلوتوث از حسگرهای <bdi>FreeStyle Libre 2، 2+، 3 و 3+</bdi>، <bdi>Sibionics GS1Sb و GS3</bdi>، <bdi>Dexcom G7/ONE+</bdi>، <bdi>Accu-Chek SmartGuide</bdi>، <bdi>CareSens Air</bdi> و <bdi>Linx/Lumiflex/Aidex X</bdi> دریافت کند. (<a href="https://www.juggluco.nl/">Juggluco</a>)</p>
 <p style="line-height: 115%; margin-bottom: 0cm">در نخستین اجرای برنامه، برای اسکن حسگر FreeStyle Libre 2 کافی است آن را به قسمت NFC تلفن نزدیک کنید. پس از آن، Juggluco تلاش می‌کند از طریق بلوتوث به حسگر Libre 2 متصل شود و بدون نیاز به اسکن مجدد، هر دقیقه یک مقدار گلوکز دریافت کند. برای انتقال حسگر FreeStyle Libre 3 یا 3+ که با برنامهٔ Libre 3 شرکت Abbott فعال شده است، باید در «تنظیمات ← تبادل داده ← LibreView» اطلاعات همان حساب LibreView را وارد کنید، «دریافت شناسهٔ حساب» را بزنید و پیش از اسکن، منتظر دریافت شناسه بمانید. انتقال حسگر Libre 3 که با دستگاه خوانشگر اختصاصی FreeStyle Libre 3 یا برنامهٔ آمریکایی Libre (برای Libre 2 و 3) راه‌اندازی شده باشد ممکن نیست. Juggluco می‌تواند حسگرهای نام‌برده را نیز فعال کند، به‌جز شاید Accu-Chek SmartGuide. (<a href="https://www.juggluco.nl/Jugglucohelp/libreview.html">تنظیمات LibreView</a>) (<a href="https://www.juggluco.nl/Jugglucohelp/getaccountidhelp.html">دریافت شناسهٔ حساب</a>)</p>
 <p>برای اتصال حسگرهای Sibionics GS1Sb، Dexcom G7/ONE+، Accu-Chek SmartGuide، CareSens Air و Linx/Lumiflex/Aidex X باید با گزینهٔ «منوی چپ ← عکس»، کد ماتریسی آن‌ها را اسکن کنید. حسگر Dexcom G7/ONE+ از راه جفت‌سازی بلوتوث متصل می‌شود. در بیشتر تلفن‌ها باید درخواست جفت‌سازی را سریع تأیید کنید؛ وگرنه ممکن است لازم باشد ۵ دقیقهٔ دیگر منتظر بمانید. هنگام انتظار صفحه را روشن نگه دارید. در Samsung Galaxy Watch 4 و 7 نیازی به تأیید جفت‌سازی نیست. حسگرهای منقضی‌شدهٔ Dexcom G7/ONE+ پس از توقف ثبت گلوکز نیز مدت زیادی از طریق بلوتوث قابل شناسایی‌اند. برای جلوگیری از جفت‌شدن Juggluco با حسگر اشتباهی، حسگرهای قدیمی را خارج از برد بلوتوث نگه دارید (مثلاً در فاصلهٔ ۱۵ متری یا در قفس فارادی)، به‌ویژه اگر پین آن‌ها با حسگر جدید یکسان باشد. برنامه‌ها و دستگاه‌هایی را که قبلاً به حسگر متصل بوده‌اند خاموش کنید یا برنامه‌ها را به‌اجبار متوقف یا حذف کنید. برای جفت‌سازی Accu-Chek SmartGuide باید پین را وارد کنید.</p>
 <p>برای راه‌اندازی حسگر Sibionics GS3 با Juggluco، کد ماتریسی روی بسته را اسکن کنید یا خود حسگر را از طریق NFC بخوانید. سپس صفحه‌ای برای واردکردن شناسه ظاهر می‌شود. اگر قبلاً حسگر را با برنامهٔ Sibionics GS3 استفاده کرده‌اید یا می‌خواهید بعداً با آن برنامه استفاده کنید، نشانی ایمیل و گذرواژهٔ حساب Sibionics GS3 خود را وارد کنید و شناسهٔ حساب را از سرور بگیرید. اگر حسگر جدید است و فقط می‌خواهید از Juggluco استفاده کنید، می‌توانید عدد دلخواهی وارد کنید.</p>
@@ -126,14 +127,14 @@ server</a>) (<a href="https://www.juggluco.nl/Jugglucohelp/autoqrmessage.html">A
 <p>برای اطلاعات بیشتر دربارهٔ اتصال حسگرها، به <a href="https://www.juggluco.nl/Juggluco/sensors">راهنمای حسگرها</a> مراجعه کنید.</p>
 <p style="line-height: 115%; margin-bottom: 0cm">برنامه چهار منو دارد که با لمس بخشی خالی از صفحه باز می‌شوند: لمس یک‌چهارم چپ صفحه، منوی چپ را باز می‌کند؛ لمس نیمهٔ چپ قسمت میانی، منوی دوم؛ لمس نیمهٔ راست قسمت میانی، منوی سوم؛ و لمس یک‌چهارم راست صفحه، منوی چهارم را باز می‌کند.</p>
 <p style="line-height: 100%; orphans: 0; widows: 0; margin-top: 0.2cm; margin-bottom: 0.2cm; background: transparent; page-break-after: avoid">منوی ۴: پیمایش (راست)</p>
-<table cellpadding="0" cellspacing="0" width="96">
+<table class="menu-example" cellpadding="0" cellspacing="0" width="96">
 <col width="96"/>
 <tr>
 <td style="border: none; padding: 0cm" valign="top" width="96"><p>۱۵:۱۰ ↗ ۹۳</p>
 </td>
 </tr>
 <tr>
-<td style="border: none; padding: 0cm" valign="top" width="96"><p><a href="https://www.juggluco.nl/Jugglucohelp/searchhelp.html">راهنمای جست‌وجو</a></p>
+<td style="border: none; padding: 0cm" valign="top" width="96"><p><a href="https://www.juggluco.nl/Jugglucohelp/searchhelp.html">جست‌وجو</a></p>
 </td>
 </tr>
 <tr>
@@ -160,103 +161,38 @@ server</a>) (<a href="https://www.juggluco.nl/Jugglucohelp/autoqrmessage.html">A
 <p style="line-height: 115%; margin-bottom: 0cm">با کشیدن انگشت به چپ یا راست، نمودار را در زمان جابه‌جا می‌کنید. همین کار را می‌توان با منوی پیمایش سمت راست انجام داد. «تاریخ» برای انتخاب روز و «جست‌وجو» برای پیداکردن مقدارهای گلوکز و مقدارهای ثبت‌شده است. نخستین گزینهٔ منوی راست، زمان کنونی را نشان می‌دهد؛ با انتخاب آن به انتهای راست نمودار، یعنی اکنون، می‌روید.</p>
 <p style="line-height: 115%; margin-bottom: 0cm">اگر در تنظیمات، «مقیاس‌بندی دستی ← گلوکز» فعال باشد، حرکت انگشت به بالا یا پایین در نیمهٔ بالایی صفحه، حد بالای نمودار و در نیمهٔ پایینی، حد پایین نمودار را تغییر می‌دهد. اگر «مقیاس‌بندی دستی ← زمان» فعال باشد، با نزدیک‌کردن یا دورکردن دو انگشت می‌توانید بازهٔ زمانی نمایان را تغییر دهید.</p>
 <p style="line-height: 100%; orphans: 0; widows: 0; margin-top: 0.2cm; margin-bottom: 0.2cm; background: transparent; page-break-after: avoid">منوی ۳: نمایش</p>
-<table cellpadding="0" cellspacing="0" width="138">
-<col width="138"/>
-<tr>
-<td style="border: none; padding: 0cm" valign="top" width="138"><p>آخرین اسکن</p>
-</td>
-</tr>
-<tr>
-<td style="border: none; padding: 0cm" valign="top" width="138"><p>اسکن‌ها [×]</p>
-</td>
-</tr>
-<tr>
-<td style="border: none; padding: 0cm" valign="top" width="138"><p>داده‌های پیوسته [×]</p>
-</td>
-</tr>
-<tr>
-<td style="border: none; padding: 0cm" valign="top" width="138"><p>تاریخچه [×]</p>
-</td>
-</tr>
-<tr>
-<td style="border: none; padding: 0cm" valign="top" width="138"><p>مقدارها [×]</p>
-</td>
-</tr>
-<tr>
-<td style="border: none; padding: 0cm" valign="top" width="138"><p><a href="https://www.juggluco.nl/Jugglucohelp/mealhelp.html">وعده‌های غذایی</a></p>
-</td>
-</tr>
-<tr>
-<td height="44" style="border: none; padding: 0cm" valign="top" width="138"><p>حالت تیره [×]</p>
-</td>
-</tr>
+<table class="menu-example" role="presentation">
+  <tr><td class="menu-label">رابط سیستم</td><td class="menu-check">[ ]</td></tr>
+  <tr><td class="menu-label">اسکن‌ها</td><td class="menu-check">[x]</td></tr>
+  <tr><td class="menu-label">داده‌های پیوسته</td><td class="menu-check">[x]</td></tr>
+  <tr><td class="menu-label">تاریخچه</td><td class="menu-check">[x]</td></tr>
+  <tr><td class="menu-label">مقدارها</td><td class="menu-check">[x]</td></tr>
+  <tr><td class="menu-label"><a href="https://www.juggluco.nl/Jugglucohelp/mealhelp.html">وعده‌های غذایی</a></td><td class="menu-check">[ ]</td></tr>
+  <tr><td class="menu-label">حالت تیره</td><td class="menu-check">[x]</td></tr>
 </table>
 <p style="line-height: 115%; margin-bottom: 0cm">در منوی میانی سمت راست، گزینه‌های نمایش قرار دارند. نخستین گزینه، آخرین اسکن را نشان می‌دهد. علامت × کنار «اسکن‌ها» یعنی داده‌های حاصل از اسکن در نمودار نمایش داده می‌شوند. «اسکن» مقدار فعلی گلوکز است که با خواندن حسگر Libre 0 یا 2 از طریق NFC دریافت می‌کنید. اسکن همچنین مقدارهای «تاریخچه» را که هر ۱۵ دقیقه در ۸ ساعت اخیر در حسگر ذخیره شده‌اند به تلفن منتقل می‌کند. نمایش این داده‌ها با گزینهٔ «تاریخچه» کنترل می‌شود. حسگر Libre 3 مقدارهای «تاریخچه» را هر ۵ دقیقه از طریق بلوتوث ارسال می‌کند. «داده‌های پیوسته» به خوانش‌هایی گفته می‌شود که حسگرهای FreeStyle Libre 2 و 3 هر دقیقه از طریق بلوتوث به برنامه می‌فرستند.</p>
 <p style="line-height: 115%; margin-bottom: 0cm">می‌توانید برای ثبت انسولین، کربوهیدرات و فعالیت‌ها، عددهایی با برچسب دلخواه وارد کنید. این «مقدارها» در زمان و تاریخ مشخص‌شده، در ارتفاع ثابتی از نمودار گلوکز نمایش داده می‌شوند. با لمس نقطه‌ای از نمودار یا مقدار ثبت‌شده، اطلاعات آن را می‌بینید. برای ویرایش مقدار ثبت‌شده، آن را لمس طولانی کنید؛ یا از «فهرست» در منوی میانی سمت چپ، مورد مربوط را باز کنید. گزینهٔ «مقدارها» نمایش این داده‌های دستی را کنترل می‌کند. در «تنظیمات» می‌توانید «برچسب‌ها» را تعیین کنید. نام برچسب مرتبط بالای هر مقدار نمایش داده می‌شود. (<a href="https://www.juggluco.nl/Jugglucohelp/labelhelp.html">برچسب‌ها</a>)</p>
 <p style="line-height: 100%; orphans: 0; widows: 0; margin-top: 0.2cm; margin-bottom: 0.2cm; background: transparent; page-break-after: avoid">منوی ۲: میانی سمت چپ</p>
-<table cellpadding="0" cellspacing="0">
-<col width="96"/>
-<tr>
-<td style="border: none; padding: 0cm" valign="top" width="96"><p><a href="https://www.juggluco.nl/Jugglucohelp/helpexport.html">برون‌بری</a></p>
-</td>
-</tr>
-<tr>
-<td style="border: none; padding: 0cm" valign="top" width="96"><p><a href="https://www.juggluco.nl/Jugglucohelp/connectionoverview.html">آینه‌سازی</a></p>
-</td>
-</tr>
-<tr>
-<td style="border: none; padding: 0cm" valign="top" width="96"><p><a href="https://www.juggluco.nl/Jugglucohelp/newamount.html">مقدار جدید</a></p>
-</td>
-</tr>
-<tr>
-<td style="border: none; padding: 0cm" valign="top" width="96"><p>فهرست</p>
-</td>
-</tr>
-<tr>
-<td style="border: none; padding: 0cm" valign="top" width="96"><p><a href="https://www.juggluco.nl/Jugglucohelp/stathelp.html">آمار</a></p>
-</td>
-</tr>
-<tr>
-<td style="border: none; padding: 0cm" valign="top" width="96"><p><a href="https://www.juggluco.nl/Jugglucohelp/talkhelp.html">گفتار</a></p>
-</td>
-</tr>
-<tr>
-<td style="border: none; padding: 0cm" valign="top" width="96"><p align="left">نمایش شناور [ ]</p>
-</td>
-</tr>
+<table class="menu-example" role="presentation">
+  <tr><td class="menu-label"><a href="https://www.juggluco.nl/Jugglucohelp/helpexport.html">خروجی</a></td><td class="menu-check"></td></tr>
+  <tr><td class="menu-label"><a href="https://www.juggluco.nl/Jugglucohelp/connectionoverview.html">آینه‌سازی</a></td><td class="menu-check"></td></tr>
+  <tr><td class="menu-label"><a href="https://www.juggluco.nl/Jugglucohelp/newamount.html">مقدار جدید</a></td><td class="menu-check"></td></tr>
+  <tr><td class="menu-label">فهرست</td><td class="menu-check"></td></tr>
+  <tr><td class="menu-label"><a href="https://www.juggluco.nl/Jugglucohelp/stathelp.html">آمار</a></td><td class="menu-check"></td></tr>
+  <tr><td class="menu-label"><a href="https://www.juggluco.nl/Jugglucohelp/talkhelp.html">گفتار</a></td><td class="menu-check"></td></tr>
+  <tr><td class="menu-label">نمایش شناور</td><td class="menu-check">[ ]</td></tr>
 </table>
-<p style="line-height: 115%; margin-bottom: 0cm">برای ثبت عددی جدید، در منوی میانی سمت چپ «مقدار جدید» را انتخاب کنید. «برون‌بری» داده‌ها را در فایلی با قالب TSV (مقادیر جداشده با نویسهٔ Tab) ذخیره می‌کند. «آینه‌سازی» امکان ارسال داده‌ها از طریق IP/TCP به Juggluco روی دستگاهی دیگر را فراهم می‌کند تا همان اطلاعات را نمایش دهد. «فهرست» مقدارهای ثبت‌شده را نشان می‌دهد. پس از دریافت مقدار کافی از طریق بلوتوث، «آمار» درصد اندازه‌گیری‌ها در محدوده‌های مختلف گلوکز، شاخص مدیریت گلوکز (GMI، شاخصی برای برآورد HbA1c)، تغییرپذیری گلوکز و «نمودار خلاصه» را نشان می‌دهد. نمودار خلاصه برای هر دقیقه از شبانه‌روز، گلوکزی را نشان می‌دهد که به‌ترتیب ۰، ۵، ۲۵، ۵۰، ۷۵، ۹۵ و ۱۰۰ درصد اندازه‌گیری‌ها پایین‌تر از آن قرار می‌گیرند. با «گفتار»، Juggluco مقدارهای جدید گلوکز، عناصر لمس‌شدهٔ نمودار و پیام‌ها را با صدا می‌خواند. «نمایش شناور» عدد گلوکز را روی سایر برنامه‌ها نشان می‌دهد؛ اندازه و رنگ آن را می‌توان در تنظیمات تغییر داد. (<a href="https://www.juggluco.nl/Jugglucohelp/floatingconfig.html">نمایش شناور</a>)</p>
+<p style="line-height: 115%; margin-bottom: 0cm">برای ثبت عددی جدید، در منوی میانی سمت چپ «مقدار جدید» را انتخاب کنید. گزینهٔ «خروجی» داده‌ها را در فایلی با قالب TSV (مقادیر جداشده با نویسهٔ Tab) ذخیره می‌کند. «آینه‌سازی» امکان ارسال داده‌ها از طریق IP/TCP به Juggluco روی دستگاهی دیگر را فراهم می‌کند تا همان اطلاعات را نمایش دهد. «فهرست» مقدارهای ثبت‌شده را نشان می‌دهد. پس از دریافت مقدار کافی از طریق بلوتوث، «آمار» درصد اندازه‌گیری‌ها در محدوده‌های مختلف گلوکز، شاخص مدیریت گلوکز (GMI، شاخصی برای برآورد HbA1c)، تغییرپذیری گلوکز و «نمودار خلاصه» را نشان می‌دهد. نمودار خلاصه برای هر دقیقه از شبانه‌روز، گلوکزی را نشان می‌دهد که به‌ترتیب ۰، ۵، ۲۵، ۵۰، ۷۵، ۹۵ و ۱۰۰ درصد اندازه‌گیری‌ها پایین‌تر از آن قرار می‌گیرند. با «گفتار»، Juggluco مقدارهای جدید گلوکز، عناصر لمس‌شدهٔ نمودار و پیام‌ها را با صدا می‌خواند. «نمایش شناور» عدد گلوکز را روی سایر برنامه‌ها نشان می‌دهد؛ اندازه و رنگ آن را می‌توان در تنظیمات تغییر داد. (<a href="https://www.juggluco.nl/Jugglucohelp/floatingconfig.html">نمایش شناور</a>)</p>
 <p style="line-height: 100%; orphans: 0; widows: 0; margin-top: 0.2cm; margin-bottom: 0.2cm; background: transparent; page-break-after: avoid">منوی ۱: چپ</p>
-<table cellpadding="0" cellspacing="0" width="120">
-<col width="120"/>
-<tr>
-<td style="border: none; padding: 0cm" valign="top" width="120"><p>رابط سیستم [ ]</p>
-</td>
-</tr>
-<tr>
-<td style="border: none; padding: 0cm" valign="top" width="120"><p>منوها [ ]</p>
-</td>
-</tr>
-<tr>
-<td style="border: none; padding: 0cm" valign="top" width="120"><p><a href="https://www.juggluco.nl/Jugglucohelp/watchinfo.html">ساعت</a></p>
-</td>
-</tr>
-<tr>
-<td style="border: none; padding: 0cm" valign="top" width="120"><p><a href="https://www.juggluco.nl/Jugglucohelp/sensorhelp.html">حسگر</a></p>
-</td>
-</tr>
-<tr>
-<td height="26" style="border: none; padding: 0cm" valign="top" width="120"><p><a href="https://www.juggluco.nl/Jugglucohelp/settinghelp.html">تنظیمات</a></p>
-</td>
-</tr>
-<tr>
-<td height="26" style="border: none; padding: 0cm" valign="top" width="120"><p>عکس</p>
-</td>
-</tr>
-<tr>
-<td style="border: none; padding: 0cm" valign="top" width="120"><p>بستن</p>
-</td>
-</tr>
+<table class="menu-example" role="presentation">
+
+  <tr><td class="menu-label"><a href="https://www.juggluco.nl/Jugglucohelp/fa/chatgpthelp.html">ChatGPT</a></td><td class="menu-check"></td></tr>
+  <tr><td class="menu-label">منوها</td><td class="menu-check">[ ]</td></tr>
+  <tr><td class="menu-label"><a href="https://www.juggluco.nl/Jugglucohelp/watchinfo.html">ساعت</a></td><td class="menu-check"></td></tr>
+  <tr><td class="menu-label"><a href="https://www.juggluco.nl/Jugglucohelp/sensorhelp.html">حسگر</a></td><td class="menu-check"></td></tr>
+  <tr><td class="menu-label"><a href="https://www.juggluco.nl/Jugglucohelp/settinghelp.html">تنظیمات</a></td><td class="menu-check"></td></tr>
+  <tr><td class="menu-label">عکس</td><td class="menu-check"></td></tr>
+  <tr><td class="menu-label">بستن</td><td class="menu-check"></td></tr>
 </table>
 <p style="line-height: 115%; margin-bottom: 0cm">در منوی چپ به «تنظیمات» دسترسی دارید. در آنجا می‌توانید واحد گلوکز را روی mmol/L یا mg/dL بگذارید، «برچسب‌ها» را تعریف کنید و «هشدارهای گلوکز»، «یادآورهای دارو» و محدوده‌های نمایش را تنظیم کنید. «رابط سیستم» تعیین می‌کند کنترل‌های Android و نوار وضعیت نشان داده شوند یا نه. در «ساعت» می‌توانید ارسال داده‌ها به ساعت‌های هوشمند مختلف را تنظیم کنید. «حسگر» وضعیت اتصال به حسگر را نشان می‌دهد. با «منوها» هر چهار منو به‌صورت یکجا نمایش داده می‌شوند تا TalkBack بتواند آن‌ها را بخواند. «بستن» برای خروج از Juggluco است. (<a href="https://www.juggluco.nl/Jugglucohelp/labelhelp.html">برچسب‌ها</a>) (<a href="https://www.juggluco.nl/Jugglucohelp/alarmhelp.html">هشدارها</a>) (<a href="https://www.juggluco.nl/Jugglucohelp/reminders.html">یادآورها</a>)</p>
 <p style="line-height: 115%; margin-bottom: 0cm"><br/>
@@ -696,7 +632,7 @@ Account ID</a>)</p>
 <p>شناسهٔ عددی حساب LibreView را می‌توان از UUID موجود در نوار نشانی گزارش‌های LibreView نیز به دست آورد و دستی در Juggluco وارد کرد. (<a href="https://www.juggluco.nl/Juggluco/libre3/convertUUID.html">converted</a>)</p>
 <p>«برنامهٔ جدید Libre»: برای فعال‌سازی Libre 3 همان عددی را به کار می‌برد که برنامهٔ جدید Libre شرکت Abbott استفاده می‌کند. اگر معلوم باشد این عدد در سمت راست گزینه نمایش داده می‌شود و در غیر این صورت <bdi dir="ltr">-1</bdi> دیده می‌شود. <a href="https://play.google.com/store/apps/details?id=com.abbott.adc.freestyle.libre.us">برنامهٔ جدید Libre آمریکا</a> از عدد دیگری نسبت به برنامهٔ قدیمی Libre 3 برای راه‌اندازی حسگر استفاده می‌کند. پیش‌تر Juggluco نمی‌توانست حسگرهای فعال‌شده با این برنامه را تحویل بگیرد، اما اکنون باید بتواند.</p>
 <p>داده‌های حسگرهای Sibionics و Dexcom به LibreView فرستاده نمی‌شوند.</p>
-<p>برای ذخیرهٔ داده‌ها با قالب LibreView می‌توانید از «منوی میانی سمت چپ ← برون‌بری» یا وب‌سرور داخلی Juggluco نیز استفاده کنید؛ این خروجی‌ها مقدارهای گلوکز Dexcom و Sibionics را هم در بر دارند. (<a href="https://www.juggluco.nl/Jugglucohelp/helpexport.html">Export</a>) (<a href="https://www.juggluco.nl/Juggluco/webserver.html#libreview">web
+<p>برای ذخیرهٔ داده‌ها با قالب LibreView می‌توانید از «منوی میانی سمت چپ ← خروجی» یا وب‌سرور داخلی Juggluco نیز استفاده کنید؛ این خروجی‌ها مقدارهای گلوکز Dexcom و Sibionics را هم در بر دارند. (<a href="https://www.juggluco.nl/Jugglucohelp/helpexport.html">خروجی</a>) (<a href="https://www.juggluco.nl/Juggluco/webserver.html#libreview">web
 server</a>)</p>
 <p><br/>
 <br/>
@@ -937,12 +873,12 @@ menu→Settings→ Exchange data→ Web server</a>) (<a href="https://github.com
 </string>
 <string name="helpexport" >
 <![CDATA[
-<p><a href="https://www.juggluco.nl/Jugglucohelp/fa/index.html">index</a></p><p><a href="https://www.juggluco.nl/Jugglucohelp/ar/helpexport.html">ar</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/be/helpexport.html">be</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/de/helpexport.html">de</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/es/helpexport.html">es</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/fa/helpexport.html">fa</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/hi/helpexport.html">hi</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/it/helpexport.html">it</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ja/helpexport.html">ja</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ko/helpexport.html">ko</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/nl/helpexport.html">nl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pl/helpexport.html">pl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ru/helpexport.html">ru</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/tr/helpexport.html">tr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/uk/helpexport.html">uk</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/uz/helpexport.html">uz</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/zh/helpexport.html">zh</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/helpexport.html?lang=en">en</a>&emsp;&emsp;</p><h1>برون‌بری</h1>
+<p><a href="https://www.juggluco.nl/Jugglucohelp/fa/index.html">index</a></p><p><a href="https://www.juggluco.nl/Jugglucohelp/ar/helpexport.html">ar</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/be/helpexport.html">be</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/de/helpexport.html">de</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/es/helpexport.html">es</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/fa/helpexport.html">fa</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/hi/helpexport.html">hi</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/it/helpexport.html">it</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ja/helpexport.html">ja</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ko/helpexport.html">ko</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/nl/helpexport.html">nl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/pl/helpexport.html">pl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ru/helpexport.html">ru</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/tr/helpexport.html">tr</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/uk/helpexport.html">uk</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/uz/helpexport.html">uz</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/zh/helpexport.html">zh</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/helpexport.html?lang=en">en</a>&emsp;&emsp;</p><h1>خروجی</h1>
 <p>داده‌های Juggluco را در فایل ذخیره کنید.</p>
 <p>وعده‌های غذایی با قالب HTML و سایر داده‌ها با قالب <bdi dir="ltr">.tsv</bdi> (مقادیر جداشده با Tab) ذخیره می‌شوند. این فایل‌ها در LibreOffice Calc، Microsoft Excel، Mathematica و R قابل استفاده‌اند. TSV شبیه CSV است، با این تفاوت که جداکنندهٔ ستون‌ها Tab است، نه ویرگول. کدگذاری متن UTF-8 است. (<a href="https://en.wikipedia.org/wiki/Tab-separated_values">Tab-separated
 values</a>)</p>
 <p>معنای ستون‌ها در <a href="https://www.juggluco.nl/Juggluco/webserver.html">مستندات وب‌سرور Juggluco</a> توضیح داده شده است.</p>
-<p>«روز»: از نسخهٔ Juggluco 7.1.0 می‌توانید تعداد روزهای خروجی را تعیین کنید. زمان پایان بازه، لبهٔ راست نمودار است. بنابراین اگر داده‌های قدیمی را نمایش می‌دهید، فقط همان داده‌های گذشته برون‌بری می‌شوند (مانند «منوی میانی سمت چپ ← آمار»). (<a href="https://www.juggluco.nl/Jugglucohelp/stathelp.html">Statistics</a>)</p>
+<p>«روز»: از نسخهٔ Juggluco 7.1.0 می‌توانید تعداد روزهای خروجی را تعیین کنید. زمان پایان بازه، لبهٔ راست نمودار است. بنابراین اگر داده‌های قدیمی را نمایش می‌دهید، فقط از همان داده‌های گذشته خروجی گرفته می‌شود (مانند «منوی میانی سمت چپ ← آمار»). (<a href="https://www.juggluco.nl/Jugglucohelp/stathelp.html">Statistics</a>)</p>
 <p>«واسنجی‌شده»: مقدارهای واسنجی‌شده را ذخیره کنید. با این گزینه، در خروجی «اسکن‌ها»، «داده‌های پیوسته» و «تاریخچه» هم مقدار واسنجی‌شده و هم مقدار خام هر خوانش ثبت می‌شود. در قالب LibreView اگر مقدار واسنجی‌شده موجود باشد فقط همان و در غیر این صورت مقدار خام ذخیره می‌شود.</p>
 <p>از نسخهٔ Juggluco 7.1.0، می‌توانید همین داده‌ها را از وب‌سرور Juggluco نیز بگیرید: «منوی چپ ← تنظیمات ← تبادل داده ← وب‌سرور». به <a href="https://www.juggluco.nl/Juggluco/webserver.html">مستندات وب‌سرور</a> مراجعه کنید. (<a href="https://www.juggluco.nl/Jugglucohelp/exchangehelp.html">Exchange
 data</a>)</p>
@@ -986,7 +922,7 @@ Labels</a>) (<a href="https://www.juggluco.nl/Jugglucohelp/mealhelp.html">Meal</
 data</a>)</p>
 <h2>خواندن داده‌های فعالیت</h2>
 <p>در «منوی چپ ← تنظیمات ← تبادل داده ← فعالیت‌ها» می‌توانید خواندن فعالیت‌ها از Health Connect را تنظیم کنید. هر متغیر فعالیت که Juggluco نمایش می‌دهد، مجوز خاصی در Health Connect دارد: مثلاً «ورزش» برای تشخیص نوع فعالیت، «ضربان قلب» برای میانگین و بیشینهٔ ضربان حین فعالیت و «ضربان قلب استراحت» برای محاسبهٔ تفاوت ضربان فعالیت با وضعیت استراحت. (<a href="https://www.juggluco.nl/Jugglucohelp/activities.html">Activities</a>)</p>
-<p>داده‌های دریافت‌شده از Health Connect در Juggluco نمایش داده می‌شوند و از «منوی میانی سمت چپ ← برون‌بری» در فایل ذخیره می‌شوند. اگر وب‌سرور روشن باشد، می‌توانید آن‌ها را در مرورگر همین تلفن با نشانی <bdi dir="ltr">http://127.0.0.1:17580/x/activities?header&amp;days=30</bdi> ببینید. در صورت استفاده از «منوی چپ ← ChatGPT»، این داده‌ها برای ChatGPT نیز قابل خواندن هستند. همچنین می‌توانید مقدار ساخته‌شده را به‌صورت یادداشت به LibreView یا Dexcom Clarity بفرستید. Juggluco سرور اختصاصی برای گردآوری این داده‌ها ندارد. (<a href="http://127.0.0.1:17580/x/activities?header&amp;days=30">http://127.0.0.1:17580/x/activities?header&amp;days=30</a>) (<a href="https://www.juggluco.nl/Jugglucohelp/chatgpthelp.html">ChatGPT</a>) (<a href="https://www.juggluco.nl/Jugglucohelp/libreview.html">Libreview</a>) (<a href="https://www.juggluco.nl/Jugglucohelp/clarityhelp.html">Dexcom
+<p>داده‌های دریافت‌شده از Health Connect در Juggluco نمایش داده می‌شوند و از «منوی میانی سمت چپ ← خروجی» در فایل ذخیره می‌شوند. اگر وب‌سرور روشن باشد، می‌توانید آن‌ها را در مرورگر همین تلفن با نشانی <bdi dir="ltr">http://127.0.0.1:17580/x/activities?header&amp;days=30</bdi> ببینید. در صورت استفاده از «منوی چپ ← ChatGPT»، این داده‌ها برای ChatGPT نیز قابل خواندن هستند. همچنین می‌توانید مقدار ساخته‌شده را به‌صورت یادداشت به LibreView یا Dexcom Clarity بفرستید. Juggluco سرور اختصاصی برای گردآوری این داده‌ها ندارد. (<a href="http://127.0.0.1:17580/x/activities?header&amp;days=30">http://127.0.0.1:17580/x/activities?header&amp;days=30</a>) (<a href="https://www.juggluco.nl/Jugglucohelp/chatgpthelp.html">ChatGPT</a>) (<a href="https://www.juggluco.nl/Jugglucohelp/libreview.html">Libreview</a>) (<a href="https://www.juggluco.nl/Jugglucohelp/clarityhelp.html">Dexcom
 Clarity</a>)</p>
 <p><br/>
 <br/>
@@ -1059,7 +995,7 @@ broadcasts</a>)</p>
 <p>ارسال داده‌ها به سرور Nightscout.</p>
 <h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/connectionoverview.html">آینه‌سازی/همسان‌سازی</a></h2>
 <p style="line-height: 100%; margin-bottom: 0cm">همهٔ داده‌ها را از طریق اینترنت به نمونهٔ دیگری از Juggluco ارسال می‌کند تا یک نسخهٔ آینه‌ای از داده‌ها در دستگاه دیگر ساخته شود. داده‌های موجود بازنویسی خواهند شد.</p>
-<h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/helpexport.html">برون‌بری</a></h2>
+<h2 class="western"><a href="https://www.juggluco.nl/Jugglucohelp/helpexport.html">خروجی</a></h2>
 <p>داده‌ها را در فایل ذخیره می‌کند.</p>
 <p><br/>
 <br/>
@@ -1324,7 +1260,7 @@ server</a>)</p>
 </string>
 <string name="sensorinfo" >
 <![CDATA[
-<p><a href="https://www.juggluco.nl/Jugglucohelp/fa/index.html">index</a></p><p><a href="https://www.juggluco.nl/Jugglucohelp/ar/sensorinfo.html">ar</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/de/sensorinfo.html">de</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/es/sensorinfo.html">es</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/fa/sensorinfo.html">fa</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/hi/sensorinfo.html">hi</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/it/sensorinfo.html">it</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ja/sensorinfo.html">ja</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ko/sensorinfo.html">ko</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/nl/sensorinfo.html">nl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ru/sensorinfo.html">ru</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/uk/sensorinfo.html">uk</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/uz/sensorinfo.html">uz</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/sensorinfo.html?lang=en">en</a>&emsp;&emsp;</p><h1>اطلاعات حسگر</h1><p>این صفحه زمان شروع کار حسگر، آخرین دریافت «داده‌های پیوسته»، آخرین اسکن، و زمان پایان رسمی و پایان مورد انتظار حسگر را نشان می‌دهد.</p><p><b>زمان آماده‌شدن:</b> برای حسگرهای Sibionics و Linx، Lumiflex و AiDEX X می‌توانید مدت دورهٔ آماده‌شدن را به دقیقه تغییر دهید. داده‌های این دوره در همهٔ بخش‌های برنامه نادیده گرفته می‌شوند: نمودار روی صفحه، آمار، داده‌های برون‌بری‌شده و داده‌های قابل مشاهده در وب‌سرور. این تغییر حتی بر داده‌های گذشته نیز اثر می‌گذارد.</p><p><b>پنهان‌کردن:</b> اگر این گزینه فعال شود، منحنی حسگر نمایش داده نمی‌شود. برای نمایش دوباره، تیک را بردارید یا «نمایش» را در پایینِ سمت راست صفحه بزنید.</p><p><b>واسنجی‌ها:</b> اگر در «منوی چپ ← تنظیمات ← واسنجی» برچسب قند خون را تعیین کرده‌اید و در «منوی میانی سمت چپ ← مقدار جدید» اندازه‌گیری‌های قند خون را ثبت کرده‌اید که «مستثنا» نشده‌اند، با زدن «واسنجی‌ها» فهرست واسنجی‌های انجام‌شده نمایش داده می‌شود. برای اطلاعات بیشتر <a href="https://www.juggluco.nl/Juggluco/index.html#calibration">راهنمای واسنجی</a> را ببینید.</p><p><b>فعال‌سازی:</b> دکمهٔ «فعال‌سازی» برای حسگرهایی که کارشان متوقف شده است نشان داده می‌شود. با آن می‌توانید حسگر را بدون اسکن دوبارهٔ کد ماتریسی بسته‌بندی به کار بگیرید. این گزینه برای حسگرهای Libre 2 و Libre 3 نیز وجود دارد؛ اما اگر حسگر را با Juggluco روی تلفن دیگری اسکن کرده‌اید، برای برگرداندن حسگر به این تلفن باید دوباره آن را با NFC اسکن کنید.</p>]]>
+<p><a href="https://www.juggluco.nl/Jugglucohelp/fa/index.html">index</a></p><p><a href="https://www.juggluco.nl/Jugglucohelp/ar/sensorinfo.html">ar</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/de/sensorinfo.html">de</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/es/sensorinfo.html">es</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/fa/sensorinfo.html">fa</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/hi/sensorinfo.html">hi</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/it/sensorinfo.html">it</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ja/sensorinfo.html">ja</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ko/sensorinfo.html">ko</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/nl/sensorinfo.html">nl</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/ru/sensorinfo.html">ru</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/uk/sensorinfo.html">uk</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/uz/sensorinfo.html">uz</a>&emsp;&emsp;<a href="https://www.juggluco.nl/Jugglucohelp/sensorinfo.html?lang=en">en</a>&emsp;&emsp;</p><h1>اطلاعات حسگر</h1><p>این صفحه زمان شروع کار حسگر، آخرین دریافت «داده‌های پیوسته»، آخرین اسکن، و زمان پایان رسمی و پایان مورد انتظار حسگر را نشان می‌دهد.</p><p><b>زمان آماده‌شدن:</b> برای حسگرهای Sibionics و Linx، Lumiflex و AiDEX X می‌توانید مدت دورهٔ آماده‌شدن را به دقیقه تغییر دهید. داده‌های این دوره در همهٔ بخش‌های برنامه نادیده گرفته می‌شوند: نمودار روی صفحه، آمار، داده‌های موجود در فایل خروجی و داده‌های قابل مشاهده در وب‌سرور. این تغییر حتی بر داده‌های گذشته نیز اثر می‌گذارد.</p><p><b>پنهان‌کردن:</b> اگر این گزینه فعال شود، منحنی حسگر نمایش داده نمی‌شود. برای نمایش دوباره، تیک را بردارید یا «نمایش» را در پایینِ سمت راست صفحه بزنید.</p><p><b>واسنجی‌ها:</b> اگر در «منوی چپ ← تنظیمات ← واسنجی» برچسب قند خون را تعیین کرده‌اید و در «منوی میانی سمت چپ ← مقدار جدید» اندازه‌گیری‌های قند خون را ثبت کرده‌اید که «مستثنا» نشده‌اند، با زدن «واسنجی‌ها» فهرست واسنجی‌های انجام‌شده نمایش داده می‌شود. برای اطلاعات بیشتر <a href="https://www.juggluco.nl/Juggluco/index.html#calibration">راهنمای واسنجی</a> را ببینید.</p><p><b>فعال‌سازی:</b> دکمهٔ «فعال‌سازی» برای حسگرهایی که کارشان متوقف شده است نشان داده می‌شود. با آن می‌توانید حسگر را بدون اسکن دوبارهٔ کد ماتریسی بسته‌بندی به کار بگیرید. این گزینه برای حسگرهای Libre 2 و Libre 3 نیز وجود دارد؛ اما اگر حسگر را با Juggluco روی تلفن دیگری اسکن کرده‌اید، برای برگرداندن حسگر به این تلفن باید دوباره آن را با NFC اسکن کنید.</p>]]>
 </string>
 <string name="SibionicsServer" >
 <![CDATA[

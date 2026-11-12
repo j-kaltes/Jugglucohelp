@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title>Nightscouthelp.in.html</title>
+	<meta name="generator" content="LibreOffice 25.8.6.2 (Linux)"/>
+	<meta name="created" content="2023-02-21T11:28:36.352406009"/>
+	<meta name="changed" content="2026-05-07T20:41:42.098370156"/>
+	<style type="text/css">
+		@page { size: 21.01cm 29.69cm; margin: 2.01cm }
+		h1 { background: transparent; margin-bottom: 0.2cm }
+		h1.western { font-family: "Liberation Sans", sans-serif; font-size: 18pt }
+		h1.cjk { font-family: "Source Han Sans CN"; font-size: 18pt }
+		h1.ctl { font-size: 18pt; font-family: "Droid Sans Devanagari" }
+		p { background: transparent; margin-bottom: 0.25cm }
+		pre { background: transparent; font-family: "Liberation Mono", monospace }
+	</style>
+</head>
+ <img src="webserver.png" alt="Webserver" style="object-fit:contain; width:15cm;                   height:auto;">
+<body lang="az-AZ" dir="ltr">
+<h1>Veb-server</h1>
+<p>Juggluco-da başqa tətbiqlərin ondan qlükoza göstəricilərini almasına imkan verən daxili veb-server var. Bu server xDrip üçün saat tətbiqləri və bəzi Nightscout tətbiqləri ilə işləyir.</p>
+<p>xDrip veb-serveri üçün hazırlanmış tətbiqlərdən istifadə etmək nisbətən asandır. Sadəcə <b>Aktiv</b> seçimini işarələyin. Bundan sonra həmin tətbiqlər qlükoza göstəricilərini <code>127.0.0.1</code> ünvanının <code>17580</code> portundan ala bilər. Nightscout serverinin URL-si: <code>http://127.0.0.1:17580</code>.</p>
+<p>Bəzi Nightscout izləyici tətbiqləri də bu serverlə işləyir. <i>Yalnız yerli</i> seçimi söndürülübsə, xDrip, Diabox, Windows üçün <a href="https://github.com/dabear/FloatingGlucose/releases">Floating Glucose</a> və Windows, Linux və macOS üçün <a href="https://github.com/kashamalasha/nightscout-widget-electron">Owlet</a> vidceti HTTP ilə qoşula bilər. macOS-da App Store-da olan Nightscout Menu Bar, Gluco Status və Gluco Tracker də belə işləyir. iOS üçün <a href="https://github.com/someoneAnyone/Nightscouter">Nightscouter</a>, <a href="https://github.com/jonfawcett/LoopFollow">LoopFollow</a> və iOS/watchOS üçün <a href="https://github.com/nightscout/nightguard">Nightguard</a> da yalnız HTTP tələb edir.</p>
+<p>Juggluco-ya internet üzərindən qoşulmaq istəyirsinizsə, modeminizdə port yönləndirməsini tənzimləməlisiniz. Daha ətraflı:</p>
+<ul>
+<li><a href="https://www.makeuseof.com/tag/what-is-port-forwarding-and-how-can-it-help-me">Port yönləndirməsi haqqında məlumat</a>;</li>
+<li><a href="https://www.juggluco.nl/Juggluco/phones/index.html">Juggluco-da telefon bağlantıları</a>;</li>
+<li>Sol orta menyu → Güzgü → <a href="https://www.juggluco.nl/Jugglucohelp/addconnection.html">Bağlantı əlavə et</a> → Kömək.</li>
+</ul>
+<p>Bəzi digər Nightscout izləyici tətbiqləri yalnız HTTPS ilə işləyir. Bunun üçün Juggluco-ya qoşulmaq üçün istifadə edilən domen adına uyğun, təsdiqlənmiş SSL sertifikatı və şəxsi açar lazımdır. Xarici IP ünvanınıza domen adı bağlıdırsa, <a href="https://certbot.eff.org/instructions">Certbot</a> vasitəsilə pulsuz sertifikat ala bilərsiniz. Domen adı yoxdursa, bunu edə bilməzsiniz. <a href="https://www.freenom.com/">Freenom</a> pulsuz domen təklif edir, lakin müəllifin təcrübəsində domen bir neçə həftə sonra xəbərdarlıq edilmədən geri alınmış, yenidən qeydiyyat üçün isə ödəniş tələb olunmuşdur. Domen adını ildə bir neçə avroya da almaq mümkündür (məsələn, <a href="https://www.strato.nl/domeinnaam">Strato</a>-dan).</p>
+<p>Certbot-u quraşdırdıqdan və modeminizin HTTP üçün 80-ci portunu kompüterinizə yönləndirdikdən sonra bu əmri icra edə bilərsiniz:</p>
+<pre>certbot certonly --standalone --preferred-challenges http -d <i>myhostname</i></pre>
+<p>Baxın: <a href="https://devpress.csdn.net/linux/62e7999e907d7d59d1c8cfd0.html">Certbot haqqında təlimat</a>.</p>
+<p>Certbot istifadə etdikdən sonra şəxsi açar <code>/etc/letsencrypt/live/myhostname/privkey.pem</code>, tam sertifikat zənciri isə <code>/etc/letsencrypt/live/myhostname/fullchain.pem</code> ünvanında olur. Buradakı <i>myhostname</i> öz domen adınızla əvəz edilməlidir.</p>
+<p>SSL sertifikatını verən qurumdan açar faylları almışsınızsa, onları Juggluco-ya göstərməlisiniz. Şəxsi açarı <b>Məxfi açar</b>, tam sertifikat zəncirini isə <b>Tam sertifikat zənciri</b> düyməsi ilə seçin.</p>
+<p>Sadəcə qlükoza göstəricilərini bir Android cihazından digərinə göndərmək istəyirsinizsə, Juggluco-nun <a href="https://www.juggluco.nl/Juggluco/index.html#mirror">Güzgü</a> funksiyasından istifadə etmək daha münasibdir (sol orta menyu → <a href="https://www.juggluco.nl/Jugglucohelp/connectionoverview.html">Güzgü</a>).</p>
+<p>AAPS, Diabetes:M, <a href="https://play.google.com/store/apps/details?id=se.cornixit.nightwatch">Nightwatch</a>, <a href="https://slingithub.github.io/CheckmateWeb">Checkmate</a>, Sugarmate (macOS və iOS), <a href="https://github.com/JohanDegraeve/xdripswift">Xdrip4ios</a>, Shuggah və Cockpit (iOS) tətbiqlərinə SSL lazımdır. Nightscout serverinin URL-si kimi bunu daxil edin:</p>
+<p><code>https://hostname:port</code></p>
+<p>Burada <i>hostname</i> Juggluco-ya təqdim etdiyiniz təsdiqlənmiş açara uyğun domen adı, <i>port</i> isə modeminizdə bu ekranda göstərilmiş porta (standart: <code>17581</code>) yönləndirdiyiniz xarici portdur.</p>
+<p>AAPS də Juggluco veb-serverindən Nightscout serveri kimi istifadə edə bilər. Bunun üçün AAPS-də <b>NSClientV3</b> seçin və aşağıdakı parametrləri təyin edin:</p>
+<ul><li><i>NS access token</i> kimi burada müəyyən etdiyiniz <code>api_secret</code> dəyərindən istifadə edin;</li>
+<li><i>Connect to websockets</i> seçimini söndürün;</li>
+<li><i>Synchronization</i> bölməsində bütün göndərmələri söndürün. Yalnız bunları aktiv saxlayın:
+<ul><li>Receive/backfill CGM data — CGM məlumatlarını almaq və çatışmayanları tamamlamaq;</li>
+<li>Receive Insulin — insulin qeydlərini almaq;</li>
+<li>Receive carbs — karbohidrat qeydlərini almaq;</li>
+<li>Receive therapy events — müalicə hadisələrini almaq.</li></ul></li>
+<li>Bütün <i>advanced settings</i> seçimlərini söndürün.</li></ul>
+<p>Əvvəllər daxil edilmiş Miqdarlardan daha köhnə vaxta aid Miqdar əlavə olunarsa, AAPS-də təkrarlanan müalicə qeydləri yarana bilər. Juggluco-dan V3 ilə məlumat qəbul edən Nightscout serverinə V3 interfeysi vasitəsilə qoşulduqda da belə olur.</p>
+<p>Bəzən AAPS müalicə qeydlərini yalnız proqram məcburi dayandırılıb yenidən başladıldıqdan sonra serverdən istəməyə başlayır.</p>
+<p>Veb-serveri Linux kompüterində də işlətmək mümkündür. O, məlumatları sensora qoşulmuş Juggluco-dan <a href="https://www.juggluco.nl/Juggluco/index.html#mirror">Güzgü bağlantısı</a> ilə alır. Baxın: <a href="https://www.juggluco.nl/Juggluco/cmdline/index.html">juggluco-server</a>.</p>
+<p>Başqa telefon bu serverə Güzgü bağlantısı ilə və ya Nightscout izləyicisi kimi (məsələn, iPhone-da) qoşula bilər. Hansısa Nightscout tətbiqi bu veb-serverlə işləmirsə, bu barədə müəllifə bildirin: bəlkə də kiçik dəyişikliklərlə uyğunlaşdırmaq mümkündür. iOS üçün Nightscout və Nightscout X tətbiqləri müəyyən bir Nightscout server proqramına uyğun hazırlandığından Juggluco ilə işləməyəcək.</p>
+<p><b>api_secret</b>: izləyici tətbiqlərin HTTP sorğusunun <code>api_secret</code> başlıq sahəsinə hansı dəyəri yazmalı olduğunu təyin edir. Bu sirr <a href="https://www.juggluco.nl/Juggluco/webserver.html#token">Nightscout tokeni</a> kimi və ya SHA1 ilə kodlaşdırılmış <code>api-secret</code> başlığı ilə göndərildikdə də işləyir. Juggluco 7.1.15-dən etibarən <code>api_secret</code> Nightscout serveri URL-sinin yolunun ilk hissəsi kimi də göstərilə bilər. Məsələn, <code>api_secret</code> <code>xyz</code>, server URL-si isə <code>http://hostname:port</code> olduqda, URL kimi <code>http://hostname:port/xzy</code> yazmaq mümkündür.</p>
+<p><b>Görünən</b>: gizli açarı görünən edir.</p>
+<p><b>Port</b>: HTTPS serverinə qoşulmaq üçün portu təyin edir. Standart dəyər <code>17581</code>-dir.</p>
+<p><b>Yadda saxla</b>: gizli açara və ya porta edilən dəyişiklikləri saxlayır.</p>
+<p><b>SSL istifadə et</b>: SSL (HTTPS) bağlantısını aktivləşdirir. Bunun üçün bu xidmətə qoşularkən istifadə olunan domen adına uyğun şəxsi açar və tam sertifikat zənciri təqdim edilməlidir.</p>
+<p><b>Məxfi açar</b>: şəxsi açarın olduğu faylı seçir.</p>
+<p><b>Tam sertifikat zənciri</b>: tam sertifikat zəncirinin olduğu faylı seçir.</p>
+<p><b>İnterval</b>: qlükoza göstəriciləri arasında standart minimum intervalı saniyə ilə təyin edir. Adətən <code>270</code> saniyədir. Sorğu göndərən tətbiq <code>interval=</code> parametri ilə bu dəyəri dəyişə bilər. Baxın: <a href="https://www.juggluco.nl/Juggluco/webserver.html">Juggluco veb-serverinin interfeysi</a>.</p>
+<p><b>Yalnız yerli</b>: HTTP serverinə yalnız <code>localhost</code> (<code>127.0.0.1</code>) üzərindən qoşulmağa icazə verir. HTTPS-ə aid deyil.</p>
+<p><b>Miqdarları ötür</b>: daxil edilmiş Miqdarları <a href="http://127.0.0.1:17580/api/v1/treatments?count=3">http://127.0.0.1:17580/api/v1/treatments?count=3</a> ünvanından almağa imkan verir. Bunun üçün hər Miqdar etiketi üzrə uyğun davranış təyin edilməlidir. Əvvəllər bu parametrlər LibreView ilə eyni idi; 4.18.0 versiyasından etibarən LibreView və bu veb-server üçün Miqdar etiketlərinə ayrı kateqoriyalar seçmək mümkündür. xDrip bu interfeys vasitəsilə Juggluco-dan Miqdarları iki üsulla ala bilər:</p>
+<ol><li><i>Hardware Data Source</i> kimi <i>Nightscout Follower</i> seçin, <i>Follow URL</i> sahəsinə <a href="http://127.0.0.1:17580/api/v1/treatments?count=3">http://127.0.0.1:17580</a> daxil edin və <i>Download Treatments</i> seçimini aktivləşdirin.</li>
+<li><i>Hardware Data Source</i> kimi başqa mənbə (məsələn, <i>Libre (patched app)</i>) seçin. Sonra <i>Settings → Cloud Upload → Nightscout Sync (REST-API)</i> bölməsini aktivləşdirin. <i>Base API URL</i> olaraq <code>http://somekey@127.0.0.1:17580/api/v1/</code> yazın və <i>Download treatments</i> seçimini aktiv edin. Juggluco-ya bu yolla məlumat yükləmək mümkün deyil; yalnız müalicə qeydləri alınır və bəzi xəta bildirişləri yarana bilər.</li></ol>
+<p><i>Yalnız yerli</i> söndürülübsə, Juggluco işləyən telefonun yerli şəbəkə IP ünvanından istifadə edə bilərsiniz. Modemi həmin telefonun <code>17580</code> portuna yönləndirsəniz, xarici IP-dən də qoşulmaq olar. Telefonun domen adına uyğun <i>Private Key</i> və <i>Full Chain</i> fayllarını təqdim edib <i>SSL istifadə et</i> seçimini aktivləşdirmisinizsə, <code>http</code> əvəzinə <code>https</code> ilə həmin domen adından və göstərdiyiniz portdan istifadə edə bilərsiniz.</p>
+<p>Müalicə qeydlərini Diabetes:M-ə ötürmək üçün Juggluco məlumatlarını LibreView-a göndərib oradan <i>Download Glucose data</i> funksiyası ilə LibreView formatında saxlayın; sonra Diabetes:M-də <i>Data → Import from other sources → Freestyle</i> ilə idxal edin. Alternativ olaraq, telefonun xarici domen adına uyğun təsdiqlənmiş açar alıb Diabetes:M-də <i>Link external source → Nightscout</i> seçin və URL kimi <code>https://yourhostname:Port</code> daxil edin. Burada <i>yourhostname</i> Juggluco işləyən telefonun təsdiqlənmiş domen adı, <i>Port</i> isə burada göstərilən portdur. Diabetes:M avtomatik sinxronlaşmaya bilər; <i>Sync</i> düyməsini özünüz basmalı ola bilərsiniz.</p>
+<p><b>Aktiv</b>: veb-server işləyir.</p>
+<p>Juggluco-da dəstəklənən Nightscout/xDrip veb-server sorğuları haqqında ətraflı məlumat üçün baxın: <a href="https://www.juggluco.nl/Juggluco/webserver.html">https://www.juggluco.nl/Juggluco/webserver.html</a>.</p>
+</body>
+</html>

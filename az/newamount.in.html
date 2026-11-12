@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<base target="_blank">
+	<meta name="generator" content="LibreOffice 7.5.8.2 (Linux)"/>
+	<meta name="changed" content="2023-12-27T20:18:01.744399555"/>
+ <base href="https://www.juggluco.nl/Jugglucohelp/mgdL/" id="baseurl" target="_blank">
+<script type="text/javascript"> 
+function getunitarg(){ 
+	const params = new URLSearchParams(document.location.search);
+	const unit = params.get("unit");
+	if(unit == "mg/dL") { 
+		return 2;
+		} 
+	else { 
+		if(unit=="mmol/L") {
+		   return 1;
+		   }
+	 	}
+	return 0;
+    } 
+let mmol=[
+"AM",
+"AU",
+"BA",
+"BG",
+"BW",
+"BY",
+"CA",
+"CH",
+"CN",
+"CZ",
+"DK",
+"EE",
+"FI",
+"GB",
+"HK",
+"HR",
+"HU",
+"IE",
+"IS",
+"KW",
+"KZ",
+"LT",
+"LV",
+"MT",
+"MY",
+"NA",
+"NL",
+"NO",
+"NZ",
+"RS",
+"RU",
+"SE",
+"SI",
+"SK",
+"UA",
+"ZA"];
+
+
+
+
+
+
+
+function getunit() {
+	var unit=getunitarg();
+	if(unit!=0) {
+		return unit;
+		}
+
+	var userLang = navigator.language || navigator.userLanguage;
+	var  co=userLang.toUpperCase();
+	for(const element of mmol) {
+	  if(co.includes(element)) {
+		return 1;
+		}
+	   }
+
+	  return 2;
+	 }
+
+
+
+function setbaseurl(){ 
+	if(getunit()!=1) {
+		document.getElementById("baseurl").href = "https://www.juggluco.nl/Jugglucohelp/mgdL/"; 
+		} 
+	else { 
+	   document.getElementById("baseurl").href = "https://www.juggluco.nl/Jugglucohelp/"; 
+	   } 
+      } 
+   setbaseurl();
+   </script> 
+</head>
+<img src="newamount.png"  style="object-fit:contain; width:15cm;                   height:auto;margin: 1cm 1cm 1cm 1cm;">
+<body lang="az" dir="ltr"><h1>Yeni miqdar</h1>
+<p><b>Yeni miqdar</b> bölməsində istənilən etiketə aid ədədi göstərici daxil edə bilərsiniz. Etiketləri sol menyu → Tənzimləmələr → <a href="https://www.juggluco.nl/Jugglucohelp/labelhelp.html">Miqdar etiketləri</a> bölməsində yaradıb dəyişdirə bilərsiniz. Müəyyən etiketlə saxlanmış <b>Miqdarlar</b> qrafikdə həmin etiket üçün təyin olunmuş hündürlükdə göstərilir.</p>
+<p>Miqdarı sonradan uzun basmaqla dəyişə bilərsiniz. Həmçinin ortanın solundakı menyu → <b>Siyahı</b> bölməsində daxil edilmiş miqdarlar arasından seçmək olar.</p>
+<p><b>İnsulin</b> dozaları <a href="https://www.juggluco.nl/Juggluco/index.html#novopens" onclick="location.href='https://www.juggluco.nl/Juggluco/index.html?unit='+unitstr+'#novopens';return false;">NovoPen® 6 və ya NovoPen Echo® Plus</a> qələmini NFC ilə skan etməklə də alına bilər. Skandan sonra dozaların Juggluco-da hansı etiketlə saxlanacağını seçə və yalnız müəyyən tarix və saatdan <b>sonrakı</b> dozaların qəbul edilməsini təyin edə bilərsiniz. Qələmin yaddaşında yüzlərlə doza varsa, onların NFC vasitəsilə Juggluco-ya ötürülməsi 30 saniyədən çox çəkə bilər.</p>
+<p>Bəzi qlükometrlər barmaqdan ölçülmüş qlükoza göstəricilərini Bluetooth vasitəsilə Juggluco-ya göndərə bilir. Baxın: sol menyu → Tənzimləmələr → Məlumat mübadiləsi → <a href="https://www.juggluco.nl/Jugglucohelp/GlucoseMeterList.html"><b>Qlükometrlər</b></a>.</p>
+<p>Yeməklərin karbohidratlarının hansı etiketlə qeyd olunacağı sol menyu → Tənzimləmələr → <a href="https://www.juggluco.nl/Jugglucohelp/labelhelp.html">Miqdar etiketləri</a> bölməsində də seçilir. <b>Yeni miqdar</b> ekranında həmin etiket üçün <b>Yemək</b> düyməsi görünür. <a href="https://www.juggluco.nl/Jugglucohelp/mealhelp.html"><b>Yemək</b></a> düyməsi ilə tərkib hissələrindən yemək tərtib edə bilərsiniz; proqram karbohidratların ümumi miqdarını hesablayır. Əksinə, karbohidratın istənilən miqdarını daxil edib bir tərkib hissəsindən nə qədər lazım olduğunu da hesablada bilərsiniz.</p>
+<p><b>İstisna et:</b> Qlükoza səviyyəsi sürətlə yüksəldiyi, azaldığı və ya sensor hələ isinmə dövründə olduğu üçün barmaqdan ölçülmüş göstəricini <a href="https://www.juggluco.nl/Jugglucohelp/calibrationhelp.html">kalibrləmələrə</a> daxil etməmək üçün istifadə edilir.</p>
+</body>
+</html>
